@@ -1,0 +1,74 @@
+[
+  {
+    "id": 001,
+    "name": "A Twist of Blue",
+    "releaseDate": "1999-01-20T07:39:50 -01:00",
+    "images": {
+      "cover": "http://images/cover-tbd.jpg",
+      "appCover": "http://images/app-cover-tbd.jpg"
+    },
+    "urls": [
+      {"itunes": "http://test-itunes.com"},
+      {"google": "http://test-google.com"},
+      {"amazon": "http://test-amazon.com"}
+    ],
+    "tracks": [
+      {"title": "track title 1"},
+      {"title": "track title 2"},
+      {"title": "track title 3"},
+      {"title": "track title 4"},
+      {"title": "track title 5"},
+      {"title": "track title 6"},
+      {"title": "track title 7"},
+      {"title": "track title 8"},
+      {"title": "track title 9"},
+      {"title": "track title 10"}
+    ],
+    "quotes": [
+      {
+        "copy": "Simply, amazing!",
+        "author": "Phil Bloggs"
+      },
+      {
+        "copy": "5/5",
+        "author": "Rachel World"
+      }
+    ]
+  },
+  {
+    "id": 002,
+    "name": "Therapy",
+    "releaseDate": "2001-01-20T07:39:50 -01:00",
+    "images": {
+      "cover": "http://images/cover-tbd.jpg",
+      "appCover": "http://images/app-cover-tbd.jpg"
+    },
+    "urls": [
+      {"itunes": "http://test-itunes.com"},
+      {"google": "http://test-google.com"},
+      {"amazon": "http://test-amazon.com"}
+    ],
+    "tracks": [
+      {"title": "track title 1"},
+      {"title": "track title 2"},
+      {"title": "track title 3"},
+      {"title": "track title 4"},
+      {"title": "track title 5"},
+      {"title": "track title 6"},
+      {"title": "track title 7"},
+      {"title": "track title 8"},
+      {"title": "track title 9"},
+      {"title": "track title 10"}
+    ],
+    "quotes": [
+      {
+        "copy": "Why haven't I heard of Fiona sooner?!",
+        "author": "Dummy name"
+      },
+      {
+        "copy": "Rocks my world",
+        "author": "Michael Jameson"
+      }
+    ]
+  }
+]
