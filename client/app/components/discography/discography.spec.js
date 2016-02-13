@@ -10,7 +10,7 @@ describe('Discography', () => {
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new discographyController();
+      return new DiscographyController();
     };
   }));
 

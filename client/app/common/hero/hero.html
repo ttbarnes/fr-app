@@ -1,4 +1,11 @@
 <section class="hero">
-  <h1>FR-app</h1>
-  <h3>You can find me inside {{ vm.name }}.html</h3>
+
+  <img ng-src="{{vm.imgUrl}}"
+       alt="{{vm.imgAlt}}"/>
+
+  <div class="copy-content">
+    <h2>{{vm.title}}</h2>
+    <ng-transclude></ng-transclude>
+  </div>
+
 </section>
