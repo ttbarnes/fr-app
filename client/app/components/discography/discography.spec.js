@@ -1,16 +1,24 @@
+import albumsService from '../../services/albums.service';
 import DiscographyModule from './discography'
 import DiscographyController from './discography.controller';
 import DiscographyComponent from './discography.component';
 import DiscographyTemplate from './discography.html';
 
 describe('Discography', () => {
-  let $rootScope, makeController;
+  let $rootScope,
+      makeController
+
+  var albumsService,
+      mockAlbumsService = {
+        allAlbums: [{id:1}, {id:2}]
+      }
 
   beforeEach(window.module(DiscographyModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
+    albumsService = mockAlbumsService
     makeController = () => {
-      return new DiscographyController();
+      return new DiscographyController(albumsService);
     };
   }));
 
@@ -19,10 +27,23 @@ describe('Discography', () => {
   });
 
   describe('Controller', () => {
-    // controller specs
+
+    it('injects albumsService', () => {
+      let controller = makeController()
+      expect(controller.albumsService).to.exist
+      expect(controller.albumsService).to.equal(mockAlbumsService)
+    })
+
+    it('assigns albumsService.allAlbums to \'albums\'', () => {
+      let controller = makeController()
+      expect(controller.albums).to.exist
+      expect(controller.albums).to.be.an('array')
+      expect(controller.albums).to.equal(mockAlbumsService.allAlbums)
+    })
+
     it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
-      let controller = makeController();
-      expect(controller).to.have.property('name');
+      let controller = makeController()
+      expect(controller).to.have.property('name')
     });
   });
 

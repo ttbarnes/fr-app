@@ -1,4 +1,11 @@
 <section>
+
   <h1>{{ vm.name }}</h1>
-  <p>content here</p>
+
+  <ul>
+    <li ng-repeat="album in vm.albums">
+      {{album | json}}
+    </li>
+  </ul>
+
 </section>

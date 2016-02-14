@@ -1,9 +1,8 @@
 import angular from 'angular';
-
-import AlbumsService from './albumsService';
+import albumsService from './albums.service';
 
 export default angular
   .module('app.services', [])
   .service({
-    AlbumsService
+    albumsService
   })
