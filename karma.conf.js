@@ -31,6 +31,7 @@ module.exports = function (config) {
       module: {
         loaders: [
           { test: /\.js/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
+          { test: /\.json$/, loader: 'json' },
           { test: /\.html/, loader: 'raw' },
           { test: /\.styl$/, loader: 'style!css!stylus' },
           { test: /\.css$/, loader: 'style!css' }

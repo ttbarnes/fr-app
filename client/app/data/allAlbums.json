@@ -1,6 +1,6 @@
 [
   {
-    "id": 001,
+    "id": 1,
     "name": "A Twist of Blue",
     "releaseDate": "1999-01-20T07:39:50 -01:00",
     "images": {
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": 002,
+    "id": 2,
     "name": "Therapy",
     "releaseDate": "2001-01-20T07:39:50 -01:00",
     "images": {
