@@ -24,11 +24,18 @@
 
       <div class="col-50">
 
-        <ul>
-          <li ng-repeat="track in album.tracks">
-            <h3>{{track.title}}</h3>
-          </li>
-        </ul>
+        <div plangular="http://soundcloud.com/fiona-ross/sets/selection-1">
+
+          <ul>
+            <li ng-repeat="track in tracks">
+              <button style="background:#CCC;padding:5px;border:0 none;margin-bottom:5px;"
+                ng-click="playPause($index)"
+                ng-class="{'active': player.playing === track.src}">
+                <h3>{{track.title}}</h3>
+              </button>
+            </li>
+          </ul>
+        </div>
 
       </div>
 
