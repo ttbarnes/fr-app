@@ -12,9 +12,10 @@ angular.module('app', [
     Components.name,
     Services.name
   ])
-  .config(($locationProvider) => {
+  .config(($locationProvider, plangularConfigProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
+    plangularConfigProvider.clientId = '209756cdccc1f718176cea87c3b77f99';
   })
 
   .component('app', AppComponent);
