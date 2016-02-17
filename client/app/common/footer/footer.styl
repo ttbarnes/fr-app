@@ -1,8 +1,21 @@
 @import '../common'
 
 footer
-  background-color $color-bg-secondary
+  padding 2.5em 0
+  background-color $color-bg-tertiary
   color $color-text-tertiary
+
+  h4
+    padding 0 $gutter-primary
+
+
+  li
+    font-size 1.5em
 
   a
     color $color-highlight-secondary
+
+  .nav-links
+    a
+      display inline-block
+      padding 0.2em 1em //extra side padding (instead of $gutter-primary) due to font-sizes
