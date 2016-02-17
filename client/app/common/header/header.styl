@@ -1,13 +1,37 @@
 @import '../common'
 
 nav
-  height 6.5rem
   background-color $color-bg-secondary
-  padding 1rem
+
+  li
+    list-style-type none
+
   a
     color $color-text-secondary
+
+  .logo,
   .nav-links
-  .logo
     display inline-block
     a
+      display block
+      padding $gutter-primary
       color $color-logo
+
+  .logo
+    vertical-align middle
+    h1
+      margin 0
+    a
+      opacity 0.8
+      text-shadow $shadow-heading-primary
+
+      &:hover,
+      &:focus
+        opacity 1
+
+  .nav-links
+    vertical-align top
+    a
+      padding 1.455em $gutter-primary
+      opacity 0.4
+      font-size 1.35em
