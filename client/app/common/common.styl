@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Belleza);
+
 $color-logo = #CBCBCB;
 
 $color-bg-primary = #121212
+$color-heading-primary = #B5B5CD
 $color-text-primary = #767676
 $color-highlight-primary = #B0B0B0
 
@@ -10,7 +13,9 @@ $color-highlight-secondary = #767676
 
 $color-text-tertiary = #313131
 
-
+$button-spacing-vertical =  0.5em
+$button-spacing-horizontal =  1.3em
+$button-spacing = $button-spacing-vertical $button-spacing-horizontal
 
 
 
@@ -18,12 +23,14 @@ body
   background:$color-bg-primary;
   color:$color-text-primary;
   height 100%
-  font 75% 'Roboto', sans-serif
+  font 75% 'Belleza', sans-serif
 
 img
   max-width 100%
 
 blockquote
+  font-size 1.6em
+  font-style italic
   color $color-highlight-primary
 
 h3
@@ -32,9 +39,24 @@ h3
 h4
   font-size 2.3em
 
-ul
+a
+  text-decoration none
+  color:$color-text-primary;
+
+ul,
+ol,
+dl
   margin 0
   padding 0
+
+
+button,
+.button
+  padding $button-spacing
+  background $color-bg-secondary
+  color $color-logo
+  font-size 1.6em
+
 
 
 fr-header,
