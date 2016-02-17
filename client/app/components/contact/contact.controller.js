@@ -1,6 +1,11 @@
 class ContactController {
   constructor() {
-    this.name = 'contact';
+
+    this.sendMail = (user) => {
+      console.log('sendMail...')
+    }
+
+
   }
 }
 

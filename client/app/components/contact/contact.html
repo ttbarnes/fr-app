@@ -1,5 +1,30 @@
 <section class="contact">
 
+  <div class="col-50">
 
+    <form name="form">
+
+      <div class="row">
+        <input type="text" ng-model="user.name" placeholder="Name"/>
+      </div>
+
+      <div class="row">
+        <input type="email" ng-model="user.email" placeholder="Email"/>
+      </div>
+
+      <div class="row">
+        <textarea ng-model="user.message"
+                  placeholder="Message"
+                  rows="4">
+        </textarea>
+      </div>
+
+      <input type="submit"
+             ng-click="vm.sendMail(user)"
+             value="Send email"/>
+
+    </form>
+
+  </div>
 
 </section>

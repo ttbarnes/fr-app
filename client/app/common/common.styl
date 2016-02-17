@@ -69,6 +69,15 @@ dl
 
 
 button,
+.button,
+input[type="submit"],
+textarea
+  border 0 none
+  appearance none
+  -webkit-appearance none
+  -moz-appearance none
+
+button,
 .button
   padding $button-spacing
   background $color-bg-secondary
@@ -76,6 +85,19 @@ button,
   font-size 1.6em
 
 
+input,
+textarea
+  border solid 1px $color-bg-secondary
+  background #161616
+  width 100%
+  padding 1.084em
+  :focus
+    outline 0 none
+    border-color $color-bg-tertiary
+
+
+.row
+  margin-bottom 1.4em
 
 fr-header,
 fr-footer

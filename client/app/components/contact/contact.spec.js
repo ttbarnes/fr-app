@@ -14,17 +14,14 @@ describe('Contact', () => {
     };
   }));
 
-  // describe('Module', () => {
-  // });
+  // describe('Module', () => { });
 
   describe('Controller', () => {
+    it('should have a sendMail function', () => {
+      let controller = makeController()
+      expect(controller.sendMail).to.exist
+    })
 
-  });
-
-  describe('Template', () => {
-    it('has name in template [REMOVE]', () => {
-      expect(ContactTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
   });
 
   describe('Component', () => {
