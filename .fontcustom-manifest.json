@@ -1,0 +1,70 @@
+{
+  "checksum": {
+    "previous": "b399e78b17508ab0889c06e0f72f255eaa983caa20b8e0d796ac8f65758c0e53",
+    "current": "b399e78b17508ab0889c06e0f72f255eaa983caa20b8e0d796ac8f65758c0e53"
+  },
+  "fonts": [
+    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.ttf",
+    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.svg",
+    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.woff",
+    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.eot"
+  ],
+  "glyphs": {
+    "button-amazon": {
+      "codepoint": 61696,
+      "source": "client/icons/button-amazon.svg"
+    },
+    "button-google": {
+      "codepoint": 61697,
+      "source": "client/icons/button-google.svg"
+    },
+    "button-itunes": {
+      "codepoint": 61698,
+      "source": "client/icons/button-itunes.svg"
+    },
+    "facebook": {
+      "codepoint": 61699,
+      "source": "client/icons/facebook.svg"
+    },
+    "soundcloud": {
+      "codepoint": 61700,
+      "source": "client/icons/soundcloud.svg"
+    },
+    "twitter": {
+      "codepoint": 61701,
+      "source": "client/icons/twitter.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "client/icons",
+      "vectors": "client/icons"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "client/fonts",
+      "fonts": "client/fonts",
+      "preview": "client/fonts"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "client/fonts/fontcustom.css",
+    "client/fonts/fontcustom-preview.html"
+  ]
+}
