@@ -45,7 +45,8 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "icons": "fontcustom compile"
   },
   "keywords": [
     "angular",
