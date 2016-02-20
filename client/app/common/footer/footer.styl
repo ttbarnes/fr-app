@@ -12,10 +12,34 @@ footer
   li
     font-size 1.5em
 
+    i
+      color #FFF
+      padding 3.5px 5px
+      border-radius 50%
+      font-size 1em
+      margin-right 0.55em
+
+      &.icon-soundcloud
+        font-size 1.1em
+        margin-right 0.45em
+        background #E17842
+
+      &.icon-twitter
+        padding-top 5px
+        padding-bottom 2px
+        background #1EBCED
+
+      &.icon-facebook
+        background #3A5bA2
+
+
   a
-    color $color-highlight-secondary
+    color #FFF
 
   .nav-links
     a
       display inline-block
       padding 0.2em 1em //extra side padding (instead of $gutter-primary) due to font-sizes
+      opacity 0.4
+      &:hover
+        opacity 1
