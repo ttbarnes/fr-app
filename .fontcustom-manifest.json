@@ -1,30 +1,34 @@
 {
   "checksum": {
-    "previous": "b399e78b17508ab0889c06e0f72f255eaa983caa20b8e0d796ac8f65758c0e53",
-    "current": "b399e78b17508ab0889c06e0f72f255eaa983caa20b8e0d796ac8f65758c0e53"
+    "previous": "d2aaabec170a03765d6781ee9ad695b1513cd56c5bee4c1cd1704129ce814c47",
+    "current": "d2aaabec170a03765d6781ee9ad695b1513cd56c5bee4c1cd1704129ce814c47"
   },
   "fonts": [
-    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.ttf",
-    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.svg",
-    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.woff",
-    "client/fonts/fontcustom_b399e78b17508ab0889c06e0f72f255e.eot"
+    "client/fonts/fontcustom_d2aaabec170a03765d6781ee9ad695b1.ttf",
+    "client/fonts/fontcustom_d2aaabec170a03765d6781ee9ad695b1.svg",
+    "client/fonts/fontcustom_d2aaabec170a03765d6781ee9ad695b1.woff",
+    "client/fonts/fontcustom_d2aaabec170a03765d6781ee9ad695b1.eot"
   ],
   "glyphs": {
-    "button-amazon": {
-      "codepoint": 61696,
-      "source": "client/icons/button-amazon.svg"
-    },
-    "button-google": {
-      "codepoint": 61697,
-      "source": "client/icons/button-google.svg"
-    },
-    "button-itunes": {
-      "codepoint": 61698,
-      "source": "client/icons/button-itunes.svg"
-    },
     "facebook": {
       "codepoint": 61699,
       "source": "client/icons/facebook.svg"
+    },
+    "next": {
+      "codepoint": 61702,
+      "source": "client/icons/next.svg"
+    },
+    "pause": {
+      "codepoint": 61703,
+      "source": "client/icons/pause.svg"
+    },
+    "play": {
+      "codepoint": 61704,
+      "source": "client/icons/play.svg"
+    },
+    "previous": {
+      "codepoint": 61705,
+      "source": "client/icons/previous.svg"
     },
     "soundcloud": {
       "codepoint": 61700,

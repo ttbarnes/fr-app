@@ -1,3 +1,5 @@
+@import '../../common'
+
 .discography
 
   //hero
@@ -17,3 +19,67 @@
       &:hover,
       &:focus
         opacity 1
+
+
+
+.plangular
+  background #000
+  padding $gutter-primary-lg
+
+  nav
+
+    button
+      padding-right 0.6em
+      padding-left 0.6em
+      background none
+      i
+        font-size 1.9em
+
+      &.previous
+      &.next
+        text-align right
+        padding-right 0
+
+      &.previous
+        transform rotate(180deg)
+
+      &.play-pause
+        i
+          margin-left 4px
+
+  .current-time
+    min-height 17px
+    margin 0
+    padding-bottom 3px
+
+    span
+      display block
+
+  .progress-wrap
+    padding-left $gutter-primary-x-lg
+
+  .progress
+    display block
+    width 100%
+    background-color #1A1A1A
+    color #2C2C2C
+    border 0
+    border-radius 10000px
+    overflow hidden
+    -webkit-appearance none
+    cursor pointer
+
+  .progress::-webkit-progress-bar
+    -webkit-appearance none
+    background-color #1A1A1A
+
+  .progress::-webkit-progress-value
+    -webkit-appearance none
+    background-color currentColor
+
+  .progress::-moz-progress-bar
+    background-color currentColor
+
+  ul
+    padding-top 1.4em
+

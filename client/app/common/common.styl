@@ -10,6 +10,8 @@ $color-text-primary = #767676
 $color-highlight-primary = #B0B0B0
 
 $gutter-primary = 0.5856em
+$gutter-primary-lg = $gutter-primary * 2
+$gutter-primary-x-lg = $gutter-primary-lg * 2
 
 $color-bg-secondary = #282828
 $color-text-secondary = #717171
@@ -39,7 +41,7 @@ img
   max-width 100%
 
 blockquote
-  margin $gutter-primary * 2 0
+  margin $gutter-primary-lg 0
   padding $gutter-primary
   font-size 1.6em
   font-style italic
@@ -87,6 +89,9 @@ dl
   margin 0
   padding 0
 
+li
+dl
+  list-style-type none
 
 button,
 .button,
@@ -119,6 +124,12 @@ textarea
 .row
   margin-bottom 1.4em
 
+.align-right
+  text-align right
+
+.align-left
+  text-align left
+
 fr-header,
 fr-footer
   display block
@@ -134,7 +145,32 @@ fr-footer,
   margin-top $header-height
   min-height 520px
 
+.col-1-3rd
+  @media screen and (min-width: 600px)
+    float left
+    width 33.3%
+
+.col-20
+  @media screen and (min-width: 600px)
+    float left
+    width 20%
+
+.col-30
+  @media screen and (min-width: 600px)
+    float left
+    width 30%
+
 .col-50
   @media screen and (min-width: 600px)
     float left
     width 50%
+
+.col-70
+  @media screen and (min-width: 600px)
+    float left
+    width 70%
+
+.col-80
+  @media screen and (min-width: 600px)
+    float left
+    width 80%
