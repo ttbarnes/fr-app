@@ -24,7 +24,10 @@ $button-spacing-vertical =  0.5em
 $button-spacing-horizontal =  1.3em
 $button-spacing = $button-spacing-vertical $button-spacing-horizontal
 
+$header-height = 66px
 
+*
+  box-sizing border-box
 
 body
   background:$color-bg-primary;
@@ -36,9 +39,25 @@ img
   max-width 100%
 
 blockquote
+  margin $gutter-primary * 2 0
+  padding $gutter-primary
   font-size 1.6em
   font-style italic
   color $color-highlight-primary
+  line-height 1.5em
+  &::before,
+  &::after
+    display inline-block
+    vertical-align bottom
+    color #424242
+    font-size 4em
+  &::before
+    content "\201C"
+    margin-bottom -0.1em
+    margin-right 0.25em
+  &::after
+    content " \201D"
+    margin-bottom -0.3em
 
 h1,
 h2,
@@ -105,10 +124,15 @@ fr-footer
   display block
 
 fr-header,
+.ui-view-wrap
 fr-footer,
 .row
   clear both
   width 100%
+
+.ui-view-wrap
+  margin-top $header-height
+  min-height 520px
 
 .col-50
   @media screen and (min-width: 600px)

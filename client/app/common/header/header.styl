@@ -1,39 +1,44 @@
 @import '../common'
 
-nav
+fr-header
+  position fixed
+  top 0
+  z-index 3
   background-color $color-bg-secondary
-  margin-bottom 1.4em
+  border-bottom solid 3px $color-bg-primary
 
-  li
-    display inline-block
-    list-style-type none
+  nav
 
-  a
-    color $color-text-secondary
+    li
+      display inline-block
+      list-style-type none
 
-  .logo,
-  .nav-links
-    display inline-block
     a
-      display block
-      padding $gutter-primary
-      color $color-logo
+      color $color-text-secondary
 
-  .logo
-    vertical-align middle
-    h1
-      margin 0
-    a
-      opacity 0.8
-      text-shadow $shadow-heading-primary
+    .logo,
+    .nav-links
+      display inline-block
+      a
+        display block
+        padding $gutter-primary
+        color $color-logo
 
-      &:hover,
-      &:focus
-        opacity 1
+    .logo
+      vertical-align middle
+      h1
+        margin 0
+      a
+        opacity 0.8
+        text-shadow $shadow-heading-primary
 
-  .nav-links
-    vertical-align top
-    a
-      padding 1.455em $gutter-primary
-      opacity 0.4
-      font-size 1.35em
+        &:hover,
+        &:focus
+          opacity 1
+
+    .nav-links
+      vertical-align top
+      a
+        padding 1.455em $gutter-primary
+        opacity 0.4
+        font-size 1.35em
