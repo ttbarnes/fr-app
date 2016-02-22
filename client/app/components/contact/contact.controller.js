@@ -1,10 +1,14 @@
+import emailService from '../../services/email.service';
+
 class ContactController {
-  constructor() {
+  constructor(emailService) {
+    "ngInject";
+
+    this.emailService = emailService
 
     this.sendMail = (user) => {
-      console.log('sendMail...')
+      return this.emailService.send(user)
     }
-
 
   }
 }

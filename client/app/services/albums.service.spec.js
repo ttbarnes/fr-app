@@ -1,6 +1,6 @@
 import albumsService from './albums.service';
 
-describe('AlbumsService', () => {
+describe('albumsService', () => {
 
   var MockAlbumsService;
 
