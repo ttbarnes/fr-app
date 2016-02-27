@@ -1,5 +1,4 @@
 import ErrorModule from './error'
-import ErrorController from './error.controller';
 import ErrorComponent from './error.component';
 import ErrorTemplate from './error.html';
 

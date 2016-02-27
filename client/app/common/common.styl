@@ -21,10 +21,14 @@ $color-bg-tertiary = #1B1B1B
 $color-text-tertiary = #313131
 
 $font-size-h1 =  2.35em
+$font-size-h3 =  1.7em
+
 
 $button-spacing-vertical =  0.5em
 $button-spacing-horizontal =  1.3em
 $button-spacing = $button-spacing-vertical $button-spacing-horizontal
+
+$color-box-bg = #161616
 
 $header-height = 66px
 
@@ -74,10 +78,13 @@ h1
   font-size $font-size-h1 !important
 
 h3
-  font-size 1.7em
+  font-size $font-size-h3
 
 h4
   font-size 2.3em
+
+.font-size-large
+  font-size $font-size-h3
 
 a
   text-decoration none
@@ -113,13 +120,17 @@ button,
 input,
 textarea
   border solid 1px $color-bg-secondary
-  background #161616
+  background $color-box-bg
   width 100%
   padding 1.084em
   :focus
     outline 0 none
     border-color $color-bg-tertiary
 
+
+section
+  padding $gutter-primary-lg
+  padding-top 3em
 
 .row
   margin-bottom 1.4em
@@ -129,6 +140,9 @@ textarea
 
 .align-left
   text-align left
+
+.align-center
+  text-align center
 
 fr-header,
 fr-footer
@@ -174,3 +188,15 @@ fr-footer,
   @media screen and (min-width: 600px)
     float left
     width 80%
+
+
+
+
+.margin-auto
+  margin 0 auto
+
+.cancel-float
+  float none
+
+.cancel-padding
+  padding 0
