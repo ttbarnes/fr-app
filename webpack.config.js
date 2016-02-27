@@ -1,6 +1,7 @@
 var path    = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var poststylus = require('poststylus');
 
 module.exports = {
   devtool: 'sourcemap',
@@ -10,8 +11,13 @@ module.exports = {
        { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
        { test: /\.json$/, loader: 'json' },
        { test: /\.html$/, loader: 'raw' },
-       { test: /\.styl$/, loader: 'style!css!stylus' },
+       { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
        { test: /\.css$/, loader: 'style!css' }
+    ]
+  },
+  stylus: {
+    use: [
+      poststylus([ 'autoprefixer', 'rucksack-css' ])
     ]
   },
   plugins: [
