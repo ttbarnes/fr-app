@@ -1,6 +1,10 @@
+import albumsService from '../../services/albums.service';
+
 class HomeController {
-  constructor() {
-    this.name = 'home';
+  constructor(albumsService) {
+    "ngInject"
+    this.albumsService = albumsService
+    this.albums = albumsService.allAlbums
   }
 }
 
