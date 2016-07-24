@@ -4,20 +4,52 @@
   position relative
 
   h2
-    font-size 3.4em
+    font-size 2.4em
     font-weight normal
     color $color-heading-primary
     text-shadow $shadow-heading-primary
+    text-align center
+    @media (min-width $bp-xs + 60px)
+      font-size 2.6em
+      text-align left
+    @media (min-width $bp-sm)
+      font-size 3em
+    @media (min-width $bp-md)
+      font-size 3.4em
 
   li
     float left
-    margin-right $button-spacing-horizontal
+    width 48%
+    @media (min-width $bp-xs)
+      width auto
+      margin-right $button-spacing-horizontal
+    &:first-child
+      margin-right 2%
+      @media (min-width $bp-xs)
+        margin-right $button-spacing-horizontal
+    &:last-child
+      margin-left 2%
+      @media (min-width $bp-xs)
+        margin-left 0
+
+  .button
+    width 100%
+    text-align center
+    @media (min-width $bp-xs)
+      width auto
 
   .copy-content
-    position absolute
-    bottom 30%
-    left $gutter-primary
-    padding $gutter-primary
+    padding $gutter-primary-lg
+    @media (min-width $bp-xs)
+      position absolute
+      bottom 15%
+      left $gutter-primary
+    @media (min-width $bp-xs + 60px)
+      bottom 23%
+    @media (min-width $bp-md)
+      padding $gutter-primary-x-lg
+    @media (min-width $bp-lg)
+      bottom 30%
 
   img
     width 100%

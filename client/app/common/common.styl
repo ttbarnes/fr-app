@@ -1,6 +1,11 @@
 @import '/fonts/fontcustom.css'
 @import url(https://fonts.googleapis.com/css?family=Belleza);
 
+$bp-xs = 450px
+$bp-sm = 600px
+$bp-md = 768px
+$bp-lg = 1000px
+
 $color-logo = #CBCBCB;
 
 $color-bg-primary = #121212
@@ -42,29 +47,45 @@ body
   height 100%
   font 75% 'Belleza', sans-serif
 
+.container
+  max-width 1200px
+  margin 0 auto
+
 img
   max-width 100%
 
 blockquote
+  clear both
   margin $gutter-primary-lg 0
-  padding $gutter-primary
-  font-size 1.6em
+  padding $gutter-primary-x-lg $gutter-primary-lg
+  font-size 1.4em
   font-style italic
   color $color-highlight-primary
   line-height 1.5em
-  &::before,
-  &::after
+  text-align center
+  @media (min-width $bp-sm)
+    font-size 1.6em
+  span
     display inline-block
-    vertical-align bottom
-    color #424242
-    font-size 4em
-  &::before
-    content "\201C"
-    margin-bottom -0.1em
-    margin-right 0.25em
-  &::after
-    content " \201D"
-    margin-bottom -0.3em
+    &.copy
+      width 86%
+      vertical-align baseline
+    &.quote
+      color #424242
+      font-size 5em
+      &:first-child
+        vertical-align top
+        margin-bottom -0.1em
+        margin-left -0.45em
+        @media (min-width $bp-sm)
+          margin-left 0
+      &:last-child
+        display none
+        vertical-align bottom
+        margin-bottom -0.3em
+        @media (min-width $bp-sm)
+          display inline-block
+          margin-left -0.2em
 
 h1,
 h2,
@@ -112,6 +133,7 @@ textarea
 
 button,
 .button
+  display block
   padding $button-spacing
   background $color-bg-secondary
   color $color-logo
@@ -177,6 +199,11 @@ fr-footer,
 
 .col-50
   @media screen and (min-width: 600px)
+    float left
+    width 50%
+
+.col-50-md
+  @media screen and (min-width: $bp-md)
     float left
     width 50%
 

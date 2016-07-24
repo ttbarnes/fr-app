@@ -11,12 +11,15 @@
 
   </hero>
 
-  <blockquote>Fiona’s angelic voice is nothing short of an inspiration. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi  beatae vitae!</blockquote>
+  <blockquote><span class="quote">&ldquo;</span>
+      <span class="copy">Fiona’s angelic voice is nothing short of an inspiration. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi  beatae vitae!</span>
+      <span class="quote">&rdquo;</span>
+  </blockquote>
 
   <div class="albums">
     <ul>
       <li ng-repeat="album in vm.albums"
-          class="col-50">
+          class="col-50-md">
         <img ng-src="{{album.images.cover}}" alt="{{album.name}} cover"/>
       </li>
     </ul>
