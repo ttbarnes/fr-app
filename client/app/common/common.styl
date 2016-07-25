@@ -26,6 +26,9 @@ $color-highlight-secondary = #767676
 $color-bg-tertiary = #1B1B1B
 $color-text-tertiary = #313131
 
+$color-red = #6A2A30;
+$color-green = #2A6A3C;
+
 $font-size-h1 =  2.35em
 $font-size-h3 =  1.7em
 
@@ -33,6 +36,9 @@ $font-size-h3 =  1.7em
 $button-spacing-vertical =  0.5em
 $button-spacing-horizontal =  1.3em
 $button-spacing = $button-spacing-vertical $button-spacing-horizontal
+
+$button-spacing-lg-vertical = $button-spacing-vertical * 4
+$button-spacing-lg-horizontal = $button-spacing-horizontal
 
 $color-box-bg = #161616
 
@@ -132,12 +138,24 @@ textarea
   -moz-appearance none
 
 button,
-.button
+.button,
+.button-lg
+  opacity 1
   display block
-  padding $button-spacing
   background $color-bg-secondary
   color $color-logo
+
+button,
+.button
+  padding $button-spacing
   font-size 1.6em
+
+.button-lg
+  padding $button-spacing-lg-vertical $button-spacing-lg-horizontal
+
+.button[disabled],
+.button-lg[disabled]
+  opacity 0.6
 
 
 input,
@@ -151,12 +169,15 @@ textarea
     border-color $color-bg-tertiary
 
 
+textarea
+  max-width 100%
+
 section
   padding $gutter-primary-lg
   padding-top 3em
 
 .row
-  margin-bottom 1.4em
+  margin-bottom $gutter-primary-lg + $gutter-primary
 
 .align-right
   text-align right
@@ -228,3 +249,34 @@ fr-footer,
 
 .cancel-padding
   padding 0
+
+
+
+
+
+
+.icon-cross,
+.icon-tick
+  display inline-block
+  vertical-align baseline
+  padding 0.25em
+  margin-right $gutter-primary
+  border-radius 50%
+
+.icon-cross
+  background $color-bg-primary
+  color $color-highlight-primary
+
+.icon-tick
+  background $color-green
+  color $color-highlight-primary
+
+
+
+
+.has-error
+  border solid 2px red
+
+
+.sr-only
+  display none

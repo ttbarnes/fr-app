@@ -1,29 +1,54 @@
 <section class="contact">
 
-  <div class="col-50">
+  <div class="col-50-md">
 
-    <form name="form">
+    <form name="contactForm" ng-submit="submitForm()" ng-hide="vm.messages.success" novalidate>
 
-      <div class="row">
-        <input type="text" ng-model="user.name" placeholder="Name"/>
+      <div class="row" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" name="name" class="form-control" ng-model="user.name" placeholder="Name" required>
+        <p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="error">Name is required</p>
       </div>
 
-      <div class="row">
-        <input type="email" ng-model="user.email" placeholder="Email"/>
+      <div class="row" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine || contactForm.email.$dirty && !user.email}">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Email">
+        <p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="error">Invalid email</p>
+        <p ng-show="contactForm.email.$dirty && !user.email" class="error">Email is required</p>
       </div>
 
-      <div class="row">
+      <div class="row" ng-class="{ 'has-error' : contactForm.message.$dirty && !user.message.length}">
+        <label for="message" class="sr-only">Message</label>
         <textarea ng-model="user.message"
+                  name="message"
                   placeholder="Message"
                   rows="4">
         </textarea>
+        <p ng-show="contactForm.message.$dirty && !user.message.length" class="error">Please enter a message</p>
       </div>
 
+      <p ng-show="vm.messages.error" class="error"><i class="icon-cross"></i>Sorry, something has gone wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
+
       <input type="submit"
+             class="button-lg"
              ng-click="vm.sendMail(user)"
-             value="Send email"/>
+             value="Send email"
+             ng-disabled="contactForm.$pristine ||
+                          contactForm.name.$invalid ||
+                          !user.name ||
+                          contactForm.email.$invalid ||
+                          !user.email ||
+                          contactForm.message.$invalid ||
+                          !user.message" />
 
     </form>
+
+    <div class="contact-success">
+        <p ng-show="vm.messages.success" class="success">
+          <span class="row"><i class="icon-tick"></i>Thanks! </span>
+          <span class="row">Your enquiry has been successfully sent.</span>
+        </p>
+    </div>
 
   </div>
 
