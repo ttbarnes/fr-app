@@ -1,14 +1,15 @@
+require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var router = express.Router();
 var app = express();
 var methodOverride = require('method-override');
 var nodemailer = require('nodemailer');
-var port = process.env.PORT || 2000;
+var port = process.env.SERVER_HOST_PORT || 2000;
 
 app.use(function (req, res, next){
 
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); //allow client server access
+  res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_HOST_PORT); //allow client server access
   res.setHeader('Access-Control-Allow-Headers', 'content-type');
   res.header('Access-Control-Allow-Methods', 'POST');
   methodOverride('X-HTTP-Method-Override')
@@ -18,7 +19,7 @@ app.use(function (req, res, next){
 });
 
 //create reusable transporter object using the default SMTP transport
-var transporter = nodemailer.createTransport('smtps://tonybarnes1408%40gmail.com:u46wnyUmaEs4hNT@smtp.gmail.com');
+var transporter = nodemailer.createTransport(process.env.NODE_MAILER_SMTP);
 
 app.post('/api/postEmail', bodyParser.json(), function (req, res) {
 
