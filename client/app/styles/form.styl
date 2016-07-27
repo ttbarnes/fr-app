@@ -1,0 +1,33 @@
+@import 'variables'
+
+input,
+textarea
+  border solid 1px $color-bg-secondary
+  background $color-box-bg
+  width 100%
+  padding $gutter-primary-lg
+  transition all 0.1s ease
+  &:focus
+    outline 0 none
+    border-color #525252
+    color $color-highlight-primary
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+  color $color-text-primary
+
+input:-moz-placeholder,
+textarea:-moz-placeholder
+  color $color-text-primary
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+  color $color-text-primary
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+  color $color-text-primary
+
+textarea
+  max-width 100%
+  max-height 250px !important

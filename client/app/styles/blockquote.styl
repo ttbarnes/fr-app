@@ -1,0 +1,34 @@
+@import 'variables'
+
+blockquote
+  clear both
+  margin $gutter-primary-lg 0
+  padding $gutter-primary-x-lg $gutter-primary-lg
+  font-size 1.4em
+  font-style italic
+  color $color-highlight-primary
+  line-height 1.5em
+  text-align center
+  @media (min-width $bp-sm)
+    font-size 1.6em
+  span
+    display inline-block
+    &.copy
+      width 86%
+      vertical-align baseline
+    &.quote
+      color #424242
+      font-size 5em
+      &:first-child
+        vertical-align top
+        margin-bottom -0.1em
+        margin-left -0.45em
+        @media (min-width $bp-sm)
+          margin-left 0
+      &:last-child
+        display none
+        vertical-align bottom
+        margin-bottom -0.3em
+        @media (min-width $bp-sm)
+          display inline-block
+          margin-left -0.2em

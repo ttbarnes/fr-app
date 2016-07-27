@@ -1,0 +1,35 @@
+@import 'variables'
+
+button,
+.button,
+input[type="submit"],
+textarea
+  border 0 none
+  appearance none
+  -webkit-appearance none
+  -moz-appearance none
+
+button,
+.button,
+.button-lg,
+input[type="submit"]
+  width 100%
+  opacity 1
+  display block
+  background $color-bg-secondary
+  color $color-logo
+  transition all 0.1s ease
+  &:focus
+    outline 0 none
+
+button,
+.button
+  padding $button-spacing
+  font-size 1.6em
+
+.button-lg
+  padding $button-spacing-lg-vertical $button-spacing-lg-horizontal
+
+.button[disabled],
+.button-lg[disabled]
+  opacity 0.6
