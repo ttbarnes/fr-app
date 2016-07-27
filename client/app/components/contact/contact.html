@@ -39,25 +39,27 @@
     </div>
 
     <div class="row" ng-show="vm.messages.error">
-      <div class="col-12-md">
+      <div class="col-60-md">
         <p class="submit-error error"><i class="icon-cross"></i>Sorry, something has gone wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-60-md">
-        <input type="submit"
-           class="button-lg"
-           ng-click="vm.sendMail(user)"
-           value="Send email"
-           ng-disabled="contactForm.$pristine ||
-                        contactForm.name.$invalid ||
-                        !user.name ||
-                        contactForm.email.$invalid ||
-                        !user.email ||
-                        contactForm.message.$invalid ||
-                        !user.message" />
-
+        <button class="button-lg"
+                ng-click="vm.sendMail(user)"
+                value="Send email"
+                ng-disabled="contactForm.$pristine ||
+                             contactForm.name.$invalid ||
+                             !user.name ||
+                             contactForm.email.$invalid ||
+                             !user.email ||
+                             contactForm.message.$invalid ||
+                             !user.message">
+                             <div ng-show="vm.messages.promiseLoading" class="loader"></div>
+                             <span ng-hide="vm.messages.promiseLoading">Send</span>
+                             <span ng-show="vm.messages.promiseLoading">Sending</span> email
+        </button>
       </div>
     </div>
   </form>

@@ -1,7 +1,7 @@
 import emailService from '../../services/email.service';
 
 class ContactController {
-  constructor(emailService, $scope) {
+  constructor(emailService, $scope, $timeout) {
     "ngInject";
 
     this.emailService = emailService
@@ -13,12 +13,17 @@ class ContactController {
     };
 
     this.sendMail = (user) => {
+      this.messages.error = false;
+      this.messages.promiseLoading = true;
       return this.emailService.send(user).then(() => {
+        this.$scope.vm.messages.promiseLoading = false;
         this.$scope.vm.messages.error = false;
         this.$scope.vm.messages.success = true;
       }, (err) => {
+        this.$scope.vm.messages.promiseLoading = false;
         this.$scope.vm.messages.error = true;
       });
+
     };
 
 

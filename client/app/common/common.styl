@@ -143,12 +143,16 @@ textarea
 
 button,
 .button,
-.button-lg
+.button-lg,
+input[type="submit"]
+  width 100%
   opacity 1
   display block
   background $color-bg-secondary
   color $color-logo
   transition all 0.1s ease
+  &:focus
+    outline 0 none
 
 button,
 .button
@@ -320,7 +324,6 @@ fr-footer,
 
 
 
-
 .icon-cross,
 .icon-tick
   display inline-block
@@ -341,3 +344,5 @@ fr-footer,
 
 .sr-only
   display none
+
+

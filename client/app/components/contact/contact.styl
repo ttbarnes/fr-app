@@ -25,6 +25,7 @@
       border-color $color-red
 
   .submit-error
+    width 100%
     padding $gutter-primary-lg
     background $color-red
     color $color-highlight-primary
@@ -35,6 +36,14 @@
       &:hover,
       &:focus
         text-decoration none
+
+  button
+    position relative
+
+    .loader
+      position absolute
+      top 1.8em
+      left $button-spacing-lg-horizontal
 
 .contact-success
 
