@@ -11,7 +11,32 @@
   height 100%
 
 [ui-view]
-  min-height 520px
   padding-top $header-height-mobile
+  height 100%
   @media (min-width $bp-md)
     padding-top $header-height-desktop
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+@-moz-keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+@-o-keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+.container
+  &.ng-enter
+    animation 0.5s fadeIn
