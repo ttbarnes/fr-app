@@ -193,6 +193,7 @@ textarea:-ms-input-placeholder
 
 textarea
   max-width 100%
+  max-height 250px !important
 
 section
   padding $gutter-primary-lg
@@ -296,8 +297,15 @@ fr-footer,
     float left
     width 80%
 
+.col-12
+  @media screen and (min-width: 600px)
+    float left
+    width 80%
 
-
+.col-12-md
+  @media screen and (min-width: $bp-md)
+    float left
+    width 100%
 
 .margin-auto
   margin 0 auto

@@ -38,7 +38,11 @@
       </div>
     </div>
 
-    <p ng-show="vm.messages.error" class="error"><i class="icon-cross"></i>Sorry, something has gone wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
+    <div class="row" ng-show="vm.messages.error">
+      <div class="col-12-md">
+        <p class="submit-error error"><i class="icon-cross"></i>Sorry, something has gone wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-60-md">
@@ -55,10 +59,11 @@
                         !user.message" />
 
       </div>
+    </div>
   </form>
 
-  <div class="contact-success">
-      <p ng-show="vm.messages.success" class="success">
+  <div ng-show="vm.messages.success" class="contact-success">
+      <p class="success">
         <span class="row"><i class="icon-tick"></i>Thanks! </span>
         <span class="row">Your enquiry has been successfully sent.</span>
       </p>

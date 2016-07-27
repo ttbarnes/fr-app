@@ -5,11 +5,11 @@
   .row
     margin-bottom $gutter-primary-lg + $gutter-primary
     > div
-      padding-right $gutter-primary-lg
+      @media screen and (min-width: $bp-md)
+        padding-right $gutter-primary-lg
 
   .error
     float left
-    padding $gutter-primary-lg
     padding $gutter-primary-lg
     padding-bottom 0
     @media screen and (min-width: $bp-md)
@@ -23,6 +23,18 @@
     input,
     textarea
       border-color $color-red
+
+  .submit-error
+    padding $gutter-primary-lg
+    background $color-red
+    color $color-highlight-primary
+    line-height 1.6em
+    a
+      color $color-highlight-primary
+      text-decoration underline
+      &:hover,
+      &:focus
+        text-decoration none
 
 .contact-success
 
