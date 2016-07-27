@@ -1,19 +1,28 @@
 @import '../../common'
 
 .contact
-  .error
-    display inline-block
-    vertical-align top
+
+  .row
     margin-bottom $gutter-primary-lg + $gutter-primary
-    padding $gutter-primary $gutter-primary-lg
-    background $color-red
-    color $color-highlight-primary
-    a
-      color $color-highlight-primary
-      text-decoration underline
-      &:hover,
-      &:focus
-        text-decoration none
+    > div
+      padding-right $gutter-primary-lg
+
+  .error
+    float left
+    padding $gutter-primary-lg
+    padding $gutter-primary-lg
+    padding-bottom 0
+    @media screen and (min-width: $bp-md)
+      padding-bottom $gutter-primary-lg
+
+    margin 0
+    color $color-red
+
+  .has-error
+    float left
+    input,
+    textarea
+      border-color $color-red
 
 .contact-success
 
