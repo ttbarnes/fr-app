@@ -12,4 +12,6 @@
 
 [ui-view]
   min-height 520px
-  padding-top $header-height
+  padding-top $header-height-mobile
+  @media (min-width $bp-md)
+    padding-top $header-height-desktop

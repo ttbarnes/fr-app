@@ -18,14 +18,22 @@ input[type="submit"]
   display block
   background $color-bg-secondary
   color $color-logo
-  transition all 0.1s ease
+  transition all 0.2s ease
   &:focus
     outline 0 none
+  @media (min-width $bp-md)
+    &:hover,
+    &:focus
+      background $color-logo
+      color $color-bg-secondary
+
 
 button,
 .button
   padding $button-spacing
-  font-size 1.6em
+  font-size 1.1em
+  @media (min-width $bp-sm)
+    font-size 1.4em
 
 .button-lg
   padding $button-spacing-lg-vertical $button-spacing-lg-horizontal

@@ -10,7 +10,9 @@ h6
   margin 0 0 0.5em 0
 
 h1
-  font-size $font-size-h1 !important
+  font-size $font-size-h1-mobile !important
+  @media (min-width $bp-md)
+    font-size $font-size-h1-desktop !important
 
 h3
   font-size $font-size-h3

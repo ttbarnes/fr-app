@@ -6,42 +6,66 @@ footer
   color $color-text-tertiary
 
   h4
+    font-size $font-size-h1
     padding 0 $gutter-primary
 
 
   li
-    font-size 1.5em
+    font-size 1.130em
 
     i
       display inline-block
-      vertical-align baseline
+      vertical-align middle
       color #FFF
-      padding 3.5px 5px
+      width 28px
+      height 28px
       border-radius 50%
       font-size 1em
+      margin-top -2px
       margin-right 0.55em
+      transition all 0.2s ease
 
       &.icon-soundcloud
         font-size 1.1em
         margin-right 0.45em
         background #E17842
+        &::before
+          margin-top 3px
+          margin-left 4px
 
       &.icon-twitter
         padding-top 5px
         padding-bottom 2px
         background #1EBCED
+        &::before
+          margin-top 1px
+          margin-left 5.5px
 
       &.icon-facebook
         background #3A5bA2
+        &::before
+          margin-top 4px
+          margin-left 5px
 
 
   a
+    width 100%
     color #FFF
+    transition all 0.3s ease
+    @media screen and (min-width: $bp-md)
+      width auto
 
   .nav-links
     a
       display inline-block
       padding $gutter-primary $gutter-primary-lg
       opacity 0.4
-      &:hover
-        opacity 1
+      &:hover,
+      &:focus
+        outline 0 none
+      @media screen and (min-width: $bp-md)
+        &:hover,
+        &:focus
+          opacity 1
+          i
+            transform rotate(360deg)
