@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "c7bdc64db9c9a3878e230d17c8e2680cc1ac4ddc7c53f11aa3bc619a327ec65f",
-    "current": "c7bdc64db9c9a3878e230d17c8e2680cc1ac4ddc7c53f11aa3bc619a327ec65f"
+    "previous": "a784750015ccf188439e6cb699a2477d79a6e3adaf4029135b4125777e7e27cc",
+    "current": "a784750015ccf188439e6cb699a2477d79a6e3adaf4029135b4125777e7e27cc"
   },
   "fonts": [
-    "client/fonts/fontcustom_c7bdc64db9c9a3878e230d17c8e2680c.ttf",
-    "client/fonts/fontcustom_c7bdc64db9c9a3878e230d17c8e2680c.svg",
-    "client/fonts/fontcustom_c7bdc64db9c9a3878e230d17c8e2680c.woff",
-    "client/fonts/fontcustom_c7bdc64db9c9a3878e230d17c8e2680c.eot"
+    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.ttf",
+    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.svg",
+    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.woff",
+    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.eot"
   ],
   "glyphs": {
     "cross": {
@@ -17,6 +17,10 @@
     "facebook": {
       "codepoint": 61699,
       "source": "client/icons/facebook.svg"
+    },
+    "nav": {
+      "codepoint": 61708,
+      "source": "client/icons/nav.svg"
     },
     "next": {
       "codepoint": 61702,

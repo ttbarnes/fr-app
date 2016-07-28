@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.5.5",
     "angular-animate": "^1.5.8",
+    "angular-pageslide-directive": "^2.0.1",
     "angular-ui-router": "^0.2.15",
     "lodash": "^3.8.0",
     "normalize.css": "^3.0.3"

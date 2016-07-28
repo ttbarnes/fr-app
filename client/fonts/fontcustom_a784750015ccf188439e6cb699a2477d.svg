@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2016-7-27: Created with FontForge (http://fontforge.org)
+2016-7-28: Created with FontForge (http://fontforge.org)
 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20150913 at Wed Jul 27 12:52:05 2016
+Created by FontForge 20150913 at Thu Jul 28 11:19:26 2016
  By tbMbook
 Copyright (c) 2016, tbMbook
 </metadata>
@@ -22,7 +22,7 @@ Copyright (c) 2016, tbMbook
     bbox="-0.0351562 -64 512 448"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+0020-F10B"
+    unicode-range="U+0020-F10C"
   />
     <missing-glyph />
     <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
@@ -43,6 +43,8 @@ l-20.0205 20.0244c-13.96 13.96 -14.0039 36.5557 -0.0722656 50.4912l88.9844 88.98
 c13.9199 13.9199 36.5312 13.8838 50.4873 -0.0761719l20.0244 -20.0195c13.9717 -13.9688 13.9961 -36.5723 0.0761719 -50.4922z" />
     <glyph glyph-name="uniF106" unicode="&#xf106;" 
 d="M0 -64v0v512l362.667 -256zM426.667 448v0h85.333v-512h-85.333v512z" />
+    <glyph glyph-name="uniF10C" unicode="&#xf10c;" 
+d="M96 175v32h320v-32h-320zM96 271v32h320v-32h-320zM96 79v32h320v-32h-320z" />
     <glyph glyph-name="uniF103" unicode="&#xf103;" 
 d="M192 277.333v72.2139c0 64.6826 34.0479 98.4531 110.763 98.4531h81.2373v-106.667h-61.5469c-19.6904 0 -23.7861 -8.06348 -23.7861 -28.4365v-35.5635h85.333l-7.6377 -85.333h-77.6953v-256h-106.667v256h-64v85.333h64z" />
     <glyph glyph-name="uniF10B" unicode="&#xf10b;" 

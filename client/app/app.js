@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
+import pageslide from 'angular-pageslide-directive';
 import Common from './common/common';
 import Components from './components/components';
 import Services from './services/services';
@@ -10,6 +11,7 @@ import 'normalize.css';
 angular.module('app', [
     uiRouter,
     ngAnimate,
+    'pageslide-directive',
     Common.name,
     Components.name,
     Services.name

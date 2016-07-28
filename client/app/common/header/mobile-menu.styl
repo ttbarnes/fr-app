@@ -1,0 +1,85 @@
+@import '../../styles/variables'
+
+.ng-pageslide
+    background #eee
+
+body.ng-pageslide-body-open::before
+  content ''
+  display block
+  position absolute
+  top 0
+  background-color rgb(0,0,0)
+  left 0
+  right 0
+  bottom 0
+  z-index 999
+  opacity 0.5
+  transition opacity 0.2s
+  opacity 0.5
+  pointer-events all
+  @media screen and (min-width: $bp-md)
+    display none
+
+body.ng-pageslide-body-closed::before
+  transition opacity 0.2s
+  content ''
+  display block
+  position absolute
+  top 0
+  background-color rgb(0,0,0)
+  left 0
+  right 0
+  bottom 0
+  z-index 1
+  opacity 0
+  pointer-events none
+  @media screen and (min-width: $bp-md)
+    display none
+
+.ng-pageslide
+  transition-duration 0.3s !important
+  border-right solid 10px $color-bg-primary
+  background $color-bg-primary
+  background -moz-linear-gradient(left,  $color-bg-primary 30%, $color-bg-secondary 100%)
+  background -webkit-linear-gradient(left,  $color-bg-primary 30%,$color-bg-secondary 100%)
+  background linear-gradient(to right,  $color-bg-primary 30%,$color-bg-secondary 100%)
+  @media screen and (min-width: $bp-md)
+    display none
+
+  .logo
+    font-size $font-size-h1-mobile
+    padding-top $gutter-primary
+    padding-right 15px
+    padding-bottom $gutter-primary
+    padding-left 15px
+    margin-bottom 0
+    color $color-text-primary
+
+  a
+    display block
+    width 100%
+    color $color-highlight-primary
+    padding $gutter-primary 15px
+
+.mobile-menu
+  position relative
+
+  .icon-cross
+    position absolute
+    top 0
+    right 0
+    padding 24px 23px 18px 23px
+    background none
+    color $color-text-primary
+    margin 0
+    border-radius 0
+    font-size 24px
+    padding 23px
+    cursor pointer
+
+body.ng-pageslide-body-open
+  &::before
+    .ng-pageslide
+      box-shadow 52px 0 112px $color-bg-primary
+      @media screen and (min-width: $bp-md)
+        box-shadow none

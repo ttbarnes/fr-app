@@ -1,4 +1,5 @@
-@import '../../styles/variables'
+@import '../../styles/variables';
+@import 'mobile-menu';
 
 fr-header
   position fixed
@@ -6,6 +7,26 @@ fr-header
   z-index 3
   background-color $color-bg-secondary
   border-bottom solid 3px $color-bg-primary
+
+  .icon-nav
+    float left
+    font-size 2em
+    padding 0.26em
+    padding-right 0
+    color $color-logo
+    max-width 33px
+    opacity 0.6
+    cursor pointer
+    transition all 0.3s ease
+    &.active
+      opactiy 0
+      transform rotate(450deg)
+      padding-left 0
+      padding-bottom 0.52em
+      padding-top 0
+
+    @media screen and (min-width: $bp-md)
+      display none
 
   nav
 
