@@ -1,12 +1,21 @@
 @import 'variables'
 
+
 .col-1-3rd
-  @media screen and (min-width: 600px)
+    float left
+    width 33.3%
+
+.col-1-3rd-md
+  @media screen and (min-width: $bp-md)
     float left
     width 33.3%
 
 .col-20
-  @media screen and (min-width: 600px)
+  float left
+  width 20%
+
+.col-20-md
+  @media screen and (min-width: $bp-md)
     float left
     width 20%
 
@@ -61,7 +70,6 @@
     width 70%
 
 .col-80
-  @media screen and (min-width: 600px)
     float left
     width 80%
 

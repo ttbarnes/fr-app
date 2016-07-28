@@ -2,22 +2,23 @@
 
 blockquote
   clear both
-  margin $gutter-primary-lg 0
-  padding $gutter-primary-x-lg $gutter-primary-lg
+  margin 0
   font-size 1.2em
   font-style italic
   color $color-highlight-primary
   line-height 1.5em
   text-align center
+  padding $gutter-primary-lg $gutter-primary-lg
   @media (min-width $bp-md)
     font-size 1.4em
+    padding $gutter-primary-x-lg $gutter-primary-lg
   span
     display inline-block
     &.copy
       width 86%
       vertical-align baseline
     &.quote
-      color #424242
+      color $color-blockquote
       font-size 5em
       &:first-child
         vertical-align top
@@ -32,3 +33,21 @@ blockquote
         @media (min-width $bp-sm)
           display inline-block
           margin-left -0.2em
+
+  &.album
+    text-align left
+    span.copy,
+    span.author
+      font-size 0.75em
+    span.quote
+      font-size 3em
+      &:first-child
+        margin-left -0.15em
+        margin-right 0.2em
+      &:last-child
+        margin-left 0.03em
+
+    span.author
+      display block
+      font-style normal
+      color $color-blockquote

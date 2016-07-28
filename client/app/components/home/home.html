@@ -1,22 +1,27 @@
 <section class="home cancel-padding">
 
-  <hero title="Singer, pianist, composer."
-        img-url="./images/home-hero.png"
-        img-alt="">
+  <div class="row">
+    <hero title="Singer, pianist, composer."
+          img-url="./images/home-hero.png"
+          img-alt="">
 
-    <ul>
-      <li><a ui-sref="discography" class="button">Listen</a></li>
-      <li><a ui-sref="discography" class="button">Read</a></li>
-    </ul>
+      <ul>
+        <li><a ui-sref="discography" class="button">Listen</a></li>
+        <li><a ui-sref="discography" class="button">Read</a></li>
+      </ul>
 
-  </hero>
+    </hero>
+  </div>
 
-  <blockquote><span class="quote">&ldquo;</span>
+  <div class="row">
+    <blockquote>
+      <span class="quote">&ldquo;</span>
       <span class="copy">Fiona’s angelic voice is nothing short of an inspiration. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi  beatae vitae!</span>
       <span class="quote">&rdquo;</span>
-  </blockquote>
+    </blockquote>
+  </div>
 
-  <div class="albums">
+  <div class="row albums">
     <ul>
       <li ng-repeat="album in vm.albums"
           class="col-50-md">

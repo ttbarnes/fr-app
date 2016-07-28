@@ -24,7 +24,7 @@
       <div class="col-50">
         <div plangular="http://soundcloud.com/fiona-ross/sets/selection-1" class="plangular">
           <nav>
-            <div class="col-20">
+            <div class="col-buttons">
               <button ng-click="previous()"
                       class="col-1-3rd previous">
                 <i class="icon-next"></i>
@@ -39,7 +39,7 @@
                 <i class="icon-next"></i>
               </button>
             </div>
-            <div class="col-80 progress-wrap">
+            <div class="col-progress">
               <p class="current-time align-right">
                 <span  ng-if="currentTime">{{ currentTime | hhmmss }}/{{ duration | hhmmss }}</span>
               </p>
@@ -52,7 +52,8 @@
           <ul class="row">
             <li ng-repeat="track in tracks"
                 ng-click="playPause($index)"
-                ng-class="{'active': player.playing === track.src}">
+                ng-class="{active: player.playing === track.src,
+                           last: $last}">
               <h3 class="col-80">{{track.title}}</h3>
               <p class="col-20 align-right">{{track.duration / 1000 | hhmmss }}</p>
             </li>
@@ -65,9 +66,10 @@
 
         <ul>
           <li ng-repeat="quote in album.quotes">
-            <blockquote>{{quote.copy}}</blockquote>
-            <br/>
-            <span>{{quote.author}}</span>
+            <blockquote class="album">
+              <span class="copy"><span class="quote">&ldquo;</span>{{quote.copy}}<span class="quote">&rdquo;</span></span>
+              <span class="author">{{quote.author}}</span>
+            </blockquote>
           </li>
         </ul>
 

@@ -9,7 +9,7 @@
     color $color-heading-primary
     text-shadow $shadow-heading-primary
     text-align center
-    @media (min-width $bp-xs + 60px)
+    @media (min-width $bp-xxs)
       font-size 2.4em
       text-align left
     @media (min-width $bp-sm)
@@ -20,34 +20,35 @@
   li
     float left
     width 48%
-    @media (min-width $bp-xs)
+    @media (min-width $bp-xxs)
       width auto
       margin-right $button-spacing-horizontal
     &:first-child
       margin-right 2%
-      @media (min-width $bp-xs)
+      @media (min-width $bp-xxs)
         margin-right $button-spacing-horizontal
     &:last-child
       margin-left 2%
-      @media (min-width $bp-xs)
+      @media (min-width $bp-xxs)
         margin-left 0
 
   .button
     width 100%
     text-align center
-    @media (min-width $bp-xs)
+    @media (min-width $bp-xxs)
       width auto
 
   .copy-content
     padding $gutter-primary-lg
-    @media (min-width $bp-xs)
+    @media (min-width $bp-xxs)
       position absolute
-      bottom 19%
+      top 10%
       left $gutter-primary
     @media (min-width $bp-md)
+      top 10%
       padding $gutter-primary-x-lg
     @media (min-width $bp-lg)
-      bottom 30%
+      top 15%
 
   img
     width 100%

@@ -6,8 +6,10 @@ footer
   color $color-text-tertiary
 
   h4
-    font-size $font-size-h1
+    font-size $font-size-h1-mobile
     padding 0 $gutter-primary
+    @media (min-width $bp-md)
+      font-size $font-size-h1-desktop
 
 
   li
