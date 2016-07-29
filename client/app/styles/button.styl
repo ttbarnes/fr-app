@@ -41,3 +41,8 @@ button,
 .button[disabled],
 .button-lg[disabled]
   opacity 0.6
+  @media (min-width $bp-md)
+    &:hover,
+    &:focus
+      background $color-bg-secondary
+      color $color-logo
