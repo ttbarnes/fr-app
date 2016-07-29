@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.0",
+    "babel-core": "^5.4.2",
+    "babel-loader": "^5.0.0",
     "angular": "^1.5.5",
     "angular-animate": "^1.5.8",
     "angular-pageslide-directive": "^2.0.1",
@@ -14,8 +16,6 @@
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
-    "babel-core": "^5.4.2",
-    "babel-loader": "^5.0.0",
     "body-parser": "^1.15.0",
     "browser-sync": "^2.11.1",
     "chai": "^3.4.0",
