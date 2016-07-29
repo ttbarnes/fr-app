@@ -55,6 +55,7 @@
   },
   "scripts": {
     "test": "karma start",
+    "postinstall": "gulp",
     "icons": "fontcustom compile"
   },
   "keywords": [
