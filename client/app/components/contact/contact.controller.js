@@ -1,7 +1,7 @@
 import emailService from '../../services/email.service';
 
 class ContactController {
-  constructor(emailService, $scope, $timeout) {
+  constructor(emailService, $scope) {
     "ngInject";
 
     this.emailService = emailService
