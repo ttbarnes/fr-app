@@ -38,6 +38,11 @@ h4
 .font-size-large
   font-size $font-size-h3
 
+.font-size-h1
+  font-size $font-size-h1-mobile !important
+  @media (min-width $bp-md)
+    font-size $font-size-h1-desktop !important
+
 p
   margin 0 0 $gutter-primary-lg 0
   padding 0
