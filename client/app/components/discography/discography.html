@@ -4,8 +4,8 @@
     <li ng-repeat="album in vm.albums" class="row">
 
       <hero title="{{album.name}}"
-            img-url="{{album.images.cover}}"
-            img-alt="Album cover image">
+            img-url="{{album.images.appCover}}"
+            img-alt="{{album.name}} cover">
             <ul class="download-links">
               <li ng-if="album.urls.itunes" class="itunes">
                 <a ng-href="{{album.urls.itunes}}">
