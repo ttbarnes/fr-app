@@ -1,6 +1,7 @@
 var path    = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var poststylus = require('poststylus');
 
 module.exports = {
@@ -21,6 +22,7 @@ module.exports = {
     ]
   },
   plugins: [
+
     // Injects bundles in your index.html instead of wiring all manually.
     // It also adds hash to all injected assets so we don't have problems
     // with cache purging during deployment.
@@ -37,6 +39,11 @@ module.exports = {
       minChunks: function (module, count) {
         return module.resource && module.resource.indexOf(path.resolve(__dirname, 'client')) === -1;
       }
-    })
+    }),
+
+    new CopyWebpackPlugin([
+        { from: 'client/images', to: 'images' }
+    ])
+
   ]
 };
