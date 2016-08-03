@@ -18,6 +18,10 @@ app.use(function (req, res, next){
 
 });
 
+
+app.use(express.static(__dirname + '/dist'));
+
+
 //create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport(process.env.NODE_MAILER_SMTP);
 
