@@ -51,5 +51,7 @@ app.post('/api/postEmail', bodyParser.json(), function (req, res) {
 
 });
 
+require('./client.app.routes')(app); // pass our application into our routes
+
 app.listen(port);
 console.log('Server running on port ' + port);
