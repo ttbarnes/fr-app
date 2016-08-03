@@ -13,7 +13,8 @@ module.exports = {
        { test: /\.json$/, loader: 'json' },
        { test: /\.html$/, loader: 'raw' },
        { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
-       { test: /\.css$/, loader: 'style!css' }
+       { test: /\.css$/, loader: 'style!css' },
+       { test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader?name=fonts/[name].[ext]' }
     ]
   },
   stylus: {
@@ -41,6 +42,7 @@ module.exports = {
       }
     }),
 
+    //copy images to dist images directory
     new CopyWebpackPlugin([
         { from: 'client/images', to: 'images' }
     ])

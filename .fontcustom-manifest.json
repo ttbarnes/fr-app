@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "a784750015ccf188439e6cb699a2477d79a6e3adaf4029135b4125777e7e27cc",
-    "current": "a784750015ccf188439e6cb699a2477d79a6e3adaf4029135b4125777e7e27cc"
+    "previous": "4ecbf0477cfd78991f7b19afdcd6bd28290cd5d594503087732a9a25c86650e3",
+    "current": "4ecbf0477cfd78991f7b19afdcd6bd28290cd5d594503087732a9a25c86650e3"
   },
   "fonts": [
-    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.ttf",
-    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.svg",
-    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.woff",
-    "client/fonts/fontcustom_a784750015ccf188439e6cb699a2477d.eot"
+    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.ttf",
+    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.svg",
+    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.woff",
+    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.eot"
   ],
   "glyphs": {
     "cross": {
@@ -64,9 +64,9 @@
     },
     "no_hash": false,
     "output": {
-      "css": "client/fonts",
-      "fonts": "client/fonts",
-      "preview": "client/fonts"
+      "css": "client/app/fonts",
+      "fonts": "client/app/fonts",
+      "preview": "client/app/fonts"
     },
     "preprocessor_path": null,
     "quiet": false,
@@ -76,7 +76,7 @@
     ]
   },
   "templates": [
-    "client/fonts/fontcustom.css",
-    "client/fonts/fontcustom-preview.html"
+    "client/app/fonts/fontcustom.css",
+    "client/app/fonts/fontcustom-preview.html"
   ]
 }
