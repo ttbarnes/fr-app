@@ -1,8 +1,8 @@
 .DS_Store
 .tmp
 .git
+.env
 node_modules
 .settings
 *.log
 dist/
-email/.env
