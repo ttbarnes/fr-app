@@ -1,1 +1,1 @@
-web: node server.js
+web: gulp webpack && node server.js

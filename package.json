@@ -58,7 +58,7 @@
   },
   "scripts": {
     "test": "karma start",
-    "start": "node server.js",
+    "start": "gulp webkack && node server.js",
     "icons": "fontcustom compile"
   },
   "keywords": [
