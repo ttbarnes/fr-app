@@ -1,22 +1,18 @@
 {
   "checksum": {
-    "previous": "4ecbf0477cfd78991f7b19afdcd6bd28290cd5d594503087732a9a25c86650e3",
-    "current": "4ecbf0477cfd78991f7b19afdcd6bd28290cd5d594503087732a9a25c86650e3"
+    "previous": "2db50ce119667b46fae0449ff805ae87ff3b6288ff4c6cb3a2cf64c5649fbd5d",
+    "current": "2db50ce119667b46fae0449ff805ae87ff3b6288ff4c6cb3a2cf64c5649fbd5d"
   },
   "fonts": [
-    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.ttf",
-    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.svg",
-    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.woff",
-    "client/app/fonts/fontcustom_4ecbf0477cfd78991f7b19afdcd6bd28.eot"
+    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.ttf",
+    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.svg",
+    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.woff",
+    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.eot"
   ],
   "glyphs": {
     "cross": {
       "codepoint": 61706,
       "source": "client/icons/cross.svg"
-    },
-    "facebook": {
-      "codepoint": 61699,
-      "source": "client/icons/facebook.svg"
     },
     "nav": {
       "codepoint": 61708,
@@ -34,17 +30,21 @@
       "codepoint": 61704,
       "source": "client/icons/play.svg"
     },
-    "soundcloud": {
-      "codepoint": 61700,
-      "source": "client/icons/soundcloud.svg"
+    "s-f": {
+      "codepoint": 61709,
+      "source": "client/icons/s-f.svg"
+    },
+    "s-s": {
+      "codepoint": 61710,
+      "source": "client/icons/s-s.svg"
+    },
+    "s-t": {
+      "codepoint": 61711,
+      "source": "client/icons/s-t.svg"
     },
     "tick": {
       "codepoint": 61707,
       "source": "client/icons/tick.svg"
-    },
-    "twitter": {
-      "codepoint": 61701,
-      "source": "client/icons/twitter.svg"
     }
   },
   "options": {
