@@ -12,8 +12,8 @@ app.use(function (req, res, next){
   res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_HOST_PORT); //allow client server access
   res.setHeader('Access-Control-Allow-Headers', 'content-type');
   res.header('Access-Control-Allow-Methods', 'POST');
-  methodOverride('X-HTTP-Method-Override')
-  bodyParser.urlencoded({ extended: true })
+  methodOverride('X-HTTP-Method-Override');
+  bodyParser.urlencoded({ extended: true });
   next();
 
 });
