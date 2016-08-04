@@ -58,6 +58,7 @@
   },
   "scripts": {
     "test": "karma start",
+    "start": "node server.js",
     "icons": "fontcustom compile"
   },
   "keywords": [
