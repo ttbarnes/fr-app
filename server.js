@@ -5,7 +5,7 @@ var router = express.Router();
 var app = express();
 var methodOverride = require('method-override');
 var nodemailer = require('nodemailer');
-var port = process.env.SERVER_HOST_PORT || 2000;
+var port = process.env.PORT || process.env.SERVER_HOST_PORT || 2000;
 
 app.use(function (req, res, next){
 
@@ -18,9 +18,7 @@ app.use(function (req, res, next){
 
 });
 
-
 app.use(express.static(__dirname + '/dist'));
-
 
 //create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport(process.env.NODE_MAILER_SMTP);
