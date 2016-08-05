@@ -44,7 +44,9 @@ module.exports = {
 
     //copy images to dist images directory
     new CopyWebpackPlugin([
-        { from: 'client/images', to: 'images' }
+        { from: 'client/images', to: 'images' },
+        { from: 'client/*.png', flatten: true},
+        { from: 'client/*.ico', flatten: true}
     ])
 
   ]
