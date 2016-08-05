@@ -1,8 +1,8 @@
 {
-  "name": "ng6-starter",
-  "version": "0.0.1",
-  "description": "Starter for Angular + ES6 + (Webpack or JSPM)",
-  "main": "index.js",
+  "name": "fr-app",
+  "version": "1.0.0",
+  "description": "Fiona Ross Angular App",
+  "main": "server.js",
   "dependencies": {
     "angular": "^1.5.5",
     "angular-animate": "^1.5.8",
@@ -57,9 +57,10 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "test": "karma start",
-    "start": "gulp webkack && node server.js",
-    "icons": "fontcustom compile"
+    "express-server": "node server.js",
+    "icons": "fontcustom compile",
+    "start": "gulp webpack && node server.js",
+    "test": "karma start"
   },
   "keywords": [
     "angular",
@@ -68,8 +69,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/NG6-starter.git"
+    "url": "https://github.com/ttbarnes/fr-app.git"
   },
-  "author": "AngularClass",
+  "author": "Tony Barnes",
   "license": "Apache-2.0"
 }
