@@ -55,7 +55,8 @@
                              contactForm.email.$invalid ||
                              !user.email ||
                              contactForm.message.$invalid ||
-                             !user.message">
+                             !user.message"
+                ng-class="{loading: vm.messages.promiseLoading}">
                              <div ng-show="vm.messages.promiseLoading" class="loader"></div>
                              <span ng-hide="vm.messages.promiseLoading">Send</span>
                              <span ng-show="vm.messages.promiseLoading">Sending</span> email
