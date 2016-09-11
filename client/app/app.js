@@ -25,13 +25,15 @@ angular.module('app', [
     Services.name
   ])
 
-  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider) => {
+  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, LightboxProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
 
     plangularConfigProvider.clientId = '209756cdccc1f718176cea87c3b77f99';
+
+    LightboxProvider.templateUrl = '../app/components/gallery/modal.html';
   })
 
   .run(($rootScope) => {

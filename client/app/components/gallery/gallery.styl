@@ -25,30 +25,34 @@
       width 100%
       transition all 0.1s ease
 
+.close
+  position absolute
+  top 0
+  right 0
+
 .lightbox-nav
-  display none !important
-  position relative
-  margin-bottom 12px
-  height 22px
-  text-align center
-  font-size 0
-
-  .btn-group
-    vertical-align top
-
-  .close
-    position absolute
-    top 0
-    right 0
+  position absolute
+  z-index 2
+  top 45%
+  width 100%
+  .btn
+    &:first-child
+      float left
+    &:last-child
+      float right
 
 .lightbox-image-container
   position relative
   text-align center
+  img
+    width 100% !important
+    height auto !important
 
 .modal-backdrop.in
   opacity 0.7
 
 .modal-dialog
+  max-width 400px
   margin-top $header-height-mobile
   @media (min-width $bp-md)
     margin-top $header-height-desktop
