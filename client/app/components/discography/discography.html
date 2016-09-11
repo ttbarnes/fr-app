@@ -67,8 +67,8 @@
         <ul>
           <li ng-repeat="quote in album.quotes">
             <blockquote class="album">
-              <span class="copy"><span class="quote">&ldquo;</span>{{quote.copy}}<span class="quote">&rdquo;</span></span>
-              <span class="author">{{quote.author}}</span>
+              <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
+              <span class="author" ng-bind-html="quote.author"></span>
             </blockquote>
           </li>
         </ul>
