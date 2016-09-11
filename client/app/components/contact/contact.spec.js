@@ -28,13 +28,13 @@ describe('Contact', () => {
   describe('Controller', () => {
 
     it('injects emailService', () => {
-      let controller = makeController()
-      expect(controller.emailService).to.exist
+      let controller = makeController();
+      expect(controller.emailService).toBeDefined();
     })
 
     it('should have a sendMail function', () => {
-      let controller = makeController()
-      expect(controller.sendMail).to.exist
+      let controller = makeController();
+      expect(controller.sendMail).toBeDefined();
     })
 
   });
@@ -43,15 +43,15 @@ describe('Contact', () => {
       let component = ContactComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(ContactTemplate);
+        expect(component.template).toEqual(ContactTemplate);
       });
 
       it('uses `controllerAs` syntax', () => {
-        expect(component).to.have.property('controllerAs');
+        expect(component.controllerAs).toBeDefined();
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(ContactController);
+        expect(component.controller).toEqual(ContactController);
       });
   });
 });

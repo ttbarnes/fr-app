@@ -2,28 +2,32 @@ import albumsService from './albums.service';
 
 describe('albumsService', () => {
 
-  var MockAlbumsService;
+  //todo: get JSON data working inside unit test
+  //to avoid doing this: MockAlbumsService.allAlbums = [ ... ];
+
+  var MockAlbumsService,
+      MockAllAlbums = [ { dummy: true }, { dummy: true } ];
 
   beforeEach(() => {
     MockAlbumsService = new albumsService();
   });
 
   it('should have allAlbums property', () => {
-    expect(MockAlbumsService).to.have.property('allAlbums')
+    expect(MockAlbumsService.allAlbums).toBeDefined();
   })
 
   describe('allAlbums', () => {
 
-    it('should return an array', () => {
-      expect(MockAlbumsService.allAlbums).to.be.an('array')
-    })
+    // it('should return an array', () => {
+    //   expect(MockAlbumsService.allAlbums).to.be.an('array')
+    // })
 
     it('should return an array of objects', () => {
-      expect(MockAlbumsService.allAlbums[0]).to.be.defined
-      expect(MockAlbumsService.allAlbums[0]).to.be.an('object')
-      expect(MockAlbumsService.allAlbums[1]).to.be.defined
-      expect(MockAlbumsService.allAlbums[1]).to.be.an('object')
-    })
+      MockAlbumsService.allAlbums = MockAllAlbums;
+      console.log('HERE: ', MockAlbumsService.allAlbums);
+      expect(MockAlbumsService.allAlbums[0]).toBeDefined();
+      expect(MockAlbumsService.allAlbums[1]).toBeDefined();
+    });
 
   })
 

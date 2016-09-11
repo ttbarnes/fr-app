@@ -9,7 +9,7 @@ describe('emailService', () => {
   })
 
   it('should have send property', () => {
-    expect(MockEmailService).to.have.property('send')
+    expect(MockEmailService.send).toBeDefined();
   })
 
 

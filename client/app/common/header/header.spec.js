@@ -23,32 +23,25 @@ describe('Header', () => {
       let component = HeaderComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(HeaderTemplate);
+        expect(component.template).toEqual(HeaderTemplate);
       });
 
       it('uses `controllerAs` syntax', () => {
-        expect(component).to.have.property('controllerAs');
+        expect(component.controllerAs).toBeDefined()
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(HeaderController);
+        expect(component.controller).toEqual(HeaderController);
       });
   });
 
   describe('Controller', () => {
 
-    // controller specs
-    it('has a name property [REMOVE]', () => {
-      let controller = makeController();
-      expect(controller).to.have.property('name');
-    });
-
     it('should have a logo.copy property', () => {
       let controller = makeController();
-      expect(controller).to.have.property('logo')
-        .that.is.an('object')
-          .with.deep.property('copy')
-            .that.deep.equals('Fiona Ross')
+      expect(controller.logo).toBeDefined();
+      expect(controller.logo.copy).toBeDefined();
+      expect(controller.logo.copy).toEqual('Fiona Ross');
     })
   });
 

@@ -15,7 +15,7 @@ describe('Error', () => {
       let component = ErrorComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(ErrorTemplate);
+        expect(component.template).toEqual(ErrorTemplate);
       });
 
   })

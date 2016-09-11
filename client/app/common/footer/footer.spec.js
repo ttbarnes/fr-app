@@ -19,7 +19,7 @@ describe('Footer', () => {
       let component = FooterComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(FooterTemplate);
+        expect(component.template).toEqual(FooterTemplate);
       });
 
   });

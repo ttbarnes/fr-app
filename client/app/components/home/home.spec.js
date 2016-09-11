@@ -26,15 +26,14 @@ describe('Home', ()=>{
 
     it('injects albumsService', () => {
       let controller = makeController()
-      expect(controller.albumsService).to.exist
-      expect(controller.albumsService).to.equal(mockAlbumsService)
+      expect(controller.albumsService).toBeDefined();
+      expect(controller.albumsService).toEqual(mockAlbumsService)
     })
 
     it('assigns albumsService.allAlbums to \'albums\'', () => {
       let controller = makeController()
-      expect(controller.albums).to.exist
-      expect(controller.albums).to.be.an('array')
-      expect(controller.albums).to.equal(mockAlbumsService.allAlbums)
+      expect(controller.albums).toBeDefined();
+      expect(controller.albums).toEqual(mockAlbumsService.allAlbums)
     })
 
   })
@@ -44,15 +43,15 @@ describe('Home', ()=>{
     let component = HomeComponent;
 
     it('should use the right template',()=>{
-      expect(component.template).to.equal(HomeTemplate);
+      expect(component.template).toEqual(HomeTemplate);
     });
 
     it('should use controllerAs', ()=>{
-      expect(component).to.have.property('controllerAs');
+      expect(component.controllerAs).toBeDefined();
     });
 
     it('should use the right controller', ()=>{
-      expect(component.controller).to.equal(HomeController);
+      expect(component.controller).toEqual(HomeController);
     });
 
   });

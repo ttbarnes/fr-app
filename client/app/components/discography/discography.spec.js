@@ -30,15 +30,14 @@ describe('Discography', () => {
 
     it('injects albumsService', () => {
       let controller = makeController()
-      expect(controller.albumsService).to.exist
-      expect(controller.albumsService).to.equal(mockAlbumsService)
+      expect(controller.albumsService).toBeDefined();
+      expect(controller.albumsService).toEqual(mockAlbumsService)
     })
 
     it('assigns albumsService.allAlbums to \'albums\'', () => {
       let controller = makeController()
-      expect(controller.albums).to.exist
-      expect(controller.albums).to.be.an('array')
-      expect(controller.albums).to.equal(mockAlbumsService.allAlbums)
+      expect(controller.albums).toBeDefined();
+      expect(controller.albums).toEqual(mockAlbumsService.allAlbums)
     })
 
   });
@@ -48,11 +47,11 @@ describe('Discography', () => {
       let component = DiscographyComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(DiscographyTemplate);
+        expect(component.template).toEqual(DiscographyTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(DiscographyController);
+        expect(component.controller).toEqual(DiscographyController);
       });
   });
 });

@@ -26,7 +26,7 @@ describe('Hero', ()=>{
 
     it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
       let controller = makeController();
-      expect(controller).to.have.property('name');
+      expect(controller.name).toBeDefined();
     });
 
   });
@@ -36,26 +36,25 @@ describe('Hero', ()=>{
     let component = HeroComponent;
 
     it('invokes transclude', () => {
-      expect(component.transclude).to.be.true
+      expect(component.transclude).toBeTruthy();
     });
 
     it('includes the intended template',() => {
-      expect(component.template).to.equal(HeroTemplate);
+      expect(component.template).toEqual(HeroTemplate);
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).to.equal(HeroController);
+      expect(component.controller).toEqual(HeroController);
     });
 
     it('uses `bindings`', () => {
-      expect(component).to.have.property('bindings')
-        .that.is.an('object')
+      expect(component.bindings).toBeDefined();
     });
 
     it('includes the relevant `bindings`', () => {
-      expect(component.bindings).to.have.deep.property('title');
-      expect(component.bindings).to.have.deep.property('imgUrl');
-      expect(component.bindings).to.have.deep.property('imgAlt');
+      expect(component.bindings.title).toBeDefined();
+      expect(component.bindings.imgUrl).toBeDefined();
+      expect(component.bindings.imgAlt).toBeDefined();
     })
 
   });

@@ -12,7 +12,7 @@ describe('About', () => {
       }
 
 
-  beforeEach(window.module(AbouttModule.name));
+  beforeEach(window.module(AboutModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
@@ -30,15 +30,15 @@ describe('About', () => {
       let component = AboutComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(AboutTemplate);
+        expect(component.template).toEqual(AboutTemplate);
       });
 
       it('uses `controllerAs` syntax', () => {
-        expect(component).to.have.property('controllerAs');
+        expect(component.controllerAs).toBeDefined();
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(AboutController);
+        expect(component.controller).toEqual(AboutController);
       });
   });
 });
