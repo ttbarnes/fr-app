@@ -15,6 +15,7 @@
       <ul class="nav-links">
         <li><a ui-sref="discography" ui-sref-active="active">Discography</a></li>
         <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+        <li><a ui-sref="gallery" ui-sref-active="active">Gallery</a></li>
         <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
       </ul>
 
@@ -23,10 +24,11 @@
           <p class="logo">{{vm.logo.copy}}</p>
           <i ng-click="vm.toggleMobileMenu();" class="icon-cross"></i>
           <ul class="nav-links">
-            <li><a ui-sref="home" ng-click="vm.toggleMobileMenu();">Home</a></li>
-            <li><a ui-sref="about" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">About</a></li>
+            <li><a ui-sref="home" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Home</a></li>
             <li><a ui-sref="discography" ng-click="vm.toggleMobileMenu();">Discography</a></li>
-            <li><a ui-sref="contact" ng-click="vm.toggleMobileMenu();">Contact</a></li>
+            <li><a ui-sref="about" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">About</a></li>
+            <li><a ui-sref="gallery" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Gallery</a></li>
+            <li><a ui-sref="contact" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Contact</a></li>
           </ul>
         </div>
       </div>
