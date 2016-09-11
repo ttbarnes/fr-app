@@ -1,0 +1,53 @@
+@import 'modal.css';
+.gallery-list
+  list-style-type none
+  margin 0
+  padding 0
+
+  > li
+    float left
+    width 150px
+    height 100px
+    overflow hidden
+    &:hover
+      cursor pointer
+
+    img
+      width 100%
+
+.lightbox-nav
+  position relative
+  margin-bottom 12px
+  height 22px
+  text-align center
+  font-size 0
+
+  .btn-group
+    vertical-align top
+
+  .close
+    position absolute
+    top 0
+    right 0
+
+.lightbox-image-container
+  position relative
+  text-align center
+
+.lightbox-image-caption
+  position absolute
+  top 0
+  left 0
+  margin 0.5em 0.9em
+  color #000
+  font-size 1.5em
+  font-weight bold
+  text-align left
+  text-shadow 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5)
+
+  span
+    padding-top 0.1em
+    padding-bottom 0.1em
+    background-color rgba(255, 255, 255, 0.75)
+    box-shadow 0.4em 0 0 rgba(255, 255, 255, 0.75),
+      -0.4em 0 0 rgba(255, 255, 255, 0.75)

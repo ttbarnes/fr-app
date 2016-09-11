@@ -1,3 +1,9 @@
 <div>
-  <h1>{{ vm.name }}</h1>
+  <ul class="gallery-list">
+    <li ng-repeat="img in vm.images">
+      <a ng-click="vm.openLightboxModal($index)">
+        <img ng-src="{{img.url}}" />
+      </a>
+    </li>
+  </ul>
 </div>
