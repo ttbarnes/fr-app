@@ -1,9 +1,9 @@
-<div>
+<section class="row gallery">
   <ul class="gallery-list">
-    <li ng-repeat="img in vm.images">
+    <li ng-repeat="img in vm.images" class="col-20">
       <a ng-click="vm.openLightboxModal($index)">
         <img ng-src="{{img.url}}" />
       </a>
     </li>
   </ul>
-</div>
+</section>

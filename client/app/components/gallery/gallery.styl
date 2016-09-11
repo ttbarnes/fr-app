@@ -1,21 +1,32 @@
+@import '../../styles/variables';
 @import 'modal.css';
+
 .gallery-list
   list-style-type none
   margin 0
   padding 0
 
   > li
-    float left
-    width 150px
-    height 100px
+    height 150px
     overflow hidden
-    &:hover
-      cursor pointer
+    cursor pointer
+    a
+      opacity 0.5
+      transition all 0.2s ease
+      &:hover,
+      &:focus
+        opacity 1
+        img
+          width 110%
+          max-width 110%
+          margin -5% 0 0 -5%
 
     img
       width 100%
+      transition all 0.1s ease
 
 .lightbox-nav
+  display none !important
   position relative
   margin-bottom 12px
   height 22px
@@ -34,20 +45,36 @@
   position relative
   text-align center
 
+.modal-backdrop.in
+  opacity 0.7
+
+.modal-dialog
+  margin-top $header-height-mobile
+  @media (min-width $bp-md)
+    margin-top $header-height-desktop
+
+.modal-body
+  padding 0
+
+.modal-content
+  background none
+  height auto !important
+  box-shadow none
+  -webkit-box-shadow none
+  border 0 none
+  border-radius 0
+
 .lightbox-image-caption
   position absolute
-  top 0
+  bottom 0.9em
   left 0
-  margin 0.5em 0.9em
-  color #000
-  font-size 1.5em
+  font-size 1.1em
   font-weight bold
   text-align left
-  text-shadow 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5)
 
   span
-    padding-top 0.1em
-    padding-bottom 0.1em
-    background-color rgba(255, 255, 255, 0.75)
-    box-shadow 0.4em 0 0 rgba(255, 255, 255, 0.75),
-      -0.4em 0 0 rgba(255, 255, 255, 0.75)
+    margin 0.9em 1.5em
+    padding 0.25em;
+    background-color $color-bg-secondary
+    color $color-logo
+
