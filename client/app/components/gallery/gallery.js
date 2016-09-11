@@ -6,6 +6,15 @@ let galleryModule = angular.module('gallery', [
   uiRouter
 ])
 
+.config(($stateProvider) => {
+  'ngInject';
+  $stateProvider
+    .state('gallery', {
+      url: '/gallery',
+      template: '<gallery></gallery>'
+    });
+})
+
 .component('gallery', galleryComponent);
 
 export default galleryModule;
