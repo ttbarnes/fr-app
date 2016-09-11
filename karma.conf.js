@@ -3,24 +3,13 @@ module.exports = function (config) {
     // base path used to resolve all patterns
     basePath: '',
 
-    // frameworks to use
-    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['jasmine'],
 
     // list of files/patterns to load in the browser
     files: [{ pattern: 'spec.bundle.js', watched: false }],
 
     // files to exclude
     exclude: [],
-
-    plugins: [
-      require("karma-chai"),
-      require("karma-chrome-launcher"),
-      require("karma-mocha"),
-      require("karma-mocha-reporter"),
-      require("karma-sourcemap-loader"),
-      require("karma-webpack")
-    ],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
@@ -31,7 +20,6 @@ module.exports = function (config) {
       module: {
         loaders: [
           { test: /\.js/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
-          { test: /\.json$/, loader: 'json' },
           { test: /\.html/, loader: 'raw' },
           { test: /\.styl$/, loader: 'style!css!stylus' },
           { test: /\.css$/, loader: 'style!css' }

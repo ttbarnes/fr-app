@@ -2,8 +2,6 @@ class HeaderController {
   constructor($scope) {
     'ngInject';
 
-    this.name = 'navbar';
-
     this.logo = {
       copy: 'Fiona Ross'
     }
