@@ -3,6 +3,7 @@ import uiRouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import ngSanitize from 'angular-sanitize';
 import pageslide from 'angular-pageslide-directive';
+import photoswipe from 'ng-photoswipe';
 import Common from './common/common';
 import Components from './components/components';
 import Services from './services/services';
@@ -14,6 +15,7 @@ angular.module('app', [
     ngAnimate,
     ngSanitize,
     'pageslide-directive',
+    'ngPhotoswipe',
     Common.name,
     Components.name,
     Services.name
