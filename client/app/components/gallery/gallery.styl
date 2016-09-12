@@ -6,9 +6,25 @@
   padding 0
 
   > li
-    height 150px
+    height 100px
     overflow hidden
     cursor pointer
+    @media screen and (min-width: $bp-xs)
+      height 120px
+    @media screen and (min-width: $bp-sm)
+      height 150px
+    @media screen and (min-width: $bp-md)
+      height 100px
+    @media screen and (min-width: $bp-md + 100px)
+      height 110px
+    @media screen and (min-width: $bp-md + 200px)
+      height 125px
+    @media screen and (min-width: $bp-lg)
+      height 130px
+    @media screen and (min-width: $bp-lg + 100px)
+      height 140px
+    @media screen and (min-width: $bp-lg + 150px)
+      height 150px
     a
       opacity 0.5
       transition all 0.2s ease
