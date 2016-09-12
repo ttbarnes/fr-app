@@ -14,24 +14,8 @@ describe('Gallery', () => {
     };
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
-  describe('Controller', () => {
-
-  });
-
-  describe('Template', () => {
-    // template specs
-    // tip: use regex to ensure correct bindings are used e.g., {{  }}
-    it('has name in template [REMOVE]', () => {
-      expect(GalleryTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
-  });
-
   describe('Component', () => {
-      // component/directive specs
+
       let component = GalleryComponent;
 
       it('includes the intended template',() => {
@@ -45,5 +29,7 @@ describe('Gallery', () => {
       it('invokes the right controller', () => {
         expect(component.controller).toEqual(GalleryController);
       });
+
   });
+
 });

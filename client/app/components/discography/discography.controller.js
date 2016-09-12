@@ -2,7 +2,7 @@ import albumsService from '../../services/albums.service';
 
 class DiscographyController {
   constructor(albumsService) {
-    "ngInject"
+    'ngInject';
     this.albumsService = albumsService
     this.albums = albumsService.allAlbums
   }

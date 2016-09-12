@@ -14,23 +14,18 @@ describe('Header', () => {
     };
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
   describe('Component', () => {
-      // component/directive specs
       let component = HeaderComponent;
 
-      it('includes the intended template',() => {
+      it('should include the intended template',() => {
         expect(component.template).toEqual(HeaderTemplate);
       });
 
-      it('uses `controllerAs` syntax', () => {
+      it('should have `controllerAs` syntax', () => {
         expect(component.controllerAs).toBeDefined()
       });
 
-      it('invokes the right controller', () => {
+      it('should invoke the right controller', () => {
         expect(component.controller).toEqual(HeaderController);
       });
   });
@@ -45,11 +40,4 @@ describe('Header', () => {
     })
   });
 
-  describe('Template', () => {
-    // template specs
-    // tip: use regex to ensure correct bindings are used e.g., {{  }}
-    // it('has name in template [REMOVE]', () => {
-    //   expect(HeaderTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    // });
-  });
 });

@@ -24,19 +24,19 @@ describe('Home', ()=>{
 
   describe('Controller', () => {
 
-    it('injects albumsService', () => {
+    it('should inject albumsService', () => {
       let controller = makeController()
       expect(controller.albumsService).toBeDefined();
       expect(controller.albumsService).toEqual(mockAlbumsService)
-    })
+    });
 
-    it('assigns albumsService.allAlbums to \'albums\'', () => {
+    it('should assign albumsService.allAlbums to \'albums\'', () => {
       let controller = makeController()
       expect(controller.albums).toBeDefined();
       expect(controller.albums).toEqual(mockAlbumsService.allAlbums)
-    })
+    });
 
-  })
+  });
 
   describe('Component', ()=>{
 
@@ -50,12 +50,10 @@ describe('Home', ()=>{
       expect(component.controllerAs).toBeDefined();
     });
 
-    it('should use the right controller', ()=>{
+    it('should use the right controller', () => {
       expect(component.controller).toEqual(HomeController);
     });
 
   });
 
-})
-
-
+});

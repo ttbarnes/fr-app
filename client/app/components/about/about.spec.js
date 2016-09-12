@@ -1,5 +1,4 @@
-import AboutModule from './about'
-import AboutController from './about.controller';
+import AboutModule from './about';
 import AboutComponent from './about.component';
 import AboutTemplate from './about.html';
 
@@ -20,25 +19,12 @@ describe('About', () => {
     };
   }));
 
-  // describe('Module', () => { });
-
-  describe('Controller', () => {
-
-  });
-
   describe('Component', () => {
       let component = AboutComponent;
 
-      it('includes the intended template',() => {
+      it('includes the intended template', () => {
         expect(component.template).toEqual(AboutTemplate);
       });
 
-      it('uses `controllerAs` syntax', () => {
-        expect(component.controllerAs).toBeDefined();
-      });
-
-      it('invokes the right controller', () => {
-        expect(component.controller).toEqual(AboutController);
-      });
   });
 });

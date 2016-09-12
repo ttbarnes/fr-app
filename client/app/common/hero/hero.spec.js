@@ -15,22 +15,6 @@ describe('Hero', ()=>{
     };
   }));
 
-  describe('Module', ()=>{
-    // test things about the component module
-    // checking to see if it registers certain things and what not
-    // test for best practices with naming too
-    // test for routing
-  });
-
-  describe('Controller', ()=>{
-
-    it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
-      let controller = makeController();
-      expect(controller.name).toBeDefined();
-    });
-
-  });
-
   describe('Component', () => {
 
     let component = HeroComponent;

@@ -10,17 +10,14 @@ describe('Footer', () => {
     $rootScope = _$rootScope_
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
   describe('Component', () => {
 
       let component = FooterComponent;
 
-      it('includes the intended template',() => {
+      it('should include the intended template',() => {
         expect(component.template).toEqual(FooterTemplate);
       });
 
   });
+
 });

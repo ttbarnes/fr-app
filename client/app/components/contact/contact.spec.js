@@ -4,15 +4,13 @@ import ContactController from './contact.controller';
 import ContactComponent from './contact.component';
 import ContactTemplate from './contact.html';
 
-
 describe('Contact', () => {
   let $rootScope, makeController;
 
   var emailService,
       mockEmailService = {
         send: () => {}
-      }
-
+      };
 
   beforeEach(window.module(ContactModule.name));
   beforeEach(inject((_$rootScope_) => {
@@ -23,35 +21,36 @@ describe('Contact', () => {
     };
   }));
 
-  // describe('Module', () => { });
-
   describe('Controller', () => {
 
-    it('injects emailService', () => {
+    it('should inject emailService', () => {
       let controller = makeController();
       expect(controller.emailService).toBeDefined();
-    })
+    });
 
     it('should have a sendMail function', () => {
       let controller = makeController();
       expect(controller.sendMail).toBeDefined();
-    })
+    });
 
   });
 
   describe('Component', () => {
-      let component = ContactComponent;
 
-      it('includes the intended template',() => {
-        expect(component.template).toEqual(ContactTemplate);
-      });
+    let component = ContactComponent;
 
-      it('uses `controllerAs` syntax', () => {
-        expect(component.controllerAs).toBeDefined();
-      });
+    it('includes the intended template',() => {
+      expect(component.template).toEqual(ContactTemplate);
+    });
 
-      it('invokes the right controller', () => {
-        expect(component.controller).toEqual(ContactController);
-      });
+    it('uses `controllerAs` syntax', () => {
+      expect(component.controllerAs).toBeDefined();
+    });
+
+    it('invokes the right controller', () => {
+      expect(component.controller).toEqual(ContactController);
+    });
+
   });
+
 });

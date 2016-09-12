@@ -2,7 +2,7 @@ import emailService from '../../services/email.service';
 
 class ContactController {
   constructor(emailService, $scope) {
-    "ngInject";
+    'ngInject';
 
     this.emailService = emailService
     this.$scope = $scope;

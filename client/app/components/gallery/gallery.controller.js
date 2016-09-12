@@ -36,10 +36,6 @@ class GalleryController {
       { url: img14 }
     ];
 
-    this.opts = {
-      index: 0
-    };
-
   }
 
   openLightboxModal(i) {

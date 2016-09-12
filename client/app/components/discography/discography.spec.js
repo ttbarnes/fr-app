@@ -11,7 +11,7 @@ describe('Discography', () => {
   var albumsService,
       mockAlbumsService = {
         allAlbums: [{id:1}, {id:2}]
-      }
+      };
 
   beforeEach(window.module(DiscographyModule.name));
   beforeEach(inject((_$rootScope_) => {
@@ -22,36 +22,34 @@ describe('Discography', () => {
     };
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
   describe('Controller', () => {
 
-    it('injects albumsService', () => {
+    it('should inject albumsService', () => {
       let controller = makeController()
       expect(controller.albumsService).toBeDefined();
       expect(controller.albumsService).toEqual(mockAlbumsService)
-    })
+    });
 
     it('assigns albumsService.allAlbums to \'albums\'', () => {
       let controller = makeController()
       expect(controller.albums).toBeDefined();
       expect(controller.albums).toEqual(mockAlbumsService.allAlbums)
-    })
+    });
 
   });
 
   describe('Component', () => {
-      // component/directive specs
-      let component = DiscographyComponent;
 
-      it('includes the intended template',() => {
-        expect(component.template).toEqual(DiscographyTemplate);
-      });
+    let component = DiscographyComponent;
 
-      it('invokes the right controller', () => {
-        expect(component.controller).toEqual(DiscographyController);
-      });
+    it('includes the intended template',() => {
+      expect(component.template).toEqual(DiscographyTemplate);
+    });
+
+    it('invokes the right controller', () => {
+      expect(component.controller).toEqual(DiscographyController);
+    });
+
   });
+
 });
