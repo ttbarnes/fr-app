@@ -4,7 +4,7 @@ import ngAnimate from 'angular-animate';
 import ngSanitize from 'angular-sanitize';
 import ngTouch from 'angular-touch';
 import pageslide from 'angular-pageslide-directive';
-import uiBootstrap from 'angular-ui-bootstrap';
+import modal from 'angular-ui-bootstrap';
 import bootstrapLightbox from 'angular-bootstrap-lightbox';
 import Common from './common/common';
 import Components from './components/components';
@@ -18,7 +18,7 @@ angular.module('app', [
     ngSanitize,
     ngTouch,
     'pageslide-directive',
-    'ui.bootstrap',
+    'ui.bootstrap.modal',
     'bootstrapLightbox',
     Common.name,
     Components.name,
