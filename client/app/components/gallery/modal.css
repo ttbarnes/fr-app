@@ -135,3 +135,15 @@
 .modal-footer:after {
   clear: both;
 }
+
+.modal-body .icon-cross {
+  position: absolute;
+  top: -14px;
+  right: -26px;
+  z-index: 2;
+  background: none;
+  text-shadow: 0 3px 1px #000;
+  color: #FFF;
+  font-size: 1.2em;
+  cursor: pointer;
+}
