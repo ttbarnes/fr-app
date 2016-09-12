@@ -34,7 +34,7 @@
 }
 .modal-dialog {
   position: relative;
-  width: auto;
+  width: auto !important;
   margin: 10px;
 }
 .modal-content {
@@ -105,7 +105,7 @@
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    /*width: 600px;*/
     margin: 30px auto;
   }
   .modal-content {
@@ -117,6 +117,9 @@
   }
 }
 @media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 1000px;
+  }
   .modal-lg {
     width: 900px;
   }

@@ -1,15 +1,23 @@
 {
   "checksum": {
-    "previous": "2db50ce119667b46fae0449ff805ae87ff3b6288ff4c6cb3a2cf64c5649fbd5d",
-    "current": "2db50ce119667b46fae0449ff805ae87ff3b6288ff4c6cb3a2cf64c5649fbd5d"
+    "previous": "dc8a89a69fe3f24e073d9ecfdebd52c564a11f9bbf9db77125b27c074c90b68c",
+    "current": "dc8a89a69fe3f24e073d9ecfdebd52c564a11f9bbf9db77125b27c074c90b68c"
   },
   "fonts": [
-    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.ttf",
-    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.svg",
-    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.woff",
-    "client/app/fonts/fontcustom_2db50ce119667b46fae0449ff805ae87.eot"
+    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.ttf",
+    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.svg",
+    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.woff",
+    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.eot"
   ],
   "glyphs": {
+    "arrow-left": {
+      "codepoint": 61712,
+      "source": "client/icons/arrow-left.svg"
+    },
+    "arrow-right": {
+      "codepoint": 61716,
+      "source": "client/icons/arrow-right.svg"
+    },
     "cross": {
       "codepoint": 61706,
       "source": "client/icons/cross.svg"

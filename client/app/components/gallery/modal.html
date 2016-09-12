@@ -4,8 +4,8 @@
 
   <span class="close icon-cross" ng-click="$dismiss()"></span>
   <div class="lightbox-nav" ng-if="Lightbox.images.length > 1">
-    <a class="btn btn-xs btn-default" ng-click="Lightbox.prevImage()">Previous</a>
-    <a class="btn btn-xs btn-default" ng-click="Lightbox.nextImage()">Next</a>
+    <i class="icon-arrow-left" ng-click="Lightbox.prevImage()"></i>
+    <i class="icon-arrow-right" ng-click="Lightbox.nextImage()"></i>
   </div>
 
   <div class="lightbox-image-container">
@@ -37,6 +37,7 @@
           class="embed-responsive-item">
         <a ng-href="{{Lightbox.imageUrl}}">Watch video</a>
       </embed-video>
+
     </div>
   </div>
 </div>

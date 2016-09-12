@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2016-8-4: Created with FontForge (http://fontforge.org)
+2016-9-12: Created with FontForge (http://fontforge.org)
 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20150913 at Thu Aug  4 17:24:55 2016
+Created by FontForge 20150913 at Mon Sep 12 16:06:32 2016
  By tbMbook
 Copyright (c) 2016, tbMbook
 </metadata>
@@ -22,7 +22,7 @@ Copyright (c) 2016, tbMbook
     bbox="-0.0351562 -64 512 448"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+0020-F10F"
+    unicode-range="U+0020-F114"
   />
     <missing-glyph />
     <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
@@ -50,8 +50,12 @@ c13.9199 13.9199 36.5312 13.8838 50.4873 -0.0761719l20.0244 -20.0195c13.9717 -13
 d="M0 -64v0v512l362.667 -256zM426.667 448v0h85.333v-512h-85.333v512z" />
     <glyph glyph-name="uniF10C" unicode="&#xf10c;" 
 d="M96 175v32h320v-32h-320zM96 271v32h320v-32h-320zM96 79v32h320v-32h-320z" />
+    <glyph glyph-name="uniF110" unicode="&#xf110;" 
+d="M352 332.6l-150.5 -140.6l150.5 -140.7l-20.7002 -19.2998l-171.3 160l171.3 160z" />
     <glyph glyph-name="uniF10D" unicode="&#xf10d;" 
 d="M192 277.333v72.2139c0 64.6826 34.0479 98.4531 110.763 98.4531h81.2373v-106.667h-61.5469c-19.6904 0 -23.7861 -8.06348 -23.7861 -28.4365v-35.5635h85.333l-7.6377 -85.333h-77.6953v-256h-106.667v256h-64v85.333h64z" />
+    <glyph glyph-name="uniF114" unicode="&#xf114;" 
+d="M160 332.6l20.7002 19.4004l171.3 -160l-171.3 -160l-20.7002 19.2998l150.5 140.7z" />
     <glyph glyph-name="uniF10B" unicode="&#xf10b;" 
 d="M464.632 330.656c13.8926 -13.8838 13.916 -36.3525 0.0800781 -50.1924l-247.084 -247.084c-6.95215 -6.95215 -16.0723 -10.4043 -25.1875 -10.3604c-9.13672 -0.0556641 -18.2764 3.38867 -25.2402 10.3525l-119.916 119.908
 c-13.8398 13.8398 -13.7998 36.3154 0.0800781 50.1953l19.8955 19.8965c13.8838 13.8838 36.3604 13.9238 50.1963 0.0839844l74.9561 -74.9561l202.124 202.132c13.8438 13.8359 36.3203 13.7998 50.1963 -0.0761719z" />
