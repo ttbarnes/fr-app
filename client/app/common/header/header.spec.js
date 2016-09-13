@@ -36,8 +36,49 @@ describe('Header', () => {
       let controller = makeController();
       expect(controller.logo).toBeDefined();
       expect(controller.logo.copy).toBeDefined();
+      expect(controller.logo.copy).toEqual(jasmine.any(String));
       expect(controller.logo.copy).toEqual('Fiona Ross');
-    })
+    });
+
+    it('should have activeMobileMenu set to false', () => {
+      let controller = makeController();
+      expect(controller.activeMobileMenu).toBeDefined();
+      expect(controller.activeMobileMenu).toBeFalsy();
+    });
+
+    describe('toggleMobileMenu', () => {
+
+      it('should be defined', () => {
+        let controller = makeController();
+        expect(controller.toggleMobileMenu).toBeDefined();
+        expect(controller.toggleMobileMenu).toEqual(jasmine.any(Function));
+      });
+
+      it('should be called successfully', () => {
+        let controller = makeController();
+        spyOn(controller, 'toggleMobileMenu').and.callThrough();
+        controller.toggleMobileMenu();
+        expect(controller.toggleMobileMenu).toHaveBeenCalled();
+      });
+
+      it('should set activeMobileMenu to true', () => {
+        let controller = makeController();
+        spyOn(controller, 'toggleMobileMenu').and.callThrough();
+        controller.activeMobileMenu = false;
+        controller.toggleMobileMenu();
+        expect(controller.activeMobileMenu).toBeTruthy();
+      });
+
+      it('should set activeMobileMenu to false', () => {
+        let controller = makeController();
+        spyOn(controller, 'toggleMobileMenu').and.callThrough();
+        controller.activeMobileMenu = true;
+        controller.toggleMobileMenu();
+        expect(controller.activeMobileMenu).toBeFalsy();
+      });
+
+    });
+
   });
 
 });
