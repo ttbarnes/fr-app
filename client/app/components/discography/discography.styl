@@ -1,4 +1,4 @@
-@import '../../common'
+@import '../../styles/variables';
 
 .discography
 
@@ -7,11 +7,29 @@
 
   .hero
     margin-bottom $gutter-primary-lg
+    .copy-content
+      top 0
+      padding-bottom 0
+    h2
+      margin-bottom 0
 
   .download-links
+    display inline-block
+    width 100%
+    margin-bottom $gutter-primary-lg
+    &.mobile
+      @media screen and (min-width: $bp-lg)
+        display none
+
+    &.tablet
+      display none
+      @media screen and (min-width: $bp-lg)
+        display block
+
     li
       float left
       width 149px
+      margin-right $gutter-primary-lg
 
       &.google
         width 155px
@@ -21,7 +39,11 @@
       transition all 0.2s ease
       &:hover,
       &:focus
+        outline 0 none
         opacity 1
+
+    img
+      width 100%
 
 
 .plangular

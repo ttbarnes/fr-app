@@ -6,7 +6,7 @@
       <hero title="{{album.name}}"
             img-url="{{album.images.appCover}}"
             img-alt="{{album.name}} cover">
-            <ul class="download-links">
+            <ul class="download-links tablet">
               <li ng-if="album.urls.itunes" class="itunes">
                 <a ng-href="{{album.urls.itunes}}">
                   <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
@@ -20,6 +20,19 @@
             </ul>
 
       </hero>
+
+      <ul class="download-links mobile">
+        <li ng-if="album.urls.itunes" class="itunes">
+          <a ng-href="{{album.urls.itunes}}">
+            <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
+          </a>
+        </li>
+        <li ng-if="album.urls.google" class="google">
+          <a ng-href="{{album.urls.google}}">
+            <img src="./images/badges/google.svg" alt="Get it on Google Play" />
+          </a>
+        </li>
+      </ul>
 
       <div class="col-50">
         <div plangular="http://soundcloud.com/fiona-ross/sets/selection-1" class="plangular" ng-show="tracks.length">
