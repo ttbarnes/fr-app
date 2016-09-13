@@ -18,16 +18,20 @@ describe('albumsService', () => {
 
   describe('allAlbums', () => {
 
-    // it('should return an array', () => {
-    //   expect(MockAlbumsService.allAlbums).to.be.an('array')
-    // })
+    it('should return an array', () => {
+      MockAlbumsService.allAlbums = MockAllAlbums;
+      expect(MockAlbumsService.allAlbums).toBeDefined();
+      expect(MockAlbumsService.allAlbums).toEqual(jasmine.any(Array));
+    });
 
     it('should return an array of objects', () => {
       MockAlbumsService.allAlbums = MockAllAlbums;
       expect(MockAlbumsService.allAlbums[0]).toBeDefined();
+      expect(MockAlbumsService.allAlbums[0]).toEqual(jasmine.any(Object));
       expect(MockAlbumsService.allAlbums[1]).toBeDefined();
+      expect(MockAlbumsService.allAlbums[1]).toEqual(jasmine.any(Object));
     });
 
-  })
+  });
 
-})
+});
