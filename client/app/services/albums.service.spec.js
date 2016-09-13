@@ -24,7 +24,6 @@ describe('albumsService', () => {
 
     it('should return an array of objects', () => {
       MockAlbumsService.allAlbums = MockAllAlbums;
-      console.log('HERE: ', MockAlbumsService.allAlbums);
       expect(MockAlbumsService.allAlbums[0]).toBeDefined();
       expect(MockAlbumsService.allAlbums[1]).toBeDefined();
     });

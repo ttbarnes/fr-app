@@ -1,27 +1,24 @@
-import emailService from '../../services/email.service';
+// import emailService from '../../services/email.service';
 
 class ContactController {
   constructor(emailService, $scope) {
     'ngInject';
 
-    this.emailService = emailService
-    this.$scope = $scope;
+    this.emailService = emailService;
 
-    this.messages = {
-      error: false,
-      success: false
-    };
+    this.error = false;
+    this.success = false;
 
     this.sendMail = (user) => {
-      this.messages.error = false;
-      this.messages.promiseLoading = true;
-      return this.emailService.send(user).then(() => {
-        this.$scope.vm.messages.promiseLoading = false;
-        this.$scope.vm.messages.error = false;
-        this.$scope.vm.messages.success = true;
-      }, (err) => {
-        this.$scope.vm.messages.promiseLoading = false;
-        this.$scope.vm.messages.error = true;
+      this.error = false;
+      this.promiseLoading = true;
+      return this.emailService.send(user).then((data) => {
+        $scope.vm.promiseLoading = false;
+        $scope.vm.error = false;
+        $scope.vm.success = true;
+      }).catch((err) => {
+        $scope.vm.promiseLoading = false;
+        $scope.vm.error = true;
       });
 
     };
