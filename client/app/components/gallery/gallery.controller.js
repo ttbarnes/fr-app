@@ -13,7 +13,6 @@ import img12 from '../../../images/gallery/12.jpg';
 import img13 from '../../../images/gallery/13.jpg';
 import img14 from '../../../images/gallery/14.jpg';
 
-
 class GalleryController {
   constructor(Lightbox) {
     'ngInject';
