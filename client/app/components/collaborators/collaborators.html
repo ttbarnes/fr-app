@@ -2,7 +2,8 @@
 
   <ul>
 
-    <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-20-md">
+    <!-- if X, create row. -->
+    <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
 
       <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
       <div class="inner">

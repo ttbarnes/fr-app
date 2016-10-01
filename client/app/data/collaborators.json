@@ -19,5 +19,26 @@
     "images": {
       "avatar": "./images/about-headshot.jpg"
     }
+  },
+  {
+    "name": "Dummy name",
+    "role": "Studio engineer",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    }
+  },
+  {
+    "name": "Someone",
+    "role": "Drummer",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    }
+  },
+  {
+    "name": "Mr T",
+    "role": "Bodyguard",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    }
   }
 ]
