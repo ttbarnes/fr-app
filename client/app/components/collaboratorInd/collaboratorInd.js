@@ -12,7 +12,7 @@ let collaboratorIndModule = angular.module('collaboratorInd', [
   $stateProvider
     .state('collaboratorsInd', {
       url: '/collaborators/:id',
-      template: '<collaborators-ind></collaborators-ind>'
+      template: '<collaborator-ind></collaborator-ind>'
     });
 })
 
