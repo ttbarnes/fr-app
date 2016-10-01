@@ -3,6 +3,7 @@ import Home from './home/home';
 import Discography from './discography/discography';
 import About from './about/about';
 import Gallery from './gallery/gallery';
+import Collaborators from './collaborators/collaborators';
 import Contact from './contact/contact';
 import Error from './error/error';
 
@@ -11,6 +12,7 @@ let componentModule = angular.module('app.components', [
   Discography.name,
   About.name,
   Gallery.name,
+  Collaborators.name,
   Contact.name,
   Error.name
 ]);
