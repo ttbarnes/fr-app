@@ -4,6 +4,7 @@ import Discography from './discography/discography';
 import About from './about/about';
 import Gallery from './gallery/gallery';
 import Collaborators from './collaborators/collaborators';
+import Equipment from './equipment/equipment';
 import Contact from './contact/contact';
 import Error from './error/error';
 
@@ -13,6 +14,7 @@ let componentModule = angular.module('app.components', [
   About.name,
   Gallery.name,
   Collaborators.name,
+  Equipment.name,
   Contact.name,
   Error.name
 ]);
