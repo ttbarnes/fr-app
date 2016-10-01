@@ -5,11 +5,13 @@
     <!-- if X, create row. -->
     <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
 
-      <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
-      <div class="inner">
-        <h4>{{collab.name}}</h4>
-        <p>{{collab.role}}</p>
-      </div>
+      <a ui-sref="collaboratorsInd({id: collab.id})">
+        <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
+        <div class="inner">
+          <h4>{{collab.name}}</h4>
+          <p>{{collab.role}}</p>
+        </div>
+      </a>
 
     </li>
 
