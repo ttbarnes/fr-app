@@ -14,6 +14,7 @@ export default class collaboratorsService {
       id = id - 1;
       return this.collaborators[id];
     }
+
   }
 
 }
