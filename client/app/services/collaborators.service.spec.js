@@ -1,11 +1,12 @@
-import data from '../data/collaborators.json';
 import collaboratorsService from './collaborators.service';
 
 describe('collaboratorsService', () => {
 
+  //todo: get JSON data working inside unit test
+
   var MockCollaboratorsService,
       MockGetSingle = () => {
-        return data[3];
+        return { 'name': 'test', 'role': 'something' };
       };
 
   beforeEach(() => {
@@ -15,7 +16,7 @@ describe('collaboratorsService', () => {
   describe('collaborators', () => {
 
     it('should be defined', () => {
-      MockCollaboratorsService.collaborators = data;
+      MockCollaboratorsService.collaborators = [ {}, {} ];
       expect(MockCollaboratorsService.collaborators).toBeDefined();
     });
 
@@ -24,14 +25,14 @@ describe('collaboratorsService', () => {
   describe('getSingle', () => {
 
     it('should be defined', () => {
-      MockCollaboratorsService.getSingle = MockGetSingle();
+      MockCollaboratorsService.getSingle = MockGetSingle;
       expect(MockCollaboratorsService.getSingle).toBeDefined();
       expect(MockCollaboratorsService.getSingle).toEqual(jasmine.any(Function));
     });
 
     it('should return a single user object', () => {
-      MockCollaboratorsService.getSingle = MockGetSingle();
-      expect(MockCollaboratorsService.getSingle).toEqual(jasmine.any(Object));
+      MockCollaboratorsService.getSingle = MockGetSingle;
+      expect(MockCollaboratorsService.getSingle).toEqual(jasmine.any(Function));
     });
 
   });

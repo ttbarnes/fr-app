@@ -19,14 +19,14 @@ describe('CollaboratorInd', () => {
   });
 
   describe('Component', () => {
-    let component = Collaborator-indComponent;
+    let component = CollaboratorIndComponent;
 
     it('includes the intended template',() => {
       expect(component.template).toEqual(CollaboratorIndTemplate);
     });
 
     it('uses `controllerAs` syntax', () => {
-      expect(component,controllerAs).toBeDefined();
+      expect(component.controllerAs).toBeDefined();
     });
 
     it('invokes the right controller', () => {
