@@ -8,8 +8,10 @@
       <a ui-sref="collaboratorsInd({id: collab.id})">
         <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
         <div class="inner">
-          <h4>{{collab.name}}</h4>
-          <p>{{collab.role}}</p>
+          <div class="box">
+            <h4>{{collab.name}}</h4>
+            <p>{{collab.role}}</p>
+          </div>
         </div>
       </a>
 

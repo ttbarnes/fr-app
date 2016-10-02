@@ -4,26 +4,32 @@
 
   li
     position relative
-    padding 1em
+    padding $gutter-primary-lg
 
   img
     width 100%
 
-    .inner
-      position absolute
-      bottom 0
-      left 0
-      width 100%
-      background-color rgba(40, 40, 40, 0.7)
-      color #FFF
-      font-size 0.7em
+  .inner
+    width 100%
+    background orange
+    position relative
 
-    h4,
-    p
-      margin 0
+  .box
+    position absolute
+    bottom 0
+    left 0
+    width 100%
+    background-color rgba(40, 40, 40, 0.7)
+    color #FFF
+    padding $gutter-primary
+    font-size 0.7em
 
-    h4
-      margin-bottom 0.25em
+  h4,
+  p
+    margin 0
 
-    p
-      font-size 1.5em
+  h4
+    margin-bottom 0.25em
+
+  p
+    font-size 1.5em
