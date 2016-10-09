@@ -7,8 +7,6 @@
 
   > li
     height 100px
-    overflow hidden
-    cursor pointer
     @media screen and (min-width: $bp-xs)
       height 120px
     @media screen and (min-width: $bp-sm)
@@ -25,20 +23,6 @@
       height 140px
     @media screen and (min-width: $bp-lg + 150px)
       height 150px
-    a
-      opacity 0.5
-      transition all 0.2s ease
-      &:hover,
-      &:focus
-        opacity 1
-        img
-          width 105%
-          max-width 105%
-          margin -2.5% 0 0 -2.5%
-
-    img
-      width 100%
-      transition all 0.1s ease
 
 .close
   position absolute
