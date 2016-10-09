@@ -48,6 +48,9 @@
       "google": "http://test-google.com",
       "amazon": "http://test-amazon.com"
     },
+    "soundcloud": {
+      "setUrl": "http://soundcloud.com/fiona-ross/sets/selection-1"
+    },
     "tracks": [
       {"title": "track title 1"},
       {"title": "track title 2"},

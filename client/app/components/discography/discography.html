@@ -34,8 +34,8 @@
         </li>
       </ul>
 
-      <div class="col-50" ng-show="album.tracks.length">
-        <div plangular="http://soundcloud.com/fiona-ross/sets/selection-1" class="plangular">
+      <div class="col-50" ng-show="album.soundcloud.setUrl">
+        <div plangular="{{album.soundcloud.setUrl}}" class="plangular">
           <nav>
             <div class="col-buttons">
               <button ng-click="previous()"
