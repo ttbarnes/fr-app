@@ -34,7 +34,8 @@
         </li>
       </ul>
 
-      <div class="col-50" ng-show="album.soundcloud.setUrl">
+      <div ng-show="album.soundcloud.setUrl"
+           ng-class="{'col-50': album.soundcloud.setUrl}">
         <div plangular="{{album.soundcloud.setUrl}}" class="plangular">
           <nav>
             <div class="col-buttons">
@@ -75,10 +76,11 @@
 
       </div>
 
-      <div class="col-50">
+      <div ng-class="{'col-50': album.soundcloud.setUrl}">
 
         <ul>
-          <li ng-repeat="quote in album.quotes">
+          <li ng-repeat="quote in album.quotes"
+              ng-class="{'col-50-md': !album.soundcloud.setUrl}">
             <blockquote class="album">
               <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
               <span class="author" ng-bind-html="quote.author"></span>
