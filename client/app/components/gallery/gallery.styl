@@ -5,25 +5,30 @@
   margin 0
   padding 0
 
-  > li
-    height 100px
+  &.grid-image-link-hover > li
     cursor pointer
+    height 150px
     @media screen and (min-width: $bp-xs)
-      height 120px
+      height 200px
+      max-height 200px
     @media screen and (min-width: $bp-sm)
-      height 150px
+      height 220px
+      max-height 220px
     @media screen and (min-width: $bp-md)
-      height 100px
+      height 145px
+      max-height 145px
     @media screen and (min-width: $bp-md + 100px)
-      height 110px
-    @media screen and (min-width: $bp-md + 200px)
-      height 125px
+      height 170px
+      max-height 170px
     @media screen and (min-width: $bp-lg)
-      height 130px
+      height 190px
+      max-height 190px
     @media screen and (min-width: $bp-lg + 100px)
-      height 140px
-    @media screen and (min-width: $bp-lg + 150px)
-      height 150px
+      height 210px
+      max-height 210px
+    @media screen and (min-width: $bp-lg + 170px)
+      height 225px
+      max-height 225px
 
 .close
   position absolute
