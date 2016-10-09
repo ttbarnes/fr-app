@@ -1,7 +1,11 @@
 <section class="row collaborator-ind">
 
-  <h4>{{vm.collab.name}}</h4>
-  <p>{{vm.collab.role}}</p>
-  <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
+  <div class="img-wrap">
+    <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
+  </div>
+  <div class="main-content">
+    <h4>{{vm.collab.name}}</h4>
+    <p>{{vm.collab.role}}</p>
+  </div>
 
 </div>

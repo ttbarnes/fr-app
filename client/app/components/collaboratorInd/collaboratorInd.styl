@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.collaborator-ind
+
+  .img-wrap,
+  .main-content
+    @media screen and (min-width: $bp-sm)
+      float left
+
+  .img-wrap
+    max-width 250px
+    margin 0 auto
+    img
+      width 100%
+
+  .main-content
+    padding-top $gutter-primary-lg
+    text-align center
+    @media screen and (min-width: $bp-sm)
+      padding-top 0
+      padding-left $gutter-primary-lg
+      text-align left
+
