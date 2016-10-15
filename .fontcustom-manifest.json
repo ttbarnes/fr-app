@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "dc8a89a69fe3f24e073d9ecfdebd52c564a11f9bbf9db77125b27c074c90b68c",
-    "current": "dc8a89a69fe3f24e073d9ecfdebd52c564a11f9bbf9db77125b27c074c90b68c"
+    "previous": "f7b4d7a2b58663367ca7214845a1308bf6fa8a3d0eda900656df84dfdef49709",
+    "current": "f7b4d7a2b58663367ca7214845a1308bf6fa8a3d0eda900656df84dfdef49709"
   },
   "fonts": [
-    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.ttf",
-    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.svg",
-    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.woff",
-    "client/app/fonts/fontcustom_dc8a89a69fe3f24e073d9ecfdebd52c5.eot"
+    "client/app/fonts/fontcustom_f7b4d7a2b58663367ca7214845a1308b.ttf",
+    "client/app/fonts/fontcustom_f7b4d7a2b58663367ca7214845a1308b.svg",
+    "client/app/fonts/fontcustom_f7b4d7a2b58663367ca7214845a1308b.woff",
+    "client/app/fonts/fontcustom_f7b4d7a2b58663367ca7214845a1308b.eot"
   ],
   "glyphs": {
     "arrow-left": {

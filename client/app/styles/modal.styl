@@ -37,15 +37,13 @@
 
 .modal-dialog
   position relative
+  height 100%
   width auto !important
-  margin 10px
-  max-width 700px
-  margin-top $header-height-mobile
-  @media (min-width $bp-md)
-    margin-top $header-height-desktop
-    margin 30px auto
+  max-width 100%
+  border solid 1px transparent
+  overflow hidden
   @media (min-width 992px)
-    max-width 1000px
+    max-width 100%
 
 .modal-content
   position relative
@@ -88,6 +86,15 @@
   padding 0
   background none
   border 0 none
+
+.modal-body-inner
+  margin 10px 0
+  margin-top $header-height-mobile
+  @media (min-width $bp-md)
+    margin-top $header-height-mobile * 2
+    margin-right auto
+    margin-bottom $header-height-mobile
+    margin-left auto
 
 .modal-footer
   padding 15px
@@ -132,12 +139,17 @@
 
 
 .modal-body .icon-cross
-  position absolute
-  top -14px
-  right -26px
+  position fixed
+  top 0
+  right 0
+  margin 0
   z-index 2
   background none
   text-shadow 0 3px 1px #000
   color #FFF
-  font-size 1.2em
+  font-size 2.15em
   cursor pointer
+  opacity 0.5
+  transition all 0.2s ease
+  &:hover
+    opacity 0.8

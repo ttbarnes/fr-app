@@ -38,36 +38,49 @@
 .lightbox-nav
   position absolute
   z-index 2
-  top 45%
+  top 42%
   width 100%
   i
     cursor pointer
-    font-size 3.5em
+    font-size 6.5em
     text-shadow 0 3px 1px #000
     color #FFF
+    opacity 0.5
+    transition all 0.2s ease
+    max-width 10%
+    @media screen and (min-width: $bp-md)
+      max-width 100%
+
+    &::before
+      font-size 0.5em
+      width 100%
+    &:hover
+      opacity 0.8
     &:first-child
       float left
+      margin-left -0.10em
     &:last-child
       float right
 
 .lightbox-image-container
   position relative
   text-align center
-  img
-    width 100% !important
-    height auto !important
+  padding 0 $gutter-primary-x-lg
 
 .lightbox-image-caption
-  position absolute
-  bottom 0.9em
+  position fixed
+  background orange
+  bottom -2px
+  right 0
   left 0
+  width 101%
   font-size 1.1em
   font-weight bold
-  text-align left
+  background-color $color-bg-secondary
+  padding $gutter-primary
+  text-align center
 
   span
-    margin 0.9em 1.5em
-    padding 0.25em;
-    background-color $color-bg-secondary
     color $color-logo
+    margin-left -1%
 
