@@ -18,6 +18,8 @@
     width 100%
     margin-bottom $gutter-primary-lg
     &.mobile
+      @media screen and (min-width: $bp-sm)
+        padding 0 $gutter-primary-lg
       @media screen and (min-width: $bp-lg)
         display none
 
@@ -27,12 +29,21 @@
         display block
 
     li
-      float left
-      width 149px
-      margin-right $gutter-primary-lg
+      margin $gutter-primary-lg auto
+      max-width 200px
+      width 100%
+      @media screen and (min-width: $bp-sm)
+        float left
+        width 149px
+        margin-right $gutter-primary-lg
 
       &.google
-        width 155px
+        @media screen and (min-width: $bp-lg)
+          width 155px
+
+      &.amazon img
+        border-radius 8px
+        border solid 1px #FFF
 
     a
       opacity 0.5
