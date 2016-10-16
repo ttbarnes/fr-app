@@ -3,7 +3,7 @@
     "name": "Alexander Barnes-Ross",
     "role": "Social Media Manager",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/alex-barnes-ross.jpg",
       "thumb": "./images/collaborators/thumb/alex-barnes-ross.jpg"
     },
     "urls": {
@@ -20,7 +20,7 @@
     "name": "David Apps",
     "role": "Photography",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/david-apps.jpg",
       "thumb": "./images/collaborators/thumb/david-apps.jpg"
     },
     "urls": {
@@ -33,7 +33,7 @@
     "name": "Gibbi Bettini",
     "role": "Guitarist",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/gibbi-bettini.jpg",
       "thumb": "./images/collaborators/thumb/gibbi-bettini.jpg"
     },
     "collabOn": [
@@ -45,7 +45,7 @@
     "name": "Jon Hockley",
     "role": "Producer, Engineer, Songwriter",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/jon-hockley.jpg",
       "thumb": "./images/collaborators/thumb/jon-hockley.jpg"
     },
     "about": "There are no boundaries or rules, genres don’t exist. The aim is to be remembered, to implant an idea or emotion in the listener. you are singing a story, a hit record, a message to the lost or a soundtrack to a visual experience, don’t you want that piece of music to be remembered? for your intentions to be stand out in the most entertaining, dramatic and recognisable way? Writing, Recording and Engineering Credits Ed Sheeran, Katy, B, Sub Focus, Paul Van Dyke, Chase and Status, Wilkinson, Kasha Rae, Katy B, Ashleigh Ashley, Concrete Rose, Mic Righteous, English Frank, Aruba Red, Marvin Ambrosius, Speech Debelle, Iman, Sam Garrett, Mila Falls, The Stow, Baby Sol, Lianhart, Chrome, Jay Norton I’ve released original songs and compositions, remixed, edited, fixed and arranged pieces of music for the above artists and many more. If i was to describe my music style i would say it’s a Dark Romantic Adventure written by Scorsese with a Tarantino middle 8. With over 15 years of experience it feels like every stone has been turned but then stones have more than 2 sides. Send an email to jonhockley@gmail.com and help me become better",
@@ -66,7 +66,7 @@
   {
     "name": "Kris Buzow",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/kris-buzow.jpg",
       "thumb": "./images/collaborators/thumb/kris-buzow.jpg"
     },
     "collabOn": [
@@ -76,7 +76,7 @@
   {
     "name": "Marley Drummond",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/marley-drummond.jpg",
       "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
     },
     "collabOn": [
@@ -87,7 +87,7 @@
     "name": "Nate Williams",
     "role": "Multi-instrumentalist, writer, producer, arranger, artist and part-time teacher",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/nate-williams.jpg",
       "thumb": "./images/collaborators/thumb/nate-williams.jpg"
     },
     "urls": {
@@ -110,7 +110,7 @@
     "name": "Paul Mearing",
     "role": "Guitarist on Twist Of Blue",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/paul-mearing.jpg",
       "thumb": "./images/collaborators/thumb/paul-mearing.jpg"
     },
     "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
@@ -119,7 +119,7 @@
     "name": "Roger Batting",
     "role": "Drums on A Twist of Blue",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/roger-batting.jpg",
       "thumb": "./images/collaborators/thumb/roger-batting.jpg"
     },
     "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
@@ -134,7 +134,7 @@
     "name": "Stefan Ferrol",
     "role": "Photography",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/stefan-ferrol.jpg",
       "thumb": "./images/collaborators/thumb/stefan-ferrol.jpg"
     },
     "urls": {
@@ -151,7 +151,7 @@
     "name": "Tony Barnes",
     "role": "Developer, Musician",
     "images": {
-      "avatar": "./images/about-headshot.jpg",
+      "avatar": "./images/collaborators/tony-barnes.jpg",
       "thumb": "./images/collaborators/thumb/tony-barnes.jpg"
     },
     "urls": {
