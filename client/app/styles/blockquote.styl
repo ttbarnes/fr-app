@@ -39,15 +39,35 @@ blockquote
     span.copy,
     span.author
       font-size 0.75em
+
+    span.copy
+      width 100%
+    span.inner
+      float left
+      width auto
+      max-width 89%
     span.quote
+      float left
+      width auto
       font-size 3em
       &:first-child
         margin-left -0.15em
-        margin-right 0.2em
+        margin-right 0
+        width 7%
+        @media (min-width $bp-sm)
+          width 10%
+        @media (min-width $bp-md)
+          width 7%
       &:last-child
+        display none
         margin-left 0.03em
 
     span.author
       display block
       font-style normal
       color $color-blockquote
+      margin-left 5.5%
+      @media (min-width $bp-sm)
+        margin-left 8%
+      @media (min-width $bp-md)
+        margin-left 5.5%
