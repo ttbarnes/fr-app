@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fontcustom_f7b4d7a2b58663367ca7214845a1308b.eot");
-  src: url("./fontcustom_f7b4d7a2b58663367ca7214845a1308b.eot?#iefix") format("embedded-opentype"),
-       url("./fontcustom_f7b4d7a2b58663367ca7214845a1308b.woff") format("woff"),
-       url("./fontcustom_f7b4d7a2b58663367ca7214845a1308b.ttf") format("truetype"),
-       url("./fontcustom_f7b4d7a2b58663367ca7214845a1308b.svg#fontcustom") format("svg");
+  src: url("./fontcustom_1e90ed3466b7e0c3f5a470ba309756a5.eot");
+  src: url("./fontcustom_1e90ed3466b7e0c3f5a470ba309756a5.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_1e90ed3466b7e0c3f5a470ba309756a5.woff") format("woff"),
+       url("./fontcustom_1e90ed3466b7e0c3f5a470ba309756a5.ttf") format("truetype"),
+       url("./fontcustom_1e90ed3466b7e0c3f5a470ba309756a5.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fontcustom_f7b4d7a2b58663367ca7214845a1308b.svg#fontcustom") format("svg");
+    src: url("./fontcustom_1e90ed3466b7e0c3f5a470ba309756a5.svg#fontcustom") format("svg");
   }
 }
 
@@ -26,10 +26,13 @@
 .icon-arrow-left:before,
 .icon-arrow-right:before,
 .icon-cross:before,
+.icon-link:before,
 .icon-nav:before,
 .icon-next:before,
 .icon-pause:before,
+.icon-phone:before,
 .icon-play:before,
+.icon-read:before,
 .icon-s-f:before,
 .icon-s-s:before,
 .icon-s-t:before,
@@ -51,10 +54,13 @@
 .icon-arrow-left:before { content: "\f110"; }
 .icon-arrow-right:before { content: "\f114"; }
 .icon-cross:before { content: "\f10a"; }
+.icon-link:before { content: "\f118"; }
 .icon-nav:before { content: "\f10c"; }
 .icon-next:before { content: "\f106"; }
 .icon-pause:before { content: "\f107"; }
+.icon-phone:before { content: "\f115"; }
 .icon-play:before { content: "\f108"; }
+.icon-read:before { content: "\f116"; }
 .icon-s-f:before { content: "\f10d"; }
 .icon-s-s:before { content: "\f10e"; }
 .icon-s-t:before { content: "\f10f"; }

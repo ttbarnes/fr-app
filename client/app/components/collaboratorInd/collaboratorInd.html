@@ -18,27 +18,27 @@
 
       <ul>
         <li ng-if="vm.collab.urls.website">
-          <a ng-href="{{vm.collab.urls.website}}" target="_blank">Website</a>
+          <a ng-href="{{vm.collab.urls.website}}" target="_blank"><i class="icon-link"></i>Website</a>
         </li>
         <li ng-if="vm.collab.urls.bio">
-          <a ng-href="{{vm.collab.urls.bio}}" target="_blank">Bio</a>
+          <a ng-href="{{vm.collab.urls.bio}}" target="_blank"><i class="icon-read"></i>Bio</a>
         </li>
         <li ng-if="vm.collab.urls.soundcloud">
-          <a ng-href="{{vm.collab.urls.soundcloud}}" target="_blank">SoundCloud</a>
+          <a ng-href="{{vm.collab.urls.soundcloud}}" target="_blank"><i class="icon-s-s"></i>SoundCloud</a>
         </li>
         <li ng-if="vm.collab.urls.facebook">
-          <a ng-href="{{vm.collab.urls.facebook}}" target="_blank">Facebook</a>
+          <a ng-href="{{vm.collab.urls.facebook}}" target="_blank"><i class="icon-s-f"></i>Facebook</a>
         </li>
         <li ng-if="vm.collab.urls.twitter">
-          <a ng-href="{{vm.collab.urls.twitter}}" target="_blank">Twitter</a>
+          <a ng-href="{{vm.collab.urls.twitter}}" target="_blank"><i class="icon-s-t"></i>Twitter</a>
         </li>
         <li ng-if="vm.collab.urls.phone">
-          <a ng-href="tel:{{vm.collab.urls.phone}}" target="_blank">{{vm.collab.urls.phone}}</a>
+          <a ng-href="tel:{{vm.collab.urls.phone}}" target="_blank"><i class="icon-phone"></i>{{vm.collab.urls.phone}}</a>
         </li>
         <li ng-if="vm.collab.urls.other">
           <ul ng-repeat="other in vm.collab.urls.other">
             <li>
-              <a ng-href="{{other.url}}" target="_blank">{{other.title}}</a>
+              <a ng-href="{{other.url}}" target="_blank"><i class="icon-link"></i>{{other.title}}</a>
             </li>
           </ul>
         </li>
