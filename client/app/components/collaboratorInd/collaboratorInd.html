@@ -7,13 +7,13 @@
     <h4>{{vm.collab.name}}</h4>
     <p>{{vm.collab.role}}</p>
 
-    <div ng-if="vm.collab.about">{{vm.collab.about}}</div>
-
-    <ul ng-if="vm.collab.collabOn">
+    <ul ng-if="vm.collab.collabOn" class="collab-on">
       <li ng-repeat="collab in vm.collab.collabOn">{{collab}}</li>
     </ul>
 
-    <div ng-if="vm.collab.urls">
+    <div ng-if="vm.collab.about" class="about">{{vm.collab.about}}</div>
+
+    <div ng-if="vm.collab.urls" class="urls">
 
       <ul>
         <li ng-if="vm.collab.urls.website">
