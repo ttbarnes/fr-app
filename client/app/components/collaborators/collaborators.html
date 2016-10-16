@@ -6,7 +6,7 @@
     <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
 
       <a ui-sref="collaboratorsInd({id: collab.id})">
-        <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
+        <img ng-src="{{collab.images.thumb}}" alt="{{collab.name}}" />
         <div class="inner">
           <div class="box">
             <h4>{{collab.name}}</h4>
