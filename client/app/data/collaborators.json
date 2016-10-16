@@ -1,44 +1,155 @@
 [
   {
-    "name": "Dummy name",
-    "role": "Studio engineer",
+    "name": "Alexander Barnes-Ross",
+    "role": "Social Media Manager",
     "images": {
       "avatar": "./images/about-headshot.jpg"
+    },
+    "urls": {
+      "website": "http://www.alexbarnes.me.uk/",
+      "other": [
+        {
+          "url": "http://www.fashionplusmagazine.com/",
+          "title": "Fashion Plus Magazine"
+        }
+      ]
     }
   },
   {
-    "name": "Someone",
-    "role": "Drummer",
+    "name": "David Apps",
+    "role": "Photography",
     "images": {
       "avatar": "./images/about-headshot.jpg"
+    },
+    "urls": {
+      "website": "http://artificialdesigns.co.uk",
+      "facebook": "http://facebook.com/davidappsphotography",
+      "phone": "07429 799338"
     }
   },
   {
-    "name": "Mr T",
-    "role": "Bodyguard",
+    "name": "Gibbi Bettini",
+    "role": "Guitarist",
     "images": {
       "avatar": "./images/about-headshot.jpg"
+    },
+    "collabOn": [
+      "Guitarist on Just Me (and sometimes someone else)",
+      "Engineered Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Jon Hockley",
+    "role": "Producer, Engineer, Songwriter",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "about": "There are no boundaries or rules, genres don’t exist. The aim is to be remembered, to implant an idea or emotion in the listener. you are singing a story, a hit record, a message to the lost or a soundtrack to a visual experience, don’t you want that piece of music to be remembered? for your intentions to be stand out in the most entertaining, dramatic and recognisable way? Writing, Recording and Engineering Credits Ed Sheeran, Katy, B, Sub Focus, Paul Van Dyke, Chase and Status, Wilkinson, Kasha Rae, Katy B, Ashleigh Ashley, Concrete Rose, Mic Righteous, English Frank, Aruba Red, Marvin Ambrosius, Speech Debelle, Iman, Sam Garrett, Mila Falls, The Stow, Baby Sol, Lianhart, Chrome, Jay Norton I’ve released original songs and compositions, remixed, edited, fixed and arranged pieces of music for the above artists and many more. If i was to describe my music style i would say it’s a Dark Romantic Adventure written by Scorsese with a Tarantino middle 8. With over 15 years of experience it feels like every stone has been turned but then stones have more than 2 sides. Send an email to jonhockley@gmail.com and help me become better",
+    "urls": {
+      "website": "http://www.jonhockley.com",
+      "soundcloud": "http://soundcloud.com/riffioso",
+      "other": [
+        {
+          "url": "http://www.riffioso.co.uk",
+          "title": "Riffioso"
+        }
+      ]
+    },
+    "collabOn": [
+      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Kris Buzow",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "collabOn": [
+      "Saxophonist on Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Marley Drummond",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "collabOn": [
+      "Drummer for Just Me (and sometime someone else)"
+    ]
+  },
+  {
+    "name": "Nate Williams",
+    "role": "Multi-instrumentalist, writer, producer, arranger, artist and part-time teacher",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "urls": {
+      "website": "http://nategroove.com",
+      "soundcloud": "http://soundcloud.com/natewilliamsmusic",
+      "bio": "http://www.nategroove.com/#!about-me/c10fk",
+      "other": [
+        {
+          "url": "https://natewilliamsmusic.bandcamp.com/album/got-to-let-go",
+          "title": "Bandcamp"
+        }
+      ]
+    },
+    "collabOn": [
+      "Bass on Just Me (and sometimes someone else)",
+      "Mixed Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Paul Mearing",
+    "role": "Guitarist on Twist Of Blue",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
+  },
+  {
+    "name": "Roger Batting",
+    "role": "Drums on A Twist of Blue",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
+    "urls": {
+      "website": "http://rogerbatting.com/"
+    },
+    "collabOn": [
+      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Stefan Ferrol",
+    "role": "Photography",
+    "images": {
+      "avatar": "./images/about-headshot.jpg"
+    },
+    "urls": {
+      "website": "http://stefanferrol.co.uk",
+      "other": [
+        {
+          "url": "https://www.instagram.com/Stefan.Ferrol/",
+          "title": "Instagram"
+        }
+      ]
     }
   },
   {
-    "name": "Dummy name",
-    "role": "Studio engineer",
+    "name": "Tony Barnes",
+    "role": "Developer, Musician",
     "images": {
       "avatar": "./images/about-headshot.jpg"
-    }
-  },
-  {
-    "name": "Someone",
-    "role": "Drummer",
-    "images": {
-      "avatar": "./images/about-headshot.jpg"
-    }
-  },
-  {
-    "name": "Mr T",
-    "role": "Bodyguard",
-    "images": {
-      "avatar": "./images/about-headshot.jpg"
-    }
+    },
+    "urls": {
+      "website": "http://tonybarnes.me",
+      "twitter": "http://twitter.com/ttbarnes",
+      "soundcloud": "http://soundcloud.com/ttonyb"
+    },
+    "collabOn": [
+      "Built and designed fionaross.co.uk"
+    ]
   }
 ]
