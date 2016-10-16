@@ -1,16 +1,14 @@
-<section class="row collaborators cancel-padding">
+<section class="row collaborators">
 
   <ul class="grid-image-link-hover">
 
-    <!-- if X, create row. -->
     <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
 
       <a ui-sref="collaboratorsInd({id: collab.id})">
-        <img ng-src="{{collab.images.thumb}}" alt="{{collab.name}}" />
         <div class="inner">
+          <img ng-src="{{collab.images.thumb}}" alt="{{collab.name}}" />
           <div class="box">
             <h4>{{collab.name}}</h4>
-            <p>{{collab.role}}</p>
           </div>
         </div>
       </a>

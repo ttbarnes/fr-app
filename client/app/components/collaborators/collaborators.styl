@@ -4,32 +4,41 @@
 
   li
     position relative
-    padding $gutter-primary-lg
+    @media screen and (min-width: $bp-sm)
+      padding $gutter-primary
+    @media screen and (min-width: $bp-md)
+      padding $gutter-primary-lg
 
   img
     width 100%
 
   .inner
     width 100%
-    background orange
     position relative
+    overflow hidden
+    max-height 100%
 
   .box
     position absolute
     bottom 0
     left 0
     width 100%
-    background-color rgba(40, 40, 40, 0.7)
+    background-color rgba(40, 40, 40, 0.8)
     color #FFF
     padding $gutter-primary
     font-size 0.7em
+    text-shadow 0 2px 4px #000
 
   h4,
   p
     margin 0
 
   h4
-    margin-bottom 0.25em
-
-  p
     font-size 1.5em
+    margin-bottom 0
+    @media screen and (min-width: $bp-sm)
+      font-size 1.8em
+    @media screen and (min-width: $bp-md)
+      font-size 1.5em
+    @media screen and (min-width: $bp-lg + 100px)
+      font-size 2em
