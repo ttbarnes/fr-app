@@ -9,11 +9,45 @@
     display inline-block
     width 100%
     padding 0 0 $gutter-primary-xx-lg 0
+    overflow hidden
+    @media (min-width $bp-md)
+      min-height 450px
+    @media (min-width $bp-md + 100px)
+      min-height 500px
+    @media (min-width $bp-md + 200px)
+      min-height 550px
+    @media (min-width $bp-lg)
+      min-height 650px
     li
-      margin-bottom $gutter-primary-x-lg
-      &:last-child
-        margin-bottom 0
+      text-align center
+      padding $gutter-primary-lg
       @media (min-width $bp-md)
+        padding $gutter-primary-lg
         margin-bottom 0
+      @media (min-width $bp-lg)
+        padding $gutter-primary-x-lg
 
-
+      a
+        display block
+      img
+        opacity .8
+        @media (min-width $bp-xs)
+          max-width 80%
+        @media (min-width $bp-sm)
+          max-width 100%
+        @media (min-width $bp-md)
+          transition all 0.3s ease
+          max-width 85%
+      a
+        overflow hidden
+        &:focus
+          img
+            opacity 1
+        @media (min-width $bp-md)
+          &:hover,
+          &:focus
+            img
+              opacity 1
+              width 90%
+              max-width 90%
+              margin -2.5% 0 0 -2.5%

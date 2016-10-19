@@ -2,9 +2,8 @@
   {
     "id": 1,
     "name": "Just Me (and sometimes someone else)",
-    "releaseDate": "2001-01-20T07:39:50 -01:00",
     "images": {
-      "cover": "./images/home-hero.png",
+      "thumb": "./images/albums/thumb/just-me.png",
       "appCover": "./images/albums/just-me-app-cover.png"
     },
     "urls": {
@@ -38,9 +37,8 @@
   {
     "id": 2,
     "name": "A Twist of Blue",
-    "releaseDate": "1999-01-20T07:39:50 -01:00",
     "images": {
-      "cover": "./images/home-hero.png",
+      "thumb": "./images/albums/thumb/twist-of-blue.png",
       "appCover": "./images/albums/twist-of-blue-app-cover.png"
     },
     "urls": {

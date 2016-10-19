@@ -24,8 +24,10 @@
   <div class="row albums">
     <ul>
       <li ng-repeat="album in vm.albums"
-          class="col-50-md">
-        <img ng-src="{{album.images.appCover}}" alt="{{album.name}} cover"/>
+          class="col-50-sm">
+        <a ui-sref="discography">
+          <img ng-src="{{album.images.thumb}}" alt="Fiona Ross - {{album.name}} cover" />
+        </a>
       </li>
     </ul>
   </div>
