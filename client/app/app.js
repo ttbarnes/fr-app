@@ -6,6 +6,8 @@ import ngTouch from 'angular-touch';
 import pageslide from 'angular-pageslide-directive';
 import modal from 'angular-ui-bootstrap';
 import bootstrapLightbox from 'angular-bootstrap-lightbox';
+import angulartics from 'angulartics';
+import angularticsGA from 'angulartics-google-analytics';
 import Common from './common/common';
 import Components from './components/components';
 import Services from './services/services';
@@ -20,6 +22,8 @@ angular.module('app', [
     'pageslide-directive',
     'ui.bootstrap.modal',
     'bootstrapLightbox',
+    'angulartics',
+    'angulartics.google.analytics',
     Common.name,
     Components.name,
     Services.name
