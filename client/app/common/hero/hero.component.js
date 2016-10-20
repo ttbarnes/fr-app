@@ -6,6 +6,7 @@ let heroComponent = {
   restrict: 'E',
   transclude: true,
   bindings: {
+    view: '@',
     title: '@',
     imgUrl: '@',
     imgAlt: '@'

@@ -3,7 +3,14 @@
 .hero
   position relative
 
+  img
+    width 100%
+    position relative
+    z-index 1
+
   h2
+    position relative
+    z-index 3
     font-size 2em
     font-weight normal
     color $color-heading-primary
@@ -16,6 +23,10 @@
       font-size 2.7em
     @media (min-width $bp-md)
       font-size 3em
+
+  ul
+    position relative
+    z-index 4
 
   li
     float left
@@ -49,6 +60,3 @@
       padding $gutter-primary-x-lg
     @media (min-width $bp-lg)
       top 15%
-
-  img
-    width 100%
