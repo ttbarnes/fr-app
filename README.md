@@ -15,6 +15,6 @@
 
 - `npm run icons` - compile SVG icons into webfonts (uses fontcustom)
 
-- `npm run start` - tasks for heroku/deployment. Same as Procfile (failsafe incase something is wrong with the Procfile)
+- `npm run start` - tasks for heroku/deployment.
 
 - `npm run test` - run unit tests (karma)
