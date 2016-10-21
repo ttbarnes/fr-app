@@ -2,26 +2,27 @@
 
 .collaborator-ind
 
-  .img-wrap,
-  .main-content
+  .col-left
+    max-width 250px
     @media screen and (min-width: $bp-sm)
       float left
-
-  .img-wrap
-    max-width 250px
-    margin 0 auto
+      margin-right $gutter-primary-x-lg
+      margin-bottom $gutter-primary-lg
+    @media screen and (min-width: $bp-lg)
+      margin-right 0
+      margin-bottom 0
     img
       width 100%
 
   .main-content
-    padding-top $gutter-primary-lg
-    text-align center
+    clear both
     @media screen and (min-width: $bp-sm)
-      padding-top 0
-      padding-left $gutter-primary-lg
-      text-align left
+      clear none
+    @media screen and (min-width: $bp-md)
+      padding-left 287.5px
 
-  h4
+  h4,
+  h5
     margin-bottom 0.15em
     color $color-highlight-primary
   i
@@ -30,18 +31,38 @@
 
   li
     margin-bottom $gutter-primary
+    li
+      margin-bottom 0
 
   .about,
-  .collab-on,
   .urls
-    margin-top $gutter-primary-x-lg
+    margin-top $gutter-primary-lg
+    @media screen and (min-width: $bp-sm)
+      margin-top $gutter-primary-x-lg
 
   .collab-on
+    color $color-highlight-primary
+    margin-top $gutter-primary-lg
+    @media screen and (min-width: $bp-sm)
+      margin-top $gutter-primary-lg
     li
-      list-style-type disc
-      margin-left $gutter-primary-lg
+      font-style italic
 
   .urls
-    li
+    clear both
+    @media screen and (min-width: $bp-md)
+      clear right
+    > ul > li
       float left
       margin-right $gutter-primary-lg
+      a
+        opacity 0.5
+        color #FFF
+        transition all 0.3s ease
+        &:hover,
+        &:focus
+          outline 0 none
+        @media screen and (min-width: $bp-md)
+          &:hover,
+          &:focus
+            opacity 1

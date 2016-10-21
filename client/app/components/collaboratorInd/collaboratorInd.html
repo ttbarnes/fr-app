@@ -1,26 +1,31 @@
 <section class="row collaborator-ind">
 
-  <div class="img-wrap">
-    <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
-  </div>
-  <div class="main-content">
+  <div class="intro hide-sm">
     <h4>{{vm.collab.name}}</h4>
     <p>{{vm.collab.role}}</p>
+  </div>
+
+  <div class="col-left">
+    <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
+  </div>
+
+  <div class="main-content">
+    <div class="show-sm">
+      <h5>{{vm.collab.name}}</h5>
+      <p>{{vm.collab.role}}</p>
+    </div>
 
     <ul ng-if="vm.collab.collabOn" class="collab-on">
       <li ng-repeat="collab in vm.collab.collabOn">{{collab}}</li>
     </ul>
 
-    <div ng-if="vm.collab.about" class="about">{{vm.collab.about}}</div>
+    <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height"></div>
 
     <div ng-if="vm.collab.urls" class="urls">
 
       <ul>
         <li ng-if="vm.collab.urls.website">
           <a ng-href="{{vm.collab.urls.website}}" target="_blank"><i class="icon-link"></i>Website</a>
-        </li>
-        <li ng-if="vm.collab.urls.bio">
-          <a ng-href="{{vm.collab.urls.bio}}" target="_blank"><i class="icon-read"></i>Bio</a>
         </li>
         <li ng-if="vm.collab.urls.soundcloud">
           <a ng-href="{{vm.collab.urls.soundcloud}}" target="_blank"><i class="icon-s-s"></i>SoundCloud</a>
@@ -40,6 +45,9 @@
               <a ng-href="{{other.url}}" target="_blank"><i class="icon-link"></i>{{other.title}}</a>
             </li>
           </ul>
+        </li>
+        <li ng-if="vm.collab.urls.bio">
+          <a ng-href="{{vm.collab.urls.bio}}" target="_blank"><i class="icon-read"></i>Bio</a>
         </li>
       </ul>
 

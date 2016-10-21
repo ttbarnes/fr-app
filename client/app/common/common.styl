@@ -126,6 +126,12 @@ fr-footer,
   &::before
     margin-top 5px
 
+.hide-sm
+  @media screen and (min-width: $bp-sm)
+    display none
 
-
+.show-sm
+  display none
+  @media screen and (min-width: $bp-sm)
+    display block
 
