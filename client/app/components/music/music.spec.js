@@ -1,10 +1,10 @@
 import albumsService from '../../services/albums.service';
-import DiscographyModule from './discography'
-import DiscographyController from './discography.controller';
-import DiscographyComponent from './discography.component';
-import DiscographyTemplate from './discography.html';
+import MusicModule from './music'
+import MusicController from './music.controller';
+import MusicComponent from './music.component';
+import MusicTemplate from './music.html';
 
-describe('Discography', () => {
+describe('Music', () => {
   let $rootScope,
       makeController
 
@@ -13,12 +13,12 @@ describe('Discography', () => {
         allAlbums: [{id:1}, {id:2}]
       };
 
-  beforeEach(window.module(DiscographyModule.name));
+  beforeEach(window.module(MusicModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     albumsService = mockAlbumsService
     makeController = () => {
-      return new DiscographyController(albumsService);
+      return new MusicController(albumsService);
     };
   }));
 
@@ -40,14 +40,14 @@ describe('Discography', () => {
 
   describe('Component', () => {
 
-    let component = DiscographyComponent;
+    let component = MusicComponent;
 
     it('includes the intended template',() => {
-      expect(component.template).toEqual(DiscographyTemplate);
+      expect(component.template).toEqual(MusicTemplate);
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).toEqual(DiscographyController);
+      expect(component.controller).toEqual(MusicController);
     });
 
   });

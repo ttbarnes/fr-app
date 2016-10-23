@@ -1,6 +1,6 @@
 import albumsService from '../../services/albums.service';
 
-class DiscographyController {
+class MusicController {
   constructor(albumsService) {
     'ngInject';
     this.albumsService = albumsService
@@ -8,4 +8,4 @@ class DiscographyController {
   }
 }
 
-export default DiscographyController;
+export default MusicController;
