@@ -42,9 +42,20 @@ angular.module('app', [
 
   .run(($rootScope) => {
     'ngInject';
+
+    //quick fix to get active state class in header for collabInd
+    $rootScope.$on('$stateChangeStart', (e, toState) => {
+      if (toState.name === 'collaboratorsInd') {
+        $rootScope.$broadcast('stateCollaboratorsInd', { active: true });
+      } else {
+        $rootScope.$broadcast('stateCollaboratorsInd', { active: false });
+      }
+    });
+
     $rootScope.$on('$stateChangeSuccess', () => {
        document.body.scrollTop = document.documentElement.scrollTop = 0;
     });
+
   })
 
   .component('app', AppComponent);
