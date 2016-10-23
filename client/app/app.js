@@ -40,7 +40,7 @@ angular.module('app', [
     LightboxProvider.templateUrl = '../app/components/gallery/modal.html';
 
     LightboxProvider.getImageUrl = function (image) {
-      return '../images/gallery/' + image.url;
+      return 'https://fr-app.herokuapp.com/images/gallery/' + image.url;
     };
 
   })
