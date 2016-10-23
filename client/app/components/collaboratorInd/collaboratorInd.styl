@@ -48,6 +48,15 @@
     li
       font-style italic
 
+  .about a
+    transition all 0.3s ease
+    padding-bottom 1px
+    border-bottom solid 1px $color-text-primary
+    &:hover,
+    &:focus
+      border-bottom-color $color-bg-secondary
+      color $color-highlight-primary
+
   .urls
     clear both
     width 100%
