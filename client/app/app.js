@@ -40,6 +40,9 @@ angular.module('app', [
     LightboxProvider.templateUrl = '../app/components/gallery/modal.html';
 
     LightboxProvider.getImageUrl = function (image) {
+      console.log('getImageUrl img: ', image);
+      console.log('getImageUrl img.url: ', image.url);
+      console.log('getImageUrl return : ' + '../images/gallery/' + image.url);
       return '../images/gallery/' + image.url;
     };
 
