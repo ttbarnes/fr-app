@@ -36,8 +36,7 @@ app.post('/api/postEmail', bodyParser.json(), function (req, res) {
 
     var mailData = {
       from: req.body.name + ' ' + req.body.email,
-      //to: 'fiona@fionaross.co.uk',
-      to: 'tony@tonybarnes.me',
+      to: 'fiona@fionaross.co.uk',
       subject: 'Fiona Ross web app enquiry',
       html: '<div style="background:#121212;color:#FFF;padding:2%;">Fiona Ross web app enquiry</div><br/>' + '<div style="padding:2%;"><p><b>From: </b><br/>'  + req.body.name + ' (' + req.body.email + ')</p></div>'  + '<br/><div style="padding:0 2%;"><b>Enquiry:</b></div>' + '<div style="padding:0 2%;">' + req.body.message + '</div>'
     };
