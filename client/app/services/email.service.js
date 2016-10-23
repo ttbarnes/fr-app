@@ -6,7 +6,7 @@ export default class emailService {
     let service = {
 
       send: (postData) => {
-        return $http.post('https://fiona-ross-test.herokuapp.com/api/postEmail', postData)
+        return $http.post('https://fr-app.herokuapp.com/api/postEmail', postData)
       }
 
     }
