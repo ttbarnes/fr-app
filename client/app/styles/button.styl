@@ -50,15 +50,19 @@ button,
 
 
 .button-view-nav
+  text-align center
+
+.button-view-nav a
   clear both
   width 100%
-  float right
   padding-right $gutter-primary
   margin-top $gutter-primary-x-lg
   line-height initial
   text-align center
   @media screen and (min-width: $bp-xs)
     width auto
+    display inline-block
+    margin 0 auto
     text-align left
     margin-top $gutter-primary-x-lg + $gutter-primary
   span

@@ -54,13 +54,15 @@
 
       </div>
 
-      <a ui-sref="collaboratorsInd({id: vm.collabState.detail.next.id})" class="button button-view-nav w-sub-copy">
-        <span>
-          Next collaborator
-          <small>{{vm.collabState.detail.next.name}}</small>
-        </span>
-        <i class="icon-arrow-right"></i>
-      </a>
+      <div class="row button-view-nav w-sub-copy">
+        <a ui-sref="collaboratorsInd({id: vm.collabState.detail.next.id})" class="button">
+          <span>
+            Next collaborator
+            <small>{{vm.collabState.detail.next.name}}</small>
+          </span>
+          <i class="icon-arrow-right"></i>
+        </a>
+      </div>
 
     </div>
   </div>
