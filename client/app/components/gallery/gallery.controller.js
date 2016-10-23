@@ -6,10 +6,10 @@ class GalleryController {
 
     this.images = this.galleryService.allImages;
 
-  }
+    this.openLightboxModal = (i) => {
+      this.Lightbox.openModal(this.images, i);
+    };
 
-  openLightboxModal(i) {
-    this.Lightbox.openModal(this.images, i);
   }
 
 }
