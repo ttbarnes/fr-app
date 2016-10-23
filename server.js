@@ -27,7 +27,7 @@ app.use(morgan('dev'));
 //create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport(process.env.NODE_MAILER_SMTP);
 
-app.post('//api/postEmail', bodyParser.json(), function (req, res) {
+app.post('/api/postEmail', bodyParser.json(), function (req, res) {
 
     console.log('------ Email POST request at ' + new Date() + '\n' + 'req.body: ')
     console.log('name: ' + req.body.name)
