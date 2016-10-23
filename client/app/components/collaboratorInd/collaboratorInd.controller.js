@@ -6,6 +6,9 @@ class CollaboratorIndController {
     this.collaboratorsService = collaboratorsService;
 
     this.collab = this.collaboratorsService.getSingle(currentId);
+    if(!this.collab) {
+      $state.go('error');
+    }
 
     this.collabState = {
       detail: this.collaboratorsService.getPrevNextCollab(currentId),
