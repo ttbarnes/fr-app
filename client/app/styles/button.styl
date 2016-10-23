@@ -47,3 +47,53 @@ button,
     &:focus
       background $color-bg-secondary
       color $color-logo
+
+
+.button-view-nav
+  clear both
+  width 100%
+  float right
+  padding-right $gutter-primary
+  margin-top $gutter-primary-x-lg
+  line-height initial
+  text-align center
+  @media screen and (min-width: $bp-xs)
+    width auto
+    text-align left
+    margin-top $gutter-primary-x-lg + $gutter-primary
+  span
+    @media screen and (min-width: $bp-xs)
+      float left
+
+  small,
+  i
+    transition all 0s ease
+  small
+    display block
+    opacity 0.3
+    font-size 70%
+  i
+    opacity 0.3
+    background none
+    margin-right 0
+    top 2px
+    position relative
+    @media screen and (min-width: $bp-xs)
+      float right
+      top 0
+
+    padding-top 0.1em
+    font-size 1.1em
+  @media (min-width $bp-md)
+    &:hover,
+    &:focus
+      small
+        opacity 0.5
+      i
+        opacity 1
+        color $color-bg-secondary
+
+  &.w-sub-copy
+    i
+      padding-top 0.05em
+      font-size 2em
