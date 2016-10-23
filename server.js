@@ -11,7 +11,7 @@ var port = process.env.PORT || process.env.SERVER_HOST_PORT || 2000;
 app.use(function (req, res, next){
 
   res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_HOST_PORT); //allow client server access
-  res.setHeader('Access-Control-Allow-Headers', 'content-type');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'POST');
   methodOverride('X-HTTP-Method-Override');
   bodyParser.urlencoded({ extended: true });
