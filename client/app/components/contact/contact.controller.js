@@ -20,7 +20,6 @@ class ContactController {
         $scope.vm.promiseLoading = false;
         $scope.vm.error = true;
       });
-
     };
 
 

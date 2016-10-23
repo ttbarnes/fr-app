@@ -5,7 +5,6 @@ class CollaboratorsController {
     'ngInject';
     this.collaboratorsService = collaboratorsService;
     this.collaborators = collaboratorsService.collaborators;
-
   }
 }
 

@@ -10,11 +10,17 @@ export default class collaboratorsService {
 
     this.collaborators = collaborators;
 
+    /*
+    // get any single collaborator
+    */
     this.getSingle = (id) => {
       id = id - 1;
       return this.collaborators[id];
     }
 
+    /*
+    // get the first collaborator
+    */
     this.firstCollaborator = () => {
       const c = collaborators[0],
             obj = {
@@ -24,6 +30,9 @@ export default class collaboratorsService {
       return obj;
     };
 
+    /*
+    // check if a collaborator is the first
+    */
     this.isFirstCollaborator = (id) => {
       const c = this.firstCollaborator();
       if (id === c.id) {
@@ -32,6 +41,9 @@ export default class collaboratorsService {
       return false;
     }
 
+    /*
+    // check if a collaborator is the last
+    */
     this.isLastCollaborator = (id) => {
       const collabs = collaborators;
       const lastCollab = collaborators[collaborators.length - 1].id;
@@ -41,6 +53,10 @@ export default class collaboratorsService {
       return false;
     }
 
+    /*
+    // create collabState obj containing
+    // prev & next objects with name and id
+    */
     this.getPrevNextCollab = (id) => {
       const currentId = parseInt(id, 10);
             const prevCollab = this.isFirstCollaborator(currentId) ? false : this.collaborators[currentId - 2],

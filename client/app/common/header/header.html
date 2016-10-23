@@ -23,8 +23,10 @@
 
       <div pageslide ps-open="vm.activeMobileMenu" ps-side="left" ps-body-class="true" ps-size="250">
         <div class="mobile-menu">
+
           <p class="logo">{{vm.logo.copy}}</p>
           <i ng-click="vm.toggleMobileMenu();" class="icon-cross"></i>
+
           <ul class="nav-links">
             <li><a ui-sref="home" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Home</a></li>
             <li><a ui-sref="music" ng-click="vm.toggleMobileMenu();">Music</a></li>
@@ -34,6 +36,7 @@
             <li><a ui-sref="equipment" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Equipment</a></li>
             <li><a ui-sref="contact" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Contact</a></li>
           </ul>
+
         </div>
       </div>
 
