@@ -38,6 +38,11 @@ angular.module('app', [
     plangularConfigProvider.clientId = '209756cdccc1f718176cea87c3b77f99';
 
     LightboxProvider.templateUrl = '../app/components/gallery/modal.html';
+
+    LightboxProvider.getImageUrl = function (image) {
+      return '/images/gallery/' + image.url;
+    };
+
   })
 
   .run(($rootScope) => {
