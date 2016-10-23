@@ -50,6 +50,9 @@
 
   .urls
     clear both
+    width 100%
+    display inline-block
+    min-height 1px
     @media screen and (min-width: $bp-md)
       clear right
     > ul > li
@@ -68,6 +71,37 @@
             opacity 1
 
   .button
-    clear both
-    width auto
+    clear right
+    width 100%
     float left
+    padding-right $gutter-primary
+    margin-top $gutter-primary-x-lg
+    @media screen and (min-width: $bp-xs)
+      width auto
+      margin-top $gutter-primary-x-lg + $gutter-primary
+    span
+      float left
+
+    small,
+    i
+      transition all 0s ease
+    small
+      display block
+      opacity 0.3
+      font-size 70%
+    i
+      float right
+      opacity 0.3
+      background none
+      margin-right 0
+      padding-top 0.05em
+      font-size 2em
+    @media (min-width $bp-md)
+      &:hover,
+      &:focus
+        small
+          opacity 0.5
+        i
+          opacity 1
+          color $color-bg-secondary
+
