@@ -68,6 +68,15 @@ button,
   span
     @media screen and (min-width: $bp-xs)
       float left
+  &.text-link
+    padding-left 1.8em
+    padding-right 1.8em
+    margin-top $gutter-primary
+    opacity 0.3
+    transition all 0.2s ease
+    &:hover,
+    &:focus
+      opacity 1
 
   small,
   i
