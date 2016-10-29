@@ -33,6 +33,7 @@
 
       a
         display block
+        overflow hidden
       img
         opacity .8
         @media (min-width $bp-xs)
@@ -42,8 +43,23 @@
         @media (min-width $bp-md)
           transition all 0.3s ease
           max-width 85%
+      p
+        text-align left
+        opacity 0.4
+        padding $gutter-primary-lg 0
+        @media (min-width $bp-xs)
+          margin 0 auto
+          max-width 80%
+        @media (min-width $bp-sm)
+          max-width 100%
+          transition all 0.3s ease
+        @media (min-width $bp-md)
+          padding $gutter-primary-lg $gutter-primary-x-lg
+          max-width 100%
+        @media (min-width $bp-lg)
+          padding $gutter-primary-lg $gutter-primary-x-lg
+
       a
-        overflow hidden
         &:focus
           img
             opacity 1
@@ -56,3 +72,6 @@
               max-width 90%
               margin -2.5% 0 0 -2.5%
               box-shadow 0 2px 2px #000
+            p
+              padding $gutter-primary-lg
+              opacity 1
