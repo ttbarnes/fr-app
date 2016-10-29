@@ -19,15 +19,12 @@
     </blockquote>
   </div>
 
-  <div class="row albums">
-    <ul>
-      <li ng-repeat="album in vm.albums"
-          class="col-50-sm">
-        <a ui-sref="music">
-          <img ng-src="{{album.images.thumb}}" alt="Fiona Ross - {{album.name}} cover" />
-        </a>
-      </li>
-    </ul>
+  <div class="row latest-album">
+    <div>
+      <a ui-sref="music">
+        <img ng-src="{{vm.latestAlbum.images.thumb}}" alt="Fiona Ross - {{vm.latestAlbum.name}}" />
+      </a>
+    </div>
   </div>
 
 </section>

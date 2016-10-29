@@ -5,7 +5,7 @@
   h3 a
     color $color-highlight-primary
 
-  .albums
+  .latest-album
     display inline-block
     width 100%
     padding 0 0 $gutter-primary-xx-lg 0
@@ -18,14 +18,18 @@
       min-height 550px
     @media (min-width $bp-lg)
       min-height 650px
-    li
+    div
       text-align center
       padding $gutter-primary-lg
+      max-width 500px
+      margin 0 auto
+      @media (min-width $bp-sm)
+        padding $gutter-primary-lg
       @media (min-width $bp-md)
         padding $gutter-primary-lg
-        margin-bottom 0
       @media (min-width $bp-lg)
         padding $gutter-primary-x-lg
+        max-width 600px
 
       a
         display block
