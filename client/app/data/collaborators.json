@@ -110,6 +110,19 @@
     ]
   },
   {
+    "name": "Nick Watson",
+    "images": {
+      "avatar": "./images/collaborators/nick-watson.jpg",
+      "thumb": "./images/collaborators/thumb/nick-watson.jpg"
+    },
+    "urls": {
+      "website": "http://fluidmastering.com/about-fluid-mastering"
+    },
+    "collabOn": [
+      "Mastering engineer for: Just Me (and sometimes someone else)"
+    ]
+  },
+  {
     "name": "Paul Mearing",
     "role": "Guitarist on Twist Of Blue",
     "images": {
