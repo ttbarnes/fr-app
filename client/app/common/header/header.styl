@@ -42,40 +42,13 @@ fr-header
       &:focus
         outline 0 none
 
-    .logo,
-    .nav-links
-      float left
-      a
-        display block
-
-    .logo
-      vertical-align middle
-      h1
-        margin 0
-      a
-        color $color-logo
-        padding-top 0.25em
-        padding-right $gutter-primary
-        padding-bottom 0.25em
-        padding-left $gutter-primary
-        @media (min-width $bp-md)
-          padding $gutter-primary
-
-        opacity 0.8
-        text-shadow $shadow-heading-primary
-
-        @media screen and (min-width: $bp-md)
-          transition all 0.2s ease
-          &:hover,
-          &:focus
-            opacity 1
-
     .nav-links
       display none
       vertical-align top
       @media screen and (min-width: $bp-md)
         display inline-block
       a
+        display block
         padding 1.65em 0.5856em 1.26em 0.5856em
         font-size 1.130em
         transition all 0.2s ease

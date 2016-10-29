@@ -8,11 +8,12 @@
 
     <nav>
 
-      <div class="logo">
+      <div class="logo sr-only">
         <h1><a ui-sref="home">{{vm.logo.copy}}</a></h1>
       </div>
 
       <ul class="nav-links">
+        <li><a ui-sref="home">Home</a></li>
         <li><a ui-sref="music" ui-sref-active="active">Music</a></li>
         <li><a ui-sref="about" ui-sref-active="active">About</a></li>
         <li><a ui-sref="gallery" ui-sref-active="active">Gallery</a></li>
@@ -28,6 +29,7 @@
           <i ng-click="vm.toggleMobileMenu();" class="icon-cross"></i>
 
           <ul class="nav-links">
+            <li><a ui-sref="home" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Home</a></li>
             <li><a ui-sref="home" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Home</a></li>
             <li><a ui-sref="music" ng-click="vm.toggleMobileMenu();">Music</a></li>
             <li><a ui-sref="about" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">About</a></li>
