@@ -2,17 +2,68 @@
 
 .equipment
 
-  .row.inner
-    padding-top $gutter-primary-lg + $gutter-primary
-    padding-bottom $gutter-primary-lg + $gutter-primary
-    border-bottom solid 1px #CCC
+  .row.album
+    padding-top $gutter-primary-lg
+    &:first-child
+      padding-top 0
 
-  h3
+  .row.inner
+    margin-bottom 0
+    @media screen and (min-width: $bp-sm)
+      padding-top $row-margin-bottom
+    @media screen and (min-width: $bp-md)
+      padding-bottom $row-margin-bottom
+      border-bottom solid 1px #1E1E1E
+    @media screen and (min-width: $bp-lg)
+      padding-bottom $row-margin-bottom * 2
+      margin-bottom $row-margin-bottom
+    &.last
+      border-bottom 0 none
+      padding-bottom 0
+    > div
+      padding-bottom $gutter-primary-lg
+      @media screen and (min-width: $bp-sm)
+        padding-right $gutter-primary-lg
+        padding-bottom $row-margin-bottom
+      @media screen and (min-width: $bp-md)
+        padding-bottom $gutter-primary
+      @media screen and (min-width: $bp-lg)
+        padding-bottom 0
+      &:nth-child(4)
+        @media screen and (min-width: $bp-sm)
+          clear both
+        @media screen and (min-width: $bp-md)
+          clear none
+          padding-right 0
+
+      .box-heading
+        background-color $color-bg-secondary
+        font-size 1.1em
+        margin-bottom 0
+
+      .inner
+        background-color $color-bg-secondary
+
+      .content
+        padding $gutter-primary-lg $gutter-primary
+        background-color rgba(0, 0, 0, 0.22)
+        li:last-child
+          padding-bottom 0
+
+
+
+  h3,
+  .box-heading
     color $color-highlight-primary
+
+  h4
+    margin-bottom $gutter-primary
+    @media screen and (min-width: $bp-md)
+      margin-bottom $gutter-primary-lg
 
   ul
     padding-left $gutter-primary-lg
 
   li
     list-style-type disc
-    padding-bottom $gutter-primary-lg
+    padding-bottom $gutter-primary

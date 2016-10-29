@@ -15,7 +15,7 @@ body
 
 section
   padding $gutter-primary-lg
-  padding-top 3em
+  padding-top $section-gutter-horizontal
 
 fr-header,
 fr-footer
@@ -30,7 +30,7 @@ fr-footer,
   width 100%
 
 .row
-  margin-bottom $gutter-primary-lg + $gutter-primary
+  margin-bottom $row-margin-bottom
 
 .grid-image-link-hover
   &:hover
@@ -143,3 +143,11 @@ fr-footer,
 
 .sr-only
   display none
+
+
+.box-heading
+  background-color rgba(0, 0, 0, 0.22)
+  color #FFF
+  padding $gutter-primary
+  font-size 1em
+  text-shadow 0 2px 4px #000
