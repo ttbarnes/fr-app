@@ -5,7 +5,7 @@ import About from './about/about';
 import Gallery from './gallery/gallery';
 import Collaborators from './collaborators/collaborators';
 import CollaboratorInd from './collaboratorInd/collaboratorInd';
-import Equipment from './equipment/equipment';
+import Tech from './tech/tech';
 import Contact from './contact/contact';
 import Error from './error/error';
 
@@ -16,7 +16,7 @@ let componentModule = angular.module('app.components', [
   Gallery.name,
   Collaborators.name,
   CollaboratorInd.name,
-  Equipment.name,
+  Tech.name,
   Contact.name,
   Error.name
 ]);
