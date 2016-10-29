@@ -155,12 +155,7 @@
     },
     "urls": {
       "website": "http://stefanferrol.co.uk",
-      "other": [
-        {
-          "url": "https://www.instagram.com/Stefan.Ferrol/",
-          "title": "Instagram"
-        }
-      ]
+      "instagram": "https://www.instagram.com/stefanferroL"
     }
   },
   {
