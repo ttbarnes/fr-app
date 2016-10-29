@@ -20,9 +20,9 @@
         <li ng-repeat="collab in vm.collab.collabOn">{{collab}}</li>
       </ul>
 
-      <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height"></div>
+      <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height link-highlight-hover link-highlight-hover-border"></div>
 
-      <div ng-if="vm.collab.urls" class="urls">
+      <div ng-if="vm.collab.urls" class="urls link-highlight-hover">
 
         <ul>
           <li ng-if="vm.collab.urls.website">

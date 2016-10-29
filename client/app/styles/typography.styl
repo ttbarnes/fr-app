@@ -35,7 +35,7 @@ h3
 h4,
 h5,
 h6
-  font-size 2.3em
+  font-size 1.3em
 
 .font-size-large
   font-size $font-size-h3
@@ -51,7 +51,27 @@ p
 
 a
   text-decoration none
-  color:$color-text-primary;
+  color $color-text-primary
+
+.link-highlight-hover a
+  opacity 0.5
+  color #FFF
+  transition all 0.3s ease
+  &:hover,
+  &:focus
+    color $color-highlight-primary
+    outline 0 none
+  @media screen and (min-width: $bp-md)
+    &:hover,
+    &:focus
+      opacity 1
+
+.link-highlight-hover-border a
+  padding-bottom 1px
+  border-bottom solid 1px $color-text-primary
+  &:hover,
+  &:focus
+    border-bottom-color $color-bg-secondary
 
 ul,
 ol,
