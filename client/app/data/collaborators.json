@@ -38,7 +38,7 @@
     },
     "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince.",
     "collabOn": [
-      "Guitarist on Just Me (and sometimes someone else)",
+      "Guitar on Just Me (and sometimes someone else)",
       "Engineered Just Me (and sometimes someone else)"
     ]
   },
@@ -83,7 +83,7 @@
     },
     "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked  in a wide range of genres, and musicians, both established ans up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads.",
     "collabOn": [
-      "Drummer for Just Me (and sometime someone else)"
+      "Drums on Just Me (and sometime someone else)"
     ]
   },
   {
@@ -123,30 +123,6 @@
     ]
   },
   {
-    "name": "Paul Mearing",
-    "role": "Guitarist on Twist Of Blue",
-    "images": {
-      "avatar": "./images/collaborators/paul-mearing.jpg",
-      "thumb": "./images/collaborators/thumb/paul-mearing.jpg"
-    },
-    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
-  },
-  {
-    "name": "Roger Batting",
-    "role": "Drums on A Twist of Blue",
-    "images": {
-      "avatar": "./images/collaborators/roger-batting.jpg",
-      "thumb": "./images/collaborators/thumb/roger-batting.jpg"
-    },
-    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
-    "urls": {
-      "website": "http://rogerbatting.com/"
-    },
-    "collabOn": [
-      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
-    ]
-  },
-  {
     "name": "Stefan Ferrol",
     "role": "Photography",
     "images": {
@@ -172,6 +148,30 @@
     },
     "collabOn": [
       "Built and designed fionaross.co.uk"
+    ]
+  },
+  {
+    "name": "Paul Mearing",
+    "role": "Guitar on Twist Of Blue",
+    "images": {
+      "avatar": "./images/collaborators/paul-mearing.jpg",
+      "thumb": "./images/collaborators/thumb/paul-mearing.jpg"
+    },
+    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
+  },
+  {
+    "name": "Roger Batting",
+    "role": "Drums on A Twist of Blue",
+    "images": {
+      "avatar": "./images/collaborators/roger-batting.jpg",
+      "thumb": "./images/collaborators/thumb/roger-batting.jpg"
+    },
+    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
+    "urls": {
+      "website": "http://rogerbatting.com/"
+    },
+    "collabOn": [
+      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
     ]
   }
 ]
