@@ -33,6 +33,11 @@ fr-footer,
   margin-bottom $row-margin-bottom
 
 .grid-image-link-hover
+  > .row > div
+    .box-heading,
+    .content,
+    ul
+      transition all 0.8s ease
   &:hover
     > li a
       opacity: 0.3
@@ -78,6 +83,14 @@ fr-footer,
           width 105%
           max-width 105%
           margin -2.5% 0 0 -2.5%
+
+  > .row > div
+    &:hover
+      .box-heading
+        background-color rgba(0, 0, 0, 0.22)
+      ul
+        opacity 1
+        color $color-highlight-primary
 
 .icon-s-s,
 .icon-s-t,
