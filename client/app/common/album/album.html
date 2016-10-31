@@ -1,3 +1,24 @@
-<div>
-  <h1>{{ vm.name }}</h1>
-</div>
+<section class="album">
+
+  <img ng-src="{{album.imgUrl}}"
+       alt="{{album.imgAlt}}"/>
+
+  <ul class="download-links">
+    <li ng-if="album.urls.itunes" class="itunes">
+      <a ng-href="{{album.urls.itunes}}">
+        <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
+      </a>
+    </li>
+    <li ng-if="album.urls.google" class="google">
+      <a ng-href="{{album.urls.google}}">
+        <img src="./images/badges/google.svg" alt="Get it on Google Play" />
+      </a>
+    </li>
+    <li ng-if="album.urls.amazon" class="amazon">
+      <a ng-href="{{album.urls.amazon}}">
+        <img src="./images/badges/amazon.png" alt="Get it on Amazon" />
+      </a>
+    </li>
+  </ul>
+
+</section>
