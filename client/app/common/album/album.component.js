@@ -4,7 +4,9 @@ import './album.styl';
 
 let albumComponent = {
   restrict: 'E',
-  bindings: {},
+  bindings: {
+    data: '='
+  },
   template,
   controller,
   controllerAs: 'vm'
