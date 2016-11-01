@@ -1,20 +1,20 @@
 <section class="album">
-  <textarea>{{vm.data | json}}</textarea>
+
   <img ng-src="{{vm.data.images.albumCover}}"
        alt="{{vm.data.title}}"/>
 
   <ul class="download-links">
-    <li ng-if="data.urls.itunes" class="itunes">
+    <li ng-if="vm.data.urls.itunes" class="itunes">
       <a ng-href="{{vm.data.urls.itunes}}">
         <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
       </a>
     </li>
-    <li ng-if="data.urls.google" class="google">
+    <li ng-if="vm.data.urls.google" class="google">
       <a ng-href="{{vm.data.urls.google}}">
         <img src="./images/badges/google.svg" alt="Get it on Google Play" />
       </a>
     </li>
-    <li ng-if="data.urls.amazon" class="amazon">
+    <li ng-if="vm.data.urls.amazon" class="amazon">
       <a ng-href="{{vm.data.urls.amazon}}">
         <img src="./images/badges/amazon.png" alt="Get it on Amazon" />
       </a>
