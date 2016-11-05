@@ -3,6 +3,7 @@ import controller from './album.controller';
 import './album.styl';
 
 let albumComponent = {
+  transclude: true,
   restrict: 'E',
   bindings: {
     data: '='

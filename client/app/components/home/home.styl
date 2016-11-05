@@ -2,13 +2,22 @@
 
 .home
 
+  .img-bg
+    padding-top $header-height-mobile
+    @media (min-width $bp-md)
+      padding-top $header-height-desktop
+
   h3 a
     color $color-highlight-primary
 
   .row-album-latest
     float none
-    max-width 800px
     margin 0 auto
+    position relative
+    min-height 550px
+
+    .album
+      max-width 900px
 
 /*
   .latest-album

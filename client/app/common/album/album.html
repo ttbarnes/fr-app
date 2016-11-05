@@ -1,11 +1,18 @@
-<section class="album">
+<section class="album cancel-padding">
 
   <div class="col-50-md col-left">
+
     <img ng-src="{{vm.data.images.thumb}}"
          alt="{{vm.data.title}}"/>
+
   </div>
 
   <div class="col-50-md col-right">
+
+    <div class="copy">
+      <ng-transclude></ng-transclude>
+    </div>
+
     <ul class="download-links">
       <li ng-if="vm.data.urls.itunes" class="itunes">
         <a ng-href="{{vm.data.urls.itunes}}">
@@ -23,6 +30,7 @@
         </a>
       </li>
     </ul>
+
   </div>
 
 </section>

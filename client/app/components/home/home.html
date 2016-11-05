@@ -1,17 +1,12 @@
-<section class="home cancel-padding">
+<section class="home cancel-padding include-bg-img">
+
+  <img src="./images/home-hero.png" class="img-bg" />
 
   <div class="row row-album-latest">
-    <album data="vm.latestAlbum"></album>
-    <!--
-    <hero view="home"
-          img-url="./images/home-hero.png">
-      <ul>
-        <li><a ui-sref="music" class="button">Listen</a></li>
-        <li><a ui-sref="about" class="button">Read</a></li>
-      </ul>
-
-    </hero>
-  -->
+    <album data="vm.latestAlbum">
+      <h2>New album <span class="text-uppercase">out now</span></h2>
+      <h3>{{vm.latestAlbum.name}}</h3>
+    </album>
   </div>
 
   <div class="row">
