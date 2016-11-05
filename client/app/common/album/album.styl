@@ -33,3 +33,46 @@ section.album
   li
     @media (min-width $bp-md)
       margin-bottom $gutter-primary-x-lg
+
+  .download-links
+    display inline-block
+    width 100%
+    margin-bottom $gutter-primary-lg
+    &.mobile
+      @media screen and (min-width: $bp-sm)
+        padding 0 $gutter-primary-lg
+      @media screen and (min-width: $bp-lg)
+        display none
+
+    &.tablet
+      display none
+      @media screen and (min-width: $bp-lg)
+        display block
+
+    li
+      margin $gutter-primary-lg auto
+      max-width 200px
+      width 100%
+      @media screen and (min-width: $bp-sm)
+        float left
+        width 149px
+        margin-right $gutter-primary-lg
+
+      &.google
+        @media screen and (min-width: $bp-lg)
+          width 155px
+
+      &.amazon img
+        border-radius 8px
+        border solid 1px #FFF
+
+    a
+      opacity 0.5
+      transition all 0.2s ease
+      &:hover,
+      &:focus
+        outline 0 none
+        opacity 1
+
+    img
+      width 100%
