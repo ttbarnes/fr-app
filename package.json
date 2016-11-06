@@ -37,6 +37,7 @@
     "morgan": "^1.7.0",
     "ng-annotate-loader": "0.0.10",
     "ng-photoswipe": "^0.2.0",
+    "ngtweet": "^0.6.1",
     "nodemailer": "^2.2.1",
     "normalize.css": "^3.0.3",
     "photoswipe": "^4.1.1",

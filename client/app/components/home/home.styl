@@ -21,14 +21,19 @@
 
   .s-feeds
     text-align center
-    .col-facebook,
-    .col-twitter
-      width 300px
+    padding-bottom $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      padding-bottom $gutter-primary-xx-lg
+    .col-fb,
+    .col-tw
+      width 340px
+      padding 0 30px
+      max-height 500px
+      overflow hidden
       display inline-block
       vertical-align top
 
-    .col-facebook
-      overflow hidden
+    .col-fb
       .fb-page
         margin -1px 0 0 -1px
         width 101%
