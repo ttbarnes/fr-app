@@ -43,7 +43,7 @@
       "appCover": "./images/albums/twist-of-blue-app-cover.png"
     },
     "urls": {
-      "itunes": "http://test-itunes.com",
+      "itunes": "https://geo.itunes.apple.com/gb/album/a-twist-of-blue/id1169582869?mt=1&app=music",
       "google": "http://test-google.com",
       "amazon": "http://test-amazon.com"
     },
