@@ -31,13 +31,18 @@ angular.module('app', [
     Services.name
   ])
 
-  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, LightboxProvider) => {
+  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
 
     plangularConfigProvider.clientId = '209756cdccc1f718176cea87c3b77f99';
+
+    //fb page config
+    ezfbProvider.setInitParams({
+      appId: '1779328982334234'
+    });
 
     LightboxProvider.templateUrl = '../app/components/gallery/modal.html';
 
@@ -47,7 +52,7 @@ angular.module('app', [
 
   })
 
-  .run(($rootScope, ezfb) => {
+  .run(($rootScope) => {
     'ngInject';
 
     //quick fix to get active state class in header for collabInd
@@ -61,10 +66,6 @@ angular.module('app', [
 
     $rootScope.$on('$stateChangeSuccess', () => {
        document.body.scrollTop = document.documentElement.scrollTop = 0;
-    });
-
-    ezfb.init({
-      appId: '1779328982334234'
     });
 
   })

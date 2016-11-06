@@ -2,42 +2,56 @@
 
   <img src="./images/home-hero.png" class="img-bg" />
 
-  <div class="row row-album-latest">
-    <album data="vm.latestAlbum">
-      <h2>New album <span class="text-uppercase">out now</span></h2>
-      <h3>{{vm.latestAlbum.name}}</h3>
-    </album>
-  </div>
+  <div class="main-content">
 
-  <div class="row">
-    <blockquote>
-      <span class="quote">&ldquo;</span>
-      <span class="copy">Perhaps the best way to describe Fiona Ross is by the physical reaction that occurs when first listening to her. You experience a sense of electricity, of palpable joy and you begin to notice the unwitting grin that spreads across your face. You are left with rubbery limbs by the purity of Fiona Ross’s voice.</span>
-      <span class="quote">&rdquo;</span>
-    </blockquote>
-  </div>
-
-  <div class="row">
-
-    <div class="fb-feed"
-         data-href="http://www.facebook.com/fionarossmusic"
-         data-width="380"
-         data-hide-cover="false"
-         data-show-facepile="true"
-         data-show-posts="true"></div>
-
-  </div>
-
-
-  <!--
-  <div class="row latest-album">
-    <div>
-      <a ui-sref="music">
-        <img ng-src="{{vm.latestAlbum.images.thumb}}" alt="Fiona Ross - {{vm.latestAlbum.name}}" />
-        <p><small>Coming soon in 2016</small></p>
-      </a>
+    <div class="row row-album-latest">
+      <album data="vm.latestAlbum">
+        <h2>New album <span class="text-uppercase">out now</span></h2>
+        <h3>{{vm.latestAlbum.name}}</h3>
+      </album>
     </div>
+
+    <div class="row">
+      <blockquote>
+        <span class="quote">&ldquo;</span>
+        <span class="copy">Perhaps the best way to describe Fiona Ross is by the physical reaction that occurs when first listening to her. You experience a sense of electricity, of palpable joy and you begin to notice the unwitting grin that spreads across your face. You are left with rubbery limbs by the purity of Fiona Ross’s voice.</span>
+        <span class="quote">&rdquo;</span>
+      </blockquote>
+    </div>
+
+    <div class="row s-feeds">
+
+      <div class="col-facebook">
+        <div class="fb-page"
+             data-href="http://www.facebook.com/fionarossmusic"
+             data-small-header="true"
+             data-width="300"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="false"
+             data-show-posts="true">
+        </div>
+      </div>
+
+      <div class="col-twitter">
+        twitter
+      </div>
+
+    </div>
+
   </div>
-  -->
+
+    <!--
+    <div class="row latest-album">
+      <div>
+        <a ui-sref="music">
+          <img ng-src="{{vm.latestAlbum.images.thumb}}" alt="Fiona Ross - {{vm.latestAlbum.name}}" />
+          <p><small>Coming soon in 2016</small></p>
+        </a>
+      </div>
+    </div>
+    -->
+
+  </div>
 
 </section>
