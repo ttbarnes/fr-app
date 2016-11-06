@@ -6,6 +6,7 @@ class HomeController {
     this.albumsService = albumsService;
     this.latestAlbum = albumsService.allAlbums[0];
   }
+
 }
 
 export default HomeController;

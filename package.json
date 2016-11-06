@@ -7,6 +7,7 @@
     "angular": "^1.5.5",
     "angular-animate": "^1.5.8",
     "angular-bootstrap-lightbox": "^0.12.0",
+    "angular-easyfb": "^1.5.1",
     "angular-pageslide-directive": "^2.0.1",
     "angular-sanitize": "^1.5.8",
     "angular-touch": "^1.5.8",

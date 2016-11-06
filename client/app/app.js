@@ -6,6 +6,7 @@ import ngTouch from 'angular-touch';
 import pageslide from 'angular-pageslide-directive';
 import modal from 'angular-ui-bootstrap';
 import bootstrapLightbox from 'angular-bootstrap-lightbox';
+import ezfb from 'angular-easyfb';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
 import Common from './common/common';
@@ -22,6 +23,7 @@ angular.module('app', [
     'pageslide-directive',
     'ui.bootstrap.modal',
     'bootstrapLightbox',
+    'ezfb',
     'angulartics',
     'angulartics.google.analytics',
     Common.name,
@@ -45,7 +47,7 @@ angular.module('app', [
 
   })
 
-  .run(($rootScope) => {
+  .run(($rootScope, ezfb) => {
     'ngInject';
 
     //quick fix to get active state class in header for collabInd
@@ -59,6 +61,10 @@ angular.module('app', [
 
     $rootScope.$on('$stateChangeSuccess', () => {
        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    });
+
+    ezfb.init({
+      appId: '1779328982334234'
     });
 
   })
