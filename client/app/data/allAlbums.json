@@ -44,8 +44,8 @@
     },
     "urls": {
       "itunes": "https://geo.itunes.apple.com/gb/album/a-twist-of-blue/id1169582869?mt=1&app=music",
-      "google": "http://test-google.com",
-      "amazon": "http://test-amazon.com"
+      "google": "https://play.google.com/store/music/album/Fiona_Ross_A_Twist_of_Blue?id=Bfol6vaou2yj7ywqsm7hcc7ssie",
+      "amazon": "https://www.amazon.co.uk/dp/B01M6A1BFR"
     },
     "soundcloud": {
       "setUrl": "http://soundcloud.com/fiona-ross/sets/selection-1"
