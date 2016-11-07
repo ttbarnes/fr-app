@@ -3,9 +3,20 @@
 footer
   position relative
   z-index 3
-  padding 2.5em 0
-  background-color $color-bg-tertiary
+  background-color $color-bg-primary
   color $color-text-tertiary
+  transform skew(28.3deg)
+  max-width 350px
+
+
+  .container
+    transform skew(-28.3deg) !important
+    max-width 305px
+    padding 2.5em
+    padding-left 4.4em
+    padding-right 0
+    margin-left -40px
+    background-color $color-bg-primary
 
   h4
     font-size $font-size-h1-mobile
