@@ -4,18 +4,9 @@
     "name": "Just Me (and sometimes someone else)",
     "images": {
       "thumb": "./images/albums/thumb/just-me.png",
+      "bg": "./images/albums/bg/just-me.png",
       "appCover": "./images/albums/just-me-app-cover.png"
     },
-    "quotes": [
-      {
-        "copy": "Why haven't I heard of Fiona sooner?!",
-        "author": "Dummy name"
-      },
-      {
-        "copy": "Rocks my world",
-        "author": "Michael Jameson"
-      }
-    ],
     "comingSoon": true
   },
   {
@@ -23,6 +14,7 @@
     "name": "A Twist of Blue",
     "images": {
       "thumb": "./images/albums/thumb/twist-of-blue.png",
+      "bg": "./images/albums/bg/twist-of-blue.png",
       "appCover": "./images/albums/twist-of-blue-app-cover.png"
     },
     "urls": {
@@ -33,22 +25,26 @@
     "soundcloud": {
       "setUrl": "http://soundcloud.com/fiona-ross/sets/selection-1"
     },
-    "tracks": [
-      {"title": "track title 1"},
-      {"title": "track title 2"},
-      {"title": "track title 3"},
-      {"title": "track title 4"},
-      {"title": "track title 5"},
-      {"title": "track title 6"},
-      {"title": "track title 7"},
-      {"title": "track title 8"},
-      {"title": "track title 9"},
-      {"title": "track title 10"}
-    ],
     "quotes": [
       {
         "copy": "Fiona Ross sings with an irrepressibility, a skill, and a passion that is assured, confident, and sexy. There is simply nothing to compare her to.",
         "author": "Dr. Garth Twa"
+      },
+      {
+        "copy": "My favourite album of thE century",
+        "author": "Gregory Porter"
+      },
+      {
+        "copy": "A Twist of Brilliance - absolutely wonderful!",
+        "author": "Tony Barnes"
+      },
+      {
+        "copy": "Please someone put me in contact with Fiona",
+        "author": "Jamie Cullum"
+      },
+      {
+        "copy": "Another test quote, testing text to fill some space, should go to a new line",
+        "author": "Steven Seagul"
       }
     ]
   }

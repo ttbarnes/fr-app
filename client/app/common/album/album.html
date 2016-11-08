@@ -42,13 +42,6 @@
     <div class="col-50-md col-first">
       <img ng-src="{{vm.data.images.thumb}}"
            alt="{{vm.data.title}}"/>
-    </div>
-
-    <div class="col-50-md col-last">
-
-      <h2>{{vm.data.name}}</h2>
-
-      <p ng-if="vm.data.comingSoon" class="coming-soon">Coming soon in 2016</p>
 
       <div class="row" ng-show="vm.data.soundcloud.setUrl">
 
@@ -86,7 +79,7 @@
           </nav>
 
           <ul class="row">
-            <li ng-repeat="track in vm.data.tracks"
+            <li ng-repeat="track in tracks"
                 ng-click="playPause($index)"
                 ng-class="{active: player.playing === track.src,
                            last: $last}">
@@ -98,20 +91,15 @@
 
       </div>
 
-      <div class="row">
-        <ul>
-          <li ng-repeat="quote in album.quotes">
+    </div>
 
-            <blockquote class="album">
-              <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
-              <span class="author" ng-bind-html="quote.author"></span>
-            </blockquote>
+    <div class="col-50-md col-last">
 
-          </li>
-        </ul>
-      </div>
+      <h2>{{vm.data.name}}</h2>
 
-      <ul class="download-links">
+      <p ng-if="vm.data.comingSoon" class="coming-soon">Coming soon in 2016</p>
+
+      <ul class="row download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">
           <a ng-href="{{vm.data.urls.itunes}}" target="_blank">
             <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
@@ -128,6 +116,19 @@
           </a>
         </li>
       </ul>
+
+      <div class="row">
+        <ul>
+          <li ng-repeat="quote in vm.data.quotes">
+
+            <blockquote class="album">
+              <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
+              <span class="author" ng-bind-html="quote.author"></span>
+            </blockquote>
+
+          </li>
+        </ul>
+      </div>
 
     </div>
 
