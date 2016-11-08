@@ -57,12 +57,19 @@ angular.module('app', [
   .run(($rootScope) => {
     'ngInject';
 
-    //quick fix to get active state class in header for collabInd
+    //quick fix to get active state class in header
     $rootScope.$on('$stateChangeStart', (e, toState) => {
+
       if (toState.name === 'collaboratorsInd') {
         $rootScope.$broadcast('stateCollaboratorsInd', { active: true });
       } else {
         $rootScope.$broadcast('stateCollaboratorsInd', { active: false });
+      }
+
+      if (toState.name === 'musicAlbum') {
+        $rootScope.$broadcast('stateMusicAlbum', { active: true });
+      } else {
+        $rootScope.$broadcast('stateMusicAlbum', { active: false });
       }
     });
 

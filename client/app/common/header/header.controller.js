@@ -15,6 +15,11 @@ class HeaderController {
       stateObj.active == true ? this.stateIsCollabInd = true : this.stateIsCollabInd = false;
     });
 
+    $rootScope.$on('stateMusicAlbum', (e, stateObj) => {
+      stateObj.active == true ? this.stateIsMusicAlbum = true : this.stateIsMusicAlbum = false;
+    });
+
+
   }
 }
 

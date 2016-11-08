@@ -1,20 +1,21 @@
 <section class="row music cancel-top-padding">
 
-  <ul>
-    <li ng-repeat="album in vm.albums" class="col-50-md">
-       <a ui-sref="musicAlbum({id: album.id})">
-        <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
-        <br/>
-        More info
-       </a>
-    </li>
-  </ul>
+  <div class="main-content">
 
-  <div class="row button-view-nav">
-     <a ui-sref="about" class="button">
-      <span>About Fiona</span>
-      <i class="icon-arrow-right"></i>
-    </a>
+    <ul class="album-cols">
+      <li ng-repeat="album in vm.albums" class="col col-50-md">
+         <a ui-sref="musicAlbum({id: album.id})">
+          <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
+         </a>
+      </li>
+    </ul>
+
+    <div class="row button-view-nav">
+       <a ui-sref="about" class="button">
+        <span>About Fiona</span>
+        <i class="icon-arrow-right"></i>
+      </a>
+    </div>
   </div>
 
 </section>

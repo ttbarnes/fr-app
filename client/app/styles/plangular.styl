@@ -107,16 +107,19 @@
     background-color currentColor
 
   ul
-    padding-top 1.4em
     margin-bottom 0
 
   li
     clear both
     width 100%
     transition all 0.2s ease
+    padding $gutter-primary-lg 0
+    cursor pointer
     h3,
     p
-      cursor pointer
+      margin 0
+      color $color-text-secondary
+      transition all 0.2s ease
     h3
       font-size 1em
     p
@@ -126,7 +129,9 @@
         width auto
     &:hover,
     &.active
-      color $color-highlight-primary
+      h3,
+      p
+        color $color-highlight-primary
     &.last
       h3,
       p

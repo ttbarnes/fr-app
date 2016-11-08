@@ -1,0 +1,42 @@
+@import 'variables'
+
+.album-cols
+
+  > .col
+    text-align center
+    padding $gutter-primary-lg
+    max-width 500px
+    margin 0 auto
+    @media (min-width $bp-sm)
+      padding $gutter-primary-lg
+    @media (min-width $bp-lg)
+      padding 0
+      max-width 600px
+
+    a
+      display block
+      max-height 427px
+      overflow hidden
+    img
+      opacity .65
+      @media (min-width $bp-xs)
+        max-width 80%
+      @media (min-width $bp-sm)
+        max-width 100%
+      @media (min-width $bp-md)
+        transition all 0.3s ease
+        max-width 95%
+
+    a
+      &:focus
+        img
+          opacity 1
+      @media (min-width $bp-md)
+        &:hover,
+        &:focus
+          img
+            opacity 1
+            width 100%
+            max-width 100%
+            margin -2.5% 0 0 -2.5%
+            box-shadow 0 2px 2px #000
