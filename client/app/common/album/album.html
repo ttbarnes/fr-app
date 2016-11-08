@@ -46,6 +46,10 @@
 
     <div class="col-50-md col-last">
 
+      <h2>{{vm.data.name}}</h2>
+
+      <p ng-if="vm.data.comingSoon" class="coming-soon">Coming soon in 2016</p>
+
       <div class="row" ng-show="vm.data.soundcloud.setUrl">
 
         <div plangular="{{vm.data.soundcloud.setUrl}}" class="plangular">
