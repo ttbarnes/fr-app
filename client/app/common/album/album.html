@@ -2,14 +2,14 @@
 
   <div ng-if="vm.layout === '1'">
 
-    <div class="col-50-md col-left">
+    <div class="col-50-md col-first">
 
       <img ng-src="{{vm.data.images.thumb}}"
            alt="{{vm.data.title}}"/>
 
     </div>
 
-    <div class="col-50-md col-right">
+    <div class="col-50-md col-last">
 
       <div class="copy">
         <ng-transclude></ng-transclude>
@@ -34,10 +34,100 @@
       </ul>
 
     </div>
+
   </div>
 
   <div ng-if="vm.layout === '2'">
 
+    <div class="col-50-md col-first">
+      <img ng-src="{{vm.data.images.thumb}}"
+           alt="{{vm.data.title}}"/>
+    </div>
+
+    <div class="col-50-md col-last">
+
+      <div class="row" ng-show="vm.data.soundcloud.setUrl">
+
+        <div plangular="{{vm.data.soundcloud.setUrl}}" class="plangular">
+
+          <nav>
+            <div class="col-buttons">
+
+              <button ng-click="previous()"
+                      class="col-1-3rd previous">
+                <i class="icon-next"></i>
+              </button>
+
+              <button ng-click="playPause(index)"
+                      class="col-1-3rd play-pause">
+                <i ng-if="player.playing" class="icon-pause"></i>
+                <i ng-if="!player.playing" class="icon-play"></i>
+              </button>
+
+              <button ng-click="next()"
+                      class="col-1-3rd next">
+                <i class="icon-next"></i>
+              </button>
+
+            </div>
+
+            <div class="col-progress">
+              <p class="current-time align-right">
+                <span  ng-if="currentTime">{{ currentTime | hhmmss }}/{{ duration | hhmmss }}</span>
+              </p>
+              <progress class="progress"
+                        ng-click="seek($event)"
+                        ng-value="currentTime / duration || 0"></progress>
+            </div>
+          </nav>
+
+          <ul class="row">
+            <li ng-repeat="track in vm.data.tracks"
+                ng-click="playPause($index)"
+                ng-class="{active: player.playing === track.src,
+                           last: $last}">
+              <h3 class="col-80">{{track.title}}</h3>
+              <p class="col-20 align-right">{{track.duration / 1000 | hhmmss }}</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <ul>
+          <li ng-repeat="quote in album.quotes">
+
+            <blockquote class="album">
+              <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
+              <span class="author" ng-bind-html="quote.author"></span>
+            </blockquote>
+
+          </li>
+        </ul>
+      </div>
+
+      <ul class="download-links">
+        <li ng-if="vm.data.urls.itunes" class="itunes">
+          <a ng-href="{{vm.data.urls.itunes}}" target="_blank">
+            <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
+          </a>
+        </li>
+        <li ng-if="vm.data.urls.google" class="google">
+          <a ng-href="{{vm.data.urls.google}}" target="_blank">
+            <img src="./images/badges/google.svg" alt="Get it on Google Play" />
+          </a>
+        </li>
+        <li ng-if="vm.data.urls.amazon" class="amazon">
+          <a ng-href="{{vm.data.urls.amazon}}" target="_blank">
+            <img src="./images/badges/amazon.png" alt="Get it on Amazon" />
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
   </div>
+
 
 </section>

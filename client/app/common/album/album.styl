@@ -1,22 +1,17 @@
 @import '../../styles/variables'
 
 section.album
-  position absolute
-  top 0
-  right 0
-  bottom 0
-  left 0
   margin auto
   z-index 3
 
-  .col-left
+  .col-first
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
 
     img
       border solid 2px rgba(255, 255, 255, 0.31)
 
-  .col-right
+  .col-last
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
       padding-left $gutter-primary-x-lg
