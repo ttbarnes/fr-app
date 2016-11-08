@@ -1,4 +1,18 @@
-<section class="row music-album cancel-top-padding">
+<section class="row music-album cancel-top-padding include-bg-img">
 
+  <img ng-src="{{vm.album.images.appCover}}" class="img-bg" />
+
+  <div class="main-content">
+
+    <album data="vm.album" layout="2"></album>
+
+    <div class="row button-view-nav">
+       <a ui-sref="music" class="button">
+        <i class="icon-arrow-left"></i>
+        <span>Music</span>
+      </a>
+    </div>
+
+  </div>
 
 </section>

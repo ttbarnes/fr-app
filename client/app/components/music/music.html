@@ -1,17 +1,17 @@
 <section class="row music cancel-top-padding">
 
   <ul>
-    <li ng-repeat="album in vm.albums" class="row">
-      <hero img-url="{{album.images.appCover}}"
-            img-alt="{{album.name}}">
-      </hero>
-      <album data="album" layout="2"></album>
+    <li ng-repeat="album in vm.albums" class="col-50-md">
+       <a ui-sref="musicAlbum({id: album.id})">
+        <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
+        <br/>
+        More info
+       </a>
     </li>
   </ul>
 
-
   <div class="row button-view-nav">
-    <a ui-sref="about" class="button">
+     <a ui-sref="about" class="button">
       <span>About Fiona</span>
       <i class="icon-arrow-right"></i>
     </a>
