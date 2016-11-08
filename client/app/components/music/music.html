@@ -2,8 +2,12 @@
 
   <ul>
     <li ng-repeat="album in vm.albums" class="row">
+      <hero img-url="{{album.images.appCover}}"
+            img-alt="{{album.name}}">
+      </hero>
       <album data="album" layout="2"></album>
     </li>
+
   </ul>
 
 
