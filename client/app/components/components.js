@@ -1,6 +1,7 @@
 import angular from 'angular';
 import Home from './home/home';
 import Music from './music/music';
+import MusicAlbum from './musicAlbum/musicAlbum';
 import About from './about/about';
 import Gallery from './gallery/gallery';
 import Collaborators from './collaborators/collaborators';
@@ -12,6 +13,7 @@ import Error from './error/error';
 let componentModule = angular.module('app.components', [
   Home.name,
   Music.name,
+  MusicAlbum.name,
   About.name,
   Gallery.name,
   Collaborators.name,
