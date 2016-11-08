@@ -4,6 +4,8 @@
 
   .main-content
     font-size 1.1em
+    max-width $section-max-width
+    margin 0 auto
 
     p
       span.quote,
@@ -12,3 +14,7 @@
 
       span.quote
         font-style italic
+
+    blockquote
+      &.first
+        margin-bottom $gutter-primary-lg
