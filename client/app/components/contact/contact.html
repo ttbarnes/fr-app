@@ -1,20 +1,20 @@
-<section class="row contact col-80-md include-bg-img">
+<section class="row contact col-40-md include-bg-img">
 
   <img src="./images/contact/bg.png" class="img-bg" />
 
   <div class="main-content">
 
-    <form name="contactForm" ng-submit="submitForm()" ng-hide="vm.success" novalidate>
-      <div class="col-60-md">
+    <form name="contactForm" ng-submit="submitForm()" ng-hide="vm.success" novalidate class="contact-form">
+      <div class="row">
 
         <div class="row" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
 
-          <div class="col-60-md">
+          <div class="row">
             <label for="name" class="sr-only">Name</label>
             <input type="text" name="name" class="form-control" ng-model="user.name" placeholder="Name" required>
           </div>
 
-          <div class="col-40-md">
+          <div class="row row-error">
             <p ng-show="contactForm.name.$invalid &&
                         !contactForm.name.$pristine" class="error">Name is required</p>
           </div>
@@ -23,12 +23,12 @@
 
         <div class="row" ng-class="{ 'has-error' : contactForm.email.$invalid && !contactForm.email.$pristine || contactForm.email.$dirty && !user.email}">
 
-          <div class="col-60-md">
+          <div class="row">
             <label for="email" class="sr-only">Email</label>
             <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Email">
           </div>
 
-          <div class="col-40-md">
+          <div class="row row-error">
             <p ng-show="contactForm.email.$invalid &&
                         !contactForm.email.$pristine"
                         class="error">Invalid email</p>
@@ -43,9 +43,9 @@
 
       </div>
 
-      <div class="row" ng-class="{ 'has-error' : contactForm.message.$dirty && !user.message.length}">
+      <div class="row row-textarea" ng-class="{ 'has-error' : contactForm.message.$dirty && !user.message.length}">
 
-        <div class="col-60-md">
+        <div class="row">
           <label for="message" class="sr-only">Message</label>
           <textarea ng-model="user.message"
                     name="message"
@@ -54,45 +54,37 @@
           </textarea>
         </div>
 
-        <div class="col-40-md">
+        <div class="row row-error">
           <p ng-show="contactForm.message.$dirty && !user.message.length" class="error">Please enter a message</p>
-
         </div>
 
       </div>
 
       <div class="row" ng-show="vm.error">
 
-        <div class="col-60-md">
-          <p class="submit-error error"><i class="icon-cross"></i>Sorry, something is wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
-
-        </div>
+        <p class="submit-error error"><i class="icon-cross"></i>Sorry, something is wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
 
       </div>
 
       <div class="row">
 
-        <div class="col-60-md">
+        <button class="button-lg"
+                ng-click="vm.sendMail(user)"
+                value="Send email"
+                ng-class="{loading: vm.promiseLoading}"
+                ng-disabled="contactForm.$pristine ||
+                             contactForm.name.$invalid ||
+                             !user.name ||
+                             contactForm.email.$invalid ||
+                             !user.email ||
+                             contactForm.message.$invalid ||
+                             !user.message">
 
-          <button class="button-lg"
-                  ng-click="vm.sendMail(user)"
-                  value="Send email"
-                  ng-class="{loading: vm.promiseLoading}"
-                  ng-disabled="contactForm.$pristine ||
-                               contactForm.name.$invalid ||
-                               !user.name ||
-                               contactForm.email.$invalid ||
-                               !user.email ||
-                               contactForm.message.$invalid ||
-                               !user.message">
+                             <div ng-show="vm.promiseLoading" class="loader"></div>
+                             <span ng-hide="vm.promiseLoading">Send</span>
+                             <span ng-show="vm.promiseLoading">Sending</span> email
 
-                               <div ng-show="vm.promiseLoading" class="loader"></div>
-                               <span ng-hide="vm.promiseLoading">Send</span>
-                               <span ng-show="vm.promiseLoading">Sending</span> email
-
-          </button>
-
-        </div>
+        </button>
 
       </div>
 

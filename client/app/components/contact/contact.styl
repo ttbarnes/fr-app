@@ -1,12 +1,24 @@
 @import '../../common'
 
 .contact
+  margin 0 auto
+  @media screen and (min-width: $bp-md)
+    float none !important
 
-  .row
-    margin-bottom $gutter-primary-lg + $gutter-primary
-    > div
-      @media screen and (min-width: $bp-md)
-        padding-right $gutter-primary-lg
+  .contact-form > .row
+    margin-top $gutter-primary-lg
+    margin-bottom 0
+
+    .row > .row
+      margin-bottom 0
+
+  .row-error
+    margin 0
+
+  .row-textarea
+    margin-top 0 !important
+    > .row:first-child
+      margin-bottom 0
 
   .error
     float left
