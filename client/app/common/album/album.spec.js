@@ -15,10 +15,7 @@ describe('Album', () => {
   }));
 
   describe('Controller', () => {
-    it('has a name property [REMOVE]', () => {
-      let controller = makeController();
-      expect(controller.name).toBeDefined();
-    });
+
   });
 
   describe('Template', () => {

@@ -6,7 +6,8 @@ let albumComponent = {
   transclude: true,
   restrict: 'E',
   bindings: {
-    data: '='
+    data: '=',
+    layout: '@'
   },
   template,
   controller,

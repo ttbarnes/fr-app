@@ -1,6 +1,8 @@
 class AlbumController {
   constructor() {
-    this.name = 'album';
+
+
+
   }
 }
 
