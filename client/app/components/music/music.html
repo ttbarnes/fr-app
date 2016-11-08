@@ -4,9 +4,24 @@
 
     <ul class="album-cols">
       <li ng-repeat="album in vm.albums" class="col col-50-md">
-         <a ui-sref="musicAlbum({id: album.id})">
-          <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
+         <a ng-if="!album.comingSoon" ui-sref="musicAlbum({id: album.id})" class="released">
+           <span class="img-wrap">
+             <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
+           </span>
+           <div class="overlay overlay-hover">
+             <div class="content">
+               <i class="icon-zoom"></i>
+             </div>
+           </div>
          </a>
+         <span ng-if="album.comingSoon" class="img-wrap">
+           <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
+           <div class="overlay coming-soon-overlay">
+             <div class="content">
+               <p>coming soon</p>
+             </div>
+           </div>
+         </span>
       </li>
     </ul>
 

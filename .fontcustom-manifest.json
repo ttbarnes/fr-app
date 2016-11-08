@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "1808400eebc5a35422be042aaa5bc7a078c4c5156617bf02d02a89f3b6932554",
-    "current": "1808400eebc5a35422be042aaa5bc7a078c4c5156617bf02d02a89f3b6932554"
+    "previous": "cf3778fec731db96abff4e1daad3c8a862702e2ac3d677ff516a8d42445a49f5",
+    "current": "cf3778fec731db96abff4e1daad3c8a862702e2ac3d677ff516a8d42445a49f5"
   },
   "fonts": [
-    "client/app/fonts/fontcustom_1808400eebc5a35422be042aaa5bc7a0.ttf",
-    "client/app/fonts/fontcustom_1808400eebc5a35422be042aaa5bc7a0.svg",
-    "client/app/fonts/fontcustom_1808400eebc5a35422be042aaa5bc7a0.woff",
-    "client/app/fonts/fontcustom_1808400eebc5a35422be042aaa5bc7a0.eot"
+    "client/app/fonts/fontcustom_cf3778fec731db96abff4e1daad3c8a8.ttf",
+    "client/app/fonts/fontcustom_cf3778fec731db96abff4e1daad3c8a8.svg",
+    "client/app/fonts/fontcustom_cf3778fec731db96abff4e1daad3c8a8.woff",
+    "client/app/fonts/fontcustom_cf3778fec731db96abff4e1daad3c8a8.eot"
   ],
   "glyphs": {
     "arrow-left": {
@@ -69,6 +69,10 @@
     "tick": {
       "codepoint": 61707,
       "source": "client/icons/tick.svg"
+    },
+    "zoom": {
+      "codepoint": 61722,
+      "source": "client/icons/zoom.svg"
     }
   },
   "options": {
