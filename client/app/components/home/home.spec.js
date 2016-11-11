@@ -11,7 +11,7 @@ describe('Home', ()=>{
   var albumsService,
       mockAlbumsService = {
         allAlbums: [{id:1}, {id:2}]
-      }
+      };
 
   beforeEach(window.module(HomeModule.name));
   beforeEach(inject((_$rootScope_)=>{
@@ -28,6 +28,13 @@ describe('Home', ()=>{
       let controller = makeController()
       expect(controller.albumsService).toBeDefined();
       expect(controller.albumsService).toEqual(mockAlbumsService)
+    });
+
+    it('should assign latestAlbum to scope', () => {
+      let controller = makeController()
+      expect(controller.latestAlbum).toBeDefined();
+      expect(controller.latestAlbum).toBeDefined();
+      expect(controller.latestAlbum).toEqual(jasmine.any(Object));
     });
 
   });

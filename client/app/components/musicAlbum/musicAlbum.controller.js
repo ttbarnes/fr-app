@@ -4,11 +4,10 @@ class MusicAlbumController {
   constructor($state, $stateParams, albumsService) {
     'ngInject';
     this.stateParams = $stateParams;
-    const currentId = this.stateParams.id;
-    this.albumsService = albumsService
-    this.albums = albumsService.allAlbums
+    this.currentId = this.stateParams.id || 2;
+    this.albumsService = albumsService;
 
-    this.album = this.albumsService.getSingleAlbum(currentId);
+    this.album = this.albumsService.getSingleAlbum(this.currentId);
     if(!this.album) {
       $state.go('error');
     }
