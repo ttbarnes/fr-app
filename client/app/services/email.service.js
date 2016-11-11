@@ -1,3 +1,5 @@
+import * as CONST from '../constants/constants';
+
 export default class emailService {
 
   constructor($http){
@@ -6,7 +8,7 @@ export default class emailService {
     let service = {
 
       send: (postData) => {
-        return $http.post('https://fr-app.herokuapp.com/api/postEmail', postData)
+        return $http.post(CONST.EMAIL_POST, postData)
       }
 
     }

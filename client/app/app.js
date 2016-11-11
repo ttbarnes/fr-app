@@ -10,6 +10,7 @@ import ezfb from 'angular-easyfb';
 import ngtweet from 'ngtweet';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
+import * as CONST from './constants/constants';
 import Common from './common/common';
 import Components from './components/components';
 import Services from './services/services';
@@ -39,17 +40,17 @@ angular.module('app', [
 
     $urlRouterProvider.otherwise('/error');
 
-    plangularConfigProvider.clientId = '209756cdccc1f718176cea87c3b77f99';
+    plangularConfigProvider.clientId = CONST.PLANGULAR_CLIENT_ID;
 
     //fb page config
     ezfbProvider.setInitParams({
-      appId: '1779328982334234'
+      appId: CONST.FB_ID
     });
 
-    LightboxProvider.templateUrl = '../app/components/gallery/modal.html';
+    LightboxProvider.templateUrl = CONST.GALLERY_TEMPLATE_URL;
 
     LightboxProvider.getImageUrl = function (image) {
-      return 'https://fr-app.herokuapp.com/images/gallery/' + image.url;
+      return GALLERY_IMAGE_URL + image.url;
     };
 
   })
