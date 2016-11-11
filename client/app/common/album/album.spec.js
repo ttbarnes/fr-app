@@ -18,11 +18,6 @@ describe('Album', () => {
 
   });
 
-  describe('Template', () => {
-    it('has name in template [REMOVE]', () => {
-      expect(AlbumTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
-  });
 
   describe('Component', () => {
       let component = AlbumComponent;

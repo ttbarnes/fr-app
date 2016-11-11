@@ -36,7 +36,6 @@ describe('Hero', ()=>{
     });
 
     it('includes the relevant `bindings`', () => {
-      expect(component.bindings.title).toBeDefined();
       expect(component.bindings.imgUrl).toBeDefined();
       expect(component.bindings.imgAlt).toBeDefined();
     })

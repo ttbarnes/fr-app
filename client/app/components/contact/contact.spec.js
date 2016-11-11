@@ -16,7 +16,8 @@ describe('Contact', () => {
         name: 'asdf',
         email: 'asdf@Asdf.co',
         message: 'testing'
-      };
+      },
+      endpoint = 'https://fr-app.herokuapp.com/api/postEmail';
 
   beforeEach(window.module(ContactModule.name));
 
@@ -99,7 +100,7 @@ describe('Contact', () => {
       describe('promise success', () => {
 
         beforeEach(inject(($httpBackend) => {
-          $httpBackend.expectPOST('http://fiona-ross-test.herokuapp.com/api/postEmail').respond(200);
+          $httpBackend.expectPOST(endpoint).respond(200);
         }));
 
         it('should set promiseLoading to false', () => {
@@ -128,7 +129,7 @@ describe('Contact', () => {
       describe('promise failure', () => {
 
         beforeEach(inject(($httpBackend) => {
-          $httpBackend.expectPOST('http://fiona-ross-test.herokuapp.com/api/postEmail').respond(200);
+          $httpBackend.expectPOST(endpoint).respond(500);
         }));
 
         it('should set promiseLoading to false', () => {
@@ -138,11 +139,11 @@ describe('Contact', () => {
           expect(scope.vm.promiseLoading).toBeFalsy();
         });
 
-        it('should set error to false', () => {
+        it('should set error to true', () => {
           let vm = makeController(emailService, {$scope: scope}, $httpBackend);
           vm.sendMail();
           $httpBackend.flush();
-          expect(scope.vm.error).toBeFalsy();
+          expect(scope.vm.error).toBeTruthy();
         });
 
       });

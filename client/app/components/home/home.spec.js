@@ -30,12 +30,6 @@ describe('Home', ()=>{
       expect(controller.albumsService).toEqual(mockAlbumsService)
     });
 
-    it('should assign albumsService.allAlbums to \'albums\'', () => {
-      let controller = makeController()
-      expect(controller.albums).toBeDefined();
-      expect(controller.albums).toEqual(mockAlbumsService.allAlbums)
-    });
-
   });
 
   describe('Component', ()=>{
