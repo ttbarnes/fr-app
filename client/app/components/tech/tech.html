@@ -4,17 +4,21 @@
 
   <div class="main-content">
 
-    <div class="col-30 col-left">
+    <!-- <div class="col-30 col-left"> -->
 
-      <ul>
-        <li ng-repeat="category in vm.tech" ng-click="vm.setActiveCategory(category.title)">
+    <nav>
+      <ul class="nav-items nav-items-small">
+        <li ng-repeat="category in vm.tech"
+            ng-click="vm.setActiveCategory(category.title)"
+            ng-class="{active: vm.activeCategory === category.title}"
+            class="no-anchor">
           {{category.title}}
         </li>
       </ul>
+    </nav>
+    <!-- </div> -->
 
-    </div>
-
-    <div class="col-70 col-right">
+    <!-- <div class="col-70 col-right"> -->
 
       <ul>
         <li ng-repeat="category in vm.tech">
@@ -26,7 +30,7 @@
         </li>
       </ul>
 
-    </div>
+    <!-- </div> -->
 
   </div>
 

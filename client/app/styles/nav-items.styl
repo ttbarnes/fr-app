@@ -1,0 +1,56 @@
+@import 'variables'
+
+.nav-items
+  display none
+  vertical-align top
+  text-align center
+  background $nav-bg
+
+  @media screen and (min-width: $bp-md)
+    display inline-block
+
+  li
+    float left
+    list-style-type none
+
+  a
+    color $color-text-secondary
+    position relative
+    z-index 6
+    &:hover,
+    &:focus
+      outline 0 none
+
+  li.no-anchor
+    cursor pointer
+
+  li.no-anchor,
+  a
+    display block
+
+    transition all 0.5s ease
+    span
+      display block
+      transform skew(-28.3deg) !important
+    &:hover,
+    &:focus,
+    &.active
+      background $color-bg-primary
+      color $color-logo
+
+  &.nav-items-large
+    li.no-anchor,
+    a
+      padding 1em 1.2em
+      font-size 1.23em
+
+  &.nav-items-small
+    li.no-anchor,
+    a
+      padding 0.5em 1em
+      font-size 1em
+
+  li.no-anchor.active,
+  li.active a
+    background $color-bg-primary
+    color $color-logo

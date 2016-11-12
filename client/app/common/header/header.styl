@@ -5,7 +5,7 @@ fr-header
   position fixed
   top 0
   z-index 20
-  background rgba(40, 40, 40, 0.95)
+  background $nav-bg
   border-bottom solid 2px $color-bg-primary
   box-shadow 0 5px 12px $color-bg-primary
   @media screen and (min-width: $bp-md)
@@ -35,38 +35,3 @@ fr-header
 
   nav
     text-align center
-
-    li
-      float left
-      list-style-type none
-
-    a
-      color $color-text-secondary
-      position relative
-      z-index 6
-      &:hover,
-      &:focus
-        outline 0 none
-
-    .nav-links
-      display none
-      vertical-align top
-      @media screen and (min-width: $bp-md)
-        display inline-block
-      a
-        display block
-        padding 1em 1.2em
-        font-size 1.23em
-        transition all 0.5s ease
-        span
-          display block
-          transform skew(-28.3deg) !important
-        &:hover,
-        &:focus,
-        &.active
-          background $color-bg-primary
-          color $color-logo
-      li.active a
-        background $color-bg-primary
-        color $color-logo
-
