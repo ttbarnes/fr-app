@@ -74,7 +74,7 @@
   {
     "title": "Mastering",
     "items": [
-      { "title": "By <a class=\"link-highlight-hover link-highlight-hover-border\" href=\"http://fluidmastering.com\" target=\"_blank\">fluidmastering.com</a>" }
+      { "title": "By <span class=\"link-highlight-hover link-highlight-hover-border\"><a href=\"http://fluidmastering.com\" target=\"_blank\">fluidmastering.com</a></span>" }
     ]
   }
 
