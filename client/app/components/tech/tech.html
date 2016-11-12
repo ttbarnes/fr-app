@@ -5,8 +5,18 @@
   <div class="main-content">
 
     <ul>
+      <li ng-repeat="category in vm.tech" ng-click="vm.setActiveCategory(category.title)">
+        <p>{{category.title}}</p>
+      </li>
+    </ul>
+
+    <ul>
       <li ng-repeat="category in vm.tech">
-        <p>{{category | json}}</p>
+        <ul ng-show="vm.activeCategory === category.title">
+          <li ng-repeat="item in category.items">
+            {{item.title}}
+          </li>
+        </ul>
       </li>
     </ul>
 

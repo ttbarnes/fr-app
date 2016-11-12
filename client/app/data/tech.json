@@ -1,6 +1,6 @@
 [
   {
-    "category": "guitars",
+    "title": "guitars",
     "items": [
       { "title": "Fender Stratocaster" },
       { "title": "Taylor 114ce" },
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "category": "somethingElse",
+    "title": "somethingElse",
     "items": [
       { "title": "bingo" },
       { "title": "bongo" },

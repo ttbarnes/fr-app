@@ -5,6 +5,12 @@ class TechController {
 
     this.tech = this.techService.getAll();
 
+    this.activeCategory = this.tech[0].title;
+
+    this.setActiveCategory = (category) => {
+      this.activeCategory = category;
+    }
+
   }
 }
 
