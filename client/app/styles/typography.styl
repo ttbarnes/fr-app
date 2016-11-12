@@ -2,17 +2,17 @@
 
 ::selection
   background-color $color-highlight-primary
-  color $color-bg-primary
+  color #000
   text-shadow none
 
 ::-moz-selection
   background-color $color-highlight-primary
-  color $color-bg-primary
+  color #000
   text-shadow none
 
 ::-webkit-selection
   background-color $color-highlight-primary
-  color $color-bg-primary
+  color #000
   text-shadow none
 
 h1,
@@ -28,6 +28,9 @@ h1
   font-size $font-size-h1-mobile !important
   @media (min-width $bp-md)
     font-size $font-size-h1-desktop !important
+
+h2
+  font-size $font-size-h2
 
 h3
   font-size $font-size-h3
@@ -84,7 +87,7 @@ dl
   list-style-type none
 
 .long-copy-line-height
-  line-height 1.5em
+  line-height 1.8em
 
 .text-uppercase
   text-transform uppercase
