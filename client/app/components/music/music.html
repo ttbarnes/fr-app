@@ -16,9 +16,14 @@
          </a>
          <span ng-if="album.comingSoon" class="img-wrap">
            <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
-           <div class="overlay coming-soon-overlay">
+           <div class="overlay overlay-hover coming-soon-overlay">
              <div class="content">
-               <p>coming soon</p>
+               <p><span>Coming soon</span></p>
+             </div>
+           </div>
+           <div class="overlay overlay-hover-content">
+             <div class="content">
+               <p><span>Coming soon in 2016</span></p>
              </div>
            </div>
          </span>
