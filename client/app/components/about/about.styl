@@ -16,5 +16,13 @@
         font-style italic
 
     blockquote
+      &.extra-margin-bottom
+        margin 0 auto $gutter-primary-lg auto
       &.first
-        margin-bottom $gutter-primary-lg
+        max-width 880px
+        .copy
+          width 55%
+        small
+          opacity 0.6
+          .dash
+            padding 0 0.5em
