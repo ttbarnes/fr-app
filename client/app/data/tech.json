@@ -1,0 +1,20 @@
+[
+  {
+    "category": "guitars",
+    "items": [
+      { "title": "Fender Stratocaster" },
+      { "title": "Taylor 114ce" },
+      { "title": "Hohner LW400N" },
+      { "title": "Ibanez semi-hollow" }
+    ]
+  },
+  {
+    "category": "somethingElse",
+    "items": [
+      { "title": "bingo" },
+      { "title": "bongo" },
+      { "title": "fongo" },
+      { "title": "longo" }
+    ]
+  }
+]

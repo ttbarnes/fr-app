@@ -4,6 +4,12 @@
 
   <div class="main-content">
 
+    <ul>
+      <li ng-repeat="category in vm.tech">
+        <p>{{category | json}}</p>
+      </li>
+    </ul>
+
   <!--
     <div class="row album grid-col-hover">
       <h3>Just Me (and sometimes someone else)</h3>
@@ -13,7 +19,7 @@
           <div class="inner">
             <h4 class="box-heading">Guitars</h4>
             <div class="content">
-              <ul>
+                <ul>
                 <li>Fender Stratocaster</li>
                 <li>Taylor 114ce</li>
                 <li>Hohner LW400N</li>
