@@ -12,17 +12,17 @@
             ng-click="vm.setActiveCategory(category.title)"
             ng-class="{active: vm.activeCategory === category.title}"
             class="no-anchor">
-          {{category.title}}
+          <span>{{category.title}}</span>
         </li>
       </ul>
     </nav>
     <!-- </div> -->
 
     <!-- <div class="col-70 col-right"> -->
-    <section class="tabbed-content">
+    <section class="tabbed-content cancel-padding">
       <ul>
         <li ng-repeat="category in vm.tech">
-          <ul ng-show="vm.activeCategory === category.title" class="tabbed-content-list">
+          <ul ng-class="{active: vm.activeCategory === category.title}" class="tabbed-content-list">
             <li ng-repeat="item in category.items" ng-class="{last: $last}">
               <span ng-bind-html="item.title"></span>
             </li>
