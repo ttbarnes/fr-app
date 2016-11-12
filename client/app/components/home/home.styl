@@ -2,8 +2,23 @@
 
 .home
 
-  h3 a
-    color $color-highlight-primary
+  .img-bg
+    display none
+    @media (min-width $bp-md)
+      display block
+      width 100%
+      padding-top 15%
+    @media (min-width $bp-md + 225px)
+      padding-top $header-height-desktop
+
+  h3
+    @media (min-width $bp-md)
+      width 60%
+    @media (min-width $bp-md + 225px)
+      width 100%
+      max-width 285px
+    @media (min-width $bp-lg + 250px)
+      max-width 100%
 
   .row-album-latest
     float none
@@ -13,6 +28,12 @@
 
     .album
       max-width 900px
+
+      .col-last
+        @media (min-width $bp-md + 225px)
+          padding-top 20%
+
+
 
   .s-feeds
     text-align center
