@@ -5,9 +5,13 @@ fr-header
   position fixed
   top 0
   z-index 20
-  background-color $color-bg-secondary
+  background rgba(40, 40, 40, 0.95)
   border-bottom solid 2px $color-bg-primary
   box-shadow 0 5px 12px $color-bg-primary
+  @media screen and (min-width: $bp-md)
+    width 110% !important
+    margin 0 -5% !important
+    transform skew(28.3deg)
 
   .icon-nav
     float left
@@ -30,6 +34,7 @@ fr-header
       display none
 
   nav
+    text-align center
 
     li
       float left
@@ -50,9 +55,12 @@ fr-header
         display inline-block
       a
         display block
-        padding 1.65em 0.5856em 1.26em 0.5856em
-        font-size 1.130em
-        transition all 0.2s ease
+        padding 1em 1.2em
+        font-size 1.23em
+        transition all 0.5s ease
+        span
+          display block
+          transform skew(-28.3deg) !important
         &:hover,
         &:focus,
         &.active
