@@ -6,4 +6,21 @@
   .main-content
     margin 0 auto
     text-align center
+    max-width 750px
 
+  .tabbed-nav,
+  .tabbed-content
+    width 100%
+
+  .tabbed-content
+    background $tabbed-content-bg
+    padding-top $gutter-primary-lg
+
+
+  .tabbed-content-list
+    li
+      text-align center
+      padding $gutter-primary 0
+      border-bottom solid 2px rgb(23, 23, 23)
+      &.last
+        border-bottom 0 none

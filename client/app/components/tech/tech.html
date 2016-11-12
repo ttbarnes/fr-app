@@ -6,7 +6,7 @@
 
     <!-- <div class="col-30 col-left"> -->
 
-    <nav>
+    <nav class="tabbed-nav">
       <ul class="nav-items nav-items-small">
         <li ng-repeat="category in vm.tech"
             ng-click="vm.setActiveCategory(category.title)"
@@ -19,16 +19,17 @@
     <!-- </div> -->
 
     <!-- <div class="col-70 col-right"> -->
-
+    <section class="tabbed-content">
       <ul>
         <li ng-repeat="category in vm.tech">
-          <ul ng-show="vm.activeCategory === category.title">
-            <li ng-repeat="item in category.items">
+          <ul ng-show="vm.activeCategory === category.title" class="tabbed-content-list">
+            <li ng-repeat="item in category.items" ng-class="{last: $last}">
               <span ng-bind-html="item.title"></span>
             </li>
           </ul>
         </li>
       </ul>
+    </section>
 
     <!-- </div> -->
 
