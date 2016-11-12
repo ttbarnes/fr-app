@@ -4,8 +4,6 @@
 
   <div class="main-content">
 
-    <!-- <div class="col-30 col-left"> -->
-
     <nav class="tabbed-nav">
       <ul class="nav-items nav-items-small">
         <li ng-repeat="category in vm.tech"
@@ -16,22 +14,36 @@
         </li>
       </ul>
     </nav>
-    <!-- </div> -->
 
-    <!-- <div class="col-70 col-right"> -->
     <section class="tabbed-content cancel-padding">
       <ul>
         <li ng-repeat="category in vm.tech">
-          <ul ng-class="{active: vm.activeCategory === category.title}" class="tabbed-content-list">
-            <li ng-repeat="item in category.items" ng-class="{last: $last}">
+
+          <ul ng-class="{active: vm.activeCategory === category.title,
+                         'contains-sub-items': category.subItems.length}"
+              class="tabbed-content-list">
+
+            <li ng-repeat="item in category.items"
+                ng-class="{last: $last}">
+
               <span ng-bind-html="item.title"></span>
+
             </li>
+
           </ul>
+
+          <ul ng-class="{active: category.subItems.length && vm.activeCategory === category.title}"
+              class="tabbed-content-list tabbed-content-list-sub-items">
+            <li ng-repeat="subItem in category.subItems"
+                ng-class="{last: $last}">
+              {{subItem.title}}
+            </li>
+
+          </ul>
+
         </li>
       </ul>
     </section>
-
-    <!-- </div> -->
 
   </div>
 

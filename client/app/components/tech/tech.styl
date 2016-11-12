@@ -23,6 +23,7 @@
   .tabbed-content
     width 97%
     margin-left 3%
+    min-height 280px
 
   .tabbed-content-list
     background $tabbed-content-bg
@@ -41,3 +42,11 @@
       border-bottom solid 2px rgb(23, 23, 23)
       &.last
         border-bottom 0 none
+
+    &.contains-sub-items
+      padding-bottom 0
+      li.last
+        border-bottom solid 2px rgb(23, 23, 23)
+
+  .tabbed-content-list-sub-items
+    padding-top 0 !important
