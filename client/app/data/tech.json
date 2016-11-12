@@ -1,6 +1,6 @@
 [
   {
-    "title": "guitars",
+    "title": "Guitars",
     "items": [
       { "title": "Fender Stratocaster" },
       { "title": "Taylor 114ce" },
@@ -9,12 +9,73 @@
     ]
   },
   {
-    "title": "somethingElse",
+    "title": "Guitar Amps",
     "items": [
-      { "title": "bingo" },
-      { "title": "bongo" },
-      { "title": "fongo" },
-      { "title": "longo" }
+      { "title": "Fender Reverb Deluxe (1970s)" },
+      { "title": "Fender Blues Deluxe" }
+    ]
+  },
+  {
+    "title": "Drums",
+    "items": [
+      { "title": "Liberty drum kit" },
+      { "title": "Vector Hardware" },
+      { "title": "Evans Drum heads" },
+      { "title": "Promark sticks" },
+      { "title": "Sabian cymbals" }
+    ]
+  },
+  {
+    "title": "Sax",
+    "items": [
+      { "title": "Jupiter JAS-700" },
+      { "title": "Mouthpiece - Meyer Hard Rubber 5m" }
+    ]
+  },
+  {
+    "title": "Mics",
+    "items": [
+      { "title": "Bock 251" },
+      { "title": "Audix DP4 drum mics" },
+      { "title": "SE Electronics SE1A" },
+      { "title": "Shure SM57" }
+    ]
+  },
+  {
+    "title": "Monitors",
+    "items": [
+      { "title": "Focal Twin Be" },
+      { "title": "Yamaha NS10" }
+    ]
+  },
+  {
+    "title": "Outboard",
+    "items": [
+      { "title": "Toft ATB32 analog console" },
+      { "title": "UAD 6176" },
+      { "title": "Antelope Orion 32" }
+    ]
+  },
+  {
+    "title": "Mixing",
+    "items": [
+      { "title": "Mixed in Logic Pro X" },
+      { "title": "Used various plugins from the following companies:" }
+    ],
+    "subItems": [
+      { "title": "WAVES" },
+      { "title": "FABFILTER" },
+      { "title": "SLATE DIGITAL" },
+      { "title": "SOFTUBE" },
+      { "title": "NATIVE INSTRUMENTS" },
+      { "title": "CYTOMIC" }
+    ]
+  },
+  {
+    "title": "Mastering",
+    "items": [
+      { "title": "By <a class=\"link-highlight-hover link-highlight-hover-border\" href=\"http://fluidmastering.com\" target=\"_blank\">fluidmastering.com</a>" }
     ]
   }
+
 ]
