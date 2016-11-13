@@ -1,6 +1,8 @@
 @import '../../styles/variables';
 
 .music
+  @media (min-width $bp-md)
+    padding-bottom 0
 
   .img-bg
     padding-top $header-height-mobile
@@ -14,4 +16,5 @@
       padding-top $gutter-primary-xx-lg
 
   .button-view-nav
-    padding-top $gutter-primary-xx-lg
+    @media (min-width $bp-lg)
+      padding-top $gutter-primary-xx-lg
