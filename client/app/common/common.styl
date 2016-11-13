@@ -16,8 +16,11 @@ body
   margin 0 auto
 
 section
-  padding $gutter-primary-lg
+  padding $gutter-primary-lg $gutter-primary
   padding-top $section-gutter-horizontal
+  @media (min-width $bp-md)
+    padding-top $section-gutter-horizontal
+    padding $gutter-primary-lg
 
 fr-header,
 fr-footer

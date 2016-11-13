@@ -30,15 +30,21 @@ h1
     font-size $font-size-h1-desktop !important
 
 h2
-  font-size $font-size-h2
+  font-size $font-size-h2-mobile
+  @media (min-width $bp-md)
+    font-size $font-size-h2-desktop
 
 h3
-  font-size $font-size-h3
+  font-size $font-size-h3-mobile
+  @media (min-width $bp-md)
+    font-size $font-size-h3-desktop
 
 h4,
 h5,
 h6
-  font-size 1.3em
+  font-size $font-size-h4-mobile
+  @media (min-width $bp-md)
+    font-size $font-size-h4-desktop
 
 .font-size-large
   font-size $font-size-h3

@@ -1,6 +1,9 @@
 @import '../../common'
 
 .home
+  @media (min-width $bp-md)
+
+    padding-bottom 0
 
   .img-bg
     display none
@@ -15,6 +18,9 @@
     max-width 900px
 
   h3
+    margin-bottom $gutter-primary-lg
+    @media (min-width $bp-md)
+      padding-bottom $gutter-primary
     @media (min-width $bp-md)
       width 60%
     @media (min-width $bp-md + 225px)
@@ -27,7 +33,9 @@
     float none
     margin 0 auto
     position relative
-    min-height 550px
+    padding-bottom $gutter-primary-lg
+    @media (min-width $bp-md)
+      padding-bottom 0
 
     .album
 
@@ -36,10 +44,10 @@
           padding-top 20%
 
     p
-      font-size $font-size-h2
+      font-size $font-size-h2-mobile
       margin-bottom $gutter-primary
-
-
+      @media (min-width $bp-md)
+        font-size $font-size-h2-desktop
 
   .s-feeds
     text-align center
@@ -48,10 +56,11 @@
       padding-bottom $gutter-primary-xx-lg
 
     h4
-      padding-top $gutter-primary-x-lg
-      padding-bottom $gutter-primary-lg
+      padding-bottom $gutter-primary
       font-size $font-size-h1-mobile
       @media (min-width $bp-md)
+        padding-top $gutter-primary-x-lg
+        padding-bottom $gutter-primary-lg
         font-size $font-size-h1-desktop
 
     .col-fb,
@@ -68,81 +77,11 @@
         opacity 1
 
     .col-fb
+      margin-bottom $gutter-primary-x-lg
+      @media (min-width $bp-md)
+        padding-bottom 0
       .fb-page
         overflow hidden
         > span
           margin -1px 0 0 -1px
           width 278px !important
-
-/*
-  .latest-album
-    display inline-block
-    width 100%
-    padding 0 0 $gutter-primary-xx-lg 0
-    overflow hidden
-    @media (min-width $bp-md)
-      min-height 450px
-    @media (min-width $bp-md + 100px)
-      min-height 500px
-    @media (min-width $bp-md + 200px)
-      min-height 550px
-    @media (min-width $bp-lg)
-      min-height 650px
-    div
-      text-align center
-      padding $gutter-primary-lg
-      max-width 500px
-      margin 0 auto
-      @media (min-width $bp-sm)
-        padding $gutter-primary-lg
-      @media (min-width $bp-md)
-        padding $gutter-primary-lg
-      @media (min-width $bp-lg)
-        padding $gutter-primary-x-lg
-        max-width 600px
-
-      a
-        display block
-        overflow hidden
-      img
-        opacity .8
-        @media (min-width $bp-xs)
-          max-width 80%
-        @media (min-width $bp-sm)
-          max-width 100%
-        @media (min-width $bp-md)
-          transition all 0.3s ease
-          max-width 85%
-      p
-        text-align left
-        opacity 0.4
-        padding $gutter-primary-lg 0
-        @media (min-width $bp-xs)
-          margin 0 auto
-          max-width 80%
-        @media (min-width $bp-sm)
-          max-width 100%
-          transition all 0.3s ease
-        @media (min-width $bp-md)
-          padding $gutter-primary-lg $gutter-primary-x-lg
-          max-width 100%
-        @media (min-width $bp-lg)
-          padding $gutter-primary-lg $gutter-primary-x-lg
-
-      a
-        &:focus
-          img
-            opacity 1
-        @media (min-width $bp-md)
-          &:hover,
-          &:focus
-            img
-              opacity 1
-              width 90%
-              max-width 90%
-              margin -2.5% 0 0 -2.5%
-              box-shadow 0 2px 2px #000
-            p
-              padding $gutter-primary-lg
-              opacity 1
-*/
