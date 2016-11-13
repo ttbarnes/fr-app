@@ -7,7 +7,7 @@ class ContactController {
     this.emailService = emailService;
 
     this.error = false;
-    this.success = true;
+    this.success = false;
 
     this.sendMail = (user) => {
       this.error = false;
