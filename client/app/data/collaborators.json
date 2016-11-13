@@ -42,6 +42,20 @@
     ]
   },
   {
+    "name": "Iain Court",
+    "role": "Music Producer/Sound Engineer",
+    "images": {
+      "avatar": "./images/collaborators/ian-court.jpg",
+      "thumb": "./images/collaborators/thumb/ian-court.jpg"
+    },
+    "urls": {
+      "website": "http://imcmusic.co.uk"
+    },
+    "collabOn": [
+      "Engineered and mixed: A Twist of Blue"
+    ]
+  },
+  {
     "name": "Jon Hockley",
     "role": "Producer, Engineer, Songwriter",
     "images": {
