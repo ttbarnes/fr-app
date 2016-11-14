@@ -24,7 +24,11 @@ blockquote
       vertical-align baseline
     &.quote
       color $color-blockquote
-      font-size 5em
+      font-size 3em
+      @media (min-width $bp-sm)
+        font-size 4em
+      @media (min-width $bp-md)
+        font-size 5em
       &:first-child
         vertical-align top
         margin-bottom -0.1em
