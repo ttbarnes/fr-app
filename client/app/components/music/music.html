@@ -6,7 +6,7 @@
 
     <ul class="album-cols">
       <li ng-repeat="album in vm.albums"
-          class="col col-50-md"
+          class="col col-50-sm"
           ng-class="{last: $last}">
          <a ng-if="!album.comingSoon" ui-sref="musicAlbum({id: album.id})" class="released">
            <span class="img-wrap">
