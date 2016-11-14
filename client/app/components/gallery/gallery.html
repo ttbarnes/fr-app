@@ -1,22 +1,25 @@
 <section class="row gallery">
 
-  <ul class="grid-layout-4-4 gallery-list grid-col-hover">
+  <div class="main-content">
 
-    <li ng-repeat="img in vm.images" class="col-50-xs col-25-md">
+    <ul class="grid-layout-4-4 gallery-list grid-col-hover">
 
-      <a ng-click="vm.openLightboxModal($index)">
-        <img ng-src="./images/gallery/{{img.thumbUrl}}" />
+      <li ng-repeat="img in vm.images" class="col-50-xs col-25-md">
+
+        <a ng-click="vm.openLightboxModal($index)">
+          <img ng-src="./images/gallery/{{img.thumbUrl}}" />
+        </a>
+
+      </li>
+
+    </ul>
+
+    <div class="row button-view-nav">
+      <a ui-sref="collaborators" class="button">
+        <span>Collaborators</span>
+        <i class="icon-arrow-right"></i>
       </a>
-
-    </li>
-
-  </ul>
-
-  <div class="row button-view-nav">
-    <a ui-sref="collaborators" class="button">
-      <span>Collaborators</span>
-      <i class="icon-arrow-right"></i>
-    </a>
+    </div>
   </div>
 
 </section>

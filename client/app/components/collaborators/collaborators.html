@@ -1,27 +1,30 @@
 <section class="row collaborators">
 
-  <ul class="grid-layout-4-4 grid-col-hover">
+  <div class="main-content">
 
-    <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
+    <ul class="grid-layout-4-4 grid-col-hover">
 
-      <a ui-sref="collaboratorsInd({id: collab.id})">
-        <div class="inner">
-          <img ng-src="{{collab.images.thumb}}" alt="{{collab.name}}" />
-          <div class="box-heading">
-            <h4>{{collab.name}}</h4>
+      <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
+
+        <a ui-sref="collaboratorsInd({id: collab.id})">
+          <div class="inner">
+            <img ng-src="{{collab.images.thumb}}" alt="{{collab.name}}" />
+            <div class="box-heading">
+              <h4>{{collab.name}}</h4>
+            </div>
           </div>
-        </div>
+        </a>
+
+      </li>
+
+    </ul>
+
+    <div class="row button-view-nav">
+      <a ui-sref="tech" class="button">
+        <span>Tech</span>
+        <i class="icon-arrow-right"></i>
       </a>
-
-    </li>
-
-  </ul>
-
-  <div class="row button-view-nav">
-    <a ui-sref="tech" class="button">
-      <span>Tech</span>
-      <i class="icon-arrow-right"></i>
-    </a>
+    </div>
   </div>
 
 </section>
