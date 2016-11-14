@@ -4,11 +4,16 @@
   margin 0 auto
   @media screen and (min-width: $bp-md)
     float none !important
-    padding-top $gutter-primary-xx-lg
+
+  .main-content
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg
 
   .contact-form > .row
     margin-top $gutter-primary-lg
     margin-bottom 0
+    &:first-child
+      margin-top 0
 
     .row > .row
       margin-bottom 0
