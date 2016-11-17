@@ -20,8 +20,10 @@
         <li ng-repeat="category in vm.tech">
 
           <ul ng-class="{active: vm.activeCategory === category.title,
-                         'contains-sub-items': category.subItems.length}"
+                         'contains-sub-items': category.subItems.length,
+                         first: $first}"
               class="tabbed-content-list">
+            <li class="category-title-mobile-only text-uppercase">{{category.title}}</li>
 
             <li ng-repeat="item in category.items"
                 ng-class="{last: $last}">

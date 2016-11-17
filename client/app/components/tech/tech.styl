@@ -5,11 +5,10 @@
   .main-content
     margin 0 auto
     text-align center
-    max-width 750px
+    max-width 760px
     overflow hidden
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
-
 
   .tabbed-nav,
   .tabbed-content
@@ -23,32 +22,64 @@
       transform skew(-28.3deg)
 
   .tabbed-content
-    width 97%
-    margin-left 3%
-    min-height 280px
+    max-width 450px
+    margin 0 auto
+    @media (min-width $bp-md)
+      width 97%
+      max-width 97%
+      margin-left 2.8%
+      min-height 280px
 
   .tabbed-content-list
-    background $tabbed-content-bg
-    opacity 0
-    height 0
-    transition all 0.5s ease
-    overflow hidden
+    background $tabbed-content-bg-mobile
+    margin-top $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      margin-top 0
+      background $tabbed-content-bg-desktop
+    &.first
+      margin-top 0
+
+    @media (min-width $bp-md)
+      transition all 0.5s ease
+      opacity 0
+      height 0
+      overflow hidden
+
     &.active
       opacity 1
       height auto
-      padding-top $gutter-primary-lg
-      padding-bottom $gutter-primary-lg
+      margin-top $gutter-primary-x-lg
+      &:first-child
+        margin-top 0
+      @media (min-width $bp-md)
+        margin-top 0
+        padding-top $gutter-primary-lg
+        padding-bottom $gutter-primary-lg
     li
       text-align center
-      padding $gutter-primary 0
+      padding $gutter-primary-xs 0
       border-bottom solid 2px rgb(23, 23, 23)
+      @media (min-width $bp-md)
+        padding $gutter-primary 0
       &.last
         border-bottom 0 none
 
     &.contains-sub-items
       padding-bottom 0
       li.last
-        border-bottom solid 2px rgb(23, 23, 23)
+        border-bottom 0 none
+
+  li.category-title-mobile-only
+    background rgba(40, 40, 40, 0.64)
+    color $color-highlight-primary
+    border-bottom-color #000
+    @media (min-width $bp-md)
+      display none
 
   .tabbed-content-list-sub-items
     padding-top 0 !important
+    margin-top 0 !important
+
+  .button-view-nav
+    @media (max-width $bp-md)
+      margin-top $gutter-primary-x-lg
