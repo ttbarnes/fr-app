@@ -54,12 +54,15 @@ button,
 
 .button-view-nav
   text-align center
+  margin-bottom 0
+  @media (min-width $bp-sm)
+    margin-bottom $row-margin-bottom
 
 .button-view-nav a
   clear both
   width 100%
   padding-right $gutter-primary
-  margin-top $gutter-primary-x-lg
+  margin-top $gutter-primary-xx-lg - $gutter-primary-lg
   line-height initial
   text-align center
   @media screen and (min-width: $bp-xs)
