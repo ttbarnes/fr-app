@@ -9,17 +9,25 @@ footer
   background-color $color-bg-primary
   color $color-text-tertiary
   transform skew(28.3deg)
-  max-width 350px
+  max-width 290px
+  @media (min-width $bp-md)
+    max-width 350px
 
 
   .container
     transform skew(-28.3deg) !important
-    max-width 305px
-    padding 2.5em
-    padding-left 4.4em
+    max-width 250px
+    padding 1em
+    padding-left 2.1em
     padding-right 0
+    padding-bottom 0.5em
     margin-left -40px
     background-color $color-bg-primary
+    @media (min-width $bp-md)
+      max-width 305px
+      padding 2.5em
+      padding-right 0
+      padding-left 4.4em
 
   h4
     font-size $font-size-h1-mobile
@@ -28,7 +36,9 @@ footer
       font-size $font-size-h1-desktop
 
   li
-    font-size 1.130em
+    font-size 1em
+    @media (min-width $bp-md)
+      font-size 1.130em
 
     i
       margin-top -2px
