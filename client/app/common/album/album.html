@@ -19,7 +19,7 @@
         <ng-transclude></ng-transclude>
       </div>
 
-      <ul ng-if="vm.data.urls.length" class="download-links">
+      <ul ng-if="vm.data.urls" class="download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">
           <a ng-href="{{vm.data.urls.itunes}}" target="_blank">
             <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
@@ -103,7 +103,7 @@
 
       <p ng-if="vm.data.comingSoon" class="coming-soon">Coming soon</p>
 
-      <ul ng-if="vm.data.urls.length" class="row download-links">
+      <ul ng-if="vm.data.urls" class="row download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">
           <a ng-href="{{vm.data.urls.itunes}}" target="_blank">
             <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
