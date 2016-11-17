@@ -136,6 +136,22 @@
     ]
   },
   {
+    "name": "Rose Redrup",
+    "role": "Makeup Artist",
+    "images": {
+      "avatar": "./images/collaborators/rose-redrup.jpg",
+      "thumb": "./images/collaborators/thumb/rose-redrup.jpg"
+    },
+    "urls": {
+      "email": "Roseredrup@gmail.com",
+      "facebook": "https://www.facebook.com/roseredrupartistry",
+      "instagram": "https://www.instagram.com/roseredprofessional"
+    },
+    "collabOn": [
+      "Makeup Artist for: Just Me (and sometimes someone else)"
+    ]
+  },
+  {
     "name": "Stefan Ferrol",
     "role": "Photography",
     "images": {
