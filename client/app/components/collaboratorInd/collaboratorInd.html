@@ -1,74 +1,79 @@
 <section class="row collaborator-ind">
 
-  <div ng-if="vm.collab">
-    <div class="intro hide-sm">
-      <h4>{{vm.collab.name}}</h4>
-      <p>{{vm.collab.role}}</p>
-    </div>
+  <div class="main-content">
 
-    <div class="col-left">
-      <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
-    </div>
-
-    <div class="main-content">
-      <div class="show-sm">
-        <h5>{{vm.collab.name}}</h5>
+    <div ng-if="vm.collab">
+      <div class="intro hide-sm">
+        <h3>{{vm.collab.name}}</h3>
         <p>{{vm.collab.role}}</p>
       </div>
 
-      <ul ng-if="vm.collab.collabOn" class="collab-on">
-        <li ng-repeat="collab in vm.collab.collabOn">{{collab}}</li>
-      </ul>
+      <div class="col-left">
+        <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
+      </div>
 
-      <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height link-highlight-hover link-highlight-hover-border"></div>
+      <div class="col-right">
+        <div class="show-sm">
+          <h5>{{vm.collab.name}}</h5>
+          <p>{{vm.collab.role}}</p>
+        </div>
 
-      <div ng-if="vm.collab.urls" class="urls link-highlight-hover">
-
-        <ul>
-          <li ng-if="vm.collab.urls.website">
-            <a ng-href="{{vm.collab.urls.website}}" target="_blank"><i class="icon-link"></i>Website</a>
-          </li>
-          <li ng-if="vm.collab.urls.soundcloud">
-            <a ng-href="{{vm.collab.urls.soundcloud}}" target="_blank"><i class="icon-s-s"></i>SoundCloud</a>
-          </li>
-          <li ng-if="vm.collab.urls.facebook">
-            <a ng-href="{{vm.collab.urls.facebook}}" target="_blank"><i class="icon-s-f"></i>Facebook</a>
-          </li>
-          <li ng-if="vm.collab.urls.twitter">
-            <a ng-href="{{vm.collab.urls.twitter}}" target="_blank"><i class="icon-s-t"></i>Twitter</a>
-          </li>
-          <li ng-if="vm.collab.urls.instagram">
-            <a ng-href="{{vm.collab.urls.instagram}}" target="_blank"><i class="icon-s-i"></i>Instagram</a>
-          </li>
-          <li ng-if="vm.collab.urls.phone">
-            <a ng-href="tel:{{vm.collab.urls.phone}}" target="_blank"><i class="icon-phone"></i>{{vm.collab.urls.phone}}</a>
-          </li>
-          <li ng-if="vm.collab.urls.other">
-            <ul ng-repeat="other in vm.collab.urls.other">
-              <li>
-                <a ng-href="{{other.url}}" target="_blank"><i class="icon-link"></i>{{other.title}}</a>
-              </li>
-            </ul>
-          </li>
-          <li ng-if="vm.collab.urls.bio">
-            <a ng-href="{{vm.collab.urls.bio}}" target="_blank"><i class="icon-read"></i>Bio</a>
-          </li>
+        <ul ng-if="vm.collab.collabOn" class="collab-on">
+          <li ng-repeat="collab in vm.collab.collabOn">{{collab}}</li>
         </ul>
 
-      </div>
+        <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height link-highlight-hover link-highlight-hover-border"></div>
 
-      <div class="row button-view-nav w-sub-copy">
-        <a ui-sref="collaboratorsInd({id: vm.collabState.detail.next.id})" class="button">
-          <span>
-            Next collaborator
-            <small>{{vm.collabState.detail.next.name}}</small>
-          </span>
-          <i class="icon-arrow-right"></i>
-        </a>
-        <a ui-sref="collaborators" class="text-link">All collaborators</a>
-      </div>
+        <div ng-if="vm.collab.urls" class="urls link-highlight-hover">
 
+          <ul>
+            <li ng-if="vm.collab.urls.website">
+              <a ng-href="{{vm.collab.urls.website}}" target="_blank"><i class="icon-link"></i>Website</a>
+            </li>
+            <li ng-if="vm.collab.urls.soundcloud">
+              <a ng-href="{{vm.collab.urls.soundcloud}}" target="_blank"><i class="icon-s-s"></i>SoundCloud</a>
+            </li>
+            <li ng-if="vm.collab.urls.facebook">
+              <a ng-href="{{vm.collab.urls.facebook}}" target="_blank"><i class="icon-s-f"></i>Facebook</a>
+            </li>
+            <li ng-if="vm.collab.urls.twitter">
+              <a ng-href="{{vm.collab.urls.twitter}}" target="_blank"><i class="icon-s-t"></i>Twitter</a>
+            </li>
+            <li ng-if="vm.collab.urls.instagram">
+              <a ng-href="{{vm.collab.urls.instagram}}" target="_blank"><i class="icon-s-i"></i>Instagram</a>
+            </li>
+            <li ng-if="vm.collab.urls.phone">
+              <a ng-href="tel:{{vm.collab.urls.phone}}" target="_blank"><i class="icon-phone"></i>{{vm.collab.urls.phone}}</a>
+            </li>
+            <li ng-if="vm.collab.urls.other">
+              <ul ng-repeat="other in vm.collab.urls.other">
+                <li>
+                  <a ng-href="{{other.url}}" target="_blank"><i class="icon-link"></i>{{other.title}}</a>
+                </li>
+              </ul>
+            </li>
+            <li ng-if="vm.collab.urls.bio">
+              <a ng-href="{{vm.collab.urls.bio}}" target="_blank"><i class="icon-read"></i>Bio</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="row button-view-nav w-sub-copy">
+          <a ui-sref="collaboratorsInd({id: vm.collabState.detail.next.id})" class="button">
+            <span>
+              Next collaborator
+              <small>{{vm.collabState.detail.next.name}}</small>
+            </span>
+            <i class="icon-arrow-right"></i>
+          </a>
+          <br/>
+          <a ui-sref="collaborators" class="text-link">All collaborators</a>
+        </div>
+
+      </div>
     </div>
+
   </div>
 
 </div>

@@ -2,6 +2,10 @@
 
 .collaborator-ind
 
+  .main-content
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
   .col-left
     max-width 250px
     @media screen and (min-width: $bp-sm)
@@ -14,17 +18,18 @@
     img
       width 100%
 
-  .main-content
+  .col-right
     clear both
     @media screen and (min-width: $bp-sm)
       clear none
     @media screen and (min-width: $bp-md)
       padding-left 287.5px
 
-  h4,
+  h3,
   h5
     margin-bottom 0.15em
     color $color-highlight-primary
+
   i
     background-color $color-bg-secondary
     margin-right 0.55em
@@ -62,4 +67,5 @@
   .button-view-nav
     clear right
     a
-      float left
+      width auto
+

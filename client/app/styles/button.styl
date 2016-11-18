@@ -54,34 +54,32 @@ button,
 
 .button-view-nav
   text-align center
-  margin-bottom 0
-  @media (min-width $bp-sm)
-    margin-bottom $row-margin-bottom
+  margin-bottom $row-margin-bottom
 
 .button-view-nav a
   clear both
-  width 100%
+  width auto
   padding-right $gutter-primary
   margin-top $gutter-primary-xx-lg - $gutter-primary-lg
   line-height initial
-  text-align center
-  @media screen and (min-width: $bp-xs)
-    width 50%
+  float left
+  text-align left
+  @media (min-width: $bp-xs)
+    width auto
     display inline-block
     margin 0 auto
     margin-top $gutter-primary-x-lg + $gutter-primary
-  @media screen and (min-width: $bp-sm)
+  @media (min-width: $bp-sm)
     width auto
     text-align left
   span
-    @media screen and (min-width: $bp-sm)
-      float left
+    float left
   &.text-link
-    padding-left 1.8em
-    padding-right 1.8em
     margin-top $gutter-primary
     opacity 0.3
     transition all 0.2s ease
+    padding-left 1.4em
+    padding-right 1.8em
     &:hover,
     &:focus
       opacity 1
@@ -97,14 +95,18 @@ button,
     opacity 0.3
     background none
     margin-right 0
-    top 2px
     position relative
-    @media screen and (min-width: $bp-sm)
-      float right
-      top 0
-
+    float right
+    top 2px
     padding-top 0.1em
     font-size 1.1em
+    margin-left 5px
+    @media (min-width $bp-xs)
+      top 1px
+     @media (min-width $bp-sm)
+      top 2px
+      margin-left 0
+
   @media (min-width $bp-md)
     &:hover,
     &:focus
