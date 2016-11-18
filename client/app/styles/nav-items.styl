@@ -6,7 +6,7 @@
   text-align center
   background $nav-bg
 
-  @media screen and (min-width: $bp-md)
+  @media (min-width: $bp-md)
     display inline-block
 
   li
@@ -47,8 +47,10 @@
   &.nav-items-small
     li.no-anchor,
     a
-      padding 0.5em 1em
+      padding 0.5em 0.8em
       font-size 1em
+      @media (min-width: $bp-lg)
+        padding 0.5em 0.95em
 
   li.no-anchor.active,
   li.active a
