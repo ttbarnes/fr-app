@@ -46,9 +46,14 @@ blockquote
   &.album
     text-align left
     padding 0
+    line-height 1.3em
+    @media (min-width $bp-md)
+      line-height 1.7em
     span.copy,
     span.author
       font-size 0.75em
+    span.copy
+      text-align left
 
     span.copy
       width 100%
@@ -65,10 +70,6 @@ blockquote
         margin-left -0.15em
         margin-right 0
         width 7%
-        @media (min-width $bp-sm)
-          width 10%
-        @media (min-width $bp-md)
-          width 7%
       &:last-child
         display none
         margin-left 0.03em
@@ -78,7 +79,3 @@ blockquote
       font-style normal
       color #616161
       margin-left 5.5%
-      @media (min-width $bp-sm)
-        margin-left 8%
-      @media (min-width $bp-md)
-        margin-left 5.5%

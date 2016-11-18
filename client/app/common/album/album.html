@@ -1,4 +1,4 @@
-<section class="album cancel-padding">
+<section class="album">
 
   <div ng-if="vm.layout === '1'">
 
@@ -44,10 +44,13 @@
   <div ng-if="vm.layout === '2'">
 
     <div class="col-50-md col-first">
+
+      <h2 class="mobile-only">{{vm.data.name}}</h2>
+
       <img ng-src="{{vm.data.images.thumb}}"
            alt="{{vm.data.title}}"/>
 
-      <div class="row" ng-show="vm.data.soundcloud.setUrl">
+      <div class="row row-plangular" ng-show="vm.data.soundcloud.setUrl">
 
         <div plangular="{{vm.data.soundcloud.setUrl}}" class="plangular">
 
@@ -99,7 +102,7 @@
 
     <div class="col-50-md col-last">
 
-      <h2>{{vm.data.name}}</h2>
+      <h2 class="desktop-only">{{vm.data.name}}</h2>
 
       <p ng-if="vm.data.comingSoon" class="coming-soon">Coming soon</p>
 
