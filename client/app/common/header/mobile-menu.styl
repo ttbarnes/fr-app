@@ -17,7 +17,7 @@ body.ng-pageslide-body-open::before
   transition opacity 0.2s
   opacity 0.5
   pointer-events all
-  @media screen and (min-width: $bp-md)
+  @media (min-width: $bp-md)
     display none
 
 body.ng-pageslide-body-closed::before
@@ -33,7 +33,7 @@ body.ng-pageslide-body-closed::before
   z-index 1
   opacity 0
   pointer-events none
-  @media screen and (min-width: $bp-md)
+  @media (min-width: $bp-md)
     display none
 
 .ng-pageslide
@@ -43,7 +43,7 @@ body.ng-pageslide-body-closed::before
   background -moz-linear-gradient(left,  $color-bg-primary 30%, $color-bg-secondary 100%)
   background -webkit-linear-gradient(left,  $color-bg-primary 30%,$color-bg-secondary 100%)
   background linear-gradient(to right,  $color-bg-primary 30%,$color-bg-secondary 100%)
-  @media screen and (min-width: $bp-md)
+  @media (min-width: $bp-md)
     display none
 
   .nav-items
@@ -97,5 +97,5 @@ body.ng-pageslide-body-open
   &::before
     .ng-pageslide
       box-shadow 52px 0 112px $color-bg-primary
-      @media screen and (min-width: $bp-md)
+      @media (min-width: $bp-md)
         box-shadow none
