@@ -22,8 +22,15 @@
       &.first
         max-width 880px
         .copy
-          width 55%
+          width 65%
+          @media (min-width $bp-sm)
+            width 55%
         small
+          clear both
+          display block
           opacity 0.6
+          @media (min-width $bp-xs)
+            clear none
+            display inline-block
           .dash
             padding 0 0.5em

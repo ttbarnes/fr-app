@@ -51,13 +51,15 @@ body.ng-pageslide-body-closed::before
       text-align left
 
   .logo
-    font-size $font-size-h1-mobile
+    font-size $font-size-h1-mobile-xs
     padding-top $gutter-primary
     padding-right 15px
     padding-bottom $gutter-primary
     padding-left 15px
     margin-bottom 0
     color $color-text-primary
+    @media (min-width: 300px)
+      font-size $font-size-h1-mobile
 
   a
     display block
@@ -92,3 +94,4 @@ body.ng-pageslide-body-closed::before
 body.ng-pageslide-body-open
   .ng-pageslide
     box-shadow 11px 2px 32px #000
+    max-width 80%
