@@ -52,6 +52,7 @@
   .s-feeds
     text-align center
     padding-bottom $gutter-primary-x-lg
+    overflow hidden
     @media (min-width $bp-md)
       padding-bottom $gutter-primary-xx-lg
 
@@ -73,6 +74,9 @@
       vertical-align top
       opacity 0.65
       transition all 0.3s ease
+      margin-left -17px
+      @media (min-width $bp-xs)
+        margin-lft 0
       &:hover
         opacity 1
 

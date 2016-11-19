@@ -118,25 +118,31 @@
 .grid-col-hover
 
   > li
-    max-height 200px
+    max-height 130px
     overflow hidden
-    height 150px
+    height 130px
     cursor pointer
+    @media (min-width: 350px)
+      max-height 170px
+      height 170px
+    @media (min-width: 450px)
+      height 185px
+      max-height 185px
     @media (min-width: $bp-xs)
-      height 200px
-      max-height 200px
+      height 230px
+      max-height 230px
     @media (min-width: $bp-sm)
-      height 220px
-      max-height 220px
+      height 290px
+      max-height 290px
     @media (min-width: $bp-md)
-      height 145px
-      max-height 145px
-    @media (min-width: $bp-md + 100px)
       height 170px
       max-height 170px
-    @media (min-width: $bp-lg)
+    @media (min-width: $bp-md + 100px)
       height 190px
       max-height 190px
+    @media (min-width: $bp-lg)
+      height 200px
+      max-height 200px
     @media (min-width: $bp-lg + 100px)
       height 210px
       max-height 210px
