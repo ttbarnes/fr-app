@@ -2,15 +2,16 @@
 
 .contact
   margin 0 auto
-  @media (min-width: $bp-md)
-    float none !important
+  float none !important
+  width 100% !important
+  max-width 500px
 
   .main-content
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
 
   .contact-form > .row
-    margin-top $gutter-primary-lg
+    margin-top $row-margin-bottom
     margin-bottom 0
     &:first-child
       margin-top 0
