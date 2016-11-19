@@ -9,7 +9,11 @@ export default class albumsService {
     // get a single album
     */
     this.getSingleAlbum = (id) => {
-      return this.allAlbums[id];
+
+      //temp album id solution for go live
+      let idForJson;
+      id == 2 ? idForJson = 0 : idForJson = id;
+      return this.allAlbums[idForJson];
     }
 
   }
