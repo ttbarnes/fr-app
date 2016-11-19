@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Just Me (and sometimes someone else)",
+    "writtenBy": "<p>Written, arranged and produced by Fiona Ross. <br/>Piano and Vocals by Fiona Ross.</p>",
     "images": {
       "thumb": "./images/albums/thumb/just-me.png",
       "bg": "./images/albums/bg/just-me.png",
@@ -12,6 +13,7 @@
   {
     "id": 2,
     "name": "A Twist of Blue",
+    "writtenBy": "<p>Written and arranged by Fiona Ross. <br/>Piano and Vocals by Fiona Ross.</p>",
     "images": {
       "thumb": "./images/albums/thumb/twist-of-blue.png",
       "bg": "./images/albums/bg/twist-of-blue.png",
