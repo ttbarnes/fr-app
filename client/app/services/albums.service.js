@@ -9,7 +9,6 @@ export default class albumsService {
     // get a single album
     */
     this.getSingleAlbum = (id) => {
-      id = id - 1;
       return this.allAlbums[id];
     }
 
