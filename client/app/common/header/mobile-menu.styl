@@ -1,21 +1,17 @@
 @import '../../styles/variables'
 
-.ng-pageslide
-    background #eee
-
 body.ng-pageslide-body-open::before
   content ''
   display block
-  position absolute
+  position fixed
   top 0
   background-color rgb(0,0,0)
   left 0
   right 0
   bottom 0
   z-index 999
-  opacity 0.5
+  opacity 0.6
   transition opacity 0.2s
-  opacity 0.5
   pointer-events all
   @media (min-width: $bp-md)
     display none
@@ -38,7 +34,7 @@ body.ng-pageslide-body-closed::before
 
 .ng-pageslide
   transition-duration 0.3s !important
-  border-right solid 10px $color-bg-primary
+  border-right solid 5px #212121
   background $color-bg-primary
   background -moz-linear-gradient(left,  $color-bg-primary 30%, $color-bg-secondary 100%)
   background -webkit-linear-gradient(left,  $color-bg-primary 30%,$color-bg-secondary 100%)
@@ -94,8 +90,5 @@ body.ng-pageslide-body-closed::before
     cursor pointer
 
 body.ng-pageslide-body-open
-  &::before
-    .ng-pageslide
-      box-shadow 52px 0 112px $color-bg-primary
-      @media (min-width: $bp-md)
-        box-shadow none
+  .ng-pageslide
+    box-shadow 11px 2px 32px #000
