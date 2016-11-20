@@ -17,7 +17,7 @@ describe('Contact', () => {
         email: 'asdf@Asdf.co',
         message: 'testing'
       },
-      endpoint = 'https://fr-app.herokuapp.com/api/postEmail';
+      endpoint = 'https://fionaross.co.uk/api/postEmail';
 
   beforeEach(window.module(ContactModule.name));
 
