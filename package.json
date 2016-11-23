@@ -84,5 +84,7 @@
     "url": "https://github.com/ttbarnes/fr-app.git"
   },
   "author": "Tony Barnes",
-  "license": "Apache-2.0"
+  "engines": {
+    "node": "5.1.0"
+  }
 }
