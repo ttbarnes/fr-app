@@ -4,11 +4,26 @@
   margin 0 auto
   float none !important
   width 100% !important
-  max-width $section-max-width-mini
+  max-width 700px
 
   .main-content
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
+
+  .col-left
+    @media (min-width $bp-md)
+      padding-right $gutter-primary-x-lg
+
+  .col-right
+    @media (min-width $bp-md)
+      padding-left $gutter-primary-x-lg
+
+  .card
+    float left
+    width 100%
+    background $color-bg-primary
+    padding $gutter-primary
+    margin-bottom $gutter-primary
 
   .contact-form > .row
     margin-top $row-margin-bottom
