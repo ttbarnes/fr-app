@@ -8,11 +8,13 @@
   padding-left 0
   max-width 500px
   @media (min-width $bp-md)
-    max-width 800px
+    max-width 950px
     padding-right $gutter-primary
     padding-left $gutter-primary
 
   .main-content
+    float left
+    width 100%
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
 
@@ -24,16 +26,30 @@
     @media (min-width $bp-md)
       padding-left $gutter-primary-x-lg
 
+  .contact-form-wrap
+    float none
+    margin 0 auto
+    max-width 500px
+    .card
+      display inline-block
+      vertical-align top
+      float none
+      width 100%
+
   .card
     float left
     width 100%
-    background $card-bg-mobile
     margin-bottom $gutter-primary-x-lg
-    @media (min-width $bp-sm)
-      padding 0
     @media (min-width $bp-md)
-      padding $gutter-primary-lg
-      background $card-bg-desktop
+      width 33.333%
+    .inner
+      float left
+      width 100%
+      background $card-bg-mobile
+      @media (min-width $bp-md)
+        padding $gutter-primary-lg
+        background $card-bg-desktop
+        min-height 170px
 
     .content
       float left
@@ -42,15 +58,12 @@
       padding-bottom $gutter-primary-lg
       @media (min-width $bp-md)
         padding 0
+        opacity 0.7
+      @media (min-width $bp-md + 150px)
         opacity 0.5
         transition all 0.3s ease
         &:hover
           opacity 1
-    .row
-      margin-bottom 0
-      padding-bottom $gutter-primary
-      &:last-child
-        padding-bottom 0
 
     h4
       background $card-heading-bg-mobile
@@ -73,21 +86,64 @@
 
     i
       margin-right $gutter-primary
+      @media (min-width $bp-md)
+        display none
+      @media (min-width $bp-md + 150px)
+        display inline-block
 
-  .contact-form > .row
-    margin-top $row-margin-bottom
+  .cards-top
     margin-bottom 0
-    &:first-child
-      margin-top 0
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary-lg
+    .card
+      @media (min-width $bp-md)
+        padding 0 $gutter-primary
+        &:first-child
+          padding-left 0
+        &:last-child
+          padding-right 0
+      .row
+        margin-bottom 0
+        padding-bottom $gutter-primary
+        &:last-child
+          padding-bottom 0
 
-    .row > .row
+  .contact-form
+    float left
+    width 100%
+    padding-bottom $gutter-primary
+    @media (min-width $bp-sm)
+      padding 0 0 $gutter-primary-lg 0
+    @media (min-width $bp-md)
+      padding 0
+
+    h4
+      @media (min-width $bp-sm)
+        margin-bottom $gutter-primary-lg
+      @media (min-width $bp-md)
+        padding-bottom $gutter-primary
+        margin-bottom $gutter-primary
+
+    > .row
       margin-bottom 0
+      padding 0 $gutter-primary
+      @media (min-width $bp-sm)
+        padding 0 $gutter-primary-lg
+      @media (min-width $bp-md)
+        padding 0
+
+    > .row
+      margin-bottom $gutter-primary-lg
+      &:last-child
+        margin-bottom 0
+      > .row
+        margin-bottom 0
 
   .row-error
     margin 0
 
   .row-textarea
-    margin-top 0 !important
+    margin-bottom $gutter-primary-lg !important
     > .row:first-child
       margin-bottom 0
 
@@ -129,7 +185,11 @@
       left $button-spacing-lg-horizontal
 
 .contact-success
-
+  span.row
+    padding 0 $gutter-primary
+    @media (min-width $bp-md)
+      padding-right 0
+      padding-left 0
   .font-size-h1
     color $color-heading-primary
     margin-bottom $gutter-primary

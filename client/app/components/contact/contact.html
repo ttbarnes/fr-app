@@ -4,50 +4,58 @@
 
   <div class="main-content">
 
-    <div class="col-50-md col-left">
-      <div class="card">
-        <h4>Press</h4>
-        <div class="content">
-          <span class="title">Dave Clarke: </span>
-          <div class="row link-highlight-hover">
-            <i class="icon-phone"></i> <a href="tel:07966 557774">07966 557774</a>
-          </div>
-          <div class="row link-highlight-hover link-highlight-hover-border">
-            <i class="icon-link"></i> <a href="mailto:dave@planetearthpublicity.com">dave@planetearthpublicity.com</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h4>Radio &amp; TV</h4>
-        <div class="content">
-          <span class="title">Ron McCreight: </span>
-          <div class="row link-highlight-hover">
-            <i class="icon-phone"></i><a href="tel:07775 663537">07775 663537</a>
-          </div>
-          <div class="row link-highlight-hover link-highlight-hover-border">
-            <i class="icon-link"></i><a href="mailto:ronmccreight@btinternet.com">ronmccreight@btinternet.com</a>
+    <div class="row cards-top">
+      <div class="col-333-md card">
+        <div class="inner">
+          <h4>Press</h4>
+          <div class="content">
+            <span class="title">Dave Clarke: </span>
+            <div class="row link-highlight-hover">
+              <i class="icon-phone"></i> <a href="tel:07966 557774">07966 557774</a>
+            </div>
+            <div class="row link-highlight-hover link-highlight-hover-border">
+              <i class="icon-link"></i> <a href="mailto:dave@planetearthpublicity.com">dave@planetearthpublicity.com</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <h4>Management</h4>
-        <div class="content">
-          <div class="row link-highlight-hover link-highlight-hover-border">
-            <i class="icon-link"></i><a href="mailto:info@fionaross.co.uk">info@fionaross.co.uk</a>
+      <div class="col-333-md card">
+        <div class="inner">
+          <h4>Radio &amp; TV</h4>
+          <div class="content">
+            <span class="title">Ron McCreight: </span>
+            <div class="row link-highlight-hover">
+              <i class="icon-phone"></i><a href="tel:07775 663537">07775 663537</a>
+            </div>
+            <div class="row link-highlight-hover link-highlight-hover-border">
+              <i class="icon-link"></i><a href="mailto:ronmccreight@btinternet.com">ronmccreight@btinternet.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-333-md card">
+        <div class="inner">
+          <h4>Management</h4>
+          <div class="content">
+            <div class="row link-highlight-hover link-highlight-hover-border">
+              <i class="icon-link"></i><a href="mailto:info@fionaross.co.uk">info@fionaross.co.uk</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col-50-md col-right">
+    <div class="row contact-form-wrap">
 
       <div class="card">
-        <h4>General enquiries</h4>
 
-        <form name="contactForm" ng-submit="submitForm()" ng-hide="vm.success" novalidate class="contact-form">
-          <div class="row">
+        <div class="inner">
+
+          <form name="contactForm" ng-submit="submitForm()" ng-hide="vm.success" novalidate class="contact-form">
+
+            <h4>General enquiries</h4>
 
             <div class="row" ng-class="{ 'has-error' : contactForm.name.$invalid && !contactForm.name.$pristine }">
 
@@ -83,62 +91,61 @@
 
             </div>
 
-          </div>
+            <div class="row row-textarea" ng-class="{ 'has-error' : contactForm.message.$dirty && !user.message.length}">
 
-          <div class="row row-textarea" ng-class="{ 'has-error' : contactForm.message.$dirty && !user.message.length}">
+              <div class="row">
+                <label for="message" class="sr-only">Message</label>
+                <textarea ng-model="user.message"
+                          name="message"
+                          placeholder="Message"
+                          rows="4">
+                </textarea>
+              </div>
+
+              <div class="row row-error">
+                <p ng-show="contactForm.message.$dirty && !user.message.length" class="error">Please enter a message</p>
+              </div>
+
+            </div>
+
+            <div class="row" ng-show="vm.error">
+
+              <p class="submit-error error"><i class="icon-cross"></i>Sorry, something is wrong. Please try again or email <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - General Enquiry">info@fionaross.co.uk</a></p>
+
+            </div>
 
             <div class="row">
-              <label for="message" class="sr-only">Message</label>
-              <textarea ng-model="user.message"
-                        name="message"
-                        placeholder="Message"
-                        rows="4">
-              </textarea>
+
+              <button class="button-lg"
+                      ng-click="vm.sendMail(user)"
+                      value="Send email"
+                      ng-class="{loading: vm.promiseLoading}"
+                      ng-disabled="contactForm.$pristine ||
+                                   contactForm.name.$invalid ||
+                                   !user.name ||
+                                   contactForm.email.$invalid ||
+                                   !user.email ||
+                                   contactForm.message.$invalid ||
+                                   !user.message">
+
+                                   <div ng-show="vm.promiseLoading" class="loader"></div>
+                                   <span ng-hide="vm.promiseLoading">Send</span>
+                                   <span ng-show="vm.promiseLoading">Sending</span> email
+
+              </button>
+
             </div>
 
-            <div class="row row-error">
-              <p ng-show="contactForm.message.$dirty && !user.message.length" class="error">Please enter a message</p>
-            </div>
+          </form>
 
+          <div ng-show="vm.success" class="contact-success">
+            <h4>Thank you!</h4>
+            <span class="row">Your enquiry has been successfully sent.</span>
           </div>
 
-          <div class="row" ng-show="vm.error">
-
-            <p class="submit-error error"><i class="icon-cross"></i>Sorry, something is wrong. Please try again or email <a href="mailto:fiona@fionaross.co.uk?subject=Fiona Ross - Bookings and enquiries">fiona@fionaross.co.uk</a></p>
-
-          </div>
-
-          <div class="row">
-
-            <button class="button-lg"
-                    ng-click="vm.sendMail(user)"
-                    value="Send email"
-                    ng-class="{loading: vm.promiseLoading}"
-                    ng-disabled="contactForm.$pristine ||
-                                 contactForm.name.$invalid ||
-                                 !user.name ||
-                                 contactForm.email.$invalid ||
-                                 !user.email ||
-                                 contactForm.message.$invalid ||
-                                 !user.message">
-
-                                 <div ng-show="vm.promiseLoading" class="loader"></div>
-                                 <span ng-hide="vm.promiseLoading">Send</span>
-                                 <span ng-show="vm.promiseLoading">Sending</span> email
-
-            </button>
-
-          </div>
-
-        </form>
+        </div>
       </div>
 
-
-    </div>
-
-    <div ng-show="vm.success" class="contact-success">
-      <p class="font-size-h1">Thank you!</p>
-      <span class="row">Your enquiry has been successfully sent.</span>
     </div>
 
   </div>
