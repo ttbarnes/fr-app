@@ -1,3 +1,27 @@
 <section class="row bookings long-copy-line-height include-bg-img">
 
+  <ul>
+    <li ng-repeat="booking in vm.bookings">
+
+      <div>
+        {{booking.date.month}} <br/>
+        {{booking.date.day}} <br/>
+        {{booking.date.time}}
+      </div>
+      <div>
+        <img ng-src="booking.images.thumb" alt="booking.venue"/>
+      </div>
+      <div>
+        <h2>{{booking.title}}</h2>
+        <h3>{{booking.venue}}</h3>
+        <p>{{booking.cityCountry}}</p>
+      </div>
+      <div>
+        <a ng-if="booking.urls.tickets" ng-href="booking.urls.tickets">Tickets</a>
+        <a ng-if="booking.urls.moreInfo" ng-href="booking.urls.moreInfo">More info</a>
+      </div>
+
+    </li>
+  </ul>
+
 </section>
