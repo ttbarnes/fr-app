@@ -15,7 +15,7 @@
     }
   },
   {
-    "title": "Fiona Ross feat. Michel Camilo",
+    "title": "Fiona Ross Band feat. Michel Camilo",
     "venue": "Ronnie Scotts",
     "cityCountry": "London, UK",
     "date": {
@@ -26,6 +26,57 @@
     },
     "images": {
       "thumb": "http://cdn.londonandpartners.com/asset/199b14fe07d325b3246993aa702ceff0.jpg"
+    },
+    "urls": {
+      "tickets": "#",
+      "moreInfo": "#"
+    }
+  },
+  {
+    "title": "Fiona Ross Debut",
+    "venue": "Dummy Venue",
+    "cityCountry": "Blue Note, USA",
+    "date": {
+      "month": "Mar",
+      "day": "3",
+      "year": "2017",
+      "time": "9pm"
+    },
+    "images": {
+      "thumb": "https://kudago.com/media/images/place/8f/3c/8f3c4feb14ab7c94b77eae6ba5b23b5c.jpg"
+    },
+    "urls": {
+      "tickets": "#",
+      "moreInfo": "#"
+    }
+  },
+  {
+    "title": "Fiona Ross Band Debut",
+    "venue": "Dummy Venue",
+    "cityCountry": "Tipitina's, USA",
+    "date": {
+      "month": "Mar",
+      "day": "5",
+      "year": "2017",
+      "time": "9pm"
+    },
+    "images": {
+      "thumb": "http://itsgosi.com/wp-content/uploads/2014/05/Tipitinas-590x275.jpg"
+    },
+    "urls": {
+      "tickets": "#",
+      "moreInfo": "#"
+    }
+  },
+  {
+    "title": "Jamie Cullum presents Fiona Ross",
+    "venue": "Venue without an image",
+    "cityCountry": "London, UK",
+    "date": {
+      "month": "April",
+      "day": "2",
+      "year": "2017",
+      "time": "7.30pm"
     },
     "urls": {
       "tickets": "#",
