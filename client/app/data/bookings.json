@@ -1,7 +1,7 @@
 [
   {
     "title": "Fiona Ross Solo",
-    "venue": "Ronnie Scotts",
+    "venue": "Jazz Cafe",
     "cityCountry": "London, UK",
     "date": {
       "month": "Feb",
@@ -9,8 +9,23 @@
       "year": "2017",
       "time": "8pm"
     },
+    "urls": {
+      "tickets": "#",
+      "moreInfo": "#"
+    }
+  },
+  {
+    "title": "Fiona Ross feat. Michel Camilo",
+    "venue": "Ronnie Scotts",
+    "cityCountry": "London, UK",
+    "date": {
+      "month": "Feb",
+      "day": "22",
+      "year": "2017",
+      "time": "8pm"
+    },
     "images": {
-      "thumb": "./images/bookings/thumb/placeholder.jpg"
+      "thumb": "http://cdn.londonandpartners.com/asset/199b14fe07d325b3246993aa702ceff0.jpg"
     },
     "urls": {
       "tickets": "#",

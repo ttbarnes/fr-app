@@ -5,12 +5,6 @@ import BookingsTemplate from './bookings.html';
 describe('Bookings', () => {
   let $rootScope, makeController;
 
-  var emailService,
-      mockEmailService = {
-        send: () => {}
-      }
-
-
   beforeEach(window.module(BookingsModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;

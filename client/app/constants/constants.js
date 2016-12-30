@@ -6,7 +6,6 @@ export const EMAIL_POST = 'http://www.fionaross.co.uk/api/postEmail';
 export const GALLERY_IMAGE_URL = 'http://fionaross.co.uk/images/gallery/';
 export const GALLERY_TEMPLATE_URL = '../app/components/gallery/modal.html';
 
-
 // page titles 
 export const PAGE_TITLE_BASE = 'Fiona Ross';
 export const PAGE_TITLE_BASE_SEPARATOR = ' | ';
@@ -20,4 +19,8 @@ export const PAGE_TITLE_HOME = PAGE_TITLE_BASE + PAGE_TITLE_BASE_SEPARATOR +  'J
 export const PAGE_TITLE_MUSIC = 'Music' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_MUSIC_ALBUM = PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_TECH = 'Tech' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
+
+
+// export const BOOKINGS_DEFAULT_THUMB = 'http://fionaross.co.uk/images/bookings/default-thumb.jpg';
+export const BOOKINGS_DEFAULT_THUMB = 'https://img42.com/JyPMW+';
 
