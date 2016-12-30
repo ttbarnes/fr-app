@@ -2,7 +2,7 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import bookingsComponent from './bookings.component';
 
-let aboutModule = angular.module('bookings', [
+let bookingsModule = angular.module('bookings', [
   uiRouter
 ])
 

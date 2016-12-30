@@ -9,6 +9,7 @@ import Collaborators from './collaborators/collaborators';
 import CollaboratorInd from './collaboratorInd/collaboratorInd';
 import Tech from './tech/tech';
 import Contact from './contact/contact';
+import Bookings from './bookings/bookings';
 import Error from './error/error';
 
 let componentModule = angular.module('app.components', [
@@ -22,6 +23,7 @@ let componentModule = angular.module('app.components', [
   CollaboratorInd.name,
   Tech.name,
   Contact.name,
+  Bookings.name,
   Error.name
 ]);
 
