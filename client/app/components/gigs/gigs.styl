@@ -2,6 +2,11 @@
 
 .gigs
 
+  .img-bg
+    display none
+    @media (min-width $bp-sm)
+      display block
+
   .main-content
     max-width 500px
     @media (min-width $bp-md)
@@ -24,7 +29,7 @@
       background $card-bg-mobile
       padding $gutter-primary
       @media (min-width: $bp-md)
-        background $card-bg-desktop
+        background none
         padding 0
     .inner > div
       @media (min-width: $bp-md)
