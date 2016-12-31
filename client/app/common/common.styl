@@ -138,11 +138,16 @@ fr-footer,
 
 .video-wrapper-title
   clear both
+  padding-top $gutter-primary-x-lg
   padding-bottom $gutter-primary
-  font-size $font-size-h1-mobile
+  margin-bottom 0
+  font-size $font-size-h2-mobile
+  font-weight normal
+  @media (min-width $bp-xs)
+    font-size $font-size-h1-mobile
   @media (min-width $bp-md)
     padding-top $gutter-primary-x-lg
-    padding-bottom 0
+    padding-bottom $gutter-primary-x-lg
     font-size $font-size-h1-desktop
 
 .video-wrapper
@@ -157,8 +162,6 @@ fr-footer,
   margin 0 auto $gutter-primary-x-lg auto
   @media (min-width $bp-lg)
     margin-bottom $gutter-primary-xx-lg
-  @media (min-width $bp-lg + 400px)
-    padding-bottom 31.25%
   iframe
     position absolute
     top 0
