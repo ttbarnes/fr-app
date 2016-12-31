@@ -34,11 +34,13 @@ angular.module('app', [
     Services.name
   ])
 
-  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {
+  .config(($locationProvider, $urlRouterProvider, $qProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
+
+    $qProvider.errorOnUnhandledRejections(false); //prevents state change issue. see https://github.com/angular-ui/ui-router/issues/42#issuecomment-269367965
 
     plangularConfigProvider.clientId = CONST.PLANGULAR_CLIENT_ID;
 
