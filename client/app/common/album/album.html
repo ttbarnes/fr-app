@@ -141,19 +141,29 @@
 
     </div>
 
-    <div ng-if="vm.data.id === 2" class="row quotes latest-album-quotes">
-      <ul>
-        <li ng-repeat="quote in vm.data.quotes">
+    <!-- latest album specific -->
+    <div ng-if="vm.data.id === 2" class="row">
 
-          <blockquote class="album">
-            <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
-            <span class="author" ng-bind-html="quote.author"></span>
-          </blockquote>
+      <p class="align-center video-wrapper-title">Behind the scenes</p>
+      <div class="video-wrapper">
+        <iframe width="560" src="https://www.youtube.com/embed/PzOWVOAEOX0?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-        </li>
-      </ul>
+
+      <div class="row quotes latest-album-quotes">
+        <ul>
+          <li ng-repeat="quote in vm.data.quotes">
+
+            <blockquote class="album">
+              <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
+              <span class="author" ng-bind-html="quote.author"></span>
+            </blockquote>
+
+          </li>
+        </ul>
+      </div>
+
     </div>
-
 
   </div>
 

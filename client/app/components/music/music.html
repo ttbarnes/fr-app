@@ -19,17 +19,19 @@
            </div>
          </a>
          <span ng-if="album.comingSoon" class="img-wrap">
-           <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
-           <div class="overlay overlay-hover overlay-hover-coming-soon">
-             <div class="content">
-               <p><span>Coming soon</span></p>
+           <a ui-sref="musicAlbum({id: album.id})">
+             <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
+             <div class="overlay overlay-hover overlay-hover-coming-soon">
+               <div class="content">
+                 <p><span>Coming soon</span></p>
+               </div>
              </div>
-           </div>
-           <div class="overlay overlay-hover-content">
-             <div class="content">
-               <p><span>Coming soon! </span></p>
+             <div class="overlay overlay-hover-content">
+               <div class="content">
+                 <p><span>Coming soon! </span></p>
+               </div>
              </div>
-           </div>
+           </a>
          </span>
       </li>
     </ul>

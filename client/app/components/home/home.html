@@ -16,13 +16,14 @@
 
   <div class="main-content">
 
-
     <div class="row row-album-latest">
-      <album data="vm.latestAlbum" layout="1">
-        <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
-        <p>New album coming soon</p>
-        <h3>{{vm.latestAlbum.name}}</h3>
-      </album>
+      <a ui-sref="musicAlbum({id: 2})">
+        <album data="vm.latestAlbum" layout="1">
+          <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
+          <p>New album coming soon</p>
+          <h3>{{vm.latestAlbum.name}}</h3>
+        </album>
+      </a>
     </div>
 
     <div class="row">
