@@ -17,7 +17,7 @@ describe('Contact', () => {
         email: 'asdf@Asdf.co',
         message: 'testing'
       },
-      endpoint = 'https://fionaross.co.uk/api/postEmail';
+      endpoint = 'http://www.fionaross.co.uk/api/postEmail';
 
   beforeEach(window.module(ContactModule.name));
 
