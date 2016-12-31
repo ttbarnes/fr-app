@@ -1,0 +1,46 @@
+<section class="row gigs long-copy-line-height include-bg-img">
+
+  <div class="main-content">
+
+    <ul>
+      <li ng-repeat="gig in vm.gigs"
+          class="row"
+          ng-class="{last: $last}">
+        <div class="inner">
+
+          <div class="col-10-md col-date">
+            <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
+            <span class="time">{{gig.date.time}}</span>
+          </div>
+          <div class="col-15-md col-img">
+            <img ng-if="gig.images.thumb" ng-src="{{gig.images.thumb}}" alt="{{gig.venue}}" />
+            <img ng-if="!gig.images.thumb" ng-src="{{vm.defaultThumb}}" alt="{{gig.venue}}" />
+          </div>
+          <div class="col-55-md col-title-venue">
+            <h2>{{gig.title}}</h2>
+            <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3>
+          </div>
+          <div ng-if="gig.urls.tickets" class="col-10-md col-links  col-links-first link-highlight-hover">
+            <a ng-href="{{gig.urls.tickets}}">Tickets</a>
+          </div>
+          <div ng-if="gig.urls.moreInfo" class="col-10-md col-links link-highlight-hover">
+            <a ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}">More info</a>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
+
+    <div class="row button-view-nav">
+      <a ui-sref="about" class="button">
+        <span>About Fiona</span>
+        <i class="icon-arrow-right"></i>
+      </a>
+      <br/>
+      <a ui-sref="contact" class="text-link">Booking enquiries</a>
+    </div>
+
+  </div>
+
+</section>
