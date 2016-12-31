@@ -8,7 +8,13 @@
       "bg": "./images/albums/bg/just-me.png",
       "appCover": "./images/albums/just-me-app-cover.png"
     },
-    "comingSoon": true
+    "comingSoon": true,
+    "quotes": [
+      {
+        "copy": "This double album by Fiona Ross is an absolute joy to immerse oneself in. Her voice is beautifully clear and her tone vibrant. There is an absorbing honesty to her delivery and her timing and tuning are impeccable. All this forms the perfect conduit by which to deliver these intensely personal and quirky songs of love, loss and yearning. There is an incisive honesty and humanity in the detail that takes each song’s message straight to your heart. I loved the contrast in production style between the sparsely produced ‘Side 1’ and the full band performances of Side 2.",
+        "author": "Ola Onabule"
+      }
+    ]
   },
   {
     "id": 1,

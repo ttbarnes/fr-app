@@ -126,7 +126,7 @@
 
       <div ng-bind-html="vm.data.writtenBy" class="written-by"></div>
 
-      <div class="row quotes">
+      <div ng-if="vm.data.id === 1" class="row quotes">
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
 
@@ -140,6 +140,20 @@
       </div>
 
     </div>
+
+    <div ng-if="vm.data.id === 2" class="row quotes latest-album-quotes">
+      <ul>
+        <li ng-repeat="quote in vm.data.quotes">
+
+          <blockquote class="album">
+            <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
+            <span class="author" ng-bind-html="quote.author"></span>
+          </blockquote>
+
+        </li>
+      </ul>
+    </div>
+
 
   </div>
 
