@@ -8,6 +8,8 @@ var nodemailer = require('nodemailer');
 var morgan = require('morgan');
 var port = process.env.PORT || process.env.SERVER_HOST_PORT || 2000;
 
+app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
+
 app.use(function (req, res, next){
 
   res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_HOST_PORT); //allow client server access
@@ -22,8 +24,6 @@ app.use(function (req, res, next){
 app.use(express.static(__dirname + '/dist'));
 
 app.use(morgan('dev'));
-
-app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 
 //create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport(process.env.NODE_MAILER_SMTP);
