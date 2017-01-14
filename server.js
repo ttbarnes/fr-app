@@ -21,8 +21,9 @@ app.use(function (req, res, next){
 
 app.use(express.static(__dirname + '/dist'));
 
-//logging
 app.use(morgan('dev'));
+
+app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 
 //create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport(process.env.NODE_MAILER_SMTP);

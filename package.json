@@ -42,6 +42,7 @@
     "normalize.css": "^3.0.3",
     "photoswipe": "^4.1.1",
     "poststylus": "^0.2.3",
+    "prerender-node": "^2.7.0",
     "raw-loader": "^0.5.1",
     "rucksack-css": "^0.8.5",
     "run-sequence": "^1.1.0",
