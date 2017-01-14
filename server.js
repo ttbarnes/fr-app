@@ -8,7 +8,6 @@ var nodemailer = require('nodemailer');
 var morgan = require('morgan');
 var port = process.env.PORT || process.env.SERVER_HOST_PORT || 2000;
 
-app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 
 app.use(function (req, res, next){
 
@@ -21,6 +20,7 @@ app.use(function (req, res, next){
 
 });
 
+app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 app.use(express.static(__dirname + '/dist'));
 
 app.use(morgan('dev'));
