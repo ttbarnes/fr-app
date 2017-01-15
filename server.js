@@ -62,16 +62,7 @@ require('./client.app.routes')(app); // pass our application into our routes
 var sitemap = sm.createSitemap({
   hostname: 'http://www.fionaross.co.uk',
   urls: [
-    {
-      url: '/',
-      video: [
-        { thumbnail_loc: 'https://img.youtube.com/vi/PzOWVOAEOX0/0.jpg',
-          title: 'Fiona Ross behind the scenes',
-          description: 'Sneak peak behind the scenes getting ready for album launch.',
-          player_loc: 'https://www.youtube.com/watch?v=PzOWVOAEOX0'
-        }
-      ]
-    },
+    { url: '/' },
     { url: '/music'},
     { url: '/music/album/1'},
     { url: '/music/album/2'},
