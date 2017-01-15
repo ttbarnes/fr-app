@@ -67,7 +67,8 @@ var sitemap = sm.createSitemap({
       video: [
         { thumbnail_loc: 'https://img.youtube.com/vi/PzOWVOAEOX0/0.jpg',
           title: 'Fiona Ross behind the scenes',
-          description: 'Sneak peak behind the scenes getting ready for album launch.'
+          description: 'Sneak peak behind the scenes getting ready for album launch.',
+          player_loc: 'https://www.youtube.com/watch?v=PzOWVOAEOX0'
         }
       ]
     },
@@ -98,7 +99,7 @@ var sitemap = sm.createSitemap({
 sitemap.toXML( (err, xml) => {
   if (err) { console.log('error creating sitemap.'); }
 });
-fs.writeFileSync('./sitemap.xml', sitemap.toString());
+fs.writeFileSync('dist/sitemap.xml', sitemap.toString());
 
 app.listen(port);
 console.log('Server running on port ' + port);
