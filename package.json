@@ -46,6 +46,7 @@
     "raw-loader": "^0.5.1",
     "rucksack-css": "^0.8.5",
     "run-sequence": "^1.1.0",
+    "sitemap": "^1.9.0",
     "style-loader": "^0.12.2",
     "stylus-loader": "^1.1.1",
     "webpack": "^1.9.5",
