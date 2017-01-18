@@ -44,12 +44,13 @@ module.exports = {
       }
     }),
 
-    //copy images to dist images directory
+    //copy files to dist images directory
     new CopyWebpackPlugin([
         { from: 'client/images', to: 'images' },
         { from: 'client/*.png', flatten: true},
         { from: 'client/*.ico', flatten: true},
-        { from: 'client/app/components/gallery/modal.html', to: 'app/components/gallery', flatten: true}
+        { from: 'client/app/components/gallery/modal.html', to: 'app/components/gallery', flatten: true},
+        { from: 'robots.txt'}
     ])
 
   ]
