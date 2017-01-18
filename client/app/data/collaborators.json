@@ -16,6 +16,18 @@
     }
   },
   {
+    "name": "Catarina Andrade",
+    "role": "Stylist",
+    "images": {
+      "avatar": "./images/collaborators/catarina-andrade.jpg",
+      "thumb": "./images/collaborators/thumb/catarina-andrade.jpg"
+    },
+    "urls": {
+      "website": "http://catarina-andrade.squarespace.com",
+      "instagram": "https://www.instagram.com/catarinaandrade"
+    }
+  },
+  {
     "name": "David Apps",
     "role": "Photography",
     "images": {
@@ -161,6 +173,19 @@
     "urls": {
       "website": "http://stefanferrol.co.uk",
       "instagram": "https://www.instagram.com/stefanferroL"
+    }
+  },
+  {
+    "name": "The Goat",
+    "role": "Photography",
+    "images": {
+      "avatar": "./images/collaborators/the-goat.jpg",
+      "thumb": "./images/collaborators/thumb/the-goat.jpg"
+    },
+    "urls": {
+      "website": "http://www.goatnoisephotography.com/",
+      "instagram": "https://www.instagram.com/goatnoisephotography/",
+      "facebook": "https://www.facebook.com/officialgoatnoisephotography"
     }
   },
   {
