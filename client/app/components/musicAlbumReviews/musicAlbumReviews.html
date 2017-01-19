@@ -1,7 +1,9 @@
 <section class="row music-album-reviews">
 
+  <h3>{{vm.album.name}} reviews</h3>
+
   <ul>
-    <li ng-repeat="quote in vm.album.quotes">
+    <li ng-repeat="quote in vm.album.quotes" id="vm.album.quotes.author">
       {{quote.copy}}
       <br/>
       {{quote.author}}

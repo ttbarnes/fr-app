@@ -10,7 +10,7 @@ let musicAlbumReviewsModule = angular.module('musicAlbumReviews', [
   'ngInject';
   $stateProvider
     .state('musicAlbumReviews', {
-      url: '/music/album/:id/:reviews',
+      url: '/music/album/:id/reviews',
       template: '<music-album-reviews></music-album-reviews>'
     });
 })
