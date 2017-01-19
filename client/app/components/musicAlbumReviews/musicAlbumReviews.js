@@ -6,6 +6,15 @@ let musicAlbumReviewsModule = angular.module('musicAlbumReviews', [
   uiRouter
 ])
 
+.config(($stateProvider) => {
+  'ngInject';
+  $stateProvider
+    .state('musicAlbumReviews', {
+      url: '/music/album/:id/:reviews',
+      template: '<music-album-reviews></music-album-reviews>'
+    });
+})
+
 .component('musicAlbumReviews', musicAlbumReviewsComponent);
 
 export default musicAlbumReviewsModule;
