@@ -4,50 +4,68 @@ import MusicAlbumReviewsComponent from './musicAlbumReviews.component';
 import MusicAlbumReviewsTemplate from './musicAlbumReviews.html';
 
 describe('MusicAlbumReviews', () => {
-  let $rootScope, makeController;
+  let $rootScope,
+      $state,
+      makeController,
+      $stateParams,
+      albumsService,
+      mockAlbumsService = {
+        getSingleAlbum: () => {
+          return {
+            title: 'test album',
+            id: 1
+          }
+        }
+      },
+      mockStateParams = {
+        id: 1
+      };
 
-  beforeEach(window.module(MusicAlbumReviewsModule.name));
-  beforeEach(inject((_$rootScope_) => {
+  beforeEach(window.module(MusicAlbumModule.name));
+  beforeEach(inject((_$rootScope_, _$state_) => {
     $rootScope = _$rootScope_;
-    makeController = () => {
-      return new MusicAlbumReviewsController();
+    $state = _$state_;
+    $stateParams = mockStateParams;
+    albumsService = mockAlbumsService;
+    makeController = ()=>{
+      return new MusicAlbumReviewsController($state, $stateParams, albumsService);
     };
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
   describe('Controller', () => {
-    // controller specs
-    it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
+    it('should inject albumsService', () => {
       let controller = makeController();
-      expect(controller).to.have.property('name');
+      expect(controller.albumsService).toBeDefined();
+      expect(controller.albumsService).toEqual(mockAlbumsService)
     });
+
+    it('should assign an album to scope ', () => {
+      let controller = makeController();
+      expect(controller.album).toBeDefined();
+      expect(controller.album).toEqual(jasmine.any(Object));
+    });
+
   });
 
   describe('Template', () => {
-    // template specs
-    // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
       expect(MusicAlbumReviewsTemplate).to.match(/{{\s?vm\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
-      // component/directive specs
-      let component = MusicAlbumReviewsComponent;
+    let component = MusicAlbumReviewsComponent;
 
-      it('includes the intended template',() => {
-        expect(component.template).to.equal(MusicAlbumReviewsTemplate);
-      });
+    it('includes the intended template',() => {
+      expect(component.template).to.equal(MusicAlbumReviewsTemplate);
+    });
 
-      it('uses `controllerAs` syntax', () => {
-        expect(component).to.have.property('controllerAs');
-      });
+    it('uses `controllerAs` syntax', () => {
+      expect(component).to.have.property('controllerAs');
+    });
 
-      it('invokes the right controller', () => {
-        expect(component.controller).to.equal(MusicAlbumReviewsController);
-      });
+    it('invokes the right controller', () => {
+      expect(component.controller).to.equal(MusicAlbumReviewsController);
+    });
   });
 });

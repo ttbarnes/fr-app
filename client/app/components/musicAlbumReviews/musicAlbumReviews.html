@@ -1,3 +1,11 @@
-<div>
+<section class="row music-album-reviews">
 
-</div>
+  <ul>
+    <li ng-repeat="quote in vm.album.quotes">
+      {{quote.copy}}
+      <br/>
+      {{quote.author}}
+    </li>
+  </ul>
+
+</section>
