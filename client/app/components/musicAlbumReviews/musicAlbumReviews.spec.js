@@ -47,25 +47,19 @@ describe('MusicAlbumReviews', () => {
 
   });
 
-  describe('Template', () => {
-    it('has name in template [REMOVE]', () => {
-      expect(MusicAlbumReviewsTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
-  });
-
   describe('Component', () => {
     let component = MusicAlbumReviewsComponent;
 
     it('includes the intended template',() => {
-      expect(component.template).to.equal(MusicAlbumReviewsTemplate);
+      expect(component.template).toEqual(MusicAlbumReviewsTemplate);
     });
 
     it('uses `controllerAs` syntax', () => {
-      expect(component).to.have.property('controllerAs');
+      expect(component.controllerAs).toBeDefined();
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).to.equal(MusicAlbumReviewsController);
+      expect(component.controller).toEqual(MusicAlbumReviewsController);
     });
   });
 });
