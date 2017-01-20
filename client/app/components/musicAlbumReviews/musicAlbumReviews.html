@@ -3,10 +3,12 @@
   <h3>{{vm.album.name}} reviews</h3>
 
   <ul>
-    <li ng-repeat="quote in vm.album.quotes" id="vm.album.quotes.author">
-      {{quote.copy}}
-      <br/>
-      {{quote.author}}
+    <li ng-repeat="quote in vm.album.quotes">
+      <div ng-attr-id="{{quote.href}}">
+        {{quote.copy}}
+        <br/>
+        {{quote.author}}
+      </div>
     </li>
   </ul>
 

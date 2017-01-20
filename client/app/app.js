@@ -74,8 +74,10 @@ angular.module('app', [
       }
     });
 
-    $rootScope.$on('$stateChangeSuccess', () => {
-       document.body.scrollTop = document.documentElement.scrollTop = 0;
+    $rootScope.$on('$stateChangeSuccess', (e, toState) => {
+      if (toState.name != 'musicAlbumReviews') {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+      }
     });
 
   })

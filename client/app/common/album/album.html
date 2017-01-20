@@ -135,8 +135,6 @@
               <span class="author" ng-bind-html="quote.author"></span>
             </blockquote>
 
-            <a ui-sref="musicAlbumReviews({id: vm.data.id, '#': vm.data.quotes.author})">view more</a>
-
           </li>
         </ul>
       </div>
@@ -153,6 +151,9 @@
 
 
       <div class="row quotes latest-album-quotes">
+
+        <p class="align-center">Reviews</p>
+
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
 
@@ -160,6 +161,8 @@
               <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
               <span class="author" ng-bind-html="quote.author"></span>
             </blockquote>
+
+            <a ui-sref="musicAlbumReviews({id: vm.data.id, '#': quote.href})" target="_self">read more</a>
 
           </li>
         </ul>
