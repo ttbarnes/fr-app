@@ -1,6 +1,24 @@
+@import '../../styles/variables'
+
 .music-album-reviews
 
+  .main-content
+    margin 0 auto
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
   li
-    min-height 500px
-    border solid 3px #CCC
-    padding 2em 0
+    border-bottom solid 1px $color-bg-secondary
+    padding-bottom $gutter-primary-xx-lg
+
+    &.last
+      border-bottom 0 none
+      padding-bottom 0
+
+    .spacer
+      padding-top $gutter-primary-xx-lg
+
+  blockquote
+    .author
+      margin-left 0
+

@@ -41,6 +41,11 @@ blockquote
         margin-bottom -0.3em
         @media (min-width $bp-sm)
           display inline-block
+    &.author
+      display block
+      font-style normal
+      color #616161
+      margin-left 5.5%
 
   &.album
     text-align left
@@ -72,8 +77,7 @@ blockquote
       &:last-child
         display inline-block
 
-    span.author
-      display block
-      font-style normal
-      color #616161
-      margin-left 5.5%
+  &.review
+    .copy,
+    .author
+      font-size 0.75em
