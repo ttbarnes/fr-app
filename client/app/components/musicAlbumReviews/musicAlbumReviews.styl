@@ -4,6 +4,9 @@
 
   h3
     color $color-highlight-primary
+    font-weight lighter
+    padding-bottom $gutter-primary-lg
+    margin-bottom $gutter-primary-lg
 
   .main-content
     margin 0 auto
@@ -12,7 +15,9 @@
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   li
-    padding-bottom $gutter-primary-xx-lg
+  padding-bottom $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      padding-bottom $gutter-primary-xx-lg
 
     &.last
       padding-bottom 0
@@ -22,6 +27,9 @@
 
   blockquote
     color $color-highlight-secondary
+    font-size 1em
+    @media (min-width $bp-sm)
+      font-size 1.2em
     .author
       margin-left 0
       color $color-highlight-primary
