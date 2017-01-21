@@ -21,6 +21,12 @@ describe('albumsService', () => {
     expect(MockAlbumsService.allAlbums).toBeDefined();
   })
 
+  it('should have a quoteTruncationCharLimit property', () => {
+    expect(MockAlbumsService.quoteTruncationCharLimit).toBeDefined();
+    expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(jasmine.any(Number));
+    expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(770);
+  });
+
   describe('allAlbums', () => {
 
     it('should return an array', () => {

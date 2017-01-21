@@ -41,11 +41,13 @@ blockquote
         margin-bottom -0.3em
         @media (min-width $bp-sm)
           display inline-block
-    &.author
-      display block
-      font-style normal
-      color #616161
-      margin-left 5.5%
+
+  span.author,
+  a.read-full
+    display block
+    font-style normal
+    color #616161
+    margin-left 5.5%
 
   &.album
     text-align left
@@ -54,7 +56,8 @@ blockquote
     @media (min-width $bp-md)
       line-height 1.7em
     span.copy,
-    span.author
+    span.author,
+    a.read-full
       font-size 0.75em
     span.copy
       text-align left
@@ -79,5 +82,10 @@ blockquote
 
   &.review
     .copy,
-    .author
+    .author,
+    .read-full
       font-size 0.75em
+
+  .read-full
+    display inline-block
+    font-weight bold

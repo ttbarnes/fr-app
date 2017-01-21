@@ -14,6 +14,7 @@ import * as CONST from './constants/constants';
 import Common from './common/common';
 import Components from './components/components';
 import Services from './services/services';
+import Filters from './filters/filters';
 import AppComponent from './app.component';
 import 'normalize.css';
 
@@ -31,7 +32,8 @@ angular.module('app', [
     'angulartics.google.analytics',
     Common.name,
     Components.name,
-    Services.name
+    Services.name,
+    Filters
   ])
 
   .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {

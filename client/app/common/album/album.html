@@ -157,12 +157,20 @@
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
 
-            <blockquote class="album">
-              <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
-              <span class="author" ng-bind-html="quote.author"></span>
+            <blockquote class="album link-highlight-hover-border">
+              <span class="copy">
+                <span class="quote">&ldquo;</span>
+                <span class="inner" ng-bind-html="quote.copy | filterCharacters:800"></span>
+                <span class="quote">&rdquo;</span>
+              </span>
+              <span ng-if="!quote.showReadMore"
+                    class="author"
+                    ng-bind-html="quote.author"></span>
+              <a ng-if="quote.showReadMore"
+                 ui-sref="musicAlbumReviews({id: vm.data.id, '#': quote.href})"
+                 target="_self"
+                 class="read-full">Read full review by {{quote.author}}</a>
             </blockquote>
-
-            <a ui-sref="musicAlbumReviews({id: vm.data.id, '#': quote.href})" target="_self">read more</a>
 
           </li>
         </ul>
@@ -171,6 +179,5 @@
     </div>
 
   </div>
-
 
 </section>
