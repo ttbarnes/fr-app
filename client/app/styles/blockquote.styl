@@ -47,7 +47,7 @@ blockquote
     display block
     font-style normal
     color #616161
-    margin-left 5.5%
+    margin-left 5.2%
 
   &.album
     text-align left
@@ -55,7 +55,7 @@ blockquote
     line-height 1.3em
     @media (min-width $bp-md)
       line-height 1.7em
-    span.copy,
+    span.copy .inner,
     span.author,
     a.read-full
       font-size 0.75em
@@ -72,7 +72,6 @@ blockquote
     span.quote
       float left
       width auto
-      font-size 3em
       &:first-child
         margin-left -0.15em
         margin-right 0
@@ -80,12 +79,22 @@ blockquote
       &:last-child
         display inline-block
 
+  &.album-small
+    span.inner
+      max-width 87%
+    span.quote
+      font-size 3em
+      &:first-child
+        width 9%
+    span.author
+      margin-left 6.5%
+
+
   &.review
     .copy,
     .author,
     .read-full
       font-size 0.75em
 
-  .read-full
+  a.read-full
     display inline-block
-    font-weight bold

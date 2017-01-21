@@ -130,7 +130,7 @@
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
 
-            <blockquote class="album">
+            <blockquote class="album album-small">
               <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
               <span class="author" ng-bind-html="quote.author"></span>
             </blockquote>
@@ -144,7 +144,7 @@
     <!-- latest album specific -->
     <div ng-if="vm.data.id === 2" class="row">
 
-      <p class="align-center video-wrapper-title">Behind the scenes</p>
+      <h4 class="align-center page-sub-title">Behind the scenes</h4>
       <div class="video-wrapper">
         <iframe width="560" src="https://www.youtube.com/embed/PzOWVOAEOX0?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -152,7 +152,7 @@
 
       <div class="row quotes latest-album-quotes">
 
-        <p class="align-center">Reviews</p>
+        <h4 class="page-sub-title align-center">Reviews</h4>
 
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
