@@ -1,4 +1,6 @@
-<section class="row music-album-reviews">
+<section class="row music-album-reviews include-bg-img">
+
+  <img ng-src="{{vm.album.images.bg}}" class="img-bg" />
 
   <div class="main-content align-center">
 
@@ -21,6 +23,13 @@
         </div>
       </li>
     </ul>
+
+    <div class="row button-view-nav">
+       <a ui-sref="music" class="button">
+        <span>Music</span>
+        <i class="icon-arrow-right"></i>
+      </a>
+    </div>
 
   </div>
 
