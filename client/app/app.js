@@ -69,7 +69,8 @@ angular.module('app', [
         $rootScope.$broadcast('stateCollaboratorsInd', { active: false });
       }
 
-      if (toState.name === 'musicAlbum') {
+      if (toState.name === 'musicAlbum' ||
+          toState.name === 'musicAlbumReviews') {
         $rootScope.$broadcast('stateMusicAlbum', { active: true });
       } else {
         $rootScope.$broadcast('stateMusicAlbum', { active: false });
