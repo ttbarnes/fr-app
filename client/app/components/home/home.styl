@@ -21,16 +21,27 @@
     @media (min-width $bp-lg + 400px)
       padding-bottom 31.25%
   h3
-    margin-bottom $gutter-primary-lg
-    @media (min-width $bp-md)
-      padding-bottom $gutter-primary
+    margin-bottom $gutter-primary
+    padding-bottom 0
+    @media (min-width $bp-xxs)
+      max-width 380px
+      margin-right auto
+      margin-left auto
     @media (min-width $bp-md)
       width 60%
+      max-width 100%
+      margin-right 0
+      margin-left 0
     @media (min-width $bp-md + 225px)
       width 100%
       max-width 285px
     @media (min-width $bp-lg + 250px)
       max-width 100%
+
+  .album-release-date
+    margin-bottom $gutter-primary-lg
+    @media (min-width $bp-md)
+      padding-bottom $gutter-primary
 
   .row-album-latest
     float none
