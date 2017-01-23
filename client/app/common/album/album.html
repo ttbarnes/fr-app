@@ -104,12 +104,13 @@
 
     <div class="col-50-md col-last">
 
-      <span ng-if="vm.data.comingSoon" class="coming-soon desktop-only">Coming soon</span>
       <h2 class="desktop-only">{{vm.data.name}}</h2>
+
+      <span ng-if="vm.data.comingSoon" class="coming-soon desktop-only">Coming soon</span>
 
       <a ng-if="vm.data.id === 2"
          ui-sref="musicAlbumReviews({id: vm.data.id})"
-         class="cta-button">Read the reviews</a>
+         class="cta-button">Reviews</a>
 
       <ul ng-if="vm.data.urls" class="row download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">
@@ -172,7 +173,7 @@
                     class="author"
                     ng-bind-html="quote.author"></span>
               <a ng-if="quote.showReadMore"
-                 ui-sref="musicAlbumReviews({id: vm.data.id, '#': quote.href})"
+                 ui-sref="musicAlbumReviews({id: vm.data.id})"
                  target="_self"
                  class="read-full">Read full review by {{quote.author}}</a>
             </blockquote>
