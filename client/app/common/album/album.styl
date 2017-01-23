@@ -46,12 +46,29 @@ section.album
     color $color-highlight-primary
     &.mobile-only
       text-align center
-      margin-bottom $gutter-primary-lg
+      margin-bottom 0.5em
 
   h3
     color $color-heading-primary
 
+
   .coming-soon
+    &.mobile-only
+      display block
+      width 100%
+      text-align center
+      padding-bottom $gutter-primary-lg
+      @media (min-width $bp-md)
+        display none
+    &.desktop-only
+      display none
+      @media (min-width $bp-md)
+        display block
+        width 100%
+        text-align left
+        padding-bottom 0
+
+  .cta-button
     padding 1.05em
     margin-right auto
     margin-left auto
@@ -64,7 +81,7 @@ section.album
     display block
     opacity 0.5
     transition all 0.2s ease
-    max-width 140px
+    max-width 155px
     text-align center
     @media (min-width $bp-md)
       display inline-block

@@ -47,6 +47,8 @@
 
       <h2 class="mobile-only">{{vm.data.name}}</h2>
 
+      <span ng-if="vm.data.comingSoon" class="coming-soon mobile-only">Coming soon</span>
+
       <img ng-src="{{vm.data.images.thumb}}"
            alt="{{vm.data.title}}"/>
 
@@ -102,9 +104,12 @@
 
     <div class="col-50-md col-last">
 
+      <span ng-if="vm.data.comingSoon" class="coming-soon desktop-only">Coming soon</span>
       <h2 class="desktop-only">{{vm.data.name}}</h2>
 
-      <p ng-if="vm.data.comingSoon" class="coming-soon">Coming soon</p>
+      <a ng-if="vm.data.id === 2"
+         ui-sref="musicAlbumReviews({id: vm.data.id})"
+         class="cta-button">Read the reviews</a>
 
       <ul ng-if="vm.data.urls" class="row download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">
