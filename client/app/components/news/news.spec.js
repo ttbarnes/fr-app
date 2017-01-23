@@ -18,12 +18,6 @@ describe('News', () => {
 
   });
 
-  describe('Template', () => {
-    it('has name in template [REMOVE]', () => {
-      expect(NewsTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
-  });
-
   describe('Component', () => {
     let component = NewsComponent;
 
