@@ -1,8 +1,7 @@
 import albumsService from './albums.service';
+import allAlbums from '../data/allAlbums.json';
 
 describe('albumsService', () => {
-
-  //todo: get JSON data working inside unit test
 
   var MockAlbumsService,
       MockAllAlbums = [ { dummy: true }, { dummy: true } ],
@@ -18,13 +17,14 @@ describe('albumsService', () => {
   });
 
   it('should have allAlbums property', () => {
+    MockAlbumsService.allAlbums = MockAllAlbums;
     expect(MockAlbumsService.allAlbums).toBeDefined();
   })
 
   it('should have a quoteTruncationCharLimit property', () => {
     expect(MockAlbumsService.quoteTruncationCharLimit).toBeDefined();
     expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(jasmine.any(Number));
-    expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(770);
+    expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(800);
   });
 
   describe('allAlbums', () => {

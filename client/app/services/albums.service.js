@@ -10,13 +10,15 @@ export default class albumsService {
     // add showReadMore property to album
     // if quote.copy is larger than limit
     */
-    this.allAlbums.map((a) => {
-      a.quotes.map((q) => {
-        if (q.copy.length >= this.quoteTruncationCharLimit) {
-          q.showReadMore = true;
-        }
+    if (this.allAlbums && this.allAlbums.length) {
+      this.allAlbums.map((a) => {
+        a.quotes.map((q) => {
+          if (q.copy.length >= this.quoteTruncationCharLimit) {
+            q.showReadMore = true;
+          }
+        });
       });
-    });
+    }
 
     /*
     // get a single album
