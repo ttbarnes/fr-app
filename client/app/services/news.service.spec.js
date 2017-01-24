@@ -2,17 +2,13 @@ import newsService from './news.service';
 
 describe('newsService', () => {
 
-  var MockNewsService;
-
-  beforeEach(() => {
-    MockNewsService = new newsService();
-  });
+  var mockNewsService;
 
   describe('news', () => {
 
     it('should be defined', () => {
-      MockCollaboratorsService.news = [ {}, {} ];
-      expect(MockCollaboratorsService.news).toBeDefined();
+      newsService.news = [ {}, {} ];
+      expect(newsService.news).toBeDefined();
     });
 
   });
