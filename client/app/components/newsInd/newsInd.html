@@ -1,4 +1,4 @@
-<section class="row news-ind">
+<section class="row long-copy-line-height news-ind">
   <div class="main-content">
 
     <h1>{{vm.data.title}}</h1>
@@ -6,7 +6,35 @@
 
     <img ng-src="{{vm.data.images.main}}" alt="{{vm.data.title}}" />
 
-    <div ng-bind-html="vm.data.body"></div>
+    <div ng-bind-html="vm.data.body" class="body-content"></div>
+
+    <div class="social-share">
+      <p class="page-sub-title">Share on</p>
+      <ul>
+        <li>
+          <a href="#"
+             socialshare
+             socialshare-provider="facebook"
+             socialshare-title="{{vm.data.title}}"
+             socialshare-hashtags="test, temp"
+             socialshare-media="http://todo:addurl">
+             <i class="icon-s-f"></i>
+             <span>Facebook</span>
+          </a>
+        </li>
+        <li class="last">
+          <a href="#"
+             socialshare
+             socialshare-provider="twitter"
+             socialshare-text="{{vm.data.title}}"
+             socialshare-hashtags="test, temp"
+             socialshare-url="http://todo:addurl">
+             <i class="icon-s-t"></i>
+             <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
   </div>
 </section>
