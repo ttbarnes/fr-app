@@ -1,10 +1,10 @@
-import newsData from '../data/newsData.json';
+import data from '../data/news.json';
 
 export default class newsService {
 
   constructor(){
 
-    this.newsData = newsData;
+    this.data = data;
 
   }
 

@@ -1,6 +1,10 @@
+import newsService from '../../services/news.service';
+
 class NewsController {
-  constructor() {
-    this.name = 'news';
+  constructor(newsService) {
+    'ngInject';
+    this.newsService = newsService;
+    this.data = this.newsService.data;
   }
 }
 

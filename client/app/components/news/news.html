@@ -1,5 +1,17 @@
-<section class="row news">
+<section class="row news-home">
   <div class="main-content">
-    <p>news</p>
+
+    <ul>
+      <li ng-repeat="post in vm.data" ng-class="{last: $last}">
+        <div class="inner">
+          <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
+          <div class="copy">
+            <h2>{{post.title}}</h3>
+            <p>{{post.bodyShort}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
   </div>
 </section>

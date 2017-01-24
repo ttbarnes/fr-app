@@ -1,6 +1,41 @@
 @import '../../styles/variables'
 
-.news
+.news-home
   .main-content
     max-width $section-max-width
     margin 0 auto
+
+  li
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary-x-lg
+      padding-bottom $gutter-primary-x-lg
+    &.last
+      padding-bottom 0
+      margin-bottom 0
+      border-bottom 0 none
+
+    .inner
+      position relative
+
+    img
+      z-index 1
+      width 100%
+
+    .copy
+      width 100%
+      background $tabbed-content-bg-desktop
+      padding $gutter-primary
+      padding-bottom $gutter-primary-lg
+      @media (min-width $bp-md)
+        position absolute
+        z-index 2
+        bottom 0
+        left 0
+        right 0
+
+    h2
+      color $color-highlight-primary
+
+    p
+      margin-bottom 0
+
