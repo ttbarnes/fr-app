@@ -18,10 +18,17 @@
 
     .inner
       position relative
+      overflow hidden
+
+    a
+      display block
+      max-height 400px
 
     img
       z-index 1
       width 100%
+      opacity .5
+      transition all 0.3s ease
 
     .copy
       width 100%
@@ -36,8 +43,16 @@
         right 0
 
     h2
+      font-weight 300
       color $color-highlight-primary
 
     p
       margin-bottom 0
+
+    a:hover
+      img
+        opacity 1
+        width 105%
+        max-width 105%
+        margin -3% 0 0 -2.5%
 
