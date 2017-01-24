@@ -4,11 +4,13 @@
     <ul>
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <div class="inner">
-          <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
-          <div class="copy">
-            <h2>{{post.title}}</h3>
-            <p>{{post.bodyShort}}</p>
-          </div>
+          <a ui-sref="newsInd({title: post.urlTitle, id: post.id})">
+            <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
+            <div class="copy">
+              <h2>{{post.title}}</h3>
+              <p>{{post.bodyShort}}</p>
+            </div>
+          </a>
         </div>
       </li>
     </ul>

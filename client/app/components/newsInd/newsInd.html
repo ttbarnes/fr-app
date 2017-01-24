@@ -2,5 +2,10 @@
   <div class="main-content">
 
     <h1>{{vm.data.title}}</h1>
+
+    <img ng-src="{{vm.data.images.main}}" alt="{{vm.data.title}}" />
+
+    <div ng-bind-html="vm.data.body"></div>
+
   </div>
 </section>

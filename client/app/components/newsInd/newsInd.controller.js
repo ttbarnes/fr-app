@@ -3,9 +3,9 @@ class NewsIndController {
     'ngInject';
     this.newsService = newsService;
     this.stateParams = $stateParams;
-    this.currentId = this.stateParams.id;
+    this.indTitle = this.stateParams.title;
 
-    this.data = this.newsService.getSingle(this.currentId);
+    this.data = this.newsService.getSingle(this.indTitle);
     if(!this.data) {
       $state.go('error');
     }

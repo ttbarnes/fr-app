@@ -11,7 +11,7 @@ let newsIndModule = angular.module('newsInd', [
 
   $stateProvider
     .state('newsInd', {
-      url: '/news/:id',
+      url: '/news/:title',
       template: '<news-ind></news-ind>'
     });
 })

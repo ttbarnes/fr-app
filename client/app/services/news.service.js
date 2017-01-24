@@ -5,8 +5,13 @@ export default class newsService {
   constructor(){
     this.data = data;
 
-    this.getSingle = (id) => {
-      return this.data[id - 1];
+    this.data.map((d) => {
+      d.urlTitle = d.title.replace(/\s+/g, '-').toLowerCase();
+    });
+
+    this.getSingle = (title) => {
+      const data = this.data.find(d => d.urlTitle === title);
+      return data;
     }
   }
 
