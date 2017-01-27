@@ -1,6 +1,7 @@
 <section class="row news-home">
   <div class="main-content">
 
+<!--
     <ul>
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <div class="inner">
@@ -15,17 +16,45 @@
       </li>
     </ul>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+  -->
 
     <ul class="temp-alt-layout">
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <div class="inner">
           <h2>{{post.title}}</h2>
-          <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
+          <div class="img-wrap">
+            <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
+          </div>
           <div ng-bind-html="post.body" class="body-content"></div>
+
+          <div class="social-share">
+            <p>Share on</p>
+            <ul>
+              <li>
+                <a href="#"
+                   socialshare
+                   socialshare-provider="facebook"
+                   socialshare-title="{{vm.data.title}}"
+                   socialshare-hashtags="test, temp"
+                   socialshare-media="http://todo:addurl">
+                   <i class="icon-s-f"></i>
+                   <span>Facebook</span>
+                </a>
+              </li>
+              <li class="last">
+                <a href="#"
+                   socialshare
+                   socialshare-provider="twitter"
+                   socialshare-text="{{vm.data.title}}"
+                   socialshare-hashtags="test, temp"
+                   socialshare-url="http://todo:addurl">
+                   <i class="icon-s-t"></i>
+                   <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </li>
     </ul>
