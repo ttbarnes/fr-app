@@ -16,23 +16,38 @@
       margin-bottom 0
       border-bottom 0 none
 
-    .inner
-      position relative
-      overflow hidden
-
     a
       display block
       max-height 400px
 
+    .img-wrap
+      position relative
+      max-height 200px
+      overflow hidden
+      margin-bottom $gutter-primary-x-lg
+
     img
-      z-index 1
       width 100%
-      opacity .5
-      transition all 0.3s ease
+      opacity .8
+
+    .social-share
+      z-index 2
+      position absolute
+      bottom 0
+      left 0
+      width 100%
+      background $tabbed-content-bg-desktop
+      li,
+      p
+        float left
+        padding $gutter-primary
+        margin-bottom 0
+
+      p
+        margin-top 4px
 
     .copy
       width 100%
-      background $tabbed-content-bg-desktop
       padding $gutter-primary
       padding-bottom $gutter-primary-lg
       @media (min-width $bp-md)

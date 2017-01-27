@@ -1,32 +1,12 @@
-<section class="row news-home">
+<section class="row news-home long-copy-line-height">
   <div class="main-content">
 
-<!--
     <ul>
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
-        <div class="inner">
-          <a ui-sref="newsInd({title: post.urlTitle, id: post.id})">
-            <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
-            <div class="copy">
-              <h2>{{post.title}} <small>read more</small></h2>
-              <p>{{post.bodyShort}}</p>
-            </div>
-          </a>
-        </div>
-      </li>
-    </ul>
+        <h2>{{post.title}}</h2>
 
-  -->
-
-    <ul class="temp-alt-layout">
-      <li ng-repeat="post in vm.data" ng-class="{last: $last}">
-        <div class="inner">
-          <h2>{{post.title}}</h2>
-          <div class="img-wrap">
-            <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
-          </div>
-          <div ng-bind-html="post.body" class="body-content"></div>
-
+        <div class="img-wrap">
+          <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />
           <div class="social-share">
             <p>Share on</p>
             <ul>
@@ -54,8 +34,9 @@
               </li>
             </ul>
           </div>
-
         </div>
+
+        <div ng-bind-html="post.body" class="body-content"></div>
       </li>
     </ul>
 
