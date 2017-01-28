@@ -15,7 +15,7 @@
       <ul class="nav-items nav-items-large">
         <li><a ui-sref="home"><span>Home</span></a></li>
         <li ng-class="{active: vm.stateIsMusicAlbum}"><a ui-sref="music" ui-sref-active="active"><span>Music</span></a></li>
-        <li><a ui-sref="news" ui-sref-active="active"><span>News</span></a></li>
+        <li ng-class="{active: vm.stateIsNews}"><a ui-sref="news" ui-sref-active="active"><span>News</span></a></li>
         <li><a ui-sref="about" ui-sref-active="active"><span>About</span></a></li>
         <li><a ui-sref="gallery" ui-sref-active="active"><span>Gallery</span></a></li>
         <li ng-class="{active: vm.stateIsCollabInd}"><a ui-sref="collaborators" ui-sref-active="active" ng-click="vm.toggleMobileMenu();"><span>Collaborators</span></a></li>
@@ -32,7 +32,7 @@
           <ul class="nav-items">
             <li><a ui-sref="home" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Home</a></li>
             <li ng-class="{active: vm.stateIsMusicAlbum}"><a ui-sref="music" ng-click="vm.toggleMobileMenu();">Music</a></li>
-            <li><a ui-sref="news" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">News</a></li>
+            <li ng-class="{active: vm.stateIsNews}"><a ui-sref="news" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">News</a></li>
             <li><a ui-sref="about" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">About</a></li>
             <li><a ui-sref="gallery" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Gallery</a></li>
             <li ng-class="{active: vm.stateIsCollabInd}"><a ui-sref="collaborators" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Collaborators</a></li>

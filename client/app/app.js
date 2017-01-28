@@ -79,6 +79,13 @@ angular.module('app', [
       } else {
         $rootScope.$broadcast('stateMusicAlbum', { active: false });
       }
+      if (toState.name === 'news' ||
+          toState.name === 'newsInd') {
+        $rootScope.$broadcast('stateNews', { active: true });
+      } else {
+        $rootScope.$broadcast('stateNews', { active: false });
+      }
+
     });
 
     $rootScope.$on('$stateChangeSuccess', (e, toState) => {
