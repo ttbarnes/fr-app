@@ -4,17 +4,38 @@ import NewsComponent from './news.component';
 import NewsTemplate from './news.html';
 
 describe('News', () => {
-  let $rootScope, makeController;
+  let $rootScope,
+      makeController,
+      newsService,
+      mockNewsService = {
+        data: [
+          { title: 'test title' },
+          { title: 'dummy title' },
+        ]
+      };
 
   beforeEach(window.module(NewsModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
+    newsService = mockNewsService;
     makeController = () => {
-      return new NewsController();
+      return new NewsController(newsService);
     };
   }));
 
   describe('Controller', () => {
+
+    it('should inject newsService', () => {
+      let controller = makeController();
+      expect(controller.newsService).toBeDefined();
+      expect(controller.newsService).toEqual(mockNewsService)
+    });
+
+    it('should assign data to scope ', () => {
+      let controller = makeController();
+      expect(controller.data).toBeDefined();
+      expect(controller.data).toEqual(jasmine.any(Array));
+    });
 
   });
 

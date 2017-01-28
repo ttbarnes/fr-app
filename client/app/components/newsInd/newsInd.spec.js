@@ -20,7 +20,7 @@ describe('NewsInd', () => {
         }
       },
       mockStateParams = {
-        id: 1
+        title: 'test-title-url-hello-world'
       };
 
   beforeEach(() => {
@@ -42,6 +42,18 @@ describe('NewsInd', () => {
     it('should inject news service', () => {
       let controller = makeController(newsService);
       expect(controller.newsService).toBeDefined();
+    });
+
+    it('should assign indTitle to scope', () => {
+      let controller = makeController(newsService);
+      expect(controller.indTitle).toBeDefined();
+      expect(controller.indTitle).toEqual(controller.stateParams.title);
+    });
+
+    it('should have data in scope', () => {
+      let controller = makeController(newsService);
+      expect(controller.data).toBeDefined();
+      expect(controller.data).toEqual(controller.newsService.getSingle());
     });
 
   });
