@@ -4,6 +4,7 @@
     <ul>
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <h2>{{post.title}}</h2>
+        <small class="date">{{post.createdAt | date: 'MM dd, yyyy'}}</small>
 
         <div class="img-wrap">
           <img ng-src="{{post.images.thumb}}" alt="{{post.title}}" />

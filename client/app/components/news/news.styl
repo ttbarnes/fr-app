@@ -8,15 +8,18 @@
       padding-top $gutter-primary-xx-lg
 
   li
-    margin-bottom $gutter-primary-lg
-    padding-bottom $gutter-primary-lg
-    @media (min-width $bp-md)
-      margin-bottom $gutter-primary-x-lg
-      padding-bottom $gutter-primary-x-lg
+    margin-bottom $gutter-primary-x-lg
+    padding-bottom $gutter-primary-x-lg
     &.last
       padding-bottom 0
       margin-bottom 0
       border-bottom 0 none
+
+    .date
+      display block
+      margin-bottom $gutter-primary-x-lg
+      opacity 0.5
+      margin 0 0 $gutter-primary-xs 0
 
     .img-wrap
       position relative
@@ -59,6 +62,7 @@
           &:hover,
           &:focus
             opacity 1
+            outline 0 none
         &.first a
           padding-left 0
       p
@@ -81,13 +85,7 @@
     h2
       font-weight 300
       color $color-highlight-primary
-      small
-        font-size 65%
-        color $color-text-primary
-        margin-left 0.5em
-        border-bottom solid 1px transparent
-        transition all 1s ease
-        margin-top -1px
+      margin-bottom 0
 
     p
       margin-bottom 0
