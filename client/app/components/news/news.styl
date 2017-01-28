@@ -8,6 +8,8 @@
       padding-top $gutter-primary-xx-lg
 
   li
+    margin-bottom $gutter-primary-lg
+    padding-bottom $gutter-primary-lg
     @media (min-width $bp-md)
       margin-bottom $gutter-primary-x-lg
       padding-bottom $gutter-primary-x-lg
@@ -16,35 +18,54 @@
       margin-bottom 0
       border-bottom 0 none
 
-    a
-      display block
-      max-height 400px
-
     .img-wrap
       position relative
-      max-height 200px
-      overflow hidden
-      margin-bottom $gutter-primary-x-lg
+      margin-bottom $gutter-primary-lg
+      @media (min-width $bp-md)
+        max-height 300px
+        overflow hidden
 
     img
       width 100%
       opacity .8
 
     .social-share
-      z-index 2
-      position absolute
-      bottom 0
-      left 0
       width 100%
       background $tabbed-content-bg-desktop
+      @media (min-width $bp-md)
+        z-index 2
+        position absolute
+        bottom 0
+        left 0
+        text-align right
+      ul,
+      p
+        @media (min-width $bp-md)
+          display inline-block
+
+      ul > li
+        padding 0
       li,
       p
-        float left
-        padding $gutter-primary
         margin-bottom 0
 
+      li
+        display inline-block
+        a
+          padding $gutter-primary
+          opacity .5
+          transition all .3s ease
+          cursor pointer
+          &:hover,
+          &:focus
+            opacity 1
+        &.first a
+          padding-left 0
       p
+        padding $gutter-primary
+        padding-left 0
         margin-top 4px
+        opacity .5
 
     .copy
       width 100%
