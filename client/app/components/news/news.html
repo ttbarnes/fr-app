@@ -15,9 +15,9 @@
                 <a href="#"
                    socialshare
                    socialshare-provider="facebook"
-                   socialshare-title="{{vm.data.title}}"
-                   socialshare-hashtags="test, temp"
-                   socialshare-media="http://todo:addurl">
+                   socialshare-title="{{post.title}}"
+                   socialshare-hashtags="{{post.socialShare.hashtags}}"
+                   socialshare-media="{{post.socialShare.shareUrl}}">
                    <i class="icon-s-f"></i>
                    <span>Facebook</span>
                 </a>
@@ -26,9 +26,9 @@
                 <a href="#"
                    socialshare
                    socialshare-provider="twitter"
-                   socialshare-text="{{vm.data.title}}"
-                   socialshare-hashtags="test, temp"
-                   socialshare-url="http://todo:addurl">
+                   socialshare-text="{{post.title}}"
+                   socialshare-hashtags="{{post.socialShare.hashtags}}"
+                   socialshare-url="{{post.socialShare.shareUrl}}">
                    <i class="icon-s-t"></i>
                    <span>Twitter</span>
                 </a>
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <div ng-bind-html="post.body" class="body-content"></div>
+        <div ng-bind-html="post.bodyMain" class="body-content"></div>
       </li>
     </ul>
 

@@ -7,8 +7,11 @@
       "main": "http://blog.hdwallsource.com/wp-content/uploads/2016/05/henry-cavill-face-wallpaper-52405-54117-hd-wallpapers.jpg",
       "thumb": "http://blog.hdwallsource.com/wp-content/uploads/2016/05/henry-cavill-face-wallpaper-52405-54117-hd-wallpapers.jpg"
     },
-    "bodyShort": "Lois Lane declined to comment",
-    "body": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+    "bodyMain": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>",
+    "socialShare": {
+      "hashtags": "FionaRoss, Jazz, HenryCavill",
+      "shareUrl":  "http://fionaross.co.uk/news/henry-cavill-temp-url"
+    }
   },
   {
     "id": "2",
@@ -18,8 +21,7 @@
       "main": "https://assets.about.me/background/pianotheatre_1330182860_4.jpg",
       "thumb": "https://assets.about.me/background/pianotheatre_1330182860_4.jpg"
     },
-    "bodyShort": "It's a bit fancy",
-    "body": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+    "bodyMain": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
   },
   {
     "id": "3",
@@ -29,7 +31,6 @@
       "main": "http://fionaross.co.uk/images/gallery/Fiona-Rehearsal---_-16.png",
       "thumb": "http://fionaross.co.uk/images/gallery/Fiona-Rehearsal---_-16.png"
     },
-    "bodyShort": "Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae",
-    "body": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+    "bodyMain": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
   }
 ]
