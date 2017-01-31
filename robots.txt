@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
 Disallow: /app/
 Sitemap: fionaross.co.uk/sitemap.xml
