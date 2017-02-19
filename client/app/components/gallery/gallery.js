@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import galleryComponent from './gallery.component';
+import { PAGE_TITLE_GALLERY } from '../../constants/constants';
 
 let galleryModule = angular.module('gallery', [
   uiRouter
@@ -11,7 +12,10 @@ let galleryModule = angular.module('gallery', [
   $stateProvider
     .state('gallery', {
       url: '/gallery',
-      template: '<gallery></gallery>'
+      template: '<gallery></gallery>',
+      resolve: {
+        $title: () => PAGE_TITLE_GALLERY
+      }
     });
 })
 

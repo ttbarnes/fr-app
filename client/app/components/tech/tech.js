@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import techComponent from './tech.component';
+import { PAGE_TITLE_TECH } from '../../constants/constants';
 
 let techModule = angular.module('tech', [
   uiRouter
@@ -12,7 +13,10 @@ let techModule = angular.module('tech', [
   $stateProvider
     .state('tech', {
       url: '/tech',
-      template: '<tech></tech>'
+      template: '<tech></tech>',
+      resolve: {
+        $title: () => PAGE_TITLE_TECH
+      }
     });
 })
 

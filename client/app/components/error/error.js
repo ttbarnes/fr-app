@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import errorComponent from './error.component';
+import { PAGE_TITLE_ERROR } from '../../constants/constants';
 
 let errorModule = angular.module('error', [
   uiRouter
@@ -11,7 +12,10 @@ let errorModule = angular.module('error', [
   $stateProvider
     .state('error', {
       url: '/error',
-      template: '<error></error>'
+      template: '<error></error>',
+      resolve: {
+        $title: () => PAGE_TITLE_ERROR
+      }
     });
 })
 
