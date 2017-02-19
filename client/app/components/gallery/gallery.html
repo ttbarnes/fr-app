@@ -1,7 +1,7 @@
 <section class="row gallery include-bg-img">
   <h1 class="sr-only">Fiona Ross Gallery of gigs, events, photoshoots</h1>
 
-  <img src="./images/shared/bg.png" class="img-bg" />
+  <img src="./images/shared/bg.png" class="img-bg" alt="Fiona Ross Gallery" />
 
   <div class="main-content">
 
@@ -10,7 +10,7 @@
       <li ng-repeat="img in vm.images" class="col-50-xs col-25-md">
 
         <a ng-click="vm.openLightboxModal($index)">
-          <img ng-src="./images/gallery/{{img.thumbUrl}}" />
+          <img ng-src="./images/gallery/{{img.thumbUrl}}" alt="Fiona Ross" />
         </a>
 
       </li>
