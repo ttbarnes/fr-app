@@ -1,6 +1,8 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import collaboratorIndComponent from './collaboratorInd.component';
+import collaboratorsService from '../../services/collaborators.service';
+import { PAGE_TITLE_COLLABORATOR_IND } from '../../constants/constants';
 
 let collaboratorIndModule = angular.module('collaboratorInd', [
   uiRouter
@@ -12,7 +14,15 @@ let collaboratorIndModule = angular.module('collaboratorInd', [
   $stateProvider
     .state('collaboratorsInd', {
       url: '/collaborators/:id',
-      template: '<collaborator-ind></collaborator-ind>'
+      template: '<collaborator-ind></collaborator-ind>',
+      resolve: {
+        collab: (collaboratorsService, $stateParams) => {
+          return collaboratorsService.getSingle($stateParams.id);
+        },
+        $title: (collab) => {
+          return collab.name + PAGE_TITLE_COLLABORATOR_IND;
+        }
+      }
     });
 })
 
