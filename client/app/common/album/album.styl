@@ -69,7 +69,7 @@ section.album
         padding-bottom 0
 
   .cta-button
-    padding 1.05em
+    padding $gutter-primary $gutter-primary-lg
     margin-right auto
     margin-left auto
     margin-top $gutter-primary-lg
@@ -85,7 +85,7 @@ section.album
     text-align center
     @media (min-width $bp-md)
       display inline-block
-      margin-right 0
+      margin-right $gutter-primary
       margin-left 0
 
   .written-by
@@ -173,3 +173,12 @@ section.album
 
   .plangular
     margin-top $gutter-primary-x-lg
+  
+  .album-press
+    a.button
+      color $color-highlight-primary
+      padding $gutter-primary
+      display inline-block
+      &:hover,
+      &:focus
+        border-bottom solid 1px #616161
