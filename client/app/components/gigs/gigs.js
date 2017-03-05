@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import gigsComponent from './gigs.component';
+import { PAGE_TITLE_GIGS} from '../../constants/constants';
 
 let gigsModule = angular.module('gigs', [
   uiRouter
@@ -12,7 +13,10 @@ let gigsModule = angular.module('gigs', [
   $stateProvider
     .state('gigs', {
       url: '/gigs',
-      template: '<gigs></gigs>'
+      template: '<gigs></gigs>',
+      resolve: {
+        $title: () => PAGE_TITLE_GIGS
+      }
     });
 })
 
