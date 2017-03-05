@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import newsComponent from './news.component';
+import { PAGE_TITLE_NEWS } from '../../constants/constants';
 
 let newsModule = angular.module('news', [
   uiRouter
@@ -12,7 +13,10 @@ let newsModule = angular.module('news', [
   $stateProvider
     .state('news', {
       url: '/news',
-      template: '<news></news>'
+      template: '<news></news>',
+      resolve: {
+        $title: () => PAGE_TITLE_NEWS
+      }      
     });
 })
 
