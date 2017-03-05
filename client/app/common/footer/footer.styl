@@ -6,72 +6,75 @@ fr-footer
 footer
   position relative
   z-index 3
-  background-color $color-bg-primary
-  color $color-text-tertiary
-  transform skew(28.3deg)
-  max-width 290px
-  margin-top $section-gutter-horizontal
-  @media (min-width $bp-md)
-    max-width 356px
-
-
-  .container
-    transform skew(-28.3deg) !important
-    max-width 250px
-    padding 1em
-    padding-left 2.1em
-    padding-right 0
-    padding-bottom 0.5em
-    margin-left -40px
+  .nav
     background-color $color-bg-primary
+    color $color-text-tertiary
+    transform skew(28.3deg)
+    max-width 310px
+    width 310px
+    margin-top $section-gutter-horizontal
     @media (min-width $bp-md)
-      max-width 305px
-      padding 2.5em
+      float left
+      width 356px
+      max-width 356px
+
+    .container
+      transform skew(-28.3deg) !important
+      max-width 253px
+      padding 1em
+      padding-left 2.1em
       padding-right 0
-      padding-left 4.4em
+      padding-bottom 0.5em
+      margin-left -40px
+      background-color $color-bg-primary
+      @media (min-width $bp-md)
+        max-width 279px
+        padding 2.5em
+        padding-right 0
+        padding-left 4.4em
 
-  h4
-    font-size $font-size-h1-mobile
-    padding 0 $gutter-primary
-    @media (min-width $bp-md)
-      font-size $font-size-h1-desktop
+    h4
+      font-size $font-size-h1-mobile
+      padding 0 $gutter-primary
+      @media (min-width $bp-md)
+        font-size $font-size-h1-desktop
 
-  li
-    font-size 1em
-    @media (min-width $bp-md)
-      font-size 1.130em
+    li
+      font-size 1em
+      @media (min-width $bp-md)
+        font-size 1.130em
 
-    i
-      margin-top -2px
-      margin-right 0.55em
-      transition all 0.4s ease
+      i
+        margin-top -2px
+        margin-right 0.55em
+        transition all 0.4s ease
 
-      &.icon-s-s
-        font-size 1.1em
-        margin-right 0.45em
+        &.icon-s-s
+          font-size 1.1em
+          margin-right 0.45em
 
-      .icon-s-f
-        &::before
-          margin-top 5px
+        .icon-s-f
+          &::before
+            margin-top 5px
 
-  a
-    width 100%
-    color #FFF
-    transition all 0.3s ease
-    @media (min-width: $bp-md)
-      width auto
-
-  .nav-links
     a
-      display inline-block
-      padding $gutter-primary $gutter-primary-lg
-      opacity 0.4
-      &:hover,
-      &:focus
-        outline 0 none
+      width 100%
+      color #FFF
+      transition all 0.3s ease
       @media (min-width: $bp-md)
+        width auto
+
+    .nav-links
+      a
+        display inline-block
+        padding $gutter-primary $gutter-primary-lg
+        opacity 0.4
         &:hover,
         &:focus
-          opacity 1
-          i
-            transform rotate(360deg)
+          outline 0 none
+        @media (min-width: $bp-md)
+          &:hover,
+          &:focus
+            opacity 1
+            i
+              transform rotate(360deg)

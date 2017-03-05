@@ -1,46 +1,52 @@
 @import '../../styles/variables'
 
 .signup-form 
+  padding $gutter-primary $gutter-primary-lg
+  padding-top $gutter-primary-lg
   p
     margin-bottom $gutter-primary
-    text-align center
-    @media (min-width:$bp-md)
+    color $color-text-tertiary
+    color #FFF
+    opacity .2
+    @media (min-width:$bp-sm)
       text-align left
 
   form
     display flex
     justify-content flex-start
     flex-direction column
-    margin 0 auto
     flex-direction row
-    max-width 330px
-    @media (min-width:$bp-md)
+    width 100%
+    max-width 450px
+    min-width 295px
+    @media (min-width:$bp-sm)
       max-width 370px
       margin 0 
 
   input
     text-align left
-    width 70%
+    width 60%
     border-right 0 
     &:focus
       border-color #3A3A3A
 
   input::-webkit-input-placeholder
-    color $color-text-tertiary
+    color $color-text-secondary
   
   input:-moz-placeholder
-    color $color-text-tertiary
+    color $color-text-secondary
   
   input::-moz-placeholder
-    color $color-text-tertiary
+    color $color-text-secondary
 
   input:-ms-input-placeholder
-    color $color-text-tertiary
+    color $color-text-secondary
 
 
   button
     width auto
     margin-bottom 0
     border solid 1px #3A3A3A
+    color #737373
     border-left 0
-    
+    font-size 1em
