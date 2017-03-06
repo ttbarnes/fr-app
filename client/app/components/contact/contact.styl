@@ -85,11 +85,12 @@
       padding-bottom $gutter-primary
 
     i
+      display none  // temp signup form in contact page
       margin-right $gutter-primary
       @media (min-width $bp-md)
         display none
       @media (min-width $bp-md + 150px)
-        display inline-block
+        // display inline-block
 
   .cards-top
     margin-bottom 0
@@ -98,6 +99,7 @@
     .card
       @media (min-width $bp-md)
         padding 0 $gutter-primary
+        width 25% // temp signup form in contact page
         &:first-child
           padding-left 0
         &:last-child
@@ -107,6 +109,41 @@
         padding-bottom $gutter-primary
         &:last-child
           padding-bottom 0
+
+      // temp signup form in contact page
+      a
+        @media (min-width $bp-md)
+          font-size 0.85em
+          word-wrap break-word
+
+
+    // temp signup form in contact page
+    .signup-form
+      padding 0
+      .mchimp-form
+        display block
+      
+      form 
+        max-width 100%
+        display block
+        min-width 100%
+        width 100%
+
+      p
+        display none
+
+      input,
+      .button
+        width 100%
+        display block
+        clear both
+        text-align center
+
+      input
+        border solid 1px #3A3A3A
+        border-bottom 0
+      .button
+        border 0 none
 
   .contact-form
     float left
