@@ -4,9 +4,28 @@
     <h1>{{vm.data.title}}</h1>
     <small class="date">{{vm.data.createdAt}}</small>
 
-    <img ng-src="{{vm.data.images.main}}" alt="{{vm.data.title}}" />
-
     <div ng-bind-html="vm.data.bodyMain" class="body-content"></div>
+
+    <a ng-if="vm.data.ticketsLink" 
+        href="{{vm.data.ticketsLink}}" 
+        target="_blank" 
+        class="button" 
+        style="width:auto;display:inline-block;">Get tickets</a>
+
+    <br/>
+    <br/>
+
+    <div class="link-highlight-hover-border">
+      <a ng-if="vm.data.venueLink" 
+        href="{{vm.data.venueLink}}" 
+        target="_blank"
+        class="venue-link">Venue</a>
+    </div>
+
+    <div ng-if="vm.data.videoEmbed" class="video-wrapper">
+      <iframe width="560" ng-src="{{vm.trustSrc(vm.data.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+    </div>
+
 
     <div class="social-share">
       <p class="page-sub-title">Share on</p>

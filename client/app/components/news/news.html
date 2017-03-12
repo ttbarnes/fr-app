@@ -8,7 +8,21 @@
         <small class="date">{{post.date}}</small>
 
         <div ng-bind-html="post.bodyMain" 
-             class="body-content link-highlight-hover link-highlight-hover-border"></div>
+             class="body-content link-highlight-hover-border"></div>
+
+        <a ng-if="post.ticketsLink" 
+           href="{{post.ticketsLink}}" 
+           target="_blank" 
+           class="button">Get tickets</a>
+
+        <br/>
+
+        <div class="link-highlight-hover-border">
+          <a ng-if="post.venueLink" 
+            href="{{post.venueLink}}" 
+            target="_blank"
+            class="venue-link">Venue</a>
+        </div>
 
         <div ng-if="post.videoEmbed" class="video-wrapper">
           <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>

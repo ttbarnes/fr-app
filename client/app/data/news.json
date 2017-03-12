@@ -2,12 +2,14 @@
   {
     "id": "4",
     "title": "First gig date in London released for Fiona",
-    "bodyMain": "<p>May 6th – Hope to see lots of you there!</p><div class=\"img-wrap\"><img src=\"../../images/news/4.jpg\" alt\"Fiona Ross first gig date in London\"/></div>",
+    "bodyMain": "<p>May 6th – Hope to see lots of you there!</p><div class=\"img-wrap\"><a href=\"http://www.seetickets.com/event/uncle-funk-the-boogie-wonderband/nells-jazz-blues/1075468\" target=\"_blank\"><img src=\"../../images/news/4.jpg\" alt\"Fiona Ross first gig date in London\"/></a></div>",
     "createdAt": "2017-03-12T13:20:24+00:00",
     "images": {
       "thumb": "../../images/news/4.jpg",
       "main": "../../images/news/4.jpg"
-    }
+    },
+    "ticketsLink": "http://www.seetickets.com/event/uncle-funk-the-boogie-wonderband/nells-jazz-blues/1075468",
+    "venueLink": "http://www.nellsjazzandblues.com/whats-on.html"
   },
   {
     "id": "3",
