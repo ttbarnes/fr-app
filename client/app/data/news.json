@@ -1,36 +1,34 @@
 [
   {
-    "id": "1",
-    "title": "Fiona responds to Henry Cavill (Clark Kent)'s decleration of love",
-    "createdAt": "Sat Jan 28 2017 09:55:33 GMT+0000 (GMT)",
+    "id": "4",
+    "title": "First gig date in London released for Fiona",
+    "bodyMain": "<p>May 6th – Hope to see lots of you there!</p><div class=\"img-wrap\"><img src=\"../../images/news/4.jpg\" alt\"Fiona Ross first gig date in London\"/></div>",
+    "createdAt": "2017-03-12T13:20:24+00:00",
     "images": {
-      "main": "http://blog.hdwallsource.com/wp-content/uploads/2016/05/henry-cavill-face-wallpaper-52405-54117-hd-wallpapers.jpg",
-      "thumb": "http://blog.hdwallsource.com/wp-content/uploads/2016/05/henry-cavill-face-wallpaper-52405-54117-hd-wallpapers.jpg"
-    },
-    "bodyMain": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>",
-    "socialShare": {
-      "hashtags": "FionaRoss, Jazz, HenryCavill",
-      "shareUrl":  "http://fionaross.co.uk/news/henry-cavill-temp-url"
+      "thumb": "../../images/news/4.jpg",
+      "main": "../../images/news/4.jpg"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Nate Williams touring",
+    "createdAt": "2017-03-12T13:20:24+00:00",
+    "bodyMain": "<p>Were very excited to announce that Nate Williams who we are thrilled played Bass and mixed the new album, has just announced he will be touring with Jamiroquai!!</p><div class=\"img-wrap\"><a href=\"http://jamiroquai.com\" target=\"_blank\"><img src=\"../../images/news/3.jpg\" alt\"Jamiroquai.com\"/></a></div>",
+    "images": {
+      "thumb": "../../images/news/3.jpg",
+      "main": "../../images/news/3.jpg"
     }
   },
   {
     "id": "2",
-    "title": "New venue announced for 2017 tour",
-    "createdAt": "Sat Jan 28 2017 09:55:33 GMT+0000 (GMT)",
-    "images": {
-      "main": "https://assets.about.me/background/pianotheatre_1330182860_4.jpg",
-      "thumb": "https://assets.about.me/background/pianotheatre_1330182860_4.jpg"
-    },
-    "bodyMain": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+    "createdAt": "2017-03-10T13:20:24+00:00",
+    "title": "New Behind the scenes video released",
+    "videoEmbed": "https://www.youtube.com/embed/PzOWVOAEOX0?rel=0&amp;fs=0&amp;showinfo=0;"
   },
   {
-    "id": "3",
-    "title": "Better guitarist joining Fiona",
-    "createdAt": "Sat Jan 28 2017 09:55:33 GMT+0000 (GMT)",
-    "images": {
-      "main": "http://fionaross.co.uk/images/gallery/Fiona-Rehearsal---_-16.png",
-      "thumb": "http://fionaross.co.uk/images/gallery/Fiona-Rehearsal---_-16.png"
-    },
-    "bodyMain": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+    "id": "1",
+    "title": "I Don’t Want To Play",
+    "bodyMain": "<p>Final shoot for the video for ‘I Don’t Want To Play’ has now taken place and the video is being editing ready for release on April 7th.  With a shoot in Spain and two in London, we are all very excited to see the final product! Hope you do too! Remember to subscribe to the new <a href=\"https://www.youtube.com/user/fionaross\" target=\"_blank\">YouTube channel</a>, so you can see it first!!</p>",
+    "createdAt": "2017-03-08T13:20:24+00:00"
   }
 ]

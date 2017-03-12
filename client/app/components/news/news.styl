@@ -11,8 +11,14 @@
     margin-bottom $gutter-primary-lg
 
   li
+    clear both
+    display inline-block
+    width 100%
     margin-bottom $gutter-primary-x-lg
-    padding-bottom $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary-xx-lg
+      padding-bottom $gutter-primary-x-lg
+    border-bottom solid 1px $color-bg-secondary
     &.last
       padding-bottom 0
       margin-bottom 0
@@ -25,25 +31,45 @@
       line-height 1.7em
 
     .img-wrap
-      position relative
       margin-bottom $gutter-primary-lg
+      margin-right $gutter-primary-lg
       @media (min-width $bp-md)
-        max-height 300px
+        // max-height 300px
+        max-width 100%a
+        float left
         overflow hidden
 
     img
       width 100%
       opacity .8
 
+    .video-wrapper
+      @media (min-width $bp-md)
+        margin-right 0
+        margin-left 0
+
+    .body-content
+      color $color-text-primary
+      @media (min-width $bp-md)
+        p
+          display block
+
+      a
+        color $color-highlight-primary
+        opacity .8
+        &:hover,
+        &:focus
+          opacity 1
+
     .social-share
       width 100%
       background rgba(18,18,18,0.70)
-      @media (min-width $bp-md)
-        z-index 2
-        position absolute
-        bottom 0
-        left 0
-        text-align right
+      // @media (min-width $bp-md)
+        // z-index 2
+        // position absolute
+        // bottom 0
+        // left 0
+        // text-align right
       ul,
       p
         @media (min-width $bp-md)
@@ -57,11 +83,14 @@
 
       li
         display inline-block
+        border 0 none
+        width auto
         a
           padding $gutter-primary
           opacity .5
           transition all .3s ease
           cursor pointer
+          color $color-highlight-primary
           &:hover,
           &:focus
             opacity 1
@@ -72,7 +101,6 @@
         padding $gutter-primary
         padding-left 0
         margin-top 4px
-        opacity .5
 
     .copy
       width 100%
