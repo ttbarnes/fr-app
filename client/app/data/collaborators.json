@@ -41,6 +41,19 @@
     }
   },
   {
+    "name": "Derek Daley",
+    "role": "Bassist for live performances",
+    "images": {
+      "avatar": "./images/collaborators/derek-daley.jpg",
+      "thumb": "./images/collaborators/thumb/derek-daley.jpg"
+    },
+    "urls": {
+      "twitter": "https://twitter.com/DerekDaleyMusic",
+      "instagram": "https://www.instagram.com/derekdaleymusic"
+    },
+    "about": "<p>Being raised in a musical family home Derek was taught basic music theory by  father and uncle (both a session musicians and music teachers). Age six he began learning piano and performed at various events. Aged nine, He was introduced to the electric and double bass, now a dedicated practitioner.</p><p>Compounding his skills in music performance at the British Academy of New Music, ICMP and LCCM he is well versed in many styles, he continues to hone his playing by performing extensively across the world as a session musician, venues ranging from Bars and clubs in London, Glastonbury, Reading festival, Jazz Haus (Heidelberg), to name a few</p>"
+  },
+  {
     "name": "Gibbi Bettini",
     "role": "Guitarist",
     "images": {
