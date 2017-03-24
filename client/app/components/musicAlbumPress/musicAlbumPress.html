@@ -1,19 +1,22 @@
-<section class="row music-album-reviews include-bg-img">
+<section class="row music-album-press include-bg-img">
 
   <h1 class="sr-only">{{vm.album.name}} Press</h1>
 
-  <div class="align-center">
+  <div class="main-content align-center">
 
-    <h3>{{vm.album.name}} press</h3>
+    <h3>{{vm.album.name}} Press</h3>
 
-    <ul>
+    <ul class="grid-layout-4-4 grid-col-hover">
       <li ng-repeat="pressRelease in vm.album.press"
-          ng-class="{last: $last}">
-          <a ui-sref="{{pressRelease.href}}">
-            <p>{{pressRelease.copy}}</p>
-            <p>{{pressRelease.author}}</p>
-            <img ng-src="" alt="{{pressRelease.author}} press release"/>
-          </a>
+          ng-class="{last: $last}"
+          class="col-50-xs col-25-md">
+          <div class="inner">
+            <img ng-src="./images/press/{{pressRelease.thumbUrl}}" alt="{{pressRelease.author}} press release" />
+            <a ng-href="{{pressRelease.href}}" target="_blank" class="hover-info">
+              <p>{{pressRelease.copy}}</p>
+              <p class="read-more">Read more</p>
+            </a>
+          </div>
       </li>
     </ul>
 

@@ -1,2 +1,61 @@
-.musicAlbumPress
-  color red
+@import '../../styles/variables'
+
+.music-album-press
+
+  h3
+    color $color-highlight-primary
+    font-weight lighter
+    padding-bottom $gutter-primary-lg
+    margin-bottom $gutter-primary-lg
+  .main-content
+    margin 0 auto
+    color $color-highlight-secondary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  .grid-col-hover 
+    text-align center
+    > li
+      float none
+      margin 0 auto
+      margin-bottom $gutter-primary-x-lg
+      @media (min-width:$bp-sm)
+        height 250px
+        max-height 250px
+      @media (min-width:$bp-md)
+        display inline-block
+        margin 0
+      .inner 
+        position relative
+      img
+          position relative
+          z-index 1 
+      a.hover-info
+        opacity 0
+        position absolute
+        left 0 
+        top 500px 
+        transition all 0.3s ease
+        height 100%
+        background-color rgba(40, 40, 40, 0.95)
+        color #FFF
+        z-index 2
+        padding 0.8em
+        text-align center
+      
+      &:hover
+        @media (min-width:$bp-lg)
+          a.hover-info
+            top 0 
+            opacity 1
+            img
+              width 100%
+              max-width 100%
+              margin 0 
+        
+      p
+        opacity 0.6
+      .read-more
+        text-decoration underline
+        margin-bottom 0
+        opacity 1
