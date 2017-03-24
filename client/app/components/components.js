@@ -3,6 +3,7 @@ import Home from './home/home';
 import Music from './music/music';
 import MusicAlbum from './musicAlbum/musicAlbum';
 import MusicAlbumReviews from './musicAlbumReviews/musicAlbumReviews';
+import MusicAlbumPress from './musicAlbumPress/musicAlbumPress';
 import About from './about/about';
 import Gallery from './gallery/gallery';
 import Collaborators from './collaborators/collaborators';
@@ -18,6 +19,7 @@ let componentModule = angular.module('app.components', [
   Music.name,
   MusicAlbum.name,
   MusicAlbumReviews.name,
+  MusicAlbumPress.name,
   About.name,
   Gallery.name,
   Collaborators.name,
