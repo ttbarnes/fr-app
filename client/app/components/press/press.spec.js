@@ -1,16 +1,16 @@
-import MusicAlbumPressModule from './musicAlbumPress'
-import MusicAlbumPressController from './musicAlbumPress.controller';
-import MusicAlbumPressComponent from './musicAlbumPress.component';
-import MusicAlbumPressTemplate from './musicAlbumPress.html';
+import PressModule from './press'
+import PressController from './press.controller';
+import PressComponent from './press.component';
+import PressTemplate from './press.html';
 
-describe('MusicAlbumPress', () => {
+describe('Press', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(MusicAlbumPressModule.name));
+  beforeEach(window.module(PressModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new MusicAlbumPressController();
+      return new PressController();
     };
   }));
 
@@ -30,16 +30,16 @@ describe('MusicAlbumPress', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(MusicAlbumPressTemplate).to.match(/{{\s?vm\.name\s?}}/g);
+      expect(PressTemplate).to.match(/{{\s?vm\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = MusicAlbumPressComponent;
+      let component = PressComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(MusicAlbumPressTemplate);
+        expect(component.template).to.equal(PressTemplate);
       });
 
       it('uses `controllerAs` syntax', () => {
@@ -47,7 +47,7 @@ describe('MusicAlbumPress', () => {
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(MusicAlbumPressController);
+        expect(component.controller).to.equal(PressController);
       });
   });
 });
