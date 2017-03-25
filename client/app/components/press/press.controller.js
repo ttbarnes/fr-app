@@ -3,10 +3,9 @@ class PressController {
     'ngInject';
     this.albumsService = albumsService;
     this.stateParams = $stateParams;
-    this.currentId = this.stateParams.id || 2;
+    this.latestAlbumId = 2;
 
-    this.album = this.albumsService.getSingleAlbum(this.currentId);
-    console.log('PRESS CTRL ', this.album);
+    this.album = this.albumsService.getSingleAlbum(this.latestAlbumId);
     if(!this.album) {
       $state.go('error');
     }

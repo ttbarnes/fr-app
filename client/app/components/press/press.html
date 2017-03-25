@@ -13,8 +13,11 @@
           <div class="inner">
             <img ng-src="./images/press/{{pressRelease.thumbUrl}}" alt="{{pressRelease.author}} press release" />
             <a ng-href="{{pressRelease.href}}" target="_blank" class="hover-info">
-              <p>{{pressRelease.copy}}</p>
-              <p class="read-more">Read more</p>
+              <div class="hover-info-inner">
+                <p class="author">{{pressRelease.author}}</p>
+                <p>{{pressRelease.copy}}</p>
+                <p class="read-more">Read more</p>
+              </div>
             </a>
           </div>
       </li>
