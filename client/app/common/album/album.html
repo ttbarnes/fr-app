@@ -110,20 +110,15 @@
 
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon desktop-only">Release date: {{vm.data.releaseDate}}</span>
 
-      <a ng-if="vm.data.id === 2"
-         ui-sref="musicAlbumReviews({id: vm.data.id})"
-         class="cta-button">Reviews</a>
-
-      <br/>
-
-      <a ng-if="vm.data.id === 2"
-         ui-sref="press"
-         class="cta-button">Press</a>
-
       <ul ng-if="vm.data.urls" class="row download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">
           <a ng-href="{{vm.data.urls.itunes}}" target="_blank">
             <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
+          </a>
+        </li>
+        <li ng-if="vm.data.urls.itunesPreOrder" class="itunes-preorder">
+          <a ng-href="{{vm.data.urls.itunesPreOrder}}" target="_blank">
+            <img src="./images/badges/itunesPreOrder.png" alt="Pre-order on iTunes" />
           </a>
         </li>
         <li ng-if="vm.data.urls.google" class="google">
@@ -137,6 +132,13 @@
           </a>
         </li>
       </ul>
+
+      <div ng-if="vm.data.id === 2" class="row">
+        <a ui-sref="musicAlbumReviews({id: vm.data.id})"
+           class="cta-button">Reviews</a>
+        <a ui-sref="press"
+           class="cta-button">Press</a>
+      </div>
 
       <div ng-bind-html="vm.data.writtenBy" class="written-by"></div>
 

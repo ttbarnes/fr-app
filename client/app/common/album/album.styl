@@ -81,12 +81,13 @@ section.album
     display block
     opacity 0.5
     transition all 0.2s ease
-    max-width 155px
+    max-width 170px
     text-align center
     @media (min-width $bp-md)
       display inline-block
       margin-right $gutter-primary
       margin-left 0
+      max-width 155px
 
   .written-by
     clear both
@@ -145,6 +146,21 @@ section.album
 
       @media (min-width: $bp-md + 100px)
         width 149px
+
+      &.itunes-preorder
+        width 170px
+        max-width 170px
+        float none
+        margin-top $gutter-primary-x-lg
+        margin-right auto
+        margin-left auto
+        @media (min-width: $bp-md)
+          float left 
+          width 179px
+          max-width 179px
+
+        a
+          opacity 1
 
       &.google
         @media (min-width: $bp-xs)
