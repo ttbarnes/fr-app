@@ -2,7 +2,7 @@
 
   <h1 class="sr-only">{{vm.data.name}}</h1>
 
-  <div ng-if="vm.layout === '1'">
+  <div ng-if="vm.layout === '1'" class="album-layout-1">
 
     <div class="col-50-md col-first">
 
@@ -10,8 +10,10 @@
         <ng-transclude></ng-transclude>
       </div>
 
-      <img ng-src="{{vm.data.images.thumb}}"
-           alt="Fiona Ross - {{vm.data.name}}"/>
+      <a ui-sref="musicAlbum({id: 2})">
+        <img ng-src="{{vm.data.images.thumb}}"
+            alt="Fiona Ross - {{vm.data.name}}"/>
+      </a>
 
     </div>
 
@@ -25,6 +27,11 @@
         <li ng-if="vm.data.urls.itunes" class="itunes">
           <a ng-href="{{vm.data.urls.itunes}}" target="_blank">
             <img src="./images/badges/itunes.svg" alt="Get it on iTunes" />
+          </a>
+        </li>
+        <li ng-if="vm.data.urls.itunesPreOrder" class="itunes-preorder">
+          <a ng-href="{{vm.data.urls.itunesPreOrder}}" target="_blank">
+            <img src="./images/badges/itunesPreOrder.png" alt="Pre-order on iTunes" />
           </a>
         </li>
         <li ng-if="vm.data.urls.google" class="google">
