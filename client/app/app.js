@@ -74,7 +74,8 @@ angular.module('app', [
       }
 
       if (toState.name === 'musicAlbum' ||
-          toState.name === 'musicAlbumReviews') {
+          toState.name === 'musicAlbumReviews' ||
+            toState.name === 'musicAlbumPhysical') {
         $rootScope.$broadcast('stateMusicAlbum', { active: true });
       } else {
         $rootScope.$broadcast('stateMusicAlbum', { active: false });
