@@ -52,7 +52,7 @@
       }
     ],
     "urls": {
-     "itunesPreOrder": "https://itunes.apple.com/us/album/just-me-and-sometimes-someone-else/id1216328709?ls=1&app=itunes"
+      "itunes": "https://itunes.apple.com/us/album/just-me-and-sometimes-someone-else/id1216328709?ls=1&app=itunes"
     },
     "canOrderAudioCd": true
   },
