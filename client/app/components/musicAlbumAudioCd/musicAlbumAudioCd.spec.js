@@ -1,9 +1,9 @@
-import MusicAlbumPhysicalModule from './musicAlbumPhysical'
-import MusicAlbumPhysicalController from './musicAlbumPhysical.controller';
-import MusicAlbumPhysicalComponent from './musicAlbumPhysical.component';
-import MusicAlbumPhysicalTemplate from './musicAlbumPhysical.html';
+import musicAlbumAudioCdModule from './musicAlbumAudioCd'
+import musicAlbumAudioCdController from './musicAlbumAudioCd.controller';
+import musicAlbumAudioCdComponent from './musicAlbumAudioCd.component';
+import musicAlbumAudioCdTemplate from './musicAlbumAudioCd.html';
 
-describe('MusicAlbumPhysical', () => {
+describe('MusicAlbumAudioCd', () => {
   let $rootScope,
       $state,
       makeController,
@@ -22,14 +22,14 @@ describe('MusicAlbumPhysical', () => {
         id: 1
       };
 
-  beforeEach(window.module(MusicAlbumPhysicalModule.name));
+  beforeEach(window.module(MusicAlbumAudioCdModule.name));
   beforeEach(inject((_$rootScope_, _$state_) => {
     $rootScope = _$rootScope_;
     $state = _$state_;
     $stateParams = mockStateParams;
     albumsService = mockAlbumsService;
     makeController = ()=>{
-      return new MusicAlbumPhysicalController($state, $stateParams, albumsService);
+      return new MusicAlbumAudioCdController($state, $stateParams, albumsService);
     };
   }));
 
@@ -49,10 +49,10 @@ describe('MusicAlbumPhysical', () => {
   });
 
   describe('Component', () => {
-    let component = MusicAlbumPhysicalComponent;
+    let component = musicAlbumAudioCdComponent;
 
     it('includes the intended template',() => {
-      expect(component.template).toEqual(MusicAlbumPhysicalTemplate);
+      expect(component.template).toEqual(musicAlbumAudioCdTemplate);
     });
 
     it('uses `controllerAs` syntax', () => {
@@ -60,7 +60,7 @@ describe('MusicAlbumPhysical', () => {
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).toEqual(MusicAlbumPhysicalController);
+      expect(component.controller).toEqual(musicAlbumAudioCdController);
     });
   });
 });

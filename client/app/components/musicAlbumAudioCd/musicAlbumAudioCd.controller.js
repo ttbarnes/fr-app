@@ -1,4 +1,4 @@
-class MusicAlbumPhysicalController {
+class musicAlbumAudioCdController {
   constructor($state, $stateParams, albumsService) {
     'ngInject';
     this.albumsService = albumsService;
@@ -9,11 +9,11 @@ class MusicAlbumPhysicalController {
     if(!this.album) {
       $state.go('error');
     }
-    if (this.album && !this.album.canOrderPhysicalCopy) {
+    if (this.album && !this.album.canOrderAudioCd) {
       $state.go('error');
     }
 
   }
 }
 
-export default MusicAlbumPhysicalController;
+export default musicAlbumAudioCdController;
