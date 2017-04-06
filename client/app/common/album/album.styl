@@ -44,6 +44,7 @@ section.album
 
   h2
     color $color-highlight-primary
+    font-weight 300
     &.mobile-only
       text-align center
       margin-bottom 0.5em
@@ -51,6 +52,18 @@ section.album
   h3
     color $color-heading-primary
     font-weight 300
+
+  .physical-copy
+    text-align center
+    @media (min-width $bp-md)
+      text-align left
+    a 
+      border-bottom solid 1px $color-text-primary
+      padding-bottom 0.2em
+      transition all 0.2s ease
+      &:hover,
+      &:focus
+        color $color-highlight-primary
 
   .coming-soon
     &.mobile-only
@@ -91,11 +104,12 @@ section.album
 
   .written-by
     clear both
-    padding-top $gutter-primary-lg
     padding-bottom $gutter-primary
     text-align center
     @media (min-width $bp-md)
       text-align left
+    @media (min-width $bp-lg)
+      padding-top $gutter-primary-lg
     p
       margin 0
 
@@ -151,7 +165,7 @@ section.album
         width 170px
         max-width 170px
         float none
-        margin-top $gutter-primary-x-lg
+        margin-top $gutter-primary-lg
         margin-right auto
         margin-left auto
         @media (min-width: $bp-md)

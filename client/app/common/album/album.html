@@ -142,8 +142,8 @@
 
       <br />
 
-      <div class="row">
-        <a ui-sref="musicAlbumPhysical({id: vm.data.id})">Get a signed physical copy (limited availability)</p>
+      <div ng-if="vm.data.canOrderPhysicalCopy" class="row physical-copy">
+        <a ui-sref="musicAlbumPhysical({id: vm.data.id})">Get a signed physical copy (limited availability)</a>
       </div>
 
       <div ng-if="vm.data.id === 2" class="row">
