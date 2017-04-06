@@ -14,40 +14,19 @@ describe('Press', () => {
     };
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
-  describe('Controller', () => {
-    // controller specs
-    it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
-      let controller = makeController();
-      expect(controller).to.have.property('name');
-    });
-  });
-
-  describe('Template', () => {
-    // template specs
-    // tip: use regex to ensure correct bindings are used e.g., {{  }}
-    it('has name in template [REMOVE]', () => {
-      expect(PressTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
-  });
-
   describe('Component', () => {
-      // component/directive specs
-      let component = PressComponent;
+    let component = PressComponent;
 
-      it('includes the intended template',() => {
-        expect(component.template).to.equal(PressTemplate);
-      });
+    it('includes the intended template',() => {
+      expect(component.template).to.equal(PressTemplate);
+    });
 
-      it('uses `controllerAs` syntax', () => {
-        expect(component).to.have.property('controllerAs');
-      });
+    it('uses `controllerAs` syntax', () => {
+      expect(component).to.have.property('controllerAs');
+    });
 
-      it('invokes the right controller', () => {
-        expect(component.controller).to.equal(PressController);
-      });
+    it('invokes the right controller', () => {
+      expect(component.controller).to.equal(PressController);
+    });
   });
 });
