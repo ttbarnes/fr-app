@@ -57,6 +57,7 @@
       <h2 class="mobile-only">{{vm.data.name}}</h2>
 
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon mobile-only">Release date: {{vm.data.releaseDate}}</span>
+      <span ng-if="!vm.data.comingSoon && vm.data.albumType === 'latest'" class="coming-soon mobile-only">Out now</span>
 
       <img ng-src="{{vm.data.images.thumb}}"
            alt="Fiona Ross - {{vm.data.name}}"/>
@@ -116,6 +117,7 @@
       <h2 class="desktop-only">{{vm.data.name}}</h2>
 
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon desktop-only">Release date: {{vm.data.releaseDate}}</span>
+      <span ng-if="!vm.data.comingSoon && vm.data.albumType === 'latest'" class="coming-soon desktop-only">Out now</span>
 
       <ul ng-if="vm.data.urls" class="row download-links">
         <li ng-if="vm.data.urls.itunes" class="itunes">

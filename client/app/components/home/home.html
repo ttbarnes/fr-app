@@ -23,7 +23,8 @@
         <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
         <a ui-sref="musicAlbum({id: 2})">
           <h3>{{vm.latestAlbum.name}}</h3>
-          <p class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
+          <p ng-if="vm.latestAlbum.comingSoon && vm.latestAlbum.releaseDate" class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
+          <p ng-if="!vm.latestAlbum.comingSoon && vm.latestAlbum.albumType === 'latest'" class="album-release-date">Out now</p>
         </a>
       </album>
     </div>
