@@ -66,6 +66,32 @@
       a
         color $color-highlight-primary
 
+    .video-with-gallery-row,
+    .post-video
+      margin 0
+
+    .post-gallery-image
+      float left
+      width 50%
+      padding 0 $gutter-primary-lg $gutter-primary-lg
+      &:nth-child(odd)
+        clear both
+        padding-left 0
+        @media (min-width $bp-xs)
+          clear none
+      &:nth-child(even)
+        padding-right 0
+      @media (min-width $bp-xs)
+        max-width 33%
+        padding 0 $gutter-primary-lg $gutter-primary-lg 0 !important
+      @media (min-width $bp-md)
+        max-width 150px
+      a
+        display block
+        cursor pointer
+      img
+        width 100%
+
     .social-share
       width 100%
       background rgba(18,18,18,0.70)

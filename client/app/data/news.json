@@ -1,5 +1,30 @@
 [
   {
+    "id": "6",
+    "title": "Album launch",
+    "bodyMain": "<p>Great fun at the album launch!</p>",
+    "createdAt": "2017-04-13T08:34:00+00:00",
+    "videoEmbed": "https://www.youtube.com/embed/i33VaIFZFSE?rel=0&amp;fs=0&amp;showinfo=0",
+    "galleryImages": [
+      {
+        "url": "news/3.jpg",
+        "thumbUrl": "news/3.jpg"
+      },
+      {
+        "url": "news/4.jpg",
+        "thumbUrl": "news/4.jpg"
+      },
+      {
+        "url": "news/3.jpg",
+        "thumbUrl": "news/3.jpg"
+      },
+      {
+        "url": "news/4.jpg",
+        "thumbUrl": "news/4.jpg"
+      }
+    ]
+  },
+  {
     "id": "5",
     "title": "Fiona was interviewed live on air at Quest 915 FM talking about the new album.",
     "bodyMain": "<p>Presenter Atsenuwa Omatseye said 'Fiona showed up, spoke....laughed and lit up the <a href=\"https://www.facebook.com/hashtag/jazzville?source=feed_text&story_id=10155997162138135\" target=\"_blank\">jazzville</a> show and was truly 'FIOMINAL'</p><p><a href=\"http://www.questfm.com.ng\" target=\"_blank\">http://www.questfm.com.ng</a></p>",

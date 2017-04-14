@@ -5,7 +5,8 @@ export const EMAIL_POST = 'http://www.fionaross.co.uk/api/postEmail';
 // urls
 export const GALLERY_IMAGE_URL = 'http://fionaross.co.uk/images/gallery/';
 export const GALLERY_TEMPLATE_URL = '../app/components/gallery/modal.html';
-
+export const NEWS_LIGHTBOX_URL = '../app/components/news/images/'
+export const IMAGES_URL = '../images/'
 
 // page titles 
 export const PAGE_TITLE_BASE = 'Fiona Ross';

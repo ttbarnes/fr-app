@@ -55,9 +55,7 @@ angular.module('app', [
 
     LightboxProvider.templateUrl = CONST.GALLERY_TEMPLATE_URL;
 
-    LightboxProvider.getImageUrl = function (image) {
-      return CONST.GALLERY_IMAGE_URL + image.url;
-    };
+    LightboxProvider.getImageUrl = (image) => CONST.IMAGES_URL + image.url;
 
   })
 
