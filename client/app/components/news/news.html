@@ -34,13 +34,13 @@
               <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="row post-gallery">
-            <div ng-repeat="image in post.galleryImages" class="post-gallery-image">
+          <ul class="row post-gallery">
+            <li ng-repeat="image in post.galleryImages" class="post-gallery-image">
               <a ng-click="vm.openLightboxModal(post.galleryImages, $index)">
                 <img ng-src="./images/{{image.thumbUrl}}" alt="Fiona Ross | {{post.title}}" />
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div class="row social-share">

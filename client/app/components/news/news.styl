@@ -72,8 +72,14 @@
 
     .post-gallery-image
       float left
+      clear none
       width 50%
       padding 0 $gutter-primary-lg $gutter-primary-lg
+      transition all 0.2s ease
+      opacity 0.9
+      &:hover,
+      &:focus
+        opacity 1
       &:nth-child(odd)
         clear both
         padding-left 0
@@ -89,6 +95,10 @@
       a
         display block
         cursor pointer
+        max-height 83px
+        width 100%
+        padding 0
+        overflow hidden
       img
         width 100%
 

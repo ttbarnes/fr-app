@@ -4,23 +4,27 @@
     "title": "Album launch",
     "bodyMain": "<p>Great fun at the album launch!</p>",
     "createdAt": "2017-04-13T08:34:00+00:00",
-    "videoEmbed": "https://www.youtube.com/embed/i33VaIFZFSE?rel=0&amp;fs=0&amp;showinfo=0",
+    "videoEmbed": "https://www.youtube.com/embed/_HQgv1W-U-I?rel=0&amp;fs=0&amp;showinfo=0",
     "galleryImages": [
       {
-        "url": "news/3.jpg",
-        "thumbUrl": "news/3.jpg"
+        "url": "news/5.jpg",
+        "thumbUrl": "news/5.jpg"
       },
       {
-        "url": "news/4.jpg",
-        "thumbUrl": "news/4.jpg"
+        "url": "news/6.jpg",
+        "thumbUrl": "news/6.jpg"
       },
       {
-        "url": "news/3.jpg",
-        "thumbUrl": "news/3.jpg"
+        "url": "news/7.jpg",
+        "thumbUrl": "news/7.jpg"
       },
       {
-        "url": "news/4.jpg",
-        "thumbUrl": "news/4.jpg"
+        "url": "news/8.jpg",
+        "thumbUrl": "news/8.jpg"
+      },
+      {
+        "url": "news/9.jpg",
+        "thumbUrl": "news/9.jpg"
       }
     ]
   },
