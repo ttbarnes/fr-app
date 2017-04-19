@@ -25,9 +25,19 @@
         max-height 250px
       @media (min-width:$bp-md)
         display inline-block
+        vertical-align top
+        width 25%
         margin 0
+        height 250px
+        max-height 250px
+      @media (min-width:$bp-lg + 50px)
+        display block
+        float left
+        height 290px
+        max-height 290px
       .inner 
         position relative
+        overflow hidden
       img
           position relative
           z-index 1 
