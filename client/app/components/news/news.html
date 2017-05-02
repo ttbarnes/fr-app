@@ -33,7 +33,7 @@
           <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div ng-if="post.videoEmbed && post.galleryImages" class="row video-with-gallery-row">
+        <!--<div ng-if="post.videoEmbed && post.galleryImages" class="row video-with-gallery-row">
           <div class="row post-video">
             <div class="video-wrapper">
               <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
@@ -46,6 +46,10 @@
               </a>
             </li>
           </ul>
+        </div>-->
+
+        <div ng-if="post.mainImageUrl">
+          <img ng-src="{{post.mainImageUrl}}" alt="Fiona Ross | {{post.title}}" style="max-width: 300px;"/>
         </div>
 
         <div ng-if="!post.videoEmbed && post.galleryImages" class="row video-with-gallery-row">

@@ -8,7 +8,7 @@ export const GALLERY_TEMPLATE_URL = '../app/components/gallery/modal.html';
 export const NEWS_LIGHTBOX_URL = '../app/components/news/images/'
 export const IMAGES_URL = '../images/'
 
-// page titles 
+// page titles
 export const PAGE_TITLE_BASE = 'Fiona Ross';
 export const PAGE_TITLE_BASE_SEPARATOR = ' | ';
 
@@ -25,3 +25,7 @@ export const PAGE_TITLE_NEWS = 'News' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_B
 export const PAGE_TITLE_PRESS = 'Press' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_TECH = 'Tech' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_VIDEOS = 'Videos' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
+
+// api
+export const API_BASE = 'http://localhost:4040/api/'
+export const API_NEWS = API_BASE + 'news';

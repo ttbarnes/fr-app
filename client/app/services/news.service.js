@@ -1,9 +1,12 @@
+import * as CONST from '../constants/constants';
 import data from '../data/news.json';
 
 export default class newsService {
 
-  constructor(){
+  constructor($http){
+    'ngInject';
     this.data = data;
+    this.$http = $http;
 
     if (this.data && this.data.length) {
       this.data.map((d) => {
@@ -11,10 +14,18 @@ export default class newsService {
       });
     }
 
-    this.getSingle = (title) => {
-      const data = this.data.find(d => d.urlTitle === title);
-      return data;
+    let service = {
+
+      getAll: () => this.$http.get(CONST.API_NEWS),
+
+      getSingle: (title) => {
+        const data = this.data.find(d => d.urlTitle === title);
+        return data;
+      }
     }
+
+    return service;
+
   }
 
 }
