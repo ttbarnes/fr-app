@@ -10,6 +10,7 @@ import Gallery from './gallery/gallery';
 import Collaborators from './collaborators/collaborators';
 import CollaboratorInd from './collaboratorInd/collaboratorInd';
 import News from './news/news';
+import Videos from './videos/videos';
 import NewsInd from './newsInd/newsInd';
 import Tech from './tech/tech';
 import Contact from './contact/contact';
@@ -27,6 +28,7 @@ let componentModule = angular.module('app.components', [
   Collaborators.name,
   CollaboratorInd.name,
   News.name,
+  Videos.name,
   NewsInd.name,
   Tech.name,
   Contact.name,
