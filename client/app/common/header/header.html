@@ -36,7 +36,7 @@
             <li ng-class="{active: vm.stateIsMusicAlbum}"><a ui-sref="music" ng-click="vm.toggleMobileMenu();">Music</a></li>
             <li><a ui-sref="press" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Press</a></li>
             <li ng-class="{active: vm.stateIsNews}"><a ui-sref="news" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">News</a></li>
-            <li><a ui-sref="videos" ui-sref-active="active"><span>Videos</span></a></li>
+            <li><a ui-sref="videos" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Videos</a></li>
             <li><a ui-sref="about" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">About</a></li>
             <li><a ui-sref="gallery" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Gallery</a></li>
             <li ng-class="{active: vm.stateIsCollabInd}"><a ui-sref="collaborators" ui-sref-active="active" ng-click="vm.toggleMobileMenu();">Collaborators</a></li>

@@ -1,7 +1,38 @@
-<section class="row videos include-bg-img">
+<section class="row videos-page include-bg-img">
   <h1 class="sr-only">Fiona Ross Videos</h1>
 
   <div class="main-content">
-    <p>videos here</p>
+
+    <h3>Videos</h3>
+
+    <!-- temp structure - data currently undecided -->
+
+    <ul>
+      <!-- videos that are not in news data -->
+      <li>
+        <h4>Fiona Ross I Don't Wanna Play</h4>
+        <div class="video-wrapper">
+          <iframe width="560" src="https://www.youtube.com/embed/i33VaIFZFSE?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </li>    
+
+      <!-- videos from data -->
+      <li ng-repeat="post in vm.data" ng-class="{last: $last}">
+        <div ng-if="post.videoEmbed">
+          <h4>{{post.title}}</h4>
+          <div class="video-wrapper">
+            <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </li>
+
+      <!-- videos that are not in news data -->
+      <li>
+        <h4>Fiona Ross behind the scenes</h4>
+        <div class="video-wrapper">
+          <iframe width="560" src="https://www.youtube.com/embed/PzOWVOAEOX0?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </li>    
+    </ul>
   </div>
 </section>
