@@ -17,10 +17,6 @@ describe('Press', () => {
   describe('Component', () => {
     let component = PressComponent;
 
-    it('includes the intended template',() => {
-      expect(component.template).toEqual(PressTemplate);
-    });
-
     it('uses `controllerAs` syntax', () => {
       expect(component.controllerAs).toBeDefined();
     });
