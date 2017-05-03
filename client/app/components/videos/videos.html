@@ -11,7 +11,7 @@
       <!-- videos that are not in news data -->
       <li>
         <h4>Fiona Ross I Don't Wanna Play</h4>
-        <div class="video-wrapper">
+        <div class="video-wrapper video-wrapper-small">
           <iframe width="560" src="https://www.youtube.com/embed/i33VaIFZFSE?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </li>    
@@ -20,7 +20,7 @@
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <div ng-if="post.videoEmbed">
           <h4>{{post.title}}</h4>
-          <div class="video-wrapper">
+          <div class="video-wrapper video-wrapper-small">
             <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
@@ -29,7 +29,7 @@
       <!-- videos that are not in news data -->
       <li>
         <h4>Fiona Ross behind the scenes</h4>
-        <div class="video-wrapper">
+        <div class="video-wrapper video-wrapper-small">
           <iframe width="560" src="https://www.youtube.com/embed/PzOWVOAEOX0?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </li>    
