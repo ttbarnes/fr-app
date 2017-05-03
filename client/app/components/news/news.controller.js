@@ -9,6 +9,9 @@ class NewsController {
 
     this.newsService.getAll().then((data) => {
       let orderedData = data.data.slice().reverse();
+      orderedData.map((d) => {
+        d.urlTitle = d.title.replace(/\s+/g, '-').toLowerCase();
+      });
       this.data = orderedData;
     });
 

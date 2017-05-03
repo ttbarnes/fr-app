@@ -8,12 +8,6 @@ export default class newsService {
     this.data = data;
     this.$http = $http;
 
-    if (this.data && this.data.length) {
-      this.data.map((d) => {
-        d.urlTitle = d.title.replace(/\s+/g, '-').toLowerCase();
-      });
-    }
-
     let service = {
 
       getAll: () => this.$http.get(CONST.API_NEWS),
