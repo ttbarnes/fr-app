@@ -1,7 +1,6 @@
 import MusicAlbumAudioCdModule from './musicAlbumAudioCd'
 import MusicAlbumAudioCdController from './musicAlbumAudioCd.controller';
 import MusicAlbumAudioCdComponent from './musicAlbumAudioCd.component';
-import MusicAlbumAudioCdTemplate from './musicAlbumAudioCd.html';
 
 describe('MusicAlbumAudioCd', () => {
   let $rootScope,
@@ -52,10 +51,6 @@ describe('MusicAlbumAudioCd', () => {
 
   describe('Component', () => {
     let component = MusicAlbumAudioCdComponent;
-
-    it('includes the intended template',() => {
-      expect(component.template).toEqual(MusicAlbumAudioCdTemplate);
-    });
 
     it('uses `controllerAs` syntax', () => {
       expect(component.controllerAs).toBeDefined();
