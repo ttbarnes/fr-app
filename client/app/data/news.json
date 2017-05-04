@@ -1,9 +1,21 @@
 [
   {
+    "id": "9",
+    "title": "The new album is getting some serious radio play since the release",
+    "bodyMain" : "you can hear both of Fi’s album here: <br/><br/><p class=\"cancel-padding\"><a href=\"http://artdistrict-radio.com\" target=\"_blank\">artdistrict-radio.com</a></p><p class=\"cancel-padding\"><a href=\"http://www.jazzbitesradio.com\" target=\"_blank\">jazzbitesradio.com</a></p><p class=\"cancel-padding\"><a href=\"http://www.time1075.net\" target=\"_blank\">jazzbitesradio.com</a> (from May 9th)</p>",
+    "createdAt": "2017-05-03T18:00:24+00:00"
+  },
+  {
+    "id": "8",
+    "title": "Jazz Voices",
+    "bodyMain" : "Fi has now been included on <a href=\"https://www.jazzvoices.org/gallery\" target=\"_blank\">jazzvoices.org/gallery</a> which features 'Premier Jazz vocalists'. She is truly humbled to be included on the same page as one of her heroes <a href=\"http://www.deedeebridgewater.com\" target=\"_blank\">Dee Dee Bridgewater</a>. Such an honour.",
+    "createdAt": "2017-05-03T18:00:24+00:00"
+  },
+  {
     "id": "7",
     "title": "Ed Sheeran related title ",
     "bodyMain": "<p>copy here...</p><a href=\"http://www.google.com.com\" target=\"_blank\"><img src=\"../../images/news/4.jpg\" alt\"Copy here\"/></a>",
-    "createdAt": "2017-04-06T13:36:24+00:00"
+    "createdAt": "2017-05-03T17:00:24+00:00"
   },
   {
     "id": "6",
