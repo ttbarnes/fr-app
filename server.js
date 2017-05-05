@@ -67,6 +67,8 @@ var sitemap = sm.createSitemap({
     { url: '/music/album/1'},
     { url: '/music/album/2'},
     { url: '/about'},
+    { url: '/news'},
+    { url: '/videos'},
     { url: '/gallery'},
     { url: '/collaborators'},
     { url: '/collaborators/1'},
