@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "1e20eb68b4e3631380d22453d1b375ffdbf5fe59c94e53b82e7e1fc2f8610981",
-    "current": "1e20eb68b4e3631380d22453d1b375ffdbf5fe59c94e53b82e7e1fc2f8610981"
+    "previous": "1746c08bd15a51f3d85f3da57c47dd4f450420e1636c72cbfe9819f1869b0477",
+    "current": "1746c08bd15a51f3d85f3da57c47dd4f450420e1636c72cbfe9819f1869b0477"
   },
   "fonts": [
-    "client/app/fonts/fontcustom_1e20eb68b4e3631380d22453d1b375ff.ttf",
-    "client/app/fonts/fontcustom_1e20eb68b4e3631380d22453d1b375ff.svg",
-    "client/app/fonts/fontcustom_1e20eb68b4e3631380d22453d1b375ff.woff",
-    "client/app/fonts/fontcustom_1e20eb68b4e3631380d22453d1b375ff.eot"
+    "client/app/fonts/fontcustom_1746c08bd15a51f3d85f3da57c47dd4f.ttf",
+    "client/app/fonts/fontcustom_1746c08bd15a51f3d85f3da57c47dd4f.svg",
+    "client/app/fonts/fontcustom_1746c08bd15a51f3d85f3da57c47dd4f.woff",
+    "client/app/fonts/fontcustom_1746c08bd15a51f3d85f3da57c47dd4f.eot"
   ],
   "glyphs": {
     "arrow-left": {
@@ -65,6 +65,10 @@
     "s-t": {
       "codepoint": 61711,
       "source": "client/icons/s-t.svg"
+    },
+    "s-y": {
+      "codepoint": 61723,
+      "source": "client/icons/s-y.svg"
     },
     "tick": {
       "codepoint": 61707,

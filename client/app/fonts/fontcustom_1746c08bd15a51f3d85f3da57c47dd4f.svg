@@ -1,13 +1,13 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2016-11-19: Created with FontForge (http://fontforge.org)
+2017-5-5: Created with FontForge (http://fontforge.org)
 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20150913 at Sat Nov 19 13:58:08 2016
+Created by FontForge 20161116 at Fri May  5 08:49:53 2017
  By tbMbook
-Copyright (c) 2016, tbMbook
+Copyright (c) 2017, tbMbook
 </metadata>
 <defs>
 <font id="fontcustom" horiz-adv-x="512" >
@@ -22,7 +22,7 @@ Copyright (c) 2016, tbMbook
     bbox="-0.0351562 -64 512 448.26"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+0020-F11A"
+    unicode-range="U+0020-F11B"
   />
     <missing-glyph />
     <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
@@ -31,6 +31,11 @@ Copyright (c) 2016, tbMbook
 d="M18.2861 448l402.285 -256l-402.285 -256v512z" />
     <glyph glyph-name="uniF107" unicode="&#xf107;" 
 d="M0 -64v0v512h146.286v-512h-146.286zM292.571 448v0h146.286v-512h-146.286v512z" />
+    <glyph glyph-name="uniF11B" unicode="&#xf11b;" 
+d="M506.72 301.136c0 0 5.12012 -44.1758 5.12012 -88.3682v-41.4072c0 -44.1924 -5.12012 -88.3682 -5.12012 -88.3682s-5.00781 -37.6318 -20.3359 -54.1758c-19.4717 -21.7285 -41.2803 -21.8564 -51.2803 -23.1367
+c-71.6318 -5.4873 -179.184 -5.67969 -179.184 -5.67969s-133.088 1.2959 -174.032 5.48828c-11.3916 2.27148 -36.9434 1.61523 -56.4316 23.3438c-15.3438 16.5439 -20.3359 54.1758 -20.3359 54.1758s-5.12012 44.1602 -5.12012 88.3682v41.4082
+c0 44.1758 5.12012 88.3516 5.12012 88.3516s5.00781 37.6484 20.3359 54.2246c19.4883 21.7275 41.2803 21.8555 51.2803 23.0879c71.6152 5.55176 179.056 5.55176 179.056 5.55176h0.240234s107.439 0 179.071 -5.55176c10 -1.23242 31.8086 -1.36035 51.2803 -23.0879
+c15.3438 -16.5762 20.3359 -54.2246 20.3359 -54.2246zM192 288v-192l160 96z" />
     <glyph glyph-name="uniF116" unicode="&#xf116;" 
 d="M512 384h-512v64h512v-64zM320 256h-320v64h320v-64zM512 126.624h-512v64h512v-64zM0 -32c0 17.6729 14.3271 32 32 32s32 -14.3271 32 -32s-14.3271 -32 -32 -32s-32 14.3271 -32 32zM192 -32c0 -17.6797 -14.3682 -32 -32 -32
 c-17.7441 0 -32.0645 14.3203 -32.0645 32s14.3203 32 32.0645 32c17.6318 0 32 -14.3203 32 -32zM256 -32c0 17.6729 14.3271 32 32 32s32 -14.3271 32 -32s-14.3271 -32 -32 -32s-32 14.3271 -32 32z" />
