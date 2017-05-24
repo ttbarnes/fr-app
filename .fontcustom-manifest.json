@@ -11,7 +11,7 @@
   ],
   "glyphs": {
     "arrow-left": {
-      "codepoint": 61712,
+      "codepoint": 61725,
       "source": "client/icons/arrow-left.svg"
     },
     "arrow-right": {
