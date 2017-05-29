@@ -55,7 +55,7 @@
   font-smoothing: antialiased;
 }
 
-.icon-arrow-left:before { content: "\f11d"; }
+.icon-arrow-left:before { content: "\f11f"; }
 .icon-arrow-right:before { content: "\f114"; }
 .icon-cross:before { content: "\f10a"; }
 .icon-link:before { content: "\f118"; }
