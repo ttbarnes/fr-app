@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "05b35a66aae373dcdd9dcf082ea456e9c0f30a521629107ad43f91ab572f0a5d",
-    "current": "05b35a66aae373dcdd9dcf082ea456e9c0f30a521629107ad43f91ab572f0a5d"
+    "previous": "2c0c359dbf2436b1ef52f1f9df450e7d0895f628e58b1c81604bce203e8e6352",
+    "current": "2c0c359dbf2436b1ef52f1f9df450e7d0895f628e58b1c81604bce203e8e6352"
   },
   "fonts": [
-    "client/app/fonts/fontcustom_05b35a66aae373dcdd9dcf082ea456e9.ttf",
-    "client/app/fonts/fontcustom_05b35a66aae373dcdd9dcf082ea456e9.svg",
-    "client/app/fonts/fontcustom_05b35a66aae373dcdd9dcf082ea456e9.woff",
-    "client/app/fonts/fontcustom_05b35a66aae373dcdd9dcf082ea456e9.eot"
+    "client/app/fonts/fontcustom_2c0c359dbf2436b1ef52f1f9df450e7d.ttf",
+    "client/app/fonts/fontcustom_2c0c359dbf2436b1ef52f1f9df450e7d.svg",
+    "client/app/fonts/fontcustom_2c0c359dbf2436b1ef52f1f9df450e7d.woff",
+    "client/app/fonts/fontcustom_2c0c359dbf2436b1ef52f1f9df450e7d.eot"
   ],
   "glyphs": {
     "arrow-left": {
@@ -62,10 +62,6 @@
       "codepoint": 61710,
       "source": "client/icons/s-s.svg"
     },
-    "s-sp": {
-      "codepoint": 61724,
-      "source": "client/icons/s-sp.svg"
-    },
     "s-t": {
       "codepoint": 61711,
       "source": "client/icons/s-t.svg"
@@ -73,6 +69,10 @@
     "s-y": {
       "codepoint": 61723,
       "source": "client/icons/s-y.svg"
+    },
+    "ssp": {
+      "codepoint": 61728,
+      "source": "client/icons/ssp.svg"
     },
     "tick": {
       "codepoint": 61707,
