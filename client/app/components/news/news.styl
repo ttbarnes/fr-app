@@ -35,15 +35,21 @@
       margin-right $gutter-primary-lg
       @media (min-width $bp-md)
         // max-height 300px
-        max-width 100%a
+        max-width 100%
         float left
         overflow hidden
+      + div
+        clear both
 
     img
       width 100%
       opacity .8
       &.img-max-width-400
         max-width 400px
+
+      &.img-max-width-700
+        display block
+        max-width 700px
 
     .video-wrapper
       @media (min-width $bp-md)
@@ -69,6 +75,9 @@
 
       a
         color $color-highlight-primary
+
+    .body-content-footer
+      clear both
 
     .video-with-gallery-row,
     .post-video

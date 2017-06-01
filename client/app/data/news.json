@@ -1,5 +1,55 @@
 [
   {
+    "id": "12",
+    "title": "London Jazz Platform",
+    "bodyMain": "<p>Very excited to announce that Fi will be doing a set at the London Jazz Platform event on June 18th. The line up is amazing and Fi is thrilled to be included.</p> <a href=\"http://jazzineurope.mfmmedia.nl/2017/05/the-london-jazz-platform-is-a-new-event-for-london/\" target=\"_blank\">http://jazzineurope.mfmmedia.nl/2017/05/the-london-jazz-platform-is-a-new-event-for-london/</a> <br/><br/><div class=\"img-wrap\"><a href=\"https://www.eventbrite.co.uk/e/london-jazz-platform-tickets-30256782852\" target=\"_blank\"><img src=\"../../images/news/19.jpg\" alt\"Fiona Ross London Jazz Platform\"/></a></div>",
+    "bodyMainFooter": "<p>Tickets available here: <a href=\"https://www.eventbrite.co.uk/e/london-jazz-platform-tickets-30256782852\" target=\"_blank\">https://www.eventbrite.co.uk/e/london-jazz-platform-tickets-30256782852/</a></p>",
+    "createdAt": "2017-06-01T08:15:24+00:00",
+    "images": {
+      "thumb": "../../images/news/19.jpg"
+    },
+    "ticketsLink": "https://www.eventbrite.co.uk/e/london-jazz-platform-tickets-30256782852",
+    "venueLink": "https://londonfieldsbrewery.co.uk/brewhouse-venue/"
+  },
+  {
+    "id": "11",
+    "title": "The new album is getting some serious radio play since the release",
+    "bodyMain" : "<p>Some exciting new radio station playing songs from the new album:</p><p>RKC: Radio Kaos Caribou: <a href=\"https://www.facebook.com/RadioKC/?rc=p\" target=\"_blank\">https://www.facebook.com/RadioKC/?rc=p</a></p><p>The Rob Jones Show on Time 1075: <a href=\"http://www.time1075.net\" target=\"_blank\">http://www.time1075.net</a></p>",
+    "createdAt": "2017-06-01T08:00:24+00:00"
+  },
+  {
+    "id": "10",
+    "title": "Nells Blues and Jazz",
+    "bodyMain" : "<p>Everyone had an amazing night at Fi’s gig at Nells Blues and Jazz: <a href=\"http://www.nellsjazzandblues.com/\" target=\"_blank\">http://www.nellsjazzandblues.com</a></p><p>Here’s a couple of shots from the night</p> <br/><img class=\"img-max-width-700\" src=\"../../images/news/12.jpg\" alt\"Fiona Ross Nells Blues and Jazz\"/>",
+    "createdAt": "2017-05-30T20:00:24+00:00",
+    "galleryImages": [
+      {
+        "url": "news/13.jpg",
+        "thumbUrl": "news/13.jpg"
+      },
+      {
+        "url": "news/14.jpg",
+        "thumbUrl": "news/14.jpg"
+      },
+      {
+        "url": "news/15.jpg",
+        "thumbUrl": "news/15.jpg"
+      },
+      {
+        "url": "news/16.jpg",
+        "thumbUrl": "news/16.jpg"
+      },
+      {
+        "url": "news/17.jpg",
+        "thumbUrl": "news/17.jpg"
+      },
+      {
+        "url": "news/18.jpg",
+        "thumbUrl": "news/18.jpg"
+      }
+    ]
+  },
+  {
     "id": "9",
     "title": "The new album is getting some serious radio play since the release",
     "bodyMain" : "You can hear both of Fi’s album here: <br/><br/><p class=\"cancel-padding\"><a href=\"http://artdistrict-radio.com\" target=\"_blank\">artdistrict-radio.com</a></p><p class=\"cancel-padding\"><a href=\"http://www.jazzbitesradio.com\" target=\"_blank\">jazzbitesradio.com</a></p><p class=\"cancel-padding\"><a href=\"http://www.time1075.net\" target=\"_blank\">time1075.net</a> (from May 9th)</p>",
