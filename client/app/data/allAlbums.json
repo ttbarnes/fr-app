@@ -33,13 +33,19 @@
     ],
     "press": [
       {
-        "copy": "The London Jazz Platform",
+        "copy": "Fiona Ross a Jazz Story",
+        "author": "American Pride Magazine",
+        "href": "http://www.americanpridemagazine.com/latest/fiona-ross-a-jazz-story/",
+        "thumbUrl": "americanpridemagazine.jpg"
+      },
+      {
+        "copy": "Meet the jazz artist who gave Ed Sheeran his 'first push' into music...",
         "author": "Urban News",
         "href": "https://urbannews.co.uk/meet-jazz-artist-fiona-ross-who-gave-ed-sheeran-his-first-push-into-music-music-entertainment/",
         "thumbUrl": "urbannews.jpg"
       },
       {
-        "copy": "Meet jazz artist Fiona Ross who gave Ed Sheeran his first push into music",
+        "copy": "The London Jazz Platform is a new event for London...",
         "author": "Jazz in Europe",
         "href": "http://jazzineurope.mfmmedia.nl/2017/05/the-london-jazz-platform-is-a-new-event-for-london/",
         "thumbUrl": "jazzineurope.jpg"
