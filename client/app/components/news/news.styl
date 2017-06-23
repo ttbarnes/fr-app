@@ -40,6 +40,15 @@
         overflow hidden
       + div
         clear both
+    
+    ul.quotes
+      li
+        padding-bottom $gutter-primary-lg
+        color $color-highlight-primary
+
+    .news-quote-author
+      color $color-text-primary
+      opacity 0.5
 
     img
       width 100%
@@ -47,10 +56,30 @@
       &.img-max-width-400
         max-width 400px
 
+      &.img-max-width-600
+        display block
+        max-width 600px
+
       &.img-max-width-700
         display block
         max-width 700px
 
+    .img-col-2
+      clear both
+      img
+        margin-bottom $gutter-primary-x-lg
+        @media (min-width $bp-md)
+          float left
+          width 50%
+          margin-bottom 0
+        
+        &:first-child
+          @media (min-width $bp-md)
+            padding-right $gutter-primary-lg
+        &:last-child
+          @media (min-width $bp-md)
+            padding-left $gutter-primary-lg
+        
     .video-wrapper
       @media (min-width $bp-md)
         margin-right 0
