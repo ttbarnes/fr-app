@@ -89,6 +89,6 @@
   },
   "author": "Tony Barnes",
   "engines": {
-    "node": "5.1.0"
+    "node": "7.10.1"
   }
 }
