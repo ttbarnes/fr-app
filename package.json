@@ -22,6 +22,7 @@
     "babel-loader": "^5.0.0",
     "body-parser": "^1.15.0",
     "browser-sync": "^2.11.1",
+    "cliui": "^2.1.0",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
