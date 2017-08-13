@@ -18,15 +18,15 @@ describe('Press', () => {
     let component = PressComponent;
 
     it('includes the intended template',() => {
-      expect(component.template).to.equal(PressTemplate);
+      expect(component.template).toEqual(PressTemplate);
     });
 
     it('uses `controllerAs` syntax', () => {
-      expect(component).to.have.property('controllerAs');
+      expect(component.controllerAs).toBeDefined();
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).to.equal(PressController);
+      expect(component.controller).toEqual(PressController);
     });
   });
 });

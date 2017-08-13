@@ -14,40 +14,20 @@ describe('Videos', () => {
     };
   }));
 
-  describe('Module', () => {
-    // top-level specs: i.e., routes, injection, naming
-  });
-
-  describe('Controller', () => {
-    // controller specs
-    it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
-      let controller = makeController();
-      expect(controller).to.have.property('name');
-    });
-  });
-
-  describe('Template', () => {
-    // template specs
-    // tip: use regex to ensure correct bindings are used e.g., {{  }}
-    it('has name in template [REMOVE]', () => {
-      expect(VideosTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-    });
-  });
-
   describe('Component', () => {
       // component/directive specs
       let component = VideosComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(VideosTemplate);
+        expect(component.template).toEqual(VideosTemplate);
       });
 
       it('uses `controllerAs` syntax', () => {
-        expect(component).to.have.property('controllerAs');
+        expect(component.controllerAs).toBeDefined();
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(VideosController);
+        expect(component.controller).toEqual(VideosController);
       });
   });
 });
