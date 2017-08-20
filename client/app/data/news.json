@@ -1,5 +1,13 @@
 [
   {
+    "id": "20",
+    "title": "London September gig announced: Arch 1",
+    "bodyMain": "<p>Exclusive set at Arch 1 on the 30th September!</p> <a href=\"https://www.facebook.com/events/111446846249256\" target=\"_blank\">https://www.facebook.com/events/111446846249256/</a> <br/><br/><div class=\"img-wrap\"><a href=\"https://www.facebook.com/events/111446846249256\" target=\"_blank\"><img src=\"../../images/news/23.jpg\" alt\"Fiona Ross Arch 1\"/></a></div>",
+    "createdAt": "2017-08-20T12:00:00+00:00",
+    "ticketsLink": "https://www.facebook.com/events/111446846249256",
+    "venueLink": "https://www.facebook.com/Arch1livemusic"
+  },
+  {
     "id": "19",
     "title": "New article published on thejazz.co.uk",
     "bodyMain": "<p><a href=\"http://thejazz.co.uk/artists/fiona-ross/\" target=\"_blank\">http://thejazz.co.uk/artists/fiona-ross</a></p>",
