@@ -10,34 +10,45 @@
         <div class="row">
 
           <div ng-bind-html="post.bodyMain"
-          class="body-content link-highlight-hover-border"></div>
+               class="body-content link-highlight-hover-border"></div>
 
+          <div ng-if="!post.ticketsLink && post.mainImage && !post.miniGalleryImages.length ||
+                      !post.ticketsLink && post.mainImage.url && !post.miniGalleryImages.length">
 
-          <div ng-if="!post.ticketsLink && post.mainImage && !post.miniGalleryImages.length || !post.ticketsLink && post.mainImage.url && !post.miniGalleryImages.length">
+            <div ng-class="{'col-50': post.secondaryImageUrl}">
+              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink"
+                    class="img-wrap">
+                <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
+              </div>
 
-        <div class="link-highlight-hover-border">
-          <a ng-if="post.venueLink"
-            href="{{post.venueLink}}"
-            target="_blank"
-            class="venue-link">Venue</a>
+              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink"
+                    class="img-wrap">
+                <a href="{{post.mainImage.externalLink}}" target="_blank">
+                  <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
+                </a>
+              </div>
+
             <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
               <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
             </div>
 
-            <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
-              <a href="{{post.mainImage.externalLink}}" target="_blank">
-                <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
-              </a>
+            <div ng-if="post.secondaryImageUrl"
+                 ng-class="{'col-50': post.secondaryImageUrl}">
+              <img ng-src="{{post.secondaryImageUrl}}" alt="Fiona Ross | {{post.title}}" />
             </div>
 
           </div>
 
-          <a ng-if="post.ticketsLink && !post.mainImage.url"
+          <div class="row">
+            <a ng-if="post.ticketsLink && !post.mainImage.url"
               href="{{post.ticketsLink}}"
               target="_blank"
               class="button">Get tickets</a>
+          </div>
 
           <div ng-if="post.mainImage && post.mainImage.url && post.miniGalleryImages.length">
+            <div ng-class="{'col-50': post.secondaryImageUrl}">
+
               <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
                 <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
               </div>
@@ -47,6 +58,13 @@
                   <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
                 </a>
               </div>
+
+              <div ng-if="post.secondaryImageUrl"
+                   class="col-50">
+                <img ng-src="{{post.secondaryImageUrl}}" alt="Fiona Ross | {{post.title}}" />
+              </div>
+
+            </div>
           </div>
 
         </div>
