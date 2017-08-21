@@ -9,6 +9,10 @@
 
         <div class="row">
 
+          <div ng-bind-html="post.bodyMain"
+          class="body-content link-highlight-hover-border"></div>
+
+
           <div ng-if="!post.ticketsLink && post.mainImage && !post.miniGalleryImages.length || !post.ticketsLink && post.mainImage.url && !post.miniGalleryImages.length">
 
         <div class="link-highlight-hover-border">
@@ -16,11 +20,11 @@
             href="{{post.venueLink}}"
             target="_blank"
             class="venue-link">Venue</a>
-            <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink">
+            <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
               <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
             </div>
 
-            <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink">
+            <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
               <a href="{{post.mainImage.externalLink}}" target="_blank">
                 <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
               </a>
@@ -34,21 +38,16 @@
               class="button">Get tickets</a>
 
           <div ng-if="post.mainImage && post.mainImage.url && post.miniGalleryImages.length">
-              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink">
+              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
                 <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
               </div>
 
-              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink">
+              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
                 <a href="{{post.mainImage.externalLink}}" target="_blank">
                   <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
                 </a>
               </div>
           </div>
-
-
-          <div ng-bind-html="post.bodyMain"
-          class="body-content link-highlight-hover-border"></div>
-
 
         </div>
 
@@ -56,11 +55,11 @@
 
           <div class="col-50">
 
-              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink">
+              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
                 <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
               </div>
 
-              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink">
+              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
                 <a href="{{post.mainImage.externalLink}}" target="_blank">
                   <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
                 </a>
@@ -85,8 +84,6 @@
 
         </div>
 
-        <br/>
-
         <div ng-if="post.videoEmbed && !post.miniGalleryImages" class="video-wrapper">
           <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -97,7 +94,7 @@
               <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
-          <ul class="row post-gallery">
+          <ul ng-if="post.miniGalleryImages && post.miniGalleryImages.length" class="row post-gallery">
             <li ng-repeat="image in post.miniGalleryImages" class="post-gallery-image">
               <a ng-click="vm.openLightboxModal(post.miniGalleryImages, $index)">
                 <img ng-src="{{image}}" alt="Fiona Ross | {{post.title}}" />
@@ -107,7 +104,7 @@
         </div>
 
         <div ng-if="!post.videoEmbed && post.miniGalleryImages" class="row">
-          <ul class="row post-gallery">
+          <ul ng-if="post.miniGalleryImages && post.miniGalleryImages.length" class="row post-gallery">
             <li ng-repeat="image in post.miniGalleryImages" class="post-gallery-image">
               <a ng-click="vm.openLightboxModal(post.miniGalleryImages, $index)">
                 <img ng-src="{{image}}" alt="Fiona Ross | {{post.title}}" />
