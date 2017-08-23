@@ -40,10 +40,19 @@
           </div>
 
           <div class="row">
+
+            <ul ng-if="post.quotes" class="quotes">
+              <li ng-repeat="quote in post.quotes">
+                &quot;{quote.copy}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{quote.author}</span>
+                <br />
+              </li>
+            </ul>
+
             <a ng-if="post.ticketsLink && !post.mainImage.url"
-              href="{{post.ticketsLink}}"
-              target="_blank"
-              class="button">Get tickets</a>
+               href="{{post.ticketsLink}}"
+               target="_blank"
+               class="button">Get tickets</a>
+
           </div>
 
           <div ng-if="post.mainImage && post.mainImage.url && post.miniGalleryImages.length">
