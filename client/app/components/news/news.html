@@ -5,9 +5,8 @@
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <h2>{{post.title}}</h2>
         <small class="date">{{post.createdAt | date:'dd MMM yyyy'}}</small>
-        <small class="date">{{post.date}}</small>
 
-        <div class="row">
+        <div class="row cancel-margin">
 
           <div ng-bind-html="post.bodyMain"
                class="body-content link-highlight-hover-border"></div>
@@ -39,12 +38,11 @@
 
           </div>
 
-          <div class="row">
+          <div class="row cancel-margin">
 
             <ul ng-if="post.quotes" class="quotes">
               <li ng-repeat="quote in post.quotes">
-                &quot;{quote.copy}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{quote.author}</span>
-                <br />
+                &quot;{{quote.copy}}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{{quote.author}}</span>
               </li>
             </ul>
 
