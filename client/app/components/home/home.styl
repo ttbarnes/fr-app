@@ -20,6 +20,88 @@
   .video-wrapper
     @media (min-width $bp-lg + 400px)
       padding-bottom 31.25%
+
+  .home-intro-heading
+    letter-spacing 5px
+    color $color-highlight-primary
+
+  .home-intro
+    .col-img
+      padding-bottom $gutter-primary-x-lg
+      @media (min-width: $bp-md)
+        padding-right $gutter-primary-x-lg
+      img
+        width 100%
+        max-width 450px
+        margin 0 auto
+        display block
+
+    .col-quotes
+      max-width 450px
+      margin 0 auto
+      @media (min-width: $bp-md)
+        max-width 100%
+
+    blockquote
+      position relative
+      padding 0
+      text-align left
+      margin-bottom $gutter-primary-x-lg
+      .copy
+        font-size 0.8em
+      span.quote:first-child
+        margin-left 0
+        position relative
+        top 5px
+        left -16px
+        @media (min-width: $bp-md)
+          top 22px
+
+      span.quote:last-child
+        position relative
+        top -15px
+        left 90%
+        opacity .5
+
+      .author
+        font-size 0.65em
+        margin-left 6.5%
+        @media (min-width: $bp-sm)
+          margin-left 10%
+
+  .home-intro-footer-quote blockquote
+    max-width 710px
+    margin 0 auto
+    .quote
+      vertical-align middle
+      &:last-child
+        position relative
+        top 35px
+
+  .social-icons-large
+    li
+      text-align center
+      width 33%
+      float left
+      color $color-blockquote
+      @media (min-width: $bp-md)
+        float left
+        width 16.6666667%
+      i
+        margin-bottom 15px
+        opacity .8
+        width 70px
+        height 70px
+        &::before
+          margin-top 16px // NEEDs to be done for each icon type
+          font-size 2em
+      p
+        font-size 1.1em
+      a:hover,
+      a:focus
+        i
+          opacity 1
+
   h3
     margin-bottom $gutter-primary
     padding-bottom 0
