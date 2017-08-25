@@ -159,6 +159,29 @@
       @media (min-width: $bp-md)
         margin-top 0
 
+
+  .quotes-middle
+    blockquote
+      display inline-block
+      position relative
+      width 100%
+      max-width 630px
+      margin 0 auto
+      text-align left
+      > span
+        float left
+        width auto
+        &.copy
+          max-width 86%
+        &.author
+          clear both
+          margin-left 7%
+          font-size 0.65em
+      span.copy + .quote
+        position absolute
+        bottom 31%
+        right 8%
+
 /*
   .s-feeds
     text-align center
