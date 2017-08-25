@@ -2,7 +2,11 @@ import template from './signupForm.html';
 import './signupForm.styl';
 
 let signupFormComponent = {
-  template
+  template,
+  bindings: {
+    heading: '@'
+  },
+  controllerAs: 'vm'
 };
 
 export default signupFormComponent;
