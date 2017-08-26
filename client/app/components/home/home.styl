@@ -24,8 +24,10 @@
   .home-intro-heading
     letter-spacing 5px
     color $color-highlight-primary
+    margin-bottom $gutter-primary-x-lg
 
   .home-intro
+    margin-bottom 0
     .col-img
       padding-bottom $gutter-primary-x-lg
       @media (min-width: $bp-md)
@@ -69,6 +71,9 @@
         @media (min-width: $bp-sm)
           margin-left 10%
 
+    .last-blockquote
+      margin-bottom 0
+
   .home-intro-footer-quote blockquote
     max-width 710px
     margin 0 auto
@@ -78,7 +83,9 @@
         position relative
         top 35px
 
-  .social-icons-large
+  .row-social-icons-large
+    margin-top $gutter-primary-xx-lg
+    margin-bottom $gutter-primary-xxx-lg
     li
       text-align center
       width 33%
@@ -135,10 +142,23 @@
     @media (min-width $bp-md)
       padding-bottom $gutter-primary
 
+  .row-signup-middle
+    margin-bottom $gutter-primary-xxx-lg
+    .signup-form
+      padding-top 0
+      padding-left 0
+      .mchimp-form
+        width 100%
+      form
+        min-width 350px
+        max-width 350px
+
+
   .row-album-latest
     margin 0 auto
     position relative
     padding-bottom $gutter-primary-lg
+    margin-bottom $gutter-primary-xx-lg
     @media (min-width $bp-md)
       padding-bottom 0
 
