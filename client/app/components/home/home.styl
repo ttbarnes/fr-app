@@ -87,16 +87,26 @@
       @media (min-width: $bp-md)
         float left
         width 16.6666667%
+      p
+        margin-bottom 0
       i
         margin-bottom 15px
         opacity .8
         width 70px
         height 70px
         &::before
-          margin-top 16px // NEEDs to be done for each icon type
+          margin-top 16px
           font-size 2em
+        &.icon-ssp
+          margin-right 0 !important
+          &::before
+            margin-top 11px
+        &.icon-s-y::before
+          margin-top 21px
       p
         font-size 1.1em
+      a
+        display block
       a:hover,
       a:focus
         i

@@ -176,3 +176,20 @@ fr-footer,
   @media (min-width $bp-lg)
     padding-bottom 29.25%
     max-width 600px
+
+.social-links-hover-rotate
+  a
+    opacity 0.4
+    transition all 0.3s ease
+    &:hover,
+    &:focus
+      outline 0 none
+      color #FFF
+    i
+      transition all 0.3s ease
+    @media (min-width: $bp-md)
+      &:hover,
+      &:focus
+        opacity 1
+        i
+          transform rotate(360deg)
