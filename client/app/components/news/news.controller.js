@@ -10,6 +10,7 @@ class NewsController {
     this.newsService = newsService;
     this.$sce = $sce;
     this.Lightbox = Lightbox;
+    this.promiseError = false;
 
     this.newsService.getAll().then((data) => {
       const dataReversed = data.data.slice().reverse();
@@ -20,6 +21,8 @@ class NewsController {
         d.urlTitle = d.title.replace(/\s+/g, '-').toLowerCase();
       });
       this.data = orderedData;
+    }, () => {
+      this.promiseError = true;
     });
 
     this.trustSrc = (src) => this.$sce.trustAsResourceUrl(src);
