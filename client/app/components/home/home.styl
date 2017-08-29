@@ -16,21 +16,28 @@
 
   .main-content
     max-width 900px
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   .video-wrapper
     @media (min-width $bp-lg + 400px)
       padding-bottom 31.25%
 
   .home-intro-heading
+    font-size 2em
+    font-weight 300
     letter-spacing 5px
     color $color-highlight-primary
-    margin-bottom $gutter-primary-x-lg
+    margin-bottom $gutter-primary-lg
 
   .home-intro
     margin-bottom 0
+    @media (min-width: $bp-md)
+      margin-bottom $gutter-primary-x-lg
     .col-img
       padding-bottom $gutter-primary-x-lg
       @media (min-width: $bp-md)
+        max-width 450px
         padding-right $gutter-primary-x-lg
       img
         width 100%
@@ -48,9 +55,12 @@
       position relative
       padding 0
       text-align left
-      margin-bottom $gutter-primary-x-lg
+      margin-bottom $gutter-primary-lg
       .copy
         font-size 0.8em
+        letter-spacing 1px
+        color #DADADA
+        line-height 1.72em
       span.quote:first-child
         margin-left 0
         position relative
@@ -68,20 +78,27 @@
       .author
         font-size 0.65em
         margin-left 6.5%
+        line-height 2.3em
         @media (min-width: $bp-sm)
-          margin-left 10%
+          margin-left 12.5%
 
     .last-blockquote
       margin-bottom 0
 
   .home-intro-footer-quote blockquote
-    max-width 710px
+    max-width 87%
     margin 0 auto
     .quote
       vertical-align middle
       &:last-child
         position relative
         top 35px
+    .author
+      text-align center
+      font-size 0.75em
+      margin-left 9.4%
+      line-height .75em
+      padding-top $gutter-primary
 
   .row-social-icons-large
     margin-top $gutter-primary-xx-lg
@@ -144,6 +161,8 @@
 
   .row-signup-middle
     margin-bottom $gutter-primary-xxx-lg
+    @media (min-width $bp-md)
+      margin-top $gutter-primary-x-lg
     .signup-form
       padding-top 0
       padding-left 0
@@ -203,14 +222,19 @@
         width auto
         &.copy
           max-width 86%
+          padding-left 3%
         &.author
           clear both
-          margin-left 7%
+          margin-left 10%
           font-size 0.65em
       span.copy + .quote
         position absolute
         bottom 31%
         right 8%
+
+.featured-video
+  @media (min-width: $bp-md)
+    margin-top $gutter-primary-xx-lg
 
 /*
   .s-feeds
