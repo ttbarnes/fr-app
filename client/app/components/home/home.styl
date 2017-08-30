@@ -23,6 +23,10 @@
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
+  .intro-wrapper
+    @media (min-width $bp-sm)
+      padding 0 $gutter-primary-lg
+
   .video-wrapper
     @media (min-width $bp-lg + 400px)
       padding-bottom 31.25%
@@ -136,30 +140,11 @@
         @media (min-width: $bp-sm)
           > span
             &.copy
-              max-width 63%
+              max-width 45%
             &.quote:first-child
               vertical-align top
             &.author
               margin-left 0
-        @media (min-width: $bp-md)
-          max-width 490px
-          margin 0 auto
-          text-align left
-
-          > span
-            float left
-            width auto
-            &.copy
-              max-width 86%
-              padding-left 3%
-            &.author
-              clear both
-              margin-left 12.5%
-              font-size 0.65em
-          span.copy + .quote
-            position absolute
-            bottom 31%
-            right 8%
         @media (min-width: $bp-lg)
           max-width 80%
           > span
@@ -298,8 +283,12 @@
 
 .featured-video
   margin-top $gutter-primary-x-lg
+  @media (min-width $bp-sm)
+    padding 0 $gutter-primary-lg
   @media (min-width: $bp-md)
-    margin-top $gutter-primary-xx-lg
+    margin-top $gutter-primary-xxx-lg
+  h4
+    text-align center
 
 /*
   .s-feeds
