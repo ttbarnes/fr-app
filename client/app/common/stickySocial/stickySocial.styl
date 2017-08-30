@@ -1,0 +1,15 @@
+@import '../../styles/variables'
+
+.sticky-social
+  display none
+  @media (min-width $bp-sm)
+    display block
+    position fixed
+    top 155px
+    right 0
+    z-index 3
+    transition all 1s ease
+    li
+      margin-bottom $gutter-primary-lg - $gutter-primary-xs
+      a
+        opacity .5
