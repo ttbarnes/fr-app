@@ -1,4 +1,4 @@
-<section class="row news-home long-copy-line-height" ng-class={'promise-error': vm.promiseError}>
+<section class="row news-home long-copy-line-height" ng-class="{'promise-error': vm.promiseError}">
   <div class="main-content">
 
     <ul ng-if="vm.data && vm.data.length">
@@ -179,16 +179,21 @@
       </li>
     </ul>
 
-    <section ng-if="vm.promiseError" class="row view-message-short">
-      <p class="font-size-h1">Check out the latest on...</p>
-      <br />
-      <br />
-      <ul>
-        <li><a href="http://soundcloud.com/fiona-ross" target="_blank"><i class="icon-s-s"></i>SoundCloud</a></li>
-        <li><a href="http://twitter.com/fifross" target="_blank"><i class="icon-s-t"></i>Twitter</a></li>
-        <li><a href="http://facebook.com/fionarossmusic" target="_blank"><i class="icon-s-f"></i>Facebook</a></li>
-        <li><a href="https://www.instagram.com/fifi_ross" target="_blank"><i class="icon-s-i"></i>Instagram</a></li>
-      </ul>
+    <section ng-if="vm.promiseError" class="row">
+      <div class="row view-message-short align-center">
+        <p class="font-size-h1 new-heading-theme">Check out the latest on...</p>
+        <br />
+      </div>
+      <div class="row">
+        <ul class="social-links-large social-links-hover-rotate">
+          <li class="col-1-6th-md"><a href="http://soundcloud.com/fiona-ross" target="_blank"><i class="icon-s-s"></i><p>SoundCloud</a></p></li>
+          <li class="col-1-6th-md"><a href="https://play.spotify.com/artist/59lPcyDIZJxmRqatvAjct8?play=true" target="_blank"><i class="icon-ssp"></i><p>Spotify</a></p></li>
+          <li class="col-1-6th-md"><a href="http://twitter.com/fifross" target="_blank"><i class="icon-s-t"></i><p>Twitter</a></p></li>
+          <li class="col-1-6th-md"><a href="http://facebook.com/fionarossmusic" target="_blank"><i class="icon-s-f"></i><p>Facebook</a></p></li>
+          <li class="col-1-6th-md"><a href="https://www.instagram.com/fifi_ross" target="_blank"><i class="icon-s-i"></i><p>Instagram</a></p></li>
+          <li class="col-1-6th-md"><a href="https://www.youtube.com/channel/UC9srPEZZNgnsM23Q777HbzA" target="_blank"><i class="icon-s-y"></i><p>YouTube</a></p></li>
+        </ul>
+      </div>
     </section>
 
     <div class="row button-view-nav">
