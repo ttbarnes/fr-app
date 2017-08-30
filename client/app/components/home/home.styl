@@ -33,6 +33,9 @@
     letter-spacing 6px
     color #DADADA
     margin-bottom $gutter-primary-lg
+    text-align center
+    @media (min-width: $bp-sm)
+      text-align left
 
   .home-intro
     margin-bottom 0
@@ -59,19 +62,27 @@
       position relative
       padding 0
       text-align left
-      margin-bottom $gutter-primary-lg
+      margin-bottom $gutter-primary-x-lg
+      @media (min-width: $bp-sm)
+        margin-bottom $gutter-primary-lg
       .copy
-        font-size 0.8em
+        font-size 0.9em
         letter-spacing 1px
         color #DADADA
         line-height 1.72em
+        text-align left
+        @media (min-width: $bp-sm)
+          font-size 0.8em
+          text-align left
         @media (min-width: $bp-md)
           max-width 74%
       span.quote:first-child
         margin-left 0
         position relative
         top 5px
-        left -16px
+        left -10px
+        @media (min-width: $bp-sm)
+          left -16px
         @media (min-width: $bp-md)
           top 22px
 
@@ -106,12 +117,14 @@
     display none
     @media (min-width: $bp-sm)
       display block
-      margin-top $gutter-primary-x-lg
       margin-bottom $gutter-primary-xx-lg
+    @media (min-width: $bp-md)
       padding-bottom $gutter-primary-xx-lg
     @media (min-width: $bp-lg)
+      margin-top $gutter-primary-x-lg
       text-align center
     blockquote
+      font-size 1.4em
       @media (min-width: $bp-sm)
         display inline-block
         position relative
@@ -120,6 +133,14 @@
         text-align center
         > span.author
           margin-left 12.5%
+        @media (min-width: $bp-sm)
+          > span
+            &.copy
+              max-width 63%
+            &.quote:first-child
+              vertical-align top
+            &.author
+              margin-left 0
         @media (min-width: $bp-md)
           max-width 490px
           margin 0 auto
@@ -166,6 +187,7 @@
       width 33%
       float left
       color $color-blockquote
+      margin-bottom $gutter-primary-x-lg
       @media (min-width: $bp-md)
         float left
         width 16.6666667%
@@ -189,8 +211,12 @@
         font-size 1.1em
       a
         display block
+        color #DADADA
+        @media (min-width: $bp-md)
+          color $color-text-primary
       a:hover,
       a:focus
+        color #DADADA
         i
           opacity 1
 
@@ -224,18 +250,30 @@
     .signup-form
       padding-top 0
       padding-left 0
+      padding-right 0
       .mchimp-form
         width 100%
-      form
-        min-width 350px
+        justify-content center
+        @media (min-width $bp-md)
+          justify-content flex-start
+      .mchimp-form
         max-width 350px
+      form
+        min-width 100%
+        max-width 350px
+        justify-content center
+        @media (min-width $bp-md)
+          justify-content flex-start
 
 
   .row-album-latest
     margin 0 auto
     position relative
     padding-bottom $gutter-primary-lg
-    margin-bottom $gutter-primary-xx-lg
+    margin-bottom $gutter-primary--lg
+    @media (min-width $bp-sm)
+      margin-top $gutter-primary-x-lg
+      margin-bottom $gutter-primary-xx-lg
     @media (min-width $bp-md)
       padding-bottom 0
 
@@ -283,14 +321,20 @@
           padding-left 3%
         &.author
           clear both
-          margin-left 10%
-          font-size 0.65em
+          font-size .75em
+          margin-left 3.5%
+          @media (min-width: $bp-sm)
+            font-size .65em
+            margin-left 8.5%
+          @media (min-width: $bp-md)
+            margin-left 10%
       span.copy + .quote
         position absolute
         bottom 31%
         right 8%
 
 .featured-video
+  margin-top $gutter-primary-x-lg
   @media (min-width: $bp-md)
     margin-top $gutter-primary-xx-lg
 

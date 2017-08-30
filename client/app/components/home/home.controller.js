@@ -10,11 +10,11 @@ class HomeController {
     this.$window.onscroll = () => {
       const tabletScreenSize = window.matchMedia('(max-width: 1000px)').matches;
       const largeScreenSize = window.matchMedia('(min-width: 1000px)').matches;
-      if (tabletScreenSize && document.body.scrollTop > 380) {
+      if (tabletScreenSize && document.body.scrollTop > 350) {
         this.showBgImage = true;
       } else if (largeScreenSize) {
           this.showBgImage = false;
-        if (document.body.scrollTop > 430) {
+        if (document.body.scrollTop > 280) {
           this.showBgImage = true;
         }
       } else {
