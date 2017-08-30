@@ -11,6 +11,10 @@
       display block
       width 100%
       padding-top 15%
+      opacity 0
+      transition opacity 2s ease;
+      &.active
+        opacity 1
     @media (min-width $bp-md + 225px)
       padding-top $header-height-desktop
 
@@ -26,14 +30,14 @@
   .home-intro-heading
     font-size 2em
     font-weight 300
-    letter-spacing 5px
-    color $color-highlight-primary
+    letter-spacing 6px
+    color #DADADA
     margin-bottom $gutter-primary-lg
 
   .home-intro
     margin-bottom 0
-    @media (min-width: $bp-md)
-      margin-bottom $gutter-primary-x-lg
+    @media (min-width: $bp-sm)
+      margin-bottom $gutter-primary-xx-lg
     .col-img
       padding-bottom $gutter-primary-x-lg
       @media (min-width: $bp-md)
@@ -61,6 +65,8 @@
         letter-spacing 1px
         color #DADADA
         line-height 1.72em
+        @media (min-width: $bp-md)
+          max-width 74%
       span.quote:first-child
         margin-left 0
         position relative
@@ -74,6 +80,17 @@
         top -15px
         left 90%
         opacity .5
+        @media (min-width: $bp-sm)
+          display none
+        @media (min-width: $bp-md)
+          display block
+          position absolute
+          left initial
+          right 5%
+          top initial
+          bottom 25%
+        @media (min-width: $bp-lg)
+          right 7%
 
       .author
         font-size 0.65em
@@ -85,9 +102,50 @@
     .last-blockquote
       margin-bottom 0
 
-  .home-intro-footer-quote blockquote
-    max-width 87%
-    margin 0 auto
+  .home-intro-footer-quote
+    display none
+    @media (min-width: $bp-sm)
+      display block
+      margin-top $gutter-primary-x-lg
+      margin-bottom $gutter-primary-xx-lg
+      padding-bottom $gutter-primary-xx-lg
+    @media (min-width: $bp-lg)
+      text-align center
+    blockquote
+      @media (min-width: $bp-sm)
+        display inline-block
+        position relative
+        width 100%
+        margin 0 auto
+        text-align center
+        > span.author
+          margin-left 12.5%
+        @media (min-width: $bp-md)
+          max-width 490px
+          margin 0 auto
+          text-align left
+
+          > span
+            float left
+            width auto
+            &.copy
+              max-width 86%
+              padding-left 3%
+            &.author
+              clear both
+              margin-left 12.5%
+              font-size 0.65em
+          span.copy + .quote
+            position absolute
+            bottom 31%
+            right 8%
+        @media (min-width: $bp-lg)
+          max-width 80%
+          > span
+            float none
+            &.author
+              margin-left 0
+
     .quote
       vertical-align middle
       &:last-child
