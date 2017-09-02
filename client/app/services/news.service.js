@@ -13,8 +13,9 @@ export default class newsService {
       getAll: () => this.$http.get(CONST.API_NEWS),
 
       getSingle: (title) => {
-        const data = this.data.find(d => d.urlTitle === title);
-        return data;
+        return this.$http.get(CONST.API_NEWS).then(data =>
+          data.data.filter(a => a.urlTitle === title)
+        );
       }
     }
 

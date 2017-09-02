@@ -6,10 +6,14 @@ class NewsIndController {
     this.stateParams = $stateParams;
     this.indTitle = this.stateParams.title;
 
-    this.data = this.newsService.getSingle(this.indTitle);
-    if(!this.data) {
+    this.newsService.getSingle(this.indTitle).then((data) => {
+      if (!data.length) {
+        $state.go('error');
+      }
+      this.data = data[0];
+    }, () => {
       $state.go('error');
-    }
+    });
 
     this.trustSrc = (src) => this.$sce.trustAsResourceUrl(src);
 

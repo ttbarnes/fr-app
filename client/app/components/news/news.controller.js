@@ -15,11 +15,6 @@ class NewsController {
     this.newsService.getAll().then((data) => {
       const dataReversed = data.data.slice().reverse();
       let orderedData = dataReversed.sort(dateIsBefore);
-      orderedData.map((d) => {
-        // urlTitle is the url friendly string of the title.
-        // example: hello-like-this
-        d.urlTitle = d.title.replace(/\s+/g, '-').toLowerCase();
-      });
       this.data = orderedData;
     }, () => {
       this.promiseError = true;
