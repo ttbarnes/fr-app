@@ -16,7 +16,7 @@
 
             <div ng-class="{'col-50': post.secondaryImageUrl}">
               <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink"
-                    class="img-wrap">
+                   class="img-wrap">
                 <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
               </div>
 
@@ -26,9 +26,6 @@
                   <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
                 </a>
               </div>
-
-            <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
-              <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
             </div>
 
             <div ng-if="post.secondaryImageUrl"
