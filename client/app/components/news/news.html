@@ -8,9 +8,6 @@
 
         <div class="row cancel-margin">
 
-          <div ng-bind-html="post.bodyMain"
-               class="body-content link-highlight-hover-border"></div>
-
           <div ng-if="!post.ticketsLink && post.mainImage && !post.miniGalleryImages.length ||
                       !post.ticketsLink && post.mainImage.url && !post.miniGalleryImages.length">
 
@@ -35,22 +32,7 @@
 
           </div>
 
-          <div class="row cancel-margin">
-
-            <ul ng-if="post.quotes" class="quotes">
-              <li ng-repeat="quote in post.quotes">
-                &quot;{{quote.copy}}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{{quote.author}}</span>
-              </li>
-            </ul>
-
-            <a ng-if="post.ticketsLink && !post.mainImage.url"
-               href="{{post.ticketsLink}}"
-               target="_blank"
-               class="button">Get tickets</a>
-
-          </div>
-
-          <div ng-if="post.mainImage && post.mainImage.url && post.miniGalleryImages.length">
+          <div ng-if="post.mainImage && post.mainImage.url && post.miniGalleryImages.length" class="cancel-margin">
             <div ng-class="{'col-50': post.secondaryImageUrl}">
 
               <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
@@ -75,7 +57,7 @@
 
         <div ng-if="post.ticketsLink && post.mainImage && post.mainImage.url && !post.miniGalleryImages.length">
 
-          <div class="col-50">
+          <div class="col-70 max-width-650">
 
               <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
                 <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
@@ -89,7 +71,7 @@
 
           </div>
 
-          <div class="col-50">
+          <div class="col-30">
 
             <a ng-if="post.ticketsLink"
                href="{{post.ticketsLink}}"
@@ -103,6 +85,24 @@
             </div>
 
           </div>
+
+        </div>
+
+        <div class="row cancel-margin">
+
+          <div ng-bind-html="post.bodyMain"
+                class="body-content link-highlight-hover-border"></div>
+
+          <ul ng-if="post.quotes" class="quotes">
+            <li ng-repeat="quote in post.quotes">
+              &quot;{{quote.copy}}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{{quote.author}}</span>
+            </li>
+          </ul>
+
+          <a ng-if="post.ticketsLink && !post.mainImage.url"
+              href="{{post.ticketsLink}}"
+              target="_blank"
+              class="button">Get tickets</a>
 
         </div>
 
@@ -130,16 +130,6 @@
             <li ng-repeat="image in post.miniGalleryImages" class="post-gallery-image">
               <a ng-click="vm.openLightboxModal(post.miniGalleryImages, $index)">
                 <img ng-src="{{image}}" alt="Fiona Ross | {{post.title}}" />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div ng-if="!post.videoEmbed && post.galleryImages" class="row video-with-gallery-row">
-          <ul class="row post-gallery">
-            <li ng-repeat="image in post.galleryImages" class="post-gallery-image">
-              <a ng-click="vm.openLightboxModal(post.galleryImages, $index)">
-                <img ng-src="./images/{{image.thumbUrl}}" alt="Fiona Ross | {{post.title}}" />
               </a>
             </li>
           </ul>
