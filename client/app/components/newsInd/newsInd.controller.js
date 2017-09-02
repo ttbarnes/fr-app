@@ -10,7 +10,7 @@ class NewsIndController {
       if (!data.length) {
         $state.go('error');
       }
-      this.data = data[0];
+      this.post = data[0];
     }, () => {
       $state.go('error');
     });

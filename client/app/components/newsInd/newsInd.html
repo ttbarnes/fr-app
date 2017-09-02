@@ -1,59 +1,164 @@
 <section class="row long-copy-line-height news-ind">
   <div class="main-content">
 
-    <h1>{{vm.data.title}}</h1>
-    <small class="date">{{vm.data.createdAt}}</small>
+    <h1>{{vm.post.title}}</h1>
+    <small class="date">{{vm.post.createdAt | date:'dd MMM yyyy'}}</small>
 
-    <div ng-bind-html="vm.data.bodyMain" class="body-content"></div>
+    <div class="row cancel-margin">
 
-    <a ng-if="vm.data.ticketsLink" 
-        href="{{vm.data.ticketsLink}}" 
-        target="_blank" 
-        class="button" 
-        style="width:auto;display:inline-block;">Get tickets</a>
+      <div ng-if="!vm.post.ticketsLink && vm.post.mainImage && !vm.post.miniGalleryImages.length ||
+                  !vm.post.ticketsLink && vm.post.mainImage.url && !vm.post.miniGalleryImages.length">
 
-    <br/>
-    <br/>
+        <div ng-class="{'col-50': vm.post.secondaryImageUrl}">
+          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && !vm.post.mainImage.externalLink"
+                class="img-wrap">
+            <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+          </div>
 
-    <div class="link-highlight-hover-border">
-      <a ng-if="vm.data.venueLink" 
-        href="{{vm.data.venueLink}}" 
-        target="_blank"
-        class="venue-link">Venue</a>
+          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && vm.post.mainImage.externalLink"
+                class="img-wrap">
+            <a href="{{vm.post.mainImage.externalLink}}" target="_blank">
+              <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+            </a>
+          </div>
+        </div>
+
+        <div ng-if="vm.post.secondaryImageUrl"
+              ng-class="{'col-50': vm.post.secondaryImageUrl}">
+          <img ng-src="{{vm.post.secondaryImageUrl}}" alt="Fiona Ross | {{vm.post.title}}" />
+        </div>
+
+      </div>
+
+      <div ng-if="vm.post.mainImage && vm.post.mainImage.url && vm.post.miniGalleryImages.length" class="cancel-margin">
+        <div ng-class="{'col-50': vm.post.secondaryImageUrl}">
+
+          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && !vm.post.mainImage.externalLink" class="img-wrap">
+            <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+          </div>
+
+          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && vm.post.mainImage.externalLink" class="img-wrap">
+            <a href="{{vm.post.mainImage.externalLink}}" target="_blank">
+              <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+            </a>
+          </div>
+
+          <div ng-if="vm.post.secondaryImageUrl"
+                class="col-50">
+            <img ng-src="{{vm.post.secondaryImageUrl}}" alt="Fiona Ross | {{vm.post.title}}" />
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
-    <div ng-if="vm.data.videoEmbed" class="video-wrapper">
-      <iframe width="560" ng-src="{{vm.trustSrc(vm.data.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+    <div ng-if="vm.post.ticketsLink && vm.post.mainImage && vm.post.mainImage.url && !vm.post.miniGalleryImages.length">
+
+      <div class="col-70 max-width-650">
+
+          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && !vm.post.mainImage.externalLink" class="img-wrap">
+            <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+          </div>
+
+          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && vm.post.mainImage.externalLink" class="img-wrap">
+            <a href="{{vm.post.mainImage.externalLink}}" target="_blank">
+              <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+            </a>
+          </div>
+
+      </div>
+
+      <div class="col-30">
+
+        <a ng-if="vm.post.ticketsLink"
+            href="{{vm.post.ticketsLink}}"
+            target="_blank"
+            class="button">Get tickets</a>
+        <div class="link-highlight-hover-border">
+          <a ng-if="vm.post.venueLink"
+              href="{{vm.post.venueLink}}"
+              target="_blank"
+              class="venue-link">Venue</a>
+        </div>
+
+      </div>
+
     </div>
 
+    <div class="row cancel-margin">
 
-    <div class="social-share">
-      <p class="page-sub-title">Share on</p>
-      <ul>
-        <li>
-          <a href="#"
-             socialshare
-             socialshare-provider="facebook"
-             socialshare-title="{{vm.data.title}}"
-             socialshare-hashtags="test, temp"
-             socialshare-media="http://todo:addurl">
-             <i class="icon-s-f"></i>
-             <span>Facebook</span>
-          </a>
+      <div ng-bind-html="vm.post.bodyMain"
+            class="body-content link-highlight-hover-border"></div>
+
+      <ul ng-if="vm.post.quotes" class="quotes">
+        <li ng-repeat="quote in vm.post.quotes">
+          &quot;{{quote.copy}}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{{quote.author}}</span>
         </li>
-        <li class="last">
-          <a href="#"
-             socialshare
-             socialshare-provider="twitter"
-             socialshare-text="{{vm.data.title}}"
-             socialshare-hashtags="test, temp"
-             socialshare-url="http://todo:addurl">
-             <i class="icon-s-t"></i>
-             <span>Twitter</span>
+      </ul>
+
+      <a ng-if="vm.post.ticketsLink && !vm.post.mainImage.url"
+          href="{{vm.post.ticketsLink}}"
+          target="_blank"
+          class="button">Get tickets</a>
+
+    </div>
+
+    <div ng-if="vm.post.videoEmbed && !vm.post.miniGalleryImages" class="video-wrapper">
+      <iframe width="560" ng-src="{{vm.trustSrc(vm.post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div ng-if="vm.post.videoEmbed && vm.post.miniGalleryImages" class="row video-with-gallery-row">
+      <div class="row post-video">
+        <div class="video-wrapper">
+          <iframe width="560" ng-src="{{vm.trustSrc(vm.post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <ul ng-if="vm.post.miniGalleryImages && vm.post.miniGalleryImages.length" class="row post-gallery">
+        <li ng-repeat="image in vm.post.miniGalleryImages" class="post-gallery-image">
+          <a ng-click="vm.openLightboxModal(vm.post.miniGalleryImages, $index)">
+            <img ng-src="{{image}}" alt="Fiona Ross | {{vm.post.title}}" />
           </a>
         </li>
       </ul>
     </div>
 
+    <div ng-if="!vm.post.videoEmbed && vm.post.miniGalleryImages" class="row">
+      <ul ng-if="vm.post.miniGalleryImages && vm.post.miniGalleryImages.length" class="row post-gallery">
+        <li ng-repeat="image in vm.post.miniGalleryImages" class="post-gallery-image">
+          <a ng-click="vm.openLightboxModal(vm.post.miniGalleryImages, $index)">
+            <img ng-src="{{image}}" alt="Fiona Ross | {{vm.post.title}}" />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row social-share">
+      <p>Share on</p>
+      <ul>
+        <li class="first">
+          <a href="#"
+              socialshare
+              socialshare-provider="facebook"
+              socialshare-title="Fiona Ross | {{vm.post.title}}"
+              socialshare-hashtags="{{vm.post.socialShare.hashtags}}"
+              socialshare-media="{{vm.post.socialShare.shareUrl || 'http://fionaross.co.uk/news'}}">
+              <i class="icon-s-f"></i>
+              <span>Facebook</span>
+          </a>
+        </li>
+        <li class="last">
+          <a href="#"
+              socialshare
+              socialshare-provider="twitter"
+              socialshare-text="Fiona Ross | {{vm.post.title}}"
+              socialshare-hashtags="{{vm.post.socialShare.hashtags}}"
+              socialshare-url="{{vm.post.socialShare.shareUrl || 'http://fionaross.co.uk/news'}}">
+              <i class="icon-s-t"></i>
+              <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
