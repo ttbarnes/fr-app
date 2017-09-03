@@ -27,5 +27,6 @@ export const PAGE_TITLE_TECH = 'Tech' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_B
 export const PAGE_TITLE_VIDEOS = 'Videos' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 
 // api
-export const API_BASE = 'http://localhost:4040/api/'
+// export const API_BASE = 'http://localhost:4040/api/'
+export const API_BASE = 'https://fr-cms-api.herokuapp.com/api/'
 export const API_NEWS = API_BASE + 'news';
