@@ -19,7 +19,7 @@
       padding-top $header-height-desktop
 
   .main-content
-    max-width 900px
+    max-width 1100px
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
@@ -47,8 +47,11 @@
       margin-bottom $gutter-primary-xx-lg
     .col-img
       padding-bottom $gutter-primary-x-lg
+      max-width 300px
+      margin 0 auto
       @media (min-width: $bp-md)
-        max-width 450px
+        margin-right 0
+        margin-left 0
         padding-right $gutter-primary-x-lg
       img
         width 100%
@@ -61,6 +64,9 @@
       margin 0 auto
       @media (min-width: $bp-md)
         max-width 100%
+        width 60%
+      @media (min-width: $bp-lg)
+        width 65%
 
     blockquote
       position relative
@@ -68,7 +74,7 @@
       text-align left
       margin-bottom $gutter-primary-x-lg
       @media (min-width: $bp-sm)
-        margin-bottom $gutter-primary-lg
+        margin 1.8em 0
       .copy
         font-size 0.9em
         letter-spacing 1px
@@ -79,7 +85,7 @@
           font-size 0.8em
           text-align left
         @media (min-width: $bp-md)
-          max-width 74%
+          max-width 83%
       span.quote:first-child
         margin-left 0
         position relative
@@ -111,8 +117,6 @@
         font-size 0.65em
         margin-left 6.5%
         line-height 2.3em
-        @media (min-width: $bp-sm)
-          margin-left 12.5%
 
     .last-blockquote
       margin-bottom 0
@@ -140,7 +144,7 @@
         @media (min-width: $bp-sm)
           > span
             &.copy
-              max-width 55%
+              max-width 65%
             &.quote:first-child
               vertical-align top
             &.author
