@@ -44,7 +44,7 @@
   .home-intro
     margin-bottom 0
     @media (min-width: $bp-sm)
-      margin-bottom $gutter-primary-xx-lg
+      margin-bottom $gutter-primary-x-lg
     .col-img
       padding-bottom $gutter-primary-x-lg
       max-width 300px
@@ -121,59 +121,6 @@
     .last-blockquote
       margin-bottom 0
 
-  .home-intro-footer-quote
-    display none
-    @media (min-width: $bp-sm)
-      display block
-      margin-bottom $gutter-primary-xx-lg
-    @media (min-width: $bp-md)
-      padding-bottom $gutter-primary-xx-lg
-    @media (min-width: $bp-lg)
-      margin-top $gutter-primary-x-lg
-      text-align center
-    blockquote
-      font-size 1.4em
-      @media (min-width: $bp-sm)
-        display inline-block
-        position relative
-        width 100%
-        margin 0 auto
-        text-align center
-        > span.author
-          margin-left 12.5%
-        @media (min-width: $bp-sm)
-          > span
-            &.copy
-              max-width 65%
-            &.quote:first-child
-              vertical-align top
-            &.author
-              margin-left 0
-        @media (min-width: $bp-md)
-          > span
-            &.copy
-              max-width 55%
-        @media (min-width: $bp-lg)
-          max-width 80%
-          > span
-            float none
-            &.author
-              margin-left 0
-
-    .quote
-      vertical-align middle
-      &:last-child
-        position relative
-        top 35px
-    .copy
-      color #DADADA
-    .author
-      text-align center
-      font-size 0.75em
-      margin-left 9.4%
-      line-height .75em
-      padding-top $gutter-primary
-
   .row-social-icons-large
     margin-top $gutter-primary-xx-lg
     margin-bottom $gutter-primary-xxx-lg
@@ -205,6 +152,8 @@
     margin-bottom $gutter-primary-xxx-lg
     @media (min-width $bp-md)
       margin-top $gutter-primary-x-lg
+    .new-heading-theme
+      text-align center
     .signup-form
       padding-top 0
       padding-left 0
@@ -215,13 +164,16 @@
         @media (min-width $bp-md)
           justify-content flex-start
       .mchimp-form
-        max-width 350px
+        max-width 300px
+        margin  0 auto
       form
         min-width 100%
-        max-width 350px
+        max-width 300px
         justify-content center
         @media (min-width $bp-md)
           justify-content flex-start
+        input[type="email"]
+          width 100%
 
 
   .row-album-latest
@@ -230,7 +182,6 @@
     padding-bottom $gutter-primary-lg
     margin-bottom $gutter-primary--lg
     @media (min-width $bp-sm)
-      margin-top $gutter-primary-x-lg
       margin-bottom $gutter-primary-xx-lg
     @media (min-width $bp-md)
       padding-bottom 0
@@ -264,6 +215,8 @@
 
 
   .quotes-middle
+    > .row
+      margin-bottom $gutter-primary-xx-lg
     blockquote
       display inline-block
       position relative
@@ -271,6 +224,8 @@
       max-width 630px
       margin 0 auto
       text-align left
+      padding-top $gutter-primary-xx-lg
+      padding-bottom $gutter-primary-xx-lg
       > span
         float left
         width auto
