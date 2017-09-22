@@ -118,16 +118,21 @@ dl
 
 // currently only used on home page
 .new-heading-theme
-  font-size 26px
+  font-size 21px
   letter-spacing 4px
   color #DADADA
   margin-bottom 45px
   font-weight 300
   text-align center
+  max-width 80%
+  margin-right auto
+  margin-left auto
   @media (min-width $bp-xxs)
-    max-width 65%
+    max-width 66%
     margin-right auto
     margin-left auto
+  @media (min-width $bp-sm)
+    font-size 26px
   @media (min-width $bp-sm)
     max-width 100%
   @media (min-width $bp-md)
