@@ -29,7 +29,7 @@ section.album
       margin-bottom $gutter-primary-lg
       @media (min-width $bp-md)
         margin-bottom 0
-        box-shadow 0 13px 22px #121212
+        box-shadow 0 3px 22px #121212
 
   .col-last
     @media (min-width $bp-md)
@@ -147,7 +147,7 @@ section.album
     margin 0 auto
     margin-bottom $gutter-primary-lg
     @media (min-width: $bp-md)
-      max-width 1005%
+      max-width 100%
 
     li
       margin $gutter-primary-lg auto
@@ -190,7 +190,17 @@ section.album
       &.amazon
         clear both
         @media (min-width: $bp-xs)
+          clear none
+          float none
           margin-top 0
+          margin 0 auto
+        @media (min-width: $bp-sm)
+          clear both
+          float left
+        @media (min-width: $bp-md)
+          margin-top $gutter-primary-lg
+          margin-bottom $gutter-primary-x-lg
+          
         img
           border-radius 8px
           border solid 1px #FFF
