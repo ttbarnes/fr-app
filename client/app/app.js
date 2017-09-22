@@ -40,13 +40,11 @@ angular.module('app', [
     Filters
   ])
 
-  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {
+  .config(($locationProvider, $urlRouterProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
-
-    plangularConfigProvider.clientId = CONST.PLANGULAR_CLIENT_ID;
 
     //fb page config
     ezfbProvider.setInitParams({

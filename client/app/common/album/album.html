@@ -62,54 +62,6 @@
       <img ng-src="{{vm.data.images.thumb}}"
            alt="Fiona Ross - {{vm.data.name}}"/>
 
-      <div class="row row-plangular" ng-show="vm.data.soundcloud.setUrl">
-
-        <div plangular="{{vm.data.soundcloud.setUrl}}" class="plangular">
-
-          <nav>
-            <div class="col-buttons">
-
-              <button ng-click="previous()"
-                      class="col-1-3rd previous">
-                <i class="icon-next"></i>
-              </button>
-
-              <button ng-click="playPause(index)"
-                      class="col-1-3rd play-pause">
-                <i ng-if="player.playing" class="icon-pause"></i>
-                <i ng-if="!player.playing" class="icon-play"></i>
-              </button>
-
-              <button ng-click="next()"
-                      class="col-1-3rd next">
-                <i class="icon-next"></i>
-              </button>
-
-            </div>
-
-            <div class="col-progress">
-              <p class="current-time align-right">
-                <span  ng-if="currentTime">{{ currentTime | hhmmss }}/{{ duration | hhmmss }}</span>
-              </p>
-              <progress class="progress"
-                        ng-click="seek($event)"
-                        ng-value="currentTime / duration || 0"></progress>
-            </div>
-          </nav>
-
-          <ul class="row">
-            <li ng-repeat="track in tracks"
-                ng-click="playPause($index)"
-                ng-class="{active: player.playing === track.src,
-                           last: $last}">
-              <h3 class="col-80">{{track.title}}</h3>
-              <p class="col-20 align-right">{{track.duration / 1000 | hhmmss }}</p>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
     </div>
 
     <div class="col-50-md col-last">

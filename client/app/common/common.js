@@ -5,7 +5,6 @@ import Hero from './hero/hero';
 import Album from './album/album';
 import SignupForm from './signupForm/signupForm';
 import StickySocial from './stickySocial/stickySocial';
-import plangular from './plangular/plangular'
 
 let commonModule = angular.module('app.common', [
   Header.name,
@@ -13,8 +12,7 @@ let commonModule = angular.module('app.common', [
   Hero.name,
   Album.name,
   SignupForm.name,
-  StickySocial.name,
-  plangular.name
+  StickySocial.name
 ]);
 
 export default commonModule;
