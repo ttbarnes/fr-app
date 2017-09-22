@@ -32,13 +32,17 @@
       padding-bottom 31.25%
 
   .home-intro-heading
-    font-size 2em
+    font-size 1.65em
     font-weight 300
     letter-spacing 6px
     color #DADADA
     margin-bottom $gutter-primary-lg
     text-align center
+    @media (min-width: 400px)
+      font-size 2em
     @media (min-width: $bp-sm)
+      font-size 1.65em
+    @media (min-width: $bp-md)
       text-align left
 
   .home-intro
@@ -46,13 +50,16 @@
     @media (min-width: $bp-sm)
       margin-bottom $gutter-primary-x-lg
     .col-img
-      padding-bottom $gutter-primary-x-lg
+      padding-bottom $gutter-primary-xx-lg
       max-width 300px
       margin 0 auto
+      @media (min-width: $bp-sm)
+        padding-right $gutter-primary-lg
       @media (min-width: $bp-md)
         margin-right 0
         margin-left 0
         padding-right $gutter-primary-x-lg
+        padding-bottom $gutter-primary-x-lg
       img
         width 100%
         max-width 450px
@@ -67,6 +74,7 @@
         width 60%
       @media (min-width: $bp-lg)
         width 65%
+        
 
     blockquote
       position relative
@@ -115,11 +123,21 @@
 
       .author
         font-size 0.65em
-        margin-left 6.5%
+        margin-left 1.8em
         line-height 2.3em
+        @media (min-width: $bp-sm)
+          margin-left 3em
 
     .last-blockquote
       margin-bottom 0
+
+  blockquote:first-child
+    @media (min-width: $bp-md)
+      margin-top 0
+    @media (min-width: 850px)
+      margin-top 1em
+    @media (min-width: 1020px)
+      margin-top 1.8em
 
   .row-social-icons-large
     margin-top $gutter-primary-xx-lg
@@ -154,6 +172,13 @@
       margin-top $gutter-primary-x-lg
     .new-heading-theme
       text-align center
+      @media (min-width $bp-sm)
+        max-width 65%
+      @media (min-width $bp-sm)
+        max-width 50%
+      @media (min-width 850px)
+        max-width 100%
+        
     .signup-form
       padding-top 0
       padding-left 0
@@ -180,8 +205,10 @@
     margin 0 auto
     position relative
     padding-bottom $gutter-primary-lg
-    margin-bottom $gutter-primary--lg
+    margin-top $gutter-primary-xx-lg
+    margin-bottom $gutter-primary-lg
     @media (min-width $bp-sm)
+      margin-top 0
       margin-bottom $gutter-primary-xx-lg
     @media (min-width $bp-md)
       padding-bottom 0
@@ -224,8 +251,11 @@
       max-width 630px
       margin 0 auto
       text-align left
-      padding-top $gutter-primary-xx-lg
-      padding-bottom $gutter-primary-xx-lg
+      padding-top $gutter-primary-x-lg
+      padding-bottom $gutter-primary-x-lg
+      @media (min-width: $bp-md)
+        padding-top $gutter-primary-xx-lg
+        padding-bottom $gutter-primary-xx-lg
       > span
         float left
         width auto
