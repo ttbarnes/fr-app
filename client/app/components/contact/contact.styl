@@ -41,7 +41,7 @@
     width 100%
     margin-bottom $gutter-primary-x-lg
     @media (min-width $bp-md)
-      width 33.333%
+      width 50%
     .inner
       float left
       width 100%
@@ -93,17 +93,16 @@
       margin-right $gutter-primary
       @media (min-width $bp-md)
         display none
-      @media (min-width $bp-md + 150px)
-        // display inline-block
 
   .cards-top
-    margin-bottom 0
     @media (min-width $bp-md)
+      float none
+      max-width 500px
+      margin 0 auto
       margin-bottom $gutter-primary-lg
     .card
       @media (min-width $bp-md)
         padding 0 $gutter-primary
-        width 25% // temp signup form in contact page
         &:first-child
           padding-left 0
         &:last-child
@@ -113,13 +112,6 @@
         padding-bottom $gutter-primary
         &:last-child
           padding-bottom 0
-
-      // temp signup form in contact page
-      a
-        @media (min-width $bp-md)
-          font-size 0.85em
-          word-wrap break-word
-
 
     // temp signup form in contact page
     .signup-form
