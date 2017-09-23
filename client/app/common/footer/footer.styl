@@ -9,29 +9,33 @@ footer
   .nav
     background-color $color-bg-primary
     color $color-text-tertiary
-    transform skew(28.3deg)
-    max-width 336px
-    width 336px
-    margin-top $section-gutter-horizontal
-    @media (min-width $bp-md)
-      float left
+    @media (min-width $bp-xs)
+      transform skew(-28.3deg)
+      max-width 336px
+      width 336px
+      margin-top $section-gutter-horizontal
+      margin-right 55px
+      float right
       width 385px
       max-width 385px
 
     .container
-      transform skew(-28.3deg) !important
-      max-width 253px
-      padding 1em
-      padding-left 2.1em
-      padding-right 0
-      padding-bottom 0.5em
-      margin-left -40px
       background-color $color-bg-primary
-      @media (min-width $bp-md)
-        max-width 279px
-        padding 2.5em
+      padding 1em 1em 2em 1em
+      @media (min-width $bp-xs)
+        transform skew(28.3deg) !important
+        max-width 253px
+        padding-left 0
         padding-right 0
-        padding-left 4.4em
+        padding-bottom 0.5em
+        margin-right: -72px;
+        margin-left 0
+        float right
+        padding-right: 40px;
+        max-width 319px
+        padding 2.5em
+        padding-left 0
+        padding-right 4.4em
 
     h4
       font-size 1.7em
