@@ -21,7 +21,8 @@
     flex-direction row
     width 100%
     max-width 450px
-    min-width 295px
+    @media (min-width:$bp-xs)
+      min-width 295px
     @media (min-width:$bp-sm)
       max-width 370px
       margin 0
