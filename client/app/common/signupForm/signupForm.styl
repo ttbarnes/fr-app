@@ -1,6 +1,6 @@
 @import '../../styles/variables'
 
-.signup-form 
+.signup-form
   padding $gutter-primary $gutter-primary-lg
   padding-top $gutter-primary-lg
   p
@@ -8,6 +8,9 @@
     color $color-text-tertiary
     color #FFF
     opacity .2
+    font-size .85em
+    letter-spacing 1px
+    font-weight 300
     @media (min-width:$bp-sm)
       text-align left
 
@@ -18,10 +21,11 @@
     flex-direction row
     width 100%
     max-width 450px
-    min-width 295px
+    @media (min-width:$bp-xs)
+      min-width 295px
     @media (min-width:$bp-sm)
       max-width 370px
-      margin 0 
+      margin 0
 
   .mchimp-form
     display flex
@@ -29,16 +33,16 @@
   input
     text-align left
     width 60%
-    border-right 0 
+    border-right 0
     &:focus
       border-color #3A3A3A
 
   input::-webkit-input-placeholder
     color $color-text-secondary
-  
+
   input:-moz-placeholder
     color $color-text-secondary
-  
+
   input::-moz-placeholder
     color $color-text-secondary
 
@@ -52,3 +56,4 @@
     color #737373
     border-left 0
     font-size 1em
+    letter-spacing 1px
