@@ -12,10 +12,14 @@
     right initial
     bottom initial
     left -89px
-    opacity .8
+    opacity .6
+    @media (min-width $bp-sm)
+      opacity .7
+    @media (min-width $bp-lg)
+      opacity .8
     @media (min-width 1060px)
       top 62px
-      left -155px
+      left -45px
 
   .main-content
     max-width 1100px
@@ -23,8 +27,14 @@
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   .intro-wrapper
+    padding 0
     @media (min-width $bp-sm)
       padding 0 $gutter-primary-lg
+    @media (min-width $bp-lg)
+      width 60.4%
+      padding 0
+      float: right;
+    
 
   .video-wrapper
     @media (min-width $bp-lg + 400px)
@@ -35,14 +45,22 @@
     font-weight 300
     letter-spacing 6px
     color #DADADA
-    margin-bottom $gutter-primary-lg
     text-align center
+    padding-bottom 1.5em
+    margin-bottom .5em
     @media (min-width: 400px)
       font-size 1.6em
     @media (min-width: $bp-xs)
       font-size 1.8em
+      padding-bottom 1em
+    @media (min-width: $bp-sm)
+      padding-bottom 0
+    @media (min-width: $bp-md)
+      padding-bottom 2em
     @media (min-width: $bp-lg)
       font-size 2em
+      text-align left
+      padding-bottom 0
 
   .home-intro
     margin-bottom 0
@@ -74,6 +92,12 @@
         max-width 780px
       @media (min-width: $bp-md)
         max-width 790px
+      @media (min-width: $bp-lg)
+        max-width 380px
+        margin 0
+        margin-left -.3em
+      @media (min-width: $bp-lg + 100)
+        max-width 100%
 
     blockquote
       position relative
@@ -84,10 +108,13 @@
       @media (min-width: $bp-sm)
         margin 1.8em 0 2.4em 0
         font-size 1.35em
+      @media (min-width: $bp-md)
+        text-align center
       @media (min-width: $bp-lg)
         font-size 1.4em
+        text-align left
       .copy
-        color #DADADA
+        color #B0B0B0
         line-height 1.72em
         text-align left
         width 76%
@@ -95,16 +122,19 @@
         @media (min-width: $bp-xs)
           font-size 1em
         @media (min-width: $bp-sm)
-          text-align center
+          text-align left
           margin-left -39px
           padding 0px 5px
           width 91%
         @media (min-width: $bp-md)
-          max-width 73%
+          max-width 75%
           text-align center
         @media (min-width: $bp-lg)
-          max-width 83%
+          text-align left
+          width 91%
+          max-width 91%
           padding 0
+          font-size .9em
       span.quote:first-child
         margin-left 0
         position relative
@@ -118,6 +148,8 @@
         @media (min-width: $bp-md)
           top 12px
           font-size 5em
+        @media (min-width: $bp-lg)
+          left -15%
 
       span.quote:last-child
         position relative
@@ -141,8 +173,13 @@
         padding-left 15%
         text-align left
         @media (min-width: $bp-sm)
-          text-align center
+          padding-left 4%
+        @media (min-width: $bp-md)
           padding-left 0
+          text-align center
+        @media (min-width: $bp-lg)
+          padding-left .8%
+          text-align left
 
     .last-blockquote
       margin-bottom 0
@@ -225,7 +262,6 @@
     margin-top $gutter-primary-xx-lg
     margin-bottom $gutter-primary-lg
     @media (min-width $bp-sm)
-      margin-top 0
       margin-bottom $gutter-primary-xx-lg
     @media (min-width $bp-md)
       padding-bottom 0
