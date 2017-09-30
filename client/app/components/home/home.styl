@@ -349,8 +349,19 @@
     &:first-child
       span.copy
         @media (min-width: $bp-md)
-          border solid 1px red
           max-width 340px
+    
+  blockquote.blockquote-long-lines
+    > span.copy
+      @media (min-width: $bp-md)
+        width 85%
+        max-width 85%
+      @media (min-width: $bp-lg)
+        width 88%
+        max-width 88%
+    span.copy + .quote
+      bottom 25%
+        
 
 .featured-video
   margin-top $gutter-primary-x-lg
