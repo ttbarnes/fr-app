@@ -1,8 +1,8 @@
 @import '../../styles/variables'
 
 .home
+  padding 0
   @media (min-width $bp-md)
-    padding 0
     padding-bottom 0
 
   &.include-bg-img .img-bg
@@ -20,6 +20,40 @@
     @media (min-width 1060px)
       top 62px
       left -45px
+
+  .intro-new-album-release
+    background #000 
+    text-align center
+    position relative
+    z-index 2
+    text-transform uppercase
+    margin-top -45px
+    padding-bottom $gutter-primary-xxx-lg
+    padding-top 90px
+    background linear-gradient(to bottom, #000000 0%,#000000 75%,rgba(0, 0, 0, 0) 100%)
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-x-lg
+      margin-top 0
+    @media (min-width $bp-lg)
+      margin-bottom $gutter-primary-x-lg
+    img
+      width 100%
+      max-width 430px
+      margin $gutter-primary-lg auto $gutter-primary-lg auto
+      @media (min-width $bp-lg)
+        margin 0 auto 15px auto
+    p
+      letter-spacing 5px
+      font-size 1.2em
+      margin-bottom 0
+      padding-right $gutter-primary
+      padding-left $gutter-primary
+      @media (min-width $bp-xxxs)
+        font-size 1.5em
+      @media (min-width $bp-xlg)
+        font-size 1.8em
+      @media (min-width $bp-lg)
+        margin-bottom $gutter-primary
 
   .main-content
     max-width 1100px
@@ -253,6 +287,8 @@
           justify-content flex-start
         input[type="email"]
           width 100%
+      .button
+        min-width 94px
 
 
   .row-album-latest
