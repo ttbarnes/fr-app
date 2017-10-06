@@ -2,6 +2,33 @@
 
 .gallery-signed-photo
 
+  .row-images
+    @media (min-width $bp-md)
+      float none
+      margin 0 auto
+      display table
+      max-width 600px
+    > div
+      max-width 450px
+      margin 0 auto
+      @media (min-width $bp-xs)
+        padding 1em
+      @media (min-width $bp-md)
+        display table-cell
+        vertical-align top
+        width 50%
+
+  img
+    width 100%
+    max-width 100%
+    margin-bottom $gutter-primary-lg
+    + img
+      width auto
+      margin-bottom $gutter-primary
+
+  .col-50
+    width 50%
+
   h3
     color $color-highlight-primary
     font-weight lighter
