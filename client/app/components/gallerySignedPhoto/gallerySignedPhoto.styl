@@ -17,14 +17,27 @@
         display table-cell
         vertical-align top
         width 50%
+    &.row-first
+      > .cell:first-child
+        @media (min-width $bp-md)
+          width 33%
+      > .cell:last-child
+        @media (min-width $bp-md)
+          width 67%
+
+    input
+      width auto
 
   img
     width 100%
-    max-width 100%
+    max-width 80%
+    margin 0 auto
     margin-bottom $gutter-primary-lg
+    @media (min-width $bp-md)
+      max-width 100%
     + img
       width auto
-      margin-bottom $gutter-primary
+      margin-bottom $gutter-primary-x-lg
 
   .col-50
     width 50%
