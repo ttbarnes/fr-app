@@ -24,6 +24,12 @@
       > .cell:last-child
         @media (min-width $bp-md)
           width 67%
+    &.row > .cell:first-child input
+      @media (min-width $bp-md)
+        float left
+    &.row > .cell:last-child input
+      @media (min-width $bp-md)
+        float right
 
     input
       width auto
