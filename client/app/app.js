@@ -11,7 +11,7 @@ import ezfb from 'angular-easyfb';
 import ngtweet from 'ngtweet';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
-import socialShare from 'angular-socialshare'
+import socialShare from 'angular-socialshare';
 import * as CONST from './constants/constants';
 import Common from './common/common';
 import Components from './components/components';
