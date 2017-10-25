@@ -1,0 +1,14 @@
+[
+  {
+    "copy": "test text 1",
+    "releaseDate": "29th Oct 2017",
+    "thumbUrl": "http://myimage.com/test.jpg",
+    "href": "google.com"
+  },
+  {
+    "copy": "test text 2",
+    "releaseDate": "30th Oct 2017",
+    "thumbUrl": "http://myimage.com/test.jpg",
+    "href": "google.com"
+  }
+]

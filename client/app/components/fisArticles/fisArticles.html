@@ -3,7 +3,12 @@
   <p>Articles published by Fiona</p>
 
   <div class="main-content">
-    
+    <ul>
+      <li ng-repeat="article in articles">
+        <p>{article.copy}</p>
+      </li>
+    </ul>
+
   </div>
 
 </section>
