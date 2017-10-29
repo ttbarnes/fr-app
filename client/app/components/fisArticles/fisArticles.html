@@ -1,14 +1,24 @@
 <section class="row fis-articles">
   <h1 class="sr-only">Fiona Ross Articles</h1>
-  <p>Articles published by Fiona</p>
 
-  <div class="main-content">
-    <ul>
-      <li ng-repeat="article in articles">
-        <p>{article.copy}</p>
+  <div class="main-content align-center">
+    <h3>Articles by Fiona</h3>
+    <ul class="grid-layout-4-4 grid-col-hover">
+      <li ng-repeat="article in vm.data"
+          ng-class="{last: $last}"
+          class="col-50-xs">
+        <div class="inner">
+          <img ng-src="./images/fis-articles/{{article.thumbUrl}}" alt="{{article.title}} by Fiona Ross" />
+          <a ng-href="{{article.href}}" target="_blank" class="hover-info">
+            <div class="hover-info-inner">
+              <p class="author">{{article.title}}</p>
+              <p>{{article.copy}}</p>
+              <p class="read-more">Read more</p>
+            </div>
+          </a>
+        </div>
       </li>
     </ul>
-
   </div>
 
 </section>

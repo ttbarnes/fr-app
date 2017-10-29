@@ -5,6 +5,7 @@ import collaboratorsService from './collaborators.service';
 import newsService from './news.service';
 import techService from './tech.service';
 import emailService from './email.service';
+import fisArticlesService from './fisArticles.service';
 
 export default angular
   .module('app.services', [])
@@ -14,5 +15,6 @@ export default angular
     collaboratorsService,
     newsService,
     techService,
-    emailService
+    emailService,
+    fisArticlesService
   })

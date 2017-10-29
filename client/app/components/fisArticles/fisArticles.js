@@ -1,6 +1,6 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import galleryComponent from './fisArticles.component';
+import fisArticlesComponent from './fisArticles.component';
 import { PAGE_TITLE_FIS_ARTICLES } from '../../constants/constants';
 
 let fisArticlesModule = angular.module('fisArticles', [

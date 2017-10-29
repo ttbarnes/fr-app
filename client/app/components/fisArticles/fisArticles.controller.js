@@ -1,12 +1,11 @@
 import fisArticlesService from '../../services/fisArticles.service';
+import collaboratorsService from '../../services/collaborators.service';
 
 class FisArticlesController {
   constructor(fisArticlesService) {
-
     'ngInject';
     this.fisArticlesService = fisArticlesService;
-    this.data = this.fisArticlesService.data;
-    
+    this.data = fisArticlesService.data;
   }
 
 }
