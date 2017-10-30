@@ -21,28 +21,16 @@
       top 62px
       left -45px
 
-  .intro-new-album-release
-    background #000 
-    text-align center
-    position relative
-    z-index 2
-    text-transform uppercase
-    margin-top -45px
-    padding-bottom $gutter-primary-xxx-lg
-    padding-top 90px
-    background linear-gradient(to bottom, #000000 0%,#000000 75%,rgba(0, 0, 0, 0) 100%)
-    @media (min-width $bp-md)
-      padding-top $gutter-primary-x-lg
-      margin-top 0
-      padding-bottom $gutter-primary-lg
-    @media (min-width $bp-lg)
-      margin-bottom 0
+    // this img and p tag styling is only required for album image intro 'coming soon'
+    // in other words, a 'coming soon' album, without a pre-order link.
+    /*
     img
       width 100%
       max-width 430px
       margin $gutter-primary-lg auto $gutter-primary-lg auto
       @media (min-width $bp-lg)
         margin 0 auto 15px auto
+
     p
       letter-spacing 5px
       font-size 1.2em
@@ -55,6 +43,7 @@
         font-size 1.8em
       @media (min-width $bp-lg)
         margin-bottom $gutter-primary
+    */
 
   .main-content
     max-width 1100px
@@ -345,6 +334,48 @@
       @media (min-width: $bp-md)
         margin-top 0
 
+
+  .row-intro-new-album-release
+    display inline-block
+    vertical-align top
+    width 100%
+    background #000 
+    text-align center
+    position relative
+    z-index 2
+    margin-top -45px
+    padding-bottom $gutter-primary-xx-lg
+    padding-top 90px
+    background linear-gradient(to bottom, #000000 0%,#000000 75%,rgba(0, 0, 0, 0) 100%)
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-x-lg
+      margin-top 0
+      padding-bottom $gutter-primary-lg
+    @media (min-width $bp-lg)
+      margin-bottom 0
+    .album
+      @media (min-width $bp-md)
+        max-width 950px
+      .col-first
+        @media (min-width $bp-md)
+          padding-top $gutter-primary-lg
+      .col-last
+        @media (min-width $bp-md)
+          padding-left $gutter-primary-lg
+          padding-top $gutter-primary-xxx-lg
+        @media (min-width $bp-lg)
+          padding-left $gutter-primary-x-lg
+        
+
+    h3
+      @media (min-width $bp-sm)
+        font-size 1.4em
+      @media (min-width $bp-md)
+        font-size 1.5em
+      @media (min-width 900px)
+        font-size 1.7em
+      @media (min-width $bp-lg)
+        font-size 1.8em
 
   .quotes-middle
     > .row
