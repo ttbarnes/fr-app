@@ -12,7 +12,7 @@ export default class albumsService {
     */
     if (this.allAlbums && this.allAlbums.length) {
       this.allAlbums.map((a) => {
-        a.quotes.map((q) => {
+        a.quotes && a.quotes.map((q) => {
           if (q.copy.length >= this.quoteTruncationCharLimit) {
             q.showReadMore = true;
           }

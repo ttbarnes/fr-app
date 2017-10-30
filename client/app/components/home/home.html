@@ -12,11 +12,21 @@
 
   <img src="./images/home/bg2.jpg" class="img-bg" alt="About Fiona Ross" />
 
-  <div class="intro-new-album-release">
+  <!-- <div class="intro-new-album-release">
     <p>New Album</p>
     <h2 class="sr-only">Black, White and a Little Bit of Grey</h2>
     <img src="./images/albums/thumb/black-white-and-a-little-big-of-grey.jpg" alt="Black, White and a Little Bit of Grey" />
     <p>November 17th 2017</p>
+  </div> -->
+
+  <div class="intro-new-album-release">
+    <album data="vm.latestAlbum" layout="1">
+      <a ui-sref="musicAlbum({id: 2})">
+        <h3>{{vm.latestAlbum.name}}</h3>
+        <p ng-if="vm.latestAlbum.comingSoon && vm.latestAlbum.releaseDate" class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
+        <p ng-if="!vm.latestAlbum.comingSoon && vm.latestAlbum.albumType === 'latest'" class="album-release-date">{{vm.latestAlbum.releaseDate}}</p>
+      </a>
+    </album>
   </div>
 
   <div class="main-content">
