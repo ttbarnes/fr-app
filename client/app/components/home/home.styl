@@ -22,6 +22,9 @@
       left -45px
 
   .intro-new-album-release
+    display inline-block
+    vertical-align top
+    width 100%
     background #000 
     text-align center
     position relative
@@ -43,6 +46,10 @@
       margin $gutter-primary-lg auto $gutter-primary-lg auto
       @media (min-width $bp-lg)
         margin 0 auto 15px auto
+
+    // this p tag styling is only required for album image intro 'coming soon'
+    // in other words, a 'coming soon' album, without a pre-order link.
+    /*
     p
       letter-spacing 5px
       font-size 1.2em
@@ -55,6 +62,7 @@
         font-size 1.8em
       @media (min-width $bp-lg)
         margin-bottom $gutter-primary
+    */
 
   .main-content
     max-width 1100px
