@@ -25,9 +25,17 @@ export default class albumsService {
     */
     this.getSingleAlbum = (id) => {
 
-      //temp album id solution for go live
+      // TODO: clean me
+      // temp album id solution for go live
       let idForJson;
-      id == 2 ? idForJson = 0 : idForJson = id;
+
+      if (id == 3) {
+        idForJson = 0;
+      } else if (id == 2) {
+        idForJson = 1;
+      } else {
+        idForJson = id
+      }
       return this.allAlbums[idForJson];
     }
 

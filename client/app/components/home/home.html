@@ -12,20 +12,11 @@
 
   <img src="./images/home/bg2.jpg" class="img-bg" alt="About Fiona Ross" />
 
-  <!-- <div class="intro-new-album-release">
-    <p>New Album</p>
-    <h2 class="sr-only">Black, White and a Little Bit of Grey</h2>
-    <img src="./images/albums/thumb/black-white-and-a-little-bit-of-grey.jpg" alt="Black, White and a Little Bit of Grey" />
-    <p>November 17th 2017</p>
-  </div> -->
-
-  <div class="intro-new-album-release">
-    <album data="vm.latestAlbum" layout="1">
-      <a ui-sref="musicAlbum({id: 2})">
-        <h3>{{vm.latestAlbum.name}}</h3>
-        <p ng-if="vm.latestAlbum.comingSoon && vm.latestAlbum.releaseDate" class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
-        <p ng-if="!vm.latestAlbum.comingSoon && vm.latestAlbum.albumType === 'latest'" class="album-release-date">{{vm.latestAlbum.releaseDate}}</p>
-      </a>
+  <!-- this needs to be an instance of album component -->
+  <div class="row-album-latest row-intro-new-album-release">
+    <album data="vm.latestAlbum" layout="4444">
+      <h3>{{vm.latestAlbum.name}}</h3>
+      <p class="album-release-date">{{vm.latestAlbum.releaseDate}}</p>
     </album>
   </div>
 
@@ -69,12 +60,12 @@
     </div>
 
     <div class="row row-album-latest">
-      <album data="vm.latestAlbum" layout="1">
+      <album data="vm.justMeAlbum" layout="1">
         <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
         <a ui-sref="musicAlbum({id: 2})">
-          <h3>{{vm.latestAlbum.name}}</h3>
-          <p ng-if="vm.latestAlbum.comingSoon && vm.latestAlbum.releaseDate" class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
-          <p ng-if="!vm.latestAlbum.comingSoon && vm.latestAlbum.albumType === 'latest'" class="album-release-date">Out now</p>
+          <h3>{{vm.justMeAlbum.name}}</h3>
+          <p ng-if="vm.justMeAlbum.comingSoon && vm.justMeAlbum.releaseDate" class="album-release-date">Release date: {{vm.justMeAlbum.releaseDate}}</p>
+          <p ng-if="!vm.justMeAlbum.comingSoon && vm.justMeAlbum.albumType === 'latest'" class="album-release-date">Out now</p>
         </a>
       </album>
     </div>

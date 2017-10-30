@@ -2,7 +2,7 @@
 
   <h1 class="sr-only">{{vm.data.name}}</h1>
 
-  <div ng-if="vm.layout === '1'" class="album-layout-1">
+  <div ng-if="vm.layout === '1' || vm.layout === '4444' " class="album-layout-1">
 
     <div class="col-50-md col-first">
 
@@ -10,10 +10,16 @@
         <ng-transclude></ng-transclude>
       </div>
 
-      <a ui-sref="musicAlbum({id: 2})">
+      <!-- layout 1/4444 temp fix for new landing page album -->
+      <a ng-if="vm.layout === '1'" ui-sref="musicAlbum({id: 2})">
         <img ng-src="{{vm.data.images.thumb}}"
             alt="Fiona Ross - {{vm.data.name}}"/>
       </a>
+
+      <img ng-if="vm.layout === '4444'"
+           ng-src="{{vm.data.images.thumb}}"
+           alt="Fiona Ross - {{vm.data.name}}"
+      />
 
     </div>
 

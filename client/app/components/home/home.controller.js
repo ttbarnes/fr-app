@@ -6,6 +6,7 @@ class HomeController {
     this.$window = $window;
     this.albumsService = albumsService;
     this.latestAlbum = albumsService.allAlbums[0];
+    this.justMeAlbum = albumsService.allAlbums[1];
   }
 
 }
