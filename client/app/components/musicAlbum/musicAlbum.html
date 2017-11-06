@@ -6,9 +6,14 @@
 
     <album data="vm.album" layout="2"></album>
 
+    <div ng-if="vm.previousAlbum" class="row">
+      <div style="min-height: 50px;">&nbsp;</div>
+      <album data="vm.previousAlbum" layout="2"></album>
+    </div>
+
     <div class="row button-view-nav">
        <a ui-sref="music" class="button">
-        <span>Music</span>
+        <span>All albums</span>
         <i class="icon-arrow-right"></i>
       </a>
     </div>

@@ -9,8 +9,8 @@ class MusicAlbumController {
 
     this.album = this.albumsService.getSingleAlbum(this.currentId);
 
-    const previousAlbum = this.albumsService.getNextOrPreviousAlbum(this.currentId);
-    console.log('album ctrl: previousAlbum: ', previousAlbum);
+    this.previousAlbum = this.albumsService.getNextOrPreviousAlbum(this.currentId);
+
     if (!this.album) {
       $state.go('error');
     }

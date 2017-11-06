@@ -8,13 +8,14 @@ export default class albumsService {
   constructor(){
     this.allAlbums = allAlbums;
     this.allAlbumsLength = this.allAlbums.length;
-    console.log('this.allAlbums : ', this.allAlbums);
-    console.log('this.allAlbumsLength : ', this.allAlbumsLength);
+
     this.firstAlbum = this.allAlbums[this.allAlbumsLength - 1];
-    console.log('this.firstAlbum : ', this.firstAlbum);
+
     this.latestAlbum = this.allAlbums[0];
     this.latestAlbumId = this.latestAlbum.id;
+
     this.albumReleasedBeforeLatestAlbum = this.allAlbums[1];
+
     this.quoteTruncationCharLimit = 800;
 
 
@@ -46,6 +47,23 @@ export default class albumsService {
       }
     }
 
+    /*
+    // get previous or next album
+    */
+    this.getNextOrPreviousAlbum = (albumId) => {
+      if (albumId === 1 ||
+          Number(albumId) === 1) {
+        return this.latestAlbum;
+      }
+
+      if (albumId === this.latestAlbumId || 
+          Number(albumId) === this.latestAlbumId) {
+        return this.albumReleasedBeforeLatestAlbum;
+      } else {
+        const previousAlbum = this.allAlbums[Number(albumId)];
+        return previousAlbum;
+      } 
+    }
 
   }
 
