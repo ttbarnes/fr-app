@@ -26,6 +26,10 @@
       </li>
     </ul>
 
+    <div ng-if="!vm.album.quotes">
+      <p>Coming soon...</p>
+    </div>
+
     <div class="row button-view-nav">
        <a ui-sref="music" class="button">
         <span>Music</span>
