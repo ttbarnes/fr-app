@@ -2,6 +2,14 @@
 
 .music-album-reviews
 
+  &.include-bg-img .img-bg
+    &.black-white-album
+      display none
+      @media (min-width: $bp-lg)
+        display block
+        right -84%
+
+
   h3
     color $color-highlight-primary
     font-weight lighter
