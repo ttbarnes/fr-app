@@ -16,6 +16,10 @@ export default class albumsService {
 
     this.albumReleasedBeforeLatestAlbum = this.allAlbums[1];
 
+    this.validStateParamIdsForAudioCds = ['3', '2'];
+    
+    this.isValidStateParamAlbumIdForAudioCd = (id) => this.validStateParamIdsForAudioCds.includes(id);
+
     this.quoteTruncationCharLimit = 800;
 
 

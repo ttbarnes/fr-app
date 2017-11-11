@@ -3,14 +3,22 @@ class musicAlbumAudioCdController {
     'ngInject';
     this.albumsService = albumsService;
     this.stateParams = $stateParams;
-    this.currentId = this.stateParams.id || 2;
+    this.currentId = this.stateParams.id;
+    
+    const isValidAudioCdAlbum = this.albumsService.isValidStateParamAlbumIdForAudioCd(this.currentId);
 
-    this.album = this.albumsService.getSingleAlbum(this.currentId);
-    if(!this.album) {
+    if (!isValidAudioCdAlbum) {
       $state.go('error');
-    }
-    if (this.album && !this.album.canOrderAudioCd) {
-      $state.go('error');
+    } else {
+
+      this.album = this.albumsService.getSingleAlbum(this.currentId);
+      if (!this.album) {
+        $state.go('error');
+      }
+      if (this.album && !this.album.canOrderAudioCd) {
+        $state.go('error');
+      }
+
     }
 
   }
