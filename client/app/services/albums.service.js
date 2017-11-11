@@ -52,21 +52,11 @@ export default class albumsService {
     }
 
     /*
-    // get previous or next album
+    // get all albums other than a given albumId
     */
-    this.getNextOrPreviousAlbum = (albumId) => {
-      if (albumId === 1 ||
-          Number(albumId) === 1) {
-        return this.latestAlbum;
-      }
-
-      if (albumId === this.latestAlbumId || 
-          Number(albumId) === this.latestAlbumId) {
-        return this.albumReleasedBeforeLatestAlbum;
-      } else {
-        const previousAlbum = this.allAlbums[Number(albumId)];
-        return previousAlbum;
-      } 
+    this.getOtherAlbums = (albumId) => {
+      const filteredAlbums = this.allAlbums.filter((a) => a.id !== Number(albumId));
+      return filteredAlbums;
     }
 
   }
