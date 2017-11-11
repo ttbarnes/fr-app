@@ -3,9 +3,14 @@ class PressController {
     'ngInject';
     this.albumsService = albumsService;
     this.stateParams = $stateParams;
-    this.latestAlbumId = 2;
 
-    this.album = this.albumsService.getSingleAlbum(this.latestAlbumId);
+    // TODO: clean press data structures/consumption
+    // currently all press is held under 'just me' album.
+    // this.latestAlbum = this.albumsService.latestAlbumId;
+    // this.allPress = [];
+    this.albumId = 2;
+
+    this.album = this.albumsService.getSingleAlbum(this.albumId);
     if(!this.album) {
       $state.go('error');
     }
