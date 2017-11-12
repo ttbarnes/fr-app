@@ -11,9 +11,10 @@
     },
     "albumType": "latest",
     "urls": {
-      "itunesPreOrder": "https://itunes.apple.com/us/album/black-white-and-a-little-bit-of-grey/id1299378578?ls=1&app=itunes"
+      "itunes": "http://test.com",
+      "google": "http://test.com",
+      "amazon": "http://test.com"
     },
-    "comingSoon": true,
     "canOrderAudioCd": true
   },
   {
