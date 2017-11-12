@@ -4,11 +4,7 @@ class MusicController {
   constructor(albumsService) {
     'ngInject';
     this.albumsService = albumsService;
-    this.albums = albumsService.allAlbums;
-    this.releasedAlbums = [];
-    if (this.albums[0].id === 3) {
-      this.releasedAlbums = [this.albums[1], this.albums[2]]
-    }
+    this.releasedAlbums = this.albumsService.getAllReleasedAlbums();
   }
 }
 

@@ -59,6 +59,11 @@ export default class albumsService {
       return filteredAlbums;
     }
 
+    /*
+    // get all released albums
+    */
+    this.getAllReleasedAlbums = () => this.allAlbums.filter((a) => !a.comingSoon);
+
   }
 
 }
