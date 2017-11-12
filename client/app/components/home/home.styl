@@ -434,11 +434,16 @@
 .featured-video
   margin-top $gutter-primary-x-lg
   @media (min-width $bp-sm)
+    margin-top $gutter-primary-xx-lg
     padding 0 $gutter-primary-lg
   @media (min-width: $bp-md)
-    margin-top $gutter-primary-xxx-lg
+    margin-top $gutter-primary-xx-lg
   h4
     text-align center
+  .video-wrapper-wrapper
+    @media (min-width: $bp-md)
+      max-width 800px
+      margin 0 auto
 
 /*
   .s-feeds
