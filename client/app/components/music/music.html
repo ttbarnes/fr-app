@@ -14,12 +14,16 @@
              <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
            </span>
 
-           <div ng-if="album.albumType === 'latest'" class="overlay overlay-hover overlay-hover-coming-soon">
+           <div ng-if="album.albumType === 'latest'"
+                class="overlay overlay-hover overlay-hover-coming-soon"
+                ng-class="{'dark-theme': album.id === 3}">
               <div class="content">
                 <p><span>Out now</span></p>
               </div>
             </div>
-            <div ng-if="album.albumType === 'latest'" class="overlay overlay-hover-content">
+            <div ng-if="album.albumType === 'latest'"
+                 class="overlay overlay-hover-content"
+                 ng-class="{'dark-theme': album.id === 3}">
               <div class="content">
                 <p><span>Out now</span></p>
               </div>
