@@ -306,13 +306,10 @@
         padding-bottom $gutter-primary-lg
 
     h3
-      width 90%
-      max-width 90%
+      width 100%
+      max-width 100%
       margin-right auto
       margin-left auto
-      @media (min-width $bp-xs)
-        width 85%
-        max-width 85%
       @media (min-width $bp-sm)
         width 100%
         max-width 100%
@@ -323,17 +320,15 @@
     p
       font-size $font-size-h2-mobile
       @media (min-width $bp-md)
+        padding-bottom 0
         margin-bottom $gutter-primary
       @media (min-width $bp-lg)
         font-size $font-size-h2-desktop
 
-    .download-links li.itunes-preorder
+    .download-links li.itunes-preorder,
+    .download-links li.itunes
       @media (min-width: $bp-sm)
-        margin-right auto
         margin-left auto
-      @media (min-width: $bp-md)
-        margin-top 0
-
 
   .row-intro-new-album-release
     display inline-block
@@ -369,7 +364,7 @@
 
     h3
       @media (min-width $bp-sm)
-        font-size 1.4em
+        font-size 1.8em
       @media (min-width $bp-md)
         font-size 1.5em
       @media (min-width 900px)
