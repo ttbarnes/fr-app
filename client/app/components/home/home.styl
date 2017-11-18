@@ -48,7 +48,6 @@
   .main-content
     max-width 1100px
     @media (min-width $bp-md)
-      // padding-top $gutter-primary-xx-lg - $gutter-primary-lg
       padding-top 0
 
   .intro-wrapper
@@ -287,22 +286,14 @@
   .row-album-latest
     margin 0 auto
     position relative
-    // padding-bottom $gutter-primary-lg
     margin-top $gutter-primary-xx-lg
-    // margin-bottom $gutter-primary-lg
     margin-bottom 0
     padding-bottom 0
-    // @media (min-width $bp-sm)
-      // margin-bottom $gutter-primary-xx-lg
     @media (min-width $bp-md)
       padding-bottom 0
 
     .album
-      padding-top 0
-
-      .col-last
-        @media (min-width $bp-md + 225px)
-          padding-top 10%
+      text-align left
 
     .copy
       @media (min-width $bp-sm)
@@ -310,30 +301,41 @@
       @media (min-width $bp-lg)
         padding-bottom $gutter-primary-lg
 
+    h2,
     h3
+      color $color-heading-primary
+      text-transform none
       width 100%
       max-width 100%
       margin-right auto
       margin-left auto
+      margin-bottom 0.4em !important
+      letter-spacing 0
+      font-size 1.3em
+      @media (min-width $bp-xxs)
+        font-size 1.4em
+      @media (min-width $bp-xs)
+        font-size 1.6em
       @media (min-width $bp-sm)
         width 100%
         max-width 100%
-        font-size 1.8em
+        font-size 1.7em
       @media (min-width $bp-md)
         margin-right 0
         margin-left 0
-    p
+        margin-bottom 0.6em !important
+      @media (min-width $bp-lg)
+        font-size 1.7em
+    
+    span.coming-soon
       font-size $font-size-h2-mobile
       @media (min-width $bp-md)
         padding-bottom 0
-        margin-bottom $gutter-primary
+        margin-bottom $gutter-primary-lg
+        font-size 1.1em
       @media (min-width $bp-lg)
         font-size $font-size-h2-desktop
-
-    .download-links li.itunes-preorder,
-    .download-links li.itunes
-      @media (min-width: $bp-sm)
-        margin-left auto
+        font-size $font-size-h2-mobile
 
   .row-intro-new-album-release
     display inline-block
@@ -344,7 +346,6 @@
     position relative
     z-index 2
     margin-top -45px
-    // padding-bottom $gutter-primary-xx-lg
     padding-top 90px
     background linear-gradient(to bottom, #000000 0%,#000000 75%,rgba(0, 0, 0, 0) 100%)
     @media (min-width $bp-md)
@@ -355,16 +356,43 @@
       margin-bottom 0
     .album
       @media (min-width $bp-md)
+        padding-right $gutter-primary-x-lg + $gutter-primary
+        padding-left $gutter-primary-x-lg + $gutter-primary
         max-width 950px
+        @media (min-width 1100px)
+          padding-right 0
+          padding-left 0
       .col-first
         @media (min-width $bp-md)
           padding-top $gutter-primary-lg
       .col-last
         @media (min-width $bp-md)
           padding-left $gutter-primary-lg
-          padding-top $gutter-primary-xx-lg
+          // padding-top $gutter-primary-x-lg + $gutter-primary
+          padding-top $gutter-primary-x-lg
         @media (min-width $bp-lg)
+          padding-top $gutter-primary-x-lg
           padding-left $gutter-primary-x-lg
+
+  .album .row.album-additional-info
+      .col-first,
+      .col-last
+        @media (min-width $bp-md)
+          padding-top 0
+      .col-last
+        margin-bottom $gutter-primary-x-lg
+
+      .album-credits
+        margin-bottom $gutter-primary-lg
+        @media (min-width $bp-md)
+          margin-bottom $gutter-primary-x-lg
+      .tracklist
+        background #161616
+        color #464646
+        margin-right 0
+        margin-left 0
+        li span
+          color $color-text-secondary
         
 
     h3

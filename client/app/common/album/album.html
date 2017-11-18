@@ -10,16 +10,9 @@
         <ng-transclude></ng-transclude>
       </div>
 
-      <!-- layout 1/4444 temp fix for new landing page album -->
-      <a ng-if="vm.layout === '1'" ui-sref="musicAlbum({id: 2})">
-        <img ng-src="{{vm.data.images.thumb}}"
-            alt="Fiona Ross - {{vm.data.name}}"/>
+      <a ui-sref="musicAlbum({id: vm.data.id})">
+        <img ng-src="{{vm.data.images.thumb}}" alt="Fiona Ross - {{vm.data.name}}" />
       </a>
-
-      <img ng-if="vm.layout === '4444'"
-           ng-src="{{vm.data.images.thumb}}"
-           alt="Fiona Ross - {{vm.data.name}}"
-      />
 
     </div>
 
@@ -65,14 +58,29 @@
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon mobile-only">Release date: {{vm.data.releaseDate}}</span>
       <span ng-if="!vm.data.comingSoon && vm.data.albumType === 'latest'" class="coming-soon mobile-only">Out now</span>
 
-      <img ng-src="{{vm.data.images.thumb}}"
-           alt="Fiona Ross - {{vm.data.name}}"/>
+      
+      <div ng-if="vm.data.albumType === 'latest'">
+        <a ui-sref="musicAlbum({id: vm.data.id})">
+          <img ng-src="{{vm.data.images.thumb}}" alt="Fiona Ross - {{vm.data.name}}" />
+        </a>
+      </div>
+      <div ng-if="!vm.data.albumType || vm.data.albumType !== 'latest'">
+        <img ng-src="{{vm.data.images.thumb}}"
+             alt="Fiona Ross - {{vm.data.name}}"/>
+      </div>
 
     </div>
 
     <div class="col-50-md col-last">
-
-      <h2 class="desktop-only">{{vm.data.name}}</h2>
+      <div ng-if="vm.data.albumType === 'latest'">
+        <a ui-sref="musicAlbum({id: vm.data.id})">
+          <h2 class="desktop-only">{{vm.data.name}}</h2>
+        </a>
+      </div>
+      <div ng-if="vm.data.albumType !== 'latest'">
+        <h2 class="desktop-only">{{vm.data.name}}</h2>
+      </div>
+      
 
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon desktop-only">Release date: {{vm.data.releaseDate}}</span>
       <span ng-if="!vm.data.comingSoon && vm.data.albumType === 'latest'" class="coming-soon desktop-only">Out now</span>
