@@ -1,17 +1,10 @@
+import allPress from '../../data/press.json';
+
 class PressController {
-  constructor($state, $stateParams, albumsService) {
+  constructor($state) {
     'ngInject';
-    this.albumsService = albumsService;
-    this.stateParams = $stateParams;
-
-    // TODO: clean press data structures/consumption
-    // currently all press is held under 'just me' album.
-    // this.latestAlbum = this.albumsService.latestAlbumId;
-    // this.allPress = [];
-    this.albumId = 2;
-
-    this.album = this.albumsService.getSingleAlbum(this.albumId);
-    if(!this.album) {
+    this.press = allPress;
+    if(!this.press) {
       $state.go('error');
     }
   }
