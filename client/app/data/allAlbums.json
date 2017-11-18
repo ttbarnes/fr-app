@@ -3,7 +3,6 @@
     "id": 3,
     "name": "Black, White and a Little Bit of Grey",
     "releaseDate": "November 17th",
-    "writtenBy": "<p>Written, arranged and produced by Fiona Ross. <br/>Piano and Vocals by Fiona Ross.</p>",
     "images": {
       "thumb": "./images/albums/thumb/black-white-and-a-little-bit-of-grey.jpg",
       "bg": "./images/albums/bg/black-white-and-a-little-bit-of-grey.png",
@@ -15,7 +14,34 @@
       "google": "https://play.google.com/store/music/album/Fiona_Ross_Black_White_and_a_Little_Bit_of_Grey?id=Bm4iwcyboijfqgm5ydfa3wev4mu",
       "amazon": "https://www.amazon.co.uk/Black-White-Little-Bit-Grey/dp/B076MQQQPX/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1510867212&sr=1-2-mp3-albums-bar-strip-0&keywords=fiona+ross"
     },
-    "canOrderAudioCd": true
+    "canOrderAudioCd": true,
+    "description": "The new album, 'Black, White and a Little Bit of Grey', explores the story of a husband, a wife, and a mistress: a web of emotions, of desires, of regrets, of ecstasy. Situations are not always as clear-cut as they may appear as allegiances shift and betrayals become serpentine—not everything is black and white. Sometimes - when the victim becomes hazy, when pain and passion become intertwined—there’s ‘a Little Bit of Grey.",
+    "albumCredits": [
+      "Written, arranged and produced by Fiona Ross",
+      "Fiona Ross (Piano and vocals)",
+      "Gibbi Bettini (guitar)",
+      "Derek Daley (bass)",
+      "Marley Drummond (drums)",
+      "Kris Buzow (saxophone)",
+      "Simon Todd (congas)",
+      "The album was recorded at Studio XYZ",
+      "Mixed at Highfield Studios",
+      "Mastered by Nick Watson at Fluid Mastering"
+    ],
+    "tracklist": [
+      "Black, White and a Little Bit of Grey",
+      "Busy... Always Busy",
+      "Touch Me, You Make Me Feel So",
+      "This Chemistry",
+      "The Poor Wife",
+      "The Sex",
+      "Mistress*",
+      "So Cold",
+      "The Evidence Suggests",
+      "That Moment",
+      "I Broke The Rules*"
+    ],
+    "tracklistNote": "live vocal take recorded in a stairwell"
   },
   {
     "id": 2,

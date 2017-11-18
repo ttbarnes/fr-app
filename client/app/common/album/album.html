@@ -130,6 +130,23 @@
 
     </div>
 
+    <!-- latest album specific  -->
+    <div ng-if="vm.data.id === 3" class="row album-additional-info">
+      <div class="col-50-md col-first">
+        <p class="description">{{vm.data.description}}</p>
+        <ul class="album-credits">
+          <li ng-repeat="c in vm.data.albumCredits">{{c}}</li>
+        </ul>
+      </div>
+      <div class="col-50-md col-last">
+        <ol class="tracklist">
+          <li ng-repeat="t in vm.data.tracklist" ng-class="{'last': $last}"><span>{{t}}</span></li>
+        </ol>
+        <p class="tracklist-note"><span class="star">*</span>{{vm.data.tracklistNote}}</p>
+      </div>
+    </div>
+
+
     <!-- latest album specific 
     <div ng-if="vm.data.id === 2" class="row">
 

@@ -23,7 +23,7 @@ section.album
 
   .col-first
     @media (min-width $bp-md)
-      padding-top $gutter-primary-xx-lg
+      padding-top $gutter-primary-x-lg
 
     img
       margin-bottom $gutter-primary-lg
@@ -33,7 +33,7 @@ section.album
 
   .col-last
     @media (min-width $bp-md)
-      padding-top $gutter-primary-xx-lg
+      padding-top $gutter-primary-x-lg
       padding-left $gutter-primary-x-lg
 
   .copy
@@ -231,3 +231,45 @@ section.album
       &:hover,
       &:focus
         border-bottom solid 1px #616161
+
+  .description
+    color $color-highlight-primary
+    line-height 28px
+
+  .album-credits
+    padding-left $gutter-primary-lg
+    li
+      padding-bottom $gutter-primary
+      list-style-type square
+
+  .tracklist
+    background #080808
+    color $color-text-secondary
+    padding $gutter-primary-lg
+    margin 0 -1.1712em
+    margin-bottom $gutter-primary
+    padding-left $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      padding-left $gutter-primary-x-lg
+    li
+      list-style-type decimal
+      padding-bottom $gutter-primary
+      &.last
+        padding-bottom 0
+      span
+        color $color-highlight-primary
+
+  .tracklist-note
+    margin-bottom 0
+    .star
+      color $color-highlight-primary
+
+  .album-additional-info
+    margin-bottom 0
+    > div
+      padding-top 0
+      &.col-first
+        padding-bottom $gutter-primary-lg
+        @media (min-width $bp-md)
+          padding-bottom 0
+
