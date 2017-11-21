@@ -1,5 +1,19 @@
 [
   {
+    "copy": "What a stunning opener! It puts you in the right mood for an album that keeps...",
+    "author": "Music Talks",
+    "href": "https://www.musictalks.xyz/single-post/2017/11/20/Fiona-Ross",
+    "thumbUrl": "musictalks.jpg",
+    "albumId": 3
+  },
+  {
+    "copy": "INTERVIEW: Fiona Ross (new album Black, White and a Little Bit of Grey now released...",
+    "author": "LondonJazz",
+    "href": "http://www.londonjazznews.com/2017/11/interview-fiona-ross-new-album-black.html",
+    "thumbUrl": "londonjazznews2.jpg",
+    "albumId": 3
+  },
+  {
     "copy": "Fiona Ross has long been establishing her own style. I saw her perform live at...",
     "author": "Something Else Reviews",
     "href": "http://somethingelsereviews.com/2017/11/19/fiona-ross-black-white-and-a-little-bit-of-grey",
@@ -59,7 +73,7 @@
   },
   {
     "copy": "FEATURE/INTERVIEW Fiona Ross (New album Just Me And Sometimes Someone Else)",
-    "author": "London Jazz News",
+    "author": "London Jazz",
     "href": "http://www.londonjazznews.com/2017/07/feature-interview-fiona-ross-new-album.html",
     "thumbUrl": "londonjazznews.jpg"
   },
