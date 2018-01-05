@@ -1,0 +1,24 @@
+@import '../../styles/variables'
+
+.sticky-social
+  display block
+  position relative
+  top 70px
+  left 0
+  z-index 3
+  text-align center
+  @media (min-width $bp-sm)
+    position fixed
+    top 100px
+  @media (min-width $bp-md)
+    top 155px
+  li
+    display inline-block
+    margin-bottom $gutter-primary-lg - $gutter-primary-xs
+    i.icon-ssp
+      margin-right 0 !important
+    @media (min-width $bp-sm)
+      display block
+    a
+      opacity .5
+      padding-left 10px

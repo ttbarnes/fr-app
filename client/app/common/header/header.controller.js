@@ -19,6 +19,9 @@ class HeaderController {
       stateObj.active == true ? this.stateIsMusicAlbum = true : this.stateIsMusicAlbum = false;
     });
 
+    $rootScope.$on('stateNews', (e, stateObj) => {
+      stateObj.active == true ? this.stateIsNews = true : this.stateIsNews = false;
+    });
 
   }
 }

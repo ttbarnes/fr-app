@@ -44,18 +44,18 @@ describe('Collaborators', () => {
   });
 
   describe('Component', () => {
-      let component = CollaboratorsComponent;
+    let component = CollaboratorsComponent;
 
-      it('includes the intended template',() => {
-        expect(component.template).toEqual(CollaboratorsTemplate);
-      });
+    it('includes the intended template',() => {
+      expect(component.template).toEqual(CollaboratorsTemplate);
+    });
 
-      it('uses `controllerAs` syntax', () => {
-        expect(component.controllerAs).toBeDefined();
-      });
+    it('uses `controllerAs` syntax', () => {
+      expect(component.controllerAs).toBeDefined();
+    });
 
-      it('invokes the right controller', () => {
-        expect(component.controller).toEqual(CollaboratorsController);
-      });
+    it('invokes the right controller', () => {
+      expect(component.controller).toEqual(CollaboratorsController);
+    });
   });
 });

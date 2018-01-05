@@ -6,9 +6,6 @@ class MusicAlbumReviewsController {
     this.currentId = this.stateParams.id || 2;
 
     this.album = this.albumsService.getSingleAlbum(this.currentId);
-    if(!this.album) {
-      $state.go('error');
-    }
 
   }
 }

@@ -10,13 +10,20 @@
 
     p
       span.quote,
-      span.highlight
+      span.highlight,
+      i.highlight
         color $color-highlight-primary
+
+      span.highlight-2
+      i.highlight-2
+        color #939393
 
       span.quote
         font-style italic
 
     blockquote
+      @media (min-width $bp-lg)
+        font-size 1.3em
       &.extra-margin-bottom
         margin 0 auto $gutter-primary-lg auto
       &.first

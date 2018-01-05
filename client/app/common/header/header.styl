@@ -6,15 +6,25 @@ fr-header
   top 0
   z-index 20
   background $nav-bg
-  border-bottom solid 2px $color-bg-primary
+  border-bottom solid 3px $color-bg-primary
   box-shadow 0 5px 12px $color-bg-primary
-  @media (min-width: 910px)
+  @media (min-width: 1060px)
     width 110% !important
     margin 0 -5% !important
     transform skew(28.3deg)
 
   .nav-items
     background none
+    &.nav-items-large
+      a
+        font-size 1.1em
+
+    a
+      color #717171
+      &:hover,
+      &:focus,
+      &.active
+        color #DADADA
 
   .icon-nav
     float left
@@ -33,7 +43,7 @@ fr-header
       padding-bottom 0.52em
       padding-top 0
 
-    @media (min-width: 910px)
+    @media (min-width: 1060px)
       display none
 
   nav

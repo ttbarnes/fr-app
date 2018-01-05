@@ -1,0 +1,38 @@
+@import '../../styles/variables'
+
+.music-album-audio-cd
+
+  &.include-bg-img .img-bg
+    &.black-white-album
+      display none
+      @media (min-width: $bp-lg)
+        display block
+        right -84%
+
+
+  h3
+    color $color-highlight-primary
+    font-weight lighter
+    margin-bottom $gutter-primary-xs
+  
+    + p
+      display block
+      padding-bottom $gutter-primary-lg
+      margin-bottom $gutter-primary-x-lg
+      font-size 1.3em
+
+  .main-content
+    margin 0 auto
+    color $color-highlight-secondary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  input
+    border 0 none
+    background none
+    padding 0
+
+  img.album-preview
+    @media (min-width 500px)
+      max-width 450px
+    

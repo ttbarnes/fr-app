@@ -1,0 +1,207 @@
+@import '../../styles/variables'
+
+.news-home
+  .main-content
+    max-width $section-max-width
+    margin 0 auto
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg
+
+  ul
+    margin-bottom $gutter-primary-lg
+
+  li
+    clear both
+    display inline-block
+    width 100%
+    margin-bottom $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary-xx-lg
+      padding-bottom $gutter-primary-x-lg
+    border-bottom solid 1px $color-bg-secondary
+    &.last
+      padding-bottom 0
+      margin-bottom 0
+      border-bottom 0 none
+
+    .date
+      display block
+      opacity 0.5
+      margin 0 0 $gutter-primary-lg 0
+      line-height 1.7em
+
+    .img-wrap
+      margin-bottom $gutter-primary-lg
+      margin-right $gutter-primary-lg
+      @media (min-width $bp-md)
+        // max-height 300px
+        max-width 100%
+        float left
+        overflow hidden
+      + div
+        clear both
+
+    ul.quotes
+      li
+        padding-bottom $gutter-primary-lg
+        color $color-highlight-primary
+
+    .news-quote-author
+      color $color-text-primary
+      opacity 0.5
+
+    img
+      width 100%
+      opacity .8
+      &.img-max-width-400
+        max-width 400px
+
+      &.img-max-width-600
+        display block
+        max-width 600px
+
+      &.img-max-width-700
+        display block
+        max-width 700px
+
+    .img-col-2
+      clear both
+      img
+        margin-bottom $gutter-primary-x-lg
+        @media (min-width $bp-md)
+          float left
+          width 50%
+          margin-bottom 0
+
+        &:first-child
+          @media (min-width $bp-md)
+            padding-right $gutter-primary-lg
+        &:last-child
+          @media (min-width $bp-md)
+            padding-left $gutter-primary-lg
+
+    .video-wrapper
+      @media (min-width $bp-md)
+        margin-right 0
+        margin-left 0
+
+    .button
+      width auto
+      display inline-block
+      margin-bottom $gutter-primary
+
+    .venue-link
+      border-bottom 0 none
+
+    .body-content
+      color $color-text-primary
+      p
+        margin-bottom $gutter-primary-lg
+        @media (min-width $bp-md)
+          display block
+        &.cancel-padding
+          padding 0
+
+      a
+        color $color-highlight-primary
+        word-break break-word
+
+    .body-content-footer
+      clear both
+
+    .video-with-gallery-row,
+    .post-video
+      margin 0
+
+    .post-gallery-image
+      float left
+      clear none
+      width 50%
+      padding 0 $gutter-primary-lg $gutter-primary-lg
+      transition all 0.2s ease
+      opacity 0.9
+      &:hover,
+      &:focus
+        opacity 1
+      &:nth-child(odd)
+        clear both
+        padding-left 0
+        @media (min-width $bp-xs)
+          clear none
+      &:nth-child(even)
+        padding-right 0
+      @media (min-width $bp-xs)
+        max-width 33%
+        padding 0 $gutter-primary-lg $gutter-primary-lg 0 !important
+      @media (min-width $bp-md)
+        max-width 150px
+      a
+        display block
+        cursor pointer
+        max-height 83px
+        width 100%
+        padding 0
+        overflow hidden
+      img
+        width 100%
+
+    .social-share
+      width 100%
+      // background rgba(18,18,18,0.70)
+      // @media (min-width $bp-md)
+        // z-index 2
+        // position absolute
+        // bottom 0
+        // left 0
+        // text-align right
+      ul,
+      p
+        @media (min-width $bp-md)
+          display inline-block
+
+      ul > li
+        padding 0
+      li,
+      p
+        margin-bottom 0
+
+      li
+        display inline-block
+        border 0 none
+        width auto
+        a
+          padding $gutter-primary
+          opacity .5
+          transition all .3s ease
+          cursor pointer
+          color $color-highlight-primary
+          &:hover,
+          &:focus
+            opacity 1
+            outline 0 none
+        &.first a
+          padding-left 0
+      p
+        padding $gutter-primary
+        padding-left 0
+        margin-top 4px
+
+    .copy
+      width 100%
+      padding $gutter-primary
+      padding-bottom $gutter-primary-lg
+      @media (min-width $bp-md)
+        position absolute
+        z-index 2
+        bottom 0
+        left 0
+        right 0
+
+    h2
+      font-weight 300
+      color $color-highlight-primary
+      margin-bottom 0
+      letter-spacing 1px
+
+    p
+      margin-bottom 0

@@ -5,12 +5,16 @@
 
   <div class="main-content">
 
+    <p class="intro-signed-photo"><a ui-sref="gallerySignedPhoto">Get a signed photo from Fi</a></p>
+
+    <br />
+
     <ul class="grid-layout-4-4 gallery-list grid-col-hover">
 
       <li ng-repeat="img in vm.images" class="col-50-xs col-25-md">
 
         <a ng-click="vm.openLightboxModal($index)">
-          <img ng-src="./images/gallery/{{img.thumbUrl}}" alt="Fiona Ross" />
+          <img ng-src="./images/{{img.thumbUrl}}" alt="Fiona Ross" />
         </a>
 
       </li>

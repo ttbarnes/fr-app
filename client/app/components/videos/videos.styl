@@ -1,0 +1,32 @@
+@import '../../styles/variables'
+
+.videos-page
+  text-align center
+  h3,
+  h4
+    font-weight lighter
+  h3
+    color $color-highlight-primary
+    padding-bottom $gutter-primary-lg
+    margin-bottom $gutter-primary-lg
+
+  h4
+    margin-bottom $gutter-primary-x-lg
+
+  h3,
+  h4
+    &.new-heading-theme
+      text-align center
+
+  li
+    margin-bottom $gutter-primary-x-lg
+    @media (min-width $bp-sm)
+      margin-bottom $gutter-primary-xx-lg
+    @media (min-width $bp-lg)
+      margin-bottom $gutter-primary-xxx-lg
+
+
+  .main-content
+    color $color-highlight-secondary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg

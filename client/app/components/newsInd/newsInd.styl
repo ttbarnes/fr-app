@@ -1,0 +1,50 @@
+@import '../../styles/variables'
+
+.news-ind
+  .main-content
+    max-width $section-max-width
+    margin 0 auto
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg
+
+  h1
+    font-weight 300
+    color $color-highlight-primary
+    margin-bottom 0
+    font-size $font-size-h1-mobile !important
+    @media (min-width $bp-md)
+      font-size $font-size-h1-desktop !important
+
+  .date
+    display block
+    margin-bottom $gutter-primary-x-lg
+    opacity 0.5
+
+  img
+    margin-bottom $gutter-primary-x-lg
+
+  .body-content
+    @media (min-width $bp-md)
+      font-size 1.1em
+
+  .btn-temp
+    padding $gutter-primary
+    background $color-bg-primary
+
+  .page-sub-title
+    font-weight 300
+    padding-bottom $gutter-primary-lg
+
+  .social-share
+    li
+      float left
+      margin-right $gutter-primary-lg
+      text-align center
+      .last
+        margin-right 0
+      a
+        display block
+      span
+        display block
+      i
+        margin-bottom $gutter-primary

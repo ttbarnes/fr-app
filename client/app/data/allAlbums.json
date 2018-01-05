@@ -1,5 +1,49 @@
 [
   {
+    "id": 3,
+    "name": "Black, White and a Little Bit of Grey",
+    "releaseDate": "November 17th",
+    "images": {
+      "thumb": "./images/albums/thumb/black-white-and-a-little-bit-of-grey.jpg",
+      "bg": "./images/albums/bg/black-white-and-a-little-bit-of-grey.png",
+      "appCover": "./images/albums/black-white-and-a-little-bit-of-grey-cover.png"
+    },
+    "albumType": "latest",
+    "urls": {
+      "itunes": "https://itunes.apple.com/us/album/black-white-and-a-little-bit-of-grey/id1299378578?ls=1&app=itunes",
+      "google": "https://play.google.com/store/music/album/Fiona_Ross_Black_White_and_a_Little_Bit_of_Grey?id=Bm4iwcyboijfqgm5ydfa3wev4mu",
+      "amazon": "https://www.amazon.co.uk/Black-White-Little-Bit-Grey/dp/B076MQQQPX/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1510867212&sr=1-2-mp3-albums-bar-strip-0&keywords=fiona+ross"
+    },
+    "canOrderAudioCd": true,
+    "description": "The new album, 'Black, White and a Little Bit of Grey', explores the story of a husband, a wife, and a mistress: a web of emotions, of desires, of regrets, of ecstasy. Situations are not always as clear-cut as they may appear as allegiances shift and betrayals become serpentine - not everything is black and white. Sometimes - when the victim becomes hazy, when pain and passion become intertwined — there’s ‘a Little Bit of Grey.",
+    "albumCredits": [
+      "Written, arranged and produced by Fiona Ross",
+      "Fiona Ross (Piano and vocals)",
+      "Gibbi Bettini (guitar)",
+      "Derek Daley (bass)",
+      "Marley Drummond (drums)",
+      "Kris Buzow (saxophone)",
+      "Simon Todd (congas)",
+      "The album was recorded at Studio XYZ",
+      "Mixed at Highfield Studios",
+      "Mastered by Nick Watson at Fluid Mastering"
+    ],
+    "tracklist": [
+      "Black, White and a Little Bit of Grey",
+      "Busy... Always Busy",
+      "Touch Me, You Make Me Feel So",
+      "This Chemistry",
+      "The Poor Wife",
+      "The Sex",
+      "Mistress*",
+      "So Cold",
+      "The Evidence Suggests",
+      "That Moment",
+      "I Broke The Rules*"
+    ],
+    "tracklistNote": "live vocal take recorded in a stairwell"
+  },
+  {
     "id": 2,
     "name": "Just Me (and sometimes someone else)",
     "releaseDate": "April 7th",
@@ -9,19 +53,38 @@
       "bg": "./images/albums/bg/just-me.png",
       "appCover": "./images/albums/just-me-app-cover.png"
     },
-    "comingSoon": true,
     "quotes": [
       {
-        "copy": "This double album by Fiona Ross is an absolute joy to immerse oneself in. Her voice is beautifully clear and her tone vibrant. There is an absorbing honesty to her delivery and her timing and tuning are impeccable. All this forms the perfect conduit by which to deliver these intensely personal and quirky songs of love, loss and yearning. There is an incisive honesty and humanity in the detail that takes each song’s message straight to your heart. I loved the contrast in production style between the sparsely produced ‘Side 1’ and the full band performances of Side 2.",
-        "author": "Ola Onabule",
-        "href": "ola-onabule"
+        "copy": "<p>London jazz vocalist Fiona Ross, is at last putting herself in the limelight. As head of the British Academy of New Music for nine years she helped train the likes of Ed Sheeran, Rita Ora and Jess Glynne for stardom and now it's her turn to come out of the shadows.</p><p><b>‘Just me (and sometimes someone else)'</b> comes as a double album featuring stories of love and loss, self reflection and one senses a coming of age of sorts. Side 1 is stripped back, raw intimate and warm, while Side 2 is a full band set that showcases the vibrant energy Fiona brings to her charged vocal performances.</p><p>It's a confident display of many facets of the same artist, the honesty of songs such as Fix me and <b>I Don't Want To Love You</b> countered by more fragile deliveries such as <b>You Made Me Question Me</b>. This acoustic, intimate setting, allows space for Ross' voice to shine through, displaying her technical mastery and prowess.  She's able to navigate effortlessly through many varying tonal qualities, all of which add depth and intensity to the meaty emotional content of her material.</p><p>27 Reasons is the track that links the two sets with the full band adding a vibrancy to the solo version, the band's energetic performance driving Ross' powerful vocal. It's a perfect precursor for the second part of the album featuring her band – Gibbi Bettini (gtr), Kris Buzow (sax), Marley Drummond (drums) and Nate Williams (bass).  You get the sense here that a long bubbling frustration is finally being released – the energy of the band, coupled with her vocals is positively explosive.</p><p>From full-blown Latin Jazz to stripped-back acoustic tracks, <b>‘Just Me (and Sometimes Someone Else)'</b> is a candid, intimate view into Fiona's heart and soul, and an exclusive insight into her creative process. It's a bold statement from a bold woman who's ready to set the world on the fire.</p>",
+        "author": "Nigel J, Jazz In Europe",
+        "href": "jazzInEurope"
+      },
+      {
+        "copy": "<p>London jazzer Fiona Ross knows a bit about getting it right - as head of the British Academy of New Music for nine years she helped prepare the likes of Ed Sheeran, Rita Ora and Jess Glynne for glory. Now she's ready to put all her expertise on the line to see where her own musical journey takes her.</p><p>Having released her debut last year, A Twist of Blue, this sophomore set comes as a double package - Side 1 is stripped back, bare bones, intimate and spacious, while Side 2 is a full band set that has the chutzpah to end in a studio jam.</p><p>In lesser hands this could look, sound and feel like indecision, but such doubts disappear on playing the record - it's a confident assertion of many facets of the same artist, the searing honesty of songs such as <b>The Mating Game</b> and <b>I Don't Want To Love You</b> countered by more fragile insights such as <b>I'm Lost</b> and <b>You Made Me Question Me</b>.</p><p>The first disc with its sparser musical settings allows more space for Ross' voice to shine and as she takes the twists and turns through songs like <b>Save Me</b> and <b>Over You</b> it's clear she's taking full advantage and has got the chops to make the most of it. <b>27 Reasons</b> is the track that links the two sets with the full band setting extending the emotional foundation of the solo version, the band's gusty performance driving Ross' powerful vocal. It's the ideal set up for the second set has her band - Gibbi Bettini (gtr), Kris Buzow (sax), Marley Drummond (drums) and Nate Williams (bass), who also mixed the album, lay down the lore and keep Ms Ross on her vocal toes.</p><p>It's a bold album that amply rewards repeated listens.</p>",
+        "author": "Nick Churchill",
+        "href": "fatea"
+      },
+      {
+        "copy": "<p>FIONA ROSS is a musical all-rounder. She could play piano when she was just 6 and two years later she was on the West End stage (in 'Annie'). By 14 Fiona was singing in London clubs (a fib here and there got her in) and she eventually ended up as Head of the British Academy of New Music where she tutored (amongst others) Ed Sheeran, Rita Ora and Jess Glynne! En route she worked as a session musician, choreographer, composer, dancer, actor and model... oh, and she released one album.... <b>'A Twist Of Blue'</b></p>.<p>Fiona's now set to follow that one up with a new long player.... 'Just Me (And Sometimes Someone Else)' – a double album that features 20 self-penned tracks that cross all kinds of genres. There are tales of love and loss, plenty of introspection, thankfully upbeat moments too and lashings of musical creativity.</p><p>The soundscape is as varied as the themes. 'Let Me Go', for instance, channels a jazz flavour while <b>'27 Reasons'</b> offers first, indie pop and then Latin rhythms. Let's explain that duality. The first CD in the set is Ms Ross sometimes solo and sometimes with a small band; the second CD sees her accompanied by a bigger band. So that aforementioned <b>'27 Reasons'</b> first time out is a small combo affair while on CD 2, it gets the full (Latin) band treatment. That's the only song that comes in two versions by the way; for all the rest, you get just the one shot. Right now we're loving the gentle but building ballad <b>'Reach Me'</b> which showcases the purity of Fiona's vocal.</p>",
+        "author": "Soul and Jazz and Funk"
       },
       {
         "copy": "<p>The newest album by Fiona Ross, <b>Just Me (and sometimes someone else)</b> is a candid journey into the singer's raw heart, her soul, and, indeed, her unique creative genius.  The span of the double album allows Ross to cover a lot of sonic territory.  The first disc is pared down, mainly the <b>‘Just Me’</b> of the title, and Ross’s voice is assured, powerful,  and exudes a presence that is impossible to ignore.  That voice is an exquisite instrument, intoxicating, and perfectly matched by her driving, dazzling piano.  There is accompaniment on the first disc, but it’s minimal, just spare flashes of guitar (Gibbi Bettini), strains of subdued sax (Kris Buzow), perhaps, some judicious percussion (Marley Drummond) and bass (Nathan Williams, who also mixed the album), all hinting at the artistry to come: the second album explodes into full band, a excellent machine of virtuosic jazz musicianship.</p><p>Ross has crafted songs of an astonishing spectrum - some that sound like they must be standards already.  <b>‘You Listen But You Don’t Hear’</b> is a song out of time, an eternal song; with a loping melody that feels effortless, Ross’s voice pleads, becomes plaintive, almost breaks, then soars anew.  The song has the gentle beauty of a showstopper from a Broadway musical.  <b>‘The Mating Game’</b>, from disc 2, is a sexy, alluring tango, taking its time, slinking in like a panther, mischievous and enticing, then the chorus takes the listener into the realm of samba, Ross’s voice going from sinuous to vulnerable.  The song gathers and heightens, highlighting the brilliant thrusts and parries of guitar, sax, piano, drums - the musicians raising each other to the pinnacle of their talents in a tsunami of true jazz.  <b>‘Save Me’</b>, with its syncopated percussion, is a song that one could swear is a classic from the 60s or 70s: a tugging melody that brings us up and carries us along and as the tempo climbs towards a chorus, Ross’s voice climaxes in a scale-shattering display of vocal pyrotechnics.  <b>‘My Dignity’</b> captures the essence of a Stan Getz groove - the feel, the sway, and the seductive vocals - that builds in the verse to the chorus where the mix of the backing vocals and Ross’s lead is a pas de deux of exhilaration.  <b>‘Too Many Thoughts’</b> also feels like a newly-discovered show tune by a jazz vocalist legend (which, actually, it is), a driving torch song, a smoky-bar standard of love done wrong to a woman too strong to take it meekly.  <b>‘Reflection’</b>, also, is a song that has the gravitas of legacy, reaching yet another point in the melodic topography: it feels like an anthem from the 1960s, an invitation, a spirited call to action from an era of optimism and possibility. On <b>‘You Made Me Question Me’</b> the strumming guitar feels almost like lament from the Southwest, a brilliant duet between guitar and voice, but then with the addition of an electric guitar it becomes an elegy of regret, with a punished durability of polished leather.</p><p>There are also ballads, luxuriant and assured, like <b>‘I’m Lost’</b>, from the first disc, with minimal piano serving as punctuation for Ross’s luminous voice: as the lyrics build in loneliness and despair, Ross’s voice builds into a passion that is so naked it seems like a violation even listening to it.  ‘Let Me Go’, like ‘I’m Lost’, is a superlative arena for Ross’s vocals as she captures the entrapment of love, of the passion of obsession, and the relentlessness of each.  But despite the pain of relationships gone wrong, the exuberance of Ross’s voice and the compelling production keep the songs oddly invigorating.  You should be sad but you’re somehow elated: it’s like playing hide and seek with heartache.  This happens as well with <b>‘Fix Me’</b>, where Ross is matched, at first solely, by Bettini’s guitar, darkly lilting, an insistent challenge to repair the damage that has been wrought.  But a naïve piano melody breaks through the panic and desperation, as gentle and affirming as a butterfly after a storm.  As is the case with all the songs here, even the darkest night, the bleakest moments are brightened by the sparkle and irrepressible electricity of Ross’s voice.</p><p>Ross has also written songs that defy easy categorization, not-quite-ballads with poised tempo that pulsate with bristling intensity.  <b>'I Don’t Want To Love You’</b> is a simple song, of love, of reluctance, that seems forlorn, but sails heavenward at the chorus only to resolve in a haunting plea, for succor, for sanity, with ‘Is this real?’, and the music follows, becoming vitally urgent, darker, and the guitar enters, a harbinger, a warning.  Likewise <b>‘Reach Me’</b> provides an unhurried chance to spend time with Ross’s piano and her  voice, unadorned, uncluttered, lambent and purring, a balm, a beacon in a dark night. It is a song of resistant sadness, unhurried as her voice - a brush in the hands of a master landscape painter - which climbs, becomes something far less melancholy: it accuses; it bites.  And it’s thrilling.  <b>‘Over You’</b> is the song that concludes the journey of the first disc. Therapy - the original title of the album - is right.  We’ve been given a window into the most private facets of Ross’s heart, and that includes her healing, and the scars, but we’ve come out the other side.  We’ve had the anguish, the regret, the anger, the ridiculousness of falling in love, and the difficulty of staying in love.  But it’s time to move on - it’s time to burst forth in the second disc.</p><p><b>‘I Don’t Want To Play’</b> is lead by a propulsive guitar, moving into something much more musically complex.  It feels powered by its own fission: animated, perhaps deceptively sanguine, because always, with Ross, appearances are never the complete story.  What may seem straightforward jazz, infectious and lively, becomes, in the chorus, something more complicated; not only does the time signature get more tenuous, but the nuances in the voice hint at something more searching, more assailable.  The production builds with intricacy and precision, and the interplay of vocals, backing vocals, and sax leave the listener’s heart pounding. <b>‘You Didn’t Want Me’</b>, with its staccato piano, guitar, with a tickle of sax, grabs hold with a purpose.  It feels urban, like the urban of 1950s new York, as Ross, her voice strong and clear, sings, ‘You turned me into something so weak’ - surely this is poetic license as there is no possibility that that voice could ever indicate weakness.  And again the dance of the backing vocals and Ross’s lead is thrilling, and fronts the seamless onslaught of sax, piano, drums, and guitars that feels like an alchemy of adrenaline and sunshine - a masterwork.  <b>‘You’re A Fool’</b> feels like a seduction, the strum of a soft jazz guitar, the brush on cymbal, the sweeping, gentle rock-a-bye of languorous jazz.  The song builds with humor and delicacy, culminating is a sparkling layering of backing vocals and a strong playful melody that leaves a joyful hangover.</p><p>Ross has utilized the format of the double album to give us an insight into the machinations of creativity.  The opening song highlights the brilliance of the album’s conception, a rousing version of <b>‘27 Reasons’</b>, Ross’s incandescent voice energizes and, basically, just makes you happy to be alive, belying the lyrics, which playfully strategize the battle between rationality - why the relationship should be ended - and the irrationality of the heart, exemplified by the very fact that the reasons must be listed and the argument outlined.  Disc two also opens with <b>‘27 Reasons’</b> - and here is the genius of the album - this time with full band, and we see the colors and possibilities, the myriad permutations of music.  Whereas disc one’s version of <b>‘27 Reasons’</b> feels intimate, like two friends getting together to chase away the blues, the version on disc two announces the force of what is to come, ravishes the listener with the power and mastery of full octane jazz.  By redoing the first song we get the transcendence of coming together - we get the band - we get an aural representation of getting over the heartbreak, a blooming, a sense of and a rejoining of the outside world.  The accompaniment, from both band and backing vocals, open the song up, turn it from a self-excoriation, a lamentation, into a celebration of the ending something that wasn’t about to do anyone any good anyway.  Heartbreak and misery never sounded so good.</p><p>Ross’s voice is pure, a voice like oxygen, that energizes the listener, clear and enveloping; it takes flight, bright and glistening, as she sings about heartbreak, about pain, about relationships gone wrong, but instead of being a weight around our soul and dragging us into the morass, Ross fills us with light - she lifts us up, and despite the hopelessness and loss of tarnished love, makes our hearts rocket, and leaves us smiling.</p>",
         "author": "Garth Twa",
         "href": "garth-twa"
+      },
+      {
+        "copy": "This double album by Fiona Ross is an absolute joy to immerse oneself in. Her voice is beautifully clear and her tone vibrant. There is an absorbing honesty to her delivery and her timing and tuning are impeccable. All this forms the perfect conduit by which to deliver these intensely personal and quirky songs of love, loss and yearning. There is an incisive honesty and humanity in the detail that takes each song’s message straight to your heart. I loved the contrast in production style between the sparsely produced ‘Side 1’ and the full band performances of Side 2.",
+        "author": "Ola Onabule",
+        "href": "ola-onabule"
       }
-    ]
+    ],
+    "urls": {
+      "itunes": "https://itunes.apple.com/us/album/just-me-and-sometimes-someone-else/id1216328709?ls=1&app=itunes",
+      "google": "https://play.google.com/store/music/album/Fiona_Ross_Just_Me_And_Sometimes_Someone_Else?id=Bchqrcgk27cbmjuhsyalbnhszkm",
+      "amazon": "https://www.amazon.co.uk/Just-Me-Sometimes-Someone-Else/dp/B06XPV8YJS/ref=sr_1_1?s=music&ie=UTF8&qid=1497417598&sr=8-1"
+    },
+    "canOrderAudioCd": true
   },
   {
     "id": 1,
@@ -38,7 +101,7 @@
       "amazon": "https://www.amazon.co.uk/dp/B01M6A1BFR"
     },
     "soundcloud": {
-      "setUrl": "http://soundcloud.com/fiona-ross/sets/selection-1"
+      "setUrl": "https://soundcloud.com/fiona-ross/sets/a-twist-of-blue"
     },
     "quotes": [
       {

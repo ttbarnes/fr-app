@@ -1,0 +1,35 @@
+<section class="row press include-bg-img">
+
+  <h1 class="sr-only">Fiona Ross Jazz Press</h1>
+
+  <div class="main-content align-center">
+
+    <h3>Press</h3>
+
+    <ul class="grid-layout-4-4 grid-col-hover">
+      <li ng-repeat="pressRelease in vm.press"
+          ng-class="{last: $last}"
+          class="col-50-xs">
+          <div class="inner">
+            <img ng-src="./images/press/{{pressRelease.thumbUrl}}" alt="{{pressRelease.author}} press release" />
+            <a ng-href="{{pressRelease.href}}" target="_blank" class="hover-info">
+              <div class="hover-info-inner">
+                <p class="author">{{pressRelease.author}}</p>
+                <p>{{pressRelease.copy}}</p>
+                <p class="read-more">Read more</p>
+              </div>
+            </a>
+          </div>
+      </li>
+    </ul>
+
+    <div class="row button-view-nav">
+       <a ui-sref="news" class="button">
+        <span>News</span>
+        <i class="icon-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+</section>

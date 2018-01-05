@@ -11,6 +11,7 @@ import ezfb from 'angular-easyfb';
 import ngtweet from 'ngtweet';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
+import socialShare from 'angular-socialshare';
 import * as CONST from './constants/constants';
 import Common from './common/common';
 import Components from './components/components';
@@ -32,21 +33,18 @@ angular.module('app', [
     'ngtweet',
     'angulartics',
     'angulartics.google.analytics',
+    '720kb.socialshare',
     Common.name,
     Components.name,
     Services.name,
     Filters
   ])
 
-  .config(($locationProvider, $urlRouterProvider, $qProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {
+  .config(($locationProvider, $urlRouterProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
-
-    $qProvider.errorOnUnhandledRejections(false); //prevents state change issue. see https://github.com/angular-ui/ui-router/issues/42#issuecomment-269367965
-
-    plangularConfigProvider.clientId = CONST.PLANGULAR_CLIENT_ID;
 
     //fb page config
     ezfbProvider.setInitParams({
@@ -55,9 +53,7 @@ angular.module('app', [
 
     LightboxProvider.templateUrl = CONST.GALLERY_TEMPLATE_URL;
 
-    LightboxProvider.getImageUrl = function (image) {
-      return CONST.GALLERY_IMAGE_URL + image.url;
-    };
+    LightboxProvider.getImageUrl = (image) => CONST.IMAGES_URL + image.url;
 
   })
 
@@ -73,11 +69,19 @@ angular.module('app', [
       }
 
       if (toState.name === 'musicAlbum' ||
-          toState.name === 'musicAlbumReviews') {
+          toState.name === 'musicAlbumReviews' ||
+            toState.name === 'musicAlbumPhysical') {
         $rootScope.$broadcast('stateMusicAlbum', { active: true });
       } else {
         $rootScope.$broadcast('stateMusicAlbum', { active: false });
       }
+      if (toState.name === 'news' ||
+          toState.name === 'newsInd') {
+        $rootScope.$broadcast('stateNews', { active: true });
+      } else {
+        $rootScope.$broadcast('stateNews', { active: false });
+      }
+
     });
 
     $rootScope.$on('$stateChangeSuccess', (e, toState) => {

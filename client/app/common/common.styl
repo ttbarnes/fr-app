@@ -43,9 +43,11 @@ fr-footer,
     margin-bottom $row-margin-bottom
 
 .icon-s-s,
+.icon-ssp,
 .icon-s-t,
 .icon-s-f,
 .icon-s-i,
+.icon-s-y,
 .icon-link,
 .icon-read,
 .icon-phone
@@ -64,6 +66,13 @@ fr-footer,
   &::before
     margin-top 3px
 
+.icon-ssp
+  background #1db954
+  font-size 1.55em
+  margin-right 10px !important
+  &::before
+    margin-left 1px
+
 .icon-s-t
   background #1EBCED
   padding-top 5px
@@ -81,6 +90,12 @@ fr-footer,
   background #7E2B8A
   &::before
     margin-top 5px
+
+.icon-s-y
+  background #E02F2F
+  font-size 0.9em
+  &::before
+    margin-top 6px
 
 .icon-link
   &::before
@@ -116,6 +131,12 @@ fr-footer,
 
 .main-content
   margin 0 auto
+  @media (min-width $bp-sm)
+    padding-right $gutter-primary-x-lg + $gutter-primary
+    padding-left $gutter-primary-x-lg + $gutter-primary
+  @media (min-width $bp-lg)
+    padding-right $gutter-primary-x-lg
+    padding-left $gutter-primary-x-lg
 
 .include-bg-img
 
@@ -137,6 +158,7 @@ fr-footer,
     z-index 3
 
 .video-wrapper
+  clear both
   position relative
   z-index 2
   max-width 800px
@@ -154,3 +176,80 @@ fr-footer,
     left 0
     width 100%
     height 100%
+    box-shadow 0 13px 22px #121212
+
+.video-wrapper-small
+  padding-bottom 56.25%
+  @media (min-width $bp-lg)
+    padding-bottom 29.25%
+    max-width 600px
+
+.social-links-hover-rotate
+  a
+    opacity .8
+    transition all 0.3s ease
+    &:hover,
+    &:focus
+      outline 0 none
+      color #FFF
+    i
+      transition all 0.3s ease
+    @media (min-width: $bp-md)
+      &:hover,
+      &:focus
+        opacity 1
+        i
+          transform rotate(360deg)
+
+.social-links-large
+  li
+    text-align center
+    width 33%
+    float left
+    color $color-blockquote
+    margin-bottom $gutter-primary-x-lg
+    @media (min-width: $bp-md)
+      float left
+      width 16.6666667%
+    p
+      margin-bottom 0
+    i
+      margin-bottom 15px
+      opacity .8
+      width 50px
+      height 50px
+      @media (min-width: $bp-md)
+        width 70px
+        height 70px
+      &::before
+        margin-top 9px
+        @media (min-width: $bp-md)
+          margin-top 16px
+        font-size 2em
+      &.icon-ssp
+        margin-right 0 !important
+        &::before
+          margin-top 2px
+          @media (min-width: $bp-md)
+            margin-top 11px
+      &.icon-s-y::before
+        margin-top 12px
+        @media (min-width: $bp-md)
+          margin-top 21px
+    p
+      letter-spacing 1px
+      font-size .8em
+      @media (min-width: $bp-md)
+        font-size 1em
+      @media (min-width: $bp-lg)
+        font-size 1.1em
+    a
+      display block
+      color #DADADA
+      @media (min-width: $bp-md)
+        color $color-text-primary
+    a:hover,
+    a:focus
+      color #DADADA
+      i
+        opacity 1

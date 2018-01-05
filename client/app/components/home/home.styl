@@ -1,25 +1,227 @@
 @import '../../styles/variables'
 
 .home
+  padding 0
   @media (min-width $bp-md)
-    padding 0
     padding-bottom 0
 
-  .img-bg
-    display none
-    @media (min-width $bp-md)
-      display block
+  &.include-bg-img .img-bg
+    max-width 580px
+    margin 0
+    top 45px
+    right initial
+    bottom initial
+    left -89px
+    opacity .6
+    @media (min-width $bp-sm)
+      opacity .7
+    @media (min-width $bp-lg)
+      opacity .8
+    @media (min-width 1060px)
+      top 62px
+      left -45px
+
+    // this img and p tag styling is only required for album image intro 'coming soon'
+    // in other words, a 'coming soon' album, without a pre-order link.
+    /*
+    img
       width 100%
-      padding-top 15%
-    @media (min-width $bp-md + 225px)
-      padding-top $header-height-desktop
+      max-width 430px
+      margin $gutter-primary-lg auto $gutter-primary-lg auto
+      @media (min-width $bp-lg)
+        margin 0 auto 15px auto
+
+    p
+      letter-spacing 5px
+      font-size 1.2em
+      margin-bottom 0
+      padding-right $gutter-primary
+      padding-left $gutter-primary
+      @media (min-width $bp-xxxs)
+        font-size 1.5em
+      @media (min-width $bp-xlg)
+        font-size 1.8em
+      @media (min-width $bp-lg)
+        margin-bottom $gutter-primary
+    */
 
   .main-content
-    max-width 900px
+    max-width 1100px
+    @media (min-width $bp-md)
+      padding-top 0
+
+  .intro-wrapper
+    padding 0
+    @media (min-width $bp-sm)
+      padding 0 $gutter-primary-lg
+    @media (min-width $bp-lg)
+      width 60.4%
+      padding 0
+      float: right;
+    
 
   .video-wrapper
     @media (min-width $bp-lg + 400px)
       padding-bottom 31.25%
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary * 2
+
+  .home-intro-heading
+    font-size 1.65em
+    font-weight 300
+    letter-spacing 6px
+    color #DADADA
+    text-align center
+    padding-bottom 1.5em
+    margin-bottom .5em
+    @media (min-width: 400px)
+      font-size 1.6em
+    @media (min-width: $bp-xs)
+      font-size 1.8em
+      padding-bottom 1em
+    @media (min-width: $bp-sm)
+      padding-bottom 0
+    @media (min-width: $bp-md)
+      padding-bottom 2em
+    @media (min-width: $bp-lg)
+      font-size 2em
+      text-align left
+      padding-bottom 0
+
+  .home-intro
+    margin-bottom 0
+    @media (min-width: $bp-sm)
+      margin-bottom $gutter-primary-x-lg
+    .col-img
+      padding-bottom $gutter-primary-xx-lg
+      max-width 300px
+      margin 0 auto
+      @media (min-width: $bp-sm)
+        padding-right $gutter-primary-lg
+      @media (min-width: $bp-md)
+        margin-right 0
+        margin-left 0
+        padding-right $gutter-primary-x-lg
+        padding-bottom $gutter-primary-x-lg
+      img
+        width 100%
+        max-width 450px
+        margin 0 auto
+        display block
+
+    .col-quotes
+      max-width 100%
+      width 100%
+      margin 0 auto
+      text-align center
+      @media (min-width: $bp-sm)
+        max-width 780px
+      @media (min-width: $bp-md)
+        max-width 785px
+      @media (min-width: $bp-lg)
+        max-width 510px
+        margin 0
+        margin-left -.3em
+      @media (min-width: $bp-lg + 100)
+        max-width 100%
+
+    blockquote
+      position relative
+      padding 0
+      text-align center
+      margin-bottom $gutter-primary-x-lg
+      font-size 1.2em
+      @media (min-width: $bp-sm)
+        margin 1.8em 0 2.4em 0
+        font-size 1.35em
+      @media (min-width: $bp-md)
+        text-align center
+      @media (min-width: $bp-lg)
+        font-size 1.4em
+        text-align left
+      .copy
+        color #B0B0B0
+        line-height 1.72em
+        text-align left
+        width 76%
+        font-size .9em
+        @media (min-width: $bp-xs)
+          font-size 1em
+        @media (min-width: $bp-sm)
+          text-align left
+          margin-left -39px
+          padding 0px 5px
+          width 91%
+        @media (min-width: $bp-md)
+          max-width 75%
+          text-align center
+        @media (min-width: $bp-lg)
+          text-align left
+          width 91%
+          max-width 91%
+          padding 0
+          font-size .9em
+      span.quote:first-child
+        margin-left 0
+        position relative
+        top 5px
+        left -10px
+        @media (min-width: $bp-xs)
+          font-size 5em
+        @media (min-width: $bp-sm)
+          left -8%
+          font-size 3em
+        @media (min-width: $bp-md)
+          top 12px
+          font-size 5em
+        @media (min-width: $bp-lg)
+          left -15%
+
+      span.quote:last-child
+        position relative
+        top -15px
+        left 90%
+        opacity .5
+        min-width 55px
+        @media (min-width: $bp-sm)
+          display block
+          position absolute
+          left initial
+          right 0
+          top 60%
+        @media (min-width: $bp-md)
+          right 5%
+
+      .author
+        font-size 0.65em
+        margin-left 0
+        line-height 2.3em
+        padding-left 15%
+        text-align left
+        @media (min-width: $bp-sm)
+          padding-left 4%
+        @media (min-width: $bp-md)
+          padding-left 0
+          text-align center
+        @media (min-width: $bp-lg)
+          padding-left .8%
+          text-align left
+
+    .last-blockquote
+      margin-bottom 0
+
+  blockquote:first-child
+    @media (min-width: $bp-md)
+      margin-top 0
+    @media (min-width: 850px)
+      margin-top 1em
+    @media (min-width: 1020px)
+      margin-top 1.8em
+
+  .row-social-icons-large
+    margin-top $gutter-primary-xx-lg
+    margin-bottom $gutter-primary-xxx-lg
+
   h3
     margin-bottom $gutter-primary
     padding-bottom 0
@@ -43,27 +245,235 @@
     @media (min-width $bp-md)
       padding-bottom $gutter-primary
 
+  .row-signup-middle
+    margin-bottom $gutter-primary-xxx-lg
+    @media (min-width $bp-md)
+      margin-top $gutter-primary-x-lg
+    .new-heading-theme
+      text-align center
+      max-width 80%
+      margin-right auto
+      margin-left auto
+      @media (min-width $bp-sm)
+        max-width 65%
+      @media (min-width 850px)
+        max-width 100%
+        
+    .signup-form
+      padding-top 0
+      padding-left 0
+      padding-right 0
+      .mchimp-form
+        width 100%
+        justify-content center
+        @media (min-width $bp-md)
+          justify-content flex-start
+      .mchimp-form
+        max-width 300px
+        margin  0 auto
+      form
+        min-width 100%
+        max-width 300px
+        justify-content center
+        @media (min-width $bp-md)
+          justify-content flex-start
+        input[type="email"]
+          width 100%
+      .button
+        min-width 94px
+
+
   .row-album-latest
-    float none
     margin 0 auto
     position relative
-    padding-bottom $gutter-primary-lg
+    margin-top $gutter-primary-xx-lg
+    margin-bottom 0
+    padding-bottom 0
     @media (min-width $bp-md)
       padding-bottom 0
 
     .album
-      padding-top 0
+      text-align left
 
-      .col-last
-        @media (min-width $bp-md + 225px)
-          padding-top 20%
+    .copy
+      @media (min-width $bp-sm)
+        padding-bottom 0
+      @media (min-width $bp-lg)
+        padding-bottom $gutter-primary-lg
 
-    p
-      font-size $font-size-h2-mobile
-      margin-bottom $gutter-primary
+    h2,
+    h3
+      color $color-heading-primary
+      text-transform none
+      width 100%
+      max-width 100%
+      margin-right auto
+      margin-left auto
+      margin-bottom 0.4em !important
+      letter-spacing 0
+      font-size 1.3em
+      @media (min-width $bp-xxs)
+        font-size 1.4em
+      @media (min-width $bp-xs)
+        font-size 1.6em
+      @media (min-width $bp-sm)
+        width 100%
+        max-width 100%
+        font-size 1.7em
       @media (min-width $bp-md)
+        margin-right 0
+        margin-left 0
+        margin-bottom 0.6em !important
+      @media (min-width $bp-lg)
+        font-size 1.7em
+    
+    span.coming-soon
+      font-size $font-size-h2-mobile
+      @media (min-width $bp-md)
+        padding-bottom 0
+        margin-bottom $gutter-primary-lg
+        font-size 1.1em
+      @media (min-width $bp-lg)
         font-size $font-size-h2-desktop
+        font-size $font-size-h2-mobile
 
+  .row-intro-new-album-release
+    display inline-block
+    vertical-align top
+    width 100%
+    background #000 
+    text-align center
+    position relative
+    z-index 2
+    margin-top -45px
+    padding-top 90px
+    background linear-gradient(to bottom, #000000 0%,#000000 85%,rgba(0, 0, 0, 0) 100%)
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-x-lg
+      margin-top 0
+      padding-bottom $gutter-primary-lg
+    @media (min-width $bp-lg)
+      margin-bottom 0
+    .album
+      @media (min-width $bp-md)
+        padding-right $gutter-primary-x-lg + $gutter-primary
+        padding-left $gutter-primary-x-lg + $gutter-primary
+        max-width 950px
+        @media (min-width 1100px)
+          padding-right 0
+          padding-left 0
+      .col-first
+        @media (min-width $bp-md)
+          padding-top $gutter-primary-lg
+      .col-last
+        @media (min-width $bp-md)
+          padding-left $gutter-primary-lg
+          // padding-top $gutter-primary-x-lg + $gutter-primary
+          padding-top $gutter-primary-x-lg
+        @media (min-width $bp-lg)
+          padding-top $gutter-primary-x-lg
+          padding-left $gutter-primary-x-lg
+
+  .album .row.album-additional-info
+      .col-first,
+      .col-last
+        @media (min-width $bp-md)
+          padding-top 0
+      .col-last
+        margin-bottom $gutter-primary-x-lg
+
+      .album-credits
+        margin-bottom $gutter-primary-lg
+        @media (min-width $bp-md)
+          margin-bottom $gutter-primary-x-lg
+      .tracklist
+        background #161616
+        color #464646
+        margin-right 0
+        margin-left 0
+        li span
+          color $color-text-secondary
+        
+
+    h3
+      @media (min-width $bp-sm)
+        font-size 1.8em
+      @media (min-width $bp-md)
+        font-size 1.5em
+      @media (min-width 900px)
+        font-size 1.7em
+      @media (min-width $bp-lg)
+        font-size 1.8em
+
+  .quotes-middle
+    > .row
+      margin-bottom $gutter-primary-xx-lg
+    blockquote
+      display inline-block
+      position relative
+      width 100%
+      max-width 630px
+      margin 0 auto
+      text-align left
+      padding-top $gutter-primary-x-lg
+      padding-bottom $gutter-primary-x-lg
+      @media (min-width: $bp-md)
+        padding-top $gutter-primary-x-lg
+        padding-bottom $gutter-primary-x-lg
+      > span
+        float left
+        width auto
+        &.copy
+          max-width 88%
+          width 88%
+          padding-left 3%
+        &.author
+          clear both
+          font-size .75em
+          margin-left 3.5%
+          @media (min-width: $bp-sm)
+            font-size .65em
+            margin-left 8.5%
+          @media (min-width: $bp-md)
+            margin-left 10%
+      span.copy
+        color #DADADA
+      span.copy + .quote
+        position absolute
+        bottom 31%
+        right 8%
+    &:first-child
+      span.copy
+        @media (min-width: $bp-md)
+          max-width 340px
+    
+  blockquote.blockquote-long-lines
+    > span.copy
+      @media (min-width: $bp-md)
+        width 78%
+        max-width 78%
+      @media (min-width: $bp-lg)
+        width 88%
+        max-width 88%
+    span.copy + .quote
+      bottom 25%
+        
+
+.featured-video
+  margin-top $gutter-primary-x-lg
+  @media (min-width $bp-sm)
+    margin-top $gutter-primary-xx-lg
+    padding 0 $gutter-primary-lg
+  @media (min-width: $bp-md)
+    margin-top $gutter-primary-xx-lg
+  h4
+    text-align center
+  .video-wrapper-wrapper
+    @media (min-width: $bp-md)
+      max-width 800px
+      margin 0 auto
+
+/*
   .s-feeds
     text-align center
     padding-bottom $gutter-primary-x-lg
@@ -109,3 +519,4 @@
         > span
           margin -1px 0 0 -1px
           width 278px !important
+*/

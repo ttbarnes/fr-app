@@ -10,10 +10,30 @@
     @media (min-width $bp-md)
       display block
       opacity 0.5
+      padding-top $header-height-desktop - 10px
+    @media (min-width 1060px)
       padding-top $header-height-desktop
 
+  .intro-signed-photo
+    text-decoration underline
+    text-align center
+    margin-bottom $gutter-primary-lg
+    @media (min-width: $bp-sm)
+      padding $gutter-primary
+    @media (min-width: $bp-md)
+      margin-top -2.3424em // minus $gutter-primary-x-lg
+      text-align right
+    @media (min-width: $bp-lg)
+      padding $gutter-primary-lg
+      margin-bottom 0
+
+    a
+      &:hover,
+      &:focus
+        text-decoration none
 
 .gallery-list
+  clear both
   list-style-type none
   margin 0
   padding 0

@@ -5,7 +5,7 @@
   <div class="main-content">
 
     <ul class="album-cols">
-      <li ng-repeat="album in vm.albums"
+      <li ng-repeat="album in vm.releasedAlbums"
           class="col col-50-sm"
           ng-class="{last: $last}">
          <a ng-if="!album.comingSoon" ui-sref="musicAlbum({id: album.id})" class="released">
@@ -13,24 +13,39 @@
            <span class="img-wrap">
              <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
            </span>
-           <div class="overlay overlay-hover">
-             <div class="content">
-               <i class="icon-zoom"></i>
-             </div>
+
+           <div ng-if="album.albumType === 'latest'"
+                class="overlay overlay-hover"
+                ng-class="{'dark-theme': album.id === 3}">
+              <div class="content">
+                <p><span>Out now</span></p>
+              </div>
+            </div>
+            <div ng-if="album.albumType === 'latest'"
+                 class="overlay overlay-hover-content"
+                 ng-class="{'dark-theme': album.id === 3}">
+              <div class="content">
+                <p><span>Out now</span></p>
+              </div>
+            </div>
+
+            <div ng-if="album.albumType !== 'latest'" class="overlay overlay-hover">
+             <div class="content"></div>
            </div>
+
          </a>
          <span ng-if="album.comingSoon" class="img-wrap">
            <a ui-sref="musicAlbum({id: album.id})">
             <h2 class="sr-only">{{album.name}}</h2>
              <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
-             <div class="overlay overlay-hover overlay-hover-coming-soon">
+             <div class="overlay overlay-hover">
                <div class="content">
-                 <p><span>Coming soon</span></p>
+                 <p><span>Coming April 7th&nbsp;</span></p>
                </div>
              </div>
              <div class="overlay overlay-hover-content">
                <div class="content">
-                 <p><span>Coming soon! </span></p>
+                 <p><span>Coming April 7th! </span></p>
                </div>
              </div>
            </a>
@@ -39,8 +54,8 @@
     </ul>
 
     <div class="row button-view-nav">
-       <a ui-sref="gigs" class="button">
-        <span>Gigs</span>
+       <a ui-sref="press" class="button">
+        <span>Press</span>
         <i class="icon-arrow-right"></i>
       </a>
     </div>

@@ -6,11 +6,10 @@ describe('emailService', () => {
 
   beforeEach(() => {
     MockEmailService = new emailService();
-  })
+  });
 
   it('should have send property', () => {
     expect(MockEmailService.send).toBeDefined();
-  })
-
+  });
 
 })

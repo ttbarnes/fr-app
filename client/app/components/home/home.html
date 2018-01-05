@@ -10,33 +10,110 @@
 
   <h1 class="sr-only">Fiona Ross Jazz Vocalist, pianist, composer</h1>
 
-  <img src="./images/home/bg.png" class="img-bg" alt="Fiona Ross jazz" />
+  <img src="./images/home/bg2.jpg" class="img-bg" alt="About Fiona Ross" />
 
-  <div class="video-wrapper">
-    <iframe width="560" src="https://www.youtube.com/embed/PzOWVOAEOX0?rel=0&amp;fs=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <div class="row-album-latest row-intro-new-album-release">
+    <album data="vm.latestAlbum" layout="2">
+    </album>
+
+    <div class="row align-center featured-video">
+      <h4 class="new-heading-theme">Busy..... Always Busy</h4>
+      <div class="video-wrapper-wrapper">
+        <div class="video-wrapper">
+          <iframe width="560" src="https://www.youtube.com/embed/YEsyonWX_KA?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="main-content">
 
+    <div class="intro-wrapper">
+
+      <div class="row home-intro">
+        <div class="col-quotes">
+
+          <blockquote class="blockquote-long-lines">
+            <span class="quote">&ldquo;</span>
+            <span class="copy">A powerhouse of vocal talent hidden behind a glamorous exterior. An artist with an incredible degree of stage presence, formidable artistic training, and distinctive vocal prowess who has the ability to knock an audience sideways</span>
+            <span class="author">Anthea Redmond, JazzBites</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+
+          <blockquote>
+            <span class="quote">&ldquo;</span>
+            <span class="copy">A bold woman who’s ready to set the world on the fire</span>
+            <span class="author">Jazz In Europe</span>
+            <span class="quote">&rdquo;</span>
+          
+          </blockquote>
+
+          <blockquote>
+            <span class="quote">&ldquo;</span>
+            <span class="copy">Meet the jazz artist Fiona Ross who gave Ed Sheeran his ‘first push’</span>
+            <span class="author">Daily Express</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+
+          <blockquote class="last-blockquote">
+              <span class="quote">&ldquo;</span>
+            <span class="copy">A galloping enthusiasm and thirst for adventure about Ross</span>
+            <span class="author">London Jazz News</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
     <div class="row row-album-latest">
-      <a ui-sref="musicAlbum({id: 2})">
-        <album data="vm.latestAlbum" layout="1">
-          <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
-          <h3>{{vm.latestAlbum.name}}</h3>
-          <p class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
-        </album>
+      <album data="vm.justMeAlbum" layout="1">
+        <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
+        <a ui-sref="musicAlbum({id: 2})">
+          <h3>{{vm.justMeAlbum.name}}</h3>
+          <p ng-if="vm.justMeAlbum.comingSoon && vm.justMeAlbum.releaseDate" class="album-release-date">Release date: {{vm.justMeAlbum.releaseDate}}</p>
+          <p ng-if="!vm.justMeAlbum.comingSoon && vm.justMeAlbum.albumType === 'latest'" class="album-release-date">Out now</p>
+        </a>
+      </album>
+    </div>
+
+    <div class="quotes-middle align-center">
+      <div class="row">
+        <blockquote>
+          <span class="quote">&ldquo;</span>
+          <span class="copy">An incisive honesty and humanity in  the detail that takes each song’s message straight to your heart</span>
+          <span class="quote">&rdquo;</span>
+          <span class="author">Ola Onabule</span>
+        </blockquote>
+        <blockquote>
+          <span class="quote">&ldquo;</span>
+          <span class="copy">With a joy and a zest for life Fiona empowers us through words and music. Aspiring to perfection whilst inspiring others</span>
+          <span class="quote">&rdquo;</span>
+          <span class="author">The Jazz UK</span>
+        </blockquote>
+        <blockquote>
+          <span class="quote">&ldquo;</span>
+          <span class="copy">Heartbreak and misery never sounded so good</span>
+          <span class="quote">&rdquo;</span>
+          <span class="author">Garth Twa</span>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="row row-signup-middle">
+      <p class="new-heading-theme">Be the first to hear about Fiona Ross news</p>
+      <signup-form></signup-form>
+    </div>
+
+    <div class="row button-view-nav">
+      <a ui-sref="music" class="button">
+        <span>Music</span>
+        <i class="icon-arrow-right"></i>
       </a>
     </div>
 
-    <div class="row">
-      <blockquote class="xx-large-padding">
-        <span class="quote">&ldquo;</span>
-        <span class="copy">Perhaps the best way to describe Fiona Ross is by the physical reaction that occurs when first listening to her. You experience a sense of electricity, of palpable joy and you begin to notice the unwitting grin that spreads across your face. You are left with rubbery limbs by the purity of Fiona Ross’s voice.</span>
-        <span class="quote">&rdquo;</span>
-      </blockquote>
-    </div>
-
-    <div class="row s-feeds cancel-margin">
+    <!--
+      <div class="row s-feeds cancel-margin">
       <h4>Social media</h4>
 
       <div class="col-fb">
@@ -60,6 +137,7 @@
       </div>
 
     </div>
+    -->
 
   </div>
 

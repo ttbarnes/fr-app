@@ -59,18 +59,18 @@ export default class collaboratorsService {
     */
     this.getPrevNextCollab = (id) => {
       const currentId = parseInt(id, 10);
-            const prevCollab = this.isFirstCollaborator(currentId) ? false : this.collaborators[currentId - 2],
-                  nextCollab = this.isLastCollaborator(currentId) ? false : this.collaborators[currentId],
-                  collabState = {
-                    prev: {
-                      id: this.isFirstCollaborator(currentId) ? false : prevCollab.id,
-                      name: this.isFirstCollaborator(currentId) ? false : prevCollab.name
-                    },
-                    next: {
-                      id: this.isLastCollaborator(currentId) ? this.firstCollaborator().id : nextCollab.id,
-                      name: this.isLastCollaborator(currentId) ? this.firstCollaborator().name : nextCollab.name
-                    }
-                  };
+      const prevCollab = this.isFirstCollaborator(currentId) ? false : this.collaborators[currentId - 2],
+            nextCollab = this.isLastCollaborator(currentId) ? false : this.collaborators[currentId],
+            collabState = {
+              prev: {
+                id: this.isFirstCollaborator(currentId) ? false : prevCollab.id,
+                name: this.isFirstCollaborator(currentId) ? false : prevCollab.name
+              },
+              next: {
+                id: this.isLastCollaborator(currentId) ? this.firstCollaborator().id : nextCollab.id,
+                name: this.isLastCollaborator(currentId) ? this.firstCollaborator().name : nextCollab.name
+              }
+            };
       return collabState;
     }
 
