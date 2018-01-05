@@ -11,22 +11,34 @@
         <div class="inner">
 
           <div class="col-10-md col-date">
-            <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
-            <span class="time">{{gig.date.time}}</span>
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
+              <span class="time">{{gig.date.time}}</span>
+              <span class="date-year"><small>{{gig.date.year}}</small></span>
+            </a>
           </div>
           <div class="col-15-md col-img">
-            <img ng-if="gig.images.thumb" ng-src="{{gig.images.thumb}}" alt="{{gig.venue}}" />
-            <img ng-if="!gig.images.thumb" ng-src="{{vm.defaultThumb}}" alt="{{gig.venue}}" />
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <img ng-if="gig.images.thumb" ng-src="{{gig.images.thumb}}" alt="{{gig.venue}}" />
+              <img ng-if="!gig.images.thumb" ng-src="{{vm.defaultThumb}}" alt="{{gig.venue}}" />
+            </a>
           </div>
           <div class="col-55-md col-title-venue">
-            <h2>{{gig.title}}</h2>
-            <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3>
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <h2>{{gig.title}}</h2>
+              <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3>
+            </a>
           </div>
           <div ng-if="gig.urls.tickets" class="col-10-md col-links  col-links-first link-highlight-hover">
-            <a ng-href="{{gig.urls.tickets}}">Tickets</a>
+            <div ng-if="gig.urls.tickets === 'TBA'">
+              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">TBA</a>
+            </div>
+            <div ng-if="gig.urls.tickets !== 'TBA'">
+              <a ng-href="{{gig.urls.tickets}}" target="_blank">Tickets</a>
+            </div>
           </div>
           <div ng-if="gig.urls.moreInfo" class="col-10-md col-links link-highlight-hover">
-            <a ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}">More info</a>
+            <a ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
           </div>
 
         </div>
@@ -35,8 +47,8 @@
 
 
     <div class="row button-view-nav">
-      <a ui-sref="about" class="button">
-        <span>About Fiona</span>
+      <a ui-sref="news" class="button">
+        <span>News</span>
         <i class="icon-arrow-right"></i>
       </a>
       <br/>
