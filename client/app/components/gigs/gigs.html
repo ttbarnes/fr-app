@@ -1,8 +1,17 @@
 <section class="row gigs long-copy-line-height include-bg-img">
 
+  <h1 class="sr-only">Fiona Ross Gigs</h1>
+  <ul class="sr-only">
+    <li>Fiona Ross - Pizza Express - The Pheasantry</li>
+    <li>Fiona Ross - Save The Children UK Concert 2018</li>
+    <li>Fiona Ross - Colchester Arts Centre Jazz Club</li>
+  </ul>
+
   <img src="./images/gigs/bg.png" class="img-bg" />
 
   <div class="main-content">
+
+    <p class="year-title">2018</p>
 
     <ul>
       <li ng-repeat="gig in vm.gigs"
@@ -25,13 +34,13 @@
           </div>
           <div class="col-55-md col-title-venue">
             <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
-              <h2>{{gig.title}}</h2>
-              <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3>
+              <h2>{{gig.venue}}</h2>
+              <!-- <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3> -->
             </a>
           </div>
           <div ng-if="gig.urls.tickets" class="col-10-md col-links  col-links-first link-highlight-hover">
             <div ng-if="gig.urls.tickets === 'TBA'">
-              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">TBA</a>
+              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
             </div>
             <div ng-if="gig.urls.tickets !== 'TBA'">
               <a ng-href="{{gig.urls.tickets}}" target="_blank">Tickets</a>
