@@ -66,9 +66,12 @@ var sitemap = sm.createSitemap({
     { url: '/music'},
     { url: '/music/album/1'},
     { url: '/music/album/2'},
-    { url: '/about'},
+    { url: '/music/album/3' },
+    { url: '/press' },
+    { url: '/gigs' },
     { url: '/news'},
     { url: '/videos'},
+    { url: '/about' },
     { url: '/gallery'},
     { url: '/collaborators'},
     { url: '/collaborators/1'},
@@ -85,7 +88,7 @@ var sitemap = sm.createSitemap({
     { url: '/collaborators/12'},
     { url: '/collaborators/13'},
     { url: '/collaborators/14'},
-    { url: '/fis-articles'},
+    { url: '/articles'},
     { url: '/tech'},
     { url: '/contact'}
   ]
