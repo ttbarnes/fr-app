@@ -1,0 +1,69 @@
+<section class="row gigs long-copy-line-height include-bg-img">
+
+  <h1 class="sr-only">Fiona Ross Gigs</h1>
+  <ul class="sr-only">
+    <li>Fiona Ross - Pizza Express - The Pheasantry</li>
+    <li>Fiona Ross - Save The Children UK Concert 2018</li>
+    <li>Fiona Ross - Colchester Arts Centre Jazz Club</li>
+  </ul>
+
+  <img src="./images/gigs/bg.png" class="img-bg" />
+
+  <div class="main-content">
+
+    <p class="year-title">2018</p>
+
+    <ul>
+      <li ng-repeat="gig in vm.gigs"
+          class="row"
+          ng-class="{last: $last}">
+        <div class="inner">
+
+          <div class="col-10-md col-date">
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
+              <span class="time">{{gig.date.time}}</span>
+              <span class="date-year"><small>{{gig.date.year}}</small></span>
+            </a>
+          </div>
+          <div class="col-15-md col-img">
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <img ng-if="gig.images.thumb" ng-src="{{gig.images.thumb}}" alt="{{gig.venue}}" />
+              <img ng-if="!gig.images.thumb" ng-src="{{vm.defaultThumb}}" alt="{{gig.venue}}" />
+            </a>
+          </div>
+          <div class="col-55-md col-title-venue">
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <h2>{{gig.venue}}</h2>
+              <!-- <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3> -->
+            </a>
+          </div>
+          <div ng-if="gig.urls.tickets" class="col-10-md col-links  col-links-first link-highlight-hover">
+            <div ng-if="gig.urls.tickets === 'TBA'">
+              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
+            </div>
+            <div ng-if="gig.urls.tickets !== 'TBA'">
+              <a ng-href="{{gig.urls.tickets}}" target="_blank">Tickets</a>
+            </div>
+          </div>
+          <div ng-if="gig.urls.moreInfo" class="col-10-md col-links link-highlight-hover">
+            <a ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
+
+    <div class="row button-view-nav">
+      <a ui-sref="news" class="button">
+        <span>News</span>
+        <i class="icon-arrow-right"></i>
+      </a>
+      <br/>
+      <a ui-sref="contact" class="text-link">Booking enquiries</a>
+    </div>
+
+  </div>
+
+</section>

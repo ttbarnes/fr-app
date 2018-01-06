@@ -7,11 +7,12 @@ export const GALLERY_TEMPLATE_URL = '../app/components/gallery/modal.html';
 export const NEWS_LIGHTBOX_URL = '../app/components/news/images/'
 export const IMAGES_URL = '../images/'
 
-// page titles 
+// page titles
 export const PAGE_TITLE_BASE = 'Fiona Ross';
 export const PAGE_TITLE_BASE_SEPARATOR = ' | ';
 
 export const PAGE_TITLE_ABOUT = 'About' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
+export const PAGE_TITLE_GIGS = 'Gigs' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_COLLABORATORS = 'Collaborators' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_COLLABORATOR_IND =  PAGE_TITLE_BASE_SEPARATOR + 'Collaborators' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_CONTACT = 'Contact' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
@@ -25,3 +26,6 @@ export const PAGE_TITLE_NEWS = 'News' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_B
 export const PAGE_TITLE_PRESS = 'Press' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_TECH = 'Tech' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_VIDEOS = 'Videos' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
+
+// export const BOOKINGS_DEFAULT_THUMB = 'http://fionaross.co.uk/images/bookings/default-thumb.jpg';
+export const BOOKINGS_DEFAULT_THUMB = 'https://img42.com/JyPMW+';

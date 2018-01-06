@@ -62,7 +62,6 @@ angular.module('app', [
 
     //quick fix to get active state class in header
     $rootScope.$on('$stateChangeStart', (e, toState) => {
-
       if (toState.name === 'collaboratorsInd') {
         $rootScope.$broadcast('stateCollaboratorsInd', { active: true });
       } else {
