@@ -6,7 +6,7 @@ import collaboratorsService from './collaborators.service';
 import newsService from './news.service';
 import techService from './tech.service';
 import emailService from './email.service';
-import articlesService from './articles.service';
+import otherWorkService from './otherWork.service';
 
 export default angular
   .module('app.services', [])
@@ -18,5 +18,5 @@ export default angular
     newsService,
     techService,
     emailService,
-    articlesService
+    otherWorkService
   })

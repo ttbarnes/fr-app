@@ -6,7 +6,7 @@ import MusicAlbumReviews from './musicAlbumReviews/musicAlbumReviews';
 import MusicAlbumAudioCd from './musicAlbumAudioCd/musicAlbumAudioCd';
 import Press from './press/press';
 import About from './about/about';
-import Articles from './articles/articles';
+import OtherWork from './otherWork/otherWork';
 import Gallery from './gallery/gallery';
 import GallerySignedPhoto from './gallerySignedPhoto/gallerySignedPhoto';
 import Collaborators from './collaborators/collaborators';
@@ -27,7 +27,7 @@ let componentModule = angular.module('app.components', [
   MusicAlbumAudioCd.name,
   Press.name,
   About.name,
-  Articles.name,
+  OtherWork.name,
   Gallery.name,
   GallerySignedPhoto.name,
   Collaborators.name,

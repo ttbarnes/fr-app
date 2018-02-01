@@ -1,6 +1,6 @@
 @import '../../styles/variables'
 
-.fis-articles
+.other-work
 
   h3
     color $color-highlight-primary
@@ -12,6 +12,21 @@
     color $color-highlight-secondary
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  .intro-copy
+    float none
+    margin 0 auto $gutter-primary-xx-lg auto
+    line-height 1.7em
+    @media (min-width $bp-md)
+      max-width 610px
+    &.row-last
+      padding-top $gutter-primary-x-lg
+    a
+      color $color-highlight-primary
+      word-break break-word
+    li
+      margin-bottom $gutter-primary-lg
+
 
   .grid-col-hover 
     text-align center
