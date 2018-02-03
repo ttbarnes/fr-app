@@ -11,47 +11,38 @@
 
   <div class="main-content">
 
-    <p class="year-title">2018</p>
+    <h3>2018 Gigs</h3>
 
     <ul>
-      <li ng-repeat="gig in vm.gigs"
-          class="row"
-          ng-class="{last: $last}">
+      <li ng-repeat="gig in vm.gigs" class="row" ng-class="{last: $last, first: $first}">
         <div class="inner">
 
-          <div class="col-10-md col-date">
-            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
-              <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
-              <span class="time">{{gig.date.time}}</span>
-              <span class="date-year"><small>{{gig.date.year}}</small></span>
-            </a>
-          </div>
-          <div class="col-15-md col-img">
-            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
-              <img ng-if="gig.images.thumb" ng-src="{{gig.images.thumb}}" alt="{{gig.venue}}" />
-              <img ng-if="!gig.images.thumb" ng-src="{{vm.defaultThumb}}" alt="{{gig.venue}}" />
-            </a>
-          </div>
-          <div class="col-55-md col-title-venue">
+          <div class="col-details">
             <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
               <h2>{{gig.venue}}</h2>
-              <!-- <h3>{{gig.venue}} <span class="seperator"> - </span><span class="city-country">{{gig.cityCountry}}</span></h3> -->
             </a>
-          </div>
-          <div ng-if="gig.urls.tickets" class="col-10-md col-links  col-links-first link-highlight-hover">
-            <div ng-if="gig.urls.tickets === 'TBA'">
-              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
+            <p class="city-country">{{gig.cityCountry}}</p>
+
+            <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+              <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
+              <span>{{gig.date.year}}</span>
+              <span ng-if="gig.date.time" class="time"> - {{gig.date.time}}</span>
+            </a>
+
+            <div class="row button-wrap">
+              <a ng-if="gig.urls.tickets === 'TBA'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
+              <a ng-if="gig.urls.tickets === 'DOOR'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets on the door</a>
+              <a ng-if="gig.urls.tickets !== 'TBA' && gig.urls.tickets !== 'DOOR'" class="button" ng-href="{{gig.urls.tickets}}" target="_blank">Tickets</a>
+              <a class="button" ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
             </div>
-            <div ng-if="gig.urls.tickets !== 'TBA'">
-              <a ng-href="{{gig.urls.tickets}}" target="_blank">Tickets</a>
-            </div>
+
           </div>
-          <div ng-if="gig.urls.moreInfo" class="col-10-md col-links link-highlight-hover">
-            <a ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
-          </div>
+
+          <img ng-src="./images/gigs/{{gig.image}}" alt="{{gig.venue}}" />
 
         </div>
       </li>
+
     </ul>
 
 
