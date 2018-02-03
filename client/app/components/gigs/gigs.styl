@@ -2,6 +2,13 @@
 
 .gigs
 
+  h3
+    text-align center
+    font-weight 300
+    color $color-highlight-primary
+    padding-bottom $gutter-primary-lg
+    margin-bottom $gutter-primary-lg
+
   .img-bg
     display none
     @media (min-width $bp-sm)
@@ -18,111 +25,54 @@
     margin-bottom $gutter-primary
 
   li
-    padding $gutter-primary-lg 0
-    margin-bottom 0
+    padding $gutter-primary-x-lg 0 $gutter-primary-xx-lg 0
+    border-bottom solid 1px $color-bg-secondary
     @media (min-width $bp-md)
-      clear both
-      border-bottom solid 1px $color-bg-secondary
-      margin-bottom 0
+      padding $gutter-primary-xx-lg 0
+      border-bottom 0 none
+
+    &.first 
+      padding-top $gutter-primary-lg
     &.last
       border-bottom 0 none
-    .inner
-      display inline-block
-      width 100%
-      vertical-align top
-      background $card-bg-mobile
-      padding $gutter-primary
-      @media (min-width: $bp-md)
-        background none
-        padding 0
-    .inner > div
-      @media (min-width: $bp-md)
-        padding $gutter-primary-lg $gutter-primary
-        padding-top 0
-
-    .col-date
-      font-weight 300
-      @media (min-width: $bp-md)
-        width 25%
-      @media (min-width: $bp-lg)
-        width 10%
-      span
-        float left
-        @media (min-width: $bp-md)
-          float none
-          display block
-          text-align center
-
-      .day-month
-        color $color-highlight-primary
-        text-transform uppercase
-        font-size $font-size-h2-mobile
-        padding-right $gutter-primary
-        @media (min-width: $bp-md)
-          padding-right 0
-
-      .date-year
-        display none
-        @media (min-width: $bp-md)
-          opacity block
-          line-height initial
-
-      .time
-        color $color-highlight-secondary
-
-    .col-img
-      display none
-      padding-top 0 !important
-      padding-bottom 0 !important
-      @media (min-width: $bp-lg)
-        display block
 
     img
-      width 100%
-      max-height 87.5px
-      overflow hidden
-      display block
-      margin 0 auto
-
-    .col-title-venue
-      clear both
-      @media (min-width: $bp-md)
-        clear none
-        width 40%
-      @media (min-width: $bp-lg)
-        width 50%
+      @media (min-width $bp-md)
+        float right
+        max-width 50%
+    .col-details
+      @media (min-width $bp-md)
+        float left
+        width: 50%
+        padding-right 1em
 
     h2
       color $color-highlight-primary
-      font-weight 300
-      font-size $font-size-h4-desktop
       margin-bottom 0
-
-    h3
-      font-size $font-size-h4-mobile
+      text-transform uppercase
+      letter-spacing 2px
       font-weight 300
-      margin-bottom 0
-      .seperator
-        @media (min-width: $bp-md)
-          display none
+      color #DADADA
 
-    .col-links
-      float left
+    .city-country
+      margin-bottom $gutter-primary
+
+    .button-wrap
+      padding-top $gutter-primary-lg
+
+    .button
+      width auto
+      display inline-block
       margin-right $gutter-primary
-      @media (min-width: $bp-md)
-        margin-right 0
-        padding-top $gutter-primary-x-lg
-        width 15%
-        text-align center
-      @media (min-width: $bp-lg)
-        width 10%
-
-      a
-        text-decoration underline
-        @media (min-width: $bp-md)
-          text-decoration none
-
-    .col-links-first
-      clear both
-      @media (min-width: $bp-md)
-        clear none
+      margin-bottom $gutter-primary-lg
+      font-size .95em
+    
+  li:nth-child(even)
+    img
+      @media (min-width $bp-md)
+        float left
+    .col-details
+      @media (min-width $bp-md)
+        float right
+        padding-right 0
+        padding-left 1em

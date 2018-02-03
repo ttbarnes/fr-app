@@ -5,13 +5,11 @@
     "cityCountry": "Chelsea, UK",
     "date": {
       "month": "April",
-      "day": "3",
+      "day": "3rd",
       "year": "2018",
       "time": "8.30pm"
     },
-    "images": {
-      "thumb": "https://www.lastminutetheatretickets.com/londonwestend/wp-content/uploads/2014/03/The-Pheasantry-Chelsea.jpg"
-    },
+    "image": "fr_liveatpheasantry_v6.jpg",
     "urls": {
       "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
       "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
@@ -23,12 +21,10 @@
     "cityCountry": "TBA",
     "date": {
       "month": "June",
-      "day": "30",
+      "day": "30th",
       "year": "2018"
     },
-    "images": {
-      "thumb": "https://pbs.twimg.com/profile_images/929345010486702080/4uoos6CP_400x400.jpg"
-    },
+    "image": "Save-the-children-logo-black-background.png",
     "urls": {
       "moreInfo": "https://twitter.com/JWsave_child_UK",
       "tickets": "TBA"
@@ -37,19 +33,17 @@
   {
     "title": "Fiona Ross",
     "venue": "Colchester Arts Centre Jazz Club",
-    "cityCountry": "TBA",
+    "cityCountry": "Essex, UK",
     "date": {
       "month": "Dec",
-      "day": "2",
+      "day": "2nd",
       "year": "2018",
       "time": "7.30pm"
     },
-    "images": {
-      "thumb": "http://flashwounds.com/wp-content/uploads/2014/07/Watson-Colchester-Arts-Centre-joshshinner-com-600x400.jpg"
-    },
+    "image": "fr_colchester_v2.jpg",
     "urls": {
-      "moreInfo": "http://www.colchesterartscentrejazzclub.com",
-      "tickets": "TBA"
+      "moreInfo": "http://www.colchesterartscentrejazzclub.com/december-2-2018",
+      "tickets": "DOOR"
     }
   }
 ]
