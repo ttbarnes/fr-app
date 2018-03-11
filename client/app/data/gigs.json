@@ -1,6 +1,21 @@
 [
   {
     "title": "Fiona Ross",
+    "venue": "Chesterfield Jazz Club",
+    "cityCountry": "Chesterfield, UK",
+    "date": {
+      "month": "August",
+      "day": "16th",
+      "year": "2018"
+    },
+    "image": "chesterfieldjazzclub.jpg",
+    "urls": {
+      "moreInfo": "https://www.ticketsource.co.uk/wendykirkland",
+      "tickets": "https://www.ticketsource.co.uk/wendykirkland"
+    }
+  },
+  {
+    "title": "Fiona Ross",
     "venue": "Pizza Express - The Pheasantry",
     "cityCountry": "Chelsea, UK",
     "date": {
