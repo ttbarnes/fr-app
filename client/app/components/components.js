@@ -14,7 +14,6 @@ import CollaboratorInd from './collaboratorInd/collaboratorInd';
 import News from './news/news';
 import Videos from './videos/videos';
 import NewsInd from './newsInd/newsInd';
-import Tech from './tech/tech';
 import Contact from './contact/contact';
 import Gigs from './gigs/gigs';
 import Error from './error/error';
@@ -35,7 +34,6 @@ let componentModule = angular.module('app.components', [
   News.name,
   Videos.name,
   NewsInd.name,
-  Tech.name,
   Contact.name,
   Gigs.name,
   Error.name
