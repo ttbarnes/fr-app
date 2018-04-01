@@ -32,6 +32,9 @@
         <div ng-if="post.videoEmbed && !post.galleryImages" class="video-wrapper">
           <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
         </div>
+        <div ng-if="post.videoEmbedLondonLive" class="video-wrapper">
+          <iframe width="620" height="348" src="http://www.londonlive.co.uk/embed/news/2018-03-27/celebrity-music-trainer-is-now-releasing-her-own-music" frameborder="0" allowfullscreen></iframe>
+        </div>
 
         <div ng-if="post.videoEmbed && post.galleryImages" class="row video-with-gallery-row">
           <div class="row post-video">
