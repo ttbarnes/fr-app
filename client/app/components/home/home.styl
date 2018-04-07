@@ -112,6 +112,30 @@
         margin 0 auto
         display block
 
+    .heading-intro
+      text-align center
+      margin-bottom $gutter-primary-xx-lg
+      @media (min-width: $bp-lg)
+        text-align left
+      h1,
+      p
+        margin-bottom 0
+      h1
+        text-transform uppercase
+        color $color-highlight-primary
+        margin-right $gutter-primary
+        letter-spacing 2px
+        font-weight 300
+        margin-bottom $gutter-primary-xs
+        @media (min-width: $bp-lg)
+          margin-bottom 0
+      p
+        font-size 1.1em
+        @media (min-width: $bp-xs)
+          font-size $font-size-h2-mobile
+        @media (min-width: $bp-sm)
+          font-size $font-size-h2-desktop
+
     .col-quotes
       max-width 100%
       width 100%
@@ -196,7 +220,7 @@
           right 3%
 
       .author
-        font-size 0.65em
+        font-size 0.80em
         margin-left 0
         line-height 2.3em
         padding-left 15%
@@ -249,7 +273,7 @@
   .row-signup-middle
     margin-bottom $gutter-primary-xxx-lg
     @media (min-width $bp-md)
-      margin-top $gutter-primary-xx-lg
+      margin-top $gutter-primary-xxx-lg
     .new-heading-theme
       text-align center
       max-width 80%
