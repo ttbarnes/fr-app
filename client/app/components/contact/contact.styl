@@ -41,7 +41,15 @@
     width 100%
     margin-bottom $gutter-primary-x-lg
     @media (min-width $bp-md)
-      width 50%
+      float none
+      display inline-block
+      vertical-align middle
+      width 45%
+    @media (min-width $bp-lg)
+      display block
+      float left
+      width 33.333333333%
+
     .inner
       float left
       width 100%
@@ -97,10 +105,14 @@
   .cards-top
     @media (min-width $bp-md)
       float none
-      max-width 500px
+      max-width 900px
       margin 0 auto
       margin-bottom $gutter-primary-lg
+      text-align center
+    @media (min-width $bp-lg)
+      text-align left
     .card
+      text-align left
       @media (min-width $bp-md)
         padding 0 $gutter-primary
         &:first-child
