@@ -9,7 +9,7 @@ export const IMAGES_URL = '../images/'
 
 // page titles
 export const PAGE_TITLE_BASE = 'Fiona Ross';
-export const PAGE_TITLE_BASE_SEPARATOR = ' | ';
+export const PAGE_TITLE_BASE_SEPARATOR = ' - ';
 
 export const PAGE_TITLE_ABOUT = 'About' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_GIGS = 'Gigs' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
@@ -18,7 +18,7 @@ export const PAGE_TITLE_COLLABORATOR_IND =  PAGE_TITLE_BASE_SEPARATOR + 'Collabo
 export const PAGE_TITLE_CONTACT = 'Contact' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_OTHER_WORK = 'Other Work' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_GALLERY = 'Gallery' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
-export const PAGE_TITLE_HOME = PAGE_TITLE_BASE + PAGE_TITLE_BASE_SEPARATOR +  'Jazz vocalist, pianist, composer';
+export const PAGE_TITLE_HOME = PAGE_TITLE_BASE + PAGE_TITLE_BASE_SEPARATOR +  'Jazz Vocalist, Pianist, Composer, Producer, Writer, Journalist';
 export const PAGE_TITLE_MUSIC = 'Music' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_MUSIC_ALBUM = PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_MUSIC_ALBUM_REVIEWS = ' Reviews' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
