@@ -1,6 +1,22 @@
 [
   {
     "title": "Fiona Ross",
+    "venue": "Brasserie Toulouse Lautrec",
+    "cityCountry": "London, UK",
+    "date": {
+      "month": "June",
+      "day": "22nd",
+      "year": "2018",
+      "time": "8.30pm"
+    },
+    "image": "toulouselautrec.jpg",
+    "urls": {
+      "moreInfo": "http://www.toulouselautrec.co.uk/book-tickets?date=2018-06-22#537101",
+      "tickets": "https://www.designmynight.com/london/whats-on/live-music/fiona-ross-in-black-white-and-a-little-bit-of-grey?t=tickets"
+    }
+  },
+  {
+    "title": "Fiona Ross",
     "venue": "Pizza Express - The Pheasantry",
     "cityCountry": "Chelsea, UK",
     "date": {
