@@ -17,6 +17,9 @@
     width 100%
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
+    
+    @media (min-width $bp-lg)
+      padding-top $gutter-primary-xxx-lg
 
   .col-left
     @media (min-width $bp-md)
@@ -25,16 +28,6 @@
   .col-right
     @media (min-width $bp-md)
       padding-left $gutter-primary-x-lg
-
-  .contact-form-wrap
-    float none
-    margin 0 auto
-    max-width 500px
-    .card
-      display inline-block
-      vertical-align top
-      float none
-      width 100%
 
   .card
     float left
@@ -152,37 +145,6 @@
         border-bottom 0
       .button
         border 0 none
-
-  .contact-form
-    float left
-    width 100%
-    padding-bottom $gutter-primary
-    @media (min-width $bp-sm)
-      padding 0 0 $gutter-primary-lg 0
-    @media (min-width $bp-md)
-      padding 0
-
-    h4
-      @media (min-width $bp-sm)
-        margin-bottom $gutter-primary-lg
-      @media (min-width $bp-md)
-        padding-bottom $gutter-primary
-        margin-bottom $gutter-primary
-
-    > .row
-      margin-bottom 0
-      padding 0 $gutter-primary
-      @media (min-width $bp-sm)
-        padding 0 $gutter-primary-lg
-      @media (min-width $bp-md)
-        padding 0
-
-    > .row
-      margin-bottom $gutter-primary-lg
-      &:last-child
-        margin-bottom 0
-      > .row
-        margin-bottom 0
 
   .row-error
     margin 0
