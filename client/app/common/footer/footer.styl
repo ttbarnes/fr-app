@@ -7,23 +7,21 @@ footer
   position relative
   z-index 3
   .nav
-    background-color $color-bg-primary
+    background-color #0b0b0b
     color $color-text-tertiary
     @media (min-width $bp-xs)
-      transform skew(-28.3deg)
-      max-width 336px
-      width 336px
+      transform skew(-18.3deg)
       margin-top $section-gutter-horizontal
       margin-right 55px
       float right
-      width 385px
-      max-width 385px
+      width 361px
+      max-width 361px
 
     .container
-      background-color $color-bg-primary
+      background-color #0b0b0b
       padding 1em 1em 2em 1em
       @media (min-width $bp-xs)
-        transform skew(28.3deg) !important
+        transform skew(18.3deg) !important
         max-width 253px
         padding-left 0
         padding-right 0
@@ -33,9 +31,9 @@ footer
         float right
         padding-right: 40px;
         max-width 319px
-        padding 2.5em
+        padding 2.5em 2.5em 1.5em 2.5em
         padding-left 0
-        padding-right 4.4em
+        padding-right $gutter-primary-lg + $gutter-primary
 
     h4
       font-size 1.7em
@@ -86,3 +84,24 @@ footer
             opacity 1
             i
               transform rotate(360deg)
+  
+  .misc-links
+    margin-top 2em
+    padding 0 $gutter-primary-lg
+    @media (min-width: $bp-sm)
+      margin-top 4em
+      text-align right
+    p
+      margin-bottom 0
+      font-size .9em
+      letter-spacing 1px
+    a
+      opacity .3
+      font-size .9em
+      letter-spacing 1px
+      transition all .3s ease
+      &:hover,
+      &:focus
+        outline 0 none
+        opacity 1
+
