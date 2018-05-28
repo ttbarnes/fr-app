@@ -16,6 +16,7 @@ import Videos from './videos/videos';
 import NewsInd from './newsInd/newsInd';
 import Contact from './contact/contact';
 import Gigs from './gigs/gigs';
+import PrivacyPolicy from './privacyPolicy/privacyPolicy'
 import Error from './error/error';
 
 let componentModule = angular.module('app.components', [
@@ -36,6 +37,7 @@ let componentModule = angular.module('app.components', [
   NewsInd.name,
   Contact.name,
   Gigs.name,
+  PrivacyPolicy.name,
   Error.name
 ]);
 
