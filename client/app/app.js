@@ -89,6 +89,17 @@ angular.module('app', [
       if (toState.name !== 'musicAlbumReviews') {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
+
+      const splitCookies = document.cookie.split(';');
+      if (splitCookies) {
+        let constentCookie = splitCookies.filter(function (item) {
+          return item.indexOf('CookieScriptConsent=') >= 0
+        });
+        const hasRejected = constentCookie.length && constentCookie[0].includes('reject');
+        if (hasRejected) {
+          window['ga-disable-UA-85971190-2'] = true;
+        }
+      }
     });
 
   })
