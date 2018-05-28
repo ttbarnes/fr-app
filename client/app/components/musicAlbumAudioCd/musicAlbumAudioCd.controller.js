@@ -10,7 +10,6 @@ class musicAlbumAudioCdController {
     if (!isValidAudioCdAlbum) {
       $state.go('error');
     } else {
-
       this.album = this.albumsService.getSingleAlbum(this.currentId);
       if (!this.album) {
         $state.go('error');
@@ -18,7 +17,23 @@ class musicAlbumAudioCdController {
       if (this.album && !this.album.canOrderAudioCd) {
         $state.go('error');
       }
+    }
 
+    const splitCookies = document.cookie.split(';');
+    if (splitCookies) {
+      let constentCookie = splitCookies.filter(function (item) {
+        return item.indexOf('CookieScriptConsent=') >= 0
+      });
+      const hasRejected = constentCookie.length && constentCookie[0].includes('reject');
+      const hasAccepted = constentCookie.length && constentCookie[0].includes('accept');
+      if (hasRejected) {
+        this.consentRejected = true;
+      }
+      if (hasAccepted) {
+        this.consentAccepted = true;
+      }
+      console.log('this.consentRejected ', this.consentRejected);
+      console.log('this.consentAccepted ', this.consentAccepted);
     }
 
   }
