@@ -95,28 +95,11 @@ angular.module('app', [
         let constentCookie = splitCookies.filter(function (item) {
           return item.indexOf('CookieScriptConsent=') >= 0
         });
-        let gaCookie = splitCookies.filter(function (item) {
-          return item.indexOf('_ga=') >= 0
-        });
         const hasRejected = constentCookie.length && constentCookie[0].includes('reject');
         const hasAccepted = constentCookie.length && constentCookie[0].includes('accept');
-        const hasGaCookie = gaCookie.length;
         if (hasRejected) {
           window['ga-disable-UA-85971190-2'] = true;
         }
-        if (hasAccepted && !hasGaCookie) {
-          (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-              (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-          ga('create', 'UA-85971190-2', 'auto', {
-            'cookieExpires': 0
-          });
-          ga('set', 'anonymizeIp', true);
-        }
-
       }
     });
 
