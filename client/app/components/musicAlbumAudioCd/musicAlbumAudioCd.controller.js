@@ -32,8 +32,6 @@ class musicAlbumAudioCdController {
       if (hasAccepted) {
         this.consentAccepted = true;
       }
-      console.log('this.consentRejected ', this.consentRejected);
-      console.log('this.consentAccepted ', this.consentAccepted);
     }
 
   }

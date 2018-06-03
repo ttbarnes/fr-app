@@ -8,80 +8,127 @@
 
     <p>limited edition</p>
 
-    <p>Order via PayPal and we'll dispatch asap.</p>
+    <div ng-if="vm.consentAccepted">
+      <p style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch as soon as possible.
+        <br/>Read our
+        <a style="text-decoration: underline;" ui-sref="privacyPolicy">privacy policy</a> to understand how your data will be used.
+      </p>
+    </div>
+
+    <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover-border link-highlight-hover">
+      <p style="line-height: 1.7em">Contact
+        <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Free Signed Photo">info@fionaross.co.uk</a> for payment and details.
+        <br/>Or, clear your browser cookies and reload the page to accept PayPal cookies.
+      </p>
+    </div>
 
     <div class="row row-images row-last">
       <div class="cell">
-        <img ng-src="{{vm.photos.group2[0].url}}" alt="{{vm.photos.group2[0].alt}}" class="preview"/>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="fiona@fionaross.co.uk">
-          <input type="hidden" name="lc" value="GB">
-          <input type="hidden" name="item_name" value="Signed Photo 3 Just me (and sometimes someone else) cover">
-          <input type="hidden" name="amount" value="0.00">
-          <input type="hidden" name="currency_code" value="GBP">
-          <input type="hidden" name="button_subtype" value="services">
-          <input type="hidden" name="no_note" value="0">
-          <input type="hidden" name="shipping" value="0.00">
-          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-          <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-        </form>
+        <div ng-if="vm.consentAccepted">
+          <img ng-src="{{vm.photos.group2[0].url}}" alt="{{vm.photos.group2[0].alt}}" class="preview" />
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="fiona@fionaross.co.uk">
+            <input type="hidden" name="lc" value="GB">
+            <input type="hidden" name="item_name" value="Signed Photo 3 Just me (and sometimes someone else) cover">
+            <input type="hidden" name="amount" value="0.00">
+            <input type="hidden" name="currency_code" value="GBP">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="shipping" value="0.00">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+
+        <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover">
+          <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Free Signed Photo 3">
+            <img ng-src="{{vm.photos.group2[0].url}}" alt="{{vm.photos.group2[0].alt}}" class="preview" />
+          </a>
+        </div>
           
       </div>
       <div class="cell">
-        <img ng-src="{{vm.photos.group2[1].url}}" alt="{{vm.photos.group2[1].alt}}" class="preview" />
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="fiona@fionaross.co.uk">
-          <input type="hidden" name="lc" value="GB">
-          <input type="hidden" name="item_name" value="Signed Photo 4 - Twist Of Blue cover">
-          <input type="hidden" name="amount" value="0.00">
-          <input type="hidden" name="currency_code" value="GBP">
-          <input type="hidden" name="button_subtype" value="services">
-          <input type="hidden" name="no_note" value="0">
-          <input type="hidden" name="shipping" value="0.00">
-          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-          <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-        </form>
+        <div ng-if="vm.consentAccepted">
+          <img ng-src="{{vm.photos.group2[1].url}}" alt="{{vm.photos.group2[1].alt}}" class="preview" />
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="fiona@fionaross.co.uk">
+            <input type="hidden" name="lc" value="GB">
+            <input type="hidden" name="item_name" value="Signed Photo 4 - Twist Of Blue cover">
+            <input type="hidden" name="amount" value="0.00">
+            <input type="hidden" name="currency_code" value="GBP">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="shipping" value="0.00">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+
+        <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover">
+          <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Free Signed Photo 4">
+            <img ng-src="{{vm.photos.group2[1].url}}" alt="{{vm.photos.group2[1].alt}}" class="preview" />
+          </a>
+        </div>
+
       </div>
     </div>
 
     <div class="row row-images row-first">
       <div class="cell">
-        <img ng-src="{{vm.photos.group1[0].url}}" alt="{{vm.photos.group1[0].alt}}" class="preview" />
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="fiona@fionaross.co.uk">
-          <input type="hidden" name="lc" value="GB">
-          <input type="hidden" name="item_name" value="Signed Photo 1 - Red Hair Chair shot">
-          <input type="hidden" name="amount" value="0.00">
-          <input type="hidden" name="currency_code" value="GBP">
-          <input type="hidden" name="button_subtype" value="services">
-          <input type="hidden" name="no_note" value="0">
-          <input type="hidden" name="shipping" value="0.00">
-          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-          <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        <div ng-if="vm.consentAccepted">
+          <img ng-src="{{vm.photos.group1[0].url}}" alt="{{vm.photos.group1[0].alt}}" class="preview" />
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="fiona@fionaross.co.uk">
+            <input type="hidden" name="lc" value="GB">
+            <input type="hidden" name="item_name" value="Signed Photo 1 - Red Hair Chair shot">
+            <input type="hidden" name="amount" value="0.00">
+            <input type="hidden" name="currency_code" value="GBP">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="shipping" value="0.00">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
           </form>
+        </div>
+
+        <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover">
+          <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Free Signed Photo 1">
+            <img ng-src="{{vm.photos.group1[0].url}}" alt="{{vm.photos.group1[0].alt}}" class="preview" />
+          </a>
+        </div>
+
       </div>
       <div class="cell">
-        <img ng-src="{{vm.photos.group1[1].url}}" alt="{{vm.photos.group1[1].alt}}" class="preview" />
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="fiona@fionaross.co.uk">
-          <input type="hidden" name="lc" value="GB">
-          <input type="hidden" name="item_name" value="Signed Photo 2 - Behind the scenes rehearsal">
-          <input type="hidden" name="amount" value="0.00">
-          <input type="hidden" name="currency_code" value="GBP">
-          <input type="hidden" name="button_subtype" value="services">
-          <input type="hidden" name="no_note" value="0">
-          <input type="hidden" name="shipping" value="0.00">
-          <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-          <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-        </form>
+        <div ng-if="vm.consentAccepted">
+          <img ng-src="{{vm.photos.group1[1].url}}" alt="{{vm.photos.group1[1].alt}}" class="preview" />
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="fiona@fionaross.co.uk">
+            <input type="hidden" name="lc" value="GB">
+            <input type="hidden" name="item_name" value="Signed Photo 2 - Behind the scenes rehearsal">
+            <input type="hidden" name="amount" value="0.00">
+            <input type="hidden" name="currency_code" value="GBP">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="shipping" value="0.00">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+
+        <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover">
+          <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Free Signed Photo 2">
+            <img ng-src="{{vm.photos.group1[1].url}}" alt="{{vm.photos.group1[1].alt}}" class="preview" />
+          </a>
+        </div>
+
       </div>
     </div>
 
