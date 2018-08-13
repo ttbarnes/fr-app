@@ -1,9 +1,9 @@
-# Fiona Ross Angular app (NG6 - ES6, webpack, node)
+# Fiona Ross Angular app
 
-- Architecture/structure based on the wonderful [NG6-starter] (https://github.com/AngularClass/NG6-starter)
+- Architecture based on the [NG6-starter] (https://github.com/AngularClass/NG6-starter)
 
 - `client/*` - everything angular
-- `server.js`, `client.app.routes.js` - node server for email and deployment
+- `server.js`, `client.app.routes.js` - node server
 
 ### Commands
 
