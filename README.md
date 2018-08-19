@@ -2,8 +2,8 @@
 
 - Architecture based on the [NG6-starter] (https://github.com/AngularClass/NG6-starter)
 
-- `client/*` - everything angular
-- `server.js`, `client.app.routes.js` - node server
+- `client/*` - client side, angular
+- `server.js` - server
 
 ### Commands
 
@@ -11,7 +11,7 @@
 
 - `gulp webpack` - bundles the app, copies files to dist directory for deployment
 
-- `npm run express-server` - run node server (port 2000) for heroku environment, and nodemailer API
+- `npm run express-server` - run node server (port 2000) for heroku environment
 
 - `npm run icons` - compile SVG icons into webfonts (uses fontcustom)
 
