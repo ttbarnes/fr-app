@@ -20,7 +20,6 @@
     "autoprefixer": "^6.3.7",
     "babel-core": "^5.4.2",
     "babel-loader": "^5.0.0",
-    "body-parser": "^1.15.0",
     "browser-sync": "^2.11.1",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.28.4",
@@ -40,7 +39,6 @@
     "ng-annotate-loader": "0.0.10",
     "ng-photoswipe": "^0.2.0",
     "ngtweet": "^0.6.1",
-    "nodemailer": "^2.2.1",
     "normalize.css": "^3.0.3",
     "photoswipe": "^4.1.1",
     "poststylus": "^0.2.3",
@@ -60,7 +58,6 @@
   "devDependencies": {
     "angular-mocks": "^1.5.0",
     "connect-history-api-fallback": "^1.1.0",
-    "fs-walk": "0.0.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.9",
     "karma-chrome-launcher": "^0.2.0",
@@ -79,11 +76,6 @@
     "start": "gulp webpack && node server.js",
     "test": "karma start"
   },
-  "keywords": [
-    "angular",
-    "webpack",
-    "es6"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ttbarnes/fr-app.git"
