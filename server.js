@@ -57,7 +57,7 @@ var sitemap = sm.createSitemap({
     { url: '/collaborators/12'},
     { url: '/collaborators/13'},
     { url: '/collaborators/14'},
-    { url: '/other-work'},
+    { url: '/journalism'},
     { url: '/tech'},
     { url: '/contact'}
   ]
