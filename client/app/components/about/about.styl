@@ -31,7 +31,7 @@
         .copy
           width 65%
           @media (min-width $bp-sm)
-            width 55%
+            width 83%
         small
           clear both
           display block
@@ -47,3 +47,20 @@
     a
       color $color-highlight-primary
       opacity 1
+
+  .central-quotes
+    blockquote
+      padding-top $gutter-primary-lg
+      padding-bottom $gutter-primary
+      @media (min-width $bp-sm)
+        padding-top $gutter-primary-xx-lg
+        &.first
+          padding-top $gutter-primary-x-lg
+      &.last
+        padding-top $gutter-primary-xx-lg
+        @media (min-width $bp-sm)
+          padding-top $gutter-primary-xx-lg
+
+    .author
+      display block
+      text-align center
