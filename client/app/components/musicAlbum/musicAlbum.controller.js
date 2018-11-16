@@ -7,7 +7,7 @@ class MusicAlbumController {
     this.currentId = this.stateParams.id || 3;
     this.albumsService = albumsService;
 
-    this.album = this.albumsService.getSingleAlbum(this.currentId);
+    this.album = this.albumsService.getAlbumById(this.currentId);
 
     this.otherAlbums = this.albumsService.getAllOtherAlbums(this.currentId);
 

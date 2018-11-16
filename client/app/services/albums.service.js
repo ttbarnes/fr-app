@@ -20,7 +20,7 @@ export default class albumsService {
     
     this.isValidStateParamAlbumIdForAudioCd = (id) => this.validStateParamIdsForAudioCds.includes(id);
 
-    this.quoteTruncationCharLimit = 800;
+    this.quoteCharLimit = 800;
 
 
     /*
@@ -30,18 +30,11 @@ export default class albumsService {
     if (this.allAlbums && this.allAlbums.length) {
       this.allAlbums.map((a) => {
         a.quotes && a.quotes.map((q) => {
-          if (q.copy.length >= this.quoteTruncationCharLimit) {
+          if (q.copy.length >= this.quoteCharLimit) {
             q.showReadMore = true;
           }
         });
       });
-    }
-
-    /*
-    // get a single album
-    */
-    this.getSingleAlbum = (id) => {
-      return this.getAlbumById(id);
     }
 
     this.getAlbumById = (id) => {

@@ -10,7 +10,7 @@ class musicAlbumAudioCdController {
     if (!isValidAudioCdAlbum) {
       $state.go('error');
     } else {
-      this.album = this.albumsService.getSingleAlbum(this.currentId);
+      this.album = this.albumsService.getAlbumById(this.currentId);
       if (!this.album) {
         $state.go('error');
       }
