@@ -49,10 +49,12 @@ export default class albumsService {
     }
 
     /*
-    // get all albums other than a given albumId
+    // get all albums, apart from a comingSoon album or a given albumId
     */
-    this.getOtherAlbums = (albumId) => {
-      const filteredAlbums = this.allAlbums.filter((a) => a.id !== Number(albumId));
+    this.getAllOtherAlbums = (albumId) => {
+      const filteredAlbums = this.allAlbums.filter((a) =>
+        (a.id !== Number(albumId)) && !a.comingSoon
+      );
       return filteredAlbums;
     }
 

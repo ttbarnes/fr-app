@@ -9,7 +9,7 @@ class MusicAlbumController {
 
     this.album = this.albumsService.getSingleAlbum(this.currentId);
 
-    this.otherAlbums = this.albumsService.getOtherAlbums(this.currentId);
+    this.otherAlbums = this.albumsService.getAllOtherAlbums(this.currentId);
 
     if (!this.album) {
       $state.go('error');
