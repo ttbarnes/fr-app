@@ -43,10 +43,16 @@
             padding 0 0.5em
 
   .member-of-list li
-    margin-bottom $gutter-primary-lg
+    width 100%
+    clear both
+    text-align center
+    margin-bottom $gutter-primary-x-lg
+
     a
       color $color-highlight-primary
-      opacity 1
+      img
+        margin-right $gutter-primary-lg
+
 
   .central-quotes
     blockquote
@@ -61,6 +67,8 @@
         @media (min-width $bp-sm)
           padding-top $gutter-primary-xx-lg
 
+    .copy
+      width 82%
     .author
       display block
       text-align center
