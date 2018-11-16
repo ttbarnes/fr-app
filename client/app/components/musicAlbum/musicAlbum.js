@@ -16,7 +16,7 @@ let musicAlbumModule = angular.module('musicAlbum', [
       template: '<music-album></music-album>',
       resolve: {
         album: (albumsService, $stateParams) => {
-          return albumsService.getSingleAlbum($stateParams.id);
+          return albumsService.getAlbumById($stateParams.id);
         },
         $title: (album) => album.name + PAGE_TITLE_MUSIC_ALBUM
       }

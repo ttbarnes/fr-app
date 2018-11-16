@@ -4,7 +4,7 @@ class MusicController {
   constructor(albumsService) {
     'ngInject';
     this.albumsService = albumsService;
-    this.releasedAlbums = this.albumsService.getAllReleasedAlbums();
+    this.albums = this.albumsService.allAlbums;
   }
 }
 

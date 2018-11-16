@@ -2,7 +2,7 @@ import allAlbums from '../data/allAlbums.json';
 
 export default class albumsService {
 
-  // NOTE: allAlbums array is 'backawards' (correctly)
+  // NOTE: allAlbums array is 'backwards' (correctly)
   // so the FIRST item in the array is the LAST/LATEST album.
 
   constructor(){
@@ -41,14 +41,11 @@ export default class albumsService {
     // get a single album
     */
     this.getSingleAlbum = (id) => {
-      if (id === this.latestAlbumId ||
-          Number(id) === this.latestAlbumId) {
-        return this.latestAlbum;
-      } else if (id === 1 || id === '1') {
-        return this.firstAlbum;
-      } else {
-        return this.allAlbums[id - 1];
-      }
+      return this.getAlbumById(id);
+    }
+
+    this.getAlbumById = (id) => {
+      return this.allAlbums.find(a => a.id === Number(id));
     }
 
     /*

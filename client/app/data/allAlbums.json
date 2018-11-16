@@ -1,5 +1,15 @@
 [
   {
+    "id": 4,
+    "name": "TBC",
+    "releaseDate": "2019",
+    "images": {
+      "thumb": "./images/albums/thumb/new-album.png",
+      "appCover": "./images/albums/new-album.png"
+    },
+    "comingSoon": true
+  },
+  {
     "id": 3,
     "name": "Black, White and a Little Bit of Grey",
     "releaseDate": "November 17th",
