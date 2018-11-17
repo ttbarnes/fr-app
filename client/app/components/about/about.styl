@@ -42,16 +42,19 @@
           .dash
             padding 0 0.5em
 
-  .member-of-list li
-    width 100%
-    clear both
+  .member-of-list
     text-align center
-    margin-bottom $gutter-primary-x-lg
+    li
+      display inline-block
+      vertical-align middle
+      text-align center
+      margin-bottom $gutter-primary-x-lg
 
-    a
-      color $color-highlight-primary
-      img
-        margin-right $gutter-primary-lg
+      a
+        color $color-highlight-primary
+        img
+          margin 0 $gutter-primary
+          max-width 140px
 
 
   .central-quotes
