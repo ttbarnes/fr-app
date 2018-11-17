@@ -42,22 +42,50 @@
           .dash
             padding 0 0.5em
 
+  .member-of-list-text-only
+    margin-bottom $gutter-primary-xx-lg
+    @media (min-width $bp-sm)
+      margin-bottom $gutter-primary-xxx-lg
+    li
+      margin-right $gutter-primary-lg
+      margin-bottom $gutter-primary
+      @media (min-width $bp-sm)
+        float left
+    a
+      color $color-highlight-primary
+
   .member-of-list
     text-align center
-    li
-      display inline-block
-      vertical-align middle
+    @media (min-width $bp-sm)
+      text-align left
+    > p
+      margin-bottom $gutter-primary-lg
+    ul
       text-align center
+    li
       margin-bottom $gutter-primary-x-lg
+      @media (min-width $bp-sm)
+        display inline-block
+        vertical-align middle
+        text-align center
+        margin-bottom $gutter-primary-x-lg
 
       a
         color $color-highlight-primary
         img
           margin 0 $gutter-primary
           max-width 140px
+          opacity .7
+          transition all 0.2s ease
+        &:hover img,
+        &:focus img
+          opacity 1
 
 
   .central-quotes
+    margin-bottom $gutter-primary-lg
+    @media (min-width $bp-sm)
+      margin-bottom $gutter-primary-xx-lg
     blockquote
       padding-top $gutter-primary-lg
       padding-bottom $gutter-primary
