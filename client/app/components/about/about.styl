@@ -2,11 +2,18 @@
 
 .about
 
+  h3
+    color $color-highlight-primary
+    font-weight lighter
+    padding-bottom $gutter-primary-lg
+    margin-bottom 0
+
   .main-content
     max-width $section-max-width
     margin 0 auto
     @media (min-width $bp-md)
       font-size 1.1em
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
     p
       span.quote,
@@ -26,21 +33,8 @@
         font-size 1.3em
       &.extra-margin-bottom
         margin 0 auto $gutter-primary-lg auto
-      &.first
-        max-width 880px
-        .copy
-          width 65%
-          @media (min-width $bp-sm)
-            width 83%
-        small
-          clear both
-          display block
-          opacity 0.6
-          @media (min-width $bp-xs)
-            clear none
-            display inline-block
-          .dash
-            padding 0 0.5em
+    
+    
 
   .member-of-list-text-only
     margin-bottom $gutter-primary-xx-lg
@@ -97,6 +91,31 @@
         padding-top $gutter-primary-xx-lg
         @media (min-width $bp-sm)
           padding-top $gutter-primary-xx-lg
+
+      &.intro-quote
+        max-width 425px
+        @media (min-width $bp-sm)
+          max-width 535px
+
+        .copy
+          width 65%
+          @media (min-width $bp-sm)
+            width 67%
+        small
+          clear both
+          display block
+          opacity 0.6
+          @media (min-width $bp-xs)
+            clear none
+            display inline-block
+          .dash
+            padding 0 0.5em
+        span.quote:last-child
+          display inline-block
+          margin-left -12px
+          margin-bottom -0.4em
+          @media (min-width $bp-sm)
+            margin-left -19px
 
     .copy
       width 82%
