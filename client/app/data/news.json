@@ -1,5 +1,38 @@
 [
   {
+    "id": "49",
+    "title": "November update",
+    "createdAt": "2018-11-17T11:18:00+00:00",
+    "articleSections": [
+      {
+        "copy": "<p>Two of Fi’s articles have been included in the Winter edition of the new Jazz in Europe magazine. Maxine Gordon and Eric Bibb. Available here: <a href=\"https://jazzineurope.mfmmedia.nl/2018/10/jazz-in-europe-magazine-winter-2018/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2018/10/jazz-in-europe-magazine-winter-2018/<\/a><\/p>",
+        "imgUrl": "news/49-1.jpg",
+        "imgAlt": "Jazz in Europe magazine",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>The new album is full steam ahead and the first recording session is this month, with a very special guest. All to be revealed soon!<\/p>",
+        "imgUrl": "albums/thumb/new-album.png",
+        "imgAlt": "Fiona Ross New Album",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Fi is excited to be on BBC Radio on November 28th - further details to follow. She will be performing a few songs live on air and chatting about all things!<\/p>",
+        "imgUrl": "news/49-3.png",
+        "imgAlt": "Fiona Ross on BBC Radio",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Next gig is at the Colchester Arts Centre Jazz Club on December 2nd. Tickets available here: <a href=\"https://www.colchesterartscentre.com/events/jazz/fiona-ross--special-guest\" target=\"_blank\">https://www.colchesterartscentre.com/events/jazz/fiona-ross--special-guest<\/a><\/p>",
+        "imgUrl": "gigs/fr_colchester_v3.jpg",
+        "imgAlt": "Fiona Ross at Colchester Arts Centre Jazz",
+        "imgMaxWidth": "413"
+      }
+    ],
+    "ticketsLink": "https://www.colchesterartscentre.com/events/jazz/fiona-ross--special-guest",
+    "venueLink": "http://www.colchesterartscentrejazzclub.com/december-2-2018"
+  },
+  {
     "id": "48",
     "title": "October update",
     "bodyMain": "<p>Lots of exciting things happening at the moment. Fi is busy writing the next album and starts recording next month, with some very special guests, which will be announced soon. Planned album release in April 2019.<\/p><p>Fi has been honoured to interview some inspirational women as part of her Women in Jazz series for Jazz in Europe – Maxine Gordon, Roseanna Vitro, Terri Lyn Carrington – with some more incredible women coming up soon. <a href=\"https://jazzineurope.mfmmedia.nl/category/fiona-ross-women-in-jazz/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/category/fiona-ross-women-in-jazz/<\/a><\/p><p>New video is coming out soon for the title track for recent album ‘Black, White and a Little Bit of Grey’. Lots of fun was had filming in Greenwich, London with Finnish Director Gugge Wasenius (photo below).<\/p><p>Fi was blown away by the response to her first article for Jazz Quartely - discussing the power of music and our social responsibility as artists with Eric Bibb, Snow Owl and Roseanna Vitro: <a href=\"http://www.stylequarterly.com/entertainment/the-jazz-room-jazz-briefs-the-truth-the-power-behind-the-song-by-fiona-ross\" target=\"_blank\">http://www.stylequarterly.com/entertainment/the-jazz-room-jazz-briefs-the-truth-the-power-behind-the-song-by-fiona-ross<\/a><\/p><p>Next gig December 2nd!<\/p><img class=\"img-max-width-600\" src=\"../../images/news/48.jpg\" alt\"Fiona Ross with Finnish Director Gugge Wasenius - Greenwich, London\"/>",

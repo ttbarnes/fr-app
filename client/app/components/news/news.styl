@@ -206,3 +206,50 @@
 
     p
       margin-bottom 0
+
+  .news-home .article-section .link-highlight-hover-border a
+    padding 0 0 1px 0
+    color $color-highlight-primary
+    opacity 1
+
+  .news-home .article-section
+    padding $gutter-primary-x-lg 0
+    border-bottom solid 1px $color-bg-secondary
+    &.last
+      padding-bottom 0
+      border-bottom 0 none
+
+
+    .col-img
+      max-width 60%
+      margin 0 auto
+      @media (min-width $bp-sm)
+        max-width 100%
+        margin 0
+
+    @media (min-width $bp-md)
+      .col-copy
+        width 60%
+      .col-img
+        width 40%
+
+      &:nth-child(odd)
+        .col-copy
+          float right
+          padding-left $gutter-primary-lg
+        .col-img
+          float left
+          padding-right $gutter-primary-lg
+
+      &:nth-child(even)
+        .col-copy
+          float left
+          padding-right $gutter-primary-lg
+        .col-img
+          float right
+          padding-left $gutter-primary-lg
+    
+    .body-content p
+      margin-top 0
+      padding-top 0
+      padding-right 0
