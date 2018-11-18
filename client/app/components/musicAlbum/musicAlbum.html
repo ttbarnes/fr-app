@@ -1,6 +1,6 @@
 <section class="row music-album include-bg-img">
 
-  <img ng-src="{{vm.album.images.bg}}" class="img-bg" alt="{{vm.album.name}}" ng-class="{'black-white-album' : vm.album.id === 3}" />
+  <img ng-if="vm.album.images.bg" ng-src="{{vm.album.images.bg}}" class="img-bg" alt="{{vm.album.name}}" ng-class="{'black-white-album' : vm.album.id === 3}" />
 
   <div class="main-content">
 
