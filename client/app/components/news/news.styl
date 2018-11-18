@@ -52,7 +52,7 @@
 
     img
       width 100%
-      opacity .8
+      opacity 1
       &.img-max-width-400
         max-width 400px
       &.img-max-width-500
@@ -172,13 +172,14 @@
         width auto
         a
           padding $gutter-primary
-          opacity .5
           transition all .3s ease
           cursor pointer
           color $color-highlight-primary
+          &.button
+            padding $button-spacing
+            color $color-white
           &:hover,
           &:focus
-            opacity 1
             outline 0 none
         &.first a
           padding-left 0

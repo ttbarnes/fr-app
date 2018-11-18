@@ -11,8 +11,17 @@
         <ul ng-if="post.articleSections">
           <li ng-repeat="section in post.articleSections" ng-class="{last: $last, first: $first}" class="article-section">
 
-            <div ng-bind-html="section.copy"
-                 class="col-copy body-content link-highlight-hover-border"></div>
+            <div class="col-copy">
+
+              <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
+
+              <a ng-if="section.ticketsLink" href="{{section.ticketsLink}}" target="_blank" class="button">Get tickets</a>
+              
+              <div class="link-highlight-hover-border venue-link">
+                <a ng-if="section.venueLink" href="{{section.venueLink}}" target="_blank">Venue</a>
+              </div>
+
+            </div>
 
             <div class="col-img">
               <img ng-src="./images/{{section.imgUrl}}"
@@ -27,15 +36,17 @@
         <div ng-bind-html="post.bodyMain" 
              class="body-content link-highlight-hover-border"></div>
 
-        <a ng-if="post.ticketsLink" 
-           href="{{post.ticketsLink}}" 
-           target="_blank" 
-           class="button">Get tickets</a>
+        <div ng-if="!post.isMonthlyUpdate">
+          <a ng-if="post.ticketsLink" 
+            href="{{post.ticketsLink}}" 
+            target="_blank" 
+            class="button">Get tickets</a>
 
-        <div class="link-highlight-hover-border venue-link">
-          <a ng-if="post.venueLink" 
-            href="{{post.venueLink}}" 
-            target="_blank">Venue</a>
+          <div class="link-highlight-hover-border venue-link">
+            <a ng-if="post.venueLink" 
+              href="{{post.venueLink}}" 
+              target="_blank">Venue</a>
+          </div>
         </div>
 
         <br/>

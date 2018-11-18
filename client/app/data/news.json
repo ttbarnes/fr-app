@@ -3,6 +3,7 @@
     "id": "49",
     "title": "November update",
     "createdAt": "2018-11-17T11:18:00+00:00",
+    "isMonthlyUpdate": true,
     "articleSections": [
       {
         "copy": "<p>Two of Fi’s articles have been included in the Winter edition of the new Jazz in Europe magazine. Maxine Gordon and Eric Bibb. Available here: <a href=\"https://jazzineurope.mfmmedia.nl/2018/10/jazz-in-europe-magazine-winter-2018/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2018/10/jazz-in-europe-magazine-winter-2018/<\/a><\/p>",
@@ -23,14 +24,14 @@
         "imgMaxWidth": "600"
       },
       {
-        "copy": "<p>Next gig is at the Colchester Arts Centre Jazz Club on December 2nd. Tickets available here: <a href=\"https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni<\/a><\/p>",
+        "copy": "<p>Next gig is at the Colchester Arts Centre Jazz Club on December 2nd. <a href=\"https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni/\" target=\"_blank\">https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni<\/a><\/p>",
         "imgUrl": "gigs/fr_colchester_v3.jpg",
         "imgAlt": "Fiona Ross at Colchester Arts Centre Jazz",
-        "imgMaxWidth": "413"
+        "imgMaxWidth": "413",
+        "ticketsLink": "https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni/",
+        "venueLink": "http://www.colchesterartscentrejazzclub.com/december-2-2018"
       }
-    ],
-    "ticketsLink": "https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni/",
-    "venueLink": "http://www.colchesterartscentrejazzclub.com/december-2-2018"
+    ]
   },
   {
     "id": "48",
