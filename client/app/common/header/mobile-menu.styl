@@ -35,10 +35,7 @@ body.ng-pageslide-body-closed::before
 .ng-pageslide
   transition-duration 0.3s !important
   border-right solid 5px #000
-  background $color-bg-primary
-  background -moz-linear-gradient(left,  $color-bg-primary 30%, $color-bg-secondary 100%)
-  background -webkit-linear-gradient(left,  $color-bg-primary 30%,$color-bg-secondary 100%)
-  background linear-gradient(to right,  $color-bg-primary 30%,$color-bg-secondary 100%)
+  background $color-bg-secondary
   @media (min-width: 1040px)
     display none
 
@@ -56,7 +53,7 @@ body.ng-pageslide-body-closed::before
     letter-spacing 3px
     text-transform uppercase
     font-weight 300
-    padding 23px $gutter-primary
+    padding 13px $gutter-primary
     margin-bottom 0
     color $color-highlight-primary
     @media (min-width: 300px)
@@ -65,18 +62,11 @@ body.ng-pageslide-body-closed::before
   a
     display block
     width 100%
-    color #B2B2B2
-    padding $gutter-primary 15px
-    opacity 0.5
+    color #A0A0A0
+    padding $gutter-primary 15px $gutter-primary 12px
+    opacity 1
     text-transform uppercase
     letter-spacing 1px
-    &:hover,
-    &:focus,
-    &.active
-      opacity 1
-
-  li.active a
-    opacity 1
 
 .mobile-menu
   position relative
@@ -85,13 +75,12 @@ body.ng-pageslide-body-closed::before
     position absolute
     top 0
     right 0
-    padding 24px 23px 18px 23px
     background none
     color $color-text-primary
     margin 0
     border-radius 0
     font-size 24px
-    padding 23px
+    padding 13px
     cursor pointer
 
 body.ng-pageslide-body-open
