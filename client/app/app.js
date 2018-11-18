@@ -18,6 +18,7 @@ import Components from './components/components';
 import Services from './services/services';
 import Filters from './filters/filters';
 import AppComponent from './app.component';
+import polyfill from './polyfill'
 import 'normalize.css';
 
 angular.module('app', [
