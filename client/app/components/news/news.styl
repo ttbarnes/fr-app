@@ -4,6 +4,9 @@
   .main-content
     max-width $section-max-width
     margin 0 auto
+    overflow-x hidden
+    @media (min-width $bp-sm)
+      overflow-x initial
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
 

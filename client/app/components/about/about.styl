@@ -70,12 +70,14 @@
         img
           margin 0 $gutter-primary
           max-width 140px
-          opacity .7
+          opacity 1
           transition all 0.2s ease
+          @media (min-width $bp-sm)
+            opacity .7
         &:hover img,
         &:focus img
-          opacity 1
-
+          @media (min-width $bp-sm)
+            opacity 1
 
   .central-quotes
     margin-bottom $gutter-primary-lg
