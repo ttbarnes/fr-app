@@ -7,10 +7,9 @@
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <h3>{{post.title}}</h3>
         <small class="date">{{post.createdAt | date:'dd MMM yyyy'}}</small>
-        <small class="date">{{post.date}}</small>
 
-        <ul>
-          <li ng-repeat="section in post.articleSections" ng-class="{last: $last}" class="article-section">
+        <ul ng-if="post.articleSections">
+          <li ng-repeat="section in post.articleSections" ng-class="{last: $last, first: $first}" class="article-section">
 
             <div ng-bind-html="section.copy"
                  class="col-copy body-content link-highlight-hover-border"></div>
@@ -33,11 +32,10 @@
            target="_blank" 
            class="button">Get tickets</a>
 
-        <div class="link-highlight-hover-border">
+        <div class="link-highlight-hover-border venue-link">
           <a ng-if="post.venueLink" 
             href="{{post.venueLink}}" 
-            target="_blank"
-            class="venue-link">Venue</a>
+            target="_blank">Venue</a>
         </div>
 
         <br/>
