@@ -9,7 +9,7 @@
     <p>limited edition</p>
 
     <div ng-if="vm.consentAccepted">
-      <p style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch within 2 working days. <br/>Read our <a style="text-decoration: underline;" ui-sref="privacyPolicy">privacy policy</a> to understand how your data will be used.</p>
+      <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch within 2 working days. <br/>Read our <a ui-sref="privacyPolicy">privacy policy</a> to understand how your data will be used.</p>
     </div>
 
     <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover-border link-highlight-hover">
@@ -66,7 +66,7 @@
     <br />
 
     <div ng-if="vm.consentAccepted">
-      <p class="making-better">We're working on a better way to order online. <br/>If you'd prefer to pay by other means please contact <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Audio Cd">info@fionaross.co.uk</a></p>
+      <p class="link-highlight-hover-border making-better" style="line-height: 1.7em">We're working on a better way to order online. <br/>If you'd prefer to pay by other means please contact <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Audio Cd">info@fionaross.co.uk</a></p>
     </div>
 
     <div class="row button-view-nav">
