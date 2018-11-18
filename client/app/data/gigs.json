@@ -1,18 +1,48 @@
-[
+[ 
   {
     "title": "Fiona Ross",
-    "venue": "Brasserie Toulouse Lautrec",
-    "cityCountry": "London, UK",
+    "venue": "Colchester Arts Centre Jazz Club",
+    "cityCountry": "Essex, UK",
+    "date": {
+      "month": "Dec",
+      "day": "2nd",
+      "year": "2018",
+      "time": "7.30pm"
+    },
+    "image": "fr_colchester_v2.jpg",
+    "urls": {
+      "moreInfo": "http://www.colchesterartscentrejazzclub.com/december-2-2018",
+      "tickets": "https://www.colchesterartscentre.com/events/jazz/fiona-ross--special-guest/"
+    }
+  },
+  {
+    "title": "Fiona Ross",
+    "venue": "Chesterfield Jazz Club",
+    "cityCountry": "Chesterfield, UK",
+    "date": {
+      "month": "August",
+      "day": "16th",
+      "year": "2018"
+    },
+    "image": "chesterfieldjazzclub.jpg",
+    "urls": {
+      "moreInfo": "https://www.ticketsource.co.uk/wendykirkland",
+      "tickets": "https://www.ticketsource.co.uk/wendykirkland"
+    }
+  },
+  {
+    "title": "Fiona Ross",
+    "venue": "Save The Children UK Concert 2018",
+    "cityCountry": "TBA",
     "date": {
       "month": "June",
-      "day": "22nd",
-      "year": "2018",
-      "time": "8.30pm"
+      "day": "30th",
+      "year": "2018"
     },
-    "image": "toulouselautrec.jpg",
+    "image": "Save-the-children-logo-black-background.png",
     "urls": {
-      "moreInfo": "http://www.toulouselautrec.co.uk/book-tickets?date=2018-06-22#537101",
-      "tickets": "https://www.designmynight.com/london/whats-on/live-music/fiona-ross-in-black-white-and-a-little-bit-of-grey?t=tickets"
+      "moreInfo": "https://www.eventbrite.co.uk/e/save-the-children-uk-festival-tickets-44425443698?utm_term=eventurl_text",
+      "tickets": "https://www.eventbrite.co.uk/e/save-the-children-uk-festival-tickets-44425443698?utm_term=eventurl_text"
     }
   },
   {
@@ -33,48 +63,18 @@
   },
   {
     "title": "Fiona Ross",
-    "venue": "Save The Children UK Concert 2018",
-    "cityCountry": "TBA",
+    "venue": "Brasserie Toulouse Lautrec",
+    "cityCountry": "London, UK",
     "date": {
       "month": "June",
-      "day": "30th",
-      "year": "2018"
-    },
-    "image": "Save-the-children-logo-black-background.png",
-    "urls": {
-      "moreInfo": "https://www.eventbrite.co.uk/e/save-the-children-uk-festival-tickets-44425443698?utm_term=eventurl_text",
-      "tickets": "https://www.eventbrite.co.uk/e/save-the-children-uk-festival-tickets-44425443698?utm_term=eventurl_text"
-    }
-  },
-  {
-    "title": "Fiona Ross",
-    "venue": "Chesterfield Jazz Club",
-    "cityCountry": "Chesterfield, UK",
-    "date": {
-      "month": "August",
-      "day": "16th",
-      "year": "2018"
-    },
-    "image": "chesterfieldjazzclub.jpg",
-    "urls": {
-      "moreInfo": "https://www.ticketsource.co.uk/wendykirkland",
-      "tickets": "https://www.ticketsource.co.uk/wendykirkland"
-    }
-  },
-  {
-    "title": "Fiona Ross",
-    "venue": "Colchester Arts Centre Jazz Club",
-    "cityCountry": "Essex, UK",
-    "date": {
-      "month": "Dec",
-      "day": "2nd",
+      "day": "22nd",
       "year": "2018",
-      "time": "7.30pm"
+      "time": "8.30pm"
     },
-    "image": "fr_colchester_v2.jpg",
+    "image": "toulouselautrec.jpg",
     "urls": {
-      "moreInfo": "http://www.colchesterartscentrejazzclub.com/december-2-2018",
-      "tickets": "https://www.colchesterartscentre.com/events/jazz/fiona-ross--special-guest/"
+      "moreInfo": "http://www.toulouselautrec.co.uk/book-tickets?date=2018-06-22#537101",
+      "tickets": "https://www.designmynight.com/london/whats-on/live-music/fiona-ross-in-black-white-and-a-little-bit-of-grey?t=tickets"
     }
   }
 ]
