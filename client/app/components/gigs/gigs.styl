@@ -25,13 +25,14 @@
     margin-bottom $gutter-primary
 
   li
-    padding $gutter-primary-x-lg 0 $gutter-primary-xx-lg 0
-    border-bottom solid 1px $color-bg-secondary
-    @media (min-width $bp-md)
-      padding $gutter-primary-xx-lg 0
-      border-bottom 0 none
+    ul li
+      padding $gutter-primary-x-lg 0 $gutter-primary-xx-lg 0
+      border-bottom solid 1px $color-bg-secondary
+      @media (min-width $bp-md)
+        padding $gutter-primary-xx-lg 0
+        border-bottom 0 none
 
-    &.first 
+    &.first
       padding-top $gutter-primary-lg
     &.last
       border-bottom 0 none
@@ -67,7 +68,7 @@
       margin-bottom $gutter-primary-lg
       font-size .95em
     
-  li:nth-child(even)
+  li ul li:nth-child(odd)
     img
       @media (min-width $bp-md)
         float left
@@ -76,3 +77,14 @@
         float right
         padding-right 0
         padding-left 1em
+  
+  li ul li.first.last
+    img
+      @media (min-width $bp-md)
+        float right
+        max-width 50%
+    .col-details
+      @media (min-width $bp-md)
+        float left
+        width: 50%
+        padding-right 1em

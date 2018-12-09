@@ -7,7 +7,7 @@ class GigsController {
     this.defaultThumb = CONST.GIGS_DEFAULT_THUMB;
 
 
-    this.gigs = this.gigsService.getAll();
+    this.years = this.gigsService.getAll();
 
   }
 }
