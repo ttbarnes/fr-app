@@ -48,6 +48,7 @@ module.exports = {
         { from: 'client/images', to: 'images' },
         { from: 'client/*.png', flatten: true},
         { from: 'client/*.ico', flatten: true},
+        { from: 'client/*.pdf', flatten: true },
         { from: 'client/app/components/gallery/modal.html', to: 'app/components/gallery', flatten: true},
         { from: 'robots.txt'}
     ])

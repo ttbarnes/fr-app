@@ -12,7 +12,7 @@
           class="col-50-xs">
           <div class="inner">
             <img ng-src="./images/press/{{pressRelease.thumbUrl}}" alt="{{pressRelease.author}} press release" />
-            <a ng-href="{{pressRelease.href}}" target="_blank" class="hover-info">
+            <a ng-href="{{pressRelease.isPdf ? './images/press/' + pressRelease.pdfUrl : pressRelease.href}}" target="_blank" class="hover-info">
               <div class="hover-info-inner">
                 <p class="author">{{pressRelease.author}}</p>
                 <p>{{pressRelease.copy}}</p>
