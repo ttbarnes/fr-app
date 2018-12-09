@@ -1,6 +1,22 @@
 [ 
   {
     "title": "Fiona Ross",
+    "venue": "Pizza Express - The Pheasantry",
+    "cityCountry": "Chelsea, UK",
+    "date": {
+      "month": "May",
+      "day": "12th",
+      "year": "2019",
+      "time": "8.30pm"
+    },
+    "image": "toulouselautrec.jpg",
+    "urls": {
+      "moreInfo": "https://www.pizzaexpresslive.com/venues/chelsea-the-pheasantry",
+      "tickets": "https://www.pizzaexpresslive.com/venues/chelsea-the-pheasantry"
+    }
+  },
+  {
+    "title": "Fiona Ross",
     "venue": "Colchester Arts Centre Jazz Club",
     "cityCountry": "Essex, UK",
     "date": {
