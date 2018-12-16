@@ -1,5 +1,19 @@
 [
   {
+    "name": "Ashaine White",
+    "role": "Backing vocalist for live performances",
+    "images": {
+      "avatar": "./images/collaborators/ashaine-white.jpg",
+      "thumb": "./images/collaborators/thumb/ashaine-white.jpg"
+    },
+    "about": "<p>Ashaine White is a Freelance Vocalist and Musician from North London, Specialising in Neo-Soul and RnB music. Ashaine also delves into the world of Pop and Jazz and working as a backing vocalist has taken her to venues such as Ronnie Scott's, Camden Assembly, The Curtain Hotel and Pizza Express Jazz Club Soho</p>",
+    "urls": {
+      "facebook": "https://www.facebook.com/Ashainewhite",
+      "twitter": "https://twitter.com/ashainewhite",
+      "instagram": "https://www.instagram.com/ashainewhite/"
+    }
+  },
+  {
     "name": "Alexander Barnes-Ross",
     "images": {
       "avatar": "./images/collaborators/alex-barnes-ross.jpg",
