@@ -1,5 +1,41 @@
 [
   {
+    "id": "50",
+    "title": "December update",
+    "createdAt": "2018-12-22T10:15:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Fi has had a crazy but exciting month so far.<\/p> <p>Fi went to Vienna to record with a special guest for the new album, and the big reveal was…….the grammy nominated artist Snow Owl, is a special guest on two tracks on Fi’s next album. They recorded two songs in a castle in Vienna - the same castle that Snow Owl recorded his last album ‘The Blue Road’. Please do have a look on <a href=\"http://facebook.com/fionarossmusic/\" target=\"_blank\">Fi’s facebook page<\/a>  for more photos and info - including a reveal video.<\/p>",
+        "imgUrl": "news/50-1.jpg",
+        "imgAlt": "Vienna",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Fi had lots of fun on the radio and was interviewed and performed two tracks live on the BBC with her guitarist Gibbi Bettini.<\/p>",
+        "imgUrl": "news/50-2.jpg",
+        "imgAlt": "Fiona Ross - BBC - Gibbi Bettini",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Maxine Gordon was in London for the launch of her new book about Dexter Gordon. Fi attended this event, with an article just published on Jazz Quarterly: <a href=\"http://www.stylequarterly.com/entertainment/the-jazz-room-jazz-quarterly-maxine-gordon-brings-her-sophisticated-giant-to-london-by-fiona-ross/\" target=\"_blank\">http://www.stylequarterly.com/entertainment/the-jazz-room-jazz-quarterly-maxine-gordon-brings-her-sophisticated-giant-to-london-by-fiona-ross<\/a><\/p>",
+        "imgUrl": "news/50-3.jpg",
+        "imgAlt": "Fiona Ross at Maxine Gordon's Book Launch",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Fi performed to a packed house and ended with a standing ovation at Colchester Arts Centre Jazz Club, which was her last gig of the year. Currently booking dates for 2019 for the new album tour. Keep an eye on the <a href=\"http://www.fionaross.co.uk/gigs\" target=\"_blank\">gigs page<\/a> for announcements - first gig of the year at the 606 club in London.<\/p>",
+        "imgUrl": "news/50-4.jpg",
+        "imgAlt": "Fiona Ross at Colchester Arts Centre Jazz Club",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Fi would like to thank you all for your support and wish you a wonderful Christmas holiday time<\/p>",
+        "videoEmbed": "https://www.youtube.com/embed/iK3d82NQ2DE?rel=0&amp;fs=0&amp;showinfo=0s"
+      }
+    ]
+  },
+  {
     "id": "49",
     "title": "November update",
     "createdAt": "2018-11-17T11:18:00+00:00",

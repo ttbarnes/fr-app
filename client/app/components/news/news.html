@@ -11,7 +11,7 @@
         <ul ng-if="post.articleSections">
           <li ng-repeat="section in post.articleSections" ng-class="{last: $last, first: $first}" class="article-section">
 
-            <div class="col-copy">
+            <div ng-class="{'col-copy': !section.videoEmbed}">
 
               <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
 
@@ -23,11 +23,15 @@
 
             </div>
 
-            <div class="col-img">
+            <div ng-if="section.imgUrl" class="col-img">
               <img ng-src="./images/{{section.imgUrl}}"
                   alt="Fiona Ross | {{section.imgAlt}}"
                   style="max-width: {{section.imgMaxWidth}}px"
               />
+            </div>
+
+            <div ng-if="section.videoEmbed">
+              <iframe width="600" height="400" ng-src="{{vm.trustSrc(section.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
             </div>
 
           </li>
