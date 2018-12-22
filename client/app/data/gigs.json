@@ -13,8 +13,23 @@
         },
         "image": "toulouselautrec.jpg",
         "urls": {
-          "moreInfo": "https://www.pizzaexpresslive.com/venues/chelsea-the-pheasantry",
-          "tickets": "https://www.pizzaexpresslive.com/venues/chelsea-the-pheasantry"
+          "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
+          "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "venue": "606 Jazz Club",
+        "cityCountry": "Chelsea, UK",
+        "date": {
+          "month": "February",
+          "day": "11th",
+          "year": "2019"
+        },
+        "image": "606jazzclub.jpg",
+        "urls": {
+          "moreInfo": "https://www.606club.co.uk",
+          "tickets": "https://www.606club.co.uk"
         }
       }
     ]
