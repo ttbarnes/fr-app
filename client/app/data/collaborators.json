@@ -1,5 +1,17 @@
 [
   {
+    "name": "Adam Hayes",
+    "role": "Drummer",
+    "images": {
+      "avatar": "./images/collaborators/adam-hayes.jpg",
+      "thumb": "./images/collaborators/thumb/adam-hayes.jpg"
+    },
+    "about": "<p>Hailing from a family of top musicians, London-based freelance drummer Adam Hayes brings an old school, authentic, journeyman approach to every project.</p><p>Adam has worked with a wide range of artists including Katrina and the Waves, The Pharcyde, Iman Omari, Ty, Ill Camille, Ruth Brown and many more.</p><p>He has extensive international gigging experience, from festivals including SXSW, Love Supreme and Boomtown, to countless renowned gig venues across London and the world.</p><p>Having recorded in studios from Abbey Road to Konk, from RAK to Paul Epworth's The Church Studios, Adam has developed a unique sound and style that compliments the song and brings out the best in any track.</p>",
+    "urls": {
+      "website": "http://adamhayesdrums.com"
+    }
+  },
+  {
     "name": "Ashaine White",
     "role": "Backing vocalist for live performances",
     "images": {
