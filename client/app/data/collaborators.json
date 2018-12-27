@@ -1,15 +1,40 @@
 [
   {
-    "name": "Adam Hayes",
-    "role": "Drummer",
+    "name": "Gibbi Bettini",
+    "role": "Guitarist",
     "images": {
-      "avatar": "./images/collaborators/adam-hayes.jpg",
-      "thumb": "./images/collaborators/thumb/adam-hayes.jpg"
+      "avatar": "./images/collaborators/gibbi-bettini.jpg",
+      "thumb": "./images/collaborators/thumb/gibbi-bettini.jpg"
     },
-    "about": "<p>Hailing from a family of top musicians, London-based freelance drummer Adam Hayes brings an old school, authentic, journeyman approach to every project.</p><p>Adam has worked with a wide range of artists including Katrina and the Waves, The Pharcyde, Iman Omari, Ty, Ill Camille, Ruth Brown and many more.</p><p>He has extensive international gigging experience, from festivals including SXSW, Love Supreme and Boomtown, to countless renowned gig venues across London and the world.</p><p>Having recorded in studios from Abbey Road to Konk, from RAK to Paul Epworth's The Church Studios, Adam has developed a unique sound and style that compliments the song and brings out the best in any track.</p>",
+    "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince.",
+    "collabOn": [
+      "Guitar on Just Me (and sometimes someone else)",
+      "Engineered Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Derek Daley",
+    "role": "Bassist for live performances",
+    "images": {
+      "avatar": "./images/collaborators/derek-daley.jpg",
+      "thumb": "./images/collaborators/thumb/derek-daley.jpg"
+    },
     "urls": {
-      "website": "http://adamhayesdrums.com"
-    }
+      "twitter": "https://twitter.com/DerekDaleyMusic",
+      "instagram": "https://www.instagram.com/derekdaleymusic"
+    },
+    "about": "<p>Being raised in a musical family home Derek was taught basic music theory by  father and uncle (both a session musicians and music teachers). Age six he began learning piano and performed at various events. Aged nine, He was introduced to the electric and double bass, now a dedicated practitioner.</p><p>Compounding his skills in music performance at the British Academy of New Music, ICMP and LCCM he is well versed in many styles, he continues to hone his playing by performing extensively across the world as a session musician, venues ranging from Bars and clubs in London, Glastonbury, Reading festival, Jazz Haus (Heidelberg), to name a few</p>"
+  },
+  {
+    "name": "Marley Drummond",
+    "images": {
+      "avatar": "./images/collaborators/marley-drummond.jpg",
+      "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
+    },
+    "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked in a wide range of genres, and musicians, both established and up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads.",
+    "collabOn": [
+      "Drums on Just Me (and sometime someone else)"
+    ]
   },
   {
     "name": "Ashaine White",
@@ -24,6 +49,47 @@
       "twitter": "https://twitter.com/ashainewhite",
       "instagram": "https://www.instagram.com/ashainewhite/"
     }
+  },
+  {
+    "name": "Adam Hayes",
+    "role": "Drummer",
+    "images": {
+      "avatar": "./images/collaborators/adam-hayes.jpg",
+      "thumb": "./images/collaborators/thumb/adam-hayes.jpg"
+    },
+    "about": "<p>Hailing from a family of top musicians, London-based freelance drummer Adam Hayes brings an old school, authentic, journeyman approach to every project.</p><p>Adam has worked with a wide range of artists including Katrina and the Waves, The Pharcyde, Iman Omari, Ty, Ill Camille, Ruth Brown and many more.</p><p>He has extensive international gigging experience, from festivals including SXSW, Love Supreme and Boomtown, to countless renowned gig venues across London and the world.</p><p>Having recorded in studios from Abbey Road to Konk, from RAK to Paul Epworth's The Church Studios, Adam has developed a unique sound and style that compliments the song and brings out the best in any track.</p>",
+    "urls": {
+      "website": "http://adamhayesdrums.com"
+    }
+  },
+  {
+    "name": "Nick Watson",
+    "images": {
+      "avatar": "./images/collaborators/nick-watson.jpg",
+      "thumb": "./images/collaborators/thumb/nick-watson.jpg"
+    },
+    "urls": {
+      "website": "http://fluidmastering.com/about-fluid-mastering"
+    },
+    "collabOn": [
+      "Mastering engineer for: Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Tony Barnes",
+    "role": "Developer, Musician",
+    "images": {
+      "avatar": "./images/collaborators/tony-barnes.jpg",
+      "thumb": "./images/collaborators/thumb/tony-barnes.jpg"
+    },
+    "urls": {
+      "website": "http://tonybarnes.me",
+      "twitter": "http://twitter.com/ttbarnes",
+      "soundcloud": "http://soundcloud.com/ttonyb"
+    },
+    "collabOn": [
+      "Built and designed fionaross.co.uk"
+    ]
   },
   {
     "name": "Alexander Barnes-Ross",
@@ -52,6 +118,19 @@
     }
   },
   {
+    "name": "The Goat",
+    "role": "Photography",
+    "images": {
+      "avatar": "./images/collaborators/the-goat.jpg",
+      "thumb": "./images/collaborators/thumb/the-goat.jpg"
+    },
+    "urls": {
+      "website": "http://www.goatnoisephotography.com/",
+      "instagram": "https://www.instagram.com/goatnoisephotography/",
+      "facebook": "https://www.facebook.com/officialgoatnoisephotography"
+    }
+  },
+  {
     "name": "David Apps",
     "role": "Photography",
     "images": {
@@ -63,90 +142,6 @@
       "facebook": "http://facebook.com/davidappsphotography",
       "phone": "07429 799338"
     }
-  },
-  {
-    "name": "Derek Daley",
-    "role": "Bassist for live performances",
-    "images": {
-      "avatar": "./images/collaborators/derek-daley.jpg",
-      "thumb": "./images/collaborators/thumb/derek-daley.jpg"
-    },
-    "urls": {
-      "twitter": "https://twitter.com/DerekDaleyMusic",
-      "instagram": "https://www.instagram.com/derekdaleymusic"
-    },
-    "about": "<p>Being raised in a musical family home Derek was taught basic music theory by  father and uncle (both a session musicians and music teachers). Age six he began learning piano and performed at various events. Aged nine, He was introduced to the electric and double bass, now a dedicated practitioner.</p><p>Compounding his skills in music performance at the British Academy of New Music, ICMP and LCCM he is well versed in many styles, he continues to hone his playing by performing extensively across the world as a session musician, venues ranging from Bars and clubs in London, Glastonbury, Reading festival, Jazz Haus (Heidelberg), to name a few</p>"
-  },
-  {
-    "name": "Gibbi Bettini",
-    "role": "Guitarist",
-    "images": {
-      "avatar": "./images/collaborators/gibbi-bettini.jpg",
-      "thumb": "./images/collaborators/thumb/gibbi-bettini.jpg"
-    },
-    "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince.",
-    "collabOn": [
-      "Guitar on Just Me (and sometimes someone else)",
-      "Engineered Just Me (and sometimes someone else)"
-    ]
-  },
-  {
-    "name": "Iain Court",
-    "role": "Music Producer/Sound Engineer",
-    "images": {
-      "avatar": "./images/collaborators/iain-court.jpg",
-      "thumb": "./images/collaborators/thumb/iain-court.jpg"
-    },
-    "urls": {
-      "website": "http://imcmusic.co.uk"
-    },
-    "collabOn": [
-      "Engineered and mixed: A Twist of Blue"
-    ]
-  },
-  {
-    "name": "Jon Hockley",
-    "role": "Producer, Engineer, Songwriter",
-    "images": {
-      "avatar": "./images/collaborators/jon-hockley.jpg",
-      "thumb": "./images/collaborators/thumb/jon-hockley.jpg"
-    },
-    "about": "<p>There are no boundaries or rules, genres don’t exist. The aim is to be remembered, to implant an idea or emotion in the listener. you are singing a story, a hit record, a message to the lost or a soundtrack to a visual experience, don’t you want that piece of music to be remembered? for your intentions to be stand out in the most entertaining, dramatic and recognisable way?</p> <p>Writing, Recording and Engineering Credits Ed Sheeran, Katy, B, Sub Focus, Paul Van Dyke, Chase and Status, Wilkinson, Kasha Rae, Katy B, Ashleigh Ashley, Concrete Rose, Mic Righteous, English Frank, Aruba Red, Marvin Ambrosius, Speech Debelle, Iman, Sam Garrett, Mila Falls, The Stow, Baby Sol, Lianhart, Chrome, Jay Norton</p> <p>I've released original songs and compositions, remixed, edited, fixed and arranged pieces of music for the above artists and many more. If i was to describe my music style i would say it’s a Dark Romantic Adventure written by Scorsese with a Tarantino middle 8. With over 15 years of experience it feels like every stone has been turned but then stones have more than 2 sides.</p> <p>Send an email to <a href=\"mailto:jonhockley@gmail.com\">jonhockley@gmail.com</a> and help me become better</p>",
-    "urls": {
-      "website": "http://www.jonhockley.com",
-      "soundcloud": "http://soundcloud.com/riffioso",
-      "other": [
-        {
-          "url": "http://www.riffioso.co.uk",
-          "title": "Riffioso"
-        }
-      ]
-    },
-    "collabOn": [
-      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
-    ]
-  },
-  {
-    "name": "Kris Buzow",
-    "images": {
-      "avatar": "./images/collaborators/kris-buzow.jpg",
-      "thumb": "./images/collaborators/thumb/kris-buzow.jpg"
-    },
-    "about": "Krzysztof Buzow - Kris began playing classical violin at 7 and turned to saxophone and clarinet at fourteen. He won The Young Talent Competition and become the best clarinet player getting a Government Scholarship. After years of playing classical music he turned to jazz and blues. He has performed with top of polish jazz and pop musicians. He came to England to study vocal and he holds BMus (HONS) in Popular Music Performance.",
-    "collabOn": [
-      "Saxophonist on Just Me (and sometimes someone else)"
-    ]
-  },
-  {
-    "name": "Marley Drummond",
-    "images": {
-      "avatar": "./images/collaborators/marley-drummond.jpg",
-      "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
-    },
-    "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked in a wide range of genres, and musicians, both established and up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads.",
-    "collabOn": [
-      "Drums on Just Me (and sometime someone else)"
-    ]
   },
   {
     "name": "Nathan Williams",
@@ -172,17 +167,28 @@
     ]
   },
   {
-    "name": "Nick Watson",
+    "name": "Roger Batting",
+    "role": "Drums on A Twist of Blue",
     "images": {
-      "avatar": "./images/collaborators/nick-watson.jpg",
-      "thumb": "./images/collaborators/thumb/nick-watson.jpg"
+      "avatar": "./images/collaborators/roger-batting.jpg",
+      "thumb": "./images/collaborators/thumb/roger-batting.jpg"
     },
+    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
     "urls": {
-      "website": "http://fluidmastering.com/about-fluid-mastering"
+      "website": "http://rogerbatting.com/"
     },
     "collabOn": [
-      "Mastering engineer for: Just Me (and sometimes someone else)"
+      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
     ]
+  },
+  {
+    "name": "Paul Mearing",
+    "role": "Guitar on Twist Of Blue",
+    "images": {
+      "avatar": "./images/collaborators/paul-mearing.jpg",
+      "thumb": "./images/collaborators/thumb/paul-mearing.jpg"
+    },
+    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
   },
   {
     "name": "Rose Redrup",
@@ -213,56 +219,50 @@
     }
   },
   {
-    "name": "The Goat",
-    "role": "Photography",
+    "name": "Kris Buzow",
     "images": {
-      "avatar": "./images/collaborators/the-goat.jpg",
-      "thumb": "./images/collaborators/thumb/the-goat.jpg"
+      "avatar": "./images/collaborators/kris-buzow.jpg",
+      "thumb": "./images/collaborators/thumb/kris-buzow.jpg"
     },
-    "urls": {
-      "website": "http://www.goatnoisephotography.com/",
-      "instagram": "https://www.instagram.com/goatnoisephotography/",
-      "facebook": "https://www.facebook.com/officialgoatnoisephotography"
-    }
-  },
-  {
-    "name": "Tony Barnes",
-    "role": "Developer, Musician",
-    "images": {
-      "avatar": "./images/collaborators/tony-barnes.jpg",
-      "thumb": "./images/collaborators/thumb/tony-barnes.jpg"
-    },
-    "urls": {
-      "website": "http://tonybarnes.me",
-      "twitter": "http://twitter.com/ttbarnes",
-      "soundcloud": "http://soundcloud.com/ttonyb"
-    },
+    "about": "Krzysztof Buzow - Kris began playing classical violin at 7 and turned to saxophone and clarinet at fourteen. He won The Young Talent Competition and become the best clarinet player getting a Government Scholarship. After years of playing classical music he turned to jazz and blues. He has performed with top of polish jazz and pop musicians. He came to England to study vocal and he holds BMus (HONS) in Popular Music Performance.",
     "collabOn": [
-      "Built and designed fionaross.co.uk"
+      "Saxophonist on Just Me (and sometimes someone else)"
     ]
   },
   {
-    "name": "Paul Mearing",
-    "role": "Guitar on Twist Of Blue",
+    "name": "Jon Hockley",
+    "role": "Producer, Engineer, Songwriter",
     "images": {
-      "avatar": "./images/collaborators/paul-mearing.jpg",
-      "thumb": "./images/collaborators/thumb/paul-mearing.jpg"
+      "avatar": "./images/collaborators/jon-hockley.jpg",
+      "thumb": "./images/collaborators/thumb/jon-hockley.jpg"
     },
-    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
-  },
-  {
-    "name": "Roger Batting",
-    "role": "Drums on A Twist of Blue",
-    "images": {
-      "avatar": "./images/collaborators/roger-batting.jpg",
-      "thumb": "./images/collaborators/thumb/roger-batting.jpg"
-    },
-    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
+    "about": "<p>There are no boundaries or rules, genres don’t exist. The aim is to be remembered, to implant an idea or emotion in the listener. you are singing a story, a hit record, a message to the lost or a soundtrack to a visual experience, don’t you want that piece of music to be remembered? for your intentions to be stand out in the most entertaining, dramatic and recognisable way?</p> <p>Writing, Recording and Engineering Credits Ed Sheeran, Katy, B, Sub Focus, Paul Van Dyke, Chase and Status, Wilkinson, Kasha Rae, Katy B, Ashleigh Ashley, Concrete Rose, Mic Righteous, English Frank, Aruba Red, Marvin Ambrosius, Speech Debelle, Iman, Sam Garrett, Mila Falls, The Stow, Baby Sol, Lianhart, Chrome, Jay Norton</p> <p>I've released original songs and compositions, remixed, edited, fixed and arranged pieces of music for the above artists and many more. If i was to describe my music style i would say it’s a Dark Romantic Adventure written by Scorsese with a Tarantino middle 8. With over 15 years of experience it feels like every stone has been turned but then stones have more than 2 sides.</p> <p>Send an email to <a href=\"mailto:jonhockley@gmail.com\">jonhockley@gmail.com</a> and help me become better</p>",
     "urls": {
-      "website": "http://rogerbatting.com/"
+      "website": "http://www.jonhockley.com",
+      "soundcloud": "http://soundcloud.com/riffioso",
+      "other": [
+        {
+          "url": "http://www.riffioso.co.uk",
+          "title": "Riffioso"
+        }
+      ]
     },
     "collabOn": [
       "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Iain Court",
+    "role": "Music Producer/Sound Engineer",
+    "images": {
+      "avatar": "./images/collaborators/iain-court.jpg",
+      "thumb": "./images/collaborators/thumb/iain-court.jpg"
+    },
+    "urls": {
+      "website": "http://imcmusic.co.uk"
+    },
+    "collabOn": [
+      "Engineered and mixed: A Twist of Blue"
     ]
   }
 ]
