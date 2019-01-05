@@ -4,21 +4,6 @@
     "gigs": [
       {
         "title": "Fiona Ross",
-        "venue": "Pizza Express - The Pheasantry",
-        "cityCountry": "Chelsea, UK",
-        "date": {
-          "month": "May",
-          "day": "12th",
-          "year": "2019"
-        },
-        "image": "toulouselautrec.jpg",
-        "urls": {
-          "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
-          "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
-        }
-      },
-      {
-        "title": "Fiona Ross",
         "venue": "606 Jazz Club",
         "cityCountry": "Chelsea, UK",
         "date": {
@@ -30,6 +15,21 @@
         "urls": {
           "moreInfo": "https://www.606club.co.uk/events/view/fiona-ross/",
           "tickets": "https://www.606club.co.uk/events/view/fiona-ross/"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "venue": "Pizza Express - The Pheasantry",
+        "cityCountry": "Chelsea, UK",
+        "date": {
+          "month": "May",
+          "day": "12th",
+          "year": "2019"
+        },
+        "image": "toulouselautrec.jpg",
+        "urls": {
+          "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
+          "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
         }
       }
     ]
