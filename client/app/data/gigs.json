@@ -31,6 +31,21 @@
           "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
           "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
         }
+      },
+      {
+        "title": "Fiona Ross",
+        "venue": "Live At Zedel",
+        "cityCountry": "Soho, London, UK",
+        "date": {
+          "month": "September",
+          "day": "7th",
+          "year": "2019"
+        },
+        "image": "liveatzedel.jpg",
+        "urls": {
+          "moreInfo": "https://www.brasseriezedel.com/live-at-zedel",
+          "tickets": "https://www.brasseriezedel.com/live-at-zedel"
+        }
       }
     ]
   },
