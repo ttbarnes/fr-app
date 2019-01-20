@@ -23,31 +23,24 @@
           <li ng-repeat="gig in year.gigs" class="row" ng-class="{last: $last, first: $first}">
 
             <div class="inner">
-              <div class="col-details">
-                <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
-                  <h2>{{gig.venue}}</h2>
-                </a>
-                <p class="city-country">{{gig.cityCountry}}</p>
-            
-                <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
-                  <span class="day-month">{{gig.date.day}} {{gig.date.month}}</span>
-                  <span>{{gig.date.year}}</span>
-                  <span ng-if="gig.date.time" class="time"> - {{gig.date.time}}</span>
-                </a>
-            
-                <div class="row button-wrap">
-                  <a ng-if="gig.urls.tickets === 'TBA'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
-                  <a ng-if="gig.urls.tickets === 'DOOR'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets on
-                    the door</a>
-                  <a ng-if="gig.urls.tickets !== 'TBA' && gig.urls.tickets !== 'DOOR'" class="button" ng-href="{{gig.urls.tickets}}"
-                    target="_blank">Tickets</a>
-                  <a class="button" ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
-                </div>
-            
+              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+                <h2>{{gig.venue}}</h2>
+              </a>
+              <p class="city-country">{{gig.cityCountry}}</p>
+          
+              <p class="date">
+                <span class="day-month">{{gig.date.month}} {{gig.date.day}}</span>
+                <span ng-if="gig.date.time" class="time"> {{gig.date.time}}</span>
+              </p>
+          
+              <div class="row button-wrap">
+                <a ng-if="gig.urls.tickets === 'TBA'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
+                <a ng-if="gig.urls.tickets === 'DOOR'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets on
+                  the door</a>
+                <a ng-if="gig.urls.tickets !== 'TBA' && gig.urls.tickets !== 'DOOR'" class="button" ng-href="{{gig.urls.tickets}}"
+                  target="_blank">Tickets</a>
+                <a class="button" ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
               </div>
-            
-              <img ng-src="./images/gigs/{{gig.image}}" alt="{{gig.venue}}" />
-            
             </div>
 
           </li>

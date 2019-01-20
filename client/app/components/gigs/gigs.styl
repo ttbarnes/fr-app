@@ -15,9 +15,7 @@
       display block
 
   .main-content
-    max-width 500px
-    @media (min-width $bp-md)
-      max-width 100%
+    @media (min-width $bp-lg)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   .year-title
@@ -26,26 +24,23 @@
 
   li
     ul li
-      padding $gutter-primary-x-lg 0 $gutter-primary-xx-lg 0
-      border-bottom solid 1px $color-bg-secondary
-      @media (min-width $bp-md)
-        padding $gutter-primary-xx-lg 0
-        border-bottom 0 none
+      padding $gutter-primary-lg
+      @media (min-width $bp-lg)
+        float left
+        clear none
+        max-width 50%
+        margin-bottom $gutter-primary-xx-lg
 
-    &.first
-      padding-top $gutter-primary-lg
+      .inner
+        display inline-block
+        position relative
+        width 100%
+        vertical-align top
+        background #2A2A2A
+        padding $gutter-primary-lg
+
     &.last
       border-bottom 0 none
-
-    img
-      @media (min-width $bp-md)
-        float right
-        max-width 50%
-    .col-details
-      @media (min-width $bp-md)
-        float left
-        width: 50%
-        padding-right 1em
 
     h2
       color $color-highlight-primary
@@ -56,35 +51,34 @@
       color $color-highlight-primary
 
     .city-country
+      color #8D8D8D
       margin-bottom $gutter-primary
+
+    .date
+      text-transform uppercase
+      margin-bottom 0
+      @media (min-width $bp-lg)
+        position absolute
+        right 0
+        padding $gutter-primary
+        background #2A2A2A
+        color #8D8D8D
+        max-height 44px
+        top -44px
 
     .button-wrap
       padding-top $gutter-primary-lg
+      margin-bottom 0
 
     .button
       width auto
       display inline-block
       margin-right $gutter-primary
-      margin-bottom $gutter-primary-lg
+      margin-bottom 0
       font-size .95em
-    
-  li ul li:nth-child(odd)
-    img
-      @media (min-width $bp-md)
-        float left
-    .col-details
-      @media (min-width $bp-md)
-        float right
-        padding-right 0
-        padding-left 1em
-  
-  li ul li.first.last
-    img
-      @media (min-width $bp-md)
-        float right
-        max-width 50%
-    .col-details
-      @media (min-width $bp-md)
-        float left
-        width: 50%
-        padding-right 1em
+      background #000
+      color $color-text-primary
+      &:hover,
+      &:focus
+        color #FFF
+        text-decoration underline

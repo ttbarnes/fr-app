@@ -7,7 +7,7 @@
         "venue": "606 Jazz Club",
         "cityCountry": "Chelsea, UK",
         "date": {
-          "month": "February",
+          "month": "Feb",
           "day": "11th",
           "year": "2019"
         },
@@ -37,7 +37,7 @@
         "venue": "Live At Zedel",
         "cityCountry": "Soho, London, UK",
         "date": {
-          "month": "September",
+          "month": "Sept",
           "day": "7th",
           "year": "2019"
         },
@@ -73,7 +73,7 @@
         "venue": "Chesterfield Jazz Club",
         "cityCountry": "Chesterfield, UK",
         "date": {
-          "month": "August",
+          "month": "Aug",
           "day": "16th",
           "year": "2018"
         },
