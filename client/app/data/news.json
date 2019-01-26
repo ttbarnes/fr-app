@@ -6,7 +6,7 @@
     "isMonthlyUpdate": true,
     "articleSections": [
       {
-        "copy": "<p>Happy New year to everyone!<\/p><p>Fi has had a crazy packed start to the year already.<\/p><p>First gig of the year at the famous 606 club in London on February 11th. Here’s the link:<\/p><p><a href=\"https://www.606club.co.uk/events/view/fiona-ross/\" target=\"_blank\">https://www.606club.co.uk/events/view/fiona-ross<\/a><\/p>"
+        "copy": "<p>Happy New year to everyone!<\/p><p>Fi has had a crazy packed start to the year already. First gig of the year at the famous 606 club in London on February 11th. Here’s the link:<\/p><p><a href=\"https://www.606club.co.uk/events/view/fiona-ross/\" target=\"_blank\">https://www.606club.co.uk/events/view/fiona-ross<\/a><\/p>"
       },
       {
         "copy": "<p>The big news of course this month is Fi has been in studio recording the new album! Fi is recording at Studio XYZ again, which is where the last two albums were recorded. Do follow Fi on social media for video clips and regular studio footage and album updates. The album cover and title has now been revealed:<\/p><p>IMAGE HERE<\/p>"
@@ -86,10 +86,7 @@
         "imgMaxWidth": "600"
       },
       {
-        "copy": "<p>Next gig is at the Colchester Arts Centre Jazz Club on December 2nd. <a href=\"https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni/\" target=\"_blank\">https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni<\/a><\/p>",
-        "imgUrl": "gigs/fr_colchester_v3.jpg",
-        "imgAlt": "Fiona Ross at Colchester Arts Centre Jazz",
-        "imgMaxWidth": "413",
+        "copy": "<p>Next gig is at the Colchester Arts Centre Jazz Club on December 2nd.<\/p><p><a href=\"https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni/\" target=\"_blank\">https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni<\/a><\/p>",
         "ticketsLink": "https://www.colchesterartscentre.com/events/jazz/fiona-ross-sextet-special-guest-marco-piccioni/",
         "venueLink": "http://www.colchesterartscentrejazzclub.com/december-2-2018"
       }
