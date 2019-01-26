@@ -1,5 +1,31 @@
 [
   {
+    "id": "51",
+    "title": "January update",
+    "createdAt": "2019-01-26T10:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Happy New year to everyone!<\/p><p>Fi has had a crazy packed start to the year already.<\/p><p>First gig of the year at the famous 606 club in London on February 11th. Here’s the link:<\/p><p><a href=\"https://www.606club.co.uk/events/view/fiona-ross/\" target=\"_blank\">https://www.606club.co.uk/events/view/fiona-ross<\/a><\/p>"
+      },
+      {
+        "copy": "<p>The big news of course this month is Fi has been in studio recording the new album! Fi is recording at Studio XYZ again, which is where the last two albums were recorded. Do follow Fi on social media for video clips and regular studio footage and album updates. The album cover and title has now been revealed:<\/p><p>IMAGE HERE<\/p>"
+      },
+      {
+        "copy": "<p>Fi had a great time being interviewed by Eamonn Lenihan \"Lenihan has created something more than a late night soundscape of the finest music known to humanity; he has created something that is a work of art itself Sunday Independent.\" Here’s the link:<\/p><p><a href=\"http://www.nobetterman.com/\" target=\"_blank\">http://www.nobetterman.com<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Amazing new review in this month for Fi’s last album over in Spain: \"Fiona Ross is one of those musical phenomena that arise every so many years\"<\/p><p><a href=\"https://lahabitaciondeljazz.blogspot.com/2019/01/fiona-ross-cd-black-white-and-little.html\" target=\"_blank\">https://lahabitaciondeljazz.blogspot.com/2019/01/fiona-ross-cd-black-white-and-little.html<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi also had a wonderful interview with Elizabeth Chute chatting about the new album:<\/p><p><a href=\"https://passionandmeaning.com/latest-news-from-fiona-ross\" target=\"_blank\">https://passionandmeaning.com/latest-news-from-fiona-ross/<\/a><\/p>"
+      },
+      {
+        "copy": "<p>More news soon!<\/p>"
+      }
+    ]
+  },
+  {
     "id": "50",
     "title": "December update",
     "createdAt": "2018-12-22T10:15:00+00:00",
