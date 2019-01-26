@@ -8,14 +8,14 @@
     color $color-highlight-primary
     padding-bottom $gutter-primary-lg
     margin-bottom $gutter-primary-lg
-
+    
   .img-bg
     display none
     @media (min-width $bp-sm)
       display block
 
   .main-content
-    @media (min-width $bp-lg)
+    @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   .year-title
@@ -46,9 +46,17 @@
       color $color-highlight-primary
       margin-bottom 0
       text-transform uppercase
-      letter-spacing 2px
+      letter-spacing 1px
       font-weight 300
       color $color-highlight-primary
+      @media (min-width $bp-sm)
+        letter-spacing 2px
+      @media (min-width $bp-lg)
+        letter-spacing 1px
+        font-size $font-size-h2-mobile
+      @media (min-width $bp-xlg)
+        letter-spacing 2px
+        font-size $font-size-h2-desktop
 
     .city-country
       color #8D8D8D
