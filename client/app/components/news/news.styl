@@ -37,7 +37,6 @@
       margin-bottom $gutter-primary-lg
       margin-right $gutter-primary-lg
       @media (min-width $bp-md)
-        // max-height 300px
         max-width 100%
         float left
         overflow hidden
@@ -229,11 +228,14 @@
 
 
     .col-img
-      max-width 60%
+      max-width 100%
       margin 0 auto
+      @media (min-width $bp-xs)
+        max-width 80%
       @media (min-width $bp-sm)
-        max-width 100%
         margin 0
+      @media (min-width $bp-md)
+        max-width 100%
 
     @media (min-width $bp-md)
       .col-copy
@@ -256,7 +258,16 @@
         .col-img
           float right
           padding-left $gutter-primary-lg
-    
+
+    @media (min-width $bp-md)
+      .col-left-align
+        .col-copy
+          float right
+          padding-left $gutter-primary-lg
+        .col-img
+          float left
+          padding-right $gutter-primary-lg  
+
     .body-content p
       margin-top 0
       padding-top 0

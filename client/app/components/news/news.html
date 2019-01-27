@@ -11,7 +11,7 @@
         <ul ng-if="post.articleSections">
           <li ng-repeat="section in post.articleSections" ng-class="{last: $last, first: $first}" class="article-section">
 
-            <div ng-if="section.imgUrl">
+            <div ng-if="section.imgUrl" ng-class="{'col-left-align': section.leftColImage}">
               <div ng-class="{'col-copy': !section.videoEmbed}">
 
                 <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
