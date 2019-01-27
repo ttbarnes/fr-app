@@ -1,11 +1,11 @@
 [
   {
     "id": 4,
-    "name": "TBA",
+    "name": "Fierce and Non-Compliant",
     "releaseDate": "2019",
     "images": {
-      "thumb": "./images/albums/thumb/new-album.png",
-      "appCover": "./images/albums/new-album.png"
+      "thumb": "./images/albums/thumb/fierce-and-non-compliant.jpg",
+      "appCover": "./images/albums/fierce-and-non-compliant.jpg"
     },
     "comingSoon": true
   },
