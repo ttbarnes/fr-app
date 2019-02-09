@@ -43,6 +43,20 @@
           "moreInfo": "https://www.brasseriezedel.com/live-at-zedel",
           "tickets": "https://www.brasseriezedel.com/live-at-zedel"
         }
+      },
+      {
+        "title": "Fiona Ross",
+        "cityCountry": "Kennington, London, UK",
+        "venue": "Toulouse Lautrec",
+        "date": {
+          "month": "Oct",
+          "day": "25th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.toulouselautrec.co.uk/book-tickets",
+          "tickets": "https://www.toulouselautrec.co.uk/book-tickets"
+        }
       }
     ]
   },
