@@ -4,12 +4,18 @@
 
   <div class="main-content align-center">
 
-    <h3>{{vm.album.name}} - Audio CD</h3>
+    <div ng-if="vm.album.canPreOrderAudioCd">
+      <h3>Pre order {{vm.album.name}} - Audio CD</h3>
+    </div>
+
+    <div ng-if="vm.album.canOrderAudioCd">
+      <h3>{{vm.album.name}} - Audio CD</h3>
+    </div>
 
     <p>limited edition</p>
 
     <div ng-if="vm.consentAccepted">
-      <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch within 2 working days. <br/>Read our <a ui-sref="privacyPolicy">privacy policy</a> to understand how your data will be used.</p>
+      <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch <span ng-if="vm.album.preOrderCdsDispatchDate">on April 18th.</span> <span ng-if="!vm.album.preOrderCdsDispatchDate">within 2 working days. </span><br/>Read our <a ui-sref="privacyPolicy">privacy policy</a> to understand how your data will be used.</p>
     </div>
 
     <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover-border link-highlight-hover">

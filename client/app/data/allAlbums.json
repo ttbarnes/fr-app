@@ -7,7 +7,9 @@
       "thumb": "./images/albums/thumb/fierce-and-non-compliant.jpg",
       "appCover": "./images/albums/fierce-and-non-compliant.jpg"
     },
-    "comingSoon": true
+    "comingSoon": true,
+    "canPreOrderAudioCd": true,
+    "preOrderCdsDispatchDate": "April 18th"
   },
   {
     "id": 3,

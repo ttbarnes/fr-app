@@ -114,6 +114,10 @@
         <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Get a signed Audio CD</a>
       </div>
 
+      <div ng-if="vm.data.canPreOrderAudioCd"  class="row link-highlight-hover-border audio-cd-copy">
+        <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Pre order limited edition signed physical CD</a>
+      </div>
+
       <div ng-if="vm.data.id === 2" class="row">
         <a ui-sref="musicAlbumReviews({id: vm.data.id})"
            class="cta-button">Reviews</a>

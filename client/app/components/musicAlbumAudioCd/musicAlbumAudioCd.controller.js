@@ -11,10 +11,12 @@ class musicAlbumAudioCdController {
       $state.go('error');
     } else {
       this.album = this.albumsService.getAlbumById(this.currentId);
+
       if (!this.album) {
         $state.go('error');
       }
-      if (this.album && !this.album.canOrderAudioCd) {
+
+      if (this.album && (!this.album.canPreOrderAudioCd && !this.album.canOrderAudioCd)) {
         $state.go('error');
       }
     }
