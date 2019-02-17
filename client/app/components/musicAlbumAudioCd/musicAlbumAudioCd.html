@@ -15,7 +15,7 @@
     <p>limited edition</p>
 
     <div ng-if="vm.consentAccepted">
-      <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch <span ng-if="vm.album.preOrderCdsDispatchDate">on April 18th.</span> <span ng-if="!vm.album.preOrderCdsDispatchDate">within 2 working days. </span><br/>Read our <a ui-sref="privacyPolicy">privacy policy</a> to understand how your data will be used.</p>
+      <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch <span ng-if="vm.album.preOrderCdsDispatchDate">on {{vm.album.preOrderCdsDispatchDate}}.</span> <span ng-if="!vm.album.preOrderCdsDispatchDate">within 2 working days.</span><br/></p>
     </div>
 
     <div ng-if="vm.consentRejected || !vm.consentAccepted" class="link-highlight-hover-border link-highlight-hover">
