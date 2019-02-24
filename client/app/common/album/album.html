@@ -127,7 +127,7 @@
 
       <div ng-bind-html="vm.data.writtenBy" class="written-by"></div>
 
-      <div ng-if="vm.data.id === 1" class="row quotes">
+      <div ng-if="vm.data.id === 1 || vm.data.id === 4" class="row quotes">
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
 
@@ -142,7 +142,7 @@
 
     </div>
 
-    <!-- latest album specific  -->
+    <!-- 3rd album specific  -->
     <div ng-if="vm.data.id === 3" class="row album-additional-info">
       <div class="col-50-md col-first">
         <p class="description">{{vm.data.description}}</p>
@@ -156,6 +156,22 @@
         </ol>
         <p class="tracklist-note"><span class="star">*</span>{{vm.data.tracklistNote}}</p>
       </div>
+    </div>
+
+    <!-- latest album specific  -->
+    <div ng-if="vm.data.id === 4" class="row album-additional-info press-release">
+      <div ng-repeat="pressRelease in vm.data.pressRelease">
+        <div ng-bind-html="pressRelease"></div>
+      </div>
+      <ul class="album-credits">
+        <li ng-repeat="c in vm.data.albumCredits">{{c}}</li>
+      </ul>
+    </div>
+
+    <div ng-if="vm.data.id === 4 && vm.data.canPreOrderAudioCd" class="row link-highlight-hover-border audio-cd-copy">
+      <br />
+      <br />
+      <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Pre order limited edition signed physical CD</a>
     </div>
 
 
