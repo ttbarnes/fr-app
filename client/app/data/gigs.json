@@ -18,6 +18,20 @@
       },
       {
         "title": "Fiona Ross",
+        "venue": "Album launch - Bulls Head Barnes",
+        "cityCountry": "Barnes, London, UK",
+        "date": {
+          "month": "April",
+          "day": "18th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://tickets.thebullsheadbarnes.com/events/2019-04-18-fiona-ross-album-launch-fierce-and-non-compliant-bulls-head-barnes",
+          "tickets": "https://tickets.thebullsheadbarnes.com/events/2019-04-18-fiona-ross-album-launch-fierce-and-non-compliant-bulls-head-barnes"
+        }
+      },
+      {
+        "title": "Fiona Ross",
         "venue": "Pizza Express - The Pheasantry",
         "cityCountry": "Chelsea, UK",
         "date": {
