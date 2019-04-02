@@ -13,9 +13,13 @@ export default class collaboratorsService {
     /*
     // get any single collaborator
     */
+    // this.getSingle = (id) => {
+    //   id = id - 1;
+    //   return this.collaborators[id];
+    // }
     this.getSingle = (id) => {
-      id = id - 1;
-      return this.collaborators[id];
+      const result = this.collaborators.find((collaborator) => collaborator.collabId === id);
+      return result;
     }
 
     /*
@@ -52,12 +56,18 @@ export default class collaboratorsService {
       }
       return false;
     }
+    
+    this.nextCollaborator = (id) => {
+      const currentCollabIndex = this.collaborators.findIndex((collab) => collab.collabId === id);
+      return this.collaborators[currentCollabIndex + 1];
+    }
 
     /*
     // create collabState obj containing
     // prev & next objects with name and id
     */
     this.getPrevNextCollab = (id) => {
+      console.log('calling nextColalb.. ', this.nextCollaborator(id));
       const currentId = parseInt(id, 10);
       const prevCollab = this.isFirstCollaborator(currentId) ? false : this.collaborators[currentId - 2],
             nextCollab = this.isLastCollaborator(currentId) ? false : this.collaborators[currentId],

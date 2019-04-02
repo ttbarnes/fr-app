@@ -1,6 +1,7 @@
 [
   {
     "name": "Gibbi Bettini",
+    "collabId": "Gibbi-Bettini",
     "role": "Guitarist",
     "images": {
       "avatar": "./images/collaborators/gibbi-bettini.jpg",
@@ -14,6 +15,7 @@
   },
   {
     "name": "Derek Daley",
+    "collabId": "Derek-Daley",
     "role": "Bassist for live performances",
     "images": {
       "avatar": "./images/collaborators/derek-daley.jpg",
