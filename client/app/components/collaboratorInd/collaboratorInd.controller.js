@@ -2,7 +2,7 @@ class CollaboratorIndController {
   constructor($state, $stateParams, collaboratorsService) {
     'ngInject';
     this.stateParams = $stateParams;
-    this.currentId = this.stateParams.id;
+    this.currentId = this.stateParams.collabId;
     this.collaboratorsService = collaboratorsService;
 
     this.collab = this.collaboratorsService.getSingle(this.currentId);
@@ -11,8 +11,7 @@ class CollaboratorIndController {
     }
 
     this.collabState = {
-      detail: this.collaboratorsService.getPrevNextCollab(this.currentId),
-      onLast: this.collaboratorsService.isLastCollaborator(this.currentId)
+      detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
     };
 
   }

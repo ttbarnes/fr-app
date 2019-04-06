@@ -1,6 +1,7 @@
 [
   {
     "name": "Gibbi Bettini",
+    "collabId": "Gibbi-Bettini",
     "role": "Guitarist",
     "images": {
       "avatar": "./images/collaborators/gibbi-bettini.jpg",
@@ -14,6 +15,7 @@
   },
   {
     "name": "Derek Daley",
+    "collabId": "Derek-Daley",
     "role": "Bassist for live performances",
     "images": {
       "avatar": "./images/collaborators/derek-daley.jpg",
@@ -27,6 +29,7 @@
   },
   {
     "name": "Marley Drummond",
+    "collabId": "Marley-Drummond",
     "images": {
       "avatar": "./images/collaborators/marley-drummond.jpg",
       "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
@@ -38,6 +41,7 @@
   },
   {
     "name": "Ashaine White",
+    "collabId": "Ashaine-White",
     "role": "Backing vocalist for live performances",
     "images": {
       "avatar": "./images/collaborators/ashaine-white.jpg",
@@ -52,6 +56,7 @@
   },
   {
     "name": "Adam Hayes",
+    "collabId": "Adam-Hayes",
     "role": "Drummer",
     "images": {
       "avatar": "./images/collaborators/adam-hayes.jpg",
@@ -64,6 +69,7 @@
   },
   {
     "name": "Nick Watson",
+    "collabId": "Nick-Watson",
     "images": {
       "avatar": "./images/collaborators/nick-watson.jpg",
       "thumb": "./images/collaborators/thumb/nick-watson.jpg"
@@ -77,6 +83,7 @@
   },
   {
     "name": "Tony Barnes",
+    "collabId": "Tony-Barnes",
     "role": "Developer, Musician",
     "images": {
       "avatar": "./images/collaborators/tony-barnes.jpg",
@@ -93,6 +100,7 @@
   },
   {
     "name": "Alexander Barnes-Ross",
+    "collabId": "Alexander-Barnes-Ross",
     "images": {
       "avatar": "./images/collaborators/alex-barnes-ross.jpg",
       "thumb": "./images/collaborators/thumb/alex-barnes-ross.jpg"
@@ -108,6 +116,7 @@
   },
   {
     "name": "Catarina Andrade",
+    "collabId": "Catarina-Andrade",
     "role": "Stylist",
     "images": {
       "avatar": "./images/collaborators/catarina-andrade.jpg",
@@ -119,6 +128,7 @@
   },
   {
     "name": "The Goat",
+    "collabId": "The-Goat",
     "role": "Photography",
     "images": {
       "avatar": "./images/collaborators/the-goat.jpg",
@@ -132,6 +142,7 @@
   },
   {
     "name": "David Apps",
+    "collabId": "David-Apps",
     "role": "Photography",
     "images": {
       "avatar": "./images/collaborators/david-apps.jpg",
@@ -145,6 +156,7 @@
   },
   {
     "name": "Nathan Williams",
+    "collabId": "Nathan-Williams",
     "role": "Multi-instrumentalist, writer, producer, arranger, artist and part-time teacher",
     "images": {
       "avatar": "./images/collaborators/nathan-williams.jpg",
@@ -168,6 +180,7 @@
   },
   {
     "name": "Roger Batting",
+    "collabId": "Roger-Batting",
     "role": "Drums on A Twist of Blue",
     "images": {
       "avatar": "./images/collaborators/roger-batting.jpg",
@@ -183,6 +196,7 @@
   },
   {
     "name": "Paul Mearing",
+    "collabId": "Paul-Mearing",
     "role": "Guitar on Twist Of Blue",
     "images": {
       "avatar": "./images/collaborators/paul-mearing.jpg",
@@ -192,6 +206,7 @@
   },
   {
     "name": "Rose Redrup",
+    "collabId": "Rose-Redrup",
     "role": "Makeup Artist",
     "images": {
       "avatar": "./images/collaborators/rose-redrup.jpg",
@@ -208,6 +223,7 @@
   },
   {
     "name": "Stefan Ferrol",
+    "collabId": "Stefan-Ferrol",
     "role": "Photography",
     "images": {
       "avatar": "./images/collaborators/stefan-ferrol.jpg",
@@ -220,6 +236,7 @@
   },
   {
     "name": "Kris Buzow",
+    "collabId": "Kris-Buzow",
     "images": {
       "avatar": "./images/collaborators/kris-buzow.jpg",
       "thumb": "./images/collaborators/thumb/kris-buzow.jpg"
@@ -231,6 +248,7 @@
   },
   {
     "name": "Jon Hockley",
+    "collabId": "Jon-Hockley",
     "role": "Producer, Engineer, Songwriter",
     "images": {
       "avatar": "./images/collaborators/jon-hockley.jpg",
@@ -253,6 +271,7 @@
   },
   {
     "name": "Iain Court",
+    "collabId": "Iain-Court",
     "role": "Music Producer/Sound Engineer",
     "images": {
       "avatar": "./images/collaborators/iain-court.jpg",

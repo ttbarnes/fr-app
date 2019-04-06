@@ -13,11 +13,11 @@ let collaboratorIndModule = angular.module('collaboratorInd', [
 
   $stateProvider
     .state('collaboratorsInd', {
-      url: '/collaborators/:id',
+      url: '/collaborators/:collabId',
       template: '<collaborator-ind></collaborator-ind>',
       resolve: {
         collab: (collaboratorsService, $stateParams) => {
-          return collaboratorsService.getSingle($stateParams.id);
+          return collaboratorsService.getSingle($stateParams.collabId);
         },
         $title: (collab) => {
           return collab.name + PAGE_TITLE_COLLABORATOR_IND;

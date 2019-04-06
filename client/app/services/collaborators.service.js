@@ -1,9 +1,7 @@
 import collaborators from '../data/collaborators.json';
 
 export default class collaboratorsService {
-
   constructor(){
-
     angular.forEach(collaborators, (c, i) => {
       c.id = i + 1;
     });
@@ -14,63 +12,47 @@ export default class collaboratorsService {
     // get any single collaborator
     */
     this.getSingle = (id) => {
-      id = id - 1;
-      return this.collaborators[id];
-    }
-
-    /*
-    // get the first collaborator
-    */
-    this.firstCollaborator = () => {
-      const c = collaborators[0],
-            obj = {
-              id: c.id,
-              name: c.name
-            };
-      return obj;
-    };
-
-    /*
-    // check if a collaborator is the first
-    */
-    this.isFirstCollaborator = (id) => {
-      const c = this.firstCollaborator();
-      if (id === c.id) {
-        return true;
-      }
-      return false;
+      const result = this.collaborators.find((collaborator) => collaborator.collabId === id);
+      return result;
     }
 
     /*
     // check if a collaborator is the last
     */
     this.isLastCollaborator = (id) => {
-      const collabs = collaborators;
-      const lastCollab = collaborators[collaborators.length - 1].id;
-      if (id >= lastCollab) {
+      const lastCollabId = collaborators[collaborators.length - 1].collabId;
+      if (id === lastCollabId) {
         return true;
       }
       return false;
     }
+    
+    /*
+    // get the next collaborator from id
+    */
+    this.nextCollaborator = (id) => {
+      const currentCollabIndex = this.collaborators.findIndex((collab) => collab.collabId === id);
+      return this.collaborators[currentCollabIndex + 1];
+    }
 
     /*
-    // create collabState obj containing
-    // prev & next objects with name and id
+    // create collaborator object for UI links and text
     */
     this.getPrevNextCollab = (id) => {
-      const currentId = parseInt(id, 10);
-      const prevCollab = this.isFirstCollaborator(currentId) ? false : this.collaborators[currentId - 2],
-            nextCollab = this.isLastCollaborator(currentId) ? false : this.collaborators[currentId],
-            collabState = {
-              prev: {
-                id: this.isFirstCollaborator(currentId) ? false : prevCollab.id,
-                name: this.isFirstCollaborator(currentId) ? false : prevCollab.name
-              },
-              next: {
-                id: this.isLastCollaborator(currentId) ? this.firstCollaborator().id : nextCollab.id,
-                name: this.isLastCollaborator(currentId) ? this.firstCollaborator().name : nextCollab.name
-              }
-            };
+      const isLastCollab = this.isLastCollaborator(id);
+      const collabState = {};
+      let nextCollabObj;
+
+      if (isLastCollab) {
+        nextCollabObj = this.collaborators[0];
+      } else {
+        nextCollabObj = this.nextCollaborator(id);
+      }
+
+      collabState.next = {
+        collabId: nextCollabObj.collabId,
+        name: nextCollabObj.name
+      };
       return collabState;
     }
 
