@@ -11,8 +11,7 @@ class CollaboratorIndController {
     }
 
     this.collabState = {
-      detail: this.collaboratorsService.getPrevNextCollab(this.currentId),
-      onLast: this.collaboratorsService.isLastCollaborator(this.currentId)
+      detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
     };
 
   }
