@@ -68,6 +68,21 @@
     }
   },
   {
+    "name": "Steven Tiller",
+    "collabId": "Steven-Tiller",
+    "role": "Photographer",
+    "images": {
+      "avatar": "./images/collaborators/steven-tiller.jpg",
+      "thumb": "./images/collaborators/steven-tiller.jpg"
+    },
+    "about": "A decade ago I first picked up a camera and haven't let it go since. I've always been fascinated by people and the stories they're living, which has led my camera & I on some epic adventures ever since. It's awesome to let you SEE WHAT I SEE...",
+    "urls": {
+      "website": "https://www.steventiller.com",
+      "facebook": "https://www.facebook.com/tillersteven",
+      "instagram": "https://www.instagram.com/steventiller"
+    }
+  },
+  {
     "name": "Nick Watson",
     "collabId": "Nick-Watson",
     "images": {
