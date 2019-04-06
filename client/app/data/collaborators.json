@@ -29,6 +29,7 @@
   },
   {
     "name": "Marley Drummond",
+    "collabId": "Marley-Drummond",
     "images": {
       "avatar": "./images/collaborators/marley-drummond.jpg",
       "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
@@ -40,6 +41,7 @@
   },
   {
     "name": "Ashaine White",
+    "collabId": "Ashaine-White",
     "role": "Backing vocalist for live performances",
     "images": {
       "avatar": "./images/collaborators/ashaine-white.jpg",
@@ -233,6 +235,7 @@
   },
   {
     "name": "Jon Hockley",
+    "collabId": "Jon-Hockley",
     "role": "Producer, Engineer, Songwriter",
     "images": {
       "avatar": "./images/collaborators/jon-hockley.jpg",
@@ -255,6 +258,7 @@
   },
   {
     "name": "Iain Court",
+    "collabId": "Iain-Court",
     "role": "Music Producer/Sound Engineer",
     "images": {
       "avatar": "./images/collaborators/iain-court.jpg",
