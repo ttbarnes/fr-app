@@ -2,21 +2,17 @@
   {
     "name": "Gibbi Bettini",
     "collabId": "Gibbi-Bettini",
-    "role": "Guitarist",
+    "role": "Guitarist/Engineer",
     "images": {
       "avatar": "./images/collaborators/gibbi-bettini.jpg",
       "thumb": "./images/collaborators/thumb/gibbi-bettini.jpg"
     },
-    "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince.",
-    "collabOn": [
-      "Guitar on Just Me (and sometimes someone else)",
-      "Engineered Just Me (and sometimes someone else)"
-    ]
+    "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince."
   },
   {
     "name": "Derek Daley",
     "collabId": "Derek-Daley",
-    "role": "Bassist for live performances",
+    "role": "Bassist",
     "images": {
       "avatar": "./images/collaborators/derek-daley.jpg",
       "thumb": "./images/collaborators/thumb/derek-daley.jpg"
@@ -30,19 +26,17 @@
   {
     "name": "Marley Drummond",
     "collabId": "Marley-Drummond",
+    "role": "Drummer",
     "images": {
       "avatar": "./images/collaborators/marley-drummond.jpg",
       "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
     },
-    "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked in a wide range of genres, and musicians, both established and up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads.",
-    "collabOn": [
-      "Drums on Just Me (and sometime someone else)"
-    ]
+    "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked in a wide range of genres, and musicians, both established and up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads."
   },
   {
     "name": "Ashaine White",
     "collabId": "Ashaine-White",
-    "role": "Backing vocalist for live performances",
+    "role": "Backing vocalist",
     "images": {
       "avatar": "./images/collaborators/ashaine-white.jpg",
       "thumb": "./images/collaborators/thumb/ashaine-white.jpg"
@@ -85,16 +79,14 @@
   {
     "name": "Nick Watson",
     "collabId": "Nick-Watson",
+    "role": "Master engineer",
     "images": {
       "avatar": "./images/collaborators/nick-watson.jpg",
       "thumb": "./images/collaborators/thumb/nick-watson.jpg"
     },
     "urls": {
       "website": "http://fluidmastering.com/about-fluid-mastering"
-    },
-    "collabOn": [
-      "Mastering engineer for: Just Me (and sometimes someone else)"
-    ]
+    }
   },
   {
     "name": "Tony Barnes",
