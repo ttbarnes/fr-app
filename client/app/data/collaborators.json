@@ -71,6 +71,20 @@
     }
   },
   {
+    "name": "Elliot Richardson",
+    "collabId": "Elliot-Richardson",
+    "role": "Musician, Producer, Engineer, Owner Highfield Studio",
+    "images": {
+      "avatar": "./images/collaborators/elliot-richardson.jpg"
+    },
+    "urls": {
+      "website": "http://www.highfieldstudio.com/",
+      "instagram": "https://www.instagram.com/highfieldstudio",
+      "facebook": "https://www.facebook.com/highfieldstudio"
+    },
+    "about": "<p>Starting out early in life as drummer / pianist, Elliot quickly found a home drumming in originals band Missing Andy who achieved two UK tours, one European tour and a sold out gig at Wembley arena after performing on Sky Ones show 'Must Be The Music'. This lead to the band achieving two top 40 hits.<\/p><p>Following this, Elliot produced & mixed a further two albums for Missing Andy which helped fuel the bands independent career for a further 4 years.  Nowadays, Elliot spends most of his time running his own business 'Highfield Studio', a recording studio in the heart of rural Essex, and has worked with the likes of Sandi Thom, Joe McElderry, James Graham (The Four), Jeffery Daniels, and Angie Brown to name a few.<\/p><p>Still performing today, Elliot can be found on either the originals circuit with Missing Andy or in the corporate scene with his recently formed covers band 'Band Theft Audio' who have been seen at Silverstone Formula 1, Moto GP, Ascot, Brentwood Festival, Havering Festival, Hertford University Summer Ball, Stamford Bridge and many more on the horizon.<\/p>"
+  },
+  {
     "name": "Nick Watson",
     "collabId": "Nick-Watson",
     "role": "Master engineer",
