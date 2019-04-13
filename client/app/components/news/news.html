@@ -36,6 +36,14 @@
               <div class="link-highlight-hover-border venue-link">
                 <a ng-if="section.venueLink" href="{{section.venueLink}}" target="_blank">Venue</a>
               </div>
+
+              <div ng-if="section.images" class="col-images">
+                <ul>
+                  <li ng-repeat="image in section.images" class="col-img">
+                    <img ng-src="./images/{{image.imgUrl}}" alt="Fiona Ross | {{image.imgAlt}}"/>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div ng-if="section.videoEmbed">

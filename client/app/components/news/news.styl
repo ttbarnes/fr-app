@@ -259,6 +259,22 @@
           float right
           padding-left $gutter-primary-lg
 
+    .col-images
+      .col-img
+        width 100%
+        max-width 100%
+        padding $gutter-primary-lg
+        @media (min-width $bp-md)
+          width 50%
+          float left
+          clear none
+          padding 0 $gutter-primary-lg
+          &:nth-child(even)
+            padding-right 0
+          &:nth-child(odd)
+            padding-left 0
+          
+
     @media (min-width $bp-md)
       .col-left-align
         .col-copy

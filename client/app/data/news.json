@@ -1,5 +1,46 @@
 [
   {
+    "id": "52",
+    "title": "April update",
+    "createdAt": "2019-04-13T10:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>So sorry for the delay in news! We have all been busy and excited about the new release!<\/p><p>April 18th is the launch of Fi’s new album 'Fierce and Non-Compliant' - You can read all about it here: <a href=\"http://www.fionaross.co.uk/music/album/4\" target=\"_blank\">http://www.fionaross.co.uk/music/album/4<\/a><\/p><p>Pre orders on the physical CD available through website only.  Album will be available on all normal digital platforms from April 18th.<\/p>",
+        "imgUrl": "albums/thumb/fierce-and-non-compliant.jpg",
+        "imgAlt": "Fiona Ross - Fierce and Non-Compliant",
+        "imgMaxWidth": "600"
+      },
+      {
+        "copy": "<p>Fi had a great photo shoot with Steve Tiller recently, here’s some shots:<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/52-1.jpg",
+            "imgAlt": "Steve Tiller Photo shoot",
+            "imgMaxWidth": "700"
+          },
+          {
+            "imgUrl": "news/52-2.jpg",
+            "imgAlt": "Steve Tiller Photo shoot",
+            "imgMaxWidth": "700"
+          }
+        ]
+      },
+      {
+        "copy": "<p>Gigs page is getting busy! Next gig is at the legendary Bulls Head in Barnes for the album launch. Here’s the ticket link:<\/p><p><a href=\"https://tickets.thebullsheadbarnes.com/events/2019-04-18-fiona-ross-album-launch-fierce-and-non-compliant-bulls-head-barnes\" target=\"_blank\">https://tickets.thebullsheadbarnes.com/events/2019-04-18-fiona-ross-album-launch-fierce-and-non-compliant-bulls-head-barnes<\/a><\/p><p>And a video: <a href=\"https://www.facebook.com/fionarossmusic/videos/411346773016655\" target=\"_blank\">https://www.facebook.com/fionarossmusic/videos/411346773016655<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi has also had some great press coming in over the past month, including a video interview for Jazz in Europe which received an incredible amount of views in the first couple of days:<\/p><p><a href=\"https://www.facebook.com/watch/?v=2813840388842069\" target=\"_blank\">https://www.facebook.com/watch/?v=2813840388842069<\/a><\/p><p>An article with Indie Music Women: <a href=\"https://indiemusicwomen.com/featured/fiona-ross-fierce-and-non-compliant/\" target=\"_blank\">https://indiemusicwomen.com/featured/fiona-ross-fierce-and-non-compliant/<\/a><\/p><p>Keep an eye on the <a href=\"http://www.fionaross.co.uk/press\" target=\"_blank\">press page<\/a> for all of Fi’s articles.<\/p>"
+      },
+      {
+        "copy": "<p>Fi was honoured to have been nominated for four awards by the International Sing Songwriters Association<\/p>",
+        "imgUrl": "news/52-3.jpg",
+        "imgAlt": "International Sing Songwriters Association awards",
+        "imgMaxWidth": "600"
+      }
+    ]
+  },
+  {
     "id": "51",
     "title": "January update",
     "createdAt": "2019-01-26T10:00:00+00:00",
