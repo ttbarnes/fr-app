@@ -366,19 +366,21 @@
     display inline-block
     vertical-align top
     width 100%
-    background #000 
     text-align center
     position relative
     z-index 2
     margin-top -45px
-    padding-top 90px
-    background linear-gradient(to bottom, #000000 0%,#000000 85%,rgba(0, 0, 0, 0) 100%)
+    padding-top 45px
     @media (min-width $bp-md)
       padding-top $gutter-primary-x-lg
       margin-top 0
       padding-bottom $gutter-primary-lg
     @media (min-width $bp-lg)
       margin-bottom 0
+
+    iframe
+      width 100%
+      max-width 100%
     .album
       @media (min-width $bp-md)
         padding-right $gutter-primary-x-lg + $gutter-primary
@@ -393,7 +395,6 @@
       .col-last
         @media (min-width $bp-md)
           padding-left $gutter-primary-lg
-          // padding-top $gutter-primary-x-lg + $gutter-primary
           padding-top $gutter-primary-x-lg
         @media (min-width $bp-lg)
           padding-top $gutter-primary-x-lg
@@ -490,7 +491,7 @@
     margin-top $gutter-primary-xx-lg
     padding 0 $gutter-primary-lg
   @media (min-width: $bp-md)
-    margin-top $gutter-primary-xx-lg
+    margin-top 0
   h4
     text-align center
   .video-wrapper-wrapper
