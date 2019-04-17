@@ -7,9 +7,11 @@
       "thumb": "./images/albums/thumb/fierce-and-non-compliant.jpg",
       "appCover": "./images/albums/fierce-and-non-compliant.jpg"
     },
-    "comingSoon": true,
-    "canPreOrderAudioCd": true,
-    "preOrderCdsDispatchDate": "April 18th 2019",
+    "albumType": "latest",
+    "urls": {
+      "amazon": "https://www.amazon.co.uk/Black-White-Little-Bit-Grey/dp/B076MQQQPX/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1510867212&sr=1-2-mp3-albums-bar-strip-0&keywords=fiona+ross"
+    },
+    "canOrderAudioCd": true,
     "writtenBy": "<p>All songs written, arranged and produced by Fiona Ross (Vocals, Piano)<\/p>",
     "albumCredits": [
       "Fiona Ross (Vocals, Piano)",
