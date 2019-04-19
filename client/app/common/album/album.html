@@ -118,7 +118,7 @@
         <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Pre order limited edition signed physical CD</a>
       </div>
 
-      <div ng-if="vm.data.id === 2" class="row">
+      <div ng-if="vm.data.id !== 1" class="row">
         <a ui-sref="musicAlbumReviews({id: vm.data.id})"
            class="cta-button">Reviews</a>
         <a ui-sref="press"
@@ -140,6 +140,29 @@
         </ul>
       </div>
 
+    </div>
+
+    <!-- 4th album specific  -->
+    <div ng-if="vm.data.id === 4" class="row album-additional-info">
+      <div class="col-50-md col-first">
+        <p ng-if="vm.data.description" class="description">{{vm.data.description}}</p>
+        <h3 class="credits-tracklist-heading">Album Credits</h3>
+        <ul class="album-credits">
+          <li ng-repeat="c in vm.data.albumCredits">{{c}}</li>
+        </ul>
+      </div>
+      <div class="col-50-md col-last">
+        <h3 class="credits-tracklist-heading">Track list</h3>
+        <ol class="tracklist">
+          <li ng-repeat="t in vm.data.tracklist" ng-class="{'last': $last}"><span>{{t}}</span></li>
+        </ol>
+        <p ng-if="vm.data.tracklistNote" class="tracklist-note"><span class="star">*</span>{{vm.data.tracklistNote}}</p>
+        <ul ng-if="vm.data.tracklistNotes">
+          <li ng-repeat="note in vm.data.tracklistNotes">
+            {{note}}
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- 3rd album specific  -->
@@ -172,15 +195,6 @@
     </div>
 
     <!-- latest album specific  -->
-    <div ng-if="vm.data.id === 4" class="row album-additional-info press-release long-copy-line-height">
-      <div ng-repeat="pressRelease in vm.data.pressRelease">
-        <div ng-bind-html="pressRelease"></div>
-      </div>
-      <ul class="album-credits">
-        <li ng-repeat="c in vm.data.albumCredits">{{c}}</li>
-      </ul>
-    </div>
-
     <div ng-if="vm.data.id === 4 && vm.data.canPreOrderAudioCd" class="row link-highlight-hover-border audio-cd-copy audio-cd-copy-last">
       <br />
       <br />
