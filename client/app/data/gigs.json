@@ -4,6 +4,63 @@
     "gigs": [
       {
         "title": "Fiona Ross",
+        "venue": "Pizza Express - The Pheasantry",
+        "cityCountry": "Chelsea, UK",
+        "date": {
+          "month": "May",
+          "day": "12th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
+          "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "venue": "Kadie's",
+        "cityCountry": "London, UK",
+        "date": {
+          "month": "July",
+          "day": "18th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.eventbrite.co.uk/e/fiona-ross-just-me-and-someone-else-tickets-61374955143",
+          "tickets": "https://www.eventbrite.co.uk/e/fiona-ross-just-me-and-someone-else-tickets-61374955143"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "venue": "Live At Zedel",
+        "cityCountry": "Soho, London, UK",
+        "date": {
+          "month": "Sept",
+          "day": "7th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.brasseriezedel.com/live-at-zedel/fierce-and-non-compliant?date=185564268",
+          "tickets": "https://www.brasseriezedel.com/live-at-zedel/fierce-and-non-compliant?date=185564268"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "cityCountry": "Kennington, London, UK",
+        "venue": "Toulouse Lautrec",
+        "date": {
+          "month": "Oct",
+          "day": "25th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.toulouselautrec.co.uk/book-tickets",
+          "tickets": "https://www.toulouselautrec.co.uk/book-tickets"
+        }
+      },
+
+      {
+        "title": "Fiona Ross",
         "venue": "606 Jazz Club",
         "cityCountry": "Chelsea, UK",
         "date": {
@@ -28,48 +85,6 @@
         "urls": {
           "moreInfo": "https://tickets.thebullsheadbarnes.com/events/2019-04-18-fiona-ross-album-launch-fierce-and-non-compliant-bulls-head-barnes",
           "tickets": "https://tickets.thebullsheadbarnes.com/events/2019-04-18-fiona-ross-album-launch-fierce-and-non-compliant-bulls-head-barnes"
-        }
-      },
-      {
-        "title": "Fiona Ross",
-        "venue": "Pizza Express - The Pheasantry",
-        "cityCountry": "Chelsea, UK",
-        "date": {
-          "month": "May",
-          "day": "12th",
-          "year": "2019"
-        },
-        "urls": {
-          "moreInfo": "https://www.pizzaexpresslive.com/whats-on/fiona-ross",
-          "tickets": "https://www.pizzaexpresslive.com/whats-on/fiona-ross"
-        }
-      },
-      {
-        "title": "Fiona Ross",
-        "venue": "Live At Zedel",
-        "cityCountry": "Soho, London, UK",
-        "date": {
-          "month": "Sept",
-          "day": "7th",
-          "year": "2019"
-        },
-        "urls": {
-          "moreInfo": "https://www.brasseriezedel.com/live-at-zedel",
-          "tickets": "https://www.brasseriezedel.com/live-at-zedel"
-        }
-      },
-      {
-        "title": "Fiona Ross",
-        "cityCountry": "Kennington, London, UK",
-        "venue": "Toulouse Lautrec",
-        "date": {
-          "month": "Oct",
-          "day": "25th",
-          "year": "2019"
-        },
-        "urls": {
-          "moreInfo": "https://www.toulouselautrec.co.uk/book-tickets",
-          "tickets": "https://www.toulouselautrec.co.uk/book-tickets"
         }
       }
     ]
