@@ -54,6 +54,18 @@
     }
   },
   {
+    "name": "Warren Woodcraft",
+    "collabId": "Warren-Woodcraft",
+    "role": "Musician/Sound Engineer",
+    "images": {
+      "avatar": "./images/collaborators/warren-woodcraft.jpg"
+    },
+    "about": "Warren is a sound engineer and musician hailing from Essex. With a penchant for funk, soul and world music, his drumming and percussion have taken him all over, from Abbey Road to Glastonbury to Ronnie Scotts. A studious approach to his craft sees him in demand for studio engineering, session work, live sound and drum teching and as a multi instrumentalist for songwriting and production duties wherever they arise.",
+    "urls": {
+      "instagram": "https://www.instagram.com/warrenwoodcraftdrums/"
+    }
+  },
+  {
     "name": "Adam Hayes",
     "collabId": "Adam-Hayes",
     "role": "Drummer",
