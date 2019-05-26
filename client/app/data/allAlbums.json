@@ -14,9 +14,8 @@
       "itunes": "https://itunes.apple.com/us/album/fierce-and-non-compliant/1460549860"
     },
     "canOrderAudioCd": true,
-    "writtenBy": "<p>All songs written, arranged and produced by Fiona Ross (Vocals, Piano)<\/p>",
     "albumCredits": [
-      "Fiona Ross (Vocals, Piano)",
+      "Written, arranged and produced by Fiona Ross (Vocals, Piano)",
       "Gibbi Bettini (Guitar)",
       "Derek Daley (Bass)",
       "Marley Drummond (Drums)",
@@ -28,17 +27,23 @@
       "Mastered by Nick Watson at Fluid Mastering"
     ],
     "pressRelease": [
-      "<p>The much anticipated new album from Fiona Ross <b>\"Fierce and Non Complaint\"<\/b> will be released April 2019 on Therapy Records.<\/p>",
       "<p>Fiona has become known for creating her own contemporary jazz sound incorporating fast paced Latin Jazz, vintage Jazz club, a little neo soul along with heart wrenching ballads that demonstrate that <b><i>\"Her style is poetic and the messages ooze with Millennial angst\"<\/i><\/b> (Jazz weekly). She came to the worlds attention as <b><i>\"The artist that gave Ed Sheeran his 'first push'\"<\/i><\/b> (Daily Express), but has very quickly established herself as an artist in her own right and has received incredible reviews across the globe.<\/p>",
       "<p>Fiona's new album brings an incredible line up of special guests. As a Jazz journalist, she has interviewed some incredible people (including <b>Steve Gadd, Dee Dee Bridgewater, Terri Lynne Carrington, Kyle Eastwood<\/b>) and <b><i>\"I wanted to include some people on the album that have really inspired me as a person and as an artist. I was truly blown away that they said yes\"<\/i><\/b><\/p>",
       "<p><b>Maxine Gordon<\/b>, renowned author, educator, Jazz advocate – and wife of <b>Dexter Gordon<\/b> – has written the sleeve notes.<\/p>",
       "<p>Latin Grammy nominated and world-renowned bassist <b>Snow Owl<\/b> is a special guest on two tracks. Having played with artists such as <b>Al Jarreau, Christina Aguilera, Elton John<\/b> and continually referred to in many bass publications as one the most influential bassists of all times, his playing on this album is mind blowing. Fi explains <b><i>\"We recorded two songs in a castle, in Vienna. The same castle Snow Owl recorded his album 'The Blue Road' in. No real rehearsals, live takes. It was an overwhelming experience that I will never forget\" <\/i><\/b> These tracks stand alone on the album as being recorded, mixed and mastered by Snow Owl himself.<\/p>",
       "<p>Other guests include <b>Kim Cypher<\/b>, one of the UK's most exciting female saxophonists (<b><i>\"Exciting stuff\"<\/i>, Clare Teal, BBC Radio 2<\/b>), is a guest on one track.<\/p>",
       "<p>Blues guitarist, <b>Marco Piccioni<\/b> (<b><i>\"A force to be reckoned with\"<\/i>, Evening Standard<\/b>) is another guest.<\/p>",
-      "<p>The album is an eclectic mix of songs that all sit under the heading of Jazz. From the big band feel of the title track, to the haunting, freer ballads, to some Latin and funk – something for everyone. Fiona has indeed created her own contemporary Jazz sound that appeals to a wider audience.<\/p>",
-      "<p>Written, arranged and produced by Fiona, her new album is creating a significant buzz prior to release and proving that she is indeed Fierce.<\/p>"
+      "<p>The album is an eclectic mix of songs that all sit under the heading of Jazz. From the big band feel of the title track, to the haunting, freer ballads, to some Latin and funk – something for everyone. Fiona has indeed created her own contemporary Jazz sound that appeals to a wider audience.<\/p>"
     ],
     "quotes": [
+      {
+        "copy": "<p>Ross's lyric phrasing, vocal register and arrangements deliver brilliant presence and form<\/p>",
+        "author": "Music Interview Magazine"
+      },
+      {
+        "copy": "<p>Technical virtuosity and that raw emotional drive, of an artist at the height of her game<\/p>",
+        "author": "Jazz Quarterly"
+      },
       {
         "copy": "<p>Her talents are simply extraordinary<\/p>",
         "author": "Kind of Jazz"
@@ -61,7 +66,7 @@
       "amazon": "https://www.amazon.co.uk/Black-White-Little-Bit-Grey/dp/B076MQQQPX/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1510867212&sr=1-2-mp3-albums-bar-strip-0&keywords=fiona+ross"
     },
     "canOrderAudioCd": true,
-    "description": "The new album, 'Black, White and a Little Bit of Grey', explores the story of a husband, a wife, and a mistress: a web of emotions, of desires, of regrets, of ecstasy. Situations are not always as clear-cut as they may appear as allegiances shift and betrayals become serpentine - not everything is black and white. Sometimes - when the victim becomes hazy, when pain and passion become intertwined — there's 'a Little Bit of Grey.",
+    "description": "'Black, White and a Little Bit of Grey', explores the story of a husband, a wife, and a mistress: a web of emotions, of desires, of regrets, of ecstasy. Situations are not always as clear-cut as they may appear as allegiances shift and betrayals become serpentine - not everything is black and white. Sometimes - when the victim becomes hazy, when pain and passion become intertwined — there's 'a Little Bit of Grey.",
     "albumCredits": [
       "Written, arranged and produced by Fiona Ross",
       "Fiona Ross (Piano and vocals)",

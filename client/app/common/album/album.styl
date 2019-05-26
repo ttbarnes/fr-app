@@ -135,16 +135,8 @@ section.album
       margin-bottom $gutter-primary-xx-lg
       p
         margin-bottom 0
-      .author,
       .read-full
         margin-top $gutter-primary
-
-    &.latest-album-quotes
-      .copy
-        position relative
-      .quote:last-child
-        position absolute
-        bottom 0
 
   .download-links
     float none
@@ -250,7 +242,9 @@ section.album
       padding-bottom $gutter-primary
       list-style-type square
 
-  .tracklist
+  .tracklist,
+  .album-additional-info .col-last .album-credits
+    clear both
     background #080808
     color $color-text-secondary
     padding $gutter-primary-lg
@@ -266,6 +260,16 @@ section.album
         padding-bottom 0
       span
         color $color-highlight-primary
+
+  .album-additional-info .col-last .album-credits li
+    list-style-type square
+
+
+  span.quote:last-child
+    margin-top 15px
+
+.album-additional-info .col-last .quotes
+  margin-top 0
 
   .tracklist-note
     margin-bottom 0
