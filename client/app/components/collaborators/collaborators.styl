@@ -2,6 +2,18 @@
 
 .collaborators
 
+  h3
+    color $color-highlight-primary
+    font-weight lighter
+    padding-bottom $gutter-primary-lg
+    margin-bottom 0
+    text-align center
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary
+      padding-bottom $gutter-primary
+    @media (min-width $bp-lg)
+      margin-bottom $gutter-primary-lg
+
   .main-content
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
