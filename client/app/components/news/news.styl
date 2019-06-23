@@ -47,6 +47,7 @@
       li
         padding-bottom $gutter-primary-lg
         color $color-highlight-primary
+        font-style italic
 
     .news-quote-author
       color $color-text-primary
@@ -268,11 +269,14 @@
           width 50%
           float left
           clear none
-          padding 0 $gutter-primary-lg
+          padding $gutter-primary-lg
+          padding-top 0
           &:nth-child(even)
             padding-right 0
           &:nth-child(odd)
             padding-left 0
+          &:nth-child(3)
+            clear both
           
 
     @media (min-width $bp-md)

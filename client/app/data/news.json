@@ -1,5 +1,42 @@
 [
   {
+    "id": "53",
+    "title": "June update",
+    "createdAt": "2019-05-23T18:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Everything has been crazy with Fi’s new album - which is going down a storm! Incredible reviews coming in from all over the world - all available here: <a href=\"http://www.fionaross.co.uk/press\" target=\"_blank\">http://www.fionaross.co.uk/press<\/a><\/p><p>Some highlights include:<\/p><ul class=\"quotes\"><li>\"Fiona reaches into another stratosphere\" <span class=\"news-quote-author\"> - Music Interview Magazine</span></li><br/><li>\"Technical virtuosity and that raw emotional drive, of an artist at the height of her game\" <span class=\"news-quote-author\"> - Jazz Quarterly</span></li><br/><li>\"Fierce and Non-Compliant, and honest and true and oh so very talented\" <span class=\"news-quote-author\"> - Maxine Gordon</span></li><br/><li>\"Ross totally owns the music\" <span class=\"news-quote-author\"> - Jazz Views</span></li><\/ul>"
+      },
+      {
+        "copy": "<p>Fiona recently played to some amazing crowds at the legendary Bulls Head and Pizza Express:<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/53-1.jpg",
+            "imgAlt": "Fiona Ross - Bulls Head and Pizza Express",
+            "imgMaxWidth": "400"
+          },
+          {
+            "imgUrl": "news/53-2.jpg",
+            "imgAlt": "Fiona Ross - Bulls Head and Pizza Express",
+            "imgMaxWidth": "400"
+          },
+          {
+            "imgUrl": "news/53-3.jpg",
+            "imgAlt": "Fiona Ross - Bulls Head and Pizza Express",
+            "imgMaxWidth": "400"
+          }
+        ]
+      },
+      {
+        "copy": "<p>Next gig is an exclusive intimate evening at Kadies Club in London in July 18th:<\/p><p><a href=\"https://www.facebook.com/fionarossmusic/videos/334350617496152\" target=\"_blank\">https://www.facebook.com/fionarossmusic/videos/334350617496152<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi has also been busy doing the press circuit, with some radio interviews:<\/p><p>Jazz Talk News: <a href=\"https://www.jazztalk.news/e/fierce-and-non-compliant-the-multi-talented-fiona-ross\" target=\"_blank\">https://www.jazztalk.news/e/fierce-and-non-compliant-the-multi-talented-fiona-ross<\/a><\/p><p>Eclectic Radio Show: <a href=\"https://www.mixcloud.com/virginie-puiboube/eclectic-feat-fiona-ross-29th-may-2019/\" target=\"_blank\">https://www.mixcloud.com/virginie-puiboube/eclectic-feat-fiona-ross-29th-may-2019/<\/a><\/p><p>Fi has also been to Paris where he spent some time in immersing herself in the Parisian Jazz life: <a href=\"https://jazzineurope.mfmmedia.nl/2019/06/theres-something-about-paris/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2019/06/theres-something-about-paris/<\/a><\/p><p>More news soon!<\/p>"
+      }
+    ]
+  },
+  {
     "id": "52",
     "title": "April update",
     "createdAt": "2019-04-13T10:00:00+00:00",
