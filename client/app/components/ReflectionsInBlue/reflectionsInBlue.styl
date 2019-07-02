@@ -1,0 +1,40 @@
+@import '../../styles/variables'
+
+.reflections-in-blue-page
+  border: soild 1px #CCC;
+
+  .main-content
+    margin 0 auto
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+    .intro
+      padding-bottom $gutter-primary-x-lg
+
+    @media (min-width $bp-md)
+      .col-right
+        padding-left $gutter-primary-x-lg
+
+  .excerpt
+    text-align center
+    .quote
+      @media (min-width $bp-md)
+        max-width 60%
+        margin-right auto
+        margin-left auto
+    
+    .interlude-title,
+    div
+      font-size 1.3em
+
+    div
+      font-style italic
+
+  .row-first
+    @media (min-width $bp-md)
+      padding-bottom $gutter-primary-x-lg
+
+  .col-paypal
+    @media (min-width $bp-md)
+      text-align center
+      padding-top $gutter-primary-x-lg

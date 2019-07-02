@@ -26,6 +26,7 @@ export const PAGE_TITLE_NEWS = 'News' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_B
 export const PAGE_TITLE_PRESS = 'Press' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_VIDEOS = 'Videos' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_PRIVACY_POLICY = 'Privacy Policy' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
+export const PAGE_TITLE_REFLECTIONS_IN_BLUE = 'Reflections in Blue by Audrey Ross' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 
 // export const BOOKINGS_DEFAULT_THUMB = 'http://fionaross.co.uk/images/bookings/default-thumb.jpg';
 export const BOOKINGS_DEFAULT_THUMB = 'https://img42.com/JyPMW+';
