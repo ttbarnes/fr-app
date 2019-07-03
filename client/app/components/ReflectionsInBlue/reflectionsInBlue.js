@@ -3,7 +3,7 @@ import uiRouter from 'angular-ui-router';
 import reflectionsInBlueComponent from './reflectionsInBlue.component';
 import { PAGE_TITLE_REFLECTIONS_IN_BLUE } from '../../constants/constants';
 
-let reflectionsInBlueModule = angular.module('reflectionsInBlueByAudreyRoss', [
+let reflectionsInBlueModule = angular.module('reflectionsInBlue', [
   uiRouter
 ])
 
