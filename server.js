@@ -63,7 +63,8 @@ var sitemap = sm.createSitemap({
     { url: '/collaborators/Iain-Court' },
     { url: '/journalism' },
     { url: '/tech' },
-    { url: '/contact '}
+    { url: '/contact '},
+    { url: '/reflections-in-blue-by-audrey-ross' }
   ]
 });
 sitemap.toXML( (err, xml) => {

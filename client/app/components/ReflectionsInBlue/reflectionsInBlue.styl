@@ -9,7 +9,8 @@
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
     .intro
-      padding-bottom $gutter-primary-x-lg
+      @media (min-width $bp-md)
+        padding-bottom $gutter-primary-x-lg
 
     @media (min-width $bp-md)
       .col-right
@@ -17,6 +18,11 @@
 
   .excerpt
     text-align center
+    padding-top $gutter-primary-x-lg
+    padding-bottom $gutter-primary
+    @media (min-width $bp-md)
+        padding-top 0
+        padding-bottom 0
     .quote
       @media (min-width $bp-md)
         max-width 60%
@@ -25,7 +31,14 @@
     
     .interlude-title,
     div
-      font-size 1.3em
+      font-size 1.1em
+      @media (min-width $bp-sm)
+        font-size 1.3em
+
+    .interlude-title
+      margin-bottom $gutter-primary-lg
+      @media (min-width $bp-md)
+        margin-bottom $gutter-primary-x-lg
 
     div
       font-style italic
@@ -35,6 +48,10 @@
       padding-bottom $gutter-primary-x-lg
 
   .col-paypal
+    text-align center
+    padding-top $gutter-primary-x-lg
+    font-size 1.1em
+    @media (min-width $bp-sm)
+      font-size 1.3em
     @media (min-width $bp-md)
-      text-align center
-      padding-top $gutter-primary-x-lg
+      font-size 1em
