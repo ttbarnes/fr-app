@@ -8,7 +8,6 @@ import pageslide from 'angular-pageslide-directive';
 import modal from 'angular-ui-bootstrap';
 import bootstrapLightbox from 'angular-bootstrap-lightbox';
 import ezfb from 'angular-easyfb';
-import ngtweet from 'ngtweet';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
 import socialShare from 'angular-socialshare';
@@ -31,7 +30,6 @@ angular.module('app', [
     'ui.bootstrap.modal',
     'bootstrapLightbox',
     'ezfb',
-    'ngtweet',
     'angulartics',
     'angulartics.google.analytics',
     '720kb.socialshare',
