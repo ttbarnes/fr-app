@@ -1,9 +1,7 @@
 require('dotenv').config();
 var express = require('express');
-var bodyParser = require('body-parser');
 var router = express.Router();
 var methodOverride = require('method-override');
-var morgan = require('morgan');
 var sm = require('sitemap');
 var fs = require('fs');
 var app = express();
@@ -12,19 +10,16 @@ var port = process.env.PORT || process.env.SERVER_HOST_PORT || 2000;
 app.use(express.static(__dirname + '/dist'));
 
 app.use(function (req, res, next){
-  res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_HOST_PORT); //allow client server access
+  res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_HOST_PORT);
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   methodOverride('X-HTTP-Method-Override');
-  bodyParser.urlencoded({ extended: true });
   next();
 });
 
 app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000/').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 
-app.use(morgan('dev'));
-
-require('./client.app.routes')(app); // pass our application into our routes
+require('./client.app.routes')(app); // pass application into routes
 
 // create sitemap
 var sitemap = sm.createSitemap({
