@@ -1,0 +1,214 @@
+.about h3.page-heading {
+	margin-bottom: 0;
+}
+
+.about .main-content {
+	max-width: var(--section-max-width);
+	margin: 0 auto;
+	color: #a7a7a7;
+}
+
+@media (min-width: var(--bp-md)) {
+	.about .main-content {
+		font-size: 1.1em;
+		padding-top: calc(var(--gutter-primary-xx-lg) - var(--gutter-primary-lg));
+	}
+}
+
+.about .main-content p span.quote,
+.about .main-content p span.highlight,
+.about .main-content p i.highlight {
+	color: var(--color-white);
+}
+
+.about .main-content p span.highlight-2,
+.about .main-content p i.highlight-2 {
+	color: #939393;
+}
+
+.about .main-content p span.quote {
+	font-style: italic;
+}
+
+@media (min-width: var(--bp-lg)) {
+	.about .main-content blockquote {
+		font-size: 1.3em;
+	}
+}
+
+.about .main-content blockquote.extra-margin-bottom {
+	margin: 0 auto var(--gutter-primary-lg) auto;
+}
+
+.about .member-of-list-text-only {
+	margin-bottom: var(--gutter-primary-xx-lg);
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .member-of-list-text-only {
+		margin-bottom: var(--gutter-primary-xxx-lg);
+	}
+}
+
+.about .member-of-list-text-only li {
+	margin-right: var(--gutter-primary-lg);
+	margin-bottom: var(--gutter-primary);
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .member-of-list-text-only li {
+		float: left;
+	}
+}
+
+.about .member-of-list-text-only a {
+	color: var(--color-white);
+}
+
+.about .member-of-list {
+	text-align: center;
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .member-of-list {
+		text-align: left;
+	}
+}
+
+.about .member-of-list > p {
+	margin-bottom: var(--gutter-primary-lg);
+}
+
+.about .member-of-list ul {
+	text-align: center;
+}
+
+.about .member-of-list li {
+	margin-bottom: var(--gutter-primary-x-lg);
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .member-of-list li {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		margin-bottom: var(--gutter-primary-x-lg);
+	}
+}
+
+.about .member-of-list li a {
+	color: var(--color-highlight-primary);
+}
+
+.about .member-of-list li a img {
+	margin: 0 var(--gutter-primary);
+	max-width: 140px;
+	opacity: 1;
+	transition: all 0.2s ease;
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .member-of-list li a img {
+		opacity: 0.7;
+	}
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .member-of-list li a:hover img,
+  .about .member-of-list li a:focus img {
+		opacity: 1;
+	}
+}
+
+.about .central-quotes {
+	margin-bottom: var(--gutter-primary-lg);
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .central-quotes {
+		margin-bottom: var(--gutter-primary-xx-lg);
+	}
+}
+
+.about .central-quotes blockquote {
+	padding-top: var(--gutter-primary-lg);
+	padding-bottom: var(--gutter-primary);
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .central-quotes blockquote {
+		padding-top: var(--gutter-primary-xx-lg);
+	}
+
+	.about .central-quotes blockquote.first {
+		padding-top: var(--gutter-primary-x-lg);
+	}
+}
+
+.about .central-quotes blockquote.last {
+	padding-top: var(--gutter-primary-xx-lg);
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .central-quotes blockquote.last {
+		padding-top: var(--gutter-primary-xx-lg);
+	}
+}
+
+.about .central-quotes blockquote.intro-quote {
+	max-width: 425px;
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .central-quotes blockquote.intro-quote {
+		max-width: 535px;
+	}
+}
+
+.about .central-quotes blockquote.intro-quote .copy {
+	width: 65%;
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .central-quotes blockquote.intro-quote .copy {
+		width: 67%;
+	}
+}
+
+.about .central-quotes blockquote.intro-quote small {
+	clear: both;
+	display: block;
+	opacity: 0.6;
+}
+
+@media (min-width: var(--bp-xs)) {
+	.about .central-quotes blockquote.intro-quote small {
+		clear: none;
+		display: inline-block;
+	}
+}
+
+.about .central-quotes blockquote.intro-quote small .dash {
+	padding: 0 0.5em;
+}
+
+.about .central-quotes blockquote.intro-quote span.quote:last-child {
+	display: inline-block;
+	margin-left: -12px;
+	margin-bottom: -0.4em;
+}
+
+@media (min-width: var(--bp-sm)) {
+	.about .central-quotes blockquote.intro-quote span.quote:last-child {
+		margin-left: -19px;
+	}
+}
+
+.about .central-quotes .copy {
+	width: 82%;
+}
+
+.about .central-quotes .author {
+	display: block;
+	text-align: center;
+}

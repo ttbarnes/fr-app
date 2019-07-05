@@ -1,0 +1,83 @@
+:root {
+--bp-xxxs: 400px;
+--bp-xxs: 450px;
+--bp-xs: 500px;
+--bp-sm: 600px;
+--bp-md: 768px;
+--bp-lg: 1000px;
+--bp-xlg: 1200px;
+
+--section-max-width: 900px;
+--section-max-width-mini: 500px;
+
+--color-white: #FFF;
+--color-bg-primary: #121212;
+--color-heading-primary: #B5B5CD;
+--shadow-heading-primary: 0 3px 2px #000;
+--color-text-primary: #C5C5C5;
+--color-highlight-primary: #E4E4E4;
+
+--gutter-primary-xs: 0.25em;
+--gutter-primary: 0.5856em;
+--gutter-primary-lg: $gutter-primary * 2;
+--gutter-primary-x-lg: $gutter-primary-lg * 2;
+--gutter-primary-xx-lg: $gutter-primary-x-lg * 2;
+--gutter-primary-xxx-lg: $gutter-primary-x-lg * 3;
+
+--row-margin-bottom: $gutter-primary-lg + $gutter-primary;
+
+--section-gutter-horizontal: 3em;
+
+--color-bg-secondary: #282828;
+--color-text-secondary: #ADADAD;
+
+--color-bg-tertiary: #1B1B1B;
+--color-text-tertiary: #696969;
+
+--color-red: #6A2A30;;
+--color-green: #2A6A3C;;
+
+--color-blockquote: #424242;;
+
+--font-size-h1-mobile-xs: 1.4em;
+--font-size-h1-mobile: 1.8em;
+--font-size-h1-desktop: 2em;
+--font-size-h2-mobile: 1.3em;
+--font-size-h2-desktop: 1.5em;
+--font-size-h3-mobile: 1.9em;
+--font-size-h3-desktop: 2.3em;
+--font-margin-bottom-common: 0.5em;;
+
+--font-size-h4-mobile: 1.1em;
+--font-size-h4-desktop: 1.3em;
+
+--font-size-blockquote-mobile: 1.2em;
+--font-size-blockquote-desktop: 1.4em;
+
+
+--button-spacing-vertical:  0.5em;
+--button-spacing-horizontal:  1.3em;
+--button-spacing: $button-spacing-vertical $button-spacing-horizontal;
+
+--button-spacing-lg-vertical: $button-spacing-vertical * 3;
+--button-spacing-lg-horizontal: $button-spacing-horizontal;
+
+--color-box-bg: #161616;
+
+--header-height-mobile: 50.5px;
+--header-height-desktop: 61px;
+
+--nav-bg: rgba(40, 40, 40, 0.95);
+--nav-width-desktop: 770px;
+--tabbed-content-bg-mobile: rgba(23, 23, 23, 0.82);
+--tabbed-content-bg-desktop: rgba(18, 18, 18, 0.85);
+--tabbed-content-heading-bg-mobile: rgba(40, 40, 40, 0.64);
+--tabbed-content-heading-border: solid 2px #000;
+
+--img-border: solid 2px rgba(64, 64, 64, 0.49);
+
+--card-bg-mobile: $tabbed-content-bg-mobile;
+--card-bg-desktop: $tabbed-content-bg-desktop;
+--card-heading-bg-mobile: $tabbed-content-heading-bg-mobile;
+
+}
