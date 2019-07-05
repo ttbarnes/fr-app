@@ -67,7 +67,6 @@
   },
   "scripts": {
     "build": "gulp webpack",
-    "express-server": "node server.js",
     "icons": "fontcustom compile",
     "start": "node server.js",
     "test": "karma start"
