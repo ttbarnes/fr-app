@@ -66,9 +66,10 @@
     "supports-color": "^3.1.2"
   },
   "scripts": {
+    "build": "gulp webpack",
     "express-server": "node server.js",
     "icons": "fontcustom compile",
-    "start": "gulp webpack && node server.js",
+    "start": "node server.js",
     "test": "karma start"
   },
   "repository": {
