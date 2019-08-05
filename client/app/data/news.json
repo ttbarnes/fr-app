@@ -1,5 +1,43 @@
 [
   {
+    "id": "54",
+    "title": "July update",
+    "createdAt": "2019-08-02T18:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Fi's intimate acoustic gig at Kadies Club in London was a fantastic night. Very cool and exclusive club that Idris Elba and other celebs frequent. Here's a couple of shots taken by Warren Woodcraft.<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/54-1.jpg",
+            "imgAlt": "Fiona Ross Kadies Club",
+            "imgMaxWidth": "400"
+          },
+          {
+            "imgUrl": "news/54-2.jpg",
+            "imgAlt": "Fiona Ross Kadies Club",
+            "imgMaxWidth": "400"
+          }
+        ]
+      },
+      {
+        "copy": "<p>Fi’s next gig with her whole band is at the famous Zedel in London. Be ready for some fabulous.<\/p><p><a href=\"https://www.brasseriezedel.com/live-at-zedel/fierce-and-non-compliant?date=196124669\" target=\"_blank\">https://www.brasseriezedel.com/live-at-zedel/fierce-and-non-compliant?date=196124669<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Lot of great press around at the moment, with an interview with Women Music News:<\/p><p><a href=\"https://womensmusicnews.com/2019/06/06/fiona-ross-fierce-and-non-compliant/\" target=\"_blank\">https://womensmusicnews.com/2019/06/06/fiona-ross-fierce-and-non-compliant/<\/a><\/p><p>And an interview with MNGR magazine:<\/p><p><a href=\"https://issuu.com/themngrmag/docs/issue_5/8\" target=\"_blank\">https://issuu.com/themngrmag/docs/issue_5/8<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi was over the moon to interview her hero Michel Camilo for Jazz in Europe which is now available in the Summer magazine:<\/p><p><a href=\"https://issuu.com/jazzineurope/docs/jazz-in-europe-magazine-summer-2019/10\" target=\"_blank\">https://issuu.com/jazzineurope/docs/jazz-in-europe-magazine-summer-2019/10<\/a><\/p>"
+      },
+      {
+        "copy": "<p>After her trip to Paris in May, Fi wrote an article about the legend Josphine Baker. She is extremely grateful for the help and incredible support from Ricki Stevenson and Brian Scott Bagely.<\/p><p><a href=\"https://jazzineurope.mfmmedia.nl/2019/07/josephine-baker-and-her-light-that-must-always-shine/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2019/07/josephine-baker-and-her-light-that-must-always-shine/<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fiona is also off to the Oslo Jazz Festival again in August to report on the event for Jazz in Europe.<\/p><p>More news soon!<\/p>"
+      }
+    ]
+  },
+  {
     "id": "53",
     "title": "June update",
     "createdAt": "2019-05-23T18:00:00+00:00",
