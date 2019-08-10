@@ -59,39 +59,16 @@
         <ul ng-if="post.sections">
           <li ng-repeat="section in post.sections" ng-class="{last: $last, first: $first}" class="article-section">
 
-            <div ng-if="section.imgUrl" ng-class="{'col-left-align': section.leftColImage}">
-              <div ng-class="{'col-copy': !section.videoEmbed}">
-
-                <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
-
-                <a ng-if="section.ticketsLink" href="{{section.ticketsLink}}" target="_blank" class="button">Get tickets</a>
-
-                <div class="link-highlight-hover-border venue-link">
-                  <a ng-if="section.venueLink" href="{{section.venueLink}}" target="_blank">Venue</a>
-                </div>
-              </div>
-
-              <div ng-if="section.imgUrl" class="col-img">
-                <img ng-src="./images/{{section.imgUrl}}" alt="Fiona Ross | {{section.imgAlt}}" style="max-width: {{section.imgMaxWidth}}px" />
-              </div>
+            <div ng-class="{'col-copy': section.images.length}">
+              <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
             </div>
 
-            <div ng-if="!section.imgUrl">
-              <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
-            
-              <a ng-if="section.ticketsLink" href="{{section.ticketsLink}}" target="_blank" class="button">Get tickets</a>
-            
-              <div class="link-highlight-hover-border venue-link">
-                <a ng-if="section.venueLink" href="{{section.venueLink}}" target="_blank">Venue</a>
-              </div>
-
-              <div ng-if="section.images" class="col-images">
-                <ul>
-                  <li ng-repeat="image in section.images" class="col-img">
-                    <img ng-src="./images/{{image.imgUrl}}" alt="Fiona Ross | {{image.imgAlt}}"/>
-                  </li>
-                </ul>
-              </div>
+            <div ng-if="section.images" class="col-images">
+              <ul>
+                <li ng-repeat="image in section.images" class="col-img">
+                  <img ng-src="{{image.url}}" alt="Fiona Ross | {{image.imgAlt}}"/>
+                </li>
+              </ul>
             </div>
 
             <div ng-if="section.videoEmbed">
@@ -101,7 +78,7 @@
           </li>
         </ul>
 
-        <div ng-if="!post.isMonthlyUpdate">
+        <div ng-if="!post.sections">
 
           <div ng-bind-html="post.bodyMain" class="body-content link-highlight-hover-border"></div>
 

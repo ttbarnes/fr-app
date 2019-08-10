@@ -251,12 +251,12 @@
 .news-home
   .max-width-650
     max-width 650px
-  .news-home .article-section .link-highlight-hover-border a
+  .article-section .link-highlight-hover-border a
     padding 0 0 1px 0
     color $color-white
     opacity 1
 
-  .news-home .article-section
+  .article-section
     padding $gutter-primary-x-lg 0
     border-bottom solid 1px $color-bg-secondary
     width 100%
@@ -267,7 +267,7 @@
       border-bottom 0 none
 
 
-    .col-img
+    .col-images
       max-width 100%
       margin 0 auto
       @media (min-width $bp-xs)
@@ -280,14 +280,14 @@
     @media (min-width $bp-md)
       .col-copy
         width 60%
-      .col-img
+      .col-images
         width 40%
 
       &:nth-child(odd)
         .col-copy
           float right
           padding-left $gutter-primary-lg
-        .col-img
+        .col-images
           float left
           padding-right $gutter-primary-lg
 
@@ -295,27 +295,27 @@
         .col-copy
           float left
           padding-right $gutter-primary-lg
-        .col-img
+        .col-images
           float right
           padding-left $gutter-primary-lg
 
-    .col-images
-      .col-img
-        width 100%
-        max-width 100%
-        padding $gutter-primary-lg
-        @media (min-width $bp-md)
-          width 50%
-          float left
-          clear none
-          padding $gutter-primary-lg
-          padding-top 0
-          &:nth-child(even)
-            padding-right 0
-          &:nth-child(odd)
-            padding-left 0
-          &:nth-child(3)
-            clear both
+    // .col-images
+    //   .col-img
+    //     width 100%
+    //     max-width 100%
+    //     padding $gutter-primary-lg
+    //     @media (min-width $bp-md)
+    //       width 50%
+    //       float left
+    //       clear none
+    //       padding $gutter-primary-lg
+    //       padding-top 0
+    //       &:nth-child(even)
+    //         padding-right 0
+    //       &:nth-child(odd)
+    //         padding-left 0
+    //       &:nth-child(3)
+    //         clear both
           
 
     @media (min-width $bp-md)
@@ -323,7 +323,7 @@
         .col-copy
           float right
           padding-left $gutter-primary-lg
-        .col-img
+        .col-images
           float left
           padding-right $gutter-primary-lg  
 
