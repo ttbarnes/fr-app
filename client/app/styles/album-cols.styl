@@ -8,6 +8,8 @@
     margin 0 auto
     text-align center
     margin-bottom $gutter-primary-x-lg
+    &:nth-child(odd)
+      clear both
     &.last
       margin-bottom 0
     @media (min-width $bp-sm)
@@ -29,7 +31,7 @@
         transition all 0.3s ease
         max-width 95%
       @media (min-width $bp-md)
-        max-height 427px
+        max-height 392px
     img
       @media (min-width $bp-sm)
         transition all 0.3s ease
@@ -45,13 +47,14 @@
     width 100%
     height 100%
     background #000
-    opacity .5
-    color #FFF
+    opacity 0
+    color $color-white
     font-size 0.9em
     @media (min-width $bp-xs)
       max-width 80%
     @media (min-width $bp-sm)
       max-width 100%
+      opacity 0
     @media (min-width $bp-sm)
       transition all 0.3s ease
       max-width 95%
@@ -67,12 +70,15 @@
 
     .content
       position relative
-      display block
+      // display block
       top 40%
+      display none
 
   .overlay-hover-content
-    opacity 1
+    opacity 0
     background rgba(0, 0, 0, 0.49)
+    @media (min-width $bp-sm)
+      opacity .4
     @media (min-width $bp-lg)
       background 0
       opacity 0
@@ -80,11 +86,15 @@
     .content span
       background $color-bg-primary
       padding $gutter-primary-lg
+  
+    &.dark-theme .content span
+        background #909090
+        color #000
 
-  .overlay-hover-coming-soon
-    opacity 0
-    @media (min-width $bp-lg)
-      opacity .5
+  // .overlay-hover-coming-soon
+  //   opacity 0
+  //   @media (min-width $bp-lg)
+  //     opacity .5
 
   .col
     a:focus

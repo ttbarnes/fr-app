@@ -21,10 +21,10 @@ describe('albumsService', () => {
     expect(MockAlbumsService.allAlbums).toBeDefined();
   })
 
-  it('should have a quoteTruncationCharLimit property', () => {
-    expect(MockAlbumsService.quoteTruncationCharLimit).toBeDefined();
-    expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(jasmine.any(Number));
-    expect(MockAlbumsService.quoteTruncationCharLimit).toEqual(800);
+  it('should have a quoteCharLimit property', () => {
+    expect(MockAlbumsService.quoteCharLimit).toBeDefined();
+    expect(MockAlbumsService.quoteCharLimit).toEqual(jasmine.any(Number));
+    expect(MockAlbumsService.quoteCharLimit).toEqual(800);
   });
 
   describe('allAlbums', () => {
@@ -45,33 +45,32 @@ describe('albumsService', () => {
 
   });
 
-  describe('getSingleAlbum', () => {
-
+  describe('getAlbumById', () => {
     it('should be defined', () => {
-      MockAlbumsService.getSingleAlbum = MockAllAlbums;
+      MockAlbumsService.getAlbumById = MockAllAlbums;
       expect(MockAlbumsService.allAlbums).toBeDefined();
     });
 
     it('should be called successfully', () => {
-      MockAlbumsService.getSingleAlbum = MockGetSingle;
-      spyOn(MockAlbumsService, 'getSingleAlbum').and.callThrough();
-      MockAlbumsService.getSingleAlbum();
-      expect(MockAlbumsService.getSingleAlbum).toHaveBeenCalled();
+      MockAlbumsService.getAlbumById = MockGetSingle;
+      spyOn(MockAlbumsService, 'getAlbumById').and.callThrough();
+      MockAlbumsService.getAlbumById();
+      expect(MockAlbumsService.getAlbumById).toHaveBeenCalled();
     });
 
     it('should be called successfully with an id', () => {
-      MockAlbumsService.getSingleAlbum = MockGetSingle;
-      spyOn(MockAlbumsService, 'getSingleAlbum').and.callThrough();
-      MockAlbumsService.getSingleAlbum(100);
-      expect(MockAlbumsService.getSingleAlbum).toHaveBeenCalledWith(100);
+      MockAlbumsService.getAlbumById = MockGetSingle;
+      spyOn(MockAlbumsService, 'getAlbumById').and.callThrough();
+      MockAlbumsService.getAlbumById(100);
+      expect(MockAlbumsService.getAlbumById).toHaveBeenCalledWith(100);
     });
 
     it('should return an object', () => {
-      MockAlbumsService.getSingleAlbum = MockGetSingle;
-      const getSingleAlbum = MockAlbumsService.getSingleAlbum(1);
-      expect(getSingleAlbum).toEqual(jasmine.any(Object));
-      expect(getSingleAlbum.name).toBeDefined();
-      expect(getSingleAlbum.id).toBeDefined();
+      MockAlbumsService.getAlbumById = MockGetSingle;
+      const getAlbumById = MockAlbumsService.getAlbumById(1);
+      expect(getAlbumById).toEqual(jasmine.any(Object));
+      expect(getAlbumById.name).toBeDefined();
+      expect(getAlbumById.id).toBeDefined();
     });
 
   });

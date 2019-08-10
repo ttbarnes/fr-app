@@ -1,0 +1,63 @@
+<section class="row gigs long-copy-line-height include-bg-img">
+
+  <h1 class="sr-only">Fiona Ross Gigs</h1>
+  <ul class="sr-only">
+    <li>Fiona Ross - Pizza Express - The Pheasantry</li>
+    <li>Fiona Ross - Colchester Arts Centre Jazz Club</li>
+    <li>Fiona Ross - Chesterfield Jazz Club</li>
+    <li>Fiona Ross - Save The Children UK Concert 2018</li>
+    <li>Fiona Ross - Pizza Express - The Pheasantry</li>
+    <li>Fiona Ross - Brasserie Toulouse Lautrec</li>
+  </ul>
+
+  <img src="./images/gigs/bg.png" class="img-bg" />
+
+  <div class="main-content">
+
+    <ul>
+      <li ng-repeat="year in vm.years" class="row" ng-class="{last: $last, first: $first}">
+
+        <h3 class="page-heading">{{year.year}} Gigs</h3>
+
+        <ul>
+          <li ng-repeat="gig in year.gigs" class="row" ng-class="{last: $last, first: $first}">
+
+            <div class="inner">
+              <a ng-href="{{gig.urls.moreInfo}}" target="_blank">
+                <h2>{{gig.venue}}</h2>
+              </a>
+              <p class="city-country">{{gig.cityCountry}}</p>
+          
+              <p class="date">
+                <span class="day-month">{{gig.date.month}} {{gig.date.day}}</span>
+                <span ng-if="gig.date.time" class="time"> - {{gig.date.time}}</span>
+              </p>
+          
+              <div class="row button-wrap">
+                <a ng-if="gig.urls.tickets === 'TBA'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
+                <a ng-if="gig.urls.tickets === 'DOOR'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets on
+                  the door</a>
+                <a ng-if="gig.urls.tickets !== 'TBA' && gig.urls.tickets !== 'DOOR'" class="button" ng-href="{{gig.urls.tickets}}"
+                  target="_blank">Tickets</a>
+                <a class="button" ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+        
+      </li>
+    </ul>
+
+    <div class="row button-view-nav">
+      <a ui-sref="news" class="button">
+        <span>News</span>
+        <i class="icon-arrow-right"></i>
+      </a>
+      <br/>
+      <a ui-sref="contact" class="link-highlight-hover-border text-link">Booking enquiries</a>
+    </div>
+
+  </div>
+
+</section>

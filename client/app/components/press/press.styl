@@ -2,14 +2,9 @@
 
 .press
 
-  h3
-    color $color-highlight-primary
-    font-weight lighter
-    padding-bottom $gutter-primary-lg
-    margin-bottom $gutter-primary-lg
   .main-content
     margin 0 auto
-    color $color-highlight-secondary
+    color $color-text-primary
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
@@ -30,7 +25,7 @@
         margin 0
         height 250px
         max-height 250px
-      @media (min-width:$bp-lg + 50px)
+      @media (min-width:1130px)
         display block
         float left
         height 290px
@@ -48,7 +43,7 @@
         top 0
         transition all 0.3s ease
         height 100%
-        color #FFF
+        color $color-white
         z-index 2
         padding 0.8em
         text-align center

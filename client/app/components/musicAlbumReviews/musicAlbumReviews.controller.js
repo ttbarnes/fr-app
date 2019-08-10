@@ -5,7 +5,7 @@ class MusicAlbumReviewsController {
     this.stateParams = $stateParams;
     this.currentId = this.stateParams.id || 2;
 
-    this.album = this.albumsService.getSingleAlbum(this.currentId);
+    this.album = this.albumsService.getAlbumById(this.currentId);
 
   }
 }

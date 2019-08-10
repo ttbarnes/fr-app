@@ -8,16 +8,16 @@ import pageslide from 'angular-pageslide-directive';
 import modal from 'angular-ui-bootstrap';
 import bootstrapLightbox from 'angular-bootstrap-lightbox';
 import ezfb from 'angular-easyfb';
-import ngtweet from 'ngtweet';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
-import socialShare from 'angular-socialshare'
+import socialShare from 'angular-socialshare';
 import * as CONST from './constants/constants';
 import Common from './common/common';
 import Components from './components/components';
 import Services from './services/services';
 import Filters from './filters/filters';
 import AppComponent from './app.component';
+import polyfill from './polyfill'
 import 'normalize.css';
 
 angular.module('app', [
@@ -30,7 +30,6 @@ angular.module('app', [
     'ui.bootstrap.modal',
     'bootstrapLightbox',
     'ezfb',
-    'ngtweet',
     'angulartics',
     'angulartics.google.analytics',
     '720kb.socialshare',
@@ -40,13 +39,11 @@ angular.module('app', [
     Filters
   ])
 
-  .config(($locationProvider, $urlRouterProvider, plangularConfigProvider, ezfbProvider, LightboxProvider) => {
+  .config(($locationProvider, $urlRouterProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
-
-    plangularConfigProvider.clientId = CONST.PLANGULAR_CLIENT_ID;
 
     //fb page config
     ezfbProvider.setInitParams({
@@ -64,16 +61,17 @@ angular.module('app', [
 
     //quick fix to get active state class in header
     $rootScope.$on('$stateChangeStart', (e, toState) => {
-
       if (toState.name === 'collaboratorsInd') {
         $rootScope.$broadcast('stateCollaboratorsInd', { active: true });
       } else {
         $rootScope.$broadcast('stateCollaboratorsInd', { active: false });
       }
 
-      if (toState.name === 'musicAlbum' ||
+      if (toState.name === 'music' ||
+          toState.name === 'musicAlbum' ||
           toState.name === 'musicAlbumReviews' ||
-            toState.name === 'musicAlbumPhysical') {
+          toState.name === 'musicAlbumPhysical' ||
+          toState.name === 'musicAlbumAudioCd') {
         $rootScope.$broadcast('stateMusicAlbum', { active: true });
       } else {
         $rootScope.$broadcast('stateMusicAlbum', { active: false });
@@ -90,6 +88,44 @@ angular.module('app', [
     $rootScope.$on('$stateChangeSuccess', (e, toState) => {
       if (toState.name !== 'musicAlbumReviews') {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+      }
+
+      const splitCookies = document.cookie.split(';');
+      if (splitCookies) {
+        let constentCookie = splitCookies.filter(function (item) {
+          return item.indexOf('CookieScriptConsent=') >= 0
+        });
+        const hasRejected = constentCookie.length && constentCookie[0].includes('reject');
+        const hasAccepted = constentCookie.length && constentCookie[0].includes('accept');
+        if (hasRejected) {
+          window['ga-disable-UA-85971190-2'] = true;
+        }
+
+        if (hasAccepted) {
+          if (typeof fbq === 'undefined') {
+
+            !function (f, b, e, v, n, t, s) {
+              if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+              };
+              if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+              n.queue = []; t = b.createElement(e); t.async = !0;
+              t.src = v; s = b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+            fbq('consent', 'grant'); 
+            fbq('init', '1111258039062901');
+            fbq('track', 'PageView'); 
+          } else {
+            fbq('track', 'PageView'); 
+          }
+
+        } else if (hasRejected && typeof fbq !== 'undefined') {
+          fbq('consent', 'revoke');
+        }
+
       }
     });
 

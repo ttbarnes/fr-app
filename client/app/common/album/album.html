@@ -2,7 +2,7 @@
 
   <h1 class="sr-only">{{vm.data.name}}</h1>
 
-  <div ng-if="vm.layout === '1'" class="album-layout-1">
+  <div ng-if="vm.layout === '1' || vm.layout === '4444' " class="album-layout-1">
 
     <div class="col-50-md col-first">
 
@@ -10,9 +10,8 @@
         <ng-transclude></ng-transclude>
       </div>
 
-      <a ui-sref="musicAlbum({id: 2})">
-        <img ng-src="{{vm.data.images.thumb}}"
-            alt="Fiona Ross - {{vm.data.name}}"/>
+      <a ui-sref="musicAlbum({id: vm.data.id})">
+        <img ng-src="{{vm.data.images.thumb}}" alt="Fiona Ross - {{vm.data.name}}" />
       </a>
 
     </div>
@@ -59,62 +58,29 @@
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon mobile-only">Release date: {{vm.data.releaseDate}}</span>
       <span ng-if="!vm.data.comingSoon && vm.data.albumType === 'latest'" class="coming-soon mobile-only">Out now</span>
 
-      <img ng-src="{{vm.data.images.thumb}}"
-           alt="Fiona Ross - {{vm.data.name}}"/>
-
-      <div class="row row-plangular" ng-show="vm.data.soundcloud.setUrl">
-
-        <div plangular="{{vm.data.soundcloud.setUrl}}" class="plangular">
-
-          <nav>
-            <div class="col-buttons">
-
-              <button ng-click="previous()"
-                      class="col-1-3rd previous">
-                <i class="icon-next"></i>
-              </button>
-
-              <button ng-click="playPause(index)"
-                      class="col-1-3rd play-pause">
-                <i ng-if="player.playing" class="icon-pause"></i>
-                <i ng-if="!player.playing" class="icon-play"></i>
-              </button>
-
-              <button ng-click="next()"
-                      class="col-1-3rd next">
-                <i class="icon-next"></i>
-              </button>
-
-            </div>
-
-            <div class="col-progress">
-              <p class="current-time align-right">
-                <span  ng-if="currentTime">{{ currentTime | hhmmss }}/{{ duration | hhmmss }}</span>
-              </p>
-              <progress class="progress"
-                        ng-click="seek($event)"
-                        ng-value="currentTime / duration || 0"></progress>
-            </div>
-          </nav>
-
-          <ul class="row">
-            <li ng-repeat="track in tracks"
-                ng-click="playPause($index)"
-                ng-class="{active: player.playing === track.src,
-                           last: $last}">
-              <h3 class="col-80">{{track.title}}</h3>
-              <p class="col-20 align-right">{{track.duration / 1000 | hhmmss }}</p>
-            </li>
-          </ul>
-        </div>
-
+      
+      <div ng-if="vm.data.albumType === 'latest'">
+        <a ui-sref="musicAlbum({id: vm.data.id})">
+          <img ng-src="{{vm.data.images.thumb}}" alt="Fiona Ross - {{vm.data.name}}" />
+        </a>
+      </div>
+      <div ng-if="!vm.data.albumType || vm.data.albumType !== 'latest'">
+        <img ng-src="{{vm.data.images.thumb}}"
+             alt="Fiona Ross - {{vm.data.name}}"/>
       </div>
 
     </div>
 
     <div class="col-50-md col-last">
-
-      <h2 class="desktop-only">{{vm.data.name}}</h2>
+      <div ng-if="vm.data.albumType === 'latest'">
+        <a ui-sref="musicAlbum({id: vm.data.id})">
+          <h2 class="desktop-only">{{vm.data.name}}</h2>
+        </a>
+      </div>
+      <div ng-if="vm.data.albumType !== 'latest'">
+        <h2 class="desktop-only">{{vm.data.name}}</h2>
+      </div>
+      
 
       <span ng-if="vm.data.comingSoon && vm.data.releaseDate" class="coming-soon desktop-only">Release date: {{vm.data.releaseDate}}</span>
       <span ng-if="!vm.data.comingSoon && vm.data.albumType === 'latest'" class="coming-soon desktop-only">Out now</span>
@@ -144,8 +110,12 @@
 
       <br />
 
-      <div ng-if="vm.data.canOrderAudioCd" class="row audio-cd-copy">
+      <div ng-if="vm.data.canOrderAudioCd" class="row link-highlight-hover-border audio-cd-copy">
         <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Get a signed Audio CD</a>
+      </div>
+
+      <div ng-if="vm.data.canPreOrderAudioCd"  class="row link-highlight-hover-border audio-cd-copy">
+        <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Pre order limited edition signed physical CD</a>
       </div>
 
       <div ng-if="vm.data.id === 2" class="row">
@@ -157,7 +127,7 @@
 
       <div ng-bind-html="vm.data.writtenBy" class="written-by"></div>
 
-      <div ng-if="vm.data.id === 1" class="row quotes">
+      <div ng-if="vm.data.id === 1" class="row quotes desktop-only">
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
 
@@ -172,10 +142,73 @@
 
     </div>
 
-    <!-- latest album specific -->
+    <!-- 3rd album specific  -->
+    <div ng-if="vm.data.id === 3" class="row album-additional-info">
+      <div class="col-50-md col-first">
+        <p class="description">{{vm.data.description}}</p>
+        <ul class="album-credits">
+          <li ng-repeat="c in vm.data.albumCredits">{{c}}</li>
+        </ul>
+      </div>
+      <div class="col-50-md col-last">
+        <ol class="tracklist">
+          <li ng-repeat="t in vm.data.tracklist" ng-class="{'last': $last}"><span>{{t}}</span></li>
+        </ol>
+        <p class="tracklist-note"><span class="star">*</span>{{vm.data.tracklistNote}}</p>
+      </div>
+    </div>
+
+    <div ng-if="vm.data.id === 1" class="row quotes mobile-only">
+      <ul>
+        <li ng-repeat="quote in vm.data.quotes">
+          <blockquote class="album album-small">
+            <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span class="quote">&rdquo;</span></span>
+            <span class="author" ng-bind-html="quote.author"></span>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+
+    <!-- latest album specific  -->
+    <div ng-if="vm.data.id === 4" class="row album-additional-info">
+      <div class="col-50-md col-first">
+        <div ng-repeat="pressRelease in vm.data.pressRelease">
+          <div ng-bind-html="pressRelease"></div>
+        </div>
+      </div>
+      <div class="col-50-md col-last">
+
+        <div class="row quotes desktop-only">
+          <ul>
+            <li ng-repeat="quote in vm.data.quotes">
+        
+              <blockquote class="album album-small">
+                <span class="copy"><span class="quote">&ldquo;</span><span class="inner" ng-bind-html="quote.copy"></span><span
+                    class="quote">&rdquo;</span></span>
+                <span class="author" ng-bind-html="quote.author"></span>
+              </blockquote>
+        
+            </li>
+          </ul>
+        </div>
+
+        <ul class="album-credits">
+          <li ng-repeat="c in vm.data.albumCredits">{{c}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-if="vm.data.id === 4 && vm.data.canPreOrderAudioCd" class="row link-highlight-hover-border audio-cd-copy audio-cd-copy-last">
+      <br />
+      <br />
+      <a ui-sref="musicAlbumAudioCd({id: vm.data.id})">Pre order limited edition signed physical CD</a>
+    </div>
+
+
+    <!-- latest album specific 
     <div ng-if="vm.data.id === 2" class="row">
 
-      <h4 class="align-center page-sub-title">Music Video</h4>
+      <h4 class="align-center page-sub-title new-heading-theme">Music Video</h4>
 
       <div class="video-wrapper">
         <iframe width="560" src="https://www.youtube.com/embed/i33VaIFZFSE?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -183,7 +216,7 @@
 
       <br/>
 
-      <h4 class="align-center page-sub-title">Behind the scenes</h4>
+      <h4 class="align-center page-sub-title new-heading-theme">Behind the scenes</h4>
 
       <div class="video-wrapper">
         <iframe width="560" src="https://www.youtube.com/embed/45JLCGLplvk?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -197,7 +230,7 @@
 
       <div class="row quotes latest-album-quotes">
 
-        <h4 class="page-sub-title align-center">Reviews</h4>
+        <h4 class="page-sub-title align-center new-heading-theme">Reviews</h4>
 
         <ul>
           <li ng-repeat="quote in vm.data.quotes">
@@ -223,6 +256,7 @@
       </div>
 
     </div>
+    -->
 
   </div>
 

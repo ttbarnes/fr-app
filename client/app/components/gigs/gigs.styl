@@ -1,0 +1,90 @@
+@import '../../styles/variables'
+
+.gigs
+    
+  .img-bg
+    display none
+    @media (min-width $bp-sm)
+      display block
+
+  .main-content
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  .year-title
+    padding 0 $gutter-primary
+    margin-bottom $gutter-primary
+
+  li
+    ul li
+      padding $gutter-primary-lg
+      @media (min-width $bp-lg)
+        float left
+        clear none
+        max-width 50%
+        margin-bottom $gutter-primary-xx-lg
+
+      .inner
+        display inline-block
+        position relative
+        width 100%
+        vertical-align top
+        background #2A2A2A
+        padding $gutter-primary-lg
+
+    &.last
+      border-bottom 0 none
+
+    h2
+      color $color-highlight-primary
+      margin-bottom 0
+      text-transform uppercase
+      letter-spacing 1px
+      font-weight 300
+      color $color-highlight-primary
+      @media (min-width $bp-sm)
+        letter-spacing 2px
+      @media (min-width $bp-lg)
+        letter-spacing 1px
+        font-size $font-size-h2-mobile
+      @media (min-width $bp-xlg)
+        letter-spacing 2px
+        font-size $font-size-h2-desktop
+
+    .city-country
+      color #8D8D8D
+      margin-bottom $gutter-primary
+
+    .date
+      text-transform uppercase
+      margin-bottom 0
+      @media (min-width $bp-lg)
+        position absolute
+        right 0
+        padding $gutter-primary
+        background #2A2A2A
+        color #8D8D8D
+        max-height 44px
+        top -44px
+
+    .button-wrap
+      padding-top $gutter-primary-lg
+      margin-bottom 0
+
+    .button
+      width 100%
+      margin-right $gutter-primary
+      margin-bottom $gutter-primary
+      font-size .95em
+      background #000
+      color $color-text-primary
+      text-align center
+      @media (min-width $bp-xxs)
+        width auto
+        display inline-block
+        text-align left
+        margin-bottom 0
+      &:hover,
+      &:focus
+        color #FFF
+        text-decoration underline

@@ -4,6 +4,9 @@
   .main-content
     max-width $section-max-width
     margin 0 auto
+    overflow-x hidden
+    @media (min-width $bp-sm)
+      overflow-x initial
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg
 
@@ -27,14 +30,13 @@
     .date
       display block
       opacity 0.5
-      margin 0 0 $gutter-primary-lg 0
+      margin 0 0 $gutter-primary-x-lg 0
       line-height 1.7em
 
     .img-wrap
       margin-bottom $gutter-primary-lg
       margin-right $gutter-primary-lg
       @media (min-width $bp-md)
-        // max-height 300px
         max-width 100%
         float left
         overflow hidden
@@ -45,6 +47,7 @@
       li
         padding-bottom $gutter-primary-lg
         color $color-highlight-primary
+        font-style italic
 
     .news-quote-author
       color $color-text-primary
@@ -56,9 +59,11 @@
       @media (min-width $bp-sm)
         max-width 700px
       opacity .8
+      opacity 1
       &.img-max-width-400
         max-width 400px
-
+      &.img-max-width-500
+        max-width 500px
       &.img-max-width-600
         display block
         max-width 600px
@@ -93,7 +98,7 @@
       display inline-block
       margin-bottom $gutter-primary
 
-    .venue-link
+    .venue-link a
       border-bottom 0 none
 
     .body-content
@@ -150,7 +155,7 @@
 
     .social-share
       width 100%
-      background rgba(18,18,18,0.70)
+      // background rgba(18,18,18,0.70)
       // @media (min-width $bp-md)
         // z-index 2
         // position absolute
@@ -174,13 +179,14 @@
         width auto
         a
           padding $gutter-primary
-          opacity .5
           transition all .3s ease
           cursor pointer
           color $color-highlight-primary
+          &.button
+            padding $button-spacing
+            color $color-white
           &:hover,
           &:focus
-            opacity 1
             outline 0 none
         &.first a
           padding-left 0
@@ -200,10 +206,12 @@
         left 0
         right 0
 
-    h2
+    h3
       font-weight 300
       color $color-highlight-primary
-      margin-bottom 0
+      letter-spacing 1px
+      line-height 1.1em
+      margin-bottom 3px
 
     p
       margin-bottom 0
@@ -243,3 +251,83 @@
 .news-home
   .max-width-650
     max-width 650px
+  .news-home .article-section .link-highlight-hover-border a
+    padding 0 0 1px 0
+    color $color-white
+    opacity 1
+
+  .news-home .article-section
+    padding $gutter-primary-x-lg 0
+    border-bottom solid 1px $color-bg-secondary
+    width 100%
+    &.first
+      padding-top 0
+    &.last
+      padding-bottom 0
+      border-bottom 0 none
+
+
+    .col-img
+      max-width 100%
+      margin 0 auto
+      @media (min-width $bp-xs)
+        max-width 80%
+      @media (min-width $bp-sm)
+        margin 0
+      @media (min-width $bp-md)
+        max-width 100%
+
+    @media (min-width $bp-md)
+      .col-copy
+        width 60%
+      .col-img
+        width 40%
+
+      &:nth-child(odd)
+        .col-copy
+          float right
+          padding-left $gutter-primary-lg
+        .col-img
+          float left
+          padding-right $gutter-primary-lg
+
+      &:nth-child(even)
+        .col-copy
+          float left
+          padding-right $gutter-primary-lg
+        .col-img
+          float right
+          padding-left $gutter-primary-lg
+
+    .col-images
+      .col-img
+        width 100%
+        max-width 100%
+        padding $gutter-primary-lg
+        @media (min-width $bp-md)
+          width 50%
+          float left
+          clear none
+          padding $gutter-primary-lg
+          padding-top 0
+          &:nth-child(even)
+            padding-right 0
+          &:nth-child(odd)
+            padding-left 0
+          &:nth-child(3)
+            clear both
+          
+
+    @media (min-width $bp-md)
+      .col-left-align
+        .col-copy
+          float right
+          padding-left $gutter-primary-lg
+        .col-img
+          float left
+          padding-right $gutter-primary-lg  
+
+    .body-content p
+      margin-top 0
+      padding-top 0
+      padding-right 0

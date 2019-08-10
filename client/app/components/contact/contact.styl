@@ -7,6 +7,15 @@
   padding-right 0
   padding-left 0
   max-width 500px
+
+  h3.page-heading
+    margin-bottom 0
+    @media (min-width $bp-md)
+      margin-bottom $gutter-primary
+      padding-bottom $gutter-primary
+    @media (min-width $bp-lg)
+      margin-bottom $gutter-primary-lg
+
   @media (min-width $bp-md)
     max-width 950px
     padding-right $gutter-primary
@@ -16,7 +25,7 @@
     float left
     width 100%
     @media (min-width $bp-md)
-      padding-top $gutter-primary-xx-lg
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   .col-left
     @media (min-width $bp-md)
@@ -26,22 +35,20 @@
     @media (min-width $bp-md)
       padding-left $gutter-primary-x-lg
 
-  .contact-form-wrap
-    float none
-    margin 0 auto
-    max-width 500px
-    .card
-      display inline-block
-      vertical-align top
-      float none
-      width 100%
-
   .card
     float left
     width 100%
     margin-bottom $gutter-primary-x-lg
     @media (min-width $bp-md)
-      width 33.333%
+      float none
+      display inline-block
+      vertical-align middle
+      width 45%
+    @media (min-width $bp-lg)
+      display block
+      float left
+      width 33.333333333%
+
     .inner
       float left
       width 100%
@@ -58,20 +65,18 @@
       padding-bottom $gutter-primary-lg
       @media (min-width $bp-md)
         padding 0
-        opacity 0.7
-      @media (min-width $bp-md + 150px)
-        opacity 0.5
-        transition all 0.3s ease
-        &:hover
-          opacity 1
+        font-size 1.1em
 
     h4
       background $card-heading-bg-mobile
-      color $color-highlight-primary
+      color $color-white
       border-bottom $tabbed-content-heading-border
       text-transform uppercase
       padding $gutter-primary
       font-weight 300
+      letter-spacing 1px
+      font-weight 300
+
       @media (min-width $bp-md)
         background none
         border-bottom 0
@@ -83,23 +88,28 @@
     .title
       display block
       padding-bottom $gutter-primary
+      color: $color-white
+      opacity .5
 
     i
       display none  // temp signup form in contact page
       margin-right $gutter-primary
       @media (min-width $bp-md)
         display none
-      @media (min-width $bp-md + 150px)
-        // display inline-block
 
   .cards-top
-    margin-bottom 0
     @media (min-width $bp-md)
+      float none
+      max-width 900px
+      margin 0 auto
       margin-bottom $gutter-primary-lg
+      text-align center
+    @media (min-width $bp-lg)
+      text-align left
     .card
+      text-align left
       @media (min-width $bp-md)
         padding 0 $gutter-primary
-        width 25% // temp signup form in contact page
         &:first-child
           padding-left 0
         &:last-child
@@ -110,20 +120,13 @@
         &:last-child
           padding-bottom 0
 
-      // temp signup form in contact page
-      a
-        @media (min-width $bp-md)
-          font-size 0.85em
-          word-wrap break-word
-
-
     // temp signup form in contact page
     .signup-form
       padding 0
       .mchimp-form
         display block
-      
-      form 
+
+      form
         max-width 100%
         display block
         min-width 100%
@@ -144,37 +147,6 @@
         border-bottom 0
       .button
         border 0 none
-
-  .contact-form
-    float left
-    width 100%
-    padding-bottom $gutter-primary
-    @media (min-width $bp-sm)
-      padding 0 0 $gutter-primary-lg 0
-    @media (min-width $bp-md)
-      padding 0
-
-    h4
-      @media (min-width $bp-sm)
-        margin-bottom $gutter-primary-lg
-      @media (min-width $bp-md)
-        padding-bottom $gutter-primary
-        margin-bottom $gutter-primary
-
-    > .row
-      margin-bottom 0
-      padding 0 $gutter-primary
-      @media (min-width $bp-sm)
-        padding 0 $gutter-primary-lg
-      @media (min-width $bp-md)
-        padding 0
-
-    > .row
-      margin-bottom $gutter-primary-lg
-      &:last-child
-        margin-bottom 0
-      > .row
-        margin-bottom 0
 
   .row-error
     margin 0

@@ -16,7 +16,7 @@ body
   margin 0 auto
 
 section
-  padding $gutter-primary-lg $gutter-primary
+  padding $gutter-primary-lg $gutter-primary-lg + .05em
   padding-top $section-gutter-horizontal
   @media (min-width $bp-md)
     padding-top $section-gutter-horizontal
@@ -57,12 +57,13 @@ fr-footer,
   height 28px
   font-size 1em
   border-radius 50%
-  color #FFF
+  color $color-white
   text-align center
   background-color $color-bg-secondary
 
 .icon-s-s
   background #E17842
+  padding-top 2px
   &::before
     margin-top 3px
 
@@ -70,12 +71,13 @@ fr-footer,
   background #1db954
   font-size 1.55em
   margin-right 10px !important
+  padding-top 1.5px
   &::before
     margin-left 1px
 
 .icon-s-t
   background #1EBCED
-  padding-top 5px
+  padding-top 6px
   padding-bottom 2px
   &::before
     margin-top 1px
@@ -94,6 +96,7 @@ fr-footer,
 .icon-s-y
   background #E02F2F
   font-size 0.9em
+  padding-top 1px
   &::before
     margin-top 6px
 
@@ -124,13 +127,19 @@ fr-footer,
 
 .box-heading
   background-color rgba(0, 0, 0, 0.22)
-  color #FFF
+  color $color-white
   padding $gutter-primary
   font-size 1em
   text-shadow 0 2px 5px $color-bg-primary
 
 .main-content
   margin 0 auto
+  @media (min-width $bp-sm)
+    padding-right $gutter-primary-x-lg + $gutter-primary
+    padding-left $gutter-primary-x-lg + $gutter-primary
+  @media (min-width $bp-lg)
+    padding-right $gutter-primary-x-lg
+    padding-left $gutter-primary-x-lg
 
 .include-bg-img
 
@@ -170,6 +179,7 @@ fr-footer,
     left 0
     width 100%
     height 100%
+    box-shadow 0 13px 22px #121212
 
 .video-wrapper-small
   padding-bottom 56.25%
@@ -184,7 +194,7 @@ fr-footer,
     &:hover,
     &:focus
       outline 0 none
-      color #FFF
+      color $color-white
     i
       transition all 0.3s ease
     @media (min-width: $bp-md)
@@ -210,27 +220,41 @@ fr-footer,
     i
       margin-bottom 15px
       opacity .8
-      width 70px
-      height 70px
+      width 50px
+      height 50px
+      @media (min-width: $bp-md)
+        width 70px
+        height 70px
       &::before
-        margin-top 16px
+        margin-top 9px
+        @media (min-width: $bp-md)
+          margin-top 16px
         font-size 2em
       &.icon-ssp
         margin-right 0 !important
         &::before
-          margin-top 11px
+          margin-top 2px
+          @media (min-width: $bp-md)
+            margin-top 11px
       &.icon-s-y::before
-        margin-top 21px
+        margin-top 12px
+        @media (min-width: $bp-md)
+          margin-top 21px
     p
-      font-size 1.1em
+      letter-spacing 1px
+      font-size .8em
+      @media (min-width: $bp-md)
+        font-size 1em
+      @media (min-width: $bp-lg)
+        font-size 1.1em
     a
       display block
-      color #DADADA
+      color $color-highlight-primary
       @media (min-width: $bp-md)
         color $color-text-primary
     a:hover,
     a:focus
-      color #DADADA
+      color $color-highlight-primary
       i
         opacity 1
 
@@ -248,3 +272,15 @@ fr-footer,
     float left
     width auto
     margin-top $gutter-primary
+
+.intro-copy
+    float none
+    margin 0 auto $gutter-primary-xx-lg auto
+    line-height 1.7em
+    &.row-last
+      padding-top $gutter-primary-x-lg
+    a
+      color $color-white
+      word-break break-word
+    li
+      margin-bottom $gutter-primary-lg

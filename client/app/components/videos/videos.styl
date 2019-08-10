@@ -2,16 +2,17 @@
 
 .videos-page
   text-align center
-  h3,
+
+  h3.page-heading
+    margin-bottom 0
   h4
     font-weight lighter
-  h3
-    color $color-highlight-primary
-    padding-bottom $gutter-primary-lg
-    margin-bottom $gutter-primary-lg
-
-  h4
     margin-bottom $gutter-primary-x-lg
+
+  h3,
+  h4
+    &.new-heading-theme
+      text-align center
 
   li
     margin-bottom $gutter-primary-x-lg
@@ -22,6 +23,6 @@
 
 
   .main-content
-    color $color-highlight-secondary
+    color $color-text-primary
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg

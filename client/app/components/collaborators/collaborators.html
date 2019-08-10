@@ -3,13 +3,15 @@
 
   <div class="main-content">
 
+    <h3 class="page-heading">Collaborators</h3>
+
     <ul class="grid-layout-4-4 grid-col-hover">
 
       <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
 
-        <a ui-sref="collaboratorsInd({id: collab.id})">
+        <a ui-sref="collaboratorsInd({collabId: collab.collabId})">
           <div class="inner">
-            <img ng-src="{{collab.images.thumb}}" alt="{{collab.name}}" />
+            <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
             <div class="box-heading">
               <h4>{{collab.name}}</h4>
             </div>
@@ -21,11 +23,12 @@
     </ul>
 
     <div class="row button-view-nav">
-      <a ui-sref="tech" class="button">
-        <span>Tech</span>
+      <a ui-sref="journalism" class="button">
+        <span>Journalism</span>
         <i class="icon-arrow-right"></i>
       </a>
     </div>
+
   </div>
 
 </section>

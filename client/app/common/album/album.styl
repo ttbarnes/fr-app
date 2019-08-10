@@ -23,17 +23,17 @@ section.album
 
   .col-first
     @media (min-width $bp-md)
-      padding-top $gutter-primary-xx-lg
+      padding-top $gutter-primary-x-lg
 
     img
       margin-bottom $gutter-primary-lg
       @media (min-width $bp-md)
         margin-bottom 0
-        border solid 2px rgba(64, 64, 64, 0.49)
+        box-shadow 0 3px 22px #121212
 
   .col-last
     @media (min-width $bp-md)
-      padding-top $gutter-primary-xx-lg
+      padding-top $gutter-primary-x-lg
       padding-left $gutter-primary-x-lg
 
   .copy
@@ -44,26 +44,26 @@ section.album
 
   h2
     color $color-highlight-primary
+    letter-spacing 2px
+    text-transform uppercase
     font-weight 300
     &.mobile-only
       text-align center
-      margin-bottom 0.5em
+      margin-bottom 1em
 
   h3
     color $color-heading-primary
     font-weight 300
 
+  .page-sub-title.new-heading-theme
+    margin-bottom 0
+
   .audio-cd-copy
     text-align center
     @media (min-width $bp-md)
       text-align left
-    a 
-      border-bottom solid 1px $color-text-primary
-      padding-bottom 0.2em
-      transition all 0.2s ease
-      &:hover,
-      &:focus
-        color $color-highlight-primary
+    &.audio-cd-copy-last
+      text-align left
 
   .coming-soon
     &.mobile-only
@@ -87,12 +87,12 @@ section.album
     margin-left auto
     margin-top $gutter-primary-lg
     margin-bottom $gutter-primary-lg
-    border solid 1px #FFF
-    color #FFF
+    border solid 1px $color-white
+    color $color-white
     border-radius 8px
     background-color #000
     display block
-    opacity 0.5
+    opacity 0.7
     transition all 0.2s ease
     max-width 170px
     text-align center
@@ -101,11 +101,22 @@ section.album
       margin-right $gutter-primary
       margin-left 0
       max-width 155px
+    &:hover,
+    &:focus
+      opacity 1
+      text-decoration underline
 
   .written-by
     clear both
     padding-bottom $gutter-primary
     text-align center
+    &.desktop-only
+      display none
+      @media (min-width $bp-md)
+        display block
+    &.mobile-only
+      @media (min-width $bp-md)
+        display none
     @media (min-width $bp-md)
       text-align left
     @media (min-width $bp-lg)
@@ -119,20 +130,13 @@ section.album
   .quotes
     margin-top $gutter-primary-x-lg
     margin-bottom 0
+
     li
       margin-bottom $gutter-primary-xx-lg
       p
         margin-bottom 0
-      .author,
       .read-full
         margin-top $gutter-primary
-
-    &.latest-album-quotes
-      .copy
-        position relative
-      .quote:last-child
-        position absolute
-        bottom 0
 
   .download-links
     float none
@@ -142,7 +146,7 @@ section.album
     margin 0 auto
     margin-bottom $gutter-primary-lg
     @media (min-width: $bp-md)
-      max-width 1005%
+      max-width 100%
 
     li
       margin $gutter-primary-lg auto
@@ -156,7 +160,7 @@ section.album
         margin-right $gutter-primary-lg
 
       @media (min-width: $bp-md)
-        width 135px
+        width 130px
 
       @media (min-width: $bp-md + 100px)
         width 149px
@@ -169,7 +173,7 @@ section.album
         margin-right auto
         margin-left auto
         @media (min-width: $bp-md)
-          float left 
+          float left
           width 179px
           max-width 179px
 
@@ -185,13 +189,23 @@ section.album
       &.amazon
         clear both
         @media (min-width: $bp-xs)
+          clear none
+          float none
           margin-top 0
+          margin 0 auto $gutter-primary-x-lg auto
+        @media (min-width: $bp-sm)
+          clear both
+          float left
+        @media (min-width: $bp-md)
+          margin-top 0
+          margin-bottom $gutter-primary-x-lg
+          
         img
           border-radius 8px
-          border solid 1px #FFF
+          border solid 1px $color-white
 
     a
-      opacity 0.5
+      opacity .65
       transition all 0.2s ease
       &:hover,
       &:focus
@@ -201,9 +215,6 @@ section.album
     img
       width 100%
 
-  .plangular
-    margin-top $gutter-primary-x-lg
-  
   .album-press
     a.button
       color $color-highlight-primary
@@ -211,4 +222,66 @@ section.album
       display inline-block
       &:hover,
       &:focus
-        border-bottom solid 1px #616161
+        border-bottom solid 1px $color-text-primary
+
+  .description
+    color $color-highlight-primary
+    line-height 28px
+
+  .press-release
+    color #A7A7A7
+    strong,
+    b
+      color #FFF
+      font-weight 300
+
+  .album-credits
+    padding-left $gutter-primary-lg
+    color $color-text-primary
+    li
+      padding-bottom $gutter-primary
+      list-style-type square
+
+  .tracklist,
+  .album-additional-info .col-last .album-credits
+    clear both
+    background #080808
+    color $color-text-secondary
+    padding $gutter-primary-lg
+    margin 0 -1.1712em
+    margin-bottom $gutter-primary
+    padding-left $gutter-primary-x-lg
+    @media (min-width $bp-md)
+      padding-left $gutter-primary-x-lg
+    li
+      list-style-type decimal
+      padding-bottom $gutter-primary
+      &.last
+        padding-bottom 0
+      span
+        color $color-highlight-primary
+
+  .album-additional-info .col-last .album-credits li
+    list-style-type square
+
+
+  span.quote:last-child
+    margin-top 15px
+
+.album-additional-info .col-last .quotes
+  margin-top 0
+
+  .tracklist-note
+    margin-bottom 0
+    .star
+      color $color-highlight-primary
+
+  .album-additional-info
+    margin-bottom 0
+    > div
+      padding-top 0
+      &.col-first
+        padding-bottom $gutter-primary-lg
+        @media (min-width $bp-md)
+          padding-bottom 0
+

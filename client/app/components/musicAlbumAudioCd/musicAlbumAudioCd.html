@@ -1,22 +1,64 @@
 <section class="row music-album-audio-cd include-bg-img">
 
-  <img ng-src="{{vm.album.images.bg}}" class="img-bg" />
+  <img ng-src="{{vm.album.images.bg}}" class="img-bg" ng-class="{'black-white-album' : vm.album.id === 3}" />
 
   <div class="main-content align-center">
 
-    <h3>{{vm.album.name}} - Audio CD</h3>
+    <div ng-if="vm.album.canPreOrderAudioCd">
+      <h3 class="page-heading">Pre order {{vm.album.name}} - Audio CD</h3>
+    </div>
+
+    <div ng-if="vm.album.canOrderAudioCd">
+      <h3 class="page-heading">{{vm.album.name}} - Audio CD</h3>
+    </div>
 
     <p>limited edition</p>
 
-    <p>Make a payment via PayPal and we'll dispatch within 2 working days.</p>
+    <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch <span ng-if="vm.album.preOrderCdsDispatchDate">on {{vm.album.preOrderCdsDispatchDate}}.</span> <span ng-if="!vm.album.preOrderCdsDispatchDate">within 2 working days.</span><br/></p>
+
+    <!-- Fierce and Non-Compliant -->
+    <div ng-if="vm.album.id === 4">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted"
+        value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit"
+        alt="PayPal – The safer, easier way to pay online!" style="max-width:107px;">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+    </form>
+    </div>
+
+    <!-- Black, White and a Little Bit of Grey -->
+    <div ng-if="vm.album.id === 3">
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-      ">
-      <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" style="max-width:107px;">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="fiona@fionaross.co.uk">
+        <input type="hidden" name="lc" value="GB">
+        <input type="hidden" name="item_name" value="Black, White and a Little Bit of Grey Signed CD">
+        <input type="hidden" name="amount" value="10.00">
+        <input type="hidden" name="currency_code" value="GBP">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="shipping" value="1.00">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" style="max-width:107px;">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
     </form>
+    </div>
+
+    <!-- Just Me (and sometimes someone else) -->
+    <div ng-if="vm.album.id === 2">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+            ">
+        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"
+        style="max-width:107px;">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+    </form>
+    </div>
+
 
     <br />
     <br />
@@ -29,7 +71,7 @@
     <br />
     <br />
 
-    <p class="making-better">We're working on a better way to order online. <br/>If you'd prefer to pay by other means please contact <A href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Audio Cd">info@fionaross.co.uk</a></p>
+    <p class="link-highlight-hover-border making-better" style="line-height: 1.7em">We're working on a better way to order online. <br/>If you'd prefer to pay by other means please contact <a href="mailto:info@fionaross.co.uk?subject=Fiona Ross - Audio Cd">info@fionaross.co.uk</a></p>
 
     <div class="row button-view-nav">
        <a ui-sref="musicAlbum({id: vm.album.id})" class="button">
@@ -37,7 +79,6 @@
         <i class="icon-arrow-right"></i>
       </a>
     </div>
-
 
   </div>
 

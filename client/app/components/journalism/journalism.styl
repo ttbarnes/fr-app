@@ -1,0 +1,112 @@
+@import '../../styles/variables'
+
+.journalism
+
+  .main-content
+    margin 0 auto
+    color $color-text-primary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  .intro-copy
+    max-width 695px
+
+  .grid-col-hover 
+    text-align center
+    > li
+      float none
+      margin 0 auto
+      margin-bottom $gutter-primary-x-lg
+      min-width 250px
+      @media (min-width:$bp-sm)
+        height 250px
+        max-height 250px
+      @media (min-width:$bp-md)
+        display inline-block
+        vertical-align top
+        width 25%
+        margin 0
+        height 250px
+        max-height 250px
+      @media (min-width:1130px)
+        display block
+        float left
+        height 290px
+        max-height 290px
+      .inner 
+        position relative
+        overflow hidden
+      img
+          position relative
+          z-index 1 
+      a.hover-info
+        position absolute
+        width 100%
+        left 0 
+        top 0
+        transition all 0.3s ease
+        height 100%
+        color $color-white
+        z-index 2
+        padding 0.8em
+        text-align center
+        @media (min-width:$bp-lg)
+          top 500px
+          opacity 0
+          background-color rgba(40, 40, 40, 0.95)
+
+      a
+        opacity 1
+        @media (min-width:$bp-lg)
+          z-index 2 !important
+        &:hover
+          @media (min-width:$bp-lg)
+            display block
+            opacity 1
+            
+      &:hover
+        @media (min-width:$bp-lg)
+          a.hover-info
+            top 0 
+            opacity 1
+            img
+              width 100%
+              max-width 100%
+              margin 0 
+        
+      .hover-info-inner
+        @media (min-width:$bp-lg + 200px)
+          position relative
+          padding-top $gutter-primary-xx-lg
+
+      p
+        opacity 0.6
+        display none
+        @media (min-width:$bp-lg)
+          display block
+      .author
+        display none
+        @media (min-width:$bp-lg + 200px)
+          display block
+          background #000
+          padding 1em
+          position absolute
+          top 0 
+          left 0
+          text-align center
+          margin -0.8em
+          width calc(100% + 1.6em)
+          
+      .read-more
+        text-decoration underline
+        margin-bottom 0
+        opacity 1
+  
+  p.link-with-badge
+    a
+      display inline-block
+      vertical-align middle
+      border-bottom none
+      margin $gutter-primary-lg
+      @media (min-width:$bp-lg)
+        margin 0 $gutter-primary-lg

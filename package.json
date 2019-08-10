@@ -8,7 +8,7 @@
     "angular-animate": "^1.5.8",
     "angular-bootstrap-lightbox": "^0.12.0",
     "angular-easyfb": "^1.5.1",
-    "angular-pageslide-directive": "^2.0.1",
+    "angular-pageslide-directive": "^2.1.4",
     "angular-sanitize": "^1.5.8",
     "angular-socialshare": "^2.3.11",
     "angular-touch": "^1.5.8",
@@ -20,7 +20,6 @@
     "autoprefixer": "^6.3.7",
     "babel-core": "^5.4.2",
     "babel-loader": "^5.0.0",
-    "body-parser": "^1.15.0",
     "browser-sync": "^2.11.1",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.28.4",
@@ -32,17 +31,11 @@
     "gulp-template": "^3.0.0",
     "gulp-util": "^3.0.7",
     "html-webpack-plugin": "^1.7.0",
-    "image-webpack-loader": "3.3.1",
     "json-loader": "^0.5.4",
-    "lodash": "^3.8.0",
+    "lodash": "^4.17.11",
     "method-override": "^2.3.5",
-    "morgan": "^1.7.0",
     "ng-annotate-loader": "0.0.10",
-    "ng-photoswipe": "^0.2.0",
-    "ngtweet": "^0.6.1",
-    "nodemailer": "^2.2.1",
     "normalize.css": "^3.0.3",
-    "photoswipe": "^4.1.1",
     "poststylus": "^0.2.3",
     "prerender-node": "^2.7.0",
     "raw-loader": "^0.5.1",
@@ -54,12 +47,12 @@
     "stylus-loader": "^2.5.1",
     "webpack": "^1.9.5",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "webpack-hot-middleware": "^2.6.0",
+    "yargs": "^3.9.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
     "connect-history-api-fallback": "^1.1.0",
-    "fs-walk": "0.0.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.9",
     "karma-chrome-launcher": "^0.2.0",
@@ -70,26 +63,20 @@
     "karma-webpack": "^1.5.1",
     "mocha": "^2.3.0",
     "node-libs-browser": "^0.5.0",
-    "supports-color": "^3.1.2",
-    "yargs": "^3.9.0"
+    "supports-color": "^3.1.2"
   },
   "scripts": {
-    "express-server": "node server.js",
+    "build": "gulp webpack",
     "icons": "fontcustom compile",
-    "start": "gulp webpack && node server.js",
+    "start": "node server.js",
     "test": "karma start"
   },
-  "keywords": [
-    "angular",
-    "webpack",
-    "es6"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ttbarnes/fr-app.git"
   },
   "author": "Tony Barnes",
   "engines": {
-    "node": "7.10.1"
+    "node": "8.2.1"
   }
 }

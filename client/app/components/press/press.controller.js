@@ -1,12 +1,10 @@
-class PressController {
-  constructor($state, $stateParams, albumsService) {
-    'ngInject';
-    this.albumsService = albumsService;
-    this.stateParams = $stateParams;
-    this.latestAlbumId = 2;
+import allPress from '../../data/press.json';
 
-    this.album = this.albumsService.getSingleAlbum(this.latestAlbumId);
-    if(!this.album) {
+class PressController {
+  constructor($state) {
+    'ngInject';
+    this.press = allPress;
+    if(!this.press) {
       $state.go('error');
     }
   }

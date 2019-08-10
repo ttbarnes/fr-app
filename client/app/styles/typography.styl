@@ -46,6 +46,15 @@ h6
   @media (min-width $bp-md)
     font-size $font-size-h4-desktop
 
+h3.page-heading
+  text-align center
+  color $color-highlight-primary
+  font-weight lighter
+  padding-bottom $gutter-primary-lg
+  margin-bottom 0
+  @media (min-width 1040px)
+    margin-bottom $gutter-primary-lg
+
 .page-sub-title
   clear both
   padding-top $gutter-primary-x-lg
@@ -74,11 +83,11 @@ p
 
 a
   text-decoration none
-  color $color-text-primary
+  color $color-white
 
 .link-highlight-hover a
   opacity 0.5
-  color #FFF
+  color $color-white
   transition all 0.3s ease
   &:hover,
   &:focus
@@ -94,7 +103,7 @@ a
   border-bottom solid 1px $color-text-primary
   &:hover,
   &:focus
-    border-bottom-color $color-bg-secondary
+    border-bottom-color #757575
 
 .link-highlight-hover-border .img-wrap a
   border 0 none
@@ -118,16 +127,21 @@ dl
 
 // currently only used on home page
 .new-heading-theme
-  font-size 26px
+  font-size 21px
   letter-spacing 4px
-  color #DADADA
+  color $color-highlight-primary
   margin-bottom 45px
   font-weight 300
   text-align center
+  max-width 80%
+  margin-right auto
+  margin-left auto
   @media (min-width $bp-xxs)
-    max-width 65%
+    max-width 66%
     margin-right auto
     margin-left auto
+  @media (min-width $bp-sm)
+    font-size 26px
   @media (min-width $bp-sm)
     max-width 100%
   @media (min-width $bp-md)

@@ -5,12 +5,6 @@ import AboutTemplate from './about.html';
 describe('About', () => {
   let $rootScope, makeController;
 
-  var emailService,
-      mockEmailService = {
-        send: () => {}
-      }
-
-
   beforeEach(window.module(AboutModule.name));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;

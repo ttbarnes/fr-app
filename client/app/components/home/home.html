@@ -8,170 +8,75 @@
 </style>
 <section class="row home include-bg-img">
 
-  <h1 class="sr-only">Fiona Ross Jazz Vocalist, pianist, composer</h1>
-
-  <img ng-class="{active: vm.showBgImage}" src="./images/home/bg.png" class="img-bg" alt="Fiona Ross Jazz" />
+  <img src="./images/home/bg2.jpg" class="img-bg" alt="About Fiona Ross" />
 
   <div class="main-content">
 
-    <h2 class="home-intro-heading text-uppercase">Fiona Ross</h2>
-    <div class="row home-intro">
-      <div class="col-60 col-img">
-        <img src="./images/home/home-intro.jpg" alt="Fiona Ross Jazz Vocalist, pianist, composer" />
-      </div>
-      <div class="col-40 col-quotes">
-        <blockquote>
-          <span class="quote">&ldquo;</span>
-          <span class="copy">Meet the jazz artist Fiona Ross who gave Ed Sheeran his ‘first push’</span>
-          <span class="author">Daily Express</span>
-          <span class="quote">&rdquo;</span>
-        </blockquote>
+    <div class="intro-wrapper">
 
-        <blockquote>
-          <span class="quote">&ldquo;</span>
-          <span class="copy">An incisive honesty and humanity in  the detail that takes each song’s message straight to your heart</span>
-          <span class="author">Ola Onabule</span>
-          <span class="quote">&rdquo;</span>
-        </blockquote>
+      <div class="row home-intro">
+        <div class="col-quotes">
+          
+          <div class="heading-intro">
+            <h1>Fiona Ross</h1>
+            <p>Vocalist, Pianist, Composer, Producer, Writer</p>
+          </div>
 
-        <blockquote class="last-blockquote">
-          <span class="quote">&ldquo;</span>
-          <span class="copy">A bold woman who’s ready to set the world on the fire</span>
-          <span class="author">Jazz In Europe</span>
-          <span class="quote">&rdquo;</span>
-        </blockquote>
+
+          
+          <blockquote>
+            <span class="quote">&ldquo;</span>
+            <span class="copy">Technical virtuosity and that raw emotional drive, of an artist at the height of her game</span>
+            <span class="author">Jazz Quarterly</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+          
+          <blockquote>
+            <span class="quote">&ldquo;</span>
+            <span class="copy">Fierce and Non-Compliant, and honest and true and oh so very talented</span>
+            <span class="author">Maxine Gordon</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+          
+          <blockquote>
+            <span class="quote">&ldquo;</span>
+            <span class="copy">Fiona Ross knows how to make an album</span>
+            <span class="author">Jazz Views</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+
+          <blockquote>
+            <span class="quote">&ldquo;</span>
+            <span class="copy">Her talents are simply extraordinary</span>
+            <span class="author">Kind Of Jazz</span>
+            <span class="quote">&rdquo;</span>
+          </blockquote>
+
+        </div>
       </div>
     </div>
 
-    <div class="row home-intro-footer-quote">
-      <blockquote>
-        <span class="quote">&ldquo;</span>
-        <span class="copy">A galloping enthusiasm and thirst for adventure about Ross</span>
-        <span class="quote">&rdquo;</span>
-        <span class="author">London Jazz News</span>
-      </blockquote>
-    </div>
-
-    <div class="row row-social-icons-large">
-      <h4 class="new-heading-theme">Follow the latest</h4>
-      <ul class="social-links-large social-links-hover-rotate">
-        <li class="col-1-6th-md">
-          <a href="http://soundcloud.com/fiona-ross" target="_blank">
-            <i class="icon-s-s"></i>
-            <p>SoundCloud</p>
-          </a>
-        </li>
-        <li class="col-1-6th-md">
-          <a href="https://play.spotify.com/artist/59lPcyDIZJxmRqatvAjct8?play=true" target="_blank">
-            <i class="icon-ssp"></i>
-            <p>Spotify</p>
-          </a>
-        </li>
-        <li class="col-1-6th-md">
-          <a href="http://twitter.com/fifross" target="_blank">
-            <i class="icon-s-t"></i>
-            <p>Twitter</p>
-          </a>
-        </li>
-        <li class="col-1-6th-md">
-          <a href="http://facebook.com/fionarossmusic" target="_blank">
-            <i class="icon-s-f"></i>
-            <p>Facebook</p>
-          </a>
-        </li>
-        <li class="col-1-6th-md">
-          <a href="https://www.instagram.com/fifi_ross" target="_blank">
-            <i class="icon-s-i"></i>
-            <p>Instagram</p>
-          </a>
-        </li>
-        <li class="col-1-6th-md">
-          <a href="https://www.youtube.com/channel/UC9srPEZZNgnsM23Q777HbzA" target="_blank">
-            <i class="icon-s-y"></i>
-            <p>YouTube</p>
-          </a>
-        </li>
-      </ul>
+    <div class="row-album-latest row-intro-new-album-release">
+    
+      <div class="row align-center featured-video">
+        <h4 class="new-heading-theme"><a ui-sref="musicAlbum({id: 4})">New album 'Fierce and Non-Compliant' OUT NOW</a></h4>
+        <iframe src="https://player.vimeo.com/video/330184779?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+      
+      <p class="row link-highlight-hover-border"><a ui-sref="musicAlbum({id: 4})">Find out more</a></p>
     </div>
 
     <div class="row row-signup-middle">
-      <p class="new-heading-theme">Be the first to know about new gigs</p>
+      <p class="new-heading-theme">Be the first to hear about Fiona Ross</p>
       <signup-form></signup-form>
     </div>
 
-    <div class="row row-album-latest">
-      <album data="vm.latestAlbum" layout="1">
-        <!-- <h2>New album <span class="text-uppercase">out now</span></h2> -->
-        <a ui-sref="musicAlbum({id: 2})">
-          <h3>{{vm.latestAlbum.name}}</h3>
-          <p ng-if="vm.latestAlbum.comingSoon && vm.latestAlbum.releaseDate" class="album-release-date">Release date: {{vm.latestAlbum.releaseDate}}</p>
-          <p ng-if="!vm.latestAlbum.comingSoon && vm.latestAlbum.albumType === 'latest'" class="album-release-date">Out now</p>
-        </a>
-      </album>
+    <div class="row button-view-nav">
+      <a ui-sref="music" class="button">
+        <span>Music</span>
+        <i class="icon-arrow-right"></i>
+      </a>
     </div>
-
-    <div class="quotes-middle align-center">
-      <div class="row">
-        <blockquote>
-          <span class="quote">&ldquo;</span>
-          <span class="copy">Heartbreak and misery never sounded so good with longer text</span>
-          <span class="quote">&rdquo;</span>
-          <span class="author">Garth Twa</span>
-        </blockquote>
-      </div>
-
-      <div class="row">
-        <blockquote>
-          <span class="quote">&ldquo;</span>
-          <span class="copy">Heartbreak and misery never sounded so good</span>
-          <span class="quote">&rdquo;</span>
-          <span class="author">Garth Twa</span>
-        </blockquote>
-      </div>
-
-      <div class="row">
-        <blockquote>
-          <span class="quote">&ldquo;</span>
-          <span class="copy">Heartbreak and misery never sounded so good with lots of other text hello world testing long quote yay</span>
-          <span class="quote">&rdquo;</span>
-          <span class="author">Garth Twa</span>
-        </blockquote>
-      </div>
-    </div>
-
-    <div class="row align-center featured-video">
-      <h4 class="new-heading-theme">I Don't Want To Play</h4>
-      <div class="video-wrapper">
-        <iframe width="560" src="https://www.youtube.com/embed/i33VaIFZFSE?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <!--
-      <div class="row s-feeds cancel-margin">
-      <h4>Social media</h4>
-
-      <div class="col-fb">
-        <div class="fb-page"
-             data-href="http://www.facebook.com/fionarossmusic"
-             data-small-header="true"
-             data-width="300"
-             data-adapt-container-width="true"
-             data-hide-cover="false"
-             data-show-facepile="false"
-             data-show-posts="true">
-        </div>
-      </div>
-
-      <div class="col-tw">
-        <twitter-timeline>
-          <a class="twitter-timeline"
-             href="https://twitter.com/fifross"
-             data-widget-id="700349799137198080"></a>
-        <twitter-timeline>
-      </div>
-
-    </div>
-    -->
 
   </div>
 

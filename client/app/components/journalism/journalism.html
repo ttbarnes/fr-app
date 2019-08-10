@@ -1,0 +1,55 @@
+<section class="row journalism">
+  <h1 class="sr-only">Articles by Fiona Ross</h1>
+
+  <div class="main-content align-center">
+    <h3 class="page-heading">Journalism by Fiona</h3>
+    
+    <div class="row">
+      <div class="link-highlight-hover-border intro-copy">
+        <p>As well as working as a Jazz artist, Fiona spends her time as a writer and supporting a number of companies and organisations. She is a senior writer with her own <a href="https://jazzineurope.mfmmedia.nl/category/fiona-ross-women-in-jazz/" target="_blank">Women In Jazz series for Jazz in Europe</a>. Fiona is also a creative writer for <a href="http://www.jazzquarterly.com" target="_blank">Jazz Quarterly</a> and writes for <a href="https://jazzconnects.com/" target="_blank">Jazz Connects</a> and <a href="https://www.highernationals.com/" target="_blank">Pearson</a>. Her articles are featured below.</p>
+        <p>Fiona is also a member of the 
+          <a href="http://news.jazzjournalists.org" target="_blank">
+            Jazz Journalists Association
+          </a>
+          and <a href="http://bajunion.org.uk" target="_blank">The British Association of Journalists</a>.
+        </p>
+
+        <p class="link-with-badge">
+          <a href="http://news.jazzjournalists.org" target="_blank">
+            <img src="http://jazzjournalists.org//badges/Member-button.jpg" width="180" />
+          </a>
+          <a href="http://bajunion.org.uk" target="_blank">
+            <img src="./images/journalism/baj.png" width="91" height="42" />
+          </a>
+        </p>
+      </div>
+
+      <ul class="grid-layout-4-4 grid-col-hover">
+        <li ng-repeat="article in vm.data"
+            ng-class="{last: $last}"
+            class="col-50-xs">
+          <div class="inner">
+            <img ng-src="./images/journalism/{{article.thumbUrl}}" alt="{{article.title}} by Fiona Ross" />
+            <a ng-href="{{article.href}}" target="_blank" class="hover-info">
+              <div class="hover-info-inner">
+                <p class="author">{{article.title}}</p>
+                <p>{{article.copy}}</p>
+                <p class="read-more">Read more</p>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row button-view-nav">
+        <a ui-sref="contact" class="button">
+          <span>Contact</span>
+          <i class="icon-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>

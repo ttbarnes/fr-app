@@ -4,15 +4,15 @@
 
   <div class="main-content align-center">
 
-    <h3>Press</h3>
+    <h3 class="page-heading">Press</h3>
 
     <ul class="grid-layout-4-4 grid-col-hover">
-      <li ng-repeat="pressRelease in vm.album.press"
+      <li ng-repeat="pressRelease in vm.press"
           ng-class="{last: $last}"
           class="col-50-xs">
           <div class="inner">
             <img ng-src="./images/press/{{pressRelease.thumbUrl}}" alt="{{pressRelease.author}} press release" />
-            <a ng-href="{{pressRelease.href}}" target="_blank" class="hover-info">
+            <a ng-href="{{pressRelease.isPdf ? './images/press/' + pressRelease.pdfUrl : pressRelease.href}}" target="_blank" class="hover-info">
               <div class="hover-info-inner">
                 <p class="author">{{pressRelease.author}}</p>
                 <p>{{pressRelease.copy}}</p>
@@ -24,8 +24,8 @@
     </ul>
 
     <div class="row button-view-nav">
-       <a ui-sref="news" class="button">
-        <span>News</span>
+       <a ui-sref="gigs" class="button">
+        <span>Gigs</span>
         <i class="icon-arrow-right"></i>
       </a>
     </div>

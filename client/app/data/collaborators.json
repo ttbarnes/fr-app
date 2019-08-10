@@ -1,9 +1,142 @@
 [
   {
-    "name": "Alexander Barnes-Ross",
+    "name": "Gibbi Bettini",
+    "collabId": "Gibbi-Bettini",
+    "role": "Guitarist/Engineer",
     "images": {
-      "avatar": "./images/collaborators/alex-barnes-ross.jpg",
-      "thumb": "./images/collaborators/thumb/alex-barnes-ross.jpg"
+      "avatar": "./images/collaborators/gibbi-bettini.jpg"
+    },
+    "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince."
+  },
+  {
+    "name": "Derek Daley",
+    "collabId": "Derek-Daley",
+    "role": "Bassist",
+    "images": {
+      "avatar": "./images/collaborators/derek-daley.jpg"
+    },
+    "urls": {
+      "twitter": "https://twitter.com/DerekDaleyMusic",
+      "instagram": "https://www.instagram.com/derekdaleymusic"
+    },
+    "about": "<p>Being raised in a musical family home Derek was taught basic music theory by  father and uncle (both a session musicians and music teachers). Age six he began learning piano and performed at various events. Aged nine, He was introduced to the electric and double bass, now a dedicated practitioner.</p><p>Compounding his skills in music performance at the British Academy of New Music, ICMP and LCCM he is well versed in many styles, he continues to hone his playing by performing extensively across the world as a session musician, venues ranging from Bars and clubs in London, Glastonbury, Reading festival, Jazz Haus (Heidelberg), to name a few</p>"
+  },
+  {
+    "name": "Marley Drummond",
+    "collabId": "Marley-Drummond",
+    "role": "Drummer",
+    "images": {
+      "avatar": "./images/collaborators/marley-drummond.jpg"
+    },
+    "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked in a wide range of genres, and musicians, both established and up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads."
+  },
+  {
+    "name": "Loren Hignell",
+    "collabId": "Loren-Hignell",
+    "role": "Saxophone",
+    "images": {
+      "avatar": "./images/collaborators/loren-hignell.jpg"
+    },
+    "about": "<p>From Cambridge originally, Loren settled in South East London with his family after his parents didn’t give him enough for a train fare home, and changed the locks anyway...<\/p><p>Loren gained a First in Music from Anglia Ruskin University in 1994 and went on to take a one year postgraduate course in Jazz and Studio Music at the Guildhall School of Music and Drama.<\/p><p>He has toured Europe many times with big bands such as Ray McVay’s Glenn Miller UK, GMMO, the BBC Big Band and in the backing band for many Jamaican Reggae Artists; primarily Max Romeo but also Big Youth, Gregory Isaacs, Mikey Dread and Little Roy.<\/p><p>Loren has played at venues include the Royal Albert Hall (backing Sir Cliff Richard, Imelda Staunton & with the Glenn Miller Orchestra)  the QEH, Royal Festival Hall, the Radio Theatre at  BBC Broadcasting House, Buckingham Palace and the Palladium. Loren was also a member of the Syd Lawrence Orchestra for four years, during which time he honed his skills playing in the big band tradition.<\/p><p>His session work has included work in many major London recording studios including Metropolis, Pinewood,  Angel and Triple X for many bands including Gloworm, Code Red and Ouch!<\/p><p>West end credits are Jersey Boys (Prince Edward and Piccadilly theatres), White Christmas (Dominion), Memphis (Shaftesbury), Motown (Shaftesbury), Singing in the Rain (Palace) and The  Rat Pack (Savoy)<\/p><p>More recently Loren has played Glastonbury and many other festivals with Uncle Funk and the Boogie Wonderband, and most of the well known London jazz clubs: Ronnie Scott’s, the Jazz Cafe and the Soho Jazz Club with Vertaal and of course 606 and The Pheasantry with Fiona!<\/p>"
+  },
+  {
+    "name": "Ashaine White",
+    "collabId": "Ashaine-White",
+    "role": "Backing vocalist",
+    "images": {
+      "avatar": "./images/collaborators/ashaine-white.jpg"
+    },
+    "about": "<p>Ashaine White is a Freelance Vocalist and Musician from North London, Specialising in Neo-Soul and RnB music. Ashaine also delves into the world of Pop and Jazz and working as a backing vocalist has taken her to venues such as Ronnie Scott's, Camden Assembly, The Curtain Hotel and Pizza Express Jazz Club Soho</p>",
+    "urls": {
+      "facebook": "https://www.facebook.com/Ashainewhite",
+      "twitter": "https://twitter.com/ashainewhite",
+      "instagram": "https://www.instagram.com/ashainewhite/"
+    }
+  },
+  {
+    "name": "Warren Woodcraft",
+    "collabId": "Warren-Woodcraft",
+    "role": "Musician/Sound Engineer",
+    "images": {
+      "avatar": "./images/collaborators/warren-woodcraft.jpg"
+    },
+    "about": "Warren is a sound engineer and musician hailing from Essex. With a penchant for funk, soul and world music, his drumming and percussion have taken him all over, from Abbey Road to Glastonbury to Ronnie Scotts. A studious approach to his craft sees him in demand for studio engineering, session work, live sound and drum teching and as a multi instrumentalist for songwriting and production duties wherever they arise.",
+    "urls": {
+      "instagram": "https://www.instagram.com/warrenwoodcraftdrums/"
+    }
+  },
+  {
+    "name": "Adam Hayes",
+    "collabId": "Adam-Hayes",
+    "role": "Drummer",
+    "images": {
+      "avatar": "./images/collaborators/adam-hayes.jpg"
+    },
+    "about": "<p>Hailing from a family of top musicians, London-based freelance drummer Adam Hayes brings an old school, authentic, journeyman approach to every project.</p><p>Adam has worked with a wide range of artists including Katrina and the Waves, The Pharcyde, Iman Omari, Ty, Ill Camille, Ruth Brown and many more.</p><p>He has extensive international gigging experience, from festivals including SXSW, Love Supreme and Boomtown, to countless renowned gig venues across London and the world.</p><p>Having recorded in studios from Abbey Road to Konk, from RAK to Paul Epworth's The Church Studios, Adam has developed a unique sound and style that compliments the song and brings out the best in any track.</p>",
+    "urls": {
+      "website": "http://adamhayesdrums.com"
+    }
+  },
+  {
+    "name": "Steven Tiller",
+    "collabId": "Steven-Tiller",
+    "role": "Photographer",
+    "images": {
+      "avatar": "./images/collaborators/steven-tiller.jpg"
+    },
+    "about": "A decade ago I first picked up a camera and haven't let it go since. I've always been fascinated by people and the stories they're living, which has led my camera & I on some epic adventures ever since. It's awesome to let you SEE WHAT I SEE...",
+    "urls": {
+      "website": "https://www.steventiller.com",
+      "facebook": "https://www.facebook.com/tillersteven",
+      "instagram": "https://www.instagram.com/steventiller"
+    }
+  },
+  {
+    "name": "Elliot Richardson",
+    "collabId": "Elliot-Richardson",
+    "role": "Musician, Producer, Engineer, Owner Highfield Studio",
+    "images": {
+      "avatar": "./images/collaborators/elliot-richardson.jpg"
+    },
+    "urls": {
+      "website": "http://www.highfieldstudio.com/",
+      "instagram": "https://www.instagram.com/highfieldstudio",
+      "facebook": "https://www.facebook.com/highfieldstudio"
+    },
+    "about": "<p>Starting out early in life as drummer / pianist, Elliot quickly found a home drumming in originals band Missing Andy who achieved two UK tours, one European tour and a sold out gig at Wembley arena after performing on Sky Ones show 'Must Be The Music'. This lead to the band achieving two top 40 hits.<\/p><p>Following this, Elliot produced & mixed a further two albums for Missing Andy which helped fuel the bands independent career for a further 4 years.  Nowadays, Elliot spends most of his time running his own business 'Highfield Studio', a recording studio in the heart of rural Essex, and has worked with the likes of Sandi Thom, Joe McElderry, James Graham (The Four), Jeffery Daniels, and Angie Brown to name a few.<\/p><p>Still performing today, Elliot can be found on either the originals circuit with Missing Andy or in the corporate scene with his recently formed covers band 'Band Theft Audio' who have been seen at Silverstone Formula 1, Moto GP, Ascot, Brentwood Festival, Havering Festival, Hertford University Summer Ball, Stamford Bridge and many more on the horizon.<\/p>"
+  },
+  {
+    "name": "Nick Watson",
+    "collabId": "Nick-Watson",
+    "role": "Master engineer",
+    "images": {
+      "avatar": "./images/collaborators/nick-watson.jpg"
+    },
+    "urls": {
+      "website": "http://fluidmastering.com/about-fluid-mastering"
+    }
+  },
+  {
+    "name": "Tony Barnes",
+    "collabId": "Tony-Barnes",
+    "role": "Developer, Musician",
+    "images": {
+      "avatar": "./images/collaborators/tony-barnes.jpg"
+    },
+    "urls": {
+      "website": "http://tonybarnes.me",
+      "twitter": "http://twitter.com/ttbarnes",
+      "soundcloud": "http://soundcloud.com/ttonyb"
+    },
+    "collabOn": [
+      "Built and designed fionaross.co.uk"
+    ]
+  },
+  {
+    "name": "Alexander Barnes-Ross",
+    "collabId": "Alexander-Barnes-Ross",
+    "images": {
+      "avatar": "./images/collaborators/alex-barnes-ross.jpg"
     },
     "urls": {
       "other": [
@@ -16,21 +149,34 @@
   },
   {
     "name": "Catarina Andrade",
+    "collabId": "Catarina-Andrade",
     "role": "Stylist",
     "images": {
-      "avatar": "./images/collaborators/catarina-andrade.jpg",
-      "thumb": "./images/collaborators/thumb/catarina-andrade.jpg"
+      "avatar": "./images/collaborators/catarina-andrade.jpg"
     },
     "urls": {
       "instagram": "https://www.instagram.com/catarinaandrade__"
     }
   },
   {
-    "name": "David Apps",
+    "name": "The Goat",
+    "collabId": "The-Goat",
     "role": "Photography",
     "images": {
-      "avatar": "./images/collaborators/david-apps.jpg",
-      "thumb": "./images/collaborators/thumb/david-apps.jpg"
+      "avatar": "./images/collaborators/the-goat.jpg"
+    },
+    "urls": {
+      "website": "http://www.goatnoisephotography.com/",
+      "instagram": "https://www.instagram.com/goatnoisephotography/",
+      "facebook": "https://www.facebook.com/officialgoatnoisephotography"
+    }
+  },
+  {
+    "name": "David Apps",
+    "collabId": "David-Apps",
+    "role": "Photography",
+    "images": {
+      "avatar": "./images/collaborators/david-apps.jpg"
     },
     "urls": {
       "website": "http://artificialdesigns.co.uk",
@@ -39,95 +185,11 @@
     }
   },
   {
-    "name": "Derek Daley",
-    "role": "Bassist for live performances",
-    "images": {
-      "avatar": "./images/collaborators/derek-daley.jpg",
-      "thumb": "./images/collaborators/thumb/derek-daley.jpg"
-    },
-    "urls": {
-      "twitter": "https://twitter.com/DerekDaleyMusic",
-      "instagram": "https://www.instagram.com/derekdaleymusic"
-    },
-    "about": "<p>Being raised in a musical family home Derek was taught basic music theory by  father and uncle (both a session musicians and music teachers). Age six he began learning piano and performed at various events. Aged nine, He was introduced to the electric and double bass, now a dedicated practitioner.</p><p>Compounding his skills in music performance at the British Academy of New Music, ICMP and LCCM he is well versed in many styles, he continues to hone his playing by performing extensively across the world as a session musician, venues ranging from Bars and clubs in London, Glastonbury, Reading festival, Jazz Haus (Heidelberg), to name a few</p>"
-  },
-  {
-    "name": "Gibbi Bettini",
-    "role": "Guitarist",
-    "images": {
-      "avatar": "./images/collaborators/gibbi-bettini.jpg",
-      "thumb": "./images/collaborators/thumb/gibbi-bettini.jpg"
-    },
-    "about": "Session musician/producer, Gibbi Bettini has been playing Guitar since the age of 12 and working professionally within the music industry since 19. Influenced by and experienced in Funk, Blues, RnB, Jazz, Pop, Soul and anything Prince.",
-    "collabOn": [
-      "Guitar on Just Me (and sometimes someone else)",
-      "Engineered Just Me (and sometimes someone else)"
-    ]
-  },
-  {
-    "name": "Iain Court",
-    "role": "Music Producer/Sound Engineer",
-    "images": {
-      "avatar": "./images/collaborators/iain-court.jpg",
-      "thumb": "./images/collaborators/thumb/iain-court.jpg"
-    },
-    "urls": {
-      "website": "http://imcmusic.co.uk"
-    },
-    "collabOn": [
-      "Engineered and mixed: A Twist of Blue"
-    ]
-  },
-  {
-    "name": "Jon Hockley",
-    "role": "Producer, Engineer, Songwriter",
-    "images": {
-      "avatar": "./images/collaborators/jon-hockley.jpg",
-      "thumb": "./images/collaborators/thumb/jon-hockley.jpg"
-    },
-    "about": "<p>There are no boundaries or rules, genres don’t exist. The aim is to be remembered, to implant an idea or emotion in the listener. you are singing a story, a hit record, a message to the lost or a soundtrack to a visual experience, don’t you want that piece of music to be remembered? for your intentions to be stand out in the most entertaining, dramatic and recognisable way?</p> <p>Writing, Recording and Engineering Credits Ed Sheeran, Katy, B, Sub Focus, Paul Van Dyke, Chase and Status, Wilkinson, Kasha Rae, Katy B, Ashleigh Ashley, Concrete Rose, Mic Righteous, English Frank, Aruba Red, Marvin Ambrosius, Speech Debelle, Iman, Sam Garrett, Mila Falls, The Stow, Baby Sol, Lianhart, Chrome, Jay Norton</p> <p>I've released original songs and compositions, remixed, edited, fixed and arranged pieces of music for the above artists and many more. If i was to describe my music style i would say it’s a Dark Romantic Adventure written by Scorsese with a Tarantino middle 8. With over 15 years of experience it feels like every stone has been turned but then stones have more than 2 sides.</p> <p>Send an email to <a href=\"mailto:jonhockley@gmail.com\">jonhockley@gmail.com</a> and help me become better</p>",
-    "urls": {
-      "website": "http://www.jonhockley.com",
-      "soundcloud": "http://soundcloud.com/riffioso",
-      "other": [
-        {
-          "url": "http://www.riffioso.co.uk",
-          "title": "Riffioso"
-        }
-      ]
-    },
-    "collabOn": [
-      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
-    ]
-  },
-  {
-    "name": "Kris Buzow",
-    "images": {
-      "avatar": "./images/collaborators/kris-buzow.jpg",
-      "thumb": "./images/collaborators/thumb/kris-buzow.jpg"
-    },
-    "about": "Krzysztof Buzow - Kris began playing classical violin at 7 and turned to saxophone and clarinet at fourteen. He won The Young Talent Competition and become the best clarinet player getting a Government Scholarship. After years of playing classical music he turned to jazz and blues. He has performed with top of polish jazz and pop musicians. He came to England to study vocal and he holds BMus (HONS) in Popular Music Performance.",
-    "collabOn": [
-      "Saxophonist on Just Me (and sometimes someone else)"
-    ]
-  },
-  {
-    "name": "Marley Drummond",
-    "images": {
-      "avatar": "./images/collaborators/marley-drummond.jpg",
-      "thumb": "./images/collaborators/thumb/marley-drummond.jpg"
-    },
-    "about": "Marley Evan Drummond, from South London, picked up a pair of drum sticks at the age of 3, studying with Mr Colin Woolway, since then Marley has worked in a wide range of genres, and musicians, both established and up and coming. More prominently in Reggae, Jazz and Hip Hop. Endorsed by Liberty drums, Vector Hardware and Evans Drum heads.",
-    "collabOn": [
-      "Drums on Just Me (and sometime someone else)"
-    ]
-  },
-  {
     "name": "Nathan Williams",
+    "collabId": "Nathan-Williams",
     "role": "Multi-instrumentalist, writer, producer, arranger, artist and part-time teacher",
     "images": {
-      "avatar": "./images/collaborators/nathan-williams.jpg",
-      "thumb": "./images/collaborators/thumb/nathan-williams.jpg"
+      "avatar": "./images/collaborators/nathan-williams.jpg"
     },
     "urls": {
       "website": "http://nategroove.com",
@@ -146,24 +208,35 @@
     ]
   },
   {
-    "name": "Nick Watson",
+    "name": "Roger Batting",
+    "collabId": "Roger-Batting",
+    "role": "Drums on A Twist of Blue",
     "images": {
-      "avatar": "./images/collaborators/nick-watson.jpg",
-      "thumb": "./images/collaborators/thumb/nick-watson.jpg"
+      "avatar": "./images/collaborators/roger-batting.jpg"
     },
+    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
     "urls": {
-      "website": "http://fluidmastering.com/about-fluid-mastering"
+      "website": "http://rogerbatting.com/"
     },
     "collabOn": [
-      "Mastering engineer for: Just Me (and sometimes someone else)"
+      "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
     ]
   },
   {
+    "name": "Paul Mearing",
+    "collabId": "Paul-Mearing",
+    "role": "Guitar on Twist Of Blue",
+    "images": {
+      "avatar": "./images/collaborators/paul-mearing.jpg"
+    },
+    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
+  },
+  {
     "name": "Rose Redrup",
+    "collabId": "Rose-Redrup",
     "role": "Makeup Artist",
     "images": {
-      "avatar": "./images/collaborators/rose-redrup.jpg",
-      "thumb": "./images/collaborators/thumb/rose-redrup.jpg"
+      "avatar": "./images/collaborators/rose-redrup.jpg"
     },
     "urls": {
       "email": "Roseredrup@gmail.com",
@@ -176,10 +249,10 @@
   },
   {
     "name": "Stefan Ferrol",
+    "collabId": "Stefan-Ferrol",
     "role": "Photography",
     "images": {
-      "avatar": "./images/collaborators/stefan-ferrol.jpg",
-      "thumb": "./images/collaborators/thumb/stefan-ferrol.jpg"
+      "avatar": "./images/collaborators/stefan-ferrol.jpg"
     },
     "urls": {
       "website": "http://stefanferrol.co.uk",
@@ -187,56 +260,50 @@
     }
   },
   {
-    "name": "The Goat",
-    "role": "Photography",
+    "name": "Kris Buzow",
+    "collabId": "Kris-Buzow",
     "images": {
-      "avatar": "./images/collaborators/the-goat.jpg",
-      "thumb": "./images/collaborators/thumb/the-goat.jpg"
+      "avatar": "./images/collaborators/kris-buzow.jpg"
     },
-    "urls": {
-      "website": "http://www.goatnoisephotography.com/",
-      "instagram": "https://www.instagram.com/goatnoisephotography/",
-      "facebook": "https://www.facebook.com/officialgoatnoisephotography"
-    }
-  },
-  {
-    "name": "Tony Barnes",
-    "role": "Developer, Musician",
-    "images": {
-      "avatar": "./images/collaborators/tony-barnes.jpg",
-      "thumb": "./images/collaborators/thumb/tony-barnes.jpg"
-    },
-    "urls": {
-      "website": "http://tonybarnes.me",
-      "twitter": "http://twitter.com/ttbarnes",
-      "soundcloud": "http://soundcloud.com/ttonyb"
-    },
+    "about": "Krzysztof Buzow - Kris began playing classical violin at 7 and turned to saxophone and clarinet at fourteen. He won The Young Talent Competition and become the best clarinet player getting a Government Scholarship. After years of playing classical music he turned to jazz and blues. He has performed with top of polish jazz and pop musicians. He came to England to study vocal and he holds BMus (HONS) in Popular Music Performance.",
     "collabOn": [
-      "Built and designed fionaross.co.uk"
+      "Saxophonist on Just Me (and sometimes someone else)"
     ]
   },
   {
-    "name": "Paul Mearing",
-    "role": "Guitar on Twist Of Blue",
+    "name": "Jon Hockley",
+    "collabId": "Jon-Hockley",
+    "role": "Producer, Engineer, Songwriter",
     "images": {
-      "avatar": "./images/collaborators/paul-mearing.jpg",
-      "thumb": "./images/collaborators/thumb/paul-mearing.jpg"
+      "avatar": "./images/collaborators/jon-hockley.jpg"
     },
-    "about": "I've played with The original Soultraders for the past 16 years (played the Albert Hall,QM2,F1 ) and do session work for Iain Court,Brian Juniper and also gig regularly with the Sean Dillon Band aka the sounds of Weller. Also had the pleasure of playing on your Album which will always be with me."
-  },
-  {
-    "name": "Roger Batting",
-    "role": "Drums on A Twist of Blue",
-    "images": {
-      "avatar": "./images/collaborators/roger-batting.jpg",
-      "thumb": "./images/collaborators/thumb/roger-batting.jpg"
-    },
-    "about": "I have worked with major labels, producers bands and artists (Warner bros/Sony) (Dave Stewart, Craig Leon, Simon Gogerly) (Kevin Costner Hollywood movie The Upside Of Anger/Yvonne Caterfeld/ Jessica Darling/ The Aklowa Drummers of Ghana/Edd Jones/ b hut/ The Good Earth. Supports for Go West, Jimmy Barnes and many more.",
+    "about": "<p>There are no boundaries or rules, genres don’t exist. The aim is to be remembered, to implant an idea or emotion in the listener. you are singing a story, a hit record, a message to the lost or a soundtrack to a visual experience, don’t you want that piece of music to be remembered? for your intentions to be stand out in the most entertaining, dramatic and recognisable way?</p> <p>Writing, Recording and Engineering Credits Ed Sheeran, Katy, B, Sub Focus, Paul Van Dyke, Chase and Status, Wilkinson, Kasha Rae, Katy B, Ashleigh Ashley, Concrete Rose, Mic Righteous, English Frank, Aruba Red, Marvin Ambrosius, Speech Debelle, Iman, Sam Garrett, Mila Falls, The Stow, Baby Sol, Lianhart, Chrome, Jay Norton</p> <p>I've released original songs and compositions, remixed, edited, fixed and arranged pieces of music for the above artists and many more. If i was to describe my music style i would say it’s a Dark Romantic Adventure written by Scorsese with a Tarantino middle 8. With over 15 years of experience it feels like every stone has been turned but then stones have more than 2 sides.</p> <p>Send an email to <a href=\"mailto:jonhockley@gmail.com\">jonhockley@gmail.com</a> and help me become better</p>",
     "urls": {
-      "website": "http://rogerbatting.com/"
+      "website": "http://www.jonhockley.com",
+      "soundcloud": "http://soundcloud.com/riffioso",
+      "other": [
+        {
+          "url": "http://www.riffioso.co.uk",
+          "title": "Riffioso"
+        }
+      ]
     },
     "collabOn": [
       "Engineered and mixed: Reach Me from Just Me (and sometimes someone else)"
+    ]
+  },
+  {
+    "name": "Iain Court",
+    "collabId": "Iain-Court",
+    "role": "Music Producer/Sound Engineer",
+    "images": {
+      "avatar": "./images/collaborators/iain-court.jpg"
+    },
+    "urls": {
+      "website": "http://imcmusic.co.uk"
+    },
+    "collabOn": [
+      "Engineered and mixed: A Twist of Blue"
     ]
   }
 ]

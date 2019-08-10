@@ -1,0 +1,71 @@
+@import '../../styles/variables'
+
+.gallery-signed-photo
+
+  .row-images
+    a
+      opacity 1 !important
+    @media (min-width $bp-md)
+      float none
+      margin 0 auto
+      display table
+      max-width 600px
+    > div
+      max-width 450px
+      margin 0 auto
+      @media (min-width $bp-xs)
+        padding 1em
+      @media (min-width $bp-md)
+        display table-cell
+        vertical-align top
+        width 50%
+    &.row-first
+      > .cell:first-child
+        @media (min-width $bp-md)
+          width 33%
+      > .cell:last-child
+        @media (min-width $bp-md)
+          width 67%
+    &.row > .cell:first-child input
+      @media (min-width $bp-md)
+        float left
+    &.row > .cell:last-child input
+      @media (min-width $bp-md)
+        float right
+
+    input
+      width auto
+
+  img
+    width 100%
+    max-width 80%
+    margin 0 auto
+    margin-bottom $gutter-primary-lg
+    @media (min-width $bp-md)
+      max-width 100%
+    + img
+      width auto
+      margin-bottom $gutter-primary-x-lg
+
+  .col-50
+    width 50%
+
+  h3.page-heading
+    margin-bottom $gutter-primary-xs
+  
+    + p
+      display block
+      padding-bottom $gutter-primary-lg
+      margin-bottom $gutter-primary-x-lg
+      font-size 1.3em
+
+  .main-content
+    margin 0 auto
+    color $color-text-primary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  input
+    border 0 none
+    background none
+    padding 0

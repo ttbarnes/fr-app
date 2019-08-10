@@ -1,14 +1,22 @@
 <section class="row music-album include-bg-img">
 
-  <img ng-src="{{vm.album.images.bg}}" class="img-bg" alt="{{vm.album.name}}"/>
+  <img ng-if="vm.album.images.bg" ng-src="{{vm.album.images.bg}}" class="img-bg" alt="{{vm.album.name}}" ng-class="{'black-white-album' : vm.album.id === 3}" />
 
   <div class="main-content">
 
     <album data="vm.album" layout="2"></album>
 
+    <div class="row album-spacer">&nbsp;</div>
+
+    <div ng-if="vm.otherAlbums" class="row">
+      <div ng-repeat="oAlbum in vm.otherAlbums" class="row music-album-others-album">
+        <album data="oAlbum" layout="2"></album>
+      </div>
+    </div>
+
     <div class="row button-view-nav">
-       <a ui-sref="music" class="button">
-        <span>Music</span>
+       <a ui-sref="press" class="button">
+        <span>Press</span>
         <i class="icon-arrow-right"></i>
       </a>
     </div>

@@ -2,15 +2,16 @@
 
 .music-album-reviews
 
-  h3
-    color $color-highlight-primary
-    font-weight lighter
-    padding-bottom $gutter-primary-lg
-    margin-bottom $gutter-primary-lg
+  &.include-bg-img .img-bg
+    &.black-white-album
+      display none
+      @media (min-width: $bp-lg)
+        display block
+        right -84%
 
   .main-content
     margin 0 auto
-    color $color-highlight-secondary
+    color $color-text-primary
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
@@ -26,7 +27,7 @@
       padding-top $gutter-primary-xx-lg
 
   blockquote
-    color $color-highlight-secondary
+    color $color-text-primary
     font-size 1em
     @media (min-width $bp-sm)
       font-size 1.2em
@@ -36,7 +37,7 @@
       padding-top $gutter-primary-lg
     b
       font-weight lighter
-      color $color-highlight-primary
+      color $color-white
 
     .copy
       p:last-child

@@ -1,0 +1,63 @@
+@import '../../styles/variables'
+    
+.privacy-policy
+  .main-content
+    max-width 800px
+    margin 0 auto
+    color $color-text-primary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+  h2,
+  h3,
+  h4
+    padding-bottom 0
+    margin $gutter-primary-lg 0
+
+  p,
+  li
+    margin-bottom $gutter-primary
+
+  .contact-details
+    margin-bottom $gutter-primary-lg
+
+  h2,
+  h3,
+  h4,
+  a,
+  strong,
+  .contact-details
+    font-weight lighter
+    color $color-highlight-primary
+    
+  h2
+    margin-top $gutter-primary-xx-lg
+    &:first-child
+      margin-top 0
+    @media (min-width: $bp-xs)
+      font-size $font-size-h3-mobile
+    @media (min-width: $bp-sm)
+      font-size $font-size-h3-desktop
+
+  h3
+    @media (min-width: $bp-xs)
+      font-size $font-size-h2-mobile
+    @media (min-width: $bp-sm)
+      font-size $font-size-h2-desktop
+
+  a
+    text-decoration underline
+    &:hover,
+    &:focus
+      text-decoration none
+
+  ul,
+  dl,
+  ol
+    margin-top $gutter-primary-lg
+    margin-bottom $gutter-primary-lg
+    margin-left $gutter-primary-lg
+    li
+      list-style-type initial
+
+  

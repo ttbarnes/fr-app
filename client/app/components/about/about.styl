@@ -2,29 +2,105 @@
 
 .about
 
+  h3.page-heading
+    margin-bottom 0
+
   .main-content
     max-width $section-max-width
     margin 0 auto
+    color #A7A7A7
     @media (min-width $bp-md)
       font-size 1.1em
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
     p
       span.quote,
-      span.highlight
-        color $color-highlight-primary
+      span.highlight,
+      i.highlight
+        color $color-white
+
+      span.highlight-2
+      i.highlight-2
+        color #939393
 
       span.quote
         font-style italic
 
     blockquote
+      @media (min-width $bp-lg)
+        font-size 1.3em
       &.extra-margin-bottom
         margin 0 auto $gutter-primary-lg auto
-      &.first
-        max-width 880px
+    
+    
+
+  .member-of-list-text-only
+    margin-bottom $gutter-primary-xx-lg
+    @media (min-width $bp-sm)
+      margin-bottom $gutter-primary-xxx-lg
+    li
+      margin-right $gutter-primary-lg
+      margin-bottom $gutter-primary
+      @media (min-width $bp-sm)
+        float left
+    a
+      color $color-white
+
+  .member-of-list
+    text-align center
+    @media (min-width $bp-sm)
+      text-align left
+    > p
+      margin-bottom $gutter-primary-lg
+    ul
+      text-align center
+    li
+      margin-bottom $gutter-primary-x-lg
+      @media (min-width $bp-sm)
+        display inline-block
+        vertical-align middle
+        text-align center
+        margin-bottom $gutter-primary-x-lg
+
+      a
+        color $color-highlight-primary
+        img
+          margin 0 $gutter-primary
+          max-width 140px
+          opacity 1
+          transition all 0.2s ease
+          @media (min-width $bp-sm)
+            opacity .7
+        &:hover img,
+        &:focus img
+          @media (min-width $bp-sm)
+            opacity 1
+
+  .central-quotes
+    margin-bottom $gutter-primary-lg
+    @media (min-width $bp-sm)
+      margin-bottom $gutter-primary-xx-lg
+    blockquote
+      padding-top $gutter-primary-lg
+      padding-bottom $gutter-primary
+      @media (min-width $bp-sm)
+        padding-top $gutter-primary-xx-lg
+        &.first
+          padding-top $gutter-primary-x-lg
+      &.last
+        padding-top $gutter-primary-xx-lg
+        @media (min-width $bp-sm)
+          padding-top $gutter-primary-xx-lg
+
+      &.intro-quote
+        max-width 425px
+        @media (min-width $bp-sm)
+          max-width 535px
+
         .copy
           width 65%
           @media (min-width $bp-sm)
-            width 55%
+            width 67%
         small
           clear both
           display block
@@ -34,3 +110,15 @@
             display inline-block
           .dash
             padding 0 0.5em
+        span.quote:last-child
+          display inline-block
+          margin-left -12px
+          margin-bottom -0.4em
+          @media (min-width $bp-sm)
+            margin-left -19px
+
+    .copy
+      width 82%
+    .author
+      display block
+      text-align center
