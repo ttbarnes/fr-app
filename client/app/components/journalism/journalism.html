@@ -29,7 +29,7 @@
             ng-class="{last: $last}"
             class="col-50-xs">
           <div class="inner">
-            <img ng-src="./images/journalism/{{article.thumbUrl}}" alt="{{article.title}} by Fiona Ross" />
+            <img ng-src="{{article.imageUrl}}" alt="{{article.title}}" />
             <a ng-href="{{article.href}}" target="_blank" class="hover-info">
               <div class="hover-info-inner">
                 <p class="author">{{article.title}}</p>
