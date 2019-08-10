@@ -13,9 +13,7 @@ class NewsController {
     this.promiseError = false;
 
     this.newsService.getAll().then((data) => {
-      const dataReversed = data.data.slice().reverse();
-      let orderedData = dataReversed.sort(dateIsBefore);
-      this.data = orderedData;
+      this.data = data;
     }, () => {
       this.promiseError = true;
     });

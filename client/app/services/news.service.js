@@ -1,4 +1,5 @@
 import * as CONST from '../constants/constants';
+import originalNews from '../data/original-news.json';
 
 export default class newsService {
 
@@ -8,7 +9,14 @@ export default class newsService {
 
     let service = {
 
-      getAll: () => this.$http.get(CONST.API_NEWS),
+      getAll: () => {
+        return this.$http.get(CONST.API_NEWS).then(data => {
+          return [
+            ...data.data.reverse(),
+            ...originalNews
+          ]
+        });
+      },
 
       getSingle: (title) => {
         return this.$http.get(CONST.API_NEWS).then(data =>

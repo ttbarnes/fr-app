@@ -6,9 +6,6 @@ export default class gigsService {
 
     this.gigs = gigs;
 
-    /*
-    // get all gigs
-    */
     this.getAll = () => {
       return this.gigs;
     }

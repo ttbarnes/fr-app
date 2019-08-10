@@ -34,27 +34,7 @@
             </div>
 
           </div>
-
-          <div ng-if="post.mainImage && post.mainImage.url && post.miniGalleryImages.length" class="cancel-margin">
-            <div ng-class="{'col-50': post.secondaryImageUrl}">
-
-              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
-                <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
-              </div>
-
-              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
-                <a href="{{post.mainImage.externalLink}}" target="_blank">
-                  <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
-                </a>
-              </div>
-
-              <div ng-if="post.secondaryImageUrl"
-                   class="col-50">
-                <img ng-src="{{post.secondaryImageUrl}}" alt="Fiona Ross | {{post.title}}" />
-              </div>
-
-            </div>
-          </div>
+        </div>
 
         <ul ng-if="post.sections">
           <li ng-repeat="section in post.sections" ng-class="{last: $last, first: $first}" class="article-section">
@@ -92,89 +72,61 @@
               href="{{post.venueLink}}" 
               target="_blank">Venue</a>
           </div>
-        </div>
 
-        <div ng-if="post.ticketsLink && post.mainImage && post.mainImage.url && !post.miniGalleryImages.length">
+          <div ng-if="post.ticketsLink && post.mainImage && post.mainImage.url && !post.miniGalleryImages.length">
 
-          <div class="col-70 max-width-650">
+            <div class="col-70 max-width-650">
 
-              <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
-                <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
-              </div>
-
-              <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
-                <a href="{{post.mainImage.externalLink}}" target="_blank">
+                <div ng-if="post.mainImage && post.mainImage.url && !post.mainImage.externalLink" class="img-wrap">
                   <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
-                </a>
+                </div>
+
+                <div ng-if="post.mainImage && post.mainImage.url && post.mainImage.externalLink" class="img-wrap">
+                  <a href="{{post.mainImage.externalLink}}" target="_blank">
+                    <img ng-src="{{post.mainImage.url}}" alt="Fiona Ross | {{post.title}}" />
+                  </a>
+                </div>
+
+            </div>
+
+            <div class="col-30">
+
+              <a ng-if="post.ticketsLink"
+                href="{{post.ticketsLink}}"
+                target="_blank"
+                class="button">Get tickets</a>
+              <div class="link-highlight-hover-border">
+                <a ng-if="post.venueLink"
+                  href="{{post.venueLink}}"
+                  target="_blank"
+                  class="venue-link">Venue</a>
               </div>
 
-          </div>
-
-          <div class="col-30">
-
-            <a ng-if="post.ticketsLink"
-               href="{{post.ticketsLink}}"
-               target="_blank"
-               class="button">Get tickets</a>
-            <div class="link-highlight-hover-border">
-              <a ng-if="post.venueLink"
-                 href="{{post.venueLink}}"
-                 target="_blank"
-                 class="venue-link">Venue</a>
             </div>
 
           </div>
 
-        </div>
+          <div class="row cancel-margin">
 
-        <div class="row cancel-margin">
+            <ul ng-if="post.quotes" class="quotes">
+              <li ng-repeat="quote in post.quotes">
+                &quot;{{quote.copy}}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{{quote.author}}</span>
+              </li>
+            </ul>
 
-          <div ng-bind-html="post.bodyMain"
-                class="body-content link-highlight-hover-border"></div>
+            <a ng-if="post.ticketsLink && !post.mainImage.url"
+                href="{{post.ticketsLink}}"
+                target="_blank"
+                class="button">Get tickets</a>
 
-          <ul ng-if="post.quotes" class="quotes">
-            <li ng-repeat="quote in post.quotes">
-              &quot;{{quote.copy}}&quot;<span class="news-quote-author">&nbsp;-&nbsp;{{quote.author}}</span>
-            </li>
-          </ul>
-
-          <a ng-if="post.ticketsLink && !post.mainImage.url"
-              href="{{post.ticketsLink}}"
-              target="_blank"
-              class="button">Get tickets</a>
-
-        </div>
-
-        <div ng-if="post.videoEmbed && !post.miniGalleryImages" class="video-wrapper">
-          <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div ng-if="post.videoEmbedLondonLive" class="video-wrapper">
-          <iframe width="620" height="348" src="http://www.londonlive.co.uk/embed/news/2018-03-27/celebrity-music-trainer-is-now-releasing-her-own-music" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div ng-if="post.videoEmbed && post.miniGalleryImages" class="row video-with-gallery-row">
-          <div class="row post-video">
-            <div class="video-wrapper">
-              <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
-            </div>
           </div>
-          <ul ng-if="post.miniGalleryImages && post.miniGalleryImages.length" class="row post-gallery">
-            <li ng-repeat="image in post.miniGalleryImages" class="post-gallery-image">
-              <a ng-click="vm.openLightboxModal(post.miniGalleryImages, $index)">
-                <img ng-src="{{image}}" alt="Fiona Ross | {{post.title}}" />
-              </a>
-            </li>
-          </ul>
-        </div>
 
-        <div ng-if="!post.videoEmbed && post.miniGalleryImages" class="row">
-          <ul ng-if="post.miniGalleryImages && post.miniGalleryImages.length" class="row post-gallery">
-            <li ng-repeat="image in post.miniGalleryImages" class="post-gallery-image">
-              <a ng-click="vm.openLightboxModal(post.miniGalleryImages, $index)">
-                <img ng-src="{{image}}" alt="Fiona Ross | {{post.title}}" />
-              </a>
-            </li>
-          </ul>
+          <div ng-if="post.videoEmbed" class="video-wrapper">
+            <iframe width="560" ng-src="{{vm.trustSrc(post.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div ng-if="post.videoEmbedLondonLive" class="video-wrapper">
+            <iframe width="620" height="348" src="http://www.londonlive.co.uk/embed/news/2018-03-27/celebrity-music-trainer-is-now-releasing-her-own-music" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
 
         <div class="row social-share">
