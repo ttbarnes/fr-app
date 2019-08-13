@@ -1,6 +1,12 @@
 [
   {
     "copy": "Fiona Ross - Fierce and Non-Compliant",
+    "author": "Jazz Fun",
+    "thumbUrl": "jazzfun2.jpg",
+    "href": "https://www.jazz-fun.de/fiona-ross-fierce-and-non-compliant.html"
+  },
+  {
+    "copy": "Fiona Ross - Fierce and Non-Compliant",
     "author": "Kind of Jazz",
     "thumbUrl": "kindofjazz2.jpg",
     "href": "http://www.kindofjazz.com/index.php/component/k2/582-fiona-ross-fierce-and-non-compliant"
@@ -207,7 +213,7 @@
   },
   {
     "copy": "Fiona Ross - Black, White and a Little Bit of Grey - jazz-fun.de - Online Magazin...",
-    "author": "Jazz fun",
+    "author": "Jazz Fun",
     "href": "https://www.jazz-fun.de/fiona-ross-black-white-and-a-little-bit-of-grey.html",
     "thumbUrl": "jazzfun.jpg",
     "albumId": 3
