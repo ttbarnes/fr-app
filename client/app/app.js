@@ -4,6 +4,7 @@ import ngAnimate from 'angular-animate';
 import ngSanitize from 'angular-sanitize';
 import ngTouch from 'angular-touch';
 import angularUiRouterTitle from 'angular-ui-router-title';
+import angularUnsafe from 'angular-unsafe';
 import pageslide from 'angular-pageslide-directive';
 import modal from 'angular-ui-bootstrap';
 import bootstrapLightbox from 'angular-bootstrap-lightbox';
@@ -25,6 +26,7 @@ angular.module('app', [
     ngAnimate,
     ngSanitize,
     ngTouch,
+    'angular.unsafe',
     'ui.router.title',
     'pageslide-directive',
     'ui.bootstrap.modal',

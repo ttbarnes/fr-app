@@ -43,16 +43,16 @@
               <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
             </div>
 
+            <div ng-if="section.videoEmbed" class="video-wrapper">
+              <div ng-bind-html="section.videoEmbed | unsafe"></div>
+            </div>
+
             <div ng-if="section.images" class="col-images">
               <ul>
                 <li ng-repeat="image in section.images" class="col-img">
                   <img ng-src="{{image.url}}" alt="Fiona Ross | {{image.imgAlt}}"/>
                 </li>
               </ul>
-            </div>
-
-            <div ng-if="section.videoEmbed">
-              <iframe width="600" height="400" ng-src="{{vm.trustSrc(section.videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
             </div>
 
           </li>
