@@ -155,13 +155,7 @@
 
     .social-share
       width 100%
-      // background rgba(18,18,18,0.70)
-      // @media (min-width $bp-md)
-        // z-index 2
-        // position absolute
-        // bottom 0
-        // left 0
-        // text-align right
+
       ul,
       p
         @media (min-width $bp-md)
@@ -298,25 +292,18 @@
         .col-images
           float right
           padding-left $gutter-primary-lg
-
-    // .col-images
-    //   .col-img
-    //     width 100%
-    //     max-width 100%
-    //     padding $gutter-primary-lg
-    //     @media (min-width $bp-md)
-    //       width 50%
-    //       float left
-    //       clear none
-    //       padding $gutter-primary-lg
-    //       padding-top 0
-    //       &:nth-child(even)
-    //         padding-right 0
-    //       &:nth-child(odd)
-    //         padding-left 0
-    //       &:nth-child(3)
-    //         clear both
-          
+      
+    .body-content blockquote
+      color $color-highlight-primary
+      font-size 1em
+      text-align left
+      margin-bottom 0
+      padding 0
+      padding-bottom $gutter-primary-lg
+      strong:last-child
+        font-weight 300
+        color $color-text-primary
+        opacity .5
 
     @media (min-width $bp-md)
       .col-left-align
