@@ -13,19 +13,19 @@
   ul
     margin-bottom $gutter-primary-lg
 
-  li
-    clear both
-    display inline-block
-    width 100%
-    margin-bottom $gutter-primary-x-lg
-    @media (min-width $bp-md)
-      margin-bottom $gutter-primary-xx-lg
-      padding-bottom $gutter-primary-x-lg
-    border-bottom solid 1px $color-bg-secondary
-    &.last
-      padding-bottom 0
-      margin-bottom 0
-      border-bottom 0 none
+    > .articles > li
+      clear both
+      display inline-block
+      width 100%
+      margin-bottom $gutter-primary-x-lg
+      border-bottom solid 1px $color-bg-secondary
+      @media (min-width $bp-md)
+        margin-bottom $gutter-primary-xx-lg
+        padding-bottom $gutter-primary-x-lg
+      &.last
+        padding-bottom 0
+        margin-bottom 0
+        border-bottom 0 none
 
     .date
       display block
@@ -245,21 +245,25 @@
 .news-home
   .max-width-650
     max-width 650px
+
   .article-section .link-highlight-hover-border a
     padding 0 0 1px 0
     color $color-white
     opacity 1
 
   .article-section
+    display inline-block
+    width 100%
     padding $gutter-primary-x-lg 0
     border-bottom solid 1px $color-bg-secondary
-    width 100%
     &.first
-      padding-top 0
+      padding-top $gutter-primary-x-lg
     &.last
       padding-bottom 0
       border-bottom 0 none
 
+    > div > ul
+      margin-bottom 0
 
     .col-images
       max-width 100%
@@ -271,6 +275,8 @@
       @media (min-width $bp-md)
         max-width 100%
 
+    .col-img
+      padding-bottom $gutter-primary-lg
     @media (min-width $bp-md)
       .col-copy
         width 60%
@@ -292,7 +298,35 @@
         .col-images
           float right
           padding-left $gutter-primary-lg
-      
+
+      .col-img
+        display inline-block
+        vertical-align top
+
+      .col-images-multiple
+        width 100%
+        padding-top $gutter-primary
+        padding-right 0 !important
+        padding-left 0 !important
+        ul
+          margin-bottom 0
+        .col-img
+          max-width 50%
+          padding-bottom $gutter-primary-lg
+          &:nth-child(odd)
+            padding-right $gutter-primary-lg
+          &:nth-child(even)
+            padding-left $gutter-primary-lg
+
+    &.article-section-with-single-image
+      @media (min-width $bp-md)
+        .col-copy
+          float right
+          padding-left $gutter-primary-lg
+        .col-images
+          float left
+          padding-right $gutter-primary-lg
+
     .body-content blockquote
       color $color-highlight-primary
       font-size 1em

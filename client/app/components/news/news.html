@@ -4,10 +4,9 @@
     <ul ng-if="vm.data && vm.data.length">
     <h2 class="sr-only">Fiona Ross News</h2>
 
-    <ul>
+    <ul class="articles">
       <li ng-repeat="post in vm.data" ng-class="{last: $last}">
         <h3>{{post.title}}</h3>
-        <small class="date">{{post.createdAt | date:'dd MMM yyyy'}}</small>
 
         <div class="row cancel-margin">
 
@@ -37,17 +36,24 @@
         </div>
 
         <ul ng-if="post.sections">
-          <li ng-repeat="section in post.sections" ng-class="{last: $last, first: $first}" class="article-section">
+          <li ng-repeat="section in post.sections"
+              ng-class="{
+                'article-section-with-single-image': vm.articleSectionsHaveOnlyOneImage(post.sections),
+                last: $last,
+                first: $first
+              }"
+              class="article-section"
+          >
 
-            <div ng-class="{'col-copy': section.images.length}">
+            <div ng-class="{'col-copy': section.images.length === 1}">
               <div ng-bind-html="section.copy" class="body-content link-highlight-hover-border"></div>
             </div>
 
-            <div ng-if="section.videoEmbed" class="video-wrapper">
+            <div ng-if="section.videoEmbed">
               <div ng-bind-html="section.videoEmbed | unsafe"></div>
             </div>
 
-            <div ng-if="section.images" class="col-images">
+            <div ng-if="section.images" ng-class="{'col-images': section.images.length === 1, 'col-images col-images-multiple': section.images.length > 1}">
               <ul>
                 <li ng-repeat="image in section.images" class="col-img">
                   <img ng-src="{{image.url}}" alt="Fiona Ross | {{image.imgAlt}}"/>
@@ -59,6 +65,7 @@
         </ul>
 
         <div ng-if="!post.sections">
+          <small class="date">{{post.createdAt | date:'dd MMM yyyy'}}</small>
 
           <div ng-bind-html="post.bodyMain" class="body-content link-highlight-hover-border"></div>
 
