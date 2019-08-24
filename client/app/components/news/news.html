@@ -134,6 +134,17 @@
           <div ng-if="post.videoEmbedLondonLive" class="video-wrapper">
             <iframe width="620" height="348" src="http://www.londonlive.co.uk/embed/news/2018-03-27/celebrity-music-trainer-is-now-releasing-her-own-music" frameborder="0" allowfullscreen></iframe>
           </div>
+
+          <div ng-if="post.galleryImages">
+            <ul>
+              <li ng-repeat="image in post.galleryImages" class="post-gallery-image">
+                <a ng-click="vm.openLightboxModal(post.galleryImages, $index)">
+                  <img ng-src="./images/{{image.thumbUrl}}" alt="Fiona Ross | {{post.title}}" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
       </li>
