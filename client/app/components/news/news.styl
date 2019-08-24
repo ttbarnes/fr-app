@@ -21,7 +21,6 @@
       border-bottom solid 1px $color-bg-secondary
       @media (min-width $bp-md)
         margin-bottom $gutter-primary-xx-lg
-        padding-bottom $gutter-primary-x-lg
       &.last
         padding-bottom 0
         margin-bottom 0
@@ -152,42 +151,6 @@
         overflow hidden
       img
         width 100%
-
-    .social-share
-      width 100%
-
-      ul,
-      p
-        @media (min-width $bp-md)
-          display inline-block
-
-      ul > li
-        padding 0
-      li,
-      p
-        margin-bottom 0
-
-      li
-        display inline-block
-        border 0 none
-        width auto
-        a
-          padding $gutter-primary
-          transition all .3s ease
-          cursor pointer
-          color $color-highlight-primary
-          &.button
-            padding $button-spacing
-            color $color-white
-          &:hover,
-          &:focus
-            outline 0 none
-        &.first a
-          padding-left 0
-      p
-        padding $gutter-primary
-        padding-left 0
-        margin-top 4px
 
     .copy
       width 100%

@@ -11,7 +11,6 @@ import bootstrapLightbox from 'angular-bootstrap-lightbox';
 import ezfb from 'angular-easyfb';
 import angulartics from 'angulartics';
 import angularticsGA from 'angulartics-google-analytics';
-import socialShare from 'angular-socialshare';
 import * as CONST from './constants/constants';
 import Common from './common/common';
 import Components from './components/components';
@@ -34,7 +33,6 @@ angular.module('app', [
     'ezfb',
     'angulartics',
     'angulartics.google.analytics',
-    '720kb.socialshare',
     Common.name,
     Components.name,
     Services.name,
