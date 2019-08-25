@@ -267,20 +267,21 @@ fr-footer,
 
 .view-message-short
   margin 0 auto
-  max-width $section-max-width-mini
   @media (min-width: $bp-md)
     float none !important
-    padding-top $gutter-primary-xx-lg
+  .main-content
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
 
   p.page-heading
-    margin-bottom 0
     color $color-highlight-primary
     font-size $font-size-h3-mobile
+    margin-bottom $gutter-primary-lg
     @media (min-width $bp-md)
       font-size $font-size-h3-desktop
+      margin-bottom $gutter-primary-x-lg
 
   .button
-    float left
     width auto
     margin-top $gutter-primary
 

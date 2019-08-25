@@ -9,6 +9,8 @@ class JournalismController {
       this.data = data.data.reverse();
     }, () => {
       this.promiseError = true;
+    }).catch((err) => {
+      this.promiseError = true;
     });
 
   }
