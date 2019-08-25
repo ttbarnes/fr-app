@@ -205,6 +205,8 @@ fr-footer,
           transform rotate(360deg)
 
 .social-links-large
+  @media (min-width $bp-md)
+    padding-top $gutter-primary-lg
   li
     text-align center
     width 33%
@@ -249,7 +251,7 @@ fr-footer,
             margin-top 17px
             font-size 2em
       &.icon-s-y::before
-        margin-top 12px
+        margin-top 10px
         @media (min-width: $bp-md)
           margin-top 21px
     p
@@ -279,7 +281,6 @@ fr-footer,
     margin-bottom $gutter-primary-lg
     @media (min-width $bp-md)
       font-size $font-size-h3-desktop
-      margin-bottom $gutter-primary-x-lg
 
   .button
     width auto
