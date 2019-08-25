@@ -16,6 +16,8 @@ class NewsController {
       this.data = data;
     }, () => {
       this.promiseError = true;
+    }).catch((err) => {
+      this.promiseError = true;
     });
 
     this.trustSrc = (src) => this.$sce.trustAsResourceUrl(src);

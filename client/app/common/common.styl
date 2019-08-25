@@ -189,7 +189,7 @@ fr-footer,
 
 .social-links-hover-rotate
   a
-    opacity .8
+    opacity 1
     transition all 0.3s ease
     &:hover,
     &:focus
@@ -219,7 +219,7 @@ fr-footer,
       margin-bottom 0
     i
       margin-bottom 15px
-      opacity .8
+      opacity .9
       width 50px
       height 50px
       @media (min-width: $bp-md)
@@ -227,31 +227,38 @@ fr-footer,
         height 70px
       &::before
         margin-top 9px
-        @media (min-width: $bp-md)
-          margin-top 16px
         font-size 2em
+        @media (min-width: $bp-md)
+          margin-top 19px
+      &.icon-s-s
+        &::before
+          margin-top 5px
+          @media (min-width: $bp-md)
+            margin-top 17px
       &.icon-ssp
         margin-right 0 !important
         &::before
-          margin-top 2px
+          margin-top 0
           @media (min-width: $bp-md)
             margin-top 11px
+      &.icon-s-t
+        &::before
+          margin-top 9px
+          font-size 1.8em
+          @media (min-width: $bp-md)
+            margin-top 17px
+            font-size 2em
       &.icon-s-y::before
         margin-top 12px
         @media (min-width: $bp-md)
           margin-top 21px
     p
       letter-spacing 1px
-      font-size .8em
-      @media (min-width: $bp-md)
-        font-size 1em
+      font-size 1em
       @media (min-width: $bp-lg)
         font-size 1.1em
     a
       display block
-      color $color-highlight-primary
-      @media (min-width: $bp-md)
-        color $color-text-primary
     a:hover,
     a:focus
       color $color-highlight-primary
@@ -265,9 +272,13 @@ fr-footer,
     float none !important
     padding-top $gutter-primary-xx-lg
 
-  .font-size-h1
-    color $color-heading-primary
-    margin-bottom $gutter-primary
+  p.page-heading
+    margin-bottom 0
+    color $color-highlight-primary
+    font-size $font-size-h3-mobile
+    @media (min-width $bp-md)
+      font-size $font-size-h3-desktop
+
   .button
     float left
     width auto
