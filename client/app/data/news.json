@@ -1,5 +1,55 @@
 [
   {
+    "id": "55",
+    "title": "September Update",
+    "createdAt": "2019-09-01T18:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Wonderful reviews still coming in for the new album. Latest review from Kind Of Jazz:<\/p><p><a href=\"http://www.kindofjazz.com/index.php/component/k2/582-fiona-ross-fierce-and-non-compliant\" target=\"_blank\">http://www.kindofjazz.com/index.php/component/k2/582-fiona-ross-fierce-and-non-compliant<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi had a great gig at Zedels in London on Sept 7th to an absolutely  packed house.<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/55-1.jpg",
+            "imgAlt": "Fiona Ross - Live at Zedel",
+            "imgMaxWidth": "500"
+          }
+        ]
+      },
+      {
+        "copy": "<p>She also met the French Jazz writer Thierry Quenum who write a lovely review straight after the gig:<\/p><p><a href=\"http://blogdegarenne.blogspot.com/2019/09/fiona-ross-band-cafe-zedel-le-crazy.html\" target=\"_blank\">http://blogdegarenne.blogspot.com/2019/09/fiona-ross-band-cafe-zedel-le-crazy.html<\/a><\/p>"
+      },
+      {
+        "copy": "<p>That same weekend, Fi had a photo shoot at the incredible St Dunstan in the East in London, with Catarina Andrade. Mainly colour photos this time!<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/55-2.jpg",
+            "imgAlt": "Fiona Ross - Catarina Andrade photo shoot",
+            "imgMaxWidth": "500"
+          },
+          {
+            "imgUrl": "gallery/UNADJUSTEDNONRAW_thumb_2db0.jpg",
+            "imgAlt": "Fiona Ross - Catarina Andrade photo shoot",
+            "imgMaxWidth": "500"
+          },
+          {
+            "imgUrl": "gallery/UNADJUSTEDNONRAW_thumb_2dad.jpg",
+            "imgAlt": "Fiona Ross - Catarina Andrade photo shoot",
+            "imgMaxWidth": "500"
+          }
+        ]
+      },
+      {
+        "copy": "<p>New gigs coming up soon - next one is in London at Toulouse Lautrec on November 8th:<\/p><p><a href=\"https://www.toulouselautrec.co.uk/book-tickets?datepart=2019-11\" target=\"_blank\">https://www.toulouselautrec.co.uk/book-tickets?datepart=2019-11<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi’s article on her trip to the Oslo Jazz Festival was published in Jazz in Europe:<\/p><p><a href=\"https://jazzineurope.mfmmedia.nl/2019/08/oslo-jazz-festival-report-by-fiona-ross/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2019/08/oslo-jazz-festival-report-by-fiona-ross/<\/a><\/p>"
+      }
+    ]
+  },
+  {
     "id": "54",
     "title": "July update",
     "createdAt": "2019-08-02T18:00:00+00:00",
