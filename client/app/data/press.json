@@ -1,9 +1,33 @@
 [
   {
-    "copy": "Jazz, rock, folk and more Feat. Fiona Ross",
-    "author": "Virginie Lacour-Puiboube",
-    "thumbUrl": "virginie-puiboube.png",
-    "href": "https://www.mixcloud.com/virginie-puiboube/eclectic-feat-fiona-ross-29th-may-2019/"
+    "copy": "Fiona Ross & Band, Café Zedel, The Crazy Coq's",
+    "author": "Blog de Garenne",
+    "thumbUrl": "blogdegarenne.jpg",
+    "href": "http://blogdegarenne.blogspot.com/2019/09/fiona-ross-band-cafe-zedel-le-crazy.html"
+  },
+  {
+    "copy": "Fiona Ross - Fierce and Non-Compliant",
+    "author": "Jazz Fun",
+    "thumbUrl": "jazzfun2.jpg",
+    "href": "https://www.jazz-fun.de/fiona-ross-fierce-and-non-compliant.html"
+  },
+  {
+    "copy": "Fiona Ross - Fierce and Non-Compliant",
+    "author": "Kind of Jazz",
+    "thumbUrl": "kindofjazz2.jpg",
+    "href": "http://www.kindofjazz.com/index.php/component/k2/582-fiona-ross-fierce-and-non-compliant"
+  },
+  {
+    "copy": "Fiona Ross: Fierce and Non-Compliant review",
+    "author": "Ink 1",
+    "thumbUrl": "ink19.jpg",
+    "href": "https://ink19.com/2019/08/magazine/music-reviews/fiona-ross"
+  },
+  {
+    "copy": "Fiona Ross new album: Fierce and Non-Compliant",
+    "author": "The MNGR Magazine Issue 5",
+    "href": "https://issuu.com/themngrmag/docs/issue_5/8",
+    "thumbUrl": "issuu.jpg"
   },
   {
     "copy": "Fiona Ross: Fierce and Non Compliant",
@@ -44,13 +68,13 @@
   {
     "copy": "FIONA ROSS - Take Five - Jazz Views",
     "author": "Jazz Views",
-    "thumbUrl": "jazzviews.jpg",
+    "thumbUrl": "jazzviews2.jpg",
     "href": "https://www.jazzviews.net/take-five-31-58.html"
   },
   {
     "copy": "FIONA ROSS - Fierce And Non-Compliant - Jazz Views",
     "author": "Jazz Views",
-    "thumbUrl": "fierce-and-non-compliant.jpg",
+    "thumbUrl": "jazzviews1.jpg",
     "href": "http://www.jazzviews.net/fiona-ross---fierce-and-non-compliant.html"
   },
   {
@@ -201,7 +225,7 @@
   },
   {
     "copy": "Fiona Ross - Black, White and a Little Bit of Grey - jazz-fun.de - Online Magazin...",
-    "author": "Jazz fun",
+    "author": "Jazz Fun",
     "href": "https://www.jazz-fun.de/fiona-ross-black-white-and-a-little-bit-of-grey.html",
     "thumbUrl": "jazzfun.jpg",
     "albumId": 3

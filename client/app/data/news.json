@@ -1,5 +1,93 @@
 [
   {
+    "id": "55",
+    "title": "September Update",
+    "createdAt": "2019-09-01T18:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Wonderful reviews still coming in for the new album. Latest review from Kind Of Jazz:<\/p><p><a href=\"http://www.kindofjazz.com/index.php/component/k2/582-fiona-ross-fierce-and-non-compliant\" target=\"_blank\">http://www.kindofjazz.com/index.php/component/k2/582-fiona-ross-fierce-and-non-compliant<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi had a great gig at Zedels in London on Sept 7th to an absolutely  packed house.<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/55-1.jpg",
+            "imgAlt": "Fiona Ross - Live at Zedel",
+            "imgMaxWidth": "500"
+          }
+        ]
+      },
+      {
+        "copy": "<p>She also met the French Jazz writer Thierry Quenum who write a lovely review straight after the gig:<\/p><p><a href=\"http://blogdegarenne.blogspot.com/2019/09/fiona-ross-band-cafe-zedel-le-crazy.html\" target=\"_blank\">http://blogdegarenne.blogspot.com/2019/09/fiona-ross-band-cafe-zedel-le-crazy.html<\/a><\/p>"
+      },
+      {
+        "copy": "<p>That same weekend, Fi had a photo shoot at the incredible St Dunstan in the East in London, with Catarina Andrade. Mainly colour photos this time!<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/55-2.jpg",
+            "imgAlt": "Fiona Ross - Catarina Andrade photo shoot",
+            "imgMaxWidth": "500"
+          },
+          {
+            "imgUrl": "gallery/UNADJUSTEDNONRAW_thumb_2db0.jpg",
+            "imgAlt": "Fiona Ross - Catarina Andrade photo shoot",
+            "imgMaxWidth": "500"
+          },
+          {
+            "imgUrl": "gallery/UNADJUSTEDNONRAW_thumb_2dad.jpg",
+            "imgAlt": "Fiona Ross - Catarina Andrade photo shoot",
+            "imgMaxWidth": "500"
+          }
+        ]
+      },
+      {
+        "copy": "<p>New gigs coming up soon - next one is in London at Toulouse Lautrec on November 8th:<\/p><p><a href=\"https://www.toulouselautrec.co.uk/book-tickets?datepart=2019-11\" target=\"_blank\">https://www.toulouselautrec.co.uk/book-tickets?datepart=2019-11<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi’s article on her trip to the Oslo Jazz Festival was published in Jazz in Europe:<\/p><p><a href=\"https://jazzineurope.mfmmedia.nl/2019/08/oslo-jazz-festival-report-by-fiona-ross/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2019/08/oslo-jazz-festival-report-by-fiona-ross/<\/a><\/p>"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "title": "July update",
+    "createdAt": "2019-08-02T18:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Fi's intimate acoustic gig at Kadies Club in London was a fantastic night. Very cool and exclusive club that Idris Elba and other celebs frequent. Here's a couple of shots taken by Warren Woodcraft.<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/54-1.jpg",
+            "imgAlt": "Fiona Ross Kadies Club",
+            "imgMaxWidth": "400"
+          },
+          {
+            "imgUrl": "news/54-2.jpg",
+            "imgAlt": "Fiona Ross Kadies Club",
+            "imgMaxWidth": "400"
+          }
+        ]
+      },
+      {
+        "copy": "<p>Fi’s next gig with her whole band is at the famous Zedel in London. Be ready for some fabulous.<\/p><p><a href=\"https://www.brasseriezedel.com/live-at-zedel/fierce-and-non-compliant?date=196124669\" target=\"_blank\">https://www.brasseriezedel.com/live-at-zedel/fierce-and-non-compliant?date=196124669<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Lot of great press around at the moment, with an interview with Women Music News:<\/p><p><a href=\"https://womensmusicnews.com/2019/06/06/fiona-ross-fierce-and-non-compliant/\" target=\"_blank\">https://womensmusicnews.com/2019/06/06/fiona-ross-fierce-and-non-compliant/<\/a><\/p><p>And an interview with MNGR magazine:<\/p><p><a href=\"https://issuu.com/themngrmag/docs/issue_5/8\" target=\"_blank\">https://issuu.com/themngrmag/docs/issue_5/8<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi was over the moon to interview her hero Michel Camilo for Jazz in Europe which is now available in the Summer magazine:<\/p><p><a href=\"https://issuu.com/jazzineurope/docs/jazz-in-europe-magazine-summer-2019/10\" target=\"_blank\">https://issuu.com/jazzineurope/docs/jazz-in-europe-magazine-summer-2019/10<\/a><\/p>"
+      },
+      {
+        "copy": "<p>After her trip to Paris in May, Fi wrote an article about the legend Josphine Baker. She is extremely grateful for the help and incredible support from Ricki Stevenson and Brian Scott Bagely.<\/p><p><a href=\"https://jazzineurope.mfmmedia.nl/2019/07/josephine-baker-and-her-light-that-must-always-shine/\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2019/07/josephine-baker-and-her-light-that-must-always-shine/<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fiona is also off to the Oslo Jazz Festival again in August to report on the event for Jazz in Europe.<\/p><p>More news soon!<\/p>"
+      }
+    ]
+  },
+  {
     "id": "53",
     "title": "June update",
     "createdAt": "2019-05-23T18:00:00+00:00",

@@ -17,6 +17,7 @@ import NewsInd from './newsInd/newsInd';
 import Contact from './contact/contact';
 import Gigs from './gigs/gigs';
 import ReflectionsInBlue from './reflectionsInBlue/reflectionsInBlue';
+import GrammyAwards from './grammyAwards/grammyAwards';
 import PrivacyPolicy from './privacyPolicy/privacyPolicy';
 import Error from './error/error';
 
@@ -39,6 +40,7 @@ let componentModule = angular.module('app.components', [
   Contact.name,
   Gigs.name,
   ReflectionsInBlue.name,
+  GrammyAwards.name,
   PrivacyPolicy.name,
   Error.name
 ]);

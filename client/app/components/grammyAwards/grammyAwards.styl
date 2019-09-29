@@ -1,0 +1,88 @@
+@import '../../styles/variables'
+
+.grammy-awards-page
+  .main-content
+    max-width $section-max-width
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+    .page-heading
+      margin-bottom 0
+      padding-bottom $gutter-primary
+
+    .page-heading-sub
+      padding-bottom 0
+      margin-bottom $gutter-primary
+
+    .highlight
+      color $color-white
+
+    h3
+      font-weight lighter
+
+    .album-img
+      max-width 500px
+      margin 0 auto $gutter-primary-x-lg auto
+      img
+        max-width 100%
+        margin-bottom $gutter-primary
+
+    .listen-links
+      h3
+        margin-bottom $gutter-primary
+      ul
+        max-width 500px
+        display inline-block
+        width 100%
+        margin 0 auto $gutter-primary-x-lg auto
+        li
+          margin-bottom 0
+          @media (min-width $bp-md)
+            width 33.333%
+
+      .sleeve-notes-link
+        margin-bottom $gutter-primary-x-lg
+        font-size 1.3em
+
+    .quotes
+      max-width 450px
+      margin 0 auto $gutter-primary-x-lg auto
+      blockquote
+        line-height 1em
+        text-align center
+        padding $gutter-primary 0
+        span.quote
+          display none
+        .copy
+          font-size 0.9em
+          width 100%
+          max-width 100%
+        .author
+          font-size 0.8em
+          padding-top .2em
+          margin-left 0
+
+    .thank-you-video
+      margin-bottom $gutter-primary-x-lg
+      max-width 100%
+      iframe
+        width 100%
+        max-width 100%
+        max-height 100%
+        @media (min-width $bp-xs)
+          height 360px
+
+    .about-fiona
+      font-size 1.1em
+      p:first-child
+        margin-bottom $gutter-primary
+      img
+        display block
+        max-width 100%
+        margin 0 auto $gutter-primary auto
+        @media (min-width $bp-md)
+          max-width 535px
+
+    .album-personnel
+      li
+        margin-bottom $gutter-primary

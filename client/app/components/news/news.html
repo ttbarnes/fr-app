@@ -53,10 +53,10 @@
           </li>
         </ul>
 
-        <div ng-bind-html="post.bodyMain" 
-             class="body-content link-highlight-hover-border"></div>
-
         <div ng-if="!post.isMonthlyUpdate">
+
+          <div ng-bind-html="post.bodyMain" class="body-content link-highlight-hover-border"></div>
+
           <a ng-if="post.ticketsLink" 
             href="{{post.ticketsLink}}" 
             target="_blank" 
