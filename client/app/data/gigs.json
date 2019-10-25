@@ -18,6 +18,34 @@
       },
       {
         "title": "Fiona Ross",
+        "cityCountry": "Alfriston, East Sussex, UK",
+        "venue": "Waterloo Square Gallery",
+        "date": {
+          "month": "Dec",
+          "day": "7th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.facebook.com/events/683141838841017/",
+          "tickets": "https://www.facebook.com/events/683141838841017/"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "cityCountry": "Alfriston, East Sussex, UK",
+        "venue": "Smugglers",
+        "date": {
+          "month": "Dec",
+          "day": "7th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.facebook.com/events/447287979244992/",
+          "tickets": "https://www.facebook.com/events/447287979244992/"
+        }
+      },
+      {
+        "title": "Fiona Ross",
         "venue": "Live At Zedel",
         "cityCountry": "Soho, London, UK",
         "date": {
