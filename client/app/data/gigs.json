@@ -7,13 +7,41 @@
         "cityCountry": "Kennington, London, UK",
         "venue": "Toulouse Lautrec",
         "date": {
-          "month": "Oct",
-          "day": "25th",
+          "month": "Nov",
+          "day": "18th",
           "year": "2019"
         },
         "urls": {
-          "moreInfo": "https://www.toulouselautrec.co.uk/book-tickets",
-          "tickets": "https://www.toulouselautrec.co.uk/book-tickets"
+          "moreInfo": "https://www.toulouselautrec.co.uk/book-tickets?date=2019-11-08#557387",
+          "tickets": "https://www.toulouselautrec.co.uk/book-tickets?date=2019-11-08#557387"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "cityCountry": "Alfriston, East Sussex, UK",
+        "venue": "Waterloo Square Gallery",
+        "date": {
+          "month": "Dec",
+          "day": "7th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.facebook.com/events/683141838841017/",
+          "tickets": "https://www.facebook.com/events/683141838841017/"
+        }
+      },
+      {
+        "title": "Fiona Ross",
+        "cityCountry": "Alfriston, East Sussex, UK",
+        "venue": "Smugglers",
+        "date": {
+          "month": "Dec",
+          "day": "7th",
+          "year": "2019"
+        },
+        "urls": {
+          "moreInfo": "https://www.facebook.com/events/447287979244992/",
+          "tickets": "https://www.facebook.com/events/447287979244992/"
         }
       },
       {
