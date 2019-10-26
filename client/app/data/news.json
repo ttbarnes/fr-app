@@ -1,5 +1,47 @@
 [
   {
+    "id": "56",
+    "title": "October Update",
+    "createdAt": "2019-10-26T18:00:00+00:00",
+    "isMonthlyUpdate": true,
+    "articleSections": [
+      {
+        "copy": "<p>Lots of exciting news!<\/p><p>Fi was overwhelmed to have her album 'Fierce and Non-Compliant' submitted and accepted to the Grammy awards for Best Jazz Vocal Album. A 'for your consideration' campaign has now begun!<\/p><p><a href=\"http://www.fionaross.co.uk/grammy-awards\" target=\"_blank\">http://www.fionaross.co.uk/grammy-awards<\/a><\/p><p>Fi would like to thank everyone for the incredible support and kind words she has received.<\/p>"
+      },
+      {
+        "copy": "<p>'For My Dad' from the new album was recognised as a finalist for best Jazz song with the World Songwriting Awards. This is also the most played song from the new album on Spotify.<\/p>",
+        "images": [
+          {
+            "imgUrl": "news/56.jpg",
+            "imgAlt": "Fiona Ross - World Songwriting Awards",
+            "imgMaxWidth": "500"
+          }
+        ]
+      },
+      {
+        "copy": "<p>Continuing the 'Fierce and Non-Compliant' UK tour with next gig is at Toulouse Lautrec, in London:<\/p><p><a href=\"https://www.designmynight.com/london/whats-on/live-music/fiona-ross-in-black-white-and-a-little-bit-of-grey?t=tickets\" target=\"_blank\">https://www.designmynight.com/london/whats-on/live-music/fiona-ross-in-black-white-and-a-little-bit-of-grey?t=tickets<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Another fab review in, this time from Australia: <a href=\"https://thebandcampdiaries.com/post/188494235432/fiona-ross-fierce-and-non-compliant-a-strong\" target=\"_blank\">https://thebandcampdiaries.com/post/188494235432/fiona-ross-fierce-and-non-compliant-a-strong<\/a><\/p>"
+      },
+      {
+        "copy": "<p>All of Fi's press is here: <a href=\"http://www.fionaross.co.uk/press\" target=\"_blank\">http://www.fionaross.co.uk/press<\/a><\/p>"
+      },
+      {
+        "copy": "<p>Fi is excited to be presenting an award in Bologna next month to some incredible Italian musicians. More info in next months news!<\/p>"
+      },
+      {
+        "copy": "<p>Fi has also been confirmed as a UK judge again for the wonderful 7Virtual Jazz Club competition: <a href=\"https://7virtualjazzclub.net/en/judges/fiona-ross-uk/\" target=\"_blank\">https://7virtualjazzclub.net/en/judges/fiona-ross-uk/<\/a><\/p>"
+      },
+      {
+        "copy": "<p>And finally, Fi’s latest review for Jazz in Europe is here: <a href=\"https://jazzineurope.mfmmedia.nl/2019/10/judy-wexlers-crowded-heart-album-review\" target=\"_blank\">https://jazzineurope.mfmmedia.nl/2019/10/judy-wexlers-crowded-heart-album-review<\/a><\/p>"
+      },
+      {
+        "copy": "<p>More news soon!<\/p>"
+      }
+    ]
+  },
+  {
     "id": "55",
     "title": "September Update",
     "createdAt": "2019-09-01T18:00:00+00:00",
