@@ -27,7 +27,6 @@ export const PAGE_TITLE_PRESS = 'Press' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE
 export const PAGE_TITLE_VIDEOS = 'Videos' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_PRIVACY_POLICY = 'Privacy Policy' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 export const PAGE_TITLE_REFLECTIONS_IN_BLUE = 'Reflections in Blue by Audrey Ross' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
-export const PAGE_TITLE_GRAMMY_AWARDS = 'For your Grammy Consideration' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 
 // api
 // export const API_BASE = 'http://localhost:4040/api/'
