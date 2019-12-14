@@ -29,8 +29,8 @@ export const PAGE_TITLE_PRIVACY_POLICY = 'Privacy Policy' + PAGE_TITLE_BASE_SEPA
 export const PAGE_TITLE_REFLECTIONS_IN_BLUE = 'Reflections in Blue by Audrey Ross' + PAGE_TITLE_BASE_SEPARATOR + PAGE_TITLE_BASE;
 
 // api
-// export const API_BASE = 'http://localhost:4040/api/'
-export const API_BASE = 'https://fr-cms-api.herokuapp.com/api/'
-export const API_NEWS = API_BASE + 'news'
+// export const API_BASE = 'http://localhost:4040/api/';
+export const API_BASE = 'https://fr-cms-api.herokuapp.com/api/';
+export const API_NEWS = API_BASE + 'news';
 export const API_JOURNALISM = API_BASE + 'journalism';
 
