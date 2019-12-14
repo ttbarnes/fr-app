@@ -24,21 +24,24 @@ class NewsController {
 
     this.openLightboxModal = (images, i) => this.Lightbox.openModal(images, i);
 
-    this.articleSectionsHaveOnlyOneImage = (sections) => {
-      let images = [];
+    this.articleHasMultipleSectionsWithSingleImage = (sections) => {
+      let singleImageSections = [];
+
       sections.forEach((section) => {
         if (section.images.length) {
           const filteredSectionImages = section.images.filter(i => i.url && i.url.length);
-          filteredSectionImages.forEach((imageObj) => {
-            images.push(imageObj.url);
-          });
+          if (filteredSectionImages.length === 1) {
+            singleImageSections.push(filteredSectionImages);
+          }
         }
       });
-      if (images.length === 1) {
+
+      if (singleImageSections.length > 1) {
         return true;
+      } else {
+        return false;
       }
-      return false;
-    }
+    };
 
   }
 }

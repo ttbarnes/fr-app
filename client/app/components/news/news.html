@@ -38,7 +38,7 @@
           <ul ng-if="post.sections">
             <li ng-repeat="section in post.sections"
                 ng-class="{
-                  'article-section-with-single-image': vm.articleSectionsHaveOnlyOneImage(post.sections),
+                  'article-has-multiple-sections-with-single-image': vm.articleHasMultipleSectionsWithSingleImage(post.sections),
                   last: $last,
                   first: $first
                 }"
