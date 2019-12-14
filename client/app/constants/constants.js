@@ -34,4 +34,3 @@ export const API_BASE = 'https://fr-cms-api.herokuapp.com/api/'
 export const API_NEWS = API_BASE + 'news';
 export const API_JOURNALISM = API_BASE + 'journalism';
 
-export const BOOKINGS_DEFAULT_THUMB = 'https://img42.com/JyPMW+';
