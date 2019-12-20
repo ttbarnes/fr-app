@@ -152,7 +152,7 @@
       <promise-loading></promise-loading>
     </div>
 
-    <div class="row button-view-nav">
+    <div ng-if="!vm.promiseLoading" class="row button-view-nav">
       <a ui-sref="videos" class="button">
         <span>Videos</span>
         <i class="icon-arrow-right"></i>
