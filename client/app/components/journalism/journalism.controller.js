@@ -4,12 +4,17 @@ class JournalismController {
   constructor(journalismService) {
     'ngInject';
     this.journalismService = journalismService;
+    this.promiseError = false;
+    this.promiseLoading = true;
 
     this.journalismService.getAll().then((data) => {
+      this.promiseLoading = false;
       this.data = data.data.reverse();
     }, () => {
+      this.promiseLoading = false;
       this.promiseError = true;
     }).catch((err) => {
+      this.promiseLoading = false;
       this.promiseError = true;
     });
 

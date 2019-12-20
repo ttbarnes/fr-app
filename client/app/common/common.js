@@ -6,6 +6,7 @@ import Album from './album/album';
 import SignupForm from './signupForm/signupForm';
 import StickySocial from './stickySocial/stickySocial';
 import PromiseError from './promiseError/promiseError';
+import PromiseLoading from './promiseLoading/promiseLoading';
 
 let commonModule = angular.module('app.common', [
   Header.name,
@@ -14,7 +15,8 @@ let commonModule = angular.module('app.common', [
   Album.name,
   SignupForm.name,
   StickySocial.name,
-  PromiseError.name
+  PromiseError.name,
+  PromiseLoading.name
 ]);
 
 export default commonModule;

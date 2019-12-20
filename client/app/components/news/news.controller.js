@@ -11,12 +11,16 @@ class NewsController {
     this.$sce = $sce;
     this.Lightbox = Lightbox;
     this.promiseError = false;
+    this.promiseLoading = true;
 
     this.newsService.getAll().then((data) => {
+      this.promiseLoading = false;
       this.data = data;
     }, () => {
+      this.promiseLoading = false;
       this.promiseError = true;
     }).catch((err) => {
+      this.promiseLoading = false;
       this.promiseError = true;
     });
 
