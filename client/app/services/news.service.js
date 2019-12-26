@@ -10,9 +10,10 @@ export default class newsService {
     let service = {
 
       getAll: () => {
-        return this.$http.get(CONST.API_NEWS).then(data => {
+        return this.$http.get(CONST.API_NEWS).then(apiData => {
+          this.apiData = apiData.data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)); // ensure ordered by date
           return [
-            ...data.data.reverse(),
+            ...this.apiData.reverse(),
             ...originalNews
           ]
         });
