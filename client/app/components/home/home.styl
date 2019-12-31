@@ -114,7 +114,12 @@
 
     .heading-intro
       text-align center
+      padding-right $gutter-primary-lg
+      padding-left $gutter-primary-lg
       margin-bottom $gutter-primary-xx-lg
+      @media (min-width: $bp-md)
+        padding-right 0
+        padding-left 0
       @media (min-width: $bp-lg)
         text-align left
       h1,
@@ -133,8 +138,6 @@
         font-size 1.1em
         @media (min-width: $bp-xs)
           font-size $font-size-h2-mobile
-        @media (min-width: $bp-sm)
-          font-size $font-size-h2-desktop
 
     .col-quotes
       max-width 100%
