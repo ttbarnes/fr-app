@@ -16,6 +16,8 @@
 
     <p class="link-highlight-hover-border" style="line-height: 1.7em">Make a payment via PayPal and we'll dispatch <span ng-if="vm.album.preOrderCdsDispatchDate">on {{vm.album.preOrderCdsDispatchDate}}.</span> <span ng-if="!vm.album.preOrderCdsDispatchDate">within 2 working days.</span><br/></p>
 
+    <p ng-if="vm.album.isOutOfStock">This album is currently out of stock - orders will be dispatched as soon as possible.</p>
+
     <!-- Fierce and Non-Compliant -->
     <div ng-if="vm.album.id === 4">
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
