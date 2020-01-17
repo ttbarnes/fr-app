@@ -10,7 +10,7 @@ class JournalismController {
     this.journalismService.getAll().then((data) => {
       this.promiseLoading = false;
       this.data = data.data.reverse();
-      this.data = data.sort((a, b) => a.releaseDate - b.releaseDate); // ensure ordered by date
+      this.data = data.sort((a, b) => a.createdAt - b.createdAt); // ensure ordered by date
     }, () => {
       this.promiseLoading = false;
       this.promiseError = true;
