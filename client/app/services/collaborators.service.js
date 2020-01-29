@@ -1,12 +1,23 @@
+import * as CONST from '../constants/constants';
 import collaborators from '../data/collaborators.json';
 
 export default class collaboratorsService {
-  constructor(){
+  constructor($http){
+    'ngInject';
     angular.forEach(collaborators, (c, i) => {
       c.id = i + 1;
     });
 
     this.collaborators = collaborators;
+
+    this.$http = $http;
+
+    this.getAll = () => {
+      return this.$http.get(CONST.API_COLLABORATORS).then(apiData => {
+        this.apiData = apiData.data.data.collaborators.sort((a, b) => a.orderNumber - b.orderNumber);
+        return this.apiData.reverse();
+      });
+    }
 
     /*
     // get any single collaborator

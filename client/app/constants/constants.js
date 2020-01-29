@@ -33,4 +33,4 @@ export const PAGE_TITLE_REFLECTIONS_IN_BLUE = 'Reflections in Blue by Audrey Ros
 export const API_BASE = 'https://fr-cms-api.herokuapp.com/api/';
 export const API_NEWS = API_BASE + 'news';
 export const API_JOURNALISM = API_BASE + 'journalism';
-
+export const API_COLLABORATORS = 'http://localhost:4040/graphql?query={collaborators{name, avatarUrl, orderNumber}}';

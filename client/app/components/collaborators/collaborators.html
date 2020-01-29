@@ -7,11 +7,11 @@
 
     <ul class="grid-layout-4-4 grid-col-hover">
 
-      <li ng-repeat="collab in vm.collaborators" class="col-50-xs col-25-md">
+      <li ng-repeat="collab in vm.data" class="col-50-xs col-25-md">
 
         <a ui-sref="collaboratorsInd({collabId: collab.collabId})">
           <div class="inner">
-            <img ng-src="{{collab.images.avatar}}" alt="{{collab.name}}" />
+            <img ng-src="{{collab.avatarUrl}}" alt="{{collab.name}}" />
             <div class="box-heading">
               <h4>{{collab.name}}</h4>
             </div>
