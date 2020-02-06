@@ -3,26 +3,37 @@
 
   <div class="main-content">
 
-    <h3 class="page-heading">Collaborators</h3>
+    <div ng-if="vm.data && vm.data.length">
+      <h3 class="page-heading">Collaborators</h3>
 
-    <ul class="grid-layout-4-4 grid-col-hover">
+      <ul class="grid-layout-4-4 grid-col-hover">
 
-      <li ng-repeat="collab in vm.data" class="col-50-xs col-25-md">
+        <li ng-repeat="collab in vm.data" class="col-50-xs col-25-md">
 
-        <a ui-sref="collaboratorsInd({collabId: collab.collabId})">
-          <div class="inner">
-            <img ng-src="{{collab.avatarUrl}}" alt="{{collab.name}}" />
-            <div class="box-heading">
-              <h4>{{collab.name}}</h4>
+          <a ui-sref="collaboratorsInd({collabId: collab.collabId})">
+            <div class="inner">
+              <img ng-src="{{collab.avatarUrl}}" alt="{{collab.name}}" />
+              <div class="box-heading">
+                <h4>{{collab.name}}</h4>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-      </li>
+        </li>
 
-    </ul>
+      </ul>
+    </div>
 
-    <div class="row button-view-nav">
+    <div ng-if="vm.promiseError">
+      <p>Unable to fetch Collaborators.</p>
+      <promise-error></promise-error>
+    </div>
+    
+    <div ng-if="vm.promiseLoading">
+      <promise-loading></promise-loading>
+    </div>
+    
+    <div ng-if="!vm.promiseLoading" class="row button-view-nav">
       <a ui-sref="journalism" class="button">
         <span>Journalism</span>
         <i class="icon-arrow-right"></i>

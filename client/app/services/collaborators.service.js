@@ -14,8 +14,13 @@ export default class collaboratorsService {
 
     this.getAll = () => {
       return this.$http.get(CONST.API_COLLABORATORS).then(apiData => {
-        this.apiData = apiData.data.data.collaborators.sort((a, b) => a.orderNumber - b.orderNumber);
-        return this.apiData.reverse();
+        this.apiData = apiData.data.data.collaborators.sort((a, b) => {
+          if (Number(a.orderNumber) > Number(b.orderNumber)) {
+            return 1;
+          }
+          return -1;
+        });
+        return this.apiData;
       });
     }
 
