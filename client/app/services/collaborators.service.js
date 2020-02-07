@@ -1,14 +1,15 @@
 import * as CONST from '../constants/constants';
-import collaborators from '../data/collaborators.json';
+// import collaborators from '../data/collaborators.json';
 
 export default class collaboratorsService {
   constructor($http){
     'ngInject';
-    angular.forEach(collaborators, (c, i) => {
-      c.id = i + 1;
-    });
+    // angular.forEach(collaborators, (c, i) => {
+    //   c.id = i + 1;
+    // });
 
-    this.collaborators = collaborators;
+    // this.collaborators = collaborators;
+    this.collaborators = [];
 
     this.$http = $http;
 
@@ -20,6 +21,7 @@ export default class collaboratorsService {
           }
           return -1;
         });
+        this.collaborators = this.apiData;
         return this.apiData;
       });
     }
@@ -27,50 +29,50 @@ export default class collaboratorsService {
     /*
     // get any single collaborator
     */
-    this.getSingle = (id) => {
-      const result = this.collaborators.find((collaborator) => collaborator.collabId === id);
-      return result;
-    }
+    // this.getSingle = (id) => {
+    //   const result = this.collaborators.find((collaborator) => collaborator.collabId === id);
+    //   return result;
+    // }
 
-    /*
-    // check if a collaborator is the last
-    */
-    this.isLastCollaborator = (id) => {
-      const lastCollabId = collaborators[collaborators.length - 1].collabId;
-      if (id === lastCollabId) {
-        return true;
-      }
-      return false;
-    }
+    // /*
+    // // check if a collaborator is the last
+    // */
+    // this.isLastCollaborator = (id) => {
+    //   const lastCollabId = collaborators[collaborators.length - 1].collabId;
+    //   if (id === lastCollabId) {
+    //     return true;
+    //   }
+    //   return false;
+    // }
     
-    /*
-    // get the next collaborator from id
-    */
-    this.nextCollaborator = (id) => {
-      const currentCollabIndex = this.collaborators.findIndex((collab) => collab.collabId === id);
-      return this.collaborators[currentCollabIndex + 1];
-    }
+    // /*
+    // // get the next collaborator from id
+    // */
+    // this.nextCollaborator = (id) => {
+    //   const currentCollabIndex = this.collaborators.findIndex((collab) => collab.collabId === id);
+    //   return this.collaborators[currentCollabIndex + 1];
+    // }
 
-    /*
-    // create collaborator object for UI links and text
-    */
-    this.getPrevNextCollab = (id) => {
-      const isLastCollab = this.isLastCollaborator(id);
-      const collabState = {};
-      let nextCollabObj;
+    // /*
+    // // create collaborator object for UI links and text
+    // */
+    // this.getPrevNextCollab = (id) => {
+    //   const isLastCollab = this.isLastCollaborator(id);
+    //   const collabState = {};
+    //   let nextCollabObj;
 
-      if (isLastCollab) {
-        nextCollabObj = this.collaborators[0];
-      } else {
-        nextCollabObj = this.nextCollaborator(id);
-      }
+    //   if (isLastCollab) {
+    //     nextCollabObj = this.collaborators[0];
+    //   } else {
+    //     nextCollabObj = this.nextCollaborator(id);
+    //   }
 
-      collabState.next = {
-        collabId: nextCollabObj.collabId,
-        name: nextCollabObj.name
-      };
-      return collabState;
-    }
+    //   collabState.next = {
+    //     collabId: nextCollabObj.collabId,
+    //     name: nextCollabObj.name
+    //   };
+    //   return collabState;
+    // }
 
   }
 

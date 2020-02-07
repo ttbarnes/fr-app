@@ -1,6 +1,8 @@
 <section class="row collaborator-ind">
 
-  <h1 class="sr-only">{{vm.collab.name}}</h1>
+  <div ng-if="vm.collab">
+    <h1 class="sr-only">{{vm.collab.name}}</h1>
+  </div>
 
   <div class="main-content">
 
@@ -11,7 +13,7 @@
       </div>
 
       <div class="col-left">
-        <img ng-src="{{vm.collab.images.avatar}}" alt="{{vm.collab.name}}" />
+        <img ng-src="{{vm.collab.avatarUrl}}" alt="{{vm.collab.name}}" />
       </div>
 
       <div class="col-right">
@@ -21,7 +23,7 @@
         </div>
 
         <ul ng-if="vm.collab.collabOn" class="collab-on">
-          <li ng-repeat="collab in vm.collab.collabOn">{{collab}}</li>
+          <li ng-repeat="collab in vm.collab.collabOn track by $index">{{collab}}</li>
         </ul>
 
         <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height link-highlight-hover link-highlight-hover-border"></div>
@@ -29,32 +31,25 @@
         <div ng-if="vm.collab.urls" class="urls link-highlight-hover">
 
           <ul>
-            <li ng-if="vm.collab.urls.website">
+            <li ng-if="vm.collab.urls.website && vm.collab.urls.website.length">
               <a ng-href="{{vm.collab.urls.website}}" target="_blank"><i class="icon-link"></i>Website</a>
             </li>
-            <li ng-if="vm.collab.urls.soundcloud">
+            <li ng-if="vm.collab.urls.soundcloud && vm.collab.urls.soundcloud.length > 0">
               <a ng-href="{{vm.collab.urls.soundcloud}}" target="_blank"><i class="icon-s-s"></i>SoundCloud</a>
             </li>
-            <li ng-if="vm.collab.urls.facebook">
+            <li ng-if="vm.collab.urls.facebook && vm.collab.urls.facebook.length > 0">
               <a ng-href="{{vm.collab.urls.facebook}}" target="_blank"><i class="icon-s-f"></i>Facebook</a>
             </li>
-            <li ng-if="vm.collab.urls.twitter">
+            <li ng-if="vm.collab.urls.twitter && vm.collab.urls.twitter.length > 0">
               <a ng-href="{{vm.collab.urls.twitter}}" target="_blank"><i class="icon-s-t"></i>Twitter</a>
             </li>
-            <li ng-if="vm.collab.urls.instagram">
+            <li ng-if="vm.collab.urls.instagram && vm.collab.urls.instagram.length > 0">
               <a ng-href="{{vm.collab.urls.instagram}}" target="_blank"><i class="icon-s-i"></i>Instagram</a>
             </li>
-            <li ng-if="vm.collab.urls.phone">
+            <li ng-if="vm.collab.urls.phone && vm.collab.urls.phone.length > 0">
               <a ng-href="tel:{{vm.collab.urls.phone}}" target="_blank"><i class="icon-phone"></i>{{vm.collab.urls.phone}}</a>
             </li>
-            <li ng-if="vm.collab.urls.other">
-              <ul ng-repeat="other in vm.collab.urls.other">
-                <li>
-                  <a ng-href="{{other.url}}" target="_blank"><i class="icon-link"></i>{{other.title}}</a>
-                </li>
-              </ul>
-            </li>
-            <li ng-if="vm.collab.urls.bio">
+            <li ng-if="vm.collab.urls.bio && vm.collab.urls.bio.length > 0">
               <a ng-href="{{vm.collab.urls.bio}}" target="_blank"><i class="icon-read"></i>Bio</a>
             </li>
           </ul>
@@ -74,6 +69,14 @@
         </div>
 
       </div>
+    </div>
+
+    <div ng-if="vm.promiseError">
+      <promise-error></promise-error>
+    </div>
+    
+    <div ng-if="vm.promiseLoading">
+      <promise-loading></promise-loading>
     </div>
 
   </div>
