@@ -5,15 +5,21 @@ class CollaboratorIndController {
     this.currentId = this.stateParams.id;
     this.collaboratorsService = collaboratorsService;
     this.promiseError = false;
-    this.promiseLoading = true;
 
     const collaboratorsFetched = (collaboratorsService.collaborators.length &&
                                   collaboratorsService.collaborators.length > 0);
     if (!collaboratorsFetched) {
+      this.promiseLoading = true;
+
       this.collaboratorsService.getAll().then((data) => {
         this.promiseLoading = false;
         this.data = data;
         this.collab = this.data.find((c) => c.urlName === $stateParams.id);
+
+        this.collabState = {
+          detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
+        };
+
       }, () => {
           this.promiseLoading = false;
           this.promiseError = true;
@@ -24,14 +30,10 @@ class CollaboratorIndController {
 
     } else {
       this.collab = collaboratorsService.collaborators.find((c) => c.urlName === $stateParams.id);
+      this.collabState = {
+        detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
+      };
     }
-
-    // this.collab = result;
-
-    // this.collabState = {
-      // detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
-    // };
-
   }
 }
 
