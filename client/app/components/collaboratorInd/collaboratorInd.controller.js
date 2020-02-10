@@ -21,8 +21,8 @@ class CollaboratorIndController {
         };
 
       }, () => {
-          this.promiseLoading = false;
-          this.promiseError = true;
+        this.promiseLoading = false;
+        this.promiseError = true;
       }).catch((err) => {
         this.promiseLoading = false;
         this.promiseError = true;

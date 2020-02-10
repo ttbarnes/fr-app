@@ -10,8 +10,6 @@ class CollaboratorsController {
     const collaboratorsFetched = (collaboratorsService.collaborators.length &&
                                   collaboratorsService.collaborators.length > 0);
 
-    console.log('COLLABS CTRL - collaboratorsFetched?  ', collaboratorsFetched);
-    console.log('COLLABS CTRL - collaboratorsService.collaborators ', collaboratorsService.collaborators);
     if (!collaboratorsFetched) {
       this.promiseLoading = true;
 
