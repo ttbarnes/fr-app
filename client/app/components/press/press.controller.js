@@ -1,12 +1,24 @@
-import allPress from '../../data/press.json';
+import pressService from '../../services/press.service';
 
 class PressController {
-  constructor($state) {
+  constructor(pressService) {
     'ngInject';
-    this.press = allPress;
-    if(!this.press) {
-      $state.go('error');
-    }
+    this.pressService = pressService;
+
+    this.promiseError = false;
+    this.promiseLoading = true;
+
+    this.pressService.getAll().then((data) => {
+      this.promiseLoading = false;
+      this.data = data;
+    }, () => {
+      this.promiseLoading = false;
+      this.promiseError = true;
+    }).catch((err) => {
+      this.promiseLoading = false;
+      this.promiseError = true;
+    });
+
   }
 }
 

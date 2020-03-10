@@ -5,6 +5,7 @@ import galleryService from './gallery.service';
 import collaboratorsService from './collaborators.service';
 import newsService from './news.service';
 import journalismService from './journalism.service';
+import pressService from './press.service';
 
 export default angular
   .module('app.services', [])
@@ -14,5 +15,6 @@ export default angular
     galleryService,
     collaboratorsService,
     newsService,
-    journalismService
+    journalismService,
+    pressService
   })
