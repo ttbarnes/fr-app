@@ -7,30 +7,16 @@
     <div ng-if="vm.data && vm.data.length">
       <h3 class="page-heading">Press</h3>
 
-    
-      <!-- <ul class="grid-layout-4-4 grid-col-hover">
-        <li ng-repeat="pressRelease in vm.press"
-            ng-class="{last: $last}"
-            class="col-50-xs">
-            <div class="inner">
-              <img ng-src="./images/press/{{pressRelease.thumbUrl}}" alt="{{pressRelease.author}} press release" />
-              <a ng-href="{{pressRelease.isPdf ? './images/press/' + pressRelease.pdfUrl : pressRelease.href}}" target="_blank" class="hover-info">
-                <div class="hover-info-inner">
-                  <p class="author">{{pressRelease.author}}</p>
-                  <p>{{pressRelease.copy}}</p>
-                  <p class="read-more">Read more</p>
-                </div>
-              </a>
-            </div>
-        </li>
-      </ul> -->
       <ul>
-        <li ng-repeat="article in vm.data">
-          <p>{{article.author}}</p>
-          <p>{{article.title}}</p>
-          <p>{{article.excerpt}}</p>
-          <p>{{article.releaseDate}}</p>
-          <p><a ng-href="{{article.externalLink}}" target="_blank">{{article.externalLink}}<a/></p>
+        <li ng-repeat="article in vm.data" class="col-50-lg article">
+          <div class="inner">
+            <a ng-href="{{article.externalLink}}" target="_blank">
+              <h4 class="author">{{article.author}}</h4>
+              <h5>{{article.title}}</h5>
+              <p class="excerpt">{{article.excerpt}}</p>
+            </a>
+          </div>
+          
         </li>
       </ul>
 
