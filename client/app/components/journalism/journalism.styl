@@ -36,6 +36,7 @@
       .inner 
         position relative
         overflow hidden
+        max-height 232px
       img
           position relative
           z-index 1 
@@ -65,7 +66,7 @@
             opacity 1
             
       &:hover
-        @media (min-width:$bp-lg)
+        @media (min-width:$bp-lg + 150px)
           a.hover-info
             top 0 
             opacity 1
@@ -75,9 +76,9 @@
               margin 0 
         
       .hover-info-inner
-        @media (min-width:$bp-lg + 200px)
+        @media (min-width:$bp-lg)
           position relative
-          padding-top $gutter-primary-xx-lg
+          padding-top $gutter-primary-xx-lg + 1em
 
       p
         opacity 0.6
@@ -86,16 +87,20 @@
           display block
       .author
         display none
-        @media (min-width:$bp-lg + 200px)
+        @media (min-width:$bp-lg + 150px)
           display block
+          font-size .95em
           background #000
-          padding 1em
+          padding 1em .5em
           position absolute
           top 0 
           left 0
           text-align center
           margin -0.8em
           width calc(100% + 1.6em)
+      
+      .copy
+        margin-bottom $gutter-primary-lg
           
       .read-more
         text-decoration underline
