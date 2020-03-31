@@ -9,7 +9,7 @@ export default class newsService {
 
       getAll: () => {
         return this.$http.get(CONST.API_PRESS).then(apiData => {
-          this.apiData = apiData.data.data.press.sort((a, b) => new Date(a.releaseDate) - new Date(b.releaseDate)); // ensure ordered by date
+          return apiData.data.data.press;
           return this.apiData;
         });
       }

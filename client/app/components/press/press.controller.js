@@ -10,7 +10,7 @@ class PressController {
 
     this.pressService.getAll().then((data) => {
       this.promiseLoading = false;
-      this.data = data;
+      this.data = data.sort((a, b) => new Date(a.releaseDate) - new Date(b.releaseDate)).reverse(); // ensure ordered by date
     }, () => {
       this.promiseLoading = false;
       this.promiseError = true;
