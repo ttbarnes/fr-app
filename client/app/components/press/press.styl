@@ -2,6 +2,11 @@
 
 .press
 
+  h3.page-heading
+    padding-bottom $gutter-primary
+    @media (min-width 1040px)
+      padding-bottom 0
+
   .main-content
     margin 0 auto
     color $color-text-primary
@@ -16,7 +21,9 @@
     .inner
       background #2A2A2A
       text-align left
-      padding $gutter-primary-lg
+      > a
+        display block
+        padding $gutter-primary-lg
 
       .author
         color $color-highlight-primary
@@ -28,6 +35,10 @@
         color $color-highlight-primary
         margin-bottom $gutter-primary
 
+      h5
+        font-size 1em
+
       .excerpt
         color #8D8D8D
+        font-size .9em
         margin-bottom 0
