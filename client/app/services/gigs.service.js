@@ -1,15 +1,20 @@
-import gigs from '../data/gigs.json';
+import * as CONST from '../constants/constants';
 
 export default class gigsService {
+  constructor($http) {
+    'ngInject';
+    this.$http = $http;
 
-  constructor(){
+    let service = {
 
-    this.gigs = gigs;
-
-    this.getAll = () => {
-      return this.gigs;
+      getAll: () => {
+        return this.$http.get(CONST.API_GIGS).then(apiData => {
+          return apiData.data.data.gigs;
+          return this.apiData;
+        });
+      }
     }
 
+    return service;
   }
-
 }

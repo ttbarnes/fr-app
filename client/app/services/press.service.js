@@ -1,5 +1,5 @@
 import * as CONST from '../constants/constants';
-export default class newsService {
+export default class pressService {
 
   constructor($http) {
     'ngInject';

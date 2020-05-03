@@ -14,6 +14,9 @@
 
   <div class="main-content">
 
+
+
+    <!--
     <ul>
       <li ng-repeat="year in vm.years" class="row" ng-class="{last: $last, first: $first}">
 
@@ -48,8 +51,47 @@
         
       </li>
     </ul>
+    -->
 
-    <div class="row button-view-nav">
+    <div ng-if="vm.data && vm.data.length">
+      <ul>
+        <li ng-repeat="gig in vm.data" class="row" ng-class="{last: $last, first: $first}">
+
+          <div class="inner">
+            <a ng-href="{{gig.ticketsUrl}}" target="_blank">
+              <h2>{{gig.venue}}</h2>
+            </a>
+            <p class="city-country">{{gig.location}}</p>
+        
+            <p class="date">
+              {# <span class="day-month">{{gig.date.month}} {{gig.date.day}}</span>
+              <span ng-if="gig.date.time" class="time"> - {{gig.date.time}}</span> #}
+              <p>{{gig.date}}</p>
+            </p>
+        
+            <div class="row button-wrap">
+              <!-- <a ng-if="gig.urls.tickets === 'TBA'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets TBA</a>
+              <a ng-if="gig.urls.tickets === 'DOOR'" class="button" ng-href="{{gig.urls.moreInfo}}" target="_blank">Tickets on
+                the door</a>
+                -->
+              <a class="button" ng-href="{{gig.ticketsUrl}}" target="_blank">Tickets</a>
+              <!-- <a class="button" ng-if="gig.urls.moreInfo" ng-href="{{gig.urls.moreInfo}}" target="_blank">More info</a> -->
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+    <div ng-if="vm.promiseError">
+      <promise-error></promise-error>
+    </div>
+
+    <div ng-if="vm.promiseLoading">
+      <promise-loading></promise-loading>
+    </div>
+
+    <div ng-if="!vm.promiseLoading" class="row button-view-nav">
       <a ui-sref="news" class="button">
         <span>News</span>
         <i class="icon-arrow-right"></i>

@@ -35,3 +35,4 @@ export const API_NEWS = API_BASE + 'api/news';
 export const API_JOURNALISM = API_BASE + 'api/journalism';
 export const API_COLLABORATORS = API_BASE + 'graphql?query={collaborators{name, role, avatarUrl, orderNumber, urlName, about, urls{website,facebook,instagram,twitter,soundcloud,bandcamp,bio,email,phone}, collabOn}}';
 export const API_PRESS = API_BASE + 'graphql?query={press{author, title, excerpt, releaseDate, externalLink}}';
+export const API_GIGS = API_BASE + 'graphql?query={gigs{title, location, venue, date, ticketsUrl}}';
