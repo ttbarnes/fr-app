@@ -10,7 +10,6 @@ export default class gigsService {
       getAll: () => {
         return this.$http.get(CONST.API_GIGS).then(apiData => {
           return apiData.data.data.gigs;
-          return this.apiData;
         });
       }
     }

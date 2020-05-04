@@ -1,3 +1,4 @@
+import moment from 'moment';
 // import * as CONST from '../../constants/constants';
 
 // class GigsController {
@@ -26,8 +27,27 @@ class GigsController {
     this.gigsService.getAll().then((data) => {
       this.promiseLoading = false;
       this.data = data.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse(); // ensure ordered by date
-      console.log('data', data);
-      // TODO: organise by years
+
+      this.gigsByYears = [];
+
+      const getYearObj = (year) => this.gigsByYears.find((yearObj) =>
+        yearObj.year === year
+      );
+
+      this.data.forEach((gig) => {
+        const year = moment(gig.date).format('YYYY');
+
+        const yearObj = getYearObj(year);
+
+        if (!yearObj) {
+          this.gigsByYears.push({
+            year,
+            gigs: []
+          });
+        } else {
+          yearObj.gigs.push(gig);
+        }
+      });
     }, () => {
       this.promiseLoading = false;
       this.promiseError = true;
