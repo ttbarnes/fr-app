@@ -36,6 +36,7 @@ class GigsController {
 
       this.data.forEach((gig) => {
         const year = moment(gig.date).format('YYYY');
+        gig.date = moment(gig.date).format('MMM Do');
 
         const yearObj = getYearObj(year);
 
