@@ -1,19 +1,4 @@
 import moment from 'moment';
-// import * as CONST from '../../constants/constants';
-
-// class GigsController {
-//   constructor(gigsService) {
-//     'ngInject';
-//     this.gigsService = gigsService;
-
-//     this.years = this.gigsService.getAll();
-
-//   }
-// }
-
-// export default GigsController;
-
-
 import gigsService from '../../services/gigs.service';
 
 class GigsController {
@@ -36,6 +21,14 @@ class GigsController {
 
       this.data.forEach((gig) => {
         const year = moment(gig.date).format('YYYY');
+        const timeMins = moment(gig.date).format('mm');
+        
+        if (timeMins === '00') {
+          gig.time = moment(gig.date).format('ha');
+        } else {
+          gig.time = moment(gig.date).format('h:mma');
+        }
+
         gig.date = moment(gig.date).format('MMM Do');
 
         const yearObj = getYearObj(year);
