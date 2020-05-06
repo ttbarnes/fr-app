@@ -21,12 +21,10 @@ class GigsController {
 
       this.data.forEach((gig) => {
         const year = moment(gig.date).format('YYYY');
-        const timeMins = moment(gig.date).format('mm');
+        const timeMins = moment.utc(gig.date).format('mm');
         
-        if (timeMins === '00') {
-          gig.time = moment(gig.date).format('ha');
-        } else {
-          gig.time = moment(gig.date).format('h:mma');
+        if (timeMins !== '00') {
+          gig.time = moment.utc(gig.date).format('h:mma');
         }
 
         gig.date = moment(gig.date).format('MMM Do');
@@ -36,12 +34,15 @@ class GigsController {
         if (!yearObj) {
           this.gigsByYears.push({
             year,
-            gigs: []
+            gigs: [ gig ]
           });
         } else {
+          if (gig.venue.includes('Colchester')) {
+          }
           yearObj.gigs.push(gig);
         }
       });
+
     }, () => {
       this.promiseLoading = false;
       this.promiseError = true;
