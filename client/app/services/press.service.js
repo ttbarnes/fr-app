@@ -10,7 +10,6 @@ export default class pressService {
       getAll: () => {
         return this.$http.get(CONST.API_PRESS).then(apiData => {
           return apiData.data.data.press;
-          return this.apiData;
         });
       }
     }

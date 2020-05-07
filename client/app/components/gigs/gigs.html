@@ -1,14 +1,12 @@
 <section class="row gigs long-copy-line-height include-bg-img">
 
   <h1 class="sr-only">Fiona Ross Gigs</h1>
-  <ul class="sr-only">
-    <li>Fiona Ross - Pizza Express - The Pheasantry</li>
-    <li>Fiona Ross - Colchester Arts Centre Jazz Club</li>
-    <li>Fiona Ross - Chesterfield Jazz Club</li>
-    <li>Fiona Ross - Save The Children UK Concert 2018</li>
-    <li>Fiona Ross - Pizza Express - The Pheasantry</li>
-    <li>Fiona Ross - Brasserie Toulouse Lautrec</li>
-  </ul>
+
+  <div ng-if="vm.data && vm.data.length">
+    <ul class="sr-only">
+      <li ng-repeat="gig in vm.data">Fiona Ross - {{gig.venue}} - {{gig.location}}</li>
+    </ul>
+  </div>
 
   <img src="./images/gigs/bg.png" class="img-bg" />
 
