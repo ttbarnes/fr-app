@@ -4,7 +4,7 @@
   "description": "Fiona Ross Angular App",
   "main": "server.js",
   "dependencies": {
-    "angular": "^1.5.5",
+    "angular": "^1.8.0",
     "angular-animate": "^1.5.8",
     "angular-bootstrap-lightbox": "^0.12.0",
     "angular-easyfb": "^1.5.1",
