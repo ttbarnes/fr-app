@@ -22,9 +22,12 @@
           <p>{{vm.collab.role}}</p>
         </div>
 
-        <ul ng-if="vm.collab.collabOn" class="collab-on">
-          <li ng-repeat="collab in vm.collab.collabOn track by $index">{{collab}}</li>
-        </ul>
+        <h6>Collaborated on</h6>
+        <div ng-if="vm.collab.collabOn">
+          <ul class="collab-on">
+            <li ng-repeat="collab in vm.collab.collabOn track by $index">{{collab}}</li>
+          </ul>
+        </div>
 
         <div ng-if="vm.collab.about" ng-bind-html="vm.collab.about" class="about long-copy-line-height link-highlight-hover link-highlight-hover-border"></div>
 

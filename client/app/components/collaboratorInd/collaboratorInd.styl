@@ -32,13 +32,21 @@
 
   h3,
   h5
+  h6
     margin-bottom 0.15em
     color $color-highlight-primary
     letter-spacing 1px
     font-weight 300
 
-  h5
+  h5,
+  h6
     color $color-white
+
+  h6
+    font-size 1.2em
+    margin-top $gutter-primary-lg
+    @media (min-width: $bp-sm)
+      margin-top 0
 
   i
     background-color $color-bg-secondary
@@ -59,7 +67,7 @@
     color $color-highlight-primary
     margin-top $gutter-primary-lg
     @media (min-width: $bp-sm)
-      margin-top $gutter-primary-lg
+      margin-top $gutter-primary
     li
       font-style italic
 
