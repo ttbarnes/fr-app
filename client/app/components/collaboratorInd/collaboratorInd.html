@@ -7,7 +7,7 @@
   <div class="main-content">
 
     <div ng-if="vm.collab">
-      <div class="intro hide-sm">
+      <div class="intro hide-md">
         <h3>{{vm.collab.name}}</h3>
         <p>{{vm.collab.role}}</p>
       </div>
@@ -17,13 +17,13 @@
       </div>
 
       <div class="col-right">
-        <div class="show-sm">
+        <div class="show-md">
           <h5>{{vm.collab.name}}</h5>
           <p>{{vm.collab.role}}</p>
         </div>
 
-        <h6>Collaborated on</h6>
-        <div ng-if="vm.collab.collabOn">
+        <div ng-if="vm.collab.collabOn && vm.collab.collabOn.length > 0">
+          <h6>Collaborated on</h6>
           <ul class="collab-on">
             <li ng-repeat="collab in vm.collab.collabOn track by $index">{{collab}}</li>
           </ul>
