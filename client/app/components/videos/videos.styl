@@ -3,8 +3,15 @@
 .videos-page
   text-align center
 
+  .main-content
+    color $color-text-primary
+    @media (min-width $bp-md)
+      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+
+
   h3.page-heading
     margin-bottom 0
+
   h4
     font-weight lighter
     margin-bottom $gutter-primary-x-lg
@@ -21,8 +28,23 @@
     @media (min-width $bp-lg)
       margin-bottom $gutter-primary-xxx-lg
 
+  ul
+    padding-bottom $gutter-primary-x-lg
+    li
+      padding-bottom $gutter-primary-x-lg
+      margin-bottom 0
+      float left
+      clear both
+      width 100%
 
-  .main-content
-    color $color-text-primary
-    @media (min-width $bp-md)
-      padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+      @media (min-width $bp-md)
+        float left
+        clear none
+        width 50%
+        padding 0 $gutter-primary-lg $gutter-primary-x-lg
+      &:nth-child(odd)
+        clear both
+
+    iframe
+      width 100%
+

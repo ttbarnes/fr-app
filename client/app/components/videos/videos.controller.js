@@ -1,10 +1,10 @@
 class VideosController {
-  constructor(newsService, $sce) {
+  constructor($sce) {
     'ngInject';
-    this.newsService = newsService;
+    // this.newsService = newsService;
     this.$sce = $sce;
-    this.data = this.newsService.data;
-    this.trustSrc = (src) => this.$sce.trustAsResourceUrl(src);
+    // this.data = this.newsService.data;
+    // this.trustSrc = (src) => this.$sce.trustAsResourceUrl(src);
   }
 }
 
