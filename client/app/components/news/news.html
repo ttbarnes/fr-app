@@ -56,7 +56,7 @@
               <div ng-if="section.images" ng-class="{'col-images': section.images.length === 1, 'col-images col-images-multiple': section.images.length > 1}">
                 <ul>
                   <li ng-repeat="image in section.images" class="col-img">
-                    <img ng-src="{{image.url}}" alt="Fiona Ross | {{image.imgAlt}}"/>
+                    <img ng-src="{{image.cloudinaryUrl}}" alt="Fiona Ross | {{image.imgAlt}}"/>
                   </li>
                 </ul>
               </div>

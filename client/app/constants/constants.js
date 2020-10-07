@@ -5,7 +5,7 @@ export const EMAIL_POST = 'http://www.fionaross.co.uk/api/postEmail';
 export const GALLERY_IMAGE_URL = 'http://fionaross.co.uk/images/gallery/';
 export const GALLERY_TEMPLATE_URL = '../app/components/gallery/modal.html';
 export const NEWS_LIGHTBOX_URL = '../app/components/news/images/'
-export const IMAGES_URL = '../images/'
+export const IMAGES_DIRECTORY = '../images/'
 
 // page titles
 export const PAGE_TITLE_BASE = 'Fiona Ross';
@@ -33,6 +33,6 @@ export const PAGE_TITLE_REFLECTIONS_IN_BLUE = 'Reflections in Blue by Audrey Ros
 export const API_BASE = 'https://fr-cms-api.herokuapp.com/';
 export const API_NEWS = API_BASE + 'api/news';
 export const API_JOURNALISM = API_BASE + 'api/journalism';
-export const API_COLLABORATORS = API_BASE + 'graphql?query={collaborators{name, role, avatarUrl, orderNumber, urlName, about, urls{website,facebook,instagram,twitter,soundcloud,bandcamp,bio,email,phone}, collabOn}}';
+export const API_COLLABORATORS = API_BASE + 'graphql?query={collaborators{name, role, avatar{cloudinaryUrl}, orderNumber, urlName, about, urls{website,facebook,instagram,twitter,soundcloud,bandcamp,bio,email,phone}, collabOn}}';
 export const API_PRESS = API_BASE + 'graphql?query={press{author, title, excerpt, releaseDate, externalLink}}';
 export const API_GIGS = API_BASE + 'graphql?query={gigs{title, location, venue, date, ticketsUrl}}';

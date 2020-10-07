@@ -57,13 +57,13 @@
 
       <div class="col-70 max-width-650">
 
-          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && !vm.post.mainImage.externalLink" class="img-wrap">
-            <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+          <div ng-if="vm.post.image && vm.post.image.cloudinaryUrl && !vm.post.image.externalLink" class="img-wrap">
+            <img ng-src="{{vm.post.image.cloudinaryUrl}}" alt="Fiona Ross | {{vm.post.title}}" />
           </div>
 
-          <div ng-if="vm.post.mainImage && vm.post.mainImage.url && vm.post.mainImage.externalLink" class="img-wrap">
-            <a href="{{vm.post.mainImage.externalLink}}" target="_blank">
-              <img ng-src="{{vm.post.mainImage.url}}" alt="Fiona Ross | {{vm.post.title}}" />
+          <div ng-if="vm.post.image && vm.post.image.cloudinaryUrl && vm.post.image.externalLink" class="img-wrap">
+            <a href="{{vm.post.image.externalLink}}" target="_blank">
+              <img ng-src="{{vm.post.image.cloudinaryUrl}}" alt="Fiona Ross | {{vm.post.title}}" />
             </a>
           </div>
 
