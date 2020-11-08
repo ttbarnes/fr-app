@@ -16,7 +16,7 @@
             ng-class="{last: $last}"
             class="col-50-xs">
           <div class="inner">
-            <img ng-src="{{article.imageUrl}}" alt="{{article.title}}" />
+            <img ng-src="{{article.image.cloudinaryUrl}}" alt="{{article.title}}" />
             <a ng-href="{{article.externalLink}}" target="_blank" class="hover-info">
               <div class="hover-info-inner">
                 <p class="author">{{article.title}}</p>
