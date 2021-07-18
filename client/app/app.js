@@ -54,6 +54,7 @@ angular.module('app', [
 
     LightboxProvider.getImageUrl = (image) => CONST.IMAGES_DIRECTORY + image.url;
 
+    LightboxProvider.fullScreenMode = true;
   })
 
   .run(($rootScope) => {

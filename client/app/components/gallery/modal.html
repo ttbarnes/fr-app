@@ -40,11 +40,11 @@
 
     </div>
 
-    <!--
     <div ng-if="Lightbox.imageCaption" class="lightbox-image-caption">
-      <span>{{Lightbox.imageCaption}}</span>
+      <span>
+        <span ng-if="Lightbox.imageCaption !== 'Audience Shot'">Photo taken by </span>{{Lightbox.imageCaption}}
+      </span>
     </div>
-    -->
 
   </div>
 </div>
