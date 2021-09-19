@@ -50,7 +50,8 @@ module.exports = {
         { from: 'client/*.ico', flatten: true},
         { from: 'client/*.pdf', flatten: true },
         { from: 'client/app/components/gallery/modal.html', to: 'app/components/gallery', flatten: true},
-        { from: 'robots.txt'}
+        { from: 'robots.txt'},
+        { from: '_redirects' }
     ])
 
   ]
