@@ -1,9 +1,14 @@
 import journalismService from '../../services/journalism.service';
+import { PAGE_TITLE_JOURNALISM } from '../../constants/constants';
 
 class JournalismController {
-  constructor(journalismService) {
+  constructor(journalismService, $rootScope) {
     'ngInject';
     this.journalismService = journalismService;
+    this.rootScope = $rootScope;
+
+    this.rootScope.ogTitle = PAGE_TITLE_JOURNALISM;
+
     this.promiseError = false;
     this.promiseLoading = true;
 

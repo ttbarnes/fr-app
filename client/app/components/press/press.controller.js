@@ -1,9 +1,13 @@
 import pressService from '../../services/press.service';
+import { PAGE_TITLE_PRESS } from '../../constants/constants';
 
 class PressController {
-  constructor(pressService) {
+  constructor(pressService, $rootScope) {
     'ngInject';
     this.pressService = pressService;
+    this.rootScope = $rootScope;
+
+    this.rootScope.ogTitle = PAGE_TITLE_PRESS;
 
     this.promiseError = false;
     this.promiseLoading = true;

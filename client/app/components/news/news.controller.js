@@ -1,15 +1,20 @@
 import newsService from '../../services/news.service';
+import { PAGE_TITLE_NEWS } from '../../constants/constants';
 
 const dateIsBefore = (a, b) => {
   return new Date(b.createdAt) - new Date(a.createdAt)
 };
 
 class NewsController {
-  constructor(newsService, $sce, Lightbox) {
+  constructor(newsService, $rootScope, $sce, Lightbox) {
     'ngInject';
     this.newsService = newsService;
+    this.rootScope = $rootScope;
     this.$sce = $sce;
     this.Lightbox = Lightbox;
+
+    this.rootScope.ogTitle = PAGE_TITLE_NEWS;
+
     this.promiseError = false;
     this.promiseLoading = true;
 

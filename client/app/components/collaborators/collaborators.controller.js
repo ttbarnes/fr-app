@@ -1,9 +1,14 @@
 import collaboratorsService from '../../services/collaborators.service';
+import { PAGE_TITLE_COLLABORATORS } from '../../constants/constants';
 
 class CollaboratorsController {
-  constructor(collaboratorsService) {
+  constructor(collaboratorsService, $rootScope) {
     'ngInject';
     this.collaboratorsService = collaboratorsService;
+    this.rootScope = $rootScope;
+
+    this.rootScope.ogTitle = PAGE_TITLE_COLLABORATORS;
+
     this.collaborators = collaboratorsService.collaborators;
     this.promiseError = false;
 

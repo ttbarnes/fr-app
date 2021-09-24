@@ -1,6 +1,7 @@
 class musicAlbumAudioCdController {
-  constructor($state, $stateParams, albumsService) {
+  constructor($state, $stateParams, $rootScope, albumsService) {
     'ngInject';
+    this.rootScope = $rootScope;
     this.albumsService = albumsService;
     this.stateParams = $stateParams;
     this.currentId = this.stateParams.id;
@@ -18,6 +19,12 @@ class musicAlbumAudioCdController {
 
       if (this.album && (!this.album.canPreOrderAudioCd && !this.album.canOrderAudioCd)) {
         $state.go('error');
+      }
+
+      this.rootScope.ogTitle = 'Audio CD - ' + this.album.name + ' - Fiona Ross';
+
+      if (this.album.albumCredits && this.album.albumCredits[0]) {
+        this.rootScope.ogDescription = this.album.albumCredits[0];
       }
     }
 

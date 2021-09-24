@@ -11,7 +11,15 @@ let musicAlbumAudioCdModule = angular.module('musicAlbumAudioCd', [
   $stateProvider
     .state('musicAlbumAudioCd', {
       url: '/music/album/:id/audio-cd',
-      template: '<music-album-audio-cd></music-album-audio-cd>'
+      template: '<music-album-audio-cd></music-album-audio-cd>',
+      resolve: {
+        album: (albumsService, $stateParams) => {
+          return albumsService.getAlbumById($stateParams.id);
+        },
+        $title: (album) => {
+          return 'Audio CD - ' + album.name + ' - Fiona Ross';
+        }
+      }
     });
 })
 

@@ -1,9 +1,13 @@
+import { PAGE_TITLE_COLLABORATOR_IND } from '../../constants/constants';
+
 class CollaboratorIndController {
-  constructor($state, $stateParams, collaboratorsService) {
+  constructor($rootScope, $state, $stateParams, collaboratorsService) {
     'ngInject';
     this.stateParams = $stateParams;
     this.currentId = this.stateParams.id;
+    this.rootScope = $rootScope;
     this.collaboratorsService = collaboratorsService;
+
     this.promiseError = false;
 
     const collaboratorsFetched = (collaboratorsService.collaborators.length &&
@@ -15,6 +19,8 @@ class CollaboratorIndController {
         this.promiseLoading = false;
         this.data = data;
         this.collab = this.data.find((c) => c.urlName === $stateParams.id);
+
+        this.rootScope.ogTitle = this.collab.name + PAGE_TITLE_COLLABORATOR_IND;
 
         this.collabState = {
           detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
@@ -30,6 +36,9 @@ class CollaboratorIndController {
 
     } else {
       this.collab = collaboratorsService.collaborators.find((c) => c.urlName === $stateParams.id);
+
+      this.rootScope.ogTitle = this.collab.name + PAGE_TITLE_COLLABORATOR_IND;
+
       this.collabState = {
         detail: this.collaboratorsService.getPrevNextCollab(this.currentId)
       };

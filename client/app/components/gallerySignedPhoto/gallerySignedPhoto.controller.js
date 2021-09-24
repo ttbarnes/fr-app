@@ -1,7 +1,13 @@
+import { PAGE_TITLE_GALLERY_SIGNED_PHOTO } from '../../constants/constants';
+
 class musicAlbumAudioCdController {
-  constructor() {
+  constructor($rootScope) {
     'ngInject';
+
+    this.rootScope = $rootScope;
    
+    this.rootScope.ogTitle = PAGE_TITLE_GALLERY_SIGNED_PHOTO;
+
     this.photos = {
       group1: [
         { url: "./images/signed/1.jpg", alt:"Fiona Ross Signed Photo 1" },

@@ -1,7 +1,12 @@
+import { PAGE_TITLE_VIDEOS } from '../../constants/constants';
+
 class VideosController {
-  constructor($sce) {
+  constructor($rootScope, $sce) {
     'ngInject';
-    // this.newsService = newsService;
+    this.rootScope = $rootScope;
+
+    this.rootScope.ogTitle = PAGE_TITLE_VIDEOS;
+
     this.$sce = $sce;
     // this.data = this.newsService.data;
     // this.trustSrc = (src) => this.$sce.trustAsResourceUrl(src);

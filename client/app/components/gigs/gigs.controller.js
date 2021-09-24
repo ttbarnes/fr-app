@@ -1,10 +1,14 @@
 import moment from 'moment';
 import gigsService from '../../services/gigs.service';
+import { PAGE_TITLE_GIGS } from '../../constants/constants';
 
 class GigsController {
-  constructor(gigsService) {
+  constructor(gigsService, $rootScope) {
     'ngInject';
     this.gigsService = gigsService;
+    this.rootScope = $rootScope;
+
+    this.rootScope.ogTitle = PAGE_TITLE_GIGS;
 
     this.promiseError = false;
     this.promiseLoading = true;

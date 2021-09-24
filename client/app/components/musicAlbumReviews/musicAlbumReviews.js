@@ -11,7 +11,15 @@ let musicAlbumReviewsModule = angular.module('musicAlbumReviews', [
   $stateProvider
     .state('musicAlbumReviews', {
       url: '/music/album/:id/reviews',
-      template: '<music-album-reviews></music-album-reviews>'
+      template: '<music-album-reviews></music-album-reviews>',
+      resolve: {
+        album: (albumsService, $stateParams) => {
+          return albumsService.getAlbumById($stateParams.id);
+        },
+        $title: (album) => {
+          return 'Reviews - ' + album.name + ' - Fiona Ross';
+        }
+      }
     });
 })
 
