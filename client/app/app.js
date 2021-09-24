@@ -39,8 +39,11 @@ angular.module('app', [
     Filters
   ])
 
-  .config(($locationProvider, $urlRouterProvider, ezfbProvider, LightboxProvider) => {
+  .config(($qProvider, $locationProvider, $urlRouterProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
+
+    $qProvider.errorOnUnhandledRejections(false);
+
     $locationProvider.html5Mode(true).hashPrefix('!');
 
     $urlRouterProvider.otherwise('/error');
@@ -60,7 +63,6 @@ angular.module('app', [
   .run(($rootScope) => {
     'ngInject';
 
-    //quick fix to get active state class in header
     $rootScope.$on('$stateChangeStart', (e, toState) => {
       if (toState.name === 'collaboratorsInd') {
         $rootScope.$broadcast('stateCollaboratorsInd', { active: true });
@@ -84,6 +86,9 @@ angular.module('app', [
         $rootScope.$broadcast('stateNews', { active: false });
       }
 
+      $rootScope.pageTitle = toState.resolve.$title;
+      $rootScope.ogTitle = toState.resolve.$ogTitle;
+      $rootScope.ogDescription = toState.resolve.$ogDescription;
     });
 
     $rootScope.$on('$stateChangeSuccess', (e, toState) => {
@@ -129,7 +134,6 @@ angular.module('app', [
 
       }
     });
-
   })
 
   .component('app', AppComponent);

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" ng-app="app" ng-strict-di ng-cloak>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,16 +7,16 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="description" content="Award Winning Vocalist, Pianist, Composer, Producer and Journalist. Fierce and Non Compliant out now" />
+    <meta name="description" content="{{ ogDescription || 'Award Winning Vocalist, Pianist, Composer, Producer and Journalist. Fierce and Non Compliant out now' }}" />
     <meta name="keywords" content="Fiona Ross, jazz, vocalist, pianist, composer, musician, singer, songwriter, producer, journalist, london" />
     <meta name="author" content="Fiona Ross" />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:url" content="http://www.fionaross.co.uk" />
+    <meta property="og:url" content="https://fionaross.co.uk" />
     <meta property="fb:app_id" content="1779328982334234" />
-    <meta property="og:title" content="Fiona Ross - Jazz Vocalist, Pianist, Composer, Producer and Journalist" />
+    <!-- <meta property="og:title" content="{{ pageTitle }}" /> -->
+    <!-- <meta property="og:description" content="It’s just me doing my thing" /> -->
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="It’s just me doing my thing" />
-    <meta property="og:image" content="http://www.fionaross.co.uk/images/social-share/fb-1200w.jpg" />
+    <meta property="og:image" content="https://fionaross.co.uk/images/social-share/fb-1200w.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -45,9 +45,10 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#282828" />
     <base href="/" />
+    <meta property="og:title" content="{{ ogTitle || 'Fiona Ross - Jazz Vocalist, Pianist, Composer, Producer and Journalist' }}"/>
+    <meta property="og:description" content="{{ ogDescription || 'It’s just me doing my thing' }}" />
   </head>
-  <body ng-app="app" ng-strict-di ng-cloak>
-
+  <body>
     <app>Loading...</app>
 
     <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/fdede0522c96998b0d4dc04cb239c96d.js"></script>
