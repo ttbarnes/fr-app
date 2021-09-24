@@ -17,7 +17,7 @@ app.use(function (req, res, next){
 });
 
 app.use(require('prerender-node').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
-app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000/').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
+app.use(require('prerender-node').set('prerenderServiceUrl', 'https://fionaross.co.uk').set('prerenderToken', 'fuhSFmvU5BVO6LHp2RHR'));
 
 require('./client.app.routes')(app); // pass application into routes
 
