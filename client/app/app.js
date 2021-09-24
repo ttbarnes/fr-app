@@ -42,6 +42,7 @@ angular.module('app', [
   .config(($qProvider, $locationProvider, $urlRouterProvider, ezfbProvider, LightboxProvider) => {
     'ngInject';
 
+    // supress 'transition' errors in console
     $qProvider.errorOnUnhandledRejections(false);
 
     $locationProvider.html5Mode(true).hashPrefix('!');

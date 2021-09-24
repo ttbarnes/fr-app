@@ -4,7 +4,6 @@ import { PAGE_TITLE_NEWS } from '../../constants/constants';
 class NewsIndController {
   constructor($state, $stateParams, $rootScope, newsService, $sce) {
     'ngInject';
-    console.log(' hello..........');
     this.rootScope = $rootScope;
     this.newsService = newsService;
     this.$sce = $sce;
@@ -17,7 +16,6 @@ class NewsIndController {
       }
       this.post = data[0];
 
-      console.log('this post ', this.post);
       this.rootScope.ogTitle = this.post.title + ' - ' + PAGE_TITLE_NEWS;
 
     }, () => {
