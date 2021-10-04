@@ -1,8 +1,6 @@
 import angular from 'angular';
 import Home from './home/home';
 import Music from './music/music';
-import MusicAlbum from './musicAlbum/musicAlbum';
-import MusicAlbumReviews from './musicAlbumReviews/musicAlbumReviews';
 import MusicAlbumAudioCd from './musicAlbumAudioCd/musicAlbumAudioCd';
 import Press from './press/press';
 import About from './about/about';
@@ -23,8 +21,6 @@ import Error from './error/error';
 let componentModule = angular.module('app.components', [
   Home.name,
   Music.name,
-  MusicAlbum.name,
-  MusicAlbumReviews.name,
   MusicAlbumAudioCd.name,
   Press.name,
   About.name,
