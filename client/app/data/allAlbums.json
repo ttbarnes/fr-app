@@ -14,7 +14,7 @@
       "itunes": "https://itunes.apple.com/us/album/fierce-and-non-compliant/1460549860"
     },
     "canOrderAudioCd": true,
-    "isOutOfStock": true,
+    "isOutOfStock": false,
     "albumCredits": [
       "Written, arranged and produced by Fiona Ross (Vocals, Piano)",
       "Gibbi Bettini (Guitar)",
