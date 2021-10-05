@@ -10,11 +10,11 @@ class MusicController {
 
     this.rootScope.ogTitle = PAGE_TITLE_MUSIC;
 
-    this.redirectToAlbumPage = function(albumId) {
+    this.redirectToAlbumPage = function(albumName) {
       // var url = 'https://fionaross.co.uk/music/' + albumName;
       // var url = 'http://google.com';
       // var url = 'https://fr-react.netlify.app/music/Fierce-and-Non-Compliant';
-      var url = 'https://fionaross.co.uk/music/album/' + albumId;
+      var url = 'https://fionaross.co.uk/music/' + albumName;
       console.log('url ', url);
       // window.location.replace(url);
       window.location = url;
