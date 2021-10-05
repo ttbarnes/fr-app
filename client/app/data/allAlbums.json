@@ -2,6 +2,7 @@
   {
     "id": 4,
     "name": "Fierce and Non Compliant",
+    "encodedName": "Fierce-and-Non-Compliant",
     "releaseDate": "April 2019",
     "images": {
       "thumb": "./images/albums/thumb/fierce-and-non-compliant.jpg",
@@ -54,6 +55,7 @@
   {
     "id": 3,
     "name": "Black, White and a Little Bit of Grey",
+    "encodedName": "Black-White-and-a-Little-Bit-of-Grey",
     "releaseDate": "November 17th",
     "images": {
       "thumb": "./images/albums/thumb/black-white-and-a-little-bit-of-grey.jpg",
@@ -98,6 +100,7 @@
   {
     "id": 2,
     "name": "Just Me (and sometimes someone else)",
+    "encodedName": "Just-Me-and-sometimes-someone-else",
     "releaseDate": "April 7th",
     "writtenBy": "<p>Written, arranged and produced by Fiona Ross. <br/>Piano and Vocals by Fiona Ross.<\/p>",
     "images": {
@@ -141,6 +144,7 @@
   {
     "id": 1,
     "name": "A Twist of Blue",
+    "encodedName": "A-Twist-of-Blue",
     "writtenBy": "<p>Written and arranged by Fiona Ross. <br/>Piano and Vocals by Fiona Ross.<\/p>",
     "images": {
       "thumb": "./images/albums/thumb/twist-of-blue.png",
