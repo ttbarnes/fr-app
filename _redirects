@@ -1,13 +1,11 @@
-/music/album/5 https://fr-react.netlify.app/music/Red-Flags-and-High-Heels
-/music/album/4 https://fr-react.netlify.app/music/Fierce-and-Non-Compliant
-/music/album/3 https://fr-react.netlify.app/music/Just-Me-and-sometimes-someone-else
-/music/album/2 https://fr-react.netlify.app/music/Black-White-and-a-Little-Bit-of-Grey
-/music/album/1 https://fr-react.netlify.app/music/A-Twist-of-Blue
+/music/album/5 https://fr-react.netlify.app/music/Red-Flags-and-High-Heels 200
+/music/album/4 https://fr-react.netlify.app/music/Fierce-and-Non-Compliant 200
+/music/album/3 https://fr-react.netlify.app/music/Just-Me-and-sometimes-someone-else 200
+/music/album/2 https://fr-react.netlify.app/music/Black-White-and-a-Little-Bit-of-Grey 200
+/music/album/1 https://fr-react.netlify.app/music/A-Twist-of-Blue 200
 
-/music/album/5/reviews https://fr-react.netlify.app/music/Red-Flags-and-High-Heels/reviews
-/music/album/4/reviews https://fr-react.netlify.app/music/Fierce-and-Non-Compliant/reviews
-/music/album/3/reviews https://fr-react.netlify.app/music/Just-Me-and-sometimes-someone-else/reviews
-/music/album/2/reviews https://fr-react.netlify.app/music/Black-White-and-a-Little-Bit-of-Grey/reviews
-/music/album/1/reviews https://fr-react.netlify.app/music/A-Twist-of-Blue/reviews
-
-/*    /index.html   200
+/music/album/5/reviews https://fr-react.netlify.app/music/Red-Flags-and-High-Heels/reviews 200
+/music/album/4/reviews https://fr-react.netlify.app/music/Fierce-and-Non-Compliant/reviews 200
+/music/album/3/reviews https://fr-react.netlify.app/music/Just-Me-and-sometimes-someone-else/reviews 200!
+/music/album/2/reviews https://fr-react.netlify.app/music/Black-White-and-a-Little-Bit-of-Grey/reviews 200!
+/music/album/1/reviews https://fr-react.netlify.app/music/A-Twist-of-Blue/reviews 200
