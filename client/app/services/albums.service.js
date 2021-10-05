@@ -16,7 +16,7 @@ export default class albumsService {
 
     this.albumReleasedBeforeLatestAlbum = this.allAlbums[1];
 
-    this.validStateParamIdsForAudioCds = ['4', '3', '2'];
+    this.validStateParamIdsForAudioCds = ['5', '4', '3', '2'];
     
     this.isValidStateParamAlbumIdForAudioCd = (id) => this.validStateParamIdsForAudioCds.includes(id);
 

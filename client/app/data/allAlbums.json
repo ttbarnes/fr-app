@@ -1,5 +1,60 @@
 [
   {
+    "id": 5,
+    "name": "Red Flags and High Heels",
+    "encodedName": "Red-Flags-and-High-Heels",
+    "releaseDate": "6th October 2021",
+    "images": {
+      "thumb": "./images/albums/thumb/red-flags-and-high-heels.jpg",
+      "appCover": "./images/albums/red-flags-and-high-heels.jpg"
+    },
+    "albumType": "latest",
+    "urls": {
+      "amazon": "#",
+      "itunes": "#"
+    },
+    "canOrderAudioCd": true,
+    "isOutOfStock": false,
+    "albumCredits": [
+      "All songs written, arranged and produced by Fiona Ross",
+      "Fiona Ross (Vocals and Piano)",
+      "Gibbi Bettini (Guitar)",
+      "Derek Daley (Bass)",
+      "Marley Drummond (Drums)",
+      "Loren Hignell (Saxophones)",
+      "Dave Boa (Trumpets)",
+      "Ashaine White (Saxophone on 'You Can Smile' and Backing Vocals)",
+      "Simon Todd and Warren Woodcraft (Percussion)",
+      "Band Banter: Everyone",
+      "Special guest Kim Cypher: Saxophone on 'You Can Smile'",
+      "Engineered and recorded at Studio XYZ by Gibbi Bettini",
+      "Mixed at Highfield Studio by Warren Woodcraft and Elliot Richardson",
+      "Mastered by Nick Watson at Fluid Mastering",
+      "Album cover photo by Tatiana Gorilovsky at Craxton Studio, London, UK"
+    ],
+    "tracklist": [
+      "Red Flags and High Heels",
+      "More Time",
+      "When I Get Old",
+      "Don’t Say It If You Don't Mean It",
+      "You Can’t Feel My Groove",
+      "Good Enough",
+      "You Are Like Poison",
+      "You Used To Tell Me",
+      "I Always Saw the Red Flags",
+      "The Apple Trees Won’t Grow Anymore"
+    ],
+    "liveBonusTracks": [
+      "You Can Smile: Live at Studio XYZ",
+      "I Followed My Heart: Live at St Cuthbert’s Church",
+      "Without you: Live at The Premises",
+      "Too Many Thoughts: Live at The Premises"
+    ],
+    "liveBonusTracksStartNumber": 11,
+    "hasBackgroundImage": true,
+    "backgroundImageOpacity": 0.05
+  },
+  {
     "id": 4,
     "name": "Fierce and Non Compliant",
     "encodedName": "Fierce-and-Non-Compliant",
