@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/music/album/*"
+to = "fr-react.netlify.app/music/:splat"
+status = 200
+force = true
