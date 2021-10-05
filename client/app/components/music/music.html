@@ -8,7 +8,7 @@
       <li ng-repeat="album in vm.albums"
           class="col col-50-sm"
           ng-class="{last: $last}">
-         <a ng-if="!album.comingSoon" class="released" ng-click="vm.redirectToAlbumPage(album.encodedName)">
+         <a ng-if="!album.comingSoon" class="released" ng-click="vm.redirectToAlbumPage(album.id)">
           <h2 class="sr-only">{{album.name}}</h2>
            <span class="img-wrap">
              <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
@@ -35,7 +35,7 @@
 
          </a>
          <span ng-if="album.comingSoon" class="img-wrap">
-           <a ng-click="vm.redirectToAlbumPage(album.encodedName)">
+           <a ng-click="vm.redirectToAlbumPage(album.id)">
             <h2 class="sr-only">{{album.name}}</h2>
              <img ng-src="{{album.images.thumb}}" alt="{{album.name}}" />
              <div class="overlay overlay-hover">
