@@ -4,12 +4,13 @@
   margin 0 auto
   float none !important
   width 100% !important
-  padding-right 0
-  padding-left 0
   max-width 500px
 
   h3.page-heading
     margin-bottom 0
+    text-align left
+    text-transform uppercase
+    letter-spacing 2px
     @media (min-width $bp-md)
       margin-bottom $gutter-primary
       padding-bottom $gutter-primary
@@ -26,127 +27,33 @@
     width 100%
     @media (min-width $bp-md)
       padding-top $gutter-primary-xx-lg - $gutter-primary-lg
+      padding-left $gutter-primary-xx-lg
+      padding-right $gutter-primary-xx-lg
 
-  .col-left
-    @media (min-width $bp-md)
-      padding-right $gutter-primary-x-lg
+  .row
+    float none
+    margin-bottom $gutter-primary-xx-lg
+    color $color-white
+    font-size 1.1em
 
-  .col-right
-    @media (min-width $bp-md)
-      padding-left $gutter-primary-x-lg
+    > .row
+      margin-bottom $gutter-primary-xx-lg - 1em
 
-  .card
-    float left
-    width 100%
-    margin-bottom $gutter-primary-x-lg
-    @media (min-width $bp-md)
-      float none
-      display inline-block
-      vertical-align middle
-      width 45%
-    @media (min-width $bp-lg)
-      display block
-      float left
-      width 33.333333333%
-
-    .inner
-      float left
-      width 100%
-      background $card-bg-mobile
-      @media (min-width $bp-md)
-        padding $gutter-primary-lg
-        background $card-bg-desktop
-        min-height 170px
-
-    .content
-      float left
-      width 100%
-      padding $gutter-primary
-      padding-bottom $gutter-primary-lg
-      @media (min-width $bp-md)
-        padding 0
-        font-size 1.1em
-
-    h4
-      background $card-heading-bg-mobile
+    .link-highlight-hover a
       color $color-white
-      border-bottom $tabbed-content-heading-border
-      text-transform uppercase
-      padding $gutter-primary
-      font-weight 300
-      letter-spacing 1px
-      font-weight 300
+      opacity .8
+    
+    &.large-row-spacing
+      > h4
+        margin-bottom $gutter-primary-x-lg
 
-      @media (min-width $bp-md)
-        background none
-        border-bottom 0
-        text-transform none
-        padding 0
-    p
-      margin-bottom 0
-
-    .title
-      display block
-      padding-bottom $gutter-primary
-      color: $color-white
-      opacity .5
-
-    i
-      display none  // temp signup form in contact page
-      margin-right $gutter-primary
-      @media (min-width $bp-md)
-        display none
-
-  .cards-top
-    @media (min-width $bp-md)
-      float none
-      max-width 900px
-      margin 0 auto
-      margin-bottom $gutter-primary-lg
-      text-align center
-    @media (min-width $bp-lg)
-      text-align left
-    .card
-      text-align left
-      @media (min-width $bp-md)
-        padding 0 $gutter-primary
-        &:first-child
-          padding-left 0
-        &:last-child
-          padding-right 0
-      .row
-        margin-bottom 0
-        padding-bottom $gutter-primary
-        &:last-child
-          padding-bottom 0
-
-    // temp signup form in contact page
+  .contact-signup-form-container
+    padding-top 0
+    padding-bottom 0
     .signup-form
-      padding 0
-      .mchimp-form
-        display block
-
-      form
-        max-width 100%
-        display block
-        min-width 100%
-        width 100%
-
-      p
-        display none
-
-      input,
-      .button
-        width 100%
-        display block
-        clear both
-        text-align center
-
-      input
-        border solid 1px #3A3A3A
-        border-bottom 0
-      .button
-        border 0 none
+      padding-top 0
+      padding-bottom 0
+      padding-left 0
 
   .row-error
     margin 0
@@ -192,6 +99,14 @@
       position absolute
       top 1.8em
       left $button-spacing-lg-horizontal
+
+  .title
+    display block
+    margin-bottom $gutter-primary-lg
+    text-transform uppercase
+
+  .title-sub
+    text-transform initial
 
 .contact-success
   span.row
