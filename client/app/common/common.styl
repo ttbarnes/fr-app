@@ -152,7 +152,6 @@ fr-footer,
     padding-left $gutter-primary-x-lg
 
 .include-bg-img
-
   .img-bg
     position fixed
     top 0
@@ -169,6 +168,9 @@ fr-footer,
   .button-view-nav
     position relative
     z-index 3
+    margin-bottom $gutter-primary-xx-lg
+    @media (min-width $bp-lg)
+      margin-bottom $gutter-primary
 
 .video-wrapper
   clear both

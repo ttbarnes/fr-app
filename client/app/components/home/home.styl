@@ -6,49 +6,14 @@
     padding-bottom 0
 
   &.include-bg-img .img-bg
-    max-width 580px
-    margin 0
-    top 45px
-    right initial
-    bottom initial
-    left -89px
-    opacity .6
-    @media (min-width $bp-sm)
-      opacity .7
-    @media (min-width $bp-lg)
-      opacity 1
-    @media (min-width 1060px)
-      top 62px
-      left -45px
-
-    // this img and p tag styling is only required for album image intro 'coming soon'
-    // in other words, a 'coming soon' album, without a pre-order link.
-    /*
-    img
-      width 100%
-      max-width 430px
-      margin $gutter-primary-lg auto $gutter-primary-lg auto
-      @media (min-width $bp-lg)
-        margin 0 auto 15px auto
-
-    p
-      letter-spacing 5px
-      font-size 1.2em
-      margin-bottom 0
-      padding-right $gutter-primary
-      padding-left $gutter-primary
-      @media (min-width $bp-xxxs)
-        font-size 1.5em
-      @media (min-width $bp-xlg)
-        font-size 1.8em
-      @media (min-width $bp-lg)
-        margin-bottom $gutter-primary
-    */
+    opacity .08
 
   .main-content
     max-width 1100px
     @media (min-width $bp-md)
       padding-top 0
+      padding-right: 5em;
+      padding-left: 5em;
 
   .intro-wrapper
     padding 0
@@ -57,10 +22,8 @@
       padding 0 $gutter-primary-lg
       padding-top $gutter-primary-x-lg
     @media (min-width $bp-lg)
-      width 60.4%
       padding 0
       padding-top $gutter-primary-x-lg
-      float: right;
     
 
   .video-wrapper
@@ -91,6 +54,42 @@
       text-align left
       padding-bottom 0
 
+  .headshot-img-container
+    margin-bottom 3em
+    padding-right $gutter-primary-lg
+    padding-left $gutter-primary-lg
+    @media (min-width: $bp-sm)
+      padding-right 0
+      padding-left 0
+    img
+      width 100%
+      max-width 100%
+      @media (min-width: $bp-xs + 50px)
+        max-width 400px
+  
+  .heading-intro
+    text-align left
+    padding-right $gutter-primary-lg
+    padding-left $gutter-primary-lg
+    @media (min-width: $bp-sm)
+      padding-right 0
+      padding-left 0
+    @media (min-width: $bp-lg)
+      margin-bottom 4em
+    h1,
+    p
+      margin-bottom 0
+    h1
+      text-transform uppercase
+      color $color-highlight-primary
+      letter-spacing 3px
+      font-weight 300
+      margin-bottom $gutter-primary-xs
+    p
+      font-size 1.1em
+      @media (min-width: $bp-xs)
+        font-size $font-size-h2-mobile
+
   .home-intro
     margin-bottom 0
     @media (min-width: $bp-sm)
@@ -112,47 +111,11 @@
         margin 0 auto
         display block
 
-    .heading-intro
-      text-align center
-      padding-right $gutter-primary-lg
-      padding-left $gutter-primary-lg
-      margin-bottom $gutter-primary-xx-lg
-      @media (min-width: $bp-md)
-        padding-right 0
-        padding-left 0
-      @media (min-width: $bp-lg)
-        text-align left
-      h1,
-      p
-        margin-bottom 0
-      h1
-        text-transform uppercase
-        color $color-highlight-primary
-        margin-right $gutter-primary
-        letter-spacing 3px
-        font-weight 300
-        margin-bottom $gutter-primary-xs
-        @media (min-width: $bp-lg)
-          margin-bottom 0
-      p
-        font-size 1.1em
-        @media (min-width: $bp-xs)
-          font-size $font-size-h2-mobile
-
     .col-quotes
-      max-width 100%
-      width 100%
-      margin 0 auto
-      text-align center
       @media (min-width: $bp-sm)
-        max-width 780px
-      @media (min-width: $bp-md)
-        max-width 785px
+        max-width 460px
       @media (min-width: $bp-lg)
-        max-width 510px
-        margin 0
-        margin-left -.3em
-      @media (min-width: $bp-lg + 100)
+        float right
         max-width 100%
 
     blockquote
@@ -160,12 +123,17 @@
       padding 0
       text-align center
       margin-bottom $gutter-primary-x-lg
-      font-size 1.2em
+      font-size 1.1em
+      margin-left -1em
+      &:first-child
+        margin-top 0
+      @media (min-width: $bp-xs)
+        margin-left -2em
       @media (min-width: $bp-sm)
-        margin 1.5em 0 1em 0
-        font-size 1.35em
+        margin 0 0 1em 0
       @media (min-width: $bp-md)
         text-align center
+        margin-left 0
       @media (min-width: $bp-lg)
         font-size 1.4em
         text-align left
@@ -174,19 +142,13 @@
         line-height 1.72em
         text-align left
         width 76%
-        font-size .9em
-        @media (min-width: $bp-xs)
-          font-size 1em
+        font-size 1.1em
         @media (min-width: $bp-sm)
           text-align left
           margin-left -39px
           padding 0px 5px
           width 91%
-        @media (min-width: $bp-md)
-          max-width 75%
-          text-align center
         @media (min-width: $bp-lg)
-          text-align left
           width 91%
           max-width 91%
           padding 0
@@ -196,16 +158,14 @@
         position relative
         top 5px
         left -10px
-        @media (min-width: $bp-xs)
-          font-size 5em
+        font-size 4em
         @media (min-width: $bp-sm)
-          left -8%
-          font-size 3em
+          left -9%
         @media (min-width: $bp-md)
           top 12px
-          font-size 5em
         @media (min-width: $bp-lg)
           left -15%
+          font-size 4em
 
       span.quote:last-child
         position relative
@@ -213,6 +173,7 @@
         left 90%
         opacity .5
         min-width 55px
+        font-size 4em
         @media (min-width: $bp-sm)
           display block
           position absolute
@@ -230,9 +191,6 @@
         text-align left
         @media (min-width: $bp-sm)
           padding-left 4%
-        @media (min-width: $bp-md)
-          padding-left 0
-          text-align center
         @media (min-width: $bp-lg)
           padding-left .8%
           text-align left
@@ -274,19 +232,33 @@
       padding-bottom $gutter-primary
 
   .row-signup-middle
-    margin-bottom $gutter-primary-xxx-lg
-    margin-top $gutter-primary-xx-lg
+    margin-top $gutter-primary-xxx-lg
+    margin-bottom $gutter-primary-xx-lg
+    padding-right $gutter-primary-lg
+    padding-left $gutter-primary-lg
+    @media (min-width: $bp-sm)
+      padding-right 0
+      padding-left 0
+
     @media (min-width $bp-md)
       margin-top $gutter-primary-xxx-lg
     .new-heading-theme
       text-align center
-      max-width 80%
       margin-right auto
       margin-left auto
+      margin-bottom .5em
+      font-size 1.5em
+      max-width 100%
       @media (min-width $bp-sm)
-        max-width 65%
+        max-width 100%
+        font-size 1.5em
       @media (min-width 850px)
         max-width 100%
+        font-size 1.5em
+    
+    .sub-text
+      margin-bottom $gutter-primary-x-lg
+      text-align center
         
     .signup-form
       padding-top 0
@@ -298,7 +270,7 @@
         @media (min-width $bp-md)
           justify-content flex-start
       .mchimp-form
-        max-width 300px
+        max-width 350px
         margin  0 auto
       form
         min-width 100%
@@ -510,50 +482,8 @@
   a
     cursor pointer
 
-/*
-  .s-feeds
-    text-align center
-    padding-bottom $gutter-primary-x-lg
-    overflow hidden
-    @media (min-width $bp-md)
-      padding-bottom $gutter-primary-xx-lg
-
-    h4
-      padding-bottom $gutter-primary
-      font-size $font-size-h1-mobile
-      @media (min-width $bp-md)
-        padding-top $gutter-primary-x-lg
-        padding-bottom $gutter-primary-lg
-        font-size $font-size-h1-desktop
-
-    .col-fb,
-    .col-tw
-      width 300px
-      padding 0 30px
-      max-height 500px
-      overflow hidden
-      display inline-block
-      vertical-align top
-      opacity 0.65
-      transition all 0.3s ease
-      margin-left -17px
-      margin 0 auto
-      @media (min-width $bp-xs)
-        margin-left 0
-        width 340px
-      &:hover
-        opacity 1
-
-    .col-fb
-      margin-bottom $gutter-primary-x-lg
-      @media (min-width $bp-md)
-        padding-bottom 0
-      .fb-page
-        overflow hidden
-        width 100%
-        @media (min-width $bp-xs)
-          width auto
-        > span
-          margin -1px 0 0 -1px
-          width 278px !important
-*/
+.home-find-out-more
+  margin-top 2em
+  font-size 1.3em
+  a
+    cursor pointer

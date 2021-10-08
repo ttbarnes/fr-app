@@ -8,75 +8,84 @@
 </style>
 <section class="row home include-bg-img">
 
-  <img src="./images/home/bg2.jpg" class="img-bg" alt="About Fiona Ross" />
+  <img src="./images/home/red-flags-and-high-heels.png" class="img-bg" alt="" />
 
   <div class="main-content">
 
     <div class="intro-wrapper">
 
+      <div class="row heading-intro">
+        <h1>Fiona Ross</h1>
+        <p>Award Winning Vocalist, Pianist, Composer, Producer and Journalist</p>
+      </div>
+
       <div class="row home-intro">
-        <div class="col-quotes">
-          
-          <div class="heading-intro">
-            <h1>Fiona Ross</h1>
-            <p>Award Winning Vocalist, Pianist, Composer, Producer and Journalist</p>
+
+        <div class="col-40-lg headshot-img-container">
+          <img src="./images/home/Fiona-Ross.jpg" alt="Fiona Ross" />
+        </div>
+
+        <div class="col-60-lg">
+
+          <div class="col-80-lg col-quotes">
+            
+            <blockquote>
+              <span class="quote">&ldquo;</span>
+              <span class="copy">Technical virtuosity and that raw emotional drive, of an artist at the height of her game</span>
+              <span class="author">Jazz Quarterly</span>
+              <span class="quote">&rdquo;</span>
+            </blockquote>
+            
+            <blockquote>
+              <span class="quote">&ldquo;</span>
+              <span class="copy">Fierce and Non-Compliant, and honest and true and oh so very talented</span>
+              <span class="author">Maxine Gordon</span>
+              <span class="quote">&rdquo;</span>
+            </blockquote>
+            
+            <blockquote>
+              <span class="quote">&ldquo;</span>
+              <span class="copy">Fiona Ross knows how to make an album</span>
+              <span class="author">Jazz Views</span>
+              <span class="quote">&rdquo;</span>
+            </blockquote>
+
+            <blockquote>
+              <span class="quote">&ldquo;</span>
+              <span class="copy">Her talents are simply extraordinary</span>
+              <span class="author">Kind Of Jazz</span>
+              <span class="quote">&rdquo;</span>
+            </blockquote>
+
           </div>
 
-          
-          <blockquote>
-            <span class="quote">&ldquo;</span>
-            <span class="copy">Technical virtuosity and that raw emotional drive, of an artist at the height of her game</span>
-            <span class="author">Jazz Quarterly</span>
-            <span class="quote">&rdquo;</span>
-          </blockquote>
-          
-          <blockquote>
-            <span class="quote">&ldquo;</span>
-            <span class="copy">Fierce and Non-Compliant, and honest and true and oh so very talented</span>
-            <span class="author">Maxine Gordon</span>
-            <span class="quote">&rdquo;</span>
-          </blockquote>
-          
-          <blockquote>
-            <span class="quote">&ldquo;</span>
-            <span class="copy">Fiona Ross knows how to make an album</span>
-            <span class="author">Jazz Views</span>
-            <span class="quote">&rdquo;</span>
-          </blockquote>
-
-          <blockquote>
-            <span class="quote">&ldquo;</span>
-            <span class="copy">Her talents are simply extraordinary</span>
-            <span class="author">Kind Of Jazz</span>
-            <span class="quote">&rdquo;</span>
-          </blockquote>
-
         </div>
+       
       </div>
     </div>
 
     <div class="row-album-latest row-intro-new-album-release">
     
       <div class="row align-center featured-video">
-      <!-- <h4 class="new-heading-theme"><a href="https://www.youtube.com/watch?v=dNknAbmIuVo&list=PLxo13hj5ir1uAQv34HyO_86yOruY9DvP5&index=2&t=0s" target="_blank">The Live Session Video Album</a></h4> -->
         <br />
-        <h4 class="new-heading-theme heading-uppercase"><a ng-click="vm.redirectToAlbumPage()">Red Flags and High Heels out now</a></h4>
+        <h4 class="new-heading-theme heading-uppercase"><a ng-click="vm.redirectToAlbumPage()">New Album Red Flags and High Heels out now</a></h4>
         <br />
 
         <iframe width="400" height="415" src="https://www.youtube.com/embed/Fi3fFgw1IlU" title="Red Flags and High Heels Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      <p class="row link-highlight-hover-border"><a ng-click="vm.redirectToAlbumPage()">Find out more</a></p>
+      <p class="row link-highlight-hover-border home-find-out-more"><a ng-click="vm.redirectToAlbumPage()">Find out more</a></p>
     </div>
 
     <div class="row row-signup-middle">
-      <p class="new-heading-theme">Be the first to hear about Fiona Ross</p>
+      <h5 class="new-heading-theme heading-uppercase">Gigs and announcements</h5>
+      <p class="sub-text">Your email won't be used for anything else.</p>
       <signup-form></signup-form>
     </div>
 
     <div class="row button-view-nav">
       <a ui-sref="music" class="button">
-        <span>Music</span>
+        <span>View albums</span>
         <i class="icon-arrow-right"></i>
       </a>
     </div>
