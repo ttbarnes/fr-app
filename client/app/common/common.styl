@@ -203,17 +203,25 @@ fr-footer,
   a
     opacity 1
     transition all 0.3s ease
+    display block
     &:hover,
     &:focus
       outline 0 none
       color $color-white
-    i
+    i,
+    img
       transition all 0.3s ease
+
+    img
+      max-width 28px
+      display inline-block
+      vertical-align middle
     @media (min-width: $bp-md)
       &:hover,
       &:focus
         opacity 1
-        i
+        i,
+        img
           transform rotate(360deg)
 
 .social-links-large
@@ -228,15 +236,17 @@ fr-footer,
     margin-bottom $gutter-primary-x-lg
     @media (min-width: $bp-md)
       float left
-      width 20%
+      width 16.66%
     p
       margin-bottom 0
-    i
+    i,
+    img
       margin-bottom 15px
-      opacity .9
+      opacity 1
       width 50px
       height 50px
       @media (min-width: $bp-md)
+        opacity .95
         width 70px
         height 70px
       &::before
@@ -266,6 +276,16 @@ fr-footer,
         margin-top 10px
         @media (min-width: $bp-md)
           margin-top 21px
+
+    img
+      width 50px
+      max-width 50px
+      height 50px
+      @media (min-width: $bp-md)
+        width 70px
+        height 70px
+        max-width 70px
+
     p
       letter-spacing 1px
       font-size 1em
