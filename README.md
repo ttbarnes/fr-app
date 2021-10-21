@@ -16,3 +16,4 @@
 - `npm run icons` - compile SVG icons into webfonts (uses fontcustom)
 
 - `npm run test` - run unit tests (karma)
+
