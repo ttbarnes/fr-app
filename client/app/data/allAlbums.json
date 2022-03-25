@@ -1,5 +1,36 @@
 [
   {
+    "id": 6,
+    "name": "7 Songs in 7 Days",
+    "encodedName": "7-Songs-in-7-Days",
+    "releaseDate": "25th March 2022",
+    "images": {
+      "thumb": "./images/albums/thumb/7-songs-in-7-days.jpg"
+    },
+    "albumType": "latest",
+    "urls": {},
+    "canOrderAudioCd": true,
+    "isOutOfStock": false,
+    "albumCredits": [
+      "All songs written, arranged and produced by Fiona Ross",
+      "Fiona Ross (Vocals and Piano)",
+      "Gibbi Bettini (Guitar and recording engineer)",
+      "Dave Boa (Trumpet)",
+      "Mixed at Highfield Studio by Warren Woodcraft",
+      "Mastered by Nick Watson at Fluid Mastering",
+      "Cover photography by Monika S Jakubowska"
+    ],
+    "tracklist": [
+      "#MondayMood",
+      "#TuesdayThoughts",
+      "The Choices You Made #wednesdywisdom",
+      "How I'm Supposed To Feel #thursdayvibes",
+      "The Best Version of Me #fridayfeeling",
+      "When You Walked In The Room #saturdaynight",
+      "Take Time To Breathe #sundaymorning"
+    ]
+  },
+  {
     "id": 5,
     "name": "Red Flags and High Heels",
     "encodedName": "Red-Flags-and-High-Heels",
@@ -63,7 +94,6 @@
       "thumb": "./images/albums/thumb/fierce-and-non-compliant.jpg",
       "appCover": "./images/albums/fierce-and-non-compliant.jpg"
     },
-    "albumType": "latest",
     "urls": {
       "amazon": "https://www.amazon.co.uk/Fierce-Non-Compliant-Fiona-Ross/dp/B07QKQWSGH/ref=sr_1_2?keywords=Fiona+Ross&qid=1555570754&s=dmusic&search-type=ss&sr=1-2",
       "google": "https://play.google.com/store/music/album?id=B7cmvie5mp332djprrneodjyxyu&tid=song-Tpekek25ups2t6tuvxa7nk6ppzq&hl=en",
