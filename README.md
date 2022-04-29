@@ -1,5 +1,7 @@
 # Fiona Ross Angular app
 
+:warning: **Legacy app** - this has now been migrated to react/next.js in another repository.
+
 - Architecture based on the [NG6-starter] (https://github.com/AngularClass/NG6-starter)
 
 - `client/*` - client side, angular
